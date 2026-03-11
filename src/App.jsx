@@ -2372,33 +2372,7 @@ export default function FusionChefAI() {
         </div>
       </section>
 
-      {/* CATEGORIES */}
-      <section className="section categories-section" id="categories">
-        <div className="section-header">
-          <div className="section-tag">🌍 Worldwide</div>
-          <h2 className="section-title">Explore <em>World Cuisines</em></h2>
-          <p className="section-sub">From Asia to Oceania — discover authentic flavors from every corner of the globe.</p>
-        </div>
-        {continents.map(continent => (
-          <div key={continent.name} className="continent-block">
-            <div className="continent-header" style={{borderColor: continent.color}}>
-              <h3 className="continent-title" style={{color: continent.color}}>{continent.name}</h3>
-            </div>
-            <div className="cat-grid">
-              {continent.cuisines.map(c => (
-                <div key={c.name} className="cat-card" onClick={() => { console.log("Clicked:", c.name); if(c.name.indexOf("Indian") !== -1) { setIndianPage(true); } else { setCatModal({...c, count: Math.floor(Math.random()*200+80) + " recipes"}); } }}>
-                  <img src={c.img} alt={c.name} />
-                  <div className="cat-overlay" />
-                  <div className="cat-info">
-                    <h3>{c.name}</h3>
-                    <span>{c.desc}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
-      </section>
+
 
       {/* TRENDING */}
       <section className="section trending-section" id="trending">
@@ -2450,47 +2424,9 @@ export default function FusionChefAI() {
         </div>
       </section>
 
-      {/* SHOWS */}
-      <section className="shows-section" id="shows">
-        <div className="section-header">
-          <div className="section-tag">🎬 Now Streaming</div>
-          <h2 className="section-title">FusionChef <em style={{color:"var(--saffron-light)"}}>Shows</em></h2>
-          <p className="section-sub">Binge-worthy culinary TV, from competition kitchens to street food adventures.</p>
-        </div>
-        <div className="shows-grid">
-          {shows.map(s => (
-            <div key={s.title} className="show-card">
-              <img src={s.img} alt={s.title} />
-              <div className="show-overlay" />
-              <div className="play-btn">▶</div>
-              <div className="show-info">
-                <h3>{s.title}</h3>
-                <span>{s.episodes}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
 
-      {/* BLOG */}
-      <section className="section blog-section" id="blog">
-        <div className="section-header">
-          <div className="section-tag">📖 Knowledge Kitchen</div>
-          <h2 className="section-title">From the <em>FusionChef Kitchen</em></h2>
-        </div>
-        <div className="blog-grid">
-          {blogs.map(b => (
-            <div key={b.title} className="blog-card">
-              <div className="blog-card-img"><img src={b.img} alt={b.title} /></div>
-              <div className="blog-card-body">
-                <div className="blog-category">{b.category}</div>
-                <h3>{b.title}</h3>
-                <div className="blog-meta"><span>{b.date}</span><span>{b.read}</span></div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+
+
 
       {/* NEWSLETTER */}
       <section className="newsletter-section">
