@@ -347,9 +347,9 @@ export default function FusionChefAI() {
     try {
       const GEMINI_KEY = "AIzaSyDvWCpdOnU0fDd-173TmWU-1pM4-umw6pY";
       const systemPrompt = "You are FusionChef AI, a warm and creative culinary AI. When users ask for recipes, respond with a catchy dish name, 5-7 key ingredients, 3-4 brief cooking steps, and a helpful tip. Keep it enthusiastic and under 250 words.";
-      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GEMINI_KEY}`, {
+      const res = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", "x-goog-api-key": GEMINI_KEY },
         body: JSON.stringify({
           system_instruction: { parts: [{ text: systemPrompt }] },
           contents: [{ role: "user", parts: [{ text: query }] }],
@@ -357,7 +357,6 @@ export default function FusionChefAI() {
         })
       });
       const data = await res.json();
-      console.log("Gemini response:", JSON.stringify(data));
       const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || "Hmm, let me think on that...";
       setMessages(m => [...m, { role: "ai", content: reply }]);
     } catch {
