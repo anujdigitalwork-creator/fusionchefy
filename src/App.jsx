@@ -345,18 +345,19 @@ export default function FusionChefAI() {
     setMessages(m => [...m, { role: "user", content: query }]);
     setLoading(true);
     try {
-      const res = await fetch("https://api.anthropic.com/v1/messages", {
+      const GEMINI_KEY = "AIzaSyDvWCpdOnU0fDd-173TmWU-1pM4-umw6pY";
+      const systemPrompt = "You are FusionChef AI, a warm and creative culinary AI. When users ask for recipes, respond with a catchy dish name, 5-7 key ingredients, 3-4 brief cooking steps, and a helpful tip. Keep it enthusiastic and under 250 words.";
+      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          model: "claude-sonnet-4-20250514",
-          max_tokens: 1000,
-          system: "You are FusionChef AI, a warm and creative culinary AI on a food website. When users ask for recipes or cooking help, respond with a recipe that includes: a catchy dish name, 5-7 key ingredients (as a short list), 3-4 brief cooking steps, and a helpful tip. Keep it conversational, enthusiastic, and under 250 words. Format nicely with a title and sections.",
-          messages: [{ role: "user", content: query }]
+          contents: [{ parts: [{ text: systemPrompt + "
+
+User: " + query }] }]
         })
       });
       const data = await res.json();
-      const reply = data.content?.map(b => b.text || "").join("") || "Hmm, let me think on that...";
+      const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || "Hmm, let me think on that...";
       setMessages(m => [...m, { role: "ai", content: reply }]);
     } catch {
       setMessages(m => [...m, { role: "ai", content: "Oops! My kitchen is a bit busy. Please try again in a moment. 🍳" }]);
