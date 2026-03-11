@@ -210,6 +210,23 @@ const styles = `
   .footer-col ul li a:hover { color: var(--saffron); }
   .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.5rem; text-align: center; font-size: 0.8rem; max-width: 1100px; margin: 0 auto; }
 
+  /* SEARCH MODAL */
+  .search-modal { background: white; border-radius: 20px; max-width: 700px; width: 100%; max-height: 85vh; overflow-y: auto; animation: slideUp 0.3s ease; }
+  .search-modal-header { padding: 1.5rem 1.8rem; border-bottom: 1px solid var(--cream-dark); display: flex; align-items: center; justify-content: space-between; }
+  .search-modal-header h3 { font-size: 1.2rem; color: var(--charcoal); }
+  .search-modal-header span { color: var(--text-muted); font-size: 0.85rem; }
+  .search-results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; padding: 1.5rem; }
+  .search-result-card { background: var(--cream); border-radius: 12px; overflow: hidden; cursor: pointer; transition: all 0.3s; }
+  .search-result-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+  .search-result-img { height: 130px; overflow: hidden; }
+  .search-result-img img { width: 100%; height: 100%; object-fit: cover; }
+  .search-result-body { padding: 0.8rem; }
+  .search-result-body h4 { font-size: 0.9rem; color: var(--charcoal); margin-bottom: 0.3rem; line-height: 1.4; }
+  .search-result-meta { font-size: 0.75rem; color: var(--text-muted); }
+  .search-empty { padding: 3rem; text-align: center; color: var(--text-muted); }
+  .search-loading { padding: 3rem; text-align: center; }
+  .ai-badge { display: inline-block; background: var(--saffron); color: white; font-size: 0.65rem; padding: 0.15rem 0.5rem; border-radius: 10px; margin-left: 0.4rem; vertical-align: middle; }
+
   /* MODAL */
   .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 200; display: flex; align-items: center; justify-content: center; padding: 1rem; backdrop-filter: blur(4px); animation: fadeIn 0.2s ease; }
   @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -307,6 +324,10 @@ export default function FusionChefAI() {
   const [subscribed, setSubscribed] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [recipeModal, setRecipeModal] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+  const [searchModal, setSearchModal] = useState(false);
+  const [searchLoading, setSearchLoading] = useState(false);
   const [chefModal, setChefModal] = useState(null);
   const [catModal, setCatModal] = useState(null);
   const messagesEndRef = useRef(null);
@@ -364,6 +385,44 @@ export default function FusionChefAI() {
       setMessages(m => [...m, { role: "ai", content: "Oops! My kitchen is a bit busy. Please try again in a moment. 🍳" }]);
     }
     setLoading(false);
+  };
+
+  const handleSearch = async (q) => {
+    const query = (q || searchQuery).trim();
+    if (!query) return;
+    setSearchModal(true);
+    setSearchLoading(true);
+    // Search existing recipes first
+    const local = trending.filter(r =>
+      r.title.toLowerCase().includes(query.toLowerCase()) ||
+      r.chef.toLowerCase().includes(query.toLowerCase()) ||
+      r.ingredients.some(i => i.toLowerCase().includes(query.toLowerCase()))
+    );
+    setSearchResults(local);
+    // Then AI generates more
+    try {
+      const GROQ_KEY = "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";
+      const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_KEY },
+        body: JSON.stringify({
+          model: "llama-3.1-8b-instant",
+          messages: [
+            { role: "system", content: "You are FusionChef AI. Generate exactly 2 recipe suggestions for the search query. Respond ONLY with a JSON array like: [{title,chef,time,difficulty,ingredients,steps,img}]. For img use: https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80. difficulty must be easy/medium/hard." },
+            { role: "user", content: "Search query: " + query }
+          ],
+          max_tokens: 800, temperature: 0.7
+        })
+      });
+      const data = await res.json();
+      const text = data.choices?.[0]?.message?.content || "[]";
+      const jsonMatch = text.match(/\[.*\]/s);
+      if (jsonMatch) {
+        const aiRecipes = JSON.parse(jsonMatch[0]);
+        setSearchResults(prev => [...prev, ...aiRecipes]);
+      }
+    } catch(e) { console.log(e); }
+    setSearchLoading(false);
   };
 
   const navLinks = [
@@ -457,6 +516,42 @@ export default function FusionChefAI() {
         </div>
       )}
 
+      {/* SEARCH MODAL */}
+      {searchModal && (
+        <div className="modal-overlay" onClick={() => setSearchModal(false)}>
+          <div className="modal-wrapper" onClick={e => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setSearchModal(false)}>✕</button>
+            <div className="search-modal">
+              <div className="search-modal-header">
+                <h3>Results for "<em style={{color:"var(--saffron)"}}>{searchQuery}</em>"</h3>
+                <span>{searchResults.length} found {searchLoading && "· AI generating more..."}</span>
+              </div>
+              {searchLoading && searchResults.length === 0 ? (
+                <div className="search-loading"><div className="typing"><span/><span/><span/></div></div>
+              ) : searchResults.length === 0 ? (
+                <div className="search-empty">
+                  <p style={{fontSize:"2rem"}}>🔍</p>
+                  <p>No recipes found. Try a different search!</p>
+                </div>
+              ) : (
+                <div className="search-results-grid">
+                  {searchResults.map((r, i) => (
+                    <div key={i} className="search-result-card" onClick={() => { setSearchModal(false); setRecipeModal(r); }}>
+                      <div className="search-result-img"><img src={r.img} alt={r.title} onError={e => e.target.src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80"} /></div>
+                      <div className="search-result-body">
+                        <div className="recipe-chef">{r.chef} {i >= (trending.filter(t => t.title.toLowerCase().includes(searchQuery.toLowerCase())).length) && <span className="ai-badge">AI</span>}</div>
+                        <h4>{r.title}</h4>
+                        <div className="search-result-meta">⏱ {r.time} · {r.difficulty}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* NAV */}
       <nav className={`nav${scrolled ? " scrolled" : ""}`}>
         <div className="nav-logo" onClick={() => window.scrollTo({top:0,behavior:"smooth"})}>
@@ -469,7 +564,7 @@ export default function FusionChefAI() {
           ))}
         </ul>
         <div className="nav-right">
-          <input className="nav-search" placeholder="Search recipes..." />
+          <input className="nav-search" placeholder="Search recipes..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)} onKeyDown={e => e.key === "Enter" && handleSearch()} />
           <button className="btn-ai" onClick={() => scrollToSection("ai-chef")}>✨ Ask AI Chef</button>
         </div>
       </nav>
