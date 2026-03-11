@@ -2066,12 +2066,8 @@ export default function FusionChefAI() {
   };
 
   const navLinks = [
-    { label: "Recipes", id: "recipes" },
     { label: "AI Chef", id: "ai-chef" },
-    { label: "Shows", id: "shows" },
-    { label: "Cuisines", id: "categories" },
     { label: "Trending", id: "trending" },
-    { label: "Magazine", id: "blog" },
   ];
 
   return (
