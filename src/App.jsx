@@ -392,14 +392,15 @@ export default function FusionChefAI() {
     if (!query) return;
     setSearchModal(true);
     setSearchLoading(true);
-    // Search existing recipes first
+    setSearchResults([]);
+    // Search existing recipes
     const local = trending.filter(r =>
       r.title.toLowerCase().includes(query.toLowerCase()) ||
       r.chef.toLowerCase().includes(query.toLowerCase()) ||
-      r.ingredients.some(i => i.toLowerCase().includes(query.toLowerCase()))
-    );
+      (r.ingredients && r.ingredients.some(i => i.toLowerCase().includes(query.toLowerCase())))
+    ).map(r => ({ ...r, isAI: false }));
     setSearchResults(local);
-    // Then AI generates more
+    // AI generates more results
     try {
       const GROQ_KEY = "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";
       const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
@@ -408,20 +409,20 @@ export default function FusionChefAI() {
         body: JSON.stringify({
           model: "llama-3.1-8b-instant",
           messages: [
-            { role: "system", content: "You are FusionChef AI. Generate exactly 2 recipe suggestions for the search query. Respond ONLY with a JSON array like: [{title,chef,time,difficulty,ingredients,steps,img}]. For img use: https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80. difficulty must be easy/medium/hard." },
-            { role: "user", content: "Search query: " + query }
+            { role: "system", content: "You are FusionChef AI. Generate exactly 3 recipe suggestions for the search query. Respond ONLY with a valid JSON array, no extra text. Format: [{"title":"...","chef":"Chef Name","time":"30 min","difficulty":"easy","ingredients":["item1","item2","item3","item4","item5"],"steps":["Step 1","Step 2","Step 3"],"img":"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80","isAI":true}]" },
+            { role: "user", content: "Search: " + query }
           ],
-          max_tokens: 800, temperature: 0.7
+          max_tokens: 1000, temperature: 0.7
         })
       });
       const data = await res.json();
       const text = data.choices?.[0]?.message?.content || "[]";
-      const jsonMatch = text.match(/\[.*\]/s);
+      const jsonMatch = text.match(/\[[\s\S]*\]/);
       if (jsonMatch) {
-        const aiRecipes = JSON.parse(jsonMatch[0]);
+        const aiRecipes = JSON.parse(jsonMatch[0]).map(r => ({ ...r, isAI: true }));
         setSearchResults(prev => [...prev, ...aiRecipes]);
       }
-    } catch(e) { console.log(e); }
+    } catch(e) { console.log("Search AI error:", e); }
     setSearchLoading(false);
   };
 
@@ -539,7 +540,7 @@ export default function FusionChefAI() {
                     <div key={i} className="search-result-card" onClick={() => { setSearchModal(false); setRecipeModal(r); }}>
                       <div className="search-result-img"><img src={r.img} alt={r.title} onError={e => e.target.src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80"} /></div>
                       <div className="search-result-body">
-                        <div className="recipe-chef">{r.chef} {i >= (trending.filter(t => t.title.toLowerCase().includes(searchQuery.toLowerCase())).length) && <span className="ai-badge">AI</span>}</div>
+                        <div className="recipe-chef">{r.chef} {r.isAI && <span className="ai-badge">✨ AI</span>}</div>
                         <h4>{r.title}</h4>
                         <div className="search-result-meta">⏱ {r.time} · {r.difficulty}</div>
                       </div>
