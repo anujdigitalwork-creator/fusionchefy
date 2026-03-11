@@ -345,14 +345,16 @@ export default function FusionChefAI() {
     setMessages(m => [...m, { role: "user", content: query }]);
     setLoading(true);
     try {
-      const OPENROUTER_KEY = "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";
+      const GROQ_KEY = "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";
       const systemPrompt = "You are FusionChef AI, a warm and creative culinary AI. When users ask for recipes, respond with a catchy dish name, 5-7 key ingredients, 3-4 brief cooking steps, and a helpful tip. Keep it enthusiastic and under 250 words.";
-      const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+      const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
         method: "POST",
-        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + OPENROUTER_KEY, "HTTP-Referer": "https://fusionchefy.vercel.app" },
+        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_KEY },
         body: JSON.stringify({
-          model: "mistralai/mistral-7b-instruct:free",
-          messages: [{ role: "system", content: systemPrompt }, { role: "user", content: query }]
+          model: "llama3-8b-8192",
+          messages: [{ role: "system", content: systemPrompt }, { role: "user", content: query }],
+          max_tokens: 500,
+          temperature: 0.8
         })
       });
       const data = await res.json();
