@@ -2390,7 +2390,7 @@ export default function FusionChefAI() {
             </div>
             <div className="cat-grid">
               {continent.cuisines.map(c => (
-                <div key={c.name} className="cat-card" onClick={() => { if(c.name.indexOf("Indian") !== -1) { setIndianPage(true); } else { setCatModal({...c, count: Math.floor(Math.random()*200+80) + " recipes"}); } }}>
+                <div key={c.name} className="cat-card" onClick={() => { console.log("Clicked:", c.name); if(c.name.indexOf("Indian") !== -1) { setIndianPage(true); } else { setCatModal({...c, count: Math.floor(Math.random()*200+80) + " recipes"}); } }}>
                   <img src={c.img} alt={c.name} />
                   <div className="cat-overlay" />
                   <div className="cat-info">
