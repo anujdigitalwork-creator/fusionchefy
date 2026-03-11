@@ -345,19 +345,18 @@ export default function FusionChefAI() {
     setMessages(m => [...m, { role: "user", content: query }]);
     setLoading(true);
     try {
-      const GEMINI_KEY = "AIzaSyDvWCpdOnU0fDd-173TmWU-1pM4-umw6pY";
+      const OPENROUTER_KEY = "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";
       const systemPrompt = "You are FusionChef AI, a warm and creative culinary AI. When users ask for recipes, respond with a catchy dish name, 5-7 key ingredients, 3-4 brief cooking steps, and a helpful tip. Keep it enthusiastic and under 250 words.";
-      const res = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent", {
+      const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
-        headers: { "Content-Type": "application/json", "x-goog-api-key": GEMINI_KEY },
+        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + OPENROUTER_KEY, "HTTP-Referer": "https://fusionchefy.vercel.app" },
         body: JSON.stringify({
-          system_instruction: { parts: [{ text: systemPrompt }] },
-          contents: [{ role: "user", parts: [{ text: query }] }],
-          generationConfig: { maxOutputTokens: 500, temperature: 0.8 }
+          model: "mistralai/mistral-7b-instruct:free",
+          messages: [{ role: "system", content: systemPrompt }, { role: "user", content: query }]
         })
       });
       const data = await res.json();
-      const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || "Hmm, let me think on that...";
+      const reply = data.choices?.[0]?.message?.content || "Hmm, let me think on that...";
       setMessages(m => [...m, { role: "ai", content: reply }]);
     } catch {
       setMessages(m => [...m, { role: "ai", content: "Oops! My kitchen is a bit busy. Please try again in a moment. 🍳" }]);
