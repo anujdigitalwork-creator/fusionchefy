@@ -34,7 +34,7 @@ const styles = `
   .nav-logo span.logo-text { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: white; }
   .nav-logo span.logo-ai { color: var(--saffron); font-style: italic; }
   .nav-links { display: flex; gap: 1.8rem; list-style: none; }
-  .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.2s; }
+  .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.2s; cursor: pointer; }
   .nav-links a:hover { color: var(--saffron); }
   .nav-right { display: flex; align-items: center; gap: 1rem; }
   .nav-search { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 24px; padding: 0.4rem 1rem; color: white; font-size: 0.85rem; width: 180px; outline: none; font-family: 'DM Sans', sans-serif; transition: all 0.3s; }
@@ -44,24 +44,12 @@ const styles = `
   .btn-ai:hover { background: var(--saffron-light); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(232,98,26,0.4); }
 
   /* HERO */
-  .hero {
-    margin-top: 64px; height: 88vh; min-height: 560px; position: relative; overflow: hidden;
-    background: var(--charcoal);
-  }
+  .hero { margin-top: 64px; height: 88vh; min-height: 560px; position: relative; overflow: hidden; background: var(--charcoal); }
   .hero-slides { width: 100%; height: 100%; position: relative; }
-  .hero-slide {
-    position: absolute; inset: 0; opacity: 0; transition: opacity 1.2s ease;
-    background-size: cover; background-position: center;
-  }
+  .hero-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1.2s ease; background-size: cover; background-position: center; }
   .hero-slide.active { opacity: 1; }
-  .hero-overlay {
-    position: absolute; inset: 0;
-    background: linear-gradient(135deg, rgba(28,28,28,0.75) 0%, rgba(28,28,28,0.2) 60%, transparent 100%);
-  }
-  .hero-content {
-    position: absolute; bottom: 12%; left: 6%; max-width: 580px;
-    animation: fadeUp 1s ease forwards;
-  }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(28,28,28,0.75) 0%, rgba(28,28,28,0.2) 60%, transparent 100%); }
+  .hero-content { position: absolute; bottom: 12%; left: 6%; max-width: 580px; animation: fadeUp 1s ease forwards; }
   @keyframes fadeUp { from { opacity:0; transform: translateY(30px); } to { opacity:1; transform: translateY(0); } }
   .hero-tag { display: inline-block; background: var(--saffron); color: white; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.9rem; border-radius: 2px; margin-bottom: 1rem; }
   .hero h1 { font-size: clamp(2.4rem, 5vw, 4rem); color: white; line-height: 1.12; margin-bottom: 1rem; text-shadow: 0 2px 20px rgba(0,0,0,0.4); }
@@ -85,26 +73,18 @@ const styles = `
 
   /* AI CHEF SECTION */
   .ai-section { background: var(--charcoal); padding: 5rem 2.5rem; position: relative; overflow: hidden; }
-  .ai-section::before {
-    content: ''; position: absolute; top: -50%; right: -10%; width: 600px; height: 600px;
-    background: radial-gradient(circle, rgba(232,98,26,0.12) 0%, transparent 70%);
-    pointer-events: none;
-  }
+  .ai-section::before { content: ''; position: absolute; top: -50%; right: -10%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(232,98,26,0.12) 0%, transparent 70%); pointer-events: none; }
   .ai-section .section-tag { color: var(--saffron-light); }
   .ai-section .section-title { color: white; }
   .ai-section .section-sub { color: rgba(255,255,255,0.55); }
   .ai-container { max-width: 760px; margin: 0 auto; }
-  .ai-chat-box {
-    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 16px; overflow: hidden; backdrop-filter: blur(10px);
-  }
+  .ai-chat-box { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; overflow: hidden; backdrop-filter: blur(10px); }
   .ai-chat-header { background: rgba(232,98,26,0.15); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 1rem 1.5rem; display: flex; align-items: center; gap: 0.8rem; }
   .ai-chef-avatar { width: 36px; height: 36px; background: var(--saffron); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
   .ai-chat-header-text h4 { color: white; font-size: 0.95rem; font-family: 'Playfair Display', serif; }
   .ai-chat-header-text span { color: rgba(255,255,255,0.5); font-size: 0.75rem; }
   .ai-messages { padding: 1.5rem; min-height: 180px; max-height: 340px; overflow-y: auto; display: flex; flex-direction: column; gap: 1rem; }
   .ai-messages::-webkit-scrollbar { width: 4px; }
-  .ai-messages::-webkit-scrollbar-track { background: transparent; }
   .ai-messages::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
   .msg { max-width: 85%; padding: 0.8rem 1.1rem; border-radius: 12px; font-size: 0.9rem; line-height: 1.6; }
   .msg.user { background: var(--saffron); color: white; align-self: flex-end; border-bottom-right-radius: 4px; }
@@ -129,11 +109,7 @@ const styles = `
   /* CATEGORIES */
   .categories-section { background: var(--cream); }
   .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.2rem; max-width: 1200px; margin: 0 auto; }
-  .cat-card {
-    position: relative; height: 200px; border-radius: 12px; overflow: hidden; cursor: pointer;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
+  .cat-card { position: relative; height: 200px; border-radius: 12px; overflow: hidden; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.12); transition: transform 0.3s, box-shadow 0.3s; }
   .cat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 36px rgba(0,0,0,0.2); }
   .cat-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
   .cat-card:hover img { transform: scale(1.08); }
@@ -152,13 +128,12 @@ const styles = `
   .recipe-card-img { position: relative; height: 180px; overflow: hidden; }
   .recipe-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
   .recipe-card:hover .recipe-card-img img { transform: scale(1.06); }
-  .recipe-badge { position: absolute; top: 0.8rem; left: 0.8rem; background: var(--green); color: white; font-size: 0.7rem; font-weight: 600; padding: 0.25rem 0.65rem; border-radius: 20px; letter-spacing: 0.05em; }
+  .recipe-badge { position: absolute; top: 0.8rem; left: 0.8rem; color: white; font-size: 0.7rem; font-weight: 600; padding: 0.25rem 0.65rem; border-radius: 20px; letter-spacing: 0.05em; }
   .recipe-badge.easy { background: var(--green); }
   .recipe-badge.medium { background: var(--gold); }
   .recipe-badge.hard { background: #C0392B; }
   .heart-btn { position: absolute; top: 0.8rem; right: 0.8rem; background: white; border: none; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; font-size: 1rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: transform 0.2s; }
   .heart-btn:hover { transform: scale(1.2); }
-  .heart-btn.liked { color: #e74c3c; }
   .recipe-card-body { padding: 1rem 1.1rem; }
   .recipe-card-body h3 { font-size: 1rem; color: var(--charcoal); margin-bottom: 0.4rem; line-height: 1.4; }
   .recipe-meta { display: flex; align-items: center; gap: 1rem; font-size: 0.78rem; color: var(--text-muted); margin-top: 0.6rem; }
@@ -209,21 +184,9 @@ const styles = `
   .blog-meta { display: flex; gap: 1rem; font-size: 0.75rem; color: var(--text-muted); }
 
   /* NEWSLETTER */
-  .newsletter-section {
-    background: var(--saffron);
-    padding: 4.5rem 2.5rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  .newsletter-section::before {
-    content: '🍳'; font-size: 14rem; position: absolute; left: -2rem; top: -2rem;
-    opacity: 0.07; transform: rotate(-20deg); pointer-events: none;
-  }
-  .newsletter-section::after {
-    content: '🌿'; font-size: 14rem; position: absolute; right: -2rem; bottom: -2rem;
-    opacity: 0.07; transform: rotate(20deg); pointer-events: none;
-  }
+  .newsletter-section { background: var(--saffron); padding: 4.5rem 2.5rem; text-align: center; position: relative; overflow: hidden; }
+  .newsletter-section::before { content: '🍳'; font-size: 14rem; position: absolute; left: -2rem; top: -2rem; opacity: 0.07; transform: rotate(-20deg); pointer-events: none; }
+  .newsletter-section::after { content: '🌿'; font-size: 14rem; position: absolute; right: -2rem; bottom: -2rem; opacity: 0.07; transform: rotate(20deg); pointer-events: none; }
   .newsletter-section h2 { color: white; font-size: clamp(1.8rem, 3vw, 2.6rem); margin-bottom: 0.8rem; }
   .newsletter-section p { color: rgba(255,255,255,0.85); font-size: 1rem; margin-bottom: 2rem; }
   .newsletter-form { display: flex; gap: 0; max-width: 460px; margin: 0 auto; border-radius: 6px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.2); }
@@ -247,11 +210,44 @@ const styles = `
   .footer-col ul li a:hover { color: var(--saffron); }
   .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.5rem; text-align: center; font-size: 0.8rem; max-width: 1100px; margin: 0 auto; }
 
+  /* MODAL */
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 200; display: flex; align-items: center; justify-content: center; padding: 1rem; backdrop-filter: blur(4px); animation: fadeIn 0.2s ease; }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  .modal { background: white; border-radius: 20px; max-width: 600px; width: 100%; max-height: 90vh; overflow-y: auto; animation: slideUp 0.3s ease; }
+  @keyframes slideUp { from { opacity:0; transform: translateY(30px); } to { opacity:1; transform: translateY(0); } }
+  .modal-img { width: 100%; height: 260px; object-fit: cover; border-radius: 20px 20px 0 0; }
+  .modal-body { padding: 1.8rem; }
+  .modal-body h2 { font-size: 1.6rem; color: var(--charcoal); margin-bottom: 0.5rem; }
+  .modal-meta { display: flex; gap: 1rem; font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.2rem; flex-wrap: wrap; }
+  .modal-meta span { background: var(--cream); padding: 0.3rem 0.8rem; border-radius: 20px; }
+  .modal-section-title { font-size: 1rem; font-weight: 600; color: var(--saffron); margin: 1.2rem 0 0.6rem; font-family: 'Playfair Display', serif; }
+  .modal-ingredients { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; }
+  .modal-ingredients li { font-size: 0.88rem; color: var(--charcoal); padding: 0.3rem 0; border-bottom: 1px solid var(--cream-dark); }
+  .modal-ingredients li::before { content: '• '; color: var(--saffron); }
+  .modal-steps { list-style: none; counter-reset: steps; }
+  .modal-steps li { counter-increment: steps; font-size: 0.88rem; color: var(--charcoal); padding: 0.6rem 0 0.6rem 2.5rem; border-bottom: 1px solid var(--cream-dark); position: relative; line-height: 1.6; }
+  .modal-steps li::before { content: counter(steps); position: absolute; left: 0; top: 0.6rem; width: 22px; height: 22px; background: var(--saffron); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.72rem; font-weight: 700; }
+  .modal-close { position: absolute; top: 1rem; right: 1rem; background: white; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 1.1rem; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+  .modal-close:hover { background: var(--saffron); color: white; }
+  .modal-wrapper { position: relative; }
+  .modal-chef-avatar { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 4px solid var(--saffron); margin: 0 auto 1rem; display: block; }
+  .modal-chef-body { padding: 2rem; text-align: center; }
+  .modal-chef-body h2 { font-size: 1.6rem; color: var(--charcoal); }
+  .modal-chef-specialty { color: var(--saffron); font-weight: 600; margin: 0.3rem 0 1rem; }
+  .modal-chef-bio { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; text-align: left; }
+  .modal-chef-stats { display: flex; gap: 1rem; justify-content: center; margin: 1.2rem 0; }
+  .modal-chef-stat { text-align: center; background: var(--cream); padding: 0.8rem 1.2rem; border-radius: 12px; }
+  .modal-chef-stat strong { display: block; font-size: 1.1rem; color: var(--charcoal); }
+  .modal-chef-stat span { font-size: 0.75rem; color: var(--text-muted); }
+  .btn-ask-chef { background: var(--saffron); color: white; border: none; padding: 0.8rem 1.8rem; border-radius: 24px; font-size: 0.92rem; font-weight: 600; cursor: pointer; font-family: 'DM Sans', sans-serif; margin-top: 1rem; transition: all 0.2s; }
+  .btn-ask-chef:hover { background: var(--saffron-light); transform: translateY(-2px); }
+
   @media (max-width: 768px) {
     .nav-links { display: none; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
     .hero h1 { font-size: 2rem; }
     .section { padding: 3.5rem 1.2rem; }
+    .modal-ingredients { grid-template-columns: 1fr; }
   }
 `;
 
@@ -262,28 +258,28 @@ const heroSlides = [
 ];
 
 const categories = [
-  { name: "Breakfast", count: "248 recipes", img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&q=80" },
-  { name: "Quick Dinners", count: "185 recipes", img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" },
-  { name: "Vegetarian", count: "312 recipes", img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" },
-  { name: "Baking", count: "167 recipes", img: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&q=80" },
-  { name: "World Cuisine", count: "420 recipes", img: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&q=80" },
-  { name: "Healthy Eats", count: "209 recipes", img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80" },
+  { name: "Breakfast", count: "248 recipes", img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&q=80", recipes: ["Avocado Toast with Poached Eggs", "Fluffy Buttermilk Pancakes", "Overnight Oats with Berries"] },
+  { name: "Quick Dinners", count: "185 recipes", img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80", recipes: ["15-Minute Garlic Pasta", "Sheet Pan Chicken & Veggies", "Quick Stir-Fry Noodles"] },
+  { name: "Vegetarian", count: "312 recipes", img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80", recipes: ["Lentil Dal Curry", "Mushroom Risotto", "Veggie Buddha Bowl"] },
+  { name: "Baking", count: "167 recipes", img: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&q=80", recipes: ["Classic Banana Bread", "Sourdough Loaf", "Chocolate Lava Cake"] },
+  { name: "World Cuisine", count: "420 recipes", img: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&q=80", recipes: ["Thai Green Curry", "Moroccan Tagine", "Japanese Ramen"] },
+  { name: "Healthy Eats", count: "209 recipes", img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80", recipes: ["Quinoa Power Bowl", "Grilled Salmon Salad", "Green Smoothie Bowl"] },
 ];
 
 const trending = [
-  { title: "Spicy Mango Chicken Tacos", chef: "Chef Aria Voss", time: "25 min", difficulty: "easy", img: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80" },
-  { title: "Roasted Tomato Bisque", chef: "Chef Marco Lin", time: "40 min", difficulty: "easy", img: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80" },
-  { title: "Lamb Tagine with Couscous", chef: "Chef Nadia Osei", time: "1h 20min", difficulty: "medium", img: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&q=80" },
-  { title: "Japanese Katsu Curry", chef: "Chef Kenji Mori", time: "50 min", difficulty: "medium", img: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?w=400&q=80" },
-  { title: "Caramel Lava Cake", chef: "Chef Elise Blanc", time: "30 min", difficulty: "hard", img: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80" },
-  { title: "Summer Panzanella Salad", chef: "Chef Giulia Rossi", time: "15 min", difficulty: "easy", img: "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&q=80" },
+  { title: "Spicy Mango Chicken Tacos", chef: "Chef Aria Voss", time: "25 min", difficulty: "easy", img: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80", ingredients: ["Chicken thighs", "Fresh mango", "Lime juice", "Jalapeño", "Corn tortillas", "Cilantro", "Sour cream"], steps: ["Marinate chicken in lime, chili, and mango juice for 15 mins.", "Grill chicken on high heat for 5-6 mins per side until charred.", "Dice fresh mango and mix with cilantro and lime for salsa.", "Warm tortillas and assemble with chicken, mango salsa, and sour cream."] },
+  { title: "Roasted Tomato Bisque", chef: "Chef Marco Lin", time: "40 min", difficulty: "easy", img: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80", ingredients: ["Ripe tomatoes", "Garlic cloves", "Heavy cream", "Basil leaves", "Onion", "Olive oil", "Vegetable broth"], steps: ["Roast tomatoes and garlic at 200°C for 25 mins.", "Sauté onions in olive oil until golden.", "Blend roasted tomatoes with sautéed onions and broth.", "Stir in cream and fresh basil, season to taste."] },
+  { title: "Lamb Tagine with Couscous", chef: "Chef Nadia Osei", time: "1h 20min", difficulty: "medium", img: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&q=80", ingredients: ["Lamb shoulder", "Apricots", "Chickpeas", "Ras el hanout", "Onion", "Couscous", "Cilantro"], steps: ["Brown lamb pieces in batches with spices.", "Add onions, apricots, chickpeas and stock to pot.", "Simmer on low heat for 1 hour until tender.", "Serve over fluffy couscous with fresh cilantro."] },
+  { title: "Japanese Katsu Curry", chef: "Chef Kenji Mori", time: "50 min", difficulty: "medium", img: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?w=400&q=80", ingredients: ["Pork cutlets", "Curry roux blocks", "Potato", "Carrot", "Onion", "Panko breadcrumbs", "Steamed rice"], steps: ["Bread pork cutlets in flour, egg, and panko.", "Deep fry at 170°C for 4-5 mins until golden.", "Simmer curry with veggies and roux blocks.", "Slice katsu and serve over rice with curry sauce."] },
+  { title: "Caramel Lava Cake", chef: "Chef Elise Blanc", time: "30 min", difficulty: "hard", img: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80", ingredients: ["Dark chocolate", "Butter", "Eggs", "Sugar", "Flour", "Caramel sauce", "Vanilla"], steps: ["Melt chocolate and butter together gently.", "Whisk eggs and sugar until pale and fluffy.", "Fold in chocolate mixture and flour carefully.", "Bake at 200°C for exactly 12 mins — center stays molten."] },
+  { title: "Summer Panzanella Salad", chef: "Chef Giulia Rossi", time: "15 min", difficulty: "easy", img: "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&q=80", ingredients: ["Ciabatta bread", "Heirloom tomatoes", "Cucumber", "Red onion", "Basil", "Olive oil", "Red wine vinegar"], steps: ["Toast bread cubes in olive oil until golden.", "Chop tomatoes, cucumber, and onion.", "Toss everything with olive oil and red wine vinegar.", "Let sit for 10 mins so bread absorbs the juices."] },
 ];
 
 const chefs = [
-  { name: "Aria Voss", specialty: "Modern Fusion", followers: "2.4M", dish: "🌶 Signature: Miso Glazed Duck", img: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=200&q=80" },
-  { name: "Marco Lin", specialty: "Italian Heritage", followers: "1.8M", dish: "🍝 Signature: Truffle Carbonara", img: "https://images.unsplash.com/photo-1546961342-ea5f62d5a27b?w=200&q=80" },
-  { name: "Nadia Osei", specialty: "West African", followers: "950K", dish: "🍲 Signature: Suya Spiced Lamb", img: "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=200&q=80" },
-  { name: "Kenji Mori", specialty: "Japanese Cuisine", followers: "3.1M", dish: "🍱 Signature: Wagyu Ramen", img: "https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=200&q=80" },
+  { name: "Aria Voss", specialty: "Modern Fusion", followers: "2.4M", dish: "🌶 Signature: Miso Glazed Duck", img: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=200&q=80", bio: "Chef Aria Voss trained in Tokyo and Paris before bringing her unique East-meets-West philosophy to the world stage. Known for bold flavors and unexpected ingredient pairings, her cooking challenges conventions and delights palates.", recipes: 142, awards: 8 },
+  { name: "Marco Lin", specialty: "Italian Heritage", followers: "1.8M", dish: "🍝 Signature: Truffle Carbonara", img: "https://images.unsplash.com/photo-1546961342-ea5f62d5a27b?w=200&q=80", bio: "Born in Bologna to a family of restaurateurs, Chef Marco Lin carries four generations of Italian culinary wisdom. His philosophy is simple: great ingredients, perfect technique, and lots of love.", recipes: 98, awards: 5 },
+  { name: "Nadia Osei", specialty: "West African", followers: "950K", dish: "🍲 Signature: Suya Spiced Lamb", img: "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=200&q=80", bio: "Chef Nadia Osei is on a mission to bring West African cuisine to the global fine dining scene. Growing up in Accra, she learned to cook from her grandmother and later trained at Le Cordon Bleu.", recipes: 76, awards: 4 },
+  { name: "Kenji Mori", specialty: "Japanese Cuisine", followers: "3.1M", dish: "🍱 Signature: Wagyu Ramen", img: "https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=200&q=80", bio: "Chef Kenji Mori is Japan's most-followed culinary personality. A master of both traditional washoku and modern Japanese gastronomy, he has earned three Michelin stars across his restaurants.", recipes: 215, awards: 12 },
 ];
 
 const shows = [
@@ -299,7 +295,6 @@ const blogs = [
 ];
 
 const chips = ["Chicken + lemon + garlic", "Pasta in 20 mins", "Vegan dessert ideas", "Leftover rice recipes"];
-
 const welcome = { role: "ai", content: <><h4>👋 Hello, I'm FusionChef AI!</h4>Tell me what ingredients you have, a cuisine you're craving, or any dietary needs — I'll craft a recipe just for you.</> };
 
 export default function FusionChefAI() {
@@ -311,7 +306,15 @@ export default function FusionChefAI() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [recipeModal, setRecipeModal] = useState(null);
+  const [chefModal, setChefModal] = useState(null);
+  const [catModal, setCatModal] = useState(null);
   const messagesEndRef = useRef(null);
+
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
     const timer = setInterval(() => setSlide(s => (s + 1) % heroSlides.length), 5000);
@@ -327,6 +330,13 @@ export default function FusionChefAI() {
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
+
+  // Close modal on Escape
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === "Escape") { setRecipeModal(null); setChefModal(null); setCatModal(null); } };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   const sendMessage = async (text) => {
     const query = (text || input).trim();
@@ -354,24 +364,111 @@ export default function FusionChefAI() {
     setLoading(false);
   };
 
+  const navLinks = [
+    { label: "Recipes", id: "recipes" },
+    { label: "AI Chef", id: "ai-chef" },
+    { label: "Shows", id: "shows" },
+    { label: "Cuisines", id: "categories" },
+    { label: "Trending", id: "trending" },
+    { label: "Magazine", id: "blog" },
+  ];
+
   return (
     <>
       <style>{styles}</style>
 
+      {/* RECIPE MODAL */}
+      {recipeModal && (
+        <div className="modal-overlay" onClick={() => setRecipeModal(null)}>
+          <div className="modal-wrapper" onClick={e => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setRecipeModal(null)}>✕</button>
+            <div className="modal">
+              <img src={recipeModal.img} alt={recipeModal.title} className="modal-img" />
+              <div className="modal-body">
+                <div className="recipe-chef">{recipeModal.chef}</div>
+                <h2>{recipeModal.title}</h2>
+                <div className="modal-meta">
+                  <span>⏱ {recipeModal.time}</span>
+                  <span>📊 {recipeModal.difficulty.charAt(0).toUpperCase()+recipeModal.difficulty.slice(1)}</span>
+                  <span>⭐ 4.8</span>
+                  <span>🍽 2-4 servings</span>
+                </div>
+                <div className="modal-section-title">Ingredients</div>
+                <ul className="modal-ingredients">
+                  {recipeModal.ingredients.map((ing, i) => <li key={i}>{ing}</li>)}
+                </ul>
+                <div className="modal-section-title">Instructions</div>
+                <ol className="modal-steps">
+                  {recipeModal.steps.map((step, i) => <li key={i}>{step}</li>)}
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* CHEF MODAL */}
+      {chefModal && (
+        <div className="modal-overlay" onClick={() => setChefModal(null)}>
+          <div className="modal-wrapper" onClick={e => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setChefModal(null)}>✕</button>
+            <div className="modal">
+              <div className="modal-chef-body">
+                <img src={chefModal.img} alt={chefModal.name} className="modal-chef-avatar" />
+                <h2>{chefModal.name}</h2>
+                <div className="modal-chef-specialty">{chefModal.specialty}</div>
+                <div className="modal-chef-stats">
+                  <div className="modal-chef-stat"><strong>{chefModal.followers}</strong><span>Followers</span></div>
+                  <div className="modal-chef-stat"><strong>{chefModal.recipes}</strong><span>Recipes</span></div>
+                  <div className="modal-chef-stat"><strong>{chefModal.awards}</strong><span>Awards</span></div>
+                </div>
+                <p className="modal-chef-bio">{chefModal.bio}</p>
+                <button className="btn-ask-chef" onClick={() => { setChefModal(null); scrollToSection("ai-chef"); }}>
+                  ✨ Ask AI Chef about {chefModal.name.split(" ")[0]}'s recipes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* CATEGORY MODAL */}
+      {catModal && (
+        <div className="modal-overlay" onClick={() => setCatModal(null)}>
+          <div className="modal-wrapper" onClick={e => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setCatModal(null)}>✕</button>
+            <div className="modal">
+              <img src={catModal.img} alt={catModal.name} className="modal-img" />
+              <div className="modal-body">
+                <h2>{catModal.name}</h2>
+                <p style={{color:"var(--text-muted)", marginBottom:"1rem"}}>{catModal.count} available</p>
+                <div className="modal-section-title">Popular in this Category</div>
+                <ul className="modal-steps">
+                  {catModal.recipes.map((r, i) => <li key={i}>{r}</li>)}
+                </ul>
+                <button className="btn-ask-chef" style={{marginTop:"1.2rem"}} onClick={() => { setCatModal(null); scrollToSection("ai-chef"); }}>
+                  ✨ Generate a {catModal.name} Recipe with AI
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* NAV */}
       <nav className={`nav${scrolled ? " scrolled" : ""}`}>
-        <div className="nav-logo">
+        <div className="nav-logo" onClick={() => window.scrollTo({top:0,behavior:"smooth"})}>
           <span style={{fontSize:"1.5rem"}}>🍴</span>
           <span className="logo-text">FusionChef <span className="logo-ai">AI</span></span>
         </div>
         <ul className="nav-links">
-          {["Recipes","AI Chef","Shows","Cuisines","Trending","Magazine"].map(l => (
-            <li key={l}><a href="#">{l}</a></li>
+          {navLinks.map(l => (
+            <li key={l.label}><a onClick={() => scrollToSection(l.id)}>{l.label}</a></li>
           ))}
         </ul>
         <div className="nav-right">
           <input className="nav-search" placeholder="Search recipes..." />
-          <button className="btn-ai">✨ Ask AI Chef</button>
+          <button className="btn-ai" onClick={() => scrollToSection("ai-chef")}>✨ Ask AI Chef</button>
         </div>
       </nav>
 
@@ -388,8 +485,8 @@ export default function FusionChefAI() {
           <h1>{heroSlides[slide].title}</h1>
           <p>{heroSlides[slide].desc}</p>
           <div className="hero-btns">
-            <button className="btn-primary">Explore Recipe</button>
-            <button className="btn-outline">✨ Generate with AI</button>
+            <button className="btn-primary" onClick={() => scrollToSection("trending")}>Explore Recipes</button>
+            <button className="btn-outline" onClick={() => scrollToSection("ai-chef")}>✨ Generate with AI</button>
           </div>
         </div>
         <div className="hero-dots">
@@ -400,7 +497,7 @@ export default function FusionChefAI() {
       </section>
 
       {/* AI CHEF */}
-      <section className="ai-section">
+      <section className="ai-section" id="ai-chef">
         <div className="section-header">
           <div className="section-tag">✨ Powered by Anthropic</div>
           <h2 className="section-title">Your Personal <em style={{color:"var(--saffron-light)"}}>AI Chef</em></h2>
@@ -427,13 +524,7 @@ export default function FusionChefAI() {
               <div ref={messagesEndRef} />
             </div>
             <div className="ai-input-row">
-              <input
-                className="ai-input"
-                placeholder="E.g. I have chicken, garlic, and spinach..."
-                value={input}
-                onChange={e => setInput(e.target.value)}
-                onKeyDown={e => e.key === "Enter" && sendMessage()}
-              />
+              <input className="ai-input" placeholder="E.g. I have chicken, garlic, and spinach..." value={input} onChange={e => setInput(e.target.value)} onKeyDown={e => e.key === "Enter" && sendMessage()} />
               <button className="ai-send" onClick={() => sendMessage()}>➤</button>
             </div>
           </div>
@@ -446,14 +537,14 @@ export default function FusionChefAI() {
       </section>
 
       {/* CATEGORIES */}
-      <section className="section categories-section">
+      <section className="section categories-section" id="categories">
         <div className="section-header">
           <div className="section-tag">Browse</div>
           <h2 className="section-title">Explore by <em>Category</em></h2>
         </div>
         <div className="cat-grid">
           {categories.map(c => (
-            <div key={c.name} className="cat-card">
+            <div key={c.name} className="cat-card" onClick={() => setCatModal(c)}>
               <img src={c.img} alt={c.name} />
               <div className="cat-overlay" />
               <div className="cat-info">
@@ -466,22 +557,19 @@ export default function FusionChefAI() {
       </section>
 
       {/* TRENDING */}
-      <section className="section trending-section">
+      <section className="section trending-section" id="trending">
         <div className="section-header">
           <div className="section-tag">🔥 Hot Right Now</div>
           <h2 className="section-title">Trending <em>This Week</em></h2>
           <p className="section-sub">Community favorites, curated fresh every week by our AI.</p>
         </div>
-        <div className="trending-scroll">
+        <div className="trending-scroll" id="recipes">
           {trending.map((r, i) => (
-            <div key={i} className="recipe-card">
+            <div key={i} className="recipe-card" onClick={() => setRecipeModal(r)}>
               <div className="recipe-card-img">
                 <img src={r.img} alt={r.title} />
                 <span className={`recipe-badge ${r.difficulty}`}>{r.difficulty.charAt(0).toUpperCase()+r.difficulty.slice(1)}</span>
-                <button
-                  className={`heart-btn${liked[i] ? " liked" : ""}`}
-                  onClick={() => setLiked(l => ({ ...l, [i]: !l[i] }))}
-                >
+                <button className={`heart-btn${liked[i] ? " liked" : ""}`} onClick={e => { e.stopPropagation(); setLiked(l => ({ ...l, [i]: !l[i] })); }}>
                   {liked[i] ? "❤️" : "🤍"}
                 </button>
               </div>
@@ -499,7 +587,7 @@ export default function FusionChefAI() {
       </section>
 
       {/* CHEFS */}
-      <section className="section chefs-section">
+      <section className="section chefs-section" id="chefs">
         <div className="section-header">
           <div className="section-tag">Meet the Team</div>
           <h2 className="section-title">Featured <em>Chefs</em></h2>
@@ -507,7 +595,7 @@ export default function FusionChefAI() {
         </div>
         <div className="chefs-grid">
           {chefs.map(c => (
-            <div key={c.name} className="chef-card">
+            <div key={c.name} className="chef-card" onClick={() => setChefModal(c)}>
               <img src={c.img} alt={c.name} className="chef-avatar" />
               <h3>{c.name}</h3>
               <div className="chef-specialty">{c.specialty}</div>
@@ -519,7 +607,7 @@ export default function FusionChefAI() {
       </section>
 
       {/* SHOWS */}
-      <section className="shows-section">
+      <section className="shows-section" id="shows">
         <div className="section-header">
           <div className="section-tag">🎬 Now Streaming</div>
           <h2 className="section-title">FusionChef <em style={{color:"var(--saffron-light)"}}>Shows</em></h2>
@@ -541,7 +629,7 @@ export default function FusionChefAI() {
       </section>
 
       {/* BLOG */}
-      <section className="section blog-section">
+      <section className="section blog-section" id="blog">
         <div className="section-header">
           <div className="section-tag">📖 Knowledge Kitchen</div>
           <h2 className="section-title">From the <em>FusionChef Kitchen</em></h2>
@@ -586,11 +674,11 @@ export default function FusionChefAI() {
           </div>
           <div className="footer-col">
             <h4>Recipes</h4>
-            <ul>{["Breakfast","Lunch","Dinner","Baking","Vegetarian","Healthy"].map(l => <li key={l}><a href="#">{l}</a></li>)}</ul>
+            <ul>{["Breakfast","Lunch","Dinner","Baking","Vegetarian","Healthy"].map(l => <li key={l}><a href="#" onClick={() => scrollToSection("categories")}>{l}</a></li>)}</ul>
           </div>
           <div className="footer-col">
             <h4>Discover</h4>
-            <ul>{["Shows","Chefs","Magazine","Trending","AI Chef","Classes"].map(l => <li key={l}><a href="#">{l}</a></li>)}</ul>
+            <ul>{[["Shows","shows"],["Chefs","chefs"],["Magazine","blog"],["Trending","trending"],["AI Chef","ai-chef"]].map(([l,id]) => <li key={l}><a href="#" onClick={() => scrollToSection(id)}>{l}</a></li>)}</ul>
           </div>
           <div className="footer-col">
             <h4>Company</h4>
