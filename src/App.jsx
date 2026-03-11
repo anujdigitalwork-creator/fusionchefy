@@ -447,21 +447,21 @@ export default function FusionChefAI() {
             <div className="modal">
               <img src={recipeModal.img} alt={recipeModal.title} className="modal-img" />
               <div className="modal-body">
-                <div className="recipe-chef">{recipeModal.chef}</div>
-                <h2>{recipeModal.title}</h2>
+                <div className="recipe-chef">{recipeModal.chef || "FusionChef AI"} {recipeModal.isAI && <span className="ai-badge">✨ AI</span>}</div>
+                <h2>{recipeModal.title || "Recipe"}</h2>
                 <div className="modal-meta">
-                  <span>⏱ {recipeModal.time}</span>
-                  <span>📊 {recipeModal.difficulty.charAt(0).toUpperCase()+recipeModal.difficulty.slice(1)}</span>
+                  <span>⏱ {recipeModal.time || "30 min"}</span>
+                  <span>📊 {recipeModal.difficulty ? recipeModal.difficulty.charAt(0).toUpperCase()+recipeModal.difficulty.slice(1) : "Easy"}</span>
                   <span>⭐ 4.8</span>
                   <span>🍽 2-4 servings</span>
                 </div>
                 <div className="modal-section-title">Ingredients</div>
                 <ul className="modal-ingredients">
-                  {recipeModal.ingredients.map((ing, i) => <li key={i}>{ing}</li>)}
+                  {(recipeModal.ingredients || ["Check recipe for ingredients"]).map((ing, i) => <li key={i}>{ing}</li>)}
                 </ul>
                 <div className="modal-section-title">Instructions</div>
                 <ol className="modal-steps">
-                  {recipeModal.steps.map((step, i) => <li key={i}>{step}</li>)}
+                  {(recipeModal.steps || ["Follow recipe instructions"]).map((step, i) => <li key={i}>{step}</li>)}
                 </ol>
               </div>
             </div>
