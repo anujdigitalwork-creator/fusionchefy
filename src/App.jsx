@@ -2350,7 +2350,7 @@ export default function FusionChefAI() {
                     <div className="rdb-grid">
                       {filtered.map((dish, i) => (
                         <div key={i} className="rdb-card" onClick={() => { setRecipeDB(false); setIndianModal(dish); setIndianPage(true); }}>
-                          <div className="rdb-card-img" style={{background: `linear-gradient(135deg, ${gradients[dish.category] || "#E8621A, #C9922A"})`}}>
+                          <div className="rdb-card-img" style={{background: "linear-gradient(135deg, " + (gradients[dish.category] || "#E8621A, #C9922A")}}>
                             <span>{emojis[dish.category] || "🍽"}</span>
                           </div>
                           <div className="rdb-card-body">
