@@ -530,7 +530,8 @@ const indianCuisineData = [
       "vegetarian",
       "vegan"
     ],
-    "image_prompt": "Ultra realistic professional food photography of golden crispy Indian samosas, beautifully plated on a rustic wooden board with green mint chutney, natural lighting, high-end restaurant presentation, shallow depth of field"
+    "image_prompt": "Ultra realistic professional food photography of golden crispy Indian samosas, beautifully plated on a rustic wooden board with green mint chutney, natural lighting, high-end restaurant presentation, shallow depth of field",
+    "img": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&q=80"
   },
   {
     "dish_name": "Paneer Tikka",
@@ -601,7 +602,8 @@ const indianCuisineData = [
       "vegetarian",
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic professional food photography of smoky charred paneer tikka on skewers, vibrant orange marinade, served with colorful bell peppers, editorial food magazine style, dark background"
+    "image_prompt": "Ultra realistic professional food photography of smoky charred paneer tikka on skewers, vibrant orange marinade, served with colorful bell peppers, editorial food magazine style, dark background",
+    "img": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&q=80"
   },
   {
     "dish_name": "Aloo Tikki",
@@ -667,7 +669,8 @@ const indianCuisineData = [
       "vegetarian",
       "vegan"
     ],
-    "image_prompt": "Ultra realistic food photography of crispy golden aloo tikki chaat, topped with colorful chutneys and yogurt, street food style, vibrant colors, editorial magazine style"
+    "image_prompt": "Ultra realistic food photography of crispy golden aloo tikki chaat, topped with colorful chutneys and yogurt, street food style, vibrant colors, editorial magazine style",
+    "img": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=400&q=80"
   },
   {
     "dish_name": "Dahi Puri",
@@ -733,7 +736,8 @@ const indianCuisineData = [
     "dietary_tags": [
       "vegetarian"
     ],
-    "image_prompt": "Ultra realistic food photography of dahi puri chaat, crispy shells filled with yogurt and colorful chutneys, Indian street food, vibrant overhead shot"
+    "image_prompt": "Ultra realistic food photography of dahi puri chaat, crispy shells filled with yogurt and colorful chutneys, Indian street food, vibrant overhead shot",
+    "img": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=400&q=80"
   },
   {
     "dish_name": "Onion Bhaji",
@@ -800,7 +804,8 @@ const indianCuisineData = [
       "vegan",
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic food photography of crispy golden onion bhaji fritters, stacked on parchment paper, served with yogurt dip, rustic dark background, dramatic lighting"
+    "image_prompt": "Ultra realistic food photography of crispy golden onion bhaji fritters, stacked on parchment paper, served with yogurt dip, rustic dark background, dramatic lighting",
+    "img": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80"
   },
   {
     "dish_name": "Mulligatawny Soup",
@@ -872,7 +877,8 @@ const indianCuisineData = [
       "vegan",
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic food photography of golden mulligatawny soup in a white bowl, cream swirl on top, fresh coriander garnish, elegant restaurant presentation"
+    "image_prompt": "Ultra realistic food photography of golden mulligatawny soup in a white bowl, cream swirl on top, fresh coriander garnish, elegant restaurant presentation",
+    "img": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80"
   },
   {
     "dish_name": "Tomato Shorba",
@@ -938,7 +944,8 @@ const indianCuisineData = [
       "vegetarian",
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic food photography of vibrant red tomato shorba soup, white cream swirl, fresh herb garnish, elegant white bowl, Indian fine dining"
+    "image_prompt": "Ultra realistic food photography of vibrant red tomato shorba soup, white cream swirl, fresh herb garnish, elegant white bowl, Indian fine dining",
+    "img": "https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?w=400&q=80"
   },
   {
     "dish_name": "Dal Shorba",
@@ -1005,7 +1012,8 @@ const indianCuisineData = [
       "vegan",
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic food photography of golden dal shorba in a ceramic bowl, tempered with ghee and cumin, fresh coriander, warm natural lighting"
+    "image_prompt": "Ultra realistic food photography of golden dal shorba in a ceramic bowl, tempered with ghee and cumin, fresh coriander, warm natural lighting",
+    "img": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80"
   },
   {
     "dish_name": "Butter Chicken",
@@ -1076,7 +1084,8 @@ const indianCuisineData = [
     "dietary_tags": [
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic professional food photography of rich creamy butter chicken in a copper bowl, vibrant orange sauce, garnished with cream swirl and fresh coriander, dark moody restaurant lighting"
+    "image_prompt": "Ultra realistic professional food photography of rich creamy butter chicken in a copper bowl, vibrant orange sauce, garnished with cream swirl and fresh coriander, dark moody restaurant lighting",
+    "img": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80"
   },
   {
     "dish_name": "Palak Paneer",
@@ -1148,7 +1157,8 @@ const indianCuisineData = [
       "vegetarian",
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic food photography of vibrant green palak paneer in a white bowl, golden paneer cubes, cream swirl on top, Indian restaurant presentation, natural lighting"
+    "image_prompt": "Ultra realistic food photography of vibrant green palak paneer in a white bowl, golden paneer cubes, cream swirl on top, Indian restaurant presentation, natural lighting",
+    "img": "https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=400&q=80"
   },
   {
     "dish_name": "Lamb Rogan Josh",
@@ -1219,7 +1229,8 @@ const indianCuisineData = [
     "dietary_tags": [
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic food photography of deep red Kashmiri lamb rogan josh, rich aromatic sauce, served in a copper karahi, saffron rice on side, dramatic moody lighting"
+    "image_prompt": "Ultra realistic food photography of deep red Kashmiri lamb rogan josh, rich aromatic sauce, served in a copper karahi, saffron rice on side, dramatic moody lighting",
+    "img": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&q=80"
   },
   {
     "dish_name": "Chicken Biryani",
@@ -1290,7 +1301,8 @@ const indianCuisineData = [
     "dietary_tags": [
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic professional food photography of fragrant chicken biryani, golden saffron rice with whole spices, served on a large platter, garnished with fried onions and mint, stunning presentation"
+    "image_prompt": "Ultra realistic professional food photography of fragrant chicken biryani, golden saffron rice with whole spices, served on a large platter, garnished with fried onions and mint, stunning presentation",
+    "img": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=80"
   },
   {
     "dish_name": "Garlic Naan",
@@ -1360,7 +1372,8 @@ const indianCuisineData = [
     "dietary_tags": [
       "vegetarian"
     ],
-    "image_prompt": "Ultra realistic food photography of freshly baked garlic naan with charred spots, glistening with garlic butter and fresh coriander, dark rustic background, steam rising"
+    "image_prompt": "Ultra realistic food photography of freshly baked garlic naan with charred spots, glistening with garlic butter and fresh coriander, dark rustic background, steam rising",
+    "img": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&q=80"
   },
   {
     "dish_name": "Paratha",
@@ -1415,7 +1428,8 @@ const indianCuisineData = [
     "dietary_tags": [
       "vegetarian"
     ],
-    "image_prompt": "Ultra realistic food photography of golden flaky paratha on a plate with ghee melting on top, served with pickle and yogurt, warm morning light, rustic Indian breakfast setting"
+    "image_prompt": "Ultra realistic food photography of golden flaky paratha on a plate with ghee melting on top, served with pickle and yogurt, warm morning light, rustic Indian breakfast setting",
+    "img": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=80"
   },
   {
     "dish_name": "Puri",
@@ -1471,7 +1485,8 @@ const indianCuisineData = [
       "vegetarian",
       "vegan"
     ],
-    "image_prompt": "Ultra realistic food photography of golden puffed puri breads, beautifully stacked, served with aloo sabzi, Indian breakfast style, warm golden light"
+    "image_prompt": "Ultra realistic food photography of golden puffed puri breads, beautifully stacked, served with aloo sabzi, Indian breakfast style, warm golden light",
+    "img": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80"
   },
   {
     "dish_name": "Vegetable Biryani",
@@ -1543,7 +1558,8 @@ const indianCuisineData = [
       "vegan",
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic food photography of fragrant vegetable biryani, colorful vegetables and saffron rice, garnished with fried onions and mint, served in a traditional handi"
+    "image_prompt": "Ultra realistic food photography of fragrant vegetable biryani, colorful vegetables and saffron rice, garnished with fried onions and mint, served in a traditional handi",
+    "img": "https://images.unsplash.com/photo-1516684732162-798a0062be99?w=400&q=80"
   },
   {
     "dish_name": "Jeera Rice",
@@ -1605,7 +1621,8 @@ const indianCuisineData = [
       "vegan",
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic food photography of fluffy jeera rice with golden cumin seeds, served in a white bowl, garnished with coriander, clean elegant presentation"
+    "image_prompt": "Ultra realistic food photography of fluffy jeera rice with golden cumin seeds, served in a white bowl, garnished with coriander, clean elegant presentation",
+    "img": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&q=80"
   },
   {
     "dish_name": "Gulab Jamun",
@@ -1670,7 +1687,8 @@ const indianCuisineData = [
     "dietary_tags": [
       "vegetarian"
     ],
-    "image_prompt": "Ultra realistic food photography of golden-brown gulab jamun soaked in rose syrup, served in a white bowl with saffron strands, Indian mithai style, warm glow"
+    "image_prompt": "Ultra realistic food photography of golden-brown gulab jamun soaked in rose syrup, served in a white bowl with saffron strands, Indian mithai style, warm glow",
+    "img": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=400&q=80"
   },
   {
     "dish_name": "Kheer",
@@ -1737,7 +1755,8 @@ const indianCuisineData = [
       "vegetarian",
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic food photography of creamy Indian kheer rice pudding in an elegant silver bowl, garnished with saffron strands, crushed pistachios and rose petals, festive presentation"
+    "image_prompt": "Ultra realistic food photography of creamy Indian kheer rice pudding in an elegant silver bowl, garnished with saffron strands, crushed pistachios and rose petals, festive presentation",
+    "img": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80"
   },
   {
     "dish_name": "Rasgulla",
@@ -1799,7 +1818,8 @@ const indianCuisineData = [
       "vegetarian",
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic food photography of white spongy rasgulla Bengali sweet in clear sugar syrup, served in a glass bowl, elegant dessert presentation, soft lighting"
+    "image_prompt": "Ultra realistic food photography of white spongy rasgulla Bengali sweet in clear sugar syrup, served in a glass bowl, elegant dessert presentation, soft lighting",
+    "img": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&q=80"
   },
   {
     "dish_name": "Masala Chai",
@@ -1871,7 +1891,8 @@ const indianCuisineData = [
       "vegetarian",
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic food photography of steaming masala chai in a glass cup on a saucer, warm amber color, spices visible, cozy morning light, Indian tea house atmosphere"
+    "image_prompt": "Ultra realistic food photography of steaming masala chai in a glass cup on a saucer, warm amber color, spices visible, cozy morning light, Indian tea house atmosphere",
+    "img": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&q=80"
   },
   {
     "dish_name": "Mango Lassi",
@@ -1933,7 +1954,8 @@ const indianCuisineData = [
       "vegetarian",
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic food photography of golden mango lassi in a tall glass, frothy top, mango garnish, condensation on glass, vibrant tropical setting, bright natural light"
+    "image_prompt": "Ultra realistic food photography of golden mango lassi in a tall glass, frothy top, mango garnish, condensation on glass, vibrant tropical setting, bright natural light",
+    "img": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=80"
   },
   {
     "dish_name": "Rose Sharbat",
@@ -1989,7 +2011,6427 @@ const indianCuisineData = [
       "vegetarian",
       "gluten-free"
     ],
-    "image_prompt": "Ultra realistic food photography of pink rose sharbat in a glass, floating basil seeds, fresh rose petals garnish, bright refreshing summer drink photography"
+    "image_prompt": "Ultra realistic food photography of pink rose sharbat in a glass, floating basil seeds, fresh rose petals garnish, bright refreshing summer drink photography",
+    "img": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80"
+  }
+];
+
+const maharashtraCuisineData = [
+  {
+    "seo_title": "Authentic Maharashtrian Katachi Amti Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/katachi-amti",
+    "dish_name": "Katachi Amti",
+    "state": "Maharashtra",
+    "category": "Soups",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 45,
+    "servings": 4,
+    "short_description": "Katachi Amti is a deeply flavored, spiced lentil soup made from the water left after cooking chana dal. A staple of Maharashtrian Puran Poli meals, it is tempered with coconut, tamarind, and a unique goda masala that gives it its signature sweet-spicy depth.",
+    "ingredients": [
+      {
+        "name": "Chana dal cooking water",
+        "quantity": "500",
+        "unit": "ml"
+      },
+      {
+        "name": "Goda masala",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Tamarind pulp",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Jaggery",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Coconut, grated",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Curry leaves",
+        "quantity": "10",
+        "unit": "pieces"
+      },
+      {
+        "name": "Dried red chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Collect the water drained from cooked chana dal and keep aside.",
+      "Heat ghee in a pan and add mustard seeds. Let them splutter.",
+      "Add dried red chilies and curry leaves. Fry for 30 seconds.",
+      "Add tamarind pulp, jaggery and turmeric. Stir well.",
+      "Pour in the chana dal water and bring to a boil.",
+      "Add goda masala and grated coconut. Simmer for 15 minutes.",
+      "Adjust salt and serve hot alongside Puran Poli."
+    ],
+    "chef_notes": "Goda masala is the soul of this recipe. Do not substitute with regular garam masala as the flavor profile is completely different. The balance of tamarind sourness and jaggery sweetness is key.",
+    "serving_suggestions": "Traditionally served as part of a Puran Poli thali. Also pairs well with plain rice and a drizzle of ghee.",
+    "nutrition_estimate": {
+      "calories": "145",
+      "protein_g": "6",
+      "carbohydrates_g": "18",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Traditional",
+      "Vegetarian",
+      "Festival Food",
+      "Maharashtrian"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of authentic Maharashtrian Katachi Amti, golden spiced lentil soup in a traditional copper bowl, vibrant turmeric color, garnished with curry leaves and grated coconut, rustic wooden table, soft natural window lighting, editorial food magazine style",
+    "seo_keywords": [
+      "katachi amti recipe",
+      "maharashtrian soup",
+      "chana dal soup",
+      "puran poli thali",
+      "goda masala recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1604152135912-04a022e23696?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Drumstick Soup Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/drumstick-soup",
+    "dish_name": "Shevgyachya Shengachi Soup",
+    "state": "Maharashtra",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 25,
+    "total_time_minutes": 35,
+    "servings": 4,
+    "short_description": "A light, nutritious soup made with tender drumstick pods, tomatoes and mild spices. This humble Maharashtrian comfort soup is rich in iron and vitamins and is commonly made in rural households across the state.",
+    "ingredients": [
+      {
+        "name": "Drumstick pods",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "4",
+        "unit": "cloves"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Fresh coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Cut drumstick pods into 5cm pieces and boil in salted water until tender.",
+      "Saut\u00e9 onion and garlic in oil with cumin seeds until golden.",
+      "Add chopped tomatoes and cook until mushy.",
+      "Add boiled drumstick pieces and 500ml water.",
+      "Simmer for 15 minutes and blend slightly for a semi-thick consistency.",
+      "Season with black pepper and salt. Garnish with coriander."
+    ],
+    "chef_notes": "Scrape the flesh from drumstick pieces while eating \u2014 the fibrous outer shell is not consumed. A squeeze of lime brightens the flavor beautifully.",
+    "serving_suggestions": "Serve as a light starter or a healthy evening soup with crusty bread.",
+    "nutrition_estimate": {
+      "calories": "85",
+      "protein_g": "3",
+      "carbohydrates_g": "12",
+      "fat_g": "3"
+    },
+    "tags": [
+      "Healthy",
+      "Vegetarian",
+      "Gluten-Free",
+      "Rural Maharashtra"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Maharashtrian drumstick soup in a white ceramic bowl, green drumstick pieces visible, light golden broth, fresh coriander garnish, natural window lighting, clean minimal food styling",
+    "seo_keywords": [
+      "drumstick soup recipe",
+      "shevgyachi soup",
+      "maharashtrian healthy soup",
+      "moringa soup indian"
+    ],
+    "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Tomato Saar Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/tomato-saar",
+    "dish_name": "Tomato Saar",
+    "state": "Maharashtra",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 30,
+    "servings": 4,
+    "short_description": "Tomato Saar is a thin, tangy and spiced tomato broth that is a beloved part of Maharashtrian thali. Made with ripe tomatoes, coconut milk and aromatic spices, it is the perfect light soup to begin a meal.",
+    "ingredients": [
+      {
+        "name": "Ripe tomatoes",
+        "quantity": "500",
+        "unit": "g"
+      },
+      {
+        "name": "Coconut milk",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "5",
+        "unit": "cloves"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Curry leaves",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Jaggery",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Boil tomatoes until soft and blend into a smooth puree. Strain.",
+      "Heat ghee, add mustard seeds and curry leaves.",
+      "Add crushed garlic, ginger and green chili. Saut\u00e9 briefly.",
+      "Pour in tomato puree and coconut milk. Stir well.",
+      "Add jaggery and salt. Simmer for 10 minutes.",
+      "Serve piping hot as a soup or alongside rice."
+    ],
+    "chef_notes": "The jaggery balances the acidity of tomatoes. Coconut milk makes it creamy without being heavy. Use fresh coconut milk for best results.",
+    "serving_suggestions": "Serve in small cups as a starter or with steamed rice as a light meal.",
+    "nutrition_estimate": {
+      "calories": "110",
+      "protein_g": "2",
+      "carbohydrates_g": "14",
+      "fat_g": "6"
+    },
+    "tags": [
+      "Vegetarian",
+      "Gluten-Free",
+      "Traditional",
+      "Thali"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian tomato saar in a traditional brass cup, vibrant red color, swirl of coconut milk, curry leaf garnish, rustic Indian kitchen background, warm natural light",
+    "seo_keywords": [
+      "tomato saar recipe",
+      "maharashtrian tomato soup",
+      "kokani saar",
+      "indian tomato broth"
+    ],
+    "img": "https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Kokum Saar Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/kokum-saar",
+    "dish_name": "Kokum Saar",
+    "state": "Maharashtra",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 20,
+    "servings": 4,
+    "short_description": "Kokum Saar is a cooling, digestive soup from the Konkan coast of Maharashtra. Made with kokum (dried purple mangosteen), coconut milk and minimal spices, it is light, tangy and deeply refreshing.",
+    "ingredients": [
+      {
+        "name": "Dried kokum",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Coconut milk",
+        "quantity": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "Jaggery",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Cumin powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Fresh coriander",
+        "quantity": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak kokum in 300ml warm water for 15 minutes. Squeeze and extract the juice.",
+      "Combine kokum water with coconut milk in a pan.",
+      "Add jaggery, green chili, cumin powder and salt.",
+      "Heat gently without boiling \u2014 do not boil coconut milk.",
+      "Strain and serve garnished with fresh coriander."
+    ],
+    "chef_notes": "Never boil this saar vigorously as coconut milk will split. It is meant to be a delicate, cooling broth. Best served at the end of a heavy Konkan meal as a digestive.",
+    "serving_suggestions": "Serve chilled or warm as a digestive after a heavy meal. Pairs beautifully with Konkani fish curry and rice.",
+    "nutrition_estimate": {
+      "calories": "95",
+      "protein_g": "1",
+      "carbohydrates_g": "12",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Konkan",
+      "Vegan",
+      "Digestive",
+      "Coastal Maharashtra"
+    ],
+    "image_prompt": "Ultra realistic food photography of Kokum Saar in a small clay pot, deep purple-pink color, coconut milk swirl, fresh coriander, coastal Konkan setting, warm golden light, traditional banana leaf under the pot",
+    "seo_keywords": [
+      "kokum saar recipe",
+      "konkan soup",
+      "kokum coconut milk soup",
+      "maharashtra cooling drink"
+    ],
+    "img": "https://images.unsplash.com/photo-1618449840665-9ed506d73a34?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Chicken Rassa Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/chicken-rassa",
+    "dish_name": "Chicken Rassa",
+    "state": "Maharashtra",
+    "category": "Soups",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 40,
+    "total_time_minutes": 60,
+    "servings": 4,
+    "short_description": "Chicken Rassa is a fiery, thin-gravy chicken curry-soup from Vidarbha and Kolhapur regions of Maharashtra. Made with a distinctive red masala base and a watery consistency, it is more soup than curry and is devoured with bhakri.",
+    "ingredients": [
+      {
+        "name": "Chicken pieces",
+        "quantity": "500",
+        "unit": "g"
+      },
+      {
+        "name": "Onions",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Kolhapuri masala",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Coconut, grated",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Tomato",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Oil",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Dry roast coconut until golden. Grind with fried onion into a paste.",
+      "Heat oil and fry ginger-garlic paste until raw smell disappears.",
+      "Add tomatoes and cook until oil separates.",
+      "Add Kolhapuri masala and coconut-onion paste. Fry for 5 minutes.",
+      "Add chicken pieces and coat well in masala.",
+      "Add 600ml water and bring to boil. Simmer 30 minutes until chicken is cooked.",
+      "The consistency should be thin and watery. Adjust salt."
+    ],
+    "chef_notes": "Rassa means thin gravy in Marathi. Resist the urge to thicken it \u2014 the thin spicy broth is what makes it authentic. Kolhapuri masala is essential for the correct heat level.",
+    "serving_suggestions": "Serve hot with jowar bhakri or rice. Best eaten by dipping bhakri directly into the rassa.",
+    "nutrition_estimate": {
+      "calories": "245",
+      "protein_g": "22",
+      "carbohydrates_g": "8",
+      "fat_g": "14"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Kolhapuri",
+      "Spicy",
+      "Traditional"
+    ],
+    "image_prompt": "Ultra realistic food photography of fiery red Maharashtrian chicken rassa in a deep bowl, thin spicy broth, tender chicken pieces, oil floating on surface, garnished with coriander, dark dramatic lighting, traditional earthen bowl",
+    "seo_keywords": [
+      "chicken rassa recipe",
+      "kolhapuri chicken soup",
+      "maharashtrian chicken curry",
+      "vidarbha chicken"
+    ],
+    "img": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Pithla Soup Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/pithla-soup",
+    "dish_name": "Pithla Soup",
+    "state": "Maharashtra",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 20,
+    "servings": 4,
+    "short_description": "A thin, liquid version of the beloved Pithla \u2014 made with besan (chickpea flour), onions, and spices. This runny comforting soup is a weekday staple in Maharashtrian homes and is incredibly quick to make.",
+    "ingredients": [
+      {
+        "name": "Besan (chickpea flour)",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Asafoetida",
+        "quantity": "1",
+        "unit": "pinch"
+      },
+      {
+        "name": "Oil",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Fresh coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Mix besan with 600ml water and whisk until smooth with no lumps.",
+      "Heat oil and add mustard seeds, asafoetida.",
+      "Add sliced onion and green chili. Saut\u00e9 until translucent.",
+      "Add turmeric and pour in the besan water. Stir continuously.",
+      "Cook on medium heat stirring constantly until slightly thickened.",
+      "Season with salt and garnish with fresh coriander."
+    ],
+    "chef_notes": "Keep stirring to avoid lumps forming. For a richer version, add a dollop of ghee at the end and a squeeze of lemon juice.",
+    "serving_suggestions": "Serve with jowar or bajra bhakri and raw onion salad.",
+    "nutrition_estimate": {
+      "calories": "120",
+      "protein_g": "5",
+      "carbohydrates_g": "14",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Vegetarian",
+      "Vegan",
+      "Quick",
+      "Village Maharashtra"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian pithla soup in a clay bowl, golden besan broth, mustard seeds and curry leaves floating, fresh coriander, rustic village kitchen background, natural morning light",
+    "seo_keywords": [
+      "pithla soup recipe",
+      "besan soup maharashtra",
+      "maharashtrian comfort food",
+      "quick indian soup"
+    ],
+    "img": "https://images.unsplash.com/photo-1551248429-40975aa4de74?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Mutton Rassa Soup Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/mutton-rassa",
+    "dish_name": "Mutton Rassa",
+    "state": "Maharashtra",
+    "category": "Soups",
+    "difficulty_level": "Hard",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 90,
+    "total_time_minutes": 120,
+    "servings": 4,
+    "short_description": "A robust, spice-forward thin mutton broth from Kolhapur, Maharashtra's culinary heartland. Slow-cooked with bone-in mutton, Kolhapuri masala and roasted coconut, this is a deeply satisfying soup that warms the soul.",
+    "ingredients": [
+      {
+        "name": "Bone-in mutton",
+        "quantity": "600",
+        "unit": "g"
+      },
+      {
+        "name": "Onions",
+        "quantity": "3",
+        "unit": "large"
+      },
+      {
+        "name": "Kolhapuri masala",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Whole spices",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "2",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Dry roast coconut and grind with fried onion to a fine paste.",
+      "Heat oil, fry whole spices, then add ginger-garlic paste.",
+      "Add mutton and brown on high heat for 10 minutes.",
+      "Add Kolhapuri masala and coconut-onion paste. Fry 5 minutes.",
+      "Add 1 litre water, bring to boil and pressure cook for 4 whistles.",
+      "Open, adjust seasoning. Broth should be thin and deeply red.",
+      "Simmer uncovered for 10 minutes to intensify flavor."
+    ],
+    "chef_notes": "Bone-in mutton is essential \u2014 the marrow enriches the broth. The rassa should be pourable, not thick.",
+    "serving_suggestions": "Serve with jowar bhakri or tandlachi bhakri and a raw onion-chili relish.",
+    "nutrition_estimate": {
+      "calories": "310",
+      "protein_g": "28",
+      "carbohydrates_g": "9",
+      "fat_g": "18"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Kolhapuri",
+      "Spicy",
+      "Weekend Special"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian mutton rassa, deep red spicy thin broth with bone-in mutton pieces, dramatic dark background, copper serving bowl, oil sheen on surface, garnished with fresh coriander",
+    "seo_keywords": [
+      "mutton rassa recipe",
+      "kolhapuri mutton soup",
+      "maharashtrian mutton curry",
+      "spicy mutton broth"
+    ],
+    "img": "https://images.unsplash.com/photo-1593759608142-e9b4c0f6b9d6?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Aamti Dal Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/aamti-dal",
+    "dish_name": "Aamti Dal",
+    "state": "Maharashtra",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 25,
+    "total_time_minutes": 35,
+    "servings": 4,
+    "short_description": "Aamti is a thin, soupy toor dal preparation that is the backbone of the everyday Maharashtrian thali. Tempered with mustard, asafoetida and goda masala, it has a unique sweet-sour-spicy balance that is totally distinctive.",
+    "ingredients": [
+      {
+        "name": "Toor dal",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Tamarind pulp",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Jaggery",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Goda masala",
+        "quantity": "1.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Asafoetida",
+        "quantity": "1",
+        "unit": "pinch"
+      },
+      {
+        "name": "Curry leaves",
+        "quantity": "10",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Pressure cook toor dal with turmeric until completely soft.",
+      "Mash dal and thin with water to a pouring consistency.",
+      "Heat ghee in a pan. Add mustard seeds and asafoetida.",
+      "Add curry leaves, tamarind, jaggery and goda masala.",
+      "Pour in the dal and simmer for 10 minutes.",
+      "Adjust sweet-sour balance with more jaggery or tamarind.",
+      "Serve hot with a fresh drizzle of ghee."
+    ],
+    "chef_notes": "Goda masala is what separates Maharashtrian aamti from other dals. The consistency should be thinner than regular dal \u2014 almost drinkable.",
+    "serving_suggestions": "Serve with steamed rice, ghee and papad as part of a traditional Maharashtrian thali.",
+    "nutrition_estimate": {
+      "calories": "195",
+      "protein_g": "9",
+      "carbohydrates_g": "28",
+      "fat_g": "6"
+    },
+    "tags": [
+      "Vegetarian",
+      "Everyday",
+      "Thali",
+      "Traditional"
+    ],
+    "image_prompt": "Ultra realistic food photography of golden Maharashtrian aamti dal in a small brass bowl, tempered with mustard seeds and curry leaves, garnished with fresh coriander, served alongside rice and papad, warm natural lighting",
+    "seo_keywords": [
+      "aamti dal recipe",
+      "maharashtrian dal",
+      "goda masala dal",
+      "toor dal maharashtra",
+      "maharashtrian thali recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Varan Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/varan",
+    "dish_name": "Varan",
+    "state": "Maharashtra",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 25,
+    "servings": 4,
+    "short_description": "Varan is the simplest, most comforting dal preparation in Maharashtra \u2014 plain cooked toor dal with turmeric, tempered minimally with ghee. It is pure, clean, and is the soul food of Maharashtra eaten at every festival and family meal.",
+    "ingredients": [
+      {
+        "name": "Toor dal",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Wash toor dal and pressure cook with turmeric and water.",
+      "Mash cooked dal until smooth.",
+      "Thin down with hot water to a pourable consistency.",
+      "Season with salt and lemon juice.",
+      "Drizzle generously with ghee before serving."
+    ],
+    "chef_notes": "Varan is intentionally simple \u2014 the ghee is what makes it extraordinary. Use the best quality ghee you can find. Brahmin households often eat this as Varan-Bhat (dal-rice) as a complete meal.",
+    "serving_suggestions": "Serve over hot steamed rice with a generous pool of ghee. Often served at Ganesh Chaturthi naivedyam.",
+    "nutrition_estimate": {
+      "calories": "185",
+      "protein_g": "9",
+      "carbohydrates_g": "24",
+      "fat_g": "7"
+    },
+    "tags": [
+      "Vegetarian",
+      "Festival Food",
+      "Sattvic",
+      "Simple"
+    ],
+    "image_prompt": "Ultra realistic food photography of pure golden Maharashtrian varan dal in a small silver bowl, generous ghee pool on top, served next to white steamed rice, clean minimal styling, soft natural light, traditional festival setting",
+    "seo_keywords": [
+      "varan recipe",
+      "maharashtrian plain dal",
+      "varan bhat",
+      "ganesh chaturthi recipe",
+      "sattvic dal"
+    ],
+    "img": "https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Bharli Vangi Shorba Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/bharli-vangi-shorba",
+    "dish_name": "Bharli Vangi Shorba",
+    "state": "Maharashtra",
+    "category": "Soups",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 50,
+    "servings": 4,
+    "short_description": "A modern Maharashtrian restaurant-style soup inspired by the classic Bharli Vangi (stuffed brinjal). Roasted brinjal is blended with peanut-coconut masala to create a smoky, rich and velvety soup that celebrates the bold flavors of Maharashtra.",
+    "ingredients": [
+      {
+        "name": "Small brinjals",
+        "quantity": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "Peanuts, roasted",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Coconut, grated",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Goda masala",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Tamarind",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Roast brinjals directly on flame until charred. Peel and set aside.",
+      "Dry roast coconut and peanuts together until golden.",
+      "Saut\u00e9 onion until caramelized, add goda masala.",
+      "Blend roasted brinjal, coconut, peanuts, onion and tamarind with water.",
+      "Strain for smooth consistency. Heat gently.",
+      "Season and serve garnished with a drizzle of roasted peanut oil."
+    ],
+    "chef_notes": "Charring the brinjal on an open flame is non-negotiable for the authentic smoky flavor that defines this soup.",
+    "serving_suggestions": "Serve in small cups as an elegant starter at dinner parties.",
+    "nutrition_estimate": {
+      "calories": "165",
+      "protein_g": "5",
+      "carbohydrates_g": "16",
+      "fat_g": "9"
+    },
+    "tags": [
+      "Vegetarian",
+      "Smoky",
+      "Modern Maharashtrian",
+      "Restaurant Style"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Bharli Vangi Shorba, deep smoky brown soup in a white bowl, drizzle of peanut oil, micro herb garnish, high-end restaurant presentation, dark moody background, elegant plating",
+    "seo_keywords": [
+      "bharli vangi soup",
+      "maharashtrian brinjal soup",
+      "smoked eggplant soup indian",
+      "modern maharashtrian recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Vada Pav Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/vada-pav",
+    "dish_name": "Vada Pav",
+    "state": "Maharashtra",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 50,
+    "servings": 4,
+    "short_description": "Maharashtra's most iconic street food \u2014 a spiced potato vada encased in a crispy besan batter, served inside a soft pav with dry garlic chutney and green chutney. Known as Mumbai's burger, it is the heartbeat of Maharashtrian street culture.",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "quantity": "4",
+        "unit": "large"
+      },
+      {
+        "name": "Besan",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "name": "Pav buns",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Dry garlic chutney",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chutney",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "2",
+        "unit": "cups"
+      }
+    ],
+    "preparation_steps": [
+      "Boil and mash potatoes. Temper with mustard seeds, curry leaves, turmeric, ginger and green chili.",
+      "Shape into round balls.",
+      "Make besan batter with turmeric, red chili and salt. Consistency should coat a spoon.",
+      "Dip potato balls in batter and deep fry until golden and crispy.",
+      "Slit pav buns and apply dry garlic chutney on one side, green chutney on the other.",
+      "Place hot vada inside pav and serve immediately with fried green chili."
+    ],
+    "chef_notes": "The dry garlic chutney is the secret weapon of vada pav. Roasted garlic, coconut and chili ground together \u2014 it must be fresh and coarse, not a paste.",
+    "serving_suggestions": "Serve with dry garlic chutney, green chutney and a fried green chili on the side.",
+    "nutrition_estimate": {
+      "calories": "385",
+      "protein_g": "9",
+      "carbohydrates_g": "52",
+      "fat_g": "16"
+    },
+    "tags": [
+      "Street Food",
+      "Vegetarian",
+      "Mumbai",
+      "Iconic"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of authentic Mumbai Vada Pav, golden crispy vada inside a soft pav, vibrant green and red chutneys visible, street food setting, warm dramatic lighting, newspaper wrap in background",
+    "seo_keywords": [
+      "vada pav recipe",
+      "mumbai vada pav",
+      "maharashtrian street food",
+      "batata vada recipe",
+      "dry garlic chutney recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Misal Pav Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/misal-pav",
+    "dish_name": "Misal Pav",
+    "state": "Maharashtra",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 35,
+    "total_time_minutes": 55,
+    "servings": 4,
+    "short_description": "Misal Pav is a fiery sprouted moth bean curry topped with farsan, onion, tomato and lemon juice, served alongside buttered pav. This beloved Maharashtrian breakfast and street food is a glorious explosion of textures and flavors.",
+    "ingredients": [
+      {
+        "name": "Sprouted moth beans (matki)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Pav buns",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Onion",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Tomato",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Misal masala",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Farsan/sev",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "name": "Coconut, grated",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Cook sprouted matki until just tender but not mushy.",
+      "Dry roast coconut and grind with fried onion.",
+      "Heat oil, add onion-tomato masala with misal masala.",
+      "Add cooked matki and 300ml water. Simmer 20 minutes.",
+      "The curry (kat) should be thin and fiery.",
+      "Serve in a bowl. Top with farsan, raw onion, tomato, coriander and lemon juice.",
+      "Serve buttered pav on the side."
+    ],
+    "chef_notes": "Misal has regional variations \u2014 Pune misal is spicier, Nasik misal is sweeter. The kat (spicy gravy) is what makes it great. The farsan must be added just before serving to stay crunchy.",
+    "serving_suggestions": "Serve with buttered pav, fresh onion, lemon and extra farsan on the side.",
+    "nutrition_estimate": {
+      "calories": "420",
+      "protein_g": "15",
+      "carbohydrates_g": "58",
+      "fat_g": "16"
+    },
+    "tags": [
+      "Street Food",
+      "Breakfast",
+      "Spicy",
+      "Vegetarian"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Maharashtrian Misal Pav, fiery red curry topped with colorful farsan, fresh onions, tomatoes, coriander, lemon wedge, buttered pav alongside, vibrant street food styling",
+    "seo_keywords": [
+      "misal pav recipe",
+      "maharashtrian breakfast",
+      "pune misal",
+      "matki misal",
+      "spicy indian street food"
+    ],
+    "img": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Kanda Bhaji Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/kanda-bhaji",
+    "dish_name": "Kanda Bhaji",
+    "state": "Maharashtra",
+    "category": "Appetizers",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 25,
+    "servings": 4,
+    "short_description": "Kanda Bhaji are irresistibly crispy onion fritters \u2014 a Maharashtrian monsoon staple. Thinly sliced onions coated in spiced besan batter and deep fried until golden, they are a beloved teatime snack across the state.",
+    "ingredients": [
+      {
+        "name": "Onions",
+        "quantity": "3",
+        "unit": "large"
+      },
+      {
+        "name": "Besan",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "name": "Rice flour",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Coriander leaves",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ajwain",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "2",
+        "unit": "cups"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Thinly slice onions and mix with salt. Let rest 5 minutes to release moisture.",
+      "Add besan, rice flour, green chili, coriander, chili powder and ajwain.",
+      "Mix well. The onion moisture should be enough \u2014 add minimal water.",
+      "Drop spoonfuls into hot oil and fry on medium heat.",
+      "Fry until deeply golden and crispy. Drain on paper.",
+      "Serve immediately while hot and crispy."
+    ],
+    "chef_notes": "Rice flour is the secret to extra crispiness. Adding too much water makes the bhaji heavy. The natural moisture of salted onions is usually sufficient.",
+    "serving_suggestions": "Serve with green chutney and a cup of cutting chai on a rainy day.",
+    "nutrition_estimate": {
+      "calories": "280",
+      "protein_g": "7",
+      "carbohydrates_g": "32",
+      "fat_g": "14"
+    },
+    "tags": [
+      "Monsoon Snack",
+      "Street Food",
+      "Vegetarian",
+      "Tea Time"
+    ],
+    "image_prompt": "Ultra realistic food photography of crispy golden Maharashtrian kanda bhaji onion fritters, stacked on a newspaper, steam rising, green chutney on side, rainy window background, warm cozy lighting",
+    "seo_keywords": [
+      "kanda bhaji recipe",
+      "onion fritters maharashtra",
+      "maharashtrian bhaji",
+      "crispy onion pakora",
+      "mumbai street snack"
+    ],
+    "img": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Sabudana Vada Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/sabudana-vada",
+    "dish_name": "Sabudana Vada",
+    "state": "Maharashtra",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 240,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 260,
+    "servings": 4,
+    "short_description": "Sabudana Vada are crispy shallow-fried patties made with soaked tapioca pearls, mashed potato and roasted peanuts. A popular Maharashtrian fasting food (upvas) and monsoon snack, they are crunchy outside and soft inside.",
+    "ingredients": [
+      {
+        "name": "Sabudana (tapioca pearls)",
+        "quantity": "250",
+        "unit": "g"
+      },
+      {
+        "name": "Potatoes",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Roasted peanuts, coarsely ground",
+        "quantity": "0.5",
+        "unit": "cup"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rock salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "4",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak sabudana in minimal water for 4 hours until pearls are soft but not mushy.",
+      "Boil and mash potatoes until smooth.",
+      "Mix sabudana, potato, peanuts, green chili, cumin, lemon and coriander.",
+      "Shape into round flat patties.",
+      "Shallow fry in oil on medium heat until golden and crispy on both sides.",
+      "Serve hot with green chutney and yogurt."
+    ],
+    "chef_notes": "The key is the correct sabudana soak \u2014 it should be just soft enough to press, not wet and sticky. Drain any excess water before mixing to avoid vadas falling apart.",
+    "serving_suggestions": "Serve with green chutney and sweetened yogurt. Perfect for fasting days.",
+    "nutrition_estimate": {
+      "calories": "310",
+      "protein_g": "7",
+      "carbohydrates_g": "48",
+      "fat_g": "11"
+    },
+    "tags": [
+      "Fasting Food",
+      "Vegetarian",
+      "Gluten-Free",
+      "Street Food"
+    ],
+    "image_prompt": "Ultra realistic food photography of golden crispy Maharashtrian sabudana vada on a plate, visible tapioca pearls, green chutney and yogurt alongside, warm golden lighting, traditional serving",
+    "seo_keywords": [
+      "sabudana vada recipe",
+      "maharashtrian fasting food",
+      "upvas recipe",
+      "tapioca patties recipe",
+      "navratri snacks"
+    ],
+    "img": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Poha Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/kanda-poha",
+    "dish_name": "Kanda Poha",
+    "state": "Maharashtra",
+    "category": "Appetizers",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 25,
+    "servings": 4,
+    "short_description": "Kanda Poha is Maharashtra's quintessential breakfast \u2014 flattened rice tossed with saut\u00e9ed onions, mustard, turmeric and curry leaves, finished with fresh coconut, coriander and a squeeze of lemon. Simple, light and utterly satisfying.",
+    "ingredients": [
+      {
+        "name": "Thick poha (flattened rice)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Curry leaves",
+        "quantity": "10",
+        "unit": "pieces"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Wash poha in a sieve until just moistened. Do not over-soak.",
+      "Heat oil, add mustard seeds, curry leaves and green chili.",
+      "Add sliced onion and fry until translucent.",
+      "Add turmeric and poha. Toss gently on low heat.",
+      "Add sugar and salt. Mix carefully.",
+      "Remove from heat. Add lemon juice, coconut and coriander.",
+      "Serve warm topped with sev and fresh pomegranate seeds (optional)."
+    ],
+    "chef_notes": "The poha should be moist but not wet. Each grain must be separate. Adding a small amount of sugar balances the lemon acidity \u2014 a signature Maharashtrian touch.",
+    "serving_suggestions": "Serve warm for breakfast with a cup of cutting chai.",
+    "nutrition_estimate": {
+      "calories": "285",
+      "protein_g": "5",
+      "carbohydrates_g": "48",
+      "fat_g": "8"
+    },
+    "tags": [
+      "Breakfast",
+      "Vegetarian",
+      "Quick",
+      "Street Food"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian kanda poha in a steel plate, golden yellow color, garnished with fresh coconut, coriander and sev, lemon wedge on side, warm breakfast setting",
+    "seo_keywords": [
+      "kanda poha recipe",
+      "maharashtrian poha",
+      "mumbai breakfast",
+      "poha recipe",
+      "indian breakfast ideas"
+    ],
+    "img": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Thalipeeth Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/thalipeeth",
+    "dish_name": "Thalipeeth",
+    "state": "Maharashtra",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 35,
+    "servings": 4,
+    "short_description": "Thalipeeth is a savory multigrain Maharashtrian pancake made from a special blend called bhajani \u2014 roasted and ground rice, wheat, jowar, bajra and lentils. Spiced with onion, coriander and chilies, it is a nutritious and deeply satisfying meal.",
+    "ingredients": [
+      {
+        "name": "Bhajani flour (multigrain blend)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Coriander leaves",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Mix bhajani flour with finely chopped onion, green chili, coriander, sesame and cumin.",
+      "Add salt and enough water to make a soft pliable dough.",
+      "Grease a wet cloth or plastic sheet. Place a ball of dough on it.",
+      "Pat into a thin round circle with wet fingers.",
+      "Make a small hole in the center and cook on a hot griddle.",
+      "Drizzle oil around edges and cook on both sides until crispy and golden.",
+      "Serve hot with fresh white butter or yogurt."
+    ],
+    "chef_notes": "Bhajani flour is the heart of thalipeeth. You can make it by roasting jowar, bajra, rice, chana dal, urad dal and wheat together and grinding coarsely.",
+    "serving_suggestions": "Serve with loni (homemade white butter) or fresh yogurt and pickle.",
+    "nutrition_estimate": {
+      "calories": "295",
+      "protein_g": "9",
+      "carbohydrates_g": "42",
+      "fat_g": "10"
+    },
+    "tags": [
+      "Breakfast",
+      "Vegetarian",
+      "Multigrain",
+      "Traditional"
+    ],
+    "image_prompt": "Ultra realistic food photography of freshly cooked Maharashtrian thalipeeth on a cast iron griddle, golden brown, topped with white butter melting, rustic kitchen setting, warm morning light",
+    "seo_keywords": [
+      "thalipeeth recipe",
+      "maharashtrian pancake",
+      "bhajani recipe",
+      "multigrain indian flatbread",
+      "maharashtra breakfast"
+    ],
+    "img": "https://images.unsplash.com/photo-1630851840633-f96999247032?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Batata Vada Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/batata-vada",
+    "dish_name": "Batata Vada",
+    "state": "Maharashtra",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 40,
+    "servings": 4,
+    "short_description": "The soul of Vada Pav \u2014 Batata Vada is a perfectly spiced potato ball encased in a thin, crispy besan batter and deep fried until golden. On its own, it is a spectacular snack that can be eaten with multiple chutneys.",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "quantity": "4",
+        "unit": "large"
+      },
+      {
+        "name": "Besan",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Curry leaves",
+        "quantity": "10",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.75",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "2",
+        "unit": "cups"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Boil, peel and mash potatoes until smooth.",
+      "Temper mustard seeds, curry leaves, ginger and green chili in oil.",
+      "Mix tempering into mashed potato with turmeric and lemon. Form balls.",
+      "Make besan batter with turmeric, red chili, salt and water.",
+      "Dip each potato ball in batter and deep fry until golden.",
+      "Serve hot with green chutney and dry garlic chutney."
+    ],
+    "chef_notes": "The batter should coat the vada thinly \u2014 too thick and it becomes doughy. A pinch of baking soda in the batter keeps it light and crispy.",
+    "serving_suggestions": "Serve with dry garlic-coconut chutney, tamarind chutney and green coriander chutney.",
+    "nutrition_estimate": {
+      "calories": "295",
+      "protein_g": "8",
+      "carbohydrates_g": "38",
+      "fat_g": "13"
+    },
+    "tags": [
+      "Street Food",
+      "Vegetarian",
+      "Mumbai",
+      "Crispy"
+    ],
+    "image_prompt": "Ultra realistic food photography of golden Maharashtrian batata vada on a plate, besan coating cracked to reveal potato filling, served with vibrant green and red chutneys, street food atmosphere",
+    "seo_keywords": [
+      "batata vada recipe",
+      "potato vada recipe",
+      "maharashtrian snack",
+      "mumbai batata vada",
+      "vada pav filling"
+    ],
+    "img": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Chakli Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/chakli",
+    "dish_name": "Chakli",
+    "state": "Maharashtra",
+    "category": "Appetizers",
+    "difficulty_level": "Hard",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 60,
+    "servings": 8,
+    "short_description": "Chakli is Maharashtra's most beloved festive snack \u2014 spiral-shaped savory crackers made from rice flour and spices, deep fried to a perfect crunchy golden finish. A Diwali staple, they are addictive, crispy and deeply satisfying.",
+    "ingredients": [
+      {
+        "name": "Rice flour",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Urad dal flour",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Butter",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "1.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Asafoetida",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "3",
+        "unit": "cups"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Mix rice flour, urad flour, sesame, cumin, chili, asafoetida, butter and salt.",
+      "Add warm water gradually and knead into a firm smooth dough.",
+      "Fill chakli press with dough and press into spiral shapes on a flat surface.",
+      "Heat oil to 160\u00b0C. Slide chakli into oil carefully.",
+      "Fry on medium heat until golden and crispy \u2014 about 4 minutes per batch.",
+      "Drain and cool completely before storing in airtight container."
+    ],
+    "chef_notes": "The oil temperature must be consistent \u2014 too hot and chakli browns too quickly, too low and it absorbs oil. Adding butter to the dough is what creates that melt-in-mouth texture.",
+    "serving_suggestions": "Serve as a festive snack during Diwali or store in airtight containers for up to 2 weeks.",
+    "nutrition_estimate": {
+      "calories": "185",
+      "protein_g": "3",
+      "carbohydrates_g": "24",
+      "fat_g": "9"
+    },
+    "tags": [
+      "Diwali",
+      "Festive",
+      "Vegetarian",
+      "Crispy Snack"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian chakli spiral snacks in a traditional brass plate, golden crispy spirals, Diwali diyas in background, warm festive lighting, overhead shot",
+    "seo_keywords": [
+      "chakli recipe",
+      "maharashtrian diwali snacks",
+      "rice flour chakli",
+      "murukku maharashtra",
+      "crispy indian snacks"
+    ],
+    "img": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Kothimbir Vadi Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/kothimbir-vadi",
+    "dish_name": "Kothimbir Vadi",
+    "state": "Maharashtra",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 50,
+    "servings": 4,
+    "short_description": "Kothimbir Vadi are steamed and shallow-fried savory cakes made with generous amounts of fresh coriander (kothimbir) and besan. A beloved Maharashtrian tea-time snack, they are fragrant, crispy outside and soft inside.",
+    "ingredients": [
+      {
+        "name": "Fresh coriander",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Besan",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Roasted peanut powder",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Finely chop coriander and mix with besan, green chili, ginger, sesame, peanut powder, cumin and salt.",
+      "Add very little water to make a thick dough-like mixture.",
+      "Grease a plate and spread mixture evenly 1cm thick.",
+      "Steam for 15-20 minutes until set and cooked through.",
+      "Cool completely and cut into diamond or square shapes.",
+      "Shallow fry in oil until golden and crispy on all sides.",
+      "Serve hot with green chutney."
+    ],
+    "chef_notes": "Steaming before frying creates the unique two-texture experience. Do not skip the steaming step or the inside will remain raw.",
+    "serving_suggestions": "Serve with green coriander chutney and a cup of masala chai.",
+    "nutrition_estimate": {
+      "calories": "220",
+      "protein_g": "9",
+      "carbohydrates_g": "24",
+      "fat_g": "10"
+    },
+    "tags": [
+      "Tea Time",
+      "Vegetarian",
+      "Traditional",
+      "Steamed and Fried"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian kothimbir vadi, golden crispy diamond-shaped cakes on a plate, bright green coriander visible, served with green chutney, warm natural lighting",
+    "seo_keywords": [
+      "kothimbir vadi recipe",
+      "coriander fritters maharashtra",
+      "maharashtrian snack",
+      "besan coriander cake",
+      "tea time snack india"
+    ],
+    "img": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Bharli Mirchi Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/bharli-mirchi",
+    "dish_name": "Bharli Mirchi",
+    "state": "Maharashtra",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 25,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 40,
+    "servings": 4,
+    "short_description": "Bharli Mirchi are large green chilies stuffed with a tangy besan-peanut-coconut filling and shallow fried until blistered and fragrant. A popular Maharashtrian appetizer and side dish with a perfect balance of heat, tang and nuttiness.",
+    "ingredients": [
+      {
+        "name": "Large green chilies (Bhavnagri)",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Besan",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Roasted peanut powder",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Tamarind paste",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Jaggery",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Dry roast besan until fragrant and golden.",
+      "Mix roasted besan with peanut powder, coconut, tamarind, jaggery, coriander and salt.",
+      "Slit chilies lengthwise and remove seeds partially.",
+      "Fill each chili with the besan-peanut mixture.",
+      "Heat oil in a pan and place stuffed chilies.",
+      "Cover and cook on low heat for 8-10 minutes, turning once.",
+      "Serve hot as appetizer or side dish."
+    ],
+    "chef_notes": "Use Bhavnagri or any large mild-to-medium green chili. Removing the seeds reduces heat. The tamarind-jaggery in the filling creates a perfect sweet-sour-spicy balance.",
+    "serving_suggestions": "Serve as a side with dal-rice or as an appetizer before the main meal.",
+    "nutrition_estimate": {
+      "calories": "175",
+      "protein_g": "6",
+      "carbohydrates_g": "14",
+      "fat_g": "11"
+    },
+    "tags": [
+      "Vegetarian",
+      "Spicy",
+      "Traditional",
+      "Side Dish"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian bharli mirchi, blistered green stuffed chilies in a pan, golden besan filling visible, garnished with coriander, rustic dark background",
+    "seo_keywords": [
+      "bharli mirchi recipe",
+      "stuffed green chili maharashtra",
+      "besan stuffed chili",
+      "maharashtrian starter",
+      "indian stuffed peppers"
+    ],
+    "img": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Kachumber Salad Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/kachumber-salad",
+    "dish_name": "Kachumber",
+    "state": "Maharashtra",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 10,
+    "servings": 4,
+    "short_description": "Kachumber is Maharashtra's essential salad \u2014 a refreshing mix of finely diced cucumber, tomato, onion, coriander and lemon juice. Served with almost every Maharashtrian meal, it provides a cooling contrast to spicy curries.",
+    "ingredients": [
+      {
+        "name": "Cucumber",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Tomato",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Fresh coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Roasted cumin powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Finely dice cucumber, tomato and onion into even small pieces.",
+      "Finely chop green chili and coriander.",
+      "Combine all ingredients in a bowl.",
+      "Add lemon juice, salt and roasted cumin powder.",
+      "Toss well and serve immediately."
+    ],
+    "chef_notes": "Always cut kachumber just before serving \u2014 it releases water and becomes watery if left too long. The roasted cumin powder adds a wonderful depth.",
+    "serving_suggestions": "Serve alongside any Maharashtrian curry, dal-rice, or grilled meats.",
+    "nutrition_estimate": {
+      "calories": "45",
+      "protein_g": "2",
+      "carbohydrates_g": "9",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Salad",
+      "Vegetarian",
+      "Vegan",
+      "Gluten-Free",
+      "Everyday"
+    ],
+    "image_prompt": "Ultra realistic food photography of fresh Maharashtrian kachumber salad in a white bowl, colorful diced cucumber, tomato, onion, fresh coriander, lemon wedge on side, bright natural light, clean minimal styling",
+    "seo_keywords": [
+      "kachumber recipe",
+      "indian salad recipe",
+      "maharashtrian salad",
+      "cucumber tomato salad india",
+      "indian thali salad"
+    ],
+    "img": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Sprouted Moong Salad Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/sprouted-moong-salad",
+    "dish_name": "Moodyachi Usal Salad",
+    "state": "Maharashtra",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 240,
+    "cook_time_minutes": 5,
+    "total_time_minutes": 245,
+    "servings": 4,
+    "short_description": "A refreshing and protein-rich salad made with home-sprouted moong beans tossed with lemon, fresh coconut, coriander and minimal spices. A daily health ritual in many Maharashtrian homes, it is nutritious, light and deeply satisfying.",
+    "ingredients": [
+      {
+        "name": "Sprouted moong beans",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Fresh coconut, grated",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "0.5",
+        "unit": "inch"
+      },
+      {
+        "name": "Fresh coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Steam sprouted moong lightly for 3-4 minutes until just cooked but still crunchy.",
+      "Prepare a quick tempering with mustard seeds in oil.",
+      "Toss moong sprouts with coconut, lemon, green chili, ginger and coriander.",
+      "Add tempering and salt.",
+      "Mix well and serve at room temperature or slightly warm."
+    ],
+    "chef_notes": "Do not overcook the sprouts \u2014 they should retain their crunch. This salad is best eaten fresh as the sprouts soften over time.",
+    "serving_suggestions": "Serve as a starter, healthy snack or alongside a light lunch.",
+    "nutrition_estimate": {
+      "calories": "130",
+      "protein_g": "8",
+      "carbohydrates_g": "18",
+      "fat_g": "3"
+    },
+    "tags": [
+      "Healthy",
+      "Protein-Rich",
+      "Vegan",
+      "Gluten-Free"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian sprouted moong salad in a white bowl, green sprouts tossed with fresh coconut and coriander, lemon wedge garnish, bright clean food photography, natural light",
+    "seo_keywords": [
+      "sprouted moong salad",
+      "moong bean salad india",
+      "maharashtrian healthy salad",
+      "protein salad india",
+      "moong sprout recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Raw Papaya Salad Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/raw-papaya-salad",
+    "dish_name": "Kacha Papaya Koshimbir",
+    "state": "Maharashtra",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 15,
+    "servings": 4,
+    "short_description": "A light, crunchy salad made with shredded raw green papaya, fresh coconut, peanuts and a lemon dressing. Koshimbir is a class of Maharashtrian raw vegetable salads dressed with coconut, yogurt or lemon \u2014 this version is refreshing and nutritious.",
+    "ingredients": [
+      {
+        "name": "Raw green papaya",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Roasted peanuts, crushed",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Peel and grate or julienne the raw papaya finely.",
+      "Mix with coconut, peanuts, green chili, lemon, sugar and salt.",
+      "Prepare a quick tempering with mustard seeds and oil.",
+      "Add tempering to salad and toss well.",
+      "Garnish with coriander and serve immediately."
+    ],
+    "chef_notes": "Salting the raw papaya and leaving it for 5 minutes draws out excess moisture and softens it slightly. Squeeze gently before adding the dressing.",
+    "serving_suggestions": "Serve as a refreshing side with fish curry and rice or as part of a Maharashtrian thali.",
+    "nutrition_estimate": {
+      "calories": "110",
+      "protein_g": "3",
+      "carbohydrates_g": "14",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Salad",
+      "Vegetarian",
+      "Refreshing",
+      "Koshimbir"
+    ],
+    "image_prompt": "Ultra realistic food photography of raw papaya koshimbir salad, pale green shredded papaya with coconut and peanuts in a white bowl, fresh coriander garnish, light and bright food photography",
+    "seo_keywords": [
+      "raw papaya salad maharashtra",
+      "koshimbir recipe",
+      "kacha papaya salad india",
+      "maharashtrian salad",
+      "green papaya recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Kakdi Koshimbir Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/kakdi-koshimbir",
+    "dish_name": "Kakdi Koshimbir",
+    "state": "Maharashtra",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 10,
+    "servings": 4,
+    "short_description": "A beloved Maharashtrian cucumber salad dressed with fresh yogurt, grated coconut, roasted peanuts and a mustard tempering. Kakdi Koshimbir is cooling, creamy and the perfect accompaniment to any spicy Maharashtrian meal.",
+    "ingredients": [
+      {
+        "name": "Cucumber",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Yogurt",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Roasted peanuts, crushed",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Peel and finely dice or grate cucumber. Squeeze out excess water.",
+      "Mix cucumber with yogurt, coconut and peanuts.",
+      "Add green chili, coriander and salt.",
+      "Prepare mustard seed tempering and add to salad.",
+      "Toss well and serve chilled."
+    ],
+    "chef_notes": "Squeezing water out of cucumber is important \u2014 otherwise the salad becomes watery. Add peanuts just before serving for crunch.",
+    "serving_suggestions": "Serve alongside spicy Maharashtrian curries as a cooling side.",
+    "nutrition_estimate": {
+      "calories": "95",
+      "protein_g": "4",
+      "carbohydrates_g": "10",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Salad",
+      "Vegetarian",
+      "Cooling",
+      "Gluten-Free"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian kakdi koshimbir cucumber salad in a clay bowl, creamy yogurt dressing, fresh coconut and peanuts visible, green chili garnish, clean natural light",
+    "seo_keywords": [
+      "kakdi koshimbir recipe",
+      "cucumber raita maharashtra",
+      "maharashtrian koshimbir",
+      "cooling salad india",
+      "cucumber yogurt salad"
+    ],
+    "img": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Matki Usal Salad Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/matki-salad",
+    "dish_name": "Matki Salad",
+    "state": "Maharashtra",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 480,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 490,
+    "servings": 4,
+    "short_description": "A hearty protein-packed salad made with sprouted moth beans (matki) tossed with onion, tomato, lemon and coconut. Rich in fibre and protein, this Maharashtrian staple doubles as a nutritious salad or a quick snack.",
+    "ingredients": [
+      {
+        "name": "Sprouted matki (moth beans)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Tomato",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Chaat masala",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak matki overnight and sprout for 24-48 hours.",
+      "Steam sprouted matki for 5 minutes until tender but firm.",
+      "Cool completely.",
+      "Toss with finely chopped onion, tomato, green chili and coriander.",
+      "Add coconut, lemon juice, chaat masala and salt.",
+      "Mix well and serve fresh."
+    ],
+    "chef_notes": "Sprouting matki increases its nutritional value significantly. Don't skip the sprouting process.",
+    "serving_suggestions": "Serve as a standalone snack with chai or as a protein-rich side dish.",
+    "nutrition_estimate": {
+      "calories": "155",
+      "protein_g": "10",
+      "carbohydrates_g": "22",
+      "fat_g": "2"
+    },
+    "tags": [
+      "Protein Rich",
+      "Vegan",
+      "Gluten-Free",
+      "Healthy"
+    ],
+    "image_prompt": "Ultra realistic food photography of matki sprouted bean salad in a colorful bowl, brown sprouted beans with red tomato, green coriander and white coconut, bright healthy food photography",
+    "seo_keywords": [
+      "matki salad recipe",
+      "moth bean salad",
+      "maharashtrian sprout salad",
+      "protein salad india",
+      "healthy indian salad"
+    ],
+    "img": "https://images.unsplash.com/photo-1600335895229-6e75511892c8?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Carrot Koshimbir Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/carrot-koshimbir",
+    "dish_name": "Gajar Koshimbir",
+    "state": "Maharashtra",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 10,
+    "servings": 4,
+    "short_description": "A bright and sweet Maharashtrian carrot salad made with grated raw carrots, coconut, peanuts and a light lemon dressing. Simple, sweet, crunchy and incredibly quick to make \u2014 a daily fixture on the Maharashtrian table.",
+    "ingredients": [
+      {
+        "name": "Carrots",
+        "quantity": "3",
+        "unit": "large"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Crushed peanuts",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mustard tempering",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Peel and finely grate the carrots.",
+      "Mix with coconut, peanuts, green chili and coriander.",
+      "Add lemon juice, salt and sugar.",
+      "Add mustard tempering.",
+      "Toss and serve immediately."
+    ],
+    "chef_notes": "This salad is best made fresh. The natural sweetness of carrot with lemon and coconut is perfect as is \u2014 keep it simple.",
+    "serving_suggestions": "Serve alongside dal-rice, any curry or as part of thali.",
+    "nutrition_estimate": {
+      "calories": "90",
+      "protein_g": "2",
+      "carbohydrates_g": "12",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Salad",
+      "Vegetarian",
+      "Vegan",
+      "Quick"
+    ],
+    "image_prompt": "Ultra realistic food photography of vibrant orange carrot koshimbir in a white bowl, fresh coconut and coriander garnish, bright natural light, clean minimal food styling",
+    "seo_keywords": [
+      "carrot koshimbir recipe",
+      "gajar salad maharashtra",
+      "indian carrot salad",
+      "maharashtrian koshimbir",
+      "vegan indian salad"
+    ],
+    "img": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Peanut Koshimbir Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/peanut-koshimbir",
+    "dish_name": "Shenga Koshimbir",
+    "state": "Maharashtra",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 10,
+    "servings": 4,
+    "short_description": "A crunchy, protein-rich Maharashtrian peanut salad dressed with yogurt, fresh coconut, lemon and green chili. Shenga Koshimbir is a popular fasting-friendly salad that doubles as a satisfying snack.",
+    "ingredients": [
+      {
+        "name": "Roasted peanuts",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Yogurt",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "0.25",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Peel roasted peanuts and keep whole.",
+      "Mix yogurt with lemon, salt and sugar until smooth.",
+      "Toss peanuts with yogurt dressing.",
+      "Add coconut, green chili and coriander.",
+      "Serve immediately for best crunch."
+    ],
+    "chef_notes": "Add the yogurt dressing just before serving to keep peanuts crunchy. A great protein-rich addition to any meal.",
+    "serving_suggestions": "Serve as a side salad or fasting snack.",
+    "nutrition_estimate": {
+      "calories": "210",
+      "protein_g": "10",
+      "carbohydrates_g": "12",
+      "fat_g": "14"
+    },
+    "tags": [
+      "Fasting Food",
+      "Protein Rich",
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "image_prompt": "Ultra realistic food photography of shenga peanut koshimbir in a small bowl, creamy yogurt coated peanuts, fresh coconut and coriander, bright clean food photography",
+    "seo_keywords": [
+      "shenga koshimbir recipe",
+      "peanut salad maharashtra",
+      "peanut yogurt salad india",
+      "fasting salad maharashtra"
+    ],
+    "img": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Bharli Vangi Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/bharli-vangi",
+    "dish_name": "Bharli Vangi",
+    "state": "Maharashtra",
+    "category": "Main Courses",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 25,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 55,
+    "servings": 4,
+    "short_description": "Bharli Vangi is Maharashtra's crown jewel \u2014 small brinjals stuffed with a fragrant peanut-coconut-spice mixture and slow cooked in their own juices. It is a celebratory dish that showcases the genius of Maharashtrian flavor-building.",
+    "ingredients": [
+      {
+        "name": "Small round brinjals",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Roasted peanuts",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Goda masala",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Tamarind",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Jaggery",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Dry roast peanuts, coconut and sesame seeds. Grind with fried onion.",
+      "Mix ground masala with goda masala, tamarind, jaggery and salt.",
+      "Make criss-cross slits in brinjals keeping the stem intact.",
+      "Stuff each brinjal generously with the masala mixture.",
+      "Heat oil in a pan and place stuffed brinjals carefully.",
+      "Cover and cook on low heat for 25 minutes, turning gently.",
+      "Brinjals should be completely tender. Serve with remaining masala as sauce."
+    ],
+    "chef_notes": "Low and slow is the key to perfectly cooked bharli vangi. The brinjals will release moisture and cook in their own steam. Avoid the urge to add water.",
+    "serving_suggestions": "Serve with jowar bhakri, rice or roti and a bowl of varan.",
+    "nutrition_estimate": {
+      "calories": "265",
+      "protein_g": "7",
+      "carbohydrates_g": "22",
+      "fat_g": "17"
+    },
+    "tags": [
+      "Vegetarian",
+      "Festival Food",
+      "Traditional",
+      "Signature Dish"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Maharashtrian bharli vangi, stuffed brinjals in deep brown masala gravy in a copper karahi, garnished with coriander and grated coconut, warm moody lighting, rustic wooden background",
+    "seo_keywords": [
+      "bharli vangi recipe",
+      "stuffed brinjal maharashtra",
+      "maharashtrian eggplant recipe",
+      "goda masala recipe",
+      "maharashtrian vegetarian main course"
+    ],
+    "img": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Chicken Kolhapuri Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/chicken-kolhapuri",
+    "dish_name": "Chicken Kolhapuri",
+    "state": "Maharashtra",
+    "category": "Main Courses",
+    "difficulty_level": "Hard",
+    "prep_time_minutes": 40,
+    "cook_time_minutes": 60,
+    "total_time_minutes": 100,
+    "servings": 4,
+    "short_description": "Chicken Kolhapuri is one of India's most fiery and complex chicken dishes \u2014 a dark, aromatic and intensely spiced curry from the city of Kolhapur. Made with a fresh-ground Kolhapuri masala of roasted whole spices, coconut and chilies, it is bold, unapologetic and deeply satisfying.",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "quantity": "800",
+        "unit": "g"
+      },
+      {
+        "name": "Onions",
+        "quantity": "3",
+        "unit": "large"
+      },
+      {
+        "name": "Kolhapuri masala",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Dried red chilies (Kashmiri + Bedgi)",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Grated coconut, dry roasted",
+        "quantity": "5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Whole spices",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame seeds, roasted",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "2",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Dry roast whole spices, sesame and coconut. Grind with soaked red chilies.",
+      "Fry onions until deep brown and caramelized \u2014 this is critical.",
+      "Add ginger-garlic paste and fry until oil separates.",
+      "Add Kolhapuri masala and ground coconut-chili paste. Fry on low heat for 8 minutes.",
+      "Add chicken pieces and coat well. Sear on high heat.",
+      "Add water, cover and cook on medium heat for 35-40 minutes.",
+      "The gravy should be thick, dark and coating the chicken. Adjust seasoning."
+    ],
+    "chef_notes": "The depth of color in Kolhapuri chicken comes from deeply caramelized onions and dry roasted coconut \u2014 not from food coloring. Never rush these steps. Use a mix of Kashmiri (for color) and Bedgi/Guntur (for heat) chilies.",
+    "serving_suggestions": "Serve with jowar bhakri, tandlachi bhakri or steamed rice.",
+    "nutrition_estimate": {
+      "calories": "380",
+      "protein_g": "32",
+      "carbohydrates_g": "12",
+      "fat_g": "22"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Spicy",
+      "Kolhapuri",
+      "Weekend Special"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of fiery dark Chicken Kolhapuri, deep reddish-brown thick masala, chicken pieces coated in aromatic spiced gravy, copper karahi, dramatic side lighting, garnished with coriander and fried onions",
+    "seo_keywords": [
+      "chicken kolhapuri recipe",
+      "kolhapuri masala chicken",
+      "spicy maharashtrian chicken",
+      "authentic chicken kolhapuri",
+      "indian spicy chicken curry"
+    ],
+    "img": "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Masala Bhaat Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/masala-bhaat",
+    "dish_name": "Masala Bhaat",
+    "state": "Maharashtra",
+    "category": "Main Courses",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 50,
+    "servings": 4,
+    "short_description": "Masala Bhaat is a fragrant one-pot Maharashtrian rice dish made with seasonal vegetables, goda masala and a generous garnish of fresh coconut and coriander. It is a festive staple \u2014 especially at weddings and Ganesh Chaturthi celebrations.",
+    "ingredients": [
+      {
+        "name": "Basmati rice",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Mixed vegetables (brinjal, potato, green peas)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Goda masala",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Curry leaves",
+        "quantity": "10",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cashews",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Wash and soak rice for 20 minutes.",
+      "Heat ghee in a heavy pot. Fry cashews until golden, remove.",
+      "Add mustard seeds, curry leaves and sliced onion. Saut\u00e9 until golden.",
+      "Add vegetables and goda masala. Fry for 5 minutes.",
+      "Add drained rice and toss to coat with masala.",
+      "Add 550ml water and salt. Bring to boil.",
+      "Cover and cook on very low heat for 18 minutes.",
+      "Garnish with coconut, coriander and fried cashews."
+    ],
+    "chef_notes": "Goda masala gives Masala Bhaat its signature sweet-spiced aroma. Do not substitute it. Brinjal is the traditional vegetable but you can add any seasonal vegetables.",
+    "serving_suggestions": "Serve with kadhi, papad, pickle and a dollop of ghee.",
+    "nutrition_estimate": {
+      "calories": "345",
+      "protein_g": "7",
+      "carbohydrates_g": "58",
+      "fat_g": "9"
+    },
+    "tags": [
+      "Festival Food",
+      "Vegetarian",
+      "One-Pot",
+      "Wedding Food"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian masala bhaat, fragrant spiced rice with vegetables, fresh coconut and coriander garnish, served in a traditional banana leaf bowl, festive Maharashtrian setting",
+    "seo_keywords": [
+      "masala bhaat recipe",
+      "maharashtrian spiced rice",
+      "goda masala rice",
+      "wedding rice maharashtra",
+      "ganesh chaturthi recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Puran Poli Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/puran-poli",
+    "dish_name": "Puran Poli",
+    "state": "Maharashtra",
+    "category": "Breads",
+    "difficulty_level": "Hard",
+    "prep_time_minutes": 60,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 90,
+    "servings": 4,
+    "short_description": "Puran Poli is Maharashtra's most beloved festive flatbread \u2014 a thin whole wheat outer shell stuffed with a fragrant sweet filling of cooked chana dal, jaggery and cardamom. Made for Holi, Ganesh Chaturthi and Diwali, it is soul food in its purest form.",
+    "ingredients": [
+      {
+        "name": "Whole wheat flour",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Chana dal",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Jaggery",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Nutmeg powder",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "6",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Make a soft, pliable dough with flour, turmeric, salt, oil and water. Rest 30 minutes.",
+      "Pressure cook chana dal until completely soft.",
+      "Mash dal and cook with jaggery until mixture thickens and leaves sides of pan.",
+      "Add cardamom and nutmeg. Cool completely \u2014 this is the puran.",
+      "Divide dough and puran into equal balls.",
+      "Flatten dough, place puran ball, seal and roll gently into thin circles.",
+      "Cook on hot griddle with generous ghee on both sides until golden."
+    ],
+    "chef_notes": "The puran must be very dry before stuffing \u2014 cook it until it holds its shape and does not stick. A soft dough that rests well is crucial for thin rolling without tearing.",
+    "serving_suggestions": "Serve hot with katachi amti, ghee and a glass of milk. Traditionally eaten at Holi and Ganesh Chaturthi.",
+    "nutrition_estimate": {
+      "calories": "420",
+      "protein_g": "10",
+      "carbohydrates_g": "68",
+      "fat_g": "12"
+    },
+    "tags": [
+      "Festival Food",
+      "Vegetarian",
+      "Holi",
+      "Ganesh Chaturthi"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of freshly made Maharashtrian puran poli, golden flatbread with ghee glistening, stacked on a plate with katachi amti alongside, festive setting, warm natural light",
+    "seo_keywords": [
+      "puran poli recipe",
+      "maharashtrian sweet flatbread",
+      "holi special recipe",
+      "chana dal sweet poli",
+      "ganesh chaturthi food"
+    ],
+    "img": "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Bhakri Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/jowar-bhakri",
+    "dish_name": "Jowar Bhakri",
+    "state": "Maharashtra",
+    "category": "Breads",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 35,
+    "servings": 4,
+    "short_description": "Jowar Bhakri is Maharashtra's everyday sorghum flatbread \u2014 thick, rustic and nutritious. Made purely with jowar flour and water, it requires skill to roll and is best eaten fresh off the tawa with generous white butter and a simple chutney.",
+    "ingredients": [
+      {
+        "name": "Jowar flour (sorghum)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Warm water",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "White butter (loni)",
+        "quantity": "4",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Mix jowar flour with warm water and salt. Knead into a soft dough \u2014 jowar is gluten-free so it won't be elastic.",
+      "Divide into medium balls.",
+      "Wet your palms with water and pat each ball into a thick round on a wet cloth.",
+      "Alternatively, roll gently between sheets of plastic.",
+      "Cook on a dry hot tawa (no oil) on medium heat.",
+      "Press gently with a cloth and cook until light brown spots appear.",
+      "Serve immediately with white butter."
+    ],
+    "chef_notes": "Jowar bhakri requires patience. Because it has no gluten, it must be patted out with wet hands \u2014 it cannot be rolled like wheat roti. Always eat fresh as it hardens when cold.",
+    "serving_suggestions": "Serve hot with white butter, any Maharashtrian curry, or thecha (green chili chutney).",
+    "nutrition_estimate": {
+      "calories": "220",
+      "protein_g": "7",
+      "carbohydrates_g": "44",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Gluten-Free",
+      "Vegetarian",
+      "Traditional",
+      "Everyday"
+    ],
+    "image_prompt": "Ultra realistic food photography of freshly made jowar bhakri on a hot tawa, slightly charred rustic flatbread, white butter melting on top, traditional Maharashtrian kitchen setting, warm light",
+    "seo_keywords": [
+      "jowar bhakri recipe",
+      "sorghum flatbread india",
+      "maharashtrian bhakri",
+      "gluten free indian bread",
+      "jowar roti recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1530610476181-d83430b64dcd?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Pav Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/homemade-pav",
+    "dish_name": "Homemade Pav",
+    "state": "Maharashtra",
+    "category": "Breads",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 120,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 140,
+    "servings": 8,
+    "short_description": "Soft, pillowy pav buns are the vessel for Mumbai's greatest street foods \u2014 Vada Pav, Pav Bhaji and Misal Pav. Made with maida, yeast and a touch of sugar, homemade pav is incomparably softer and more delicious than store-bought versions.",
+    "ingredients": [
+      {
+        "name": "All-purpose flour (maida)",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Instant yeast",
+        "quantity": "7",
+        "unit": "g"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Butter",
+        "quantity": "30",
+        "unit": "g"
+      },
+      {
+        "name": "Warm milk",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Warm water",
+        "quantity": "50",
+        "unit": "ml"
+      }
+    ],
+    "preparation_steps": [
+      "Mix yeast and sugar in warm water. Let sit 10 minutes until frothy.",
+      "Add yeast mixture to flour with salt and butter.",
+      "Add warm milk and knead for 10 minutes until smooth and elastic.",
+      "Cover and let rise in a warm place for 1 hour until doubled.",
+      "Punch down, divide into 8 equal balls, shape and place in a greased tray.",
+      "Let rise again for 30 minutes.",
+      "Bake at 180\u00b0C for 18-20 minutes until golden.",
+      "Brush with butter immediately after baking."
+    ],
+    "chef_notes": "Placing the pav balls touching each other in the tray ensures they rise upward and become perfectly soft-sided. Brushing with butter while hot makes the crust tender.",
+    "serving_suggestions": "Use for Vada Pav, Pav Bhaji, Misal Pav or serve with any Maharashtrian curry.",
+    "nutrition_estimate": {
+      "calories": "210",
+      "protein_g": "6",
+      "carbohydrates_g": "36",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Bread",
+      "Vegetarian",
+      "Baked",
+      "Street Food Base"
+    ],
+    "image_prompt": "Ultra realistic food photography of fresh homemade pav buns, golden brown, soft and pillowy, just out of the oven on a baking tray, butter melting on top, warm bakery atmosphere",
+    "seo_keywords": [
+      "pav recipe homemade",
+      "mumbai pav bread",
+      "soft dinner rolls india",
+      "vada pav bread recipe",
+      "maharashtrian pav bun"
+    ],
+    "img": "https://images.unsplash.com/photo-1620921568790-c1cf8e1b4314?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Amboli Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/amboli",
+    "dish_name": "Amboli",
+    "state": "Maharashtra",
+    "category": "Breads",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 480,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 500,
+    "servings": 4,
+    "short_description": "Amboli is a thick, soft, slightly sour fermented rice and urad dal pancake from the Konkan coast of Maharashtra. Softer and thicker than a dosa, it is a beloved breakfast in Malvani and Goan-influenced cuisines.",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Urad dal",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Poha",
+        "quantity": "50",
+        "unit": "g"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil for cooking",
+        "quantity": "3",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak rice, urad dal and poha together for 4 hours.",
+      "Grind into a thick, coarse batter.",
+      "Ferment overnight in a warm place.",
+      "Season with salt. Batter should be thick.",
+      "Pour a ladle onto a hot greased tawa and spread into a thick circle.",
+      "Cover and cook on medium heat. No need to flip.",
+      "Serve hot when the top is cooked and bottom is golden."
+    ],
+    "chef_notes": "Amboli is intentionally thick \u2014 unlike dosa, do not spread thin. The coarse texture is characteristic. Serve with red coconut chutney or chicken curry.",
+    "serving_suggestions": "Serve with Malvani chicken curry, coconut chutney or fish curry.",
+    "nutrition_estimate": {
+      "calories": "210",
+      "protein_g": "6",
+      "carbohydrates_g": "38",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Konkan",
+      "Fermented",
+      "Breakfast",
+      "Gluten-Free"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian amboli thick fermented rice pancake on a cast iron pan, golden bottom, soft top, served with red coconut chutney, coastal Konkan setting",
+    "seo_keywords": [
+      "amboli recipe",
+      "konkan pancake recipe",
+      "maharashtrian fermented bread",
+      "malvani breakfast",
+      "rice pancake india"
+    ],
+    "img": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Ghavan Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/ghavan",
+    "dish_name": "Ghavan",
+    "state": "Maharashtra",
+    "category": "Breads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 35,
+    "servings": 4,
+    "short_description": "Ghavan is a thin, lacy rice flour crepe from the Konkan region of Maharashtra. Made simply with rice flour, water and salt, it is crispy at the edges, soft in the middle and is the everyday bread of coastal Maharashtrian households.",
+    "ingredients": [
+      {
+        "name": "Rice flour",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Coconut milk",
+        "quantity": "150",
+        "unit": "ml"
+      },
+      {
+        "name": "Water",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Mix rice flour with coconut milk, water and salt into a thin pouring batter.",
+      "Let the batter rest for 15 minutes.",
+      "Heat a non-stick or cast iron pan and grease lightly.",
+      "Pour a thin ladle of batter and spread into a thin circle.",
+      "Cover and cook on medium heat until set.",
+      "No need to flip. Serve when edges are crispy."
+    ],
+    "chef_notes": "The batter must be thinner than dosa batter. Coconut milk adds a subtle sweetness and richness to the ghavan.",
+    "serving_suggestions": "Serve with coconut chutney, fish curry or any Konkani side dish.",
+    "nutrition_estimate": {
+      "calories": "175",
+      "protein_g": "3",
+      "carbohydrates_g": "30",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Konkan",
+      "Gluten-Free",
+      "Breakfast",
+      "Vegan"
+    ],
+    "image_prompt": "Ultra realistic food photography of thin lacy Maharashtrian ghavan rice crepe on a clay plate, crispy golden edges, served with coconut chutney, coastal Konkan setting, morning light",
+    "seo_keywords": [
+      "ghavan recipe",
+      "konkan rice crepe",
+      "maharashtrian rice bread",
+      "gluten free indian bread",
+      "coastal maharashtra breakfast"
+    ],
+    "img": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Dhapate Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/dhapate",
+    "dish_name": "Dhapate",
+    "state": "Maharashtra",
+    "category": "Breads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 35,
+    "servings": 4,
+    "short_description": "Dhapate is a rustic Maharashtrian multigrain flatbread made with jowar, wheat, besan and onion \u2014 packed with flavor and nutrition. A traditional peasant bread that has gained widespread popularity for its hearty, satisfying nature.",
+    "ingredients": [
+      {
+        "name": "Jowar flour",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Whole wheat flour",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Besan",
+        "quantity": "50",
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Mix all flours with chopped onion, green chili, sesame, coriander and salt.",
+      "Add oil and rub in well.",
+      "Add water gradually and knead into a soft dough.",
+      "Pat each ball into a thick round on a greased surface.",
+      "Cook on a hot tawa with oil until golden on both sides.",
+      "Serve hot with yogurt or chutney."
+    ],
+    "chef_notes": "Dhapate has a rustic, slightly crumbly texture due to the multigrain blend. Do not over-knead. The onions should remain slightly crunchy in the bread.",
+    "serving_suggestions": "Serve with fresh yogurt, butter, and green chutney.",
+    "nutrition_estimate": {
+      "calories": "240",
+      "protein_g": "8",
+      "carbohydrates_g": "36",
+      "fat_g": "8"
+    },
+    "tags": [
+      "Multigrain",
+      "Vegetarian",
+      "Rustic",
+      "Healthy"
+    ],
+    "image_prompt": "Ultra realistic food photography of rustic Maharashtrian dhapate multigrain flatbread on a cast iron pan, golden brown, sesame seeds visible, served with fresh yogurt and green chutney",
+    "seo_keywords": [
+      "dhapate recipe",
+      "maharashtrian multigrain bread",
+      "jowar wheat flatbread",
+      "traditional maharashtra bread",
+      "healthy indian flatbread"
+    ],
+    "img": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Vangyache Bharit Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/vangyache-bharit",
+    "dish_name": "Vangyache Bharit",
+    "state": "Maharashtra",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 25,
+    "total_time_minutes": 35,
+    "servings": 4,
+    "short_description": "Vangyache Bharit is Maharashtra's fire-roasted brinjal mash \u2014 smoky, earthy and brightened with fresh coconut, onion, lemon and coriander. Similar to North Indian Baingan Bharta but distinctly Maharashtrian with coconut and a lighter hand on spices.",
+    "ingredients": [
+      {
+        "name": "Large brinjal",
+        "quantity": "1",
+        "unit": "kg"
+      },
+      {
+        "name": "Onion",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "4",
+        "unit": "cloves"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Roast brinjal directly on flame, turning regularly until completely charred.",
+      "Cool and peel. Mash the smoky flesh.",
+      "Temper mustard seeds, garlic and green chili in oil.",
+      "Add finely chopped onion and fry until translucent.",
+      "Add mashed brinjal and mix well.",
+      "Add coconut, lemon, salt and coriander.",
+      "Serve at room temperature."
+    ],
+    "chef_notes": "Direct flame roasting is essential for the smoky flavor. Do not use oven roasting \u2014 it will not give the same result. Serve within an hour for best flavor.",
+    "serving_suggestions": "Serve with jowar bhakri, rice or as a dip with pav.",
+    "nutrition_estimate": {
+      "calories": "145",
+      "protein_g": "3",
+      "carbohydrates_g": "18",
+      "fat_g": "7"
+    },
+    "tags": [
+      "Vegetarian",
+      "Smoky",
+      "Vegan",
+      "Everyday"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian vangyache bharit smoked brinjal mash in a clay bowl, coconut and coriander visible, rustic dark background, cast iron pan alongside",
+    "seo_keywords": [
+      "vangyache bharit recipe",
+      "maharashtrian baingan bharta",
+      "smoked brinjal maharashtra",
+      "fire roasted eggplant india",
+      "maharashtrian vegetarian recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Shrikhand Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/shrikhand",
+    "dish_name": "Shrikhand",
+    "state": "Maharashtra",
+    "category": "Desserts",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 480,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 480,
+    "servings": 6,
+    "short_description": "Shrikhand is Maharashtra's most beloved dessert \u2014 thick strained yogurt whipped with sugar, saffron, cardamom and garnished with pistachios. Creamy, fragrant and intensely flavored, it is served at every celebration and festival.",
+    "ingredients": [
+      {
+        "name": "Full fat yogurt",
+        "quantity": "1",
+        "unit": "kg"
+      },
+      {
+        "name": "Powdered sugar",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Warm milk",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Pistachios",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rose water",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Hang yogurt in a muslin cloth for 6-8 hours to drain all whey.",
+      "The resulting chakka should be very thick and dense.",
+      "Soak saffron in warm milk for 10 minutes.",
+      "Whisk chakka with powdered sugar until smooth.",
+      "Add cardamom, saffron milk and rose water. Whisk well.",
+      "Chill for at least 2 hours before serving.",
+      "Garnish with chopped pistachios and saffron strands."
+    ],
+    "chef_notes": "The quality of shrikhand depends entirely on the chakka (strained yogurt). It must be hung long enough to eliminate all whey \u2014 otherwise the shrikhand will be runny. Use full-fat yogurt only.",
+    "serving_suggestions": "Serve chilled as a dessert or with hot puri as Shrikhand-Puri \u2014 a famous Maharashtrian combination.",
+    "nutrition_estimate": {
+      "calories": "285",
+      "protein_g": "7",
+      "carbohydrates_g": "42",
+      "fat_g": "10"
+    },
+    "tags": [
+      "Dessert",
+      "Vegetarian",
+      "Festival Food",
+      "Gluten-Free"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Maharashtrian shrikhand in an elegant silver bowl, pale saffron yellow color, garnished with crushed pistachios and saffron strands, rose petals, soft natural light, festive presentation",
+    "seo_keywords": [
+      "shrikhand recipe",
+      "maharashtrian sweet",
+      "saffron yogurt dessert",
+      "shrikhand puri recipe",
+      "indian festival dessert"
+    ],
+    "img": "https://images.unsplash.com/photo-1488477304112-4944851de03d?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Modak Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/steamed-modak",
+    "dish_name": "Ukadiche Modak",
+    "state": "Maharashtra",
+    "category": "Desserts",
+    "difficulty_level": "Hard",
+    "prep_time_minutes": 60,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 80,
+    "servings": 4,
+    "short_description": "Ukadiche Modak are steamed rice flour dumplings filled with a fragrant coconut-jaggery-cardamom filling. Lord Ganesha's favorite offering, these delicate modak are made during Ganesh Chaturthi and require skill to shape their distinctive pleated form.",
+    "ingredients": [
+      {
+        "name": "Rice flour",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Jaggery",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Nutmeg",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.25",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Make filling: cook coconut with jaggery until dry. Add cardamom and nutmeg. Cool.",
+      "Boil 500ml water with ghee and salt. Add rice flour off heat and mix vigorously.",
+      "Knead dough while warm into a smooth ball using wet hands.",
+      "Take a small ball of dough, flatten in your palm into a thin cup shape.",
+      "Place filling in center and pleat the edges together upward to form a pointed top.",
+      "Seal all pleats at the top with a twist.",
+      "Steam in a steamer lined with muslin for 12-15 minutes.",
+      "Serve hot with a drizzle of ghee."
+    ],
+    "chef_notes": "The dough must be worked while warm. If it cracks, wet hands with water and knead again. The pleating is a traditional art \u2014 13 pleats is considered perfect.",
+    "serving_suggestions": "Serve as naivedyam (offering) to Lord Ganesha during Ganesh Chaturthi. Eat hot with ghee.",
+    "nutrition_estimate": {
+      "calories": "265",
+      "protein_g": "4",
+      "carbohydrates_g": "45",
+      "fat_g": "8"
+    },
+    "tags": [
+      "Festival Food",
+      "Vegetarian",
+      "Gluten-Free",
+      "Ganesh Chaturthi"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of handmade Maharashtrian ukadiche modak, delicate steamed rice dumplings with pleated tops, ghee drizzle, arranged on a traditional banana leaf with marigolds, Ganesh Chaturthi setting",
+    "seo_keywords": [
+      "modak recipe",
+      "ukadiche modak",
+      "ganesh chaturthi modak",
+      "steamed rice dumpling india",
+      "maharashtrian festival sweet"
+    ],
+    "img": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Puranachi Poli Kheer Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/basundi",
+    "dish_name": "Basundi",
+    "state": "Maharashtra",
+    "category": "Desserts",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 90,
+    "total_time_minutes": 95,
+    "servings": 6,
+    "short_description": "Basundi is a rich, thickened sweetened milk dessert from Maharashtra \u2014 essentially a concentrated rabri flavored with saffron, cardamom and garnished with nuts. Slow cooked until creamy and thick, it is a festival and wedding staple.",
+    "ingredients": [
+      {
+        "name": "Full fat milk",
+        "quantity": "1.5",
+        "unit": "litre"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Charoli nuts",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Almonds, sliced",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Pistachios, sliced",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rose water",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Bring milk to a boil in a wide heavy pan.",
+      "Reduce heat and simmer, stirring frequently, for 60-70 minutes.",
+      "The milk will reduce by half and thick cream layers will form.",
+      "Add sugar, saffron, cardamom and rose water.",
+      "Simmer another 15 minutes until thick and creamy.",
+      "Serve warm or chilled, garnished with nuts."
+    ],
+    "chef_notes": "Basundi requires patience \u2014 do not rush the reduction. Keep scraping the cream from sides and mixing back in. This creates the characteristic creamy texture.",
+    "serving_suggestions": "Serve chilled as a dessert or warm as a festival offering.",
+    "nutrition_estimate": {
+      "calories": "310",
+      "protein_g": "9",
+      "carbohydrates_g": "38",
+      "fat_g": "14"
+    },
+    "tags": [
+      "Dessert",
+      "Vegetarian",
+      "Festival Food",
+      "Gluten-Free"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian basundi in a traditional copper bowl, thick creamy saffron-yellow milk dessert, garnished with pistachios, almonds and saffron strands, festive Indian setting",
+    "seo_keywords": [
+      "basundi recipe",
+      "maharashtrian milk dessert",
+      "thickened sweet milk india",
+      "rabri maharashtra",
+      "indian festival dessert milk"
+    ],
+    "img": "https://images.unsplash.com/photo-1574085733277-851d9d856a3a?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Gulachi Poli Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/gulachi-poli",
+    "dish_name": "Gulachi Poli",
+    "state": "Maharashtra",
+    "category": "Desserts",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 40,
+    "servings": 4,
+    "short_description": "Gulachi Poli is a simple Maharashtrian sweet flatbread stuffed with a jaggery and sesame seed filling. Less complex than Puran Poli, it is a beloved homestyle sweet that is quick to make and deeply comforting.",
+    "ingredients": [
+      {
+        "name": "Whole wheat flour",
+        "quantity": "250",
+        "unit": "g"
+      },
+      {
+        "name": "Jaggery, grated",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.25",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Dry roast sesame seeds until golden. Cool and grind coarsely.",
+      "Mix ground sesame with jaggery and cardamom to make filling.",
+      "Make a soft dough with wheat flour, ghee and salt.",
+      "Roll out small circles, place filling, seal and roll gently.",
+      "Cook on a hot tawa with ghee until golden on both sides.",
+      "Serve hot."
+    ],
+    "chef_notes": "Do not make the filling too fine \u2014 a coarse texture gives better taste and prevents the poli from becoming soggy.",
+    "serving_suggestions": "Serve hot with ghee as a dessert or sweet snack.",
+    "nutrition_estimate": {
+      "calories": "290",
+      "protein_g": "6",
+      "carbohydrates_g": "44",
+      "fat_g": "10"
+    },
+    "tags": [
+      "Dessert",
+      "Vegetarian",
+      "Festival Food",
+      "Quick Sweet"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian gulachi poli sweet flatbread, golden brown, served on a steel plate with ghee, sesame seeds visible, homestyle Maharashtrian kitchen setting",
+    "seo_keywords": [
+      "gulachi poli recipe",
+      "sesame jaggery flatbread",
+      "maharashtrian sweet poli",
+      "til jaggery poli",
+      "quick indian sweet flatbread"
+    ],
+    "img": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Kheer Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/sabudana-kheer",
+    "dish_name": "Sabudana Kheer",
+    "state": "Maharashtra",
+    "category": "Desserts",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 50,
+    "servings": 4,
+    "short_description": "Sabudana Kheer is a silky, creamy Maharashtrian dessert made with tapioca pearls cooked in sweetened milk with cardamom, saffron and nuts. A popular fasting-friendly dessert, it is light yet indulgent.",
+    "ingredients": [
+      {
+        "name": "Sabudana (tapioca pearls)",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Full fat milk",
+        "quantity": "800",
+        "unit": "ml"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cashews",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Raisins",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak sabudana in water for 30 minutes. Drain.",
+      "Fry cashews and raisins in ghee. Set aside.",
+      "Bring milk to a boil. Add soaked sabudana.",
+      "Simmer on medium heat for 15 minutes until pearls are translucent.",
+      "Add sugar, cardamom and saffron.",
+      "Simmer 5 more minutes. Garnish with fried nuts.",
+      "Serve warm or chilled."
+    ],
+    "chef_notes": "Do not over-soak sabudana or the pearls will dissolve into the milk. They should be just soft enough to cook through in the milk.",
+    "serving_suggestions": "Serve warm as a fasting dessert or festival sweet.",
+    "nutrition_estimate": {
+      "calories": "265",
+      "protein_g": "6",
+      "carbohydrates_g": "42",
+      "fat_g": "8"
+    },
+    "tags": [
+      "Fasting Food",
+      "Dessert",
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "image_prompt": "Ultra realistic food photography of sabudana kheer in a brass bowl, translucent tapioca pearls in creamy saffron milk, garnished with fried cashews and raisins, warm golden light, traditional Indian setting",
+    "seo_keywords": [
+      "sabudana kheer recipe",
+      "tapioca pudding india",
+      "maharashtrian fasting dessert",
+      "sabudana sweet",
+      "upvas kheer recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Masala Chai Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/masala-chai-cutting",
+    "dish_name": "Cutting Chai",
+    "state": "Maharashtra",
+    "category": "Tea",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 2,
+    "cook_time_minutes": 8,
+    "total_time_minutes": 10,
+    "servings": 2,
+    "short_description": "Cutting Chai is Mumbai's iconic half-cup strong masala tea \u2014 served scalding hot in small glasses on street corners throughout the city. The name 'cutting' comes from the practice of splitting one cup into two smaller portions. Bold, spiced and deeply satisfying.",
+    "ingredients": [
+      {
+        "name": "Water",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Milk",
+        "quantity": "150",
+        "unit": "ml"
+      },
+      {
+        "name": "Strong black tea leaves",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Cardamom",
+        "quantity": "3",
+        "unit": "pods"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "2",
+        "unit": "pieces"
+      }
+    ],
+    "preparation_steps": [
+      "Crush cardamom and black pepper roughly.",
+      "Bring water to boil with crushed spices and grated ginger.",
+      "Add tea leaves and boil for 2 minutes.",
+      "Add milk and bring to a vigorous boil \u2014 let it rise twice.",
+      "Add sugar and strain into small glasses.",
+      "Serve immediately \u2014 scalding hot."
+    ],
+    "chef_notes": "The double boil is crucial for that thick, strong Mumbai cutting chai character. The ginger must be fresh \u2014 powdered ginger will not give the same result.",
+    "serving_suggestions": "Serve in small glasses with bun maska, vada pav or khari biscuit.",
+    "nutrition_estimate": {
+      "calories": "85",
+      "protein_g": "3",
+      "carbohydrates_g": "12",
+      "fat_g": "3"
+    },
+    "tags": [
+      "Beverage",
+      "Mumbai",
+      "Street Food",
+      "Vegetarian"
+    ],
+    "image_prompt": "Ultra realistic food photography of Mumbai cutting chai in small glass cups on a steel tray, steam rising, street chai stall background, warm golden late afternoon light, authentic street atmosphere",
+    "seo_keywords": [
+      "cutting chai recipe",
+      "mumbai masala chai",
+      "indian spiced tea",
+      "maharashtrian chai",
+      "street chai india"
+    ],
+    "img": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Kolhapuri Masala Tea Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/kolhapuri-masala-tea",
+    "dish_name": "Kolhapuri Kanda Chai",
+    "state": "Maharashtra",
+    "category": "Tea",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 15,
+    "servings": 2,
+    "short_description": "A bold, unusual tea specialty from Kolhapur \u2014 made with the addition of a tiny amount of onion and unique spice blend. Peculiar to outsiders but beloved locally, this tea has a unique savory-spiced character that is intensely warming.",
+    "ingredients": [
+      {
+        "name": "Water",
+        "quantity": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "Milk",
+        "quantity": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "Tea leaves",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Small onion",
+        "quantity": "0.25",
+        "unit": "piece"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Clove",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Crush ginger, onion, pepper and clove together.",
+      "Boil water with crushed spices for 3 minutes.",
+      "Add tea leaves and boil 2 minutes.",
+      "Add milk and sugar. Bring to a boil.",
+      "Strain carefully and serve hot."
+    ],
+    "chef_notes": "The onion quantity is tiny \u2014 just enough to add body and a subtle savoriness. This is a distinctly Kolhapuri specialty that confuses outsiders but converts them after one sip.",
+    "serving_suggestions": "Serve on cold mornings with bhakri and thecha.",
+    "nutrition_estimate": {
+      "calories": "70",
+      "protein_g": "2",
+      "carbohydrates_g": "10",
+      "fat_g": "2"
+    },
+    "tags": [
+      "Beverage",
+      "Kolhapuri",
+      "Unique",
+      "Warming"
+    ],
+    "image_prompt": "Ultra realistic food photography of Kolhapuri kanda chai in a clay kulhad, steam rising, rustic Kolhapur street background, golden morning light",
+    "seo_keywords": [
+      "kolhapuri chai recipe",
+      "kanda chai recipe",
+      "onion tea india",
+      "unusual indian tea recipes",
+      "kolhapur street food"
+    ],
+    "img": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Ginger Lemon Tea Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/adrak-lemon-chai",
+    "dish_name": "Adrak Lemon Chai",
+    "state": "Maharashtra",
+    "category": "Tea",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 2,
+    "cook_time_minutes": 8,
+    "total_time_minutes": 10,
+    "servings": 2,
+    "short_description": "A refreshingly light lemon ginger tea that is popular across Pune's upscale cafes and traditional Maharashtrian homes alike. Black tea brightened with fresh lemon juice and generous ginger \u2014 a perfect monsoon or winter warmer.",
+    "ingredients": [
+      {
+        "name": "Water",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Black tea leaves",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "2",
+        "unit": "inch"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Honey or sugar",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mint leaves",
+        "quantity": "4",
+        "unit": "pieces"
+      }
+    ],
+    "preparation_steps": [
+      "Grate ginger and boil with water for 3 minutes.",
+      "Add tea leaves and simmer 2 minutes.",
+      "Strain into cups.",
+      "Add lemon juice and honey.",
+      "Garnish with mint leaves and serve hot."
+    ],
+    "chef_notes": "Do not add lemon juice while boiling \u2014 it will make the tea bitter. Always add after straining.",
+    "serving_suggestions": "Serve as a light tea option or after heavy meals as a digestive.",
+    "nutrition_estimate": {
+      "calories": "30",
+      "protein_g": "0",
+      "carbohydrates_g": "7",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Beverage",
+      "Healthy",
+      "Vegan",
+      "Refreshing"
+    ],
+    "image_prompt": "Ultra realistic food photography of adrak lemon chai in a clear glass, golden tea color, lemon slice floating, fresh mint garnish, clean minimal food photography, bright natural light",
+    "seo_keywords": [
+      "adrak lemon chai recipe",
+      "ginger lemon tea india",
+      "maharashtrian tea recipe",
+      "healthy indian tea",
+      "black tea with lemon ginger"
+    ],
+    "img": "https://images.unsplash.com/photo-1563822249366-3efb23b8e0c9?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Tulsi Ginger Tea Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/tulsi-ginger-tea",
+    "dish_name": "Tulsi Adrak Chai",
+    "state": "Maharashtra",
+    "category": "Tea",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 2,
+    "cook_time_minutes": 8,
+    "total_time_minutes": 10,
+    "servings": 2,
+    "short_description": "A healing Ayurvedic tea made with fresh holy basil (tulsi), ginger, black pepper and honey. A traditional Maharashtrian home remedy for colds and coughs, this fragrant tea is now popular in wellness cafes across Mumbai and Pune.",
+    "ingredients": [
+      {
+        "name": "Fresh tulsi leaves",
+        "quantity": "10",
+        "unit": "pieces"
+      },
+      {
+        "name": "Water",
+        "quantity": "350",
+        "unit": "ml"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Honey",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Lightly bruise tulsi leaves and ginger.",
+      "Bring water to boil with tulsi, ginger and black pepper.",
+      "Simmer for 5 minutes until fragrant.",
+      "Strain into cups.",
+      "Add honey and lemon juice. Stir well.",
+      "Serve hot."
+    ],
+    "chef_notes": "This is a caffeine-free herbal tea. The honey should be added after straining when the temperature drops slightly to preserve its properties.",
+    "serving_suggestions": "Serve on cold mornings or as a soothing evening drink.",
+    "nutrition_estimate": {
+      "calories": "20",
+      "protein_g": "0",
+      "carbohydrates_g": "5",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Herbal Tea",
+      "Ayurvedic",
+      "Vegan",
+      "Caffeine-Free",
+      "Immunity Booster"
+    ],
+    "image_prompt": "Ultra realistic food photography of tulsi ginger tea in a glass cup, golden herbal tea with fresh tulsi leaves floating, ginger slice, honey drizzle, clean wellness food photography, natural light",
+    "seo_keywords": [
+      "tulsi chai recipe",
+      "holy basil tea india",
+      "ayurvedic tea maharashtra",
+      "immunity tea india",
+      "herbal tea indian recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Spiced Milk Tea Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/saffron-milk-tea",
+    "dish_name": "Kesar Doodh Chai",
+    "state": "Maharashtra",
+    "category": "Tea",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 8,
+    "total_time_minutes": 13,
+    "servings": 2,
+    "short_description": "A luxurious saffron and cardamom-infused milk tea that is a festive morning drink across Maharashtrian households. Fragrant, golden and warming \u2014 this tea bridges the gap between chai and warm saffron milk.",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Tea leaves",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Almonds, slivered",
+        "quantity": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak saffron in 2 tablespoons warm milk for 5 minutes.",
+      "Bring remaining milk to a gentle boil.",
+      "Add tea leaves and simmer 1 minute.",
+      "Add saffron milk, cardamom and sugar.",
+      "Strain into cups.",
+      "Garnish with slivered almonds."
+    ],
+    "chef_notes": "Soaking saffron in warm milk first ensures full color and flavor release. Only use genuine saffron \u2014 imitation saffron will not give the right result.",
+    "serving_suggestions": "Serve on festive mornings or as a special treat on cold winter days.",
+    "nutrition_estimate": {
+      "calories": "130",
+      "protein_g": "7",
+      "carbohydrates_g": "14",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Festive",
+      "Vegetarian",
+      "Warming",
+      "Saffron"
+    ],
+    "image_prompt": "Ultra realistic food photography of kesar doodh chai in a golden kulhad, bright yellow saffron color, saffron strands visible, almond garnish, festive Maharashtrian setting, warm morning light",
+    "seo_keywords": [
+      "kesar chai recipe",
+      "saffron milk tea india",
+      "festive indian tea",
+      "maharashtrian spiced milk",
+      "cardamom saffron tea"
+    ],
+    "img": "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Masala Kadha Tea Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/masala-kadha",
+    "dish_name": "Masala Kadha",
+    "state": "Maharashtra",
+    "category": "Tea",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 20,
+    "servings": 2,
+    "short_description": "Masala Kadha is a potent Maharashtrian medicinal spice decoction \u2014 boiled with ginger, tulsi, pepper, clove, cinnamon and lemon. A powerful immunity booster and cold remedy that is now widely popular as a wellness drink across Maharashtra.",
+    "ingredients": [
+      {
+        "name": "Water",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "2",
+        "unit": "inch"
+      },
+      {
+        "name": "Tulsi leaves",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "Cloves",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Cinnamon",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Honey",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.25",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Crush all dry spices.",
+      "Bring water to boil with ginger, tulsi, pepper, cloves, cinnamon and turmeric.",
+      "Simmer on low heat for 12 minutes until reduced by a third.",
+      "Strain into cups.",
+      "Add lemon juice and honey when slightly cooled.",
+      "Serve hot."
+    ],
+    "chef_notes": "Kadha should be strong and slightly bitter \u2014 that is its nature. Do not dilute with milk or extra water. Drink in small cups.",
+    "serving_suggestions": "Drink first thing in the morning on an empty stomach for maximum benefit.",
+    "nutrition_estimate": {
+      "calories": "25",
+      "protein_g": "0",
+      "carbohydrates_g": "6",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Immunity Booster",
+      "Ayurvedic",
+      "Herbal",
+      "Caffeine-Free"
+    ],
+    "image_prompt": "Ultra realistic food photography of dark amber masala kadha in a clay cup, steam rising, fresh tulsi leaves and dry spices scattered around, dark rustic background, healing wellness photography",
+    "seo_keywords": [
+      "masala kadha recipe",
+      "immunity booster india",
+      "maharashtrian kadha recipe",
+      "ayurvedic spice decoction",
+      "cold remedy india"
+    ],
+    "img": "https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Kokum Sharbat Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/kokum-sharbat",
+    "dish_name": "Kokum Sharbat",
+    "state": "Maharashtra",
+    "category": "Tea",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 30,
+    "servings": 4,
+    "short_description": "Kokum Sharbat is Maharashtra's signature summer cooler \u2014 a deep crimson, tangy and sweet cold drink made from dried kokum soaked in water with sugar and spices. A natural antacid and digestive, it is the preferred summer drink of coastal Maharashtra.",
+    "ingredients": [
+      {
+        "name": "Dried kokum",
+        "quantity": "10",
+        "unit": "pieces"
+      },
+      {
+        "name": "Cold water",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Black salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Roasted cumin powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mint leaves",
+        "quantity": "5",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ice",
+        "quantity": "8",
+        "unit": "pieces"
+      }
+    ],
+    "preparation_steps": [
+      "Soak kokum in 200ml warm water for 30 minutes.",
+      "Squeeze kokum to extract maximum juice and color.",
+      "Strain the kokum water into a jug.",
+      "Add sugar, black salt and cumin powder. Stir to dissolve.",
+      "Add remaining cold water and ice.",
+      "Garnish with mint and serve cold."
+    ],
+    "chef_notes": "Black salt and cumin are essential for the authentic digestive kokum sharbat character. The deep purple-pink color should be vivid \u2014 if too pale, soak longer.",
+    "serving_suggestions": "Serve chilled as a summer cooler, digestive after meals or as a welcome drink.",
+    "nutrition_estimate": {
+      "calories": "55",
+      "protein_g": "0",
+      "carbohydrates_g": "13",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Summer Drink",
+      "Digestive",
+      "Vegan",
+      "Cooling",
+      "Konkan"
+    ],
+    "image_prompt": "Ultra realistic food photography of deep crimson kokum sharbat in a tall glass, vibrant purple-red color, fresh mint garnish, ice cubes, condensation on glass, tropical coastal setting, bright sunlight",
+    "seo_keywords": [
+      "kokum sharbat recipe",
+      "kokum drink india",
+      "maharashtrian summer drink",
+      "konkan kokum juice",
+      "digestive indian drink"
+    ],
+    "img": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Filter Coffee Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/maharashtrian-coffee",
+    "dish_name": "Nagpur Filter Coffee",
+    "state": "Maharashtra",
+    "category": "Coffee",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 15,
+    "servings": 2,
+    "short_description": "Coffee culture in Nagpur and Vidarbha region of Maharashtra is rooted in strong filter coffee tradition with a Deccan influence. This strong, aromatic drip coffee with hot milk is the morning ritual of countless Maharashtrian households across the Vidarbha belt.",
+    "ingredients": [
+      {
+        "name": "Filter coffee powder (80/20 blend)",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Hot water",
+        "quantity": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "Full fat milk",
+        "quantity": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Add coffee powder to filter device upper chamber.",
+      "Pour hot water over coffee slowly \u2014 allow to drip (15 minutes).",
+      "Heat milk separately until frothy.",
+      "Pour decoction into cup (about 30-40ml per cup).",
+      "Add hot frothy milk and sugar.",
+      "Serve immediately in steel tumblers."
+    ],
+    "chef_notes": "The chicory in the coffee blend adds body and a slight bitterness that is characteristic of South and Central Indian filter coffee. Use 80% coffee, 20% chicory blend.",
+    "serving_suggestions": "Serve in traditional steel tumbler-dabara set with poha or thalipeeth.",
+    "nutrition_estimate": {
+      "calories": "95",
+      "protein_g": "5",
+      "carbohydrates_g": "10",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Coffee",
+      "Vegetarian",
+      "Morning Ritual",
+      "Vidarbha"
+    ],
+    "image_prompt": "Ultra realistic food photography of filter coffee being poured between traditional steel tumbler and dabara, steaming rich brown coffee, morning light, rustic Indian kitchen background",
+    "seo_keywords": [
+      "filter coffee maharashtra",
+      "nagpur filter coffee",
+      "vidarbha coffee",
+      "south indian filter coffee recipe",
+      "indian filter kaapi"
+    ],
+    "img": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Cafe Coffee Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/pune-cafe-coffee",
+    "dish_name": "Pune Cafe Irani Coffee",
+    "state": "Maharashtra",
+    "category": "Coffee",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 15,
+    "servings": 2,
+    "short_description": "Pune's iconic Irani cafes have been serving this distinctive milky coffee since the early 1900s. Made with strong chicory-coffee decoction and boiled milk, served in small thick-bottomed glasses \u2014 this is the taste of old Pune.",
+    "ingredients": [
+      {
+        "name": "Coffee powder with chicory",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Hot water",
+        "quantity": "80",
+        "unit": "ml"
+      },
+      {
+        "name": "Full fat milk",
+        "quantity": "300",
+        "unit": "ml"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Brew strong coffee decoction by pouring hot water over coffee powder.",
+      "Boil milk separately until it rises twice.",
+      "Pour decoction into glass.",
+      "Add sugar.",
+      "Pour hot boiled milk in a thin stream from height to create froth.",
+      "Serve immediately."
+    ],
+    "chef_notes": "Pouring the milk from a height creates the characteristic froth of Irani cafe coffee. The milk should be freshly boiled and very hot.",
+    "serving_suggestions": "Serve in small thick glasses with Osmania biscuits or bun maska.",
+    "nutrition_estimate": {
+      "calories": "110",
+      "protein_g": "6",
+      "carbohydrates_g": "12",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Coffee",
+      "Irani Cafe",
+      "Pune",
+      "Heritage"
+    ],
+    "image_prompt": "Ultra realistic food photography of Pune Irani cafe coffee in a thick glass, frothy milk top, dark coffee visible at bottom, old Irani cafe setting with vintage tiles, warm nostalgic light",
+    "seo_keywords": [
+      "irani cafe coffee pune",
+      "pune cafe coffee recipe",
+      "maharashtrian coffee",
+      "old pune cafe",
+      "chicory coffee india"
+    ],
+    "img": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Cold Coffee Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/cold-coffee",
+    "dish_name": "Nashik Cold Coffee",
+    "state": "Maharashtra",
+    "category": "Coffee",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 5,
+    "servings": 2,
+    "short_description": "A thick, indulgent blended cold coffee that is enormously popular across Maharashtra's college towns \u2014 especially Nashik and Pune. Rich with ice cream, chilled milk and strong coffee, it is the ultimate summer treat.",
+    "ingredients": [
+      {
+        "name": "Strong brewed coffee, cooled",
+        "quantity": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "Chilled full fat milk",
+        "quantity": "300",
+        "unit": "ml"
+      },
+      {
+        "name": "Vanilla ice cream",
+        "quantity": "2",
+        "unit": "scoops"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ice cubes",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Chocolate sauce",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Brew strong coffee and allow to cool completely.",
+      "Add coffee, milk, ice cream, sugar and ice to blender.",
+      "Blend until frothy and smooth.",
+      "Pour into tall chilled glasses.",
+      "Drizzle chocolate sauce on top.",
+      "Serve immediately."
+    ],
+    "chef_notes": "For a truly authentic Maharashtra college-style cold coffee, it must be thick enough to be slightly difficult to sip through a straw. Use full-fat milk and generous ice cream.",
+    "serving_suggestions": "Serve in tall glasses with a straw as a summer refreshment.",
+    "nutrition_estimate": {
+      "calories": "285",
+      "protein_g": "8",
+      "carbohydrates_g": "36",
+      "fat_g": "12"
+    },
+    "tags": [
+      "Coffee",
+      "Cold Drink",
+      "Summer",
+      "Indulgent"
+    ],
+    "image_prompt": "Ultra realistic food photography of thick blended cold coffee in a tall glass, chocolate drizzle, whipped cream on top, straw, condensation on glass, vibrant young cafe setting",
+    "seo_keywords": [
+      "cold coffee recipe india",
+      "thick cold coffee maharashtra",
+      "nashik cold coffee",
+      "indian cafe cold coffee",
+      "blended coffee recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Bajra Coffee Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/jaggery-coffee",
+    "dish_name": "Jaggery Filter Coffee",
+    "state": "Maharashtra",
+    "category": "Coffee",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 15,
+    "servings": 2,
+    "short_description": "A traditional Maharashtrian health-conscious take on filter coffee where white sugar is replaced with natural jaggery. The jaggery adds a subtle molasses depth to the coffee that complements the chicory perfectly \u2014 a trending wellness coffee.",
+    "ingredients": [
+      {
+        "name": "Filter coffee decoction",
+        "quantity": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "Full fat milk",
+        "quantity": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "Jaggery, grated",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "0.25",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Prepare strong filter coffee decoction.",
+      "Heat milk with grated jaggery until jaggery dissolves.",
+      "Add cardamom to the milk.",
+      "Pour decoction into cup.",
+      "Add jaggery-cardamom milk.",
+      "Serve hot."
+    ],
+    "chef_notes": "Jaggery has a lower melting point than sugar \u2014 add it to warm milk, not boiling milk, to prevent it from caramelizing too quickly and changing the flavor.",
+    "serving_suggestions": "Serve as a healthier morning coffee alternative.",
+    "nutrition_estimate": {
+      "calories": "105",
+      "protein_g": "5",
+      "carbohydrates_g": "14",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Coffee",
+      "Healthy Alternative",
+      "Jaggery",
+      "Vegetarian"
+    ],
+    "image_prompt": "Ultra realistic food photography of jaggery filter coffee in a clay cup, warm brown color, cardamom pods alongside, jaggery piece on saucer, natural wellness photography, morning light",
+    "seo_keywords": [
+      "jaggery coffee recipe",
+      "healthy filter coffee india",
+      "maharashtrian coffee",
+      "gur coffee recipe",
+      "natural sweetener coffee india"
+    ],
+    "img": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Pav Bhaji Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/pav-bhaji",
+    "dish_name": "Pav Bhaji",
+    "state": "Maharashtra",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 50,
+    "servings": 4,
+    "short_description": "Pav Bhaji is Mumbai's greatest culinary invention \u2014 a buttery, spiced vegetable mash cooked on a massive iron griddle and served with butter-toasted pav buns. A dish born in the textile mills of Mumbai, it is now one of India's most beloved street foods.",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "quantity": "3",
+        "unit": "large"
+      },
+      {
+        "name": "Cauliflower",
+        "quantity": "1",
+        "unit": "small"
+      },
+      {
+        "name": "Green peas",
+        "quantity": "0.5",
+        "unit": "cup"
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": "3",
+        "unit": "large"
+      },
+      {
+        "name": "Butter",
+        "quantity": "5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onion",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Capsicum",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Pav bhaji masala",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Kashmiri red chili powder",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Pav buns",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Boil potatoes, cauliflower and peas until soft.",
+      "Heat butter in a wide pan. Fry onion until golden.",
+      "Add tomatoes and capsicum. Cook until mushy.",
+      "Add pav bhaji masala and Kashmiri chili. Cook 5 minutes.",
+      "Add boiled vegetables and mash together completely.",
+      "Add water to adjust consistency. Simmer 15 minutes.",
+      "Toast pav buns on butter until golden.",
+      "Serve bhaji topped with butter, lemon and raw onion."
+    ],
+    "chef_notes": "The flat iron tawa and liberal butter are what make street-style pav bhaji special. Do not be shy with the butter. Mash the vegetables completely \u2014 no chunks.",
+    "serving_suggestions": "Serve piping hot bhaji with butter-toasted pav, raw onion, lemon wedge and coriander.",
+    "nutrition_estimate": {
+      "calories": "415",
+      "protein_g": "10",
+      "carbohydrates_g": "58",
+      "fat_g": "18"
+    },
+    "tags": [
+      "Street Food",
+      "Vegetarian",
+      "Mumbai",
+      "Iconic"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Mumbai pav bhaji, vibrant red spiced vegetable mash sizzling on iron tawa, butter melting, served with golden toasted pav, lemon and onion, street food atmosphere",
+    "seo_keywords": [
+      "pav bhaji recipe",
+      "mumbai street food",
+      "pav bhaji masala recipe",
+      "maharashtrian main course",
+      "indian vegetarian street food"
+    ],
+    "img": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Matki Chi Usal Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/matki-usal",
+    "dish_name": "Matki Chi Usal",
+    "state": "Maharashtra",
+    "category": "Main Courses",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 480,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 510,
+    "servings": 4,
+    "short_description": "Matki Chi Usal is a protein-rich curry made with sprouted moth beans in a coconut-onion masala. A Maharashtra staple that appears both as a main course and as the base of the famous Misal Pav, it is hearty, nutritious and deeply flavorful.",
+    "ingredients": [
+      {
+        "name": "Sprouted matki (moth beans)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Goda masala",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Curry leaves",
+        "quantity": "10",
+        "unit": "pieces"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Sprout matki by soaking overnight and tying in cloth for 24 hours.",
+      "Dry roast coconut until golden. Grind with fried onion.",
+      "Heat oil and add mustard seeds and curry leaves.",
+      "Add ginger-garlic paste and saut\u00e9.",
+      "Add coconut-onion paste and goda masala. Fry 5 minutes.",
+      "Add matki sprouts and water. Season with salt.",
+      "Simmer 20 minutes until matki is cooked but holds shape.",
+      "Garnish with coconut and coriander."
+    ],
+    "chef_notes": "Do not overcook the matki \u2014 it should have a slight bite. The sprouting process increases the protein and fiber content significantly.",
+    "serving_suggestions": "Serve with bhakri or rice, or as the base for Misal Pav.",
+    "nutrition_estimate": {
+      "calories": "235",
+      "protein_g": "12",
+      "carbohydrates_g": "28",
+      "fat_g": "8"
+    },
+    "tags": [
+      "Vegetarian",
+      "Protein Rich",
+      "Traditional",
+      "Main Course"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian matki chi usal, sprouted moth bean curry in a copper bowl, coconut and coriander garnish, golden gravy, served with bhakri, warm natural light",
+    "seo_keywords": [
+      "matki usal recipe",
+      "moth bean curry maharashtra",
+      "sprouted matki recipe",
+      "maharashtrian main course",
+      "misal base recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Kombdi Vade Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/kombdi-vade",
+    "dish_name": "Kombdi Vade",
+    "state": "Maharashtra",
+    "category": "Main Courses",
+    "difficulty_level": "Hard",
+    "prep_time_minutes": 60,
+    "cook_time_minutes": 60,
+    "total_time_minutes": 120,
+    "servings": 4,
+    "short_description": "Kombdi Vade is Malvan's most celebrated dish \u2014 a spicy coconut-based chicken curry (kombdi) served with crispy fried wheat-rice pooris (vade). A Konkan culinary masterpiece, this combination of fiery curry and crispy bread is one of Maharashtra's finest meals.",
+    "ingredients": [
+      {
+        "name": "Chicken pieces",
+        "quantity": "800",
+        "unit": "g"
+      },
+      {
+        "name": "Grated coconut, dry roasted",
+        "quantity": "8",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Malvani masala",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onions",
+        "quantity": "3",
+        "unit": "large"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "For vade - wheat flour",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "For vade - rice flour",
+        "quantity": "50",
+        "unit": "g"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "2",
+        "unit": "cups"
+      },
+      {
+        "name": "Salt",
+        "quantity": "2",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Dry roast coconut deeply until dark brown. Grind with fried onion into thick paste.",
+      "Saut\u00e9 ginger-garlic paste, add Malvani masala and coconut paste. Fry 8 minutes.",
+      "Add chicken pieces, brown well. Add water and cook 40 minutes.",
+      "For vade: mix flours, salt and make soft dough.",
+      "Roll into small thick circles.",
+      "Deep fry vade until golden and puffed.",
+      "Serve hot chicken curry with crispy vade."
+    ],
+    "chef_notes": "Malvani masala contains 25+ spices including kokum, star anise and stone flower. It cannot be substituted. Deep browning of the coconut is the secret to the authentic dark color and smoky depth of this dish.",
+    "serving_suggestions": "Serve kombdi (chicken curry) with freshly fried vade and raw onion salad.",
+    "nutrition_estimate": {
+      "calories": "520",
+      "protein_g": "38",
+      "carbohydrates_g": "42",
+      "fat_g": "22"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Konkan",
+      "Malvani",
+      "Celebratory"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Kombdi Vade, dark fiery Malvani chicken curry alongside golden puffed vade bread, traditional Konkan coastal setting, coconut tree background, warm sunlight",
+    "seo_keywords": [
+      "kombdi vade recipe",
+      "malvani chicken recipe",
+      "konkan chicken curry",
+      "maharashtrian coastal food",
+      "malvani cuisine recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Shepu Bhaji Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/shepu-bhaji",
+    "dish_name": "Shepu Bhaji",
+    "state": "Maharashtra",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 25,
+    "servings": 4,
+    "short_description": "Shepu Bhaji is a simple, fragrant dry vegetable dish made with fresh dill leaves, roasted peanuts and coconut. A beloved everyday Maharashtrian green sabzi, it is intensely aromatic and pairs beautifully with dal and rice.",
+    "ingredients": [
+      {
+        "name": "Fresh dill leaves (shepu)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Roasted peanuts",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "3",
+        "unit": "cloves"
+      },
+      {
+        "name": "Oil",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Wash and finely chop dill leaves.",
+      "Heat oil, add mustard seeds, crushed garlic and green chili.",
+      "Add chopped dill leaves and saut\u00e9 on high heat for 3 minutes.",
+      "Add peanuts, salt and lemon juice.",
+      "Cook for 5 more minutes until dill is wilted and fragrant.",
+      "Finish with fresh coconut and serve."
+    ],
+    "chef_notes": "Dill is strongly aromatic \u2014 cook on high heat briefly to intensify rather than lose its fragrance. Do not overcook or it becomes bitter.",
+    "serving_suggestions": "Serve with toor dal, rice and bhakri as part of a Maharashtrian thali.",
+    "nutrition_estimate": {
+      "calories": "155",
+      "protein_g": "5",
+      "carbohydrates_g": "8",
+      "fat_g": "11"
+    },
+    "tags": [
+      "Vegetarian",
+      "Everyday",
+      "Green Vegetable",
+      "Quick"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian shepu bhaji dill stir fry in a pan, vibrant green color, peanuts and coconut visible, aromatic garnish, clean natural food photography",
+    "seo_keywords": [
+      "shepu bhaji recipe",
+      "dill leaves sabzi maharashtra",
+      "maharashtrian green sabzi",
+      "dill stir fry india",
+      "shepu recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Zunka Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/zunka",
+    "dish_name": "Zunka",
+    "state": "Maharashtra",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 25,
+    "servings": 4,
+    "short_description": "Zunka is a thick, spiced besan preparation \u2014 the rustic cousin of pithla. Made with dry-roasted besan, onion and spices with minimal water, it is the definitive comfort food of the Maharashtrian countryside. Zunka-Bhakri is a complete meal beloved across all of rural Maharashtra.",
+    "ingredients": [
+      {
+        "name": "Besan (chickpea flour)",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Curry leaves",
+        "quantity": "10",
+        "unit": "pieces"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "4",
+        "unit": "cloves"
+      },
+      {
+        "name": "Asafoetida",
+        "quantity": "1",
+        "unit": "pinch"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Heat oil in a kadhai and add mustard seeds, asafoetida and curry leaves.",
+      "Add sliced garlic, green chili and onion. Fry until golden.",
+      "Add turmeric.",
+      "Add besan and roast on low heat, stirring constantly, for 8-10 minutes.",
+      "Add splashes of water \u2014 about 4-5 tablespoons total \u2014 while stirring.",
+      "The zunka should be dry and crumbly, not wet.",
+      "Season with salt and serve hot."
+    ],
+    "chef_notes": "Zunka should be drier than pithla. Add water in very small splashes to create a slightly moist but crumbly texture. The besan must be well-roasted \u2014 raw besan taste is the enemy.",
+    "serving_suggestions": "Serve hot with jowar bhakri, raw onion and green chili. This combination is called Zunka-Bhakri.",
+    "nutrition_estimate": {
+      "calories": "235",
+      "protein_g": "10",
+      "carbohydrates_g": "28",
+      "fat_g": "10"
+    },
+    "tags": [
+      "Vegetarian",
+      "Village Food",
+      "Traditional",
+      "Gluten-Free"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian zunka in a clay bowl, dry golden besan with onion and spices, served with jowar bhakri on a steel plate, rustic village Maharashtrian setting",
+    "seo_keywords": [
+      "zunka recipe",
+      "zunka bhakri maharashtra",
+      "besan dry curry",
+      "maharashtrian village food",
+      "traditional zunka recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Hirwa Thecha Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/hirwa-thecha",
+    "dish_name": "Hirwa Thecha",
+    "state": "Maharashtra",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 5,
+    "total_time_minutes": 15,
+    "servings": 4,
+    "short_description": "Hirwa Thecha is Maharashtra's most essential table condiment \u2014 a roughly pounded green chili and garlic relish with fresh coriander and roasted peanuts. Fiery, fragrant and addictive, it is eaten with every Maharashtrian meal.",
+    "ingredients": [
+      {
+        "name": "Green chilies",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "8",
+        "unit": "cloves"
+      },
+      {
+        "name": "Roasted peanuts",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Fresh coriander",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Heat oil in a small pan. Fry green chilies briefly for 1-2 minutes.",
+      "Add garlic and fry 1 more minute.",
+      "Remove from heat. Cool slightly.",
+      "Place in mortar with peanuts, coriander and salt.",
+      "Pound coarsely \u2014 do not grind smooth.",
+      "Add lemon juice and mix. Serve immediately."
+    ],
+    "chef_notes": "Thecha is intentionally coarse and chunky \u2014 never blend smooth. The rough texture is what makes it special. Adjust chili quantity based on heat preference.",
+    "serving_suggestions": "Serve with jowar bhakri, dal-rice or any Maharashtrian meal as a condiment.",
+    "nutrition_estimate": {
+      "calories": "90",
+      "protein_g": "4",
+      "carbohydrates_g": "6",
+      "fat_g": "6"
+    },
+    "tags": [
+      "Condiment",
+      "Vegan",
+      "Spicy",
+      "Gluten-Free"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian hirwa thecha green chili relish in a small clay pot, coarse chunky texture, green and peanut colors, rustic mortar alongside, dark background",
+    "seo_keywords": [
+      "thecha recipe",
+      "hirwa thecha",
+      "maharashtrian green chili chutney",
+      "green chili garlic relish",
+      "bhakri condiment"
+    ],
+    "img": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Dry Garlic Chutney Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/dry-garlic-chutney",
+    "dish_name": "Lasun Khobra Chutney",
+    "state": "Maharashtra",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 20,
+    "servings": 8,
+    "short_description": "The famous dry garlic-coconut chutney that goes into every Vada Pav and is served alongside countless Maharashtrian snacks. A coarse powder of roasted garlic, dried coconut and red chilies \u2014 this is the most important condiment in Maharashtrian cuisine.",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "quantity": "12",
+        "unit": "cloves"
+      },
+      {
+        "name": "Dried coconut, grated",
+        "quantity": "6",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Kashmiri red chili powder",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cumin seeds, roasted",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Dry roast garlic cloves in a dry pan until golden and slightly charred.",
+      "Dry roast dried coconut until golden brown \u2014 not too dark.",
+      "Dry roast cumin seeds.",
+      "Grind all roasted ingredients with chili powder and salt.",
+      "Pulse to a coarse powder \u2014 not smooth.",
+      "Store in airtight jar for up to 2 weeks."
+    ],
+    "chef_notes": "The chutney must remain coarse and dry \u2014 never add water or oil. The smoky garlic and roasted coconut flavors must be distinct. Use dried coconut, not fresh.",
+    "serving_suggestions": "Essential for Vada Pav. Also great with bhakri, thalipeeth and as a rice seasoning.",
+    "nutrition_estimate": {
+      "calories": "55",
+      "protein_g": "1",
+      "carbohydrates_g": "4",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Condiment",
+      "Vegan",
+      "Gluten-Free",
+      "Dry Chutney"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian dry garlic coconut chutney in a small bowl, reddish-brown coarse powder, garlic cloves and dried coconut visible alongside, dark rustic background",
+    "seo_keywords": [
+      "dry garlic chutney recipe",
+      "lasun chutney vada pav",
+      "maharashtrian dry chutney",
+      "garlic coconut chutney powder",
+      "vada pav chutney recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Green Chutney Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/hirvi-chutney",
+    "dish_name": "Hirvi Chutney",
+    "state": "Maharashtra",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 10,
+    "servings": 6,
+    "short_description": "Maharashtra's vibrant green coriander and coconut chutney that accompanies every snack, street food and meal. Made with fresh coriander, fresh coconut, green chili and lemon, it is bright, fresh and perfectly balanced.",
+    "ingredients": [
+      {
+        "name": "Fresh coriander",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Fresh coconut, grated",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "2",
+        "unit": "cloves"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "0.5",
+        "unit": "inch"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.75",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Roasted peanuts",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Add all ingredients to a blender.",
+      "Blend with minimal water to a smooth but slightly thick paste.",
+      "Taste and adjust salt, lemon and chili.",
+      "Store refrigerated for up to 3 days."
+    ],
+    "chef_notes": "The coconut and peanuts add body and prevent the chutney from being too watery. Use minimal water \u2014 the chutney should coat a spoon.",
+    "serving_suggestions": "Serve with vada pav, samosa, bhaji, sabudana vada or any Maharashtra snack.",
+    "nutrition_estimate": {
+      "calories": "60",
+      "protein_g": "2",
+      "carbohydrates_g": "5",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Condiment",
+      "Vegan",
+      "Gluten-Free",
+      "Fresh Chutney"
+    ],
+    "image_prompt": "Ultra realistic food photography of vibrant green Maharashtrian coriander coconut chutney in a small bowl, bright green color, fresh coriander leaves as garnish, clean bright food photography",
+    "seo_keywords": [
+      "hirvi chutney recipe",
+      "maharashtrian green chutney",
+      "coriander coconut chutney",
+      "vada pav green chutney",
+      "indian green sauce recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Kanda Lasun Masala Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/kanda-lasun-masala",
+    "dish_name": "Kanda Lasun Masala",
+    "state": "Maharashtra",
+    "category": "Sides",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 35,
+    "servings": 8,
+    "short_description": "Kanda Lasun Masala is the foundational flavor paste of Maharashtrian cooking \u2014 a deeply caramelized onion and garlic masala that forms the base of countless curries. Made in large batches and stored, it is the secret to authentic Maharashtrian flavor.",
+    "ingredients": [
+      {
+        "name": "Onions",
+        "quantity": "4",
+        "unit": "large"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "20",
+        "unit": "cloves"
+      },
+      {
+        "name": "Dried red chilies",
+        "quantity": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Dry roast coconut until golden.",
+      "Fry sliced onions in oil until very deep brown \u2014 almost caramelized.",
+      "Add garlic and dried chilies. Fry 3 more minutes.",
+      "Cool completely.",
+      "Grind with roasted coconut and salt to a smooth paste.",
+      "Store in refrigerator for up to 10 days."
+    ],
+    "chef_notes": "The deep browning of onions is non-negotiable \u2014 this is what creates the characteristic sweetness and depth in Maharashtrian curries. Raw or lightly cooked onion paste will not achieve the same result.",
+    "serving_suggestions": "Use as a base for any Maharashtrian curry, especially chicken, fish or vegetable.",
+    "nutrition_estimate": {
+      "calories": "85",
+      "protein_g": "2",
+      "carbohydrates_g": "8",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Masala Base",
+      "Condiment",
+      "Vegan",
+      "Gluten-Free"
+    ],
+    "image_prompt": "Ultra realistic food photography of deep brown Maharashtrian kanda lasun masala paste in a glass jar, rich caramelized color, garlic and chili visible, rustic kitchen background",
+    "seo_keywords": [
+      "kanda lasun masala recipe",
+      "maharashtrian curry base",
+      "onion garlic paste india",
+      "maharashtrian masala recipe",
+      "caramelized onion masala"
+    ],
+    "img": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Goda Masala Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/goda-masala",
+    "dish_name": "Goda Masala",
+    "state": "Maharashtra",
+    "category": "Sides",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 35,
+    "servings": 16,
+    "short_description": "Goda Masala is Maharashtra's most unique and precious spice blend \u2014 a complex mixture of 20+ spices including dagad phool (stone flower), kalpasi, cloves, coconut and cinnamon. The word 'goda' means sweet in Marathi, reflecting its slightly sweet, aromatic character.",
+    "ingredients": [
+      {
+        "name": "Coriander seeds",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Grated dried coconut",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Dried red chilies",
+        "quantity": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "Cloves",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Cinnamon",
+        "quantity": "2",
+        "unit": "inch"
+      },
+      {
+        "name": "Stone flower (dagad phool)",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Bay leaves",
+        "quantity": "3",
+        "unit": "pieces"
+      }
+    ],
+    "preparation_steps": [
+      "Dry roast each spice separately in a pan until fragrant.",
+      "Roast dried coconut until deep golden.",
+      "Allow all roasted spices to cool completely.",
+      "Grind together into a fine powder.",
+      "Store in an airtight jar in a cool, dark place.",
+      "Lasts up to 3 months when stored properly."
+    ],
+    "chef_notes": "Stone flower (dagad phool) is the most important spice in goda masala \u2014 it gives it a unique mushroom-like earthy character that cannot be replicated. Source from a Maharashtrian store if possible.",
+    "serving_suggestions": "Use in Aamti dal, Bharli Vangi, Masala Bhaat and all traditional Maharashtrian curries.",
+    "nutrition_estimate": {
+      "calories": "35",
+      "protein_g": "1",
+      "carbohydrates_g": "4",
+      "fat_g": "2"
+    },
+    "tags": [
+      "Spice Blend",
+      "Vegan",
+      "Gluten-Free",
+      "Traditional"
+    ],
+    "image_prompt": "Ultra realistic food photography of homemade goda masala spice blend in a glass jar, rich dark brown color, whole spices displayed around the jar \u2014 stone flower, cloves, cinnamon, coconut, food magazine styling",
+    "seo_keywords": [
+      "goda masala recipe",
+      "maharashtrian spice blend",
+      "how to make goda masala",
+      "dagad phool masala",
+      "authentic goda masala ingredients"
+    ],
+    "img": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Ambadi Pickle Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/raw-mango-pickle",
+    "dish_name": "Kairi Loncha (Raw Mango Pickle)",
+    "state": "Maharashtra",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 5,
+    "total_time_minutes": 1445,
+    "servings": 16,
+    "short_description": "Kairi Loncha is the quintessential Maharashtrian raw mango pickle \u2014 small pieces of tart raw mango marinated in mustard oil with chili, turmeric, mustard seeds and fenugreek. A summer staple that every household makes when the first raw mangoes arrive.",
+    "ingredients": [
+      {
+        "name": "Raw mango",
+        "quantity": "500",
+        "unit": "g"
+      },
+      {
+        "name": "Mustard oil",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "3",
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mustard seeds, coarsely crushed",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Fenugreek seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Asafoetida",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Cut raw mango into small pieces with skin. Do not peel.",
+      "Mix mango with salt and leave overnight to release juice.",
+      "Heat mustard oil to smoking point, cool completely.",
+      "Dry roast fenugreek seeds until slightly dark. Crush coarsely.",
+      "Mix mango with chili, turmeric, mustard, fenugreek and asafoetida.",
+      "Add mustard oil and mix well.",
+      "Store in a glass jar. Ready in 24 hours, best after 3 days."
+    ],
+    "chef_notes": "Heating mustard oil to smoking point and cooling removes its bitterness. This step must not be skipped. The pickle tastes best after a few days when the mango absorbs the spices.",
+    "serving_suggestions": "Serve with dal-rice, bhakri or as a condiment with any Maharashtrian meal.",
+    "nutrition_estimate": {
+      "calories": "40",
+      "protein_g": "0",
+      "carbohydrates_g": "4",
+      "fat_g": "3"
+    },
+    "tags": [
+      "Pickle",
+      "Vegan",
+      "Gluten-Free",
+      "Summer Special"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian raw mango pickle in a traditional glass jar, vibrant orange-red color, mango pieces visible in spiced oil, rustic kitchen background, sunlight through window",
+    "seo_keywords": [
+      "kairi loncha recipe",
+      "raw mango pickle maharashtra",
+      "indian mango pickle",
+      "maharashtrian achar",
+      "summer mango pickle recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Peanut Chutney Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/peanut-chutney",
+    "dish_name": "Shenga Chutney",
+    "state": "Maharashtra",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 5,
+    "total_time_minutes": 15,
+    "servings": 6,
+    "short_description": "A rich, creamy roasted peanut chutney that is uniquely Maharashtrian \u2014 made with dry-roasted peanuts, garlic, chilies and a hint of tamarind. Thicker and earthier than South Indian peanut chutney, it is the perfect accompaniment to bhakri and rice.",
+    "ingredients": [
+      {
+        "name": "Roasted peanuts",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "4",
+        "unit": "cloves"
+      },
+      {
+        "name": "Dried red chilies",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Tamarind",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.75",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Grind peanuts with garlic, red chilies, tamarind and salt.",
+      "Add minimal water to make a coarse thick chutney.",
+      "Prepare tempering with mustard seeds in oil.",
+      "Pour tempering over chutney and mix.",
+      "Serve immediately or refrigerate for up to 5 days."
+    ],
+    "chef_notes": "Keep the texture coarse \u2014 Maharashtrian peanut chutney should never be smooth. The garlic must be raw, not cooked, for a sharp contrast.",
+    "serving_suggestions": "Serve with bhakri, thalipeeth, poha or as a dipping sauce.",
+    "nutrition_estimate": {
+      "calories": "150",
+      "protein_g": "6",
+      "carbohydrates_g": "6",
+      "fat_g": "12"
+    },
+    "tags": [
+      "Condiment",
+      "Vegan",
+      "Gluten-Free",
+      "Protein Rich"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian peanut chutney in a small bowl, coarse textured, earthy brown color, tempering visible on top, peanuts scattered around, dark rustic background",
+    "seo_keywords": [
+      "shenga chutney recipe",
+      "peanut chutney maharashtra",
+      "groundnut chutney india",
+      "maharashtrian peanut sauce",
+      "bhakri condiment recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Tamarind Chutney Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/tamarind-chutney",
+    "dish_name": "Chincha Gul Chutney",
+    "state": "Maharashtra",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 20,
+    "servings": 8,
+    "short_description": "Chincha Gul Chutney is Maharashtra's sweet-and-sour tamarind-jaggery sauce that accompanies chaat, bhel puri, and countless street snacks. The Maharashtrian version is uniquely spiced with goda masala for a distinctly regional character.",
+    "ingredients": [
+      {
+        "name": "Tamarind",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Jaggery",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Goda masala",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cumin powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak tamarind in warm water. Extract thick pulp.",
+      "Combine tamarind pulp with jaggery in a pan.",
+      "Cook on medium heat until jaggery dissolves and sauce thickens.",
+      "Add goda masala, chili, salt and cumin.",
+      "Simmer until sauce coats a spoon.",
+      "Cool and store in airtight jar for up to 2 weeks."
+    ],
+    "chef_notes": "The goda masala addition is what makes this distinctly Maharashtrian rather than generic tamarind chutney. Adjust the tamarind-jaggery ratio to your preferred sweet-sour balance.",
+    "serving_suggestions": "Serve with vada pav, bhel puri, samosa, dahi puri or any chaat.",
+    "nutrition_estimate": {
+      "calories": "65",
+      "protein_g": "0",
+      "carbohydrates_g": "16",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Condiment",
+      "Vegan",
+      "Gluten-Free",
+      "Sweet Chutney"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian tamarind jaggery chutney in a small glass bowl, dark brown glossy sauce, served alongside bhel puri, warm amber light",
+    "seo_keywords": [
+      "chincha gul chutney recipe",
+      "maharashtrian tamarind chutney",
+      "sweet tamarind sauce india",
+      "chaat chutney recipe",
+      "imli jaggery chutney"
+    ],
+    "img": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Coconut Chutney Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/fresh-coconut-chutney",
+    "dish_name": "Khobra Chutney",
+    "state": "Maharashtra",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 3,
+    "total_time_minutes": 13,
+    "servings": 6,
+    "short_description": "Fresh coconut chutney is essential to the Konkan Maharashtrian table \u2014 a bright white paste of fresh coconut, green chili and coriander tempered with mustard seeds. It accompanies dosas, idlis, bhakri and countless Konkan dishes.",
+    "ingredients": [
+      {
+        "name": "Fresh coconut, grated",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "0.5",
+        "unit": "inch"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Roasted chana dal",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Curry leaves",
+        "quantity": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "Oil",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Blend coconut with green chili, ginger, coriander, chana dal, lemon and salt.",
+      "Add minimal water to make a smooth but thick paste.",
+      "Prepare tempering with mustard seeds and curry leaves.",
+      "Pour tempering over chutney.",
+      "Serve immediately or refrigerate for up to 2 days."
+    ],
+    "chef_notes": "Always use fresh coconut for best results. The roasted chana dal adds body and a nutty flavor. The chutney should be thick enough to scoop, not runny.",
+    "serving_suggestions": "Serve with amboli, ghavan, dosa, idli or any Konkan breakfast.",
+    "nutrition_estimate": {
+      "calories": "110",
+      "protein_g": "2",
+      "carbohydrates_g": "6",
+      "fat_g": "9"
+    },
+    "tags": [
+      "Condiment",
+      "Vegan",
+      "Gluten-Free",
+      "Konkan"
+    ],
+    "image_prompt": "Ultra realistic food photography of fresh white coconut chutney in a small bowl, mustard seeds and curry leaves on top, served alongside ghavan, bright natural coastal light",
+    "seo_keywords": [
+      "fresh coconut chutney recipe",
+      "khobra chutney maharashtra",
+      "konkan coconut chutney",
+      "white coconut chutney india",
+      "maharashtrian dip recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Gajar Loncha Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/carrot-pickle",
+    "dish_name": "Gajar Loncha",
+    "state": "Maharashtra",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 5,
+    "total_time_minutes": 1460,
+    "servings": 12,
+    "short_description": "Gajar Loncha is a crunchy, spiced Maharashtrian carrot pickle made with fresh carrots marinated in mustard oil, red chili and mustard seeds. Unlike preservative-heavy commercial pickles, this fresh homestyle pickle is bright, crunchy and ready to eat within 24 hours.",
+    "ingredients": [
+      {
+        "name": "Carrots",
+        "quantity": "500",
+        "unit": "g"
+      },
+      {
+        "name": "Mustard seeds, crushed",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mustard oil",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Asafoetida",
+        "quantity": "0.25",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Cut carrots into thick matchstick pieces.",
+      "Mix with salt and turmeric. Leave 30 minutes.",
+      "Drain any liquid that releases.",
+      "Heat mustard oil to smoking, cool completely.",
+      "Mix carrots with red chili, mustard seeds, asafoetida and lemon.",
+      "Add cooled mustard oil and mix well.",
+      "Leave for 24 hours before eating. Keeps 1 week."
+    ],
+    "chef_notes": "Cut carrots thicker than you think \u2014 they will soften slightly in the pickle. The mustard oil must be heated and cooled to remove bitterness.",
+    "serving_suggestions": "Serve with rice and dal, bhakri or as a condiment with any Maharashtrian meal.",
+    "nutrition_estimate": {
+      "calories": "50",
+      "protein_g": "0",
+      "carbohydrates_g": "6",
+      "fat_g": "3"
+    },
+    "tags": [
+      "Pickle",
+      "Vegan",
+      "Gluten-Free",
+      "Quick Pickle"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian gajar loncha carrot pickle in a glass jar, bright orange carrot pieces in red chili oil, mustard seeds visible, rustic kitchen window background",
+    "seo_keywords": [
+      "gajar loncha recipe",
+      "carrot pickle maharashtra",
+      "indian carrot pickle",
+      "quick carrot achar recipe",
+      "maharashtrian loncha"
+    ],
+    "img": "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Varan Bhaat Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/varan-bhaat",
+    "dish_name": "Varan Bhaat",
+    "state": "Maharashtra",
+    "category": "Rice Preparations",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 25,
+    "total_time_minutes": 35,
+    "servings": 4,
+    "short_description": "Varan Bhaat is the most comforting, soulful meal in Maharashtra \u2014 plain steamed rice topped with ghee-drizzled Varan (simple toor dal). Eaten at every festival, celebration and everyday meal, it is the backbone of Maharashtrian home cooking.",
+    "ingredients": [
+      {
+        "name": "Basmati or kolam rice",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Toor dal",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Cook rice in rice cooker or pot with 1:2 ratio of rice to water.",
+      "Separately pressure cook toor dal with turmeric until very soft.",
+      "Mash dal and thin with hot water to pouring consistency.",
+      "Season dal with salt and lemon juice.",
+      "Serve hot rice in a plate with dal poured over and abundant ghee."
+    ],
+    "chef_notes": "The generosity of ghee is what makes Varan Bhaat extraordinary \u2014 do not be shy. In Maharashtra, eating Varan Bhaat with ghee is almost sacred.",
+    "serving_suggestions": "Serve with papad, pickle and koshimbir as a complete simple meal.",
+    "nutrition_estimate": {
+      "calories": "420",
+      "protein_g": "12",
+      "carbohydrates_g": "70",
+      "fat_g": "11"
+    },
+    "tags": [
+      "Festival Food",
+      "Vegetarian",
+      "Comfort Food",
+      "Everyday"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian varan bhaat, white steamed rice with golden dal poured over, ghee pool visible, served on a banana leaf with papad and pickle, warm comforting light",
+    "seo_keywords": [
+      "varan bhaat recipe",
+      "maharashtrian rice dal",
+      "toor dal rice maharashtra",
+      "festival food maharashtra",
+      "simple indian comfort meal"
+    ],
+    "img": "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Bhel Puri Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/bhel-puri",
+    "dish_name": "Mumbai Bhel Puri",
+    "state": "Maharashtra",
+    "category": "Appetizers",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 15,
+    "servings": 4,
+    "short_description": "Mumbai Bhel Puri is the city's most iconic street snack \u2014 a dazzling mix of puffed rice, sev, vegetables, chutneys and spices. Assembled in seconds on the beach or street corner, each serving is a perfect symphony of textures and flavors.",
+    "ingredients": [
+      {
+        "name": "Puffed rice (kurmura)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Fine sev",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Boiled potatoes, diced",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Onion, finely chopped",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Tomato, finely chopped",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Tamarind chutney",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chutney",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Chaat masala",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Raw mango, grated",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "In a large bowl combine puffed rice, potatoes, onion, tomato, raw mango.",
+      "Add both chutneys and chaat masala.",
+      "Add lemon juice and coriander.",
+      "Toss quickly and well.",
+      "Top with sev generously.",
+      "Serve immediately \u2014 bhel must be eaten within minutes."
+    ],
+    "chef_notes": "Speed is essential \u2014 bhel goes soggy quickly. Assemble and eat immediately. The raw mango adds the authentic Mumbai bhel tang that cannot be substituted.",
+    "serving_suggestions": "Serve immediately in paper cones or cups as a snack.",
+    "nutrition_estimate": {
+      "calories": "280",
+      "protein_g": "6",
+      "carbohydrates_g": "52",
+      "fat_g": "6"
+    },
+    "tags": [
+      "Street Food",
+      "Vegetarian",
+      "Mumbai",
+      "Chaat"
+    ],
+    "image_prompt": "Ultra realistic food photography of Mumbai bhel puri in a paper cone, colorful puffed rice mix with sev, chutneys, onion and coriander, Juhu beach setting, golden hour light",
+    "seo_keywords": [
+      "bhel puri recipe",
+      "mumbai bhel recipe",
+      "maharashtrian chaat",
+      "puffed rice snack india",
+      "juhu beach bhel"
+    ],
+    "img": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Tadgola Kheer Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/tadgola-kheer",
+    "dish_name": "Tadgola Kheer",
+    "state": "Maharashtra",
+    "category": "Desserts",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 25,
+    "servings": 4,
+    "short_description": "Tadgola Kheer is a uniquely Maharashtrian summer dessert made with ice apple (tadgola/palm fruit) \u2014 the tender translucent fruit of the palm tree that is beloved on Maharashtra's coast. Simmered in sweetened milk with cardamom, it is cool, delicate and seasonal.",
+    "ingredients": [
+      {
+        "name": "Tadgola (ice apple/palm fruit)",
+        "quantity": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "Full fat milk",
+        "quantity": "600",
+        "unit": "ml"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "80",
+        "unit": "g"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Rose water",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Pistachios",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Peel tadgola and slice into thin rounds.",
+      "Bring milk to a boil and simmer until slightly reduced.",
+      "Add sugar, cardamom and rose water.",
+      "Remove from heat and cool completely.",
+      "Add tadgola slices to cooled milk.",
+      "Refrigerate for 1 hour before serving.",
+      "Garnish with pistachios."
+    ],
+    "chef_notes": "Tadgola must be added to cooled milk \u2014 adding to hot milk will make it lose its delicate texture. This is a seasonal dish best made from May to June when tadgola is fresh.",
+    "serving_suggestions": "Serve chilled as a summer dessert.",
+    "nutrition_estimate": {
+      "calories": "195",
+      "protein_g": "6",
+      "carbohydrates_g": "30",
+      "fat_g": "6"
+    },
+    "tags": [
+      "Seasonal",
+      "Summer Dessert",
+      "Vegetarian",
+      "Coastal Maharashtra"
+    ],
+    "image_prompt": "Ultra realistic food photography of tadgola kheer in a glass bowl, translucent ice apple pieces in creamy milk, pistachios garnish, cooling summer dessert photography, bright coastal light",
+    "seo_keywords": [
+      "tadgola kheer recipe",
+      "ice apple dessert india",
+      "palm fruit milk sweet",
+      "maharashtrian summer dessert",
+      "coastal maharashtra recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Narali Bhaat Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/narali-bhaat",
+    "dish_name": "Narali Bhaat",
+    "state": "Maharashtra",
+    "category": "Rice Preparations",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 50,
+    "servings": 4,
+    "short_description": "Narali Bhaat is a fragrant, mildly sweet coconut rice made on Narali Purnima \u2014 the full moon festival that marks the start of the Konkan fishing season. Rice cooked in coconut milk with jaggery, cardamom and topped with dried fruits, it is a celebratory dish of coastal Maharashtra.",
+    "ingredients": [
+      {
+        "name": "Basmati rice",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Fresh coconut milk",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Jaggery",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cloves",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cashews",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Raisins",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.25",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Wash and soak basmati rice for 20 minutes.",
+      "Heat ghee and fry cashews and raisins. Set aside.",
+      "Fry cloves in remaining ghee.",
+      "Add rice and fry for 2 minutes.",
+      "Add coconut milk and 200ml water. Bring to boil.",
+      "Add jaggery and a pinch of salt.",
+      "Cook covered on very low heat for 18 minutes.",
+      "Fluff gently and top with coconut, cardamom and fried nuts."
+    ],
+    "chef_notes": "The jaggery gives narali bhaat its characteristic pale amber color. Use fresh coconut milk \u2014 packaged coconut milk will not give the same aroma. Eat fresh as this rice does not reheat well.",
+    "serving_suggestions": "Serve warm as a festive dish during Narali Purnima or coconut-themed celebrations.",
+    "nutrition_estimate": {
+      "calories": "385",
+      "protein_g": "6",
+      "carbohydrates_g": "62",
+      "fat_g": "12"
+    },
+    "tags": [
+      "Festival Food",
+      "Vegetarian",
+      "Coastal Maharashtra",
+      "Sweet Rice"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Maharashtrian narali bhaat, fragrant coconut rice on a banana leaf, golden color, garnished with fresh coconut, cashews, raisins and marigolds, Narali Purnima festival setting",
+    "seo_keywords": [
+      "narali bhaat recipe",
+      "coconut rice maharashtra",
+      "narali purnima recipe",
+      "konkan sweet rice",
+      "maharashtrian festival rice"
+    ],
+    "img": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Kadhi Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/maharashtrian-kadhi",
+    "dish_name": "Maharashtrian Kadhi",
+    "state": "Maharashtra",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 30,
+    "servings": 4,
+    "short_description": "Maharashtrian Kadhi is a delicate, tangy yogurt and besan soup-curry that is lighter and more restrained than its Rajasthani or Gujarati counterparts. Tempered with mustard, curry leaves and ginger, it is a staple of the Maharashtra thali.",
+    "ingredients": [
+      {
+        "name": "Yogurt",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Besan",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Water",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "0.5",
+        "unit": "inch"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Curry leaves",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Whisk yogurt and besan together until completely smooth with no lumps.",
+      "Add water and whisk again.",
+      "Pour into a pan and heat on medium, stirring constantly.",
+      "Add ginger, green chili and turmeric.",
+      "Cook until it comes to a boil and thickens slightly.",
+      "Prepare tempering with ghee, mustard and curry leaves.",
+      "Add tempering to kadhi and simmer 5 minutes."
+    ],
+    "chef_notes": "Constant stirring while cooking is essential to prevent the kadhi from curdling. The mixture must be cold when you start heating \u2014 starting from room temperature leads to curdling.",
+    "serving_suggestions": "Serve with steamed rice and papad as part of Maharashtra thali.",
+    "nutrition_estimate": {
+      "calories": "145",
+      "protein_g": "7",
+      "carbohydrates_g": "12",
+      "fat_g": "8"
+    },
+    "tags": [
+      "Vegetarian",
+      "Thali",
+      "Traditional",
+      "Everyday"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian kadhi in a small brass bowl, golden yellow creamy curry, mustard seeds and curry leaves floating, served alongside white steamed rice",
+    "seo_keywords": [
+      "maharashtrian kadhi recipe",
+      "yogurt curry maharashtra",
+      "besan kadhi recipe",
+      "kadhi rice",
+      "maharashtrian thali recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=80"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Sol Kadhi Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/sol-kadhi",
+    "dish_name": "Sol Kadhi",
+    "state": "Maharashtra",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 30,
+    "servings": 4,
+    "short_description": "Sol Kadhi is the iconic pink digestive drink-curry of the Konkan coast \u2014 made from kokum and coconut milk. A stunning deep pink color, cooling, tangy and subtly spiced, it is served as a digestive drink after Malvani or Konkani fish meals.",
+    "ingredients": [
+      {
+        "name": "Dried kokum",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Fresh coconut milk",
+        "quantity": "300",
+        "unit": "ml"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "3",
+        "unit": "cloves"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cumin powder",
+        "quantity": "0.25",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak kokum in 200ml warm water for 20 minutes.",
+      "Squeeze kokum to extract all juice. Strain.",
+      "Crush garlic and green chili into a paste.",
+      "Mix coconut milk with kokum water.",
+      "Add garlic paste, cumin, salt.",
+      "Stir well and chill.",
+      "Garnish with coriander and serve cold."
+    ],
+    "chef_notes": "Sol Kadhi should never be heated \u2014 it will split and lose its beautiful pink color. Always serve cold or at room temperature. Adjust kokum quantity for desired tanginess.",
+    "serving_suggestions": "Serve cold alongside Malvani fish thali or as a digestive drink after a rich meal.",
+    "nutrition_estimate": {
+      "calories": "85",
+      "protein_g": "1",
+      "carbohydrates_g": "8",
+      "fat_g": "6"
+    },
+    "tags": [
+      "Konkan",
+      "Digestive",
+      "Vegan",
+      "Gluten-Free",
+      "Cooling"
+    ],
+    "image_prompt": "Ultra realistic food photography of sol kadhi in a glass, stunning deep pink-purple color, coconut cream swirl, fresh coriander garnish, Konkan fish thali in background, bright coastal photography",
+    "seo_keywords": [
+      "sol kadhi recipe",
+      "kokum coconut milk drink",
+      "malvani sol kadhi",
+      "pink digestive drink india",
+      "konkan sol kadhi recipe"
+    ],
+    "img": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80"
   }
 ];
 
@@ -2007,6 +8449,10 @@ export default function FusionChefAI() {
   const [scrolled, setScrolled] = useState(false);
   const [recipeModal, setRecipeModal] = useState(null);
   const [indianPage, setIndianPage] = useState(false);
+  const [maharashtraPage, setMaharashtraPage] = useState(false);
+  const [maharashtraCategory, setMaharashtraCategory] = useState("All");
+  const [maharashtraSearch, setMaharashtraSearch] = useState("");
+  const [maharashtraModal, setMaharashtraModal] = useState(null);
   const [cuisineExplorer, setCuisineExplorer] = useState(false);
   const [recipeDB, setRecipeDB] = useState(false);
   const [recipeDBCategory, setRecipeDBCategory] = useState("All");
@@ -2220,7 +8666,7 @@ export default function FusionChefAI() {
           <div className="full-page-content">
             {[
               { continent: "🌏 Asian Cuisines", cuisines: [
-                { name: "🇮🇳 Indian", desc: "biryani, butter chicken, dosa", img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80", available: true },
+                { name: "🇮🇳 Indian", desc: "biryani, butter chicken, dosa", img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80", available: "indian" },
                 { name: "🇯🇵 Japanese", desc: "sushi, ramen, tempura", img: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80" },
                 { name: "🇨🇳 Chinese", desc: "dim sum, Peking duck, stir-fries", img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80" },
                 { name: "🇹🇭 Thai", desc: "pad thai, green curry", img: "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=400&q=80" },
@@ -2323,12 +8769,13 @@ export default function FusionChefAI() {
                   <select className="rdb-select" value={recipeDBCuisine} onChange={e => setRecipeDBCuisine(e.target.value)}>
                     <option value="All">All Cuisines</option>
                     <option value="Indian">🇮🇳 Indian</option>
+                    <option value="Maharashtrian">🍊 Maharashtra</option>
                   </select>
                 </div>
               </div>
             </div>
             {(() => {
-              const allRecipes = [...indianCuisineData];
+              const allRecipes = [...indianCuisineData, ...maharashtraCuisineData];
               const filtered = allRecipes.filter(d => {
                 const matchCat = recipeDBCategory === "All" || d.category === recipeDBCategory;
                 const matchDiff = recipeDBDifficulty === "All" || d.difficulty_level === recipeDBDifficulty;
@@ -2349,9 +8796,9 @@ export default function FusionChefAI() {
                   ) : (
                     <div className="rdb-grid">
                       {filtered.map((dish, i) => (
-                        <div key={i} className="rdb-card" onClick={() => { setRecipeDB(false); setIndianModal(dish); setIndianPage(true); }}>
-                          <div className="rdb-card-img" style={{background: "linear-gradient(135deg, " + (gradients[dish.category] || "#E8621A, #C9922A")}}>
-                            <span>{emojis[dish.category] || "🍽"}</span>
+                        <div key={i} className="rdb-card" onClick={() => { setRecipeDB(false); if(dish.state === "Maharashtra") { setMaharashtraModal(dish); setMaharashtraPage(true); } else { setIndianModal(dish); setIndianPage(true); } }}>
+                          <div className="rdb-card-img" style={{padding:0,overflow:"hidden"}}>
+                            {dish.img ? <img src={dish.img} alt={dish.dish_name} style={{width:"100%",height:"100%",objectFit:"cover"}} /> : <span>{emojis[dish.category] || "🍽"}</span>}
                           </div>
                           <div className="rdb-card-body">
                             <div style={{display:"flex", gap:"0.4rem", marginBottom:"0.4rem", flexWrap:"wrap"}}>
@@ -2378,6 +8825,113 @@ export default function FusionChefAI() {
           </div>
         </div>
       )}
+
+      {/* MAHARASHTRA CUISINE PAGE */}
+      {maharashtraPage && (
+        <div className="indian-page">
+          <div className="indian-header">
+            <button className="indian-back" onClick={() => setMaharashtraPage(false)}>← Back</button>
+            <h1>🍊 Maharashtra <em>Cuisine</em></h1>
+            <input className="indian-search" placeholder="Search dishes..." value={maharashtraSearch} onChange={e => setMaharashtraSearch(e.target.value)} />
+          </div>
+          <div className="indian-content">
+            <div className="indian-cats">
+              {["All","Soups","Appetizers","Salads","Main Courses","Breads","Rice Preparations","Desserts","Tea","Coffee","Sides"].map(cat => (
+                <button key={cat} className={`cat-pill${maharashtraCategory === cat ? " active" : ""}`} onClick={() => setMaharashtraCategory(cat)}>{cat}</button>
+              ))}
+            </div>
+            {(() => {
+              const filtered = maharashtraCuisineData.filter(d => {
+                const matchCat = maharashtraCategory === "All" || d.category === maharashtraCategory;
+                const matchSearch = !maharashtraSearch || d.dish_name.toLowerCase().includes(maharashtraSearch.toLowerCase()) || (d.flavor_profile && d.flavor_profile.some(f => f.toLowerCase().includes(maharashtraSearch.toLowerCase()))) || d.tags.some(t => t.toLowerCase().includes(maharashtraSearch.toLowerCase()));
+                return matchCat && matchSearch;
+              });
+              const emojis = {"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Tea":"🍵","Coffee":"☕","Salads":"🥗","Sides":"🫙"};
+              const gradients = {"Appetizers":"#E8621A, #C9922A","Soups":"#4A7C59, #2E7D32","Main Courses":"#C0392B, #E8621A","Breads":"#C9922A, #8B4513","Rice Preparations":"#4A7C59, #C9922A","Desserts":"#9B59B6, #E8621A","Tea":"#1a6b3c, #2E7D32","Coffee":"#4a2c0a, #8B4513","Salads":"#2E7D32, #4A7C59","Sides":"#C9922A, #E8621A"};
+              return filtered.length === 0 ? (
+                <div className="indian-empty">🔍 No dishes found. Try a different search!</div>
+              ) : (
+                <div className="indian-grid">
+                  {filtered.map((dish, i) => (
+                    <div key={i} className="indian-card" onClick={() => setMaharashtraModal(dish)}>
+                      <div className="indian-card-img" style={{padding:0,overflow:"hidden"}}>
+                        {dish.img ? <img src={dish.img} alt={dish.dish_name} style={{width:"100%",height:"100%",objectFit:"cover"}} /> : <span>{emojis[dish.category] || "🍽"}</span>}
+                      </div>
+                      <div className="indian-card-body">
+                        <div className="indian-cat-badge">{dish.category}</div>
+                        <h3>{dish.dish_name}</h3>
+                        <p style={{fontSize:"0.78rem",color:"var(--text-muted)",marginTop:"0.3rem",lineHeight:"1.4"}}>{dish.short_description ? dish.short_description.substring(0,80)+"..." : ""}</p>
+                        <div className="indian-card-meta">
+                          <span>⏱ {dish.prep_time_minutes + dish.cook_time_minutes} min</span>
+                          <span className={`diff-badge diff-${dish.difficulty_level.toLowerCase()}`}>{dish.difficulty_level}</span>
+                        </div>
+                        <div style={{marginTop:"0.5rem"}}>
+                          {dish.tags.slice(0,2).map((t,j) => <span key={j} className="diet-tag">{t}</span>)}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              );
+            })()}
+          </div>
+
+          {/* MAHARASHTRA DISH MODAL */}
+          {maharashtraModal && (
+            <div className="modal-overlay" onClick={() => setMaharashtraModal(null)}>
+              <div className="modal-wrapper" onClick={e => e.stopPropagation()}>
+                <button className="modal-close" onClick={() => setMaharashtraModal(null)}>✕</button>
+                <div className="modal">
+                  <div style={{height:"240px", overflow:"hidden", position:"relative"}}>
+                    {maharashtraModal.img ? <img src={maharashtraModal.img} alt={maharashtraModal.dish_name} style={{width:"100%",height:"100%",objectFit:"cover"}} /> : <div style={{background:"linear-gradient(135deg,#E8621A,#C9922A)",height:"100%",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"5rem"}}>{{"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Tea":"🍵","Coffee":"☕","Salads":"🥗","Sides":"🫙"}[maharashtraModal.category]||"🍽"}</div>}
+                  </div>
+                  <div className="modal-body">
+                    <div className="indian-cat-badge">{maharashtraModal.category}</div>
+                    <h2>{maharashtraModal.dish_name}</h2>
+                    <p style={{fontSize:"0.88rem",color:"var(--text-muted)",lineHeight:"1.7",marginBottom:"1rem"}}>{maharashtraModal.short_description}</p>
+                    <div className="modal-meta">
+                      <span>⏱ Prep: {maharashtraModal.prep_time_minutes} min</span>
+                      <span>🔥 Cook: {maharashtraModal.cook_time_minutes} min</span>
+                      <span className={`diff-badge diff-${maharashtraModal.difficulty_level.toLowerCase()}`}>{maharashtraModal.difficulty_level}</span>
+                    </div>
+                    <div style={{marginTop:"0.6rem"}}>
+                      {maharashtraModal.tags.map((t,i) => <span key={i} className="diet-tag">{t}</span>)}
+                    </div>
+                    <div className="modal-section-title">Ingredients</div>
+                    <ul className="modal-ingredients">
+                      {maharashtraModal.ingredients.map((ing, i) => <li key={i}>{ing.quantity} {ing.unit} {ing.name}</li>)}
+                    </ul>
+                    <div className="modal-section-title">Instructions</div>
+                    <ol className="indian-modal-steps">
+                      {maharashtraModal.preparation_steps.map((step, i) => <li key={i}>{step}</li>)}
+                    </ol>
+                    {maharashtraModal.chef_notes && (<><div className="modal-section-title">👨‍🍳 Chef Notes</div><p style={{fontSize:"0.88rem",color:"var(--text-muted)",lineHeight:"1.7",background:"var(--cream)",padding:"0.8rem",borderRadius:"8px"}}>{maharashtraModal.chef_notes}</p></>)}
+                    {maharashtraModal.serving_suggestions && (<><div className="modal-section-title">🍽 Serving Suggestions</div><p style={{fontSize:"0.88rem",color:"var(--text-muted)",lineHeight:"1.7"}}>{maharashtraModal.serving_suggestions}</p></>)}
+                    {maharashtraModal.nutrition_estimate && (
+                      <><div className="modal-section-title">Nutrition Estimate</div>
+                      <div className="nutrition-grid">
+                        {Object.entries(maharashtraModal.nutrition_estimate).map(([k,v]) => (
+                          <div key={k} className="nutrition-box"><strong>{v}</strong><span>{k.replace(/_/g,' ')}</span></div>
+                        ))}
+                      </div></>
+                    )}
+                    <div style={{marginTop:"1rem"}}>
+                      <div className="modal-section-title">🔍 SEO Keywords</div>
+                      <div>{maharashtraModal.seo_keywords && maharashtraModal.seo_keywords.map((k,i) => <span key={i} className="flavor-tag">{k}</span>)}</div>
+                    </div>
+                    <div style={{marginTop:"1.2rem"}}>
+                      <button className="btn-ask-chef" onClick={() => { setMaharashtraModal(null); setMaharashtraPage(false); setTimeout(() => { scrollToSection("ai-chef"); }, 300); }}>
+                        ✨ Ask AI Chef about this dish
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* INDIAN CUISINE PAGE */}
       {indianPage && (
         <div className="indian-page">
@@ -2405,8 +8959,8 @@ export default function FusionChefAI() {
                 <div className="indian-grid">
                   {filtered.map((dish, i) => (
                     <div key={i} className="indian-card" onClick={() => setIndianModal(dish)}>
-                      <div className="indian-card-img">
-                        <span>{emojis[dish.category] || "🍽"}</span>
+                      <div className="indian-card-img" style={{padding:0,overflow:"hidden"}}>
+                        {dish.img ? <img src={dish.img} alt={dish.dish_name} style={{width:"100%",height:"100%",objectFit:"cover"}} /> : <span>{emojis[dish.category] || "🍽"}</span>}
                       </div>
                       <div className="indian-card-body">
                         <div className="indian-cat-badge">{dish.category}</div>
@@ -2433,8 +8987,8 @@ export default function FusionChefAI() {
               <div className="modal-wrapper" onClick={e => e.stopPropagation()}>
                 <button className="modal-close" onClick={() => setIndianModal(null)}>✕</button>
                 <div className="modal">
-                  <div style={{background:"linear-gradient(135deg, #E8621A, #C9922A)", height:"200px", display:"flex", alignItems:"center", justifyContent:"center", fontSize:"5rem"}}>
-                    {{"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Beverages":"☕"}[indianModal.category] || "🍽"}
+                  <div style={{height:"240px", overflow:"hidden", position:"relative"}}>
+                    {indianModal.img ? <img src={indianModal.img} alt={indianModal.dish_name} style={{width:"100%",height:"100%",objectFit:"cover"}} /> : <div style={{background:"linear-gradient(135deg,#E8621A,#C9922A)",height:"100%",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"5rem"}}>{{"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Beverages":"☕"}[indianModal.category]||"🍽"}</div>}
                   </div>
                   <div className="modal-body">
                     <div className="indian-cat-badge">{indianModal.category}</div>
@@ -2610,6 +9164,7 @@ export default function FusionChefAI() {
         <div className="cat-grid">
           {[
             { name: "🇮🇳 Indian", desc: "biryani, butter chicken, dosa", img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80", id: "indian" },
+            { name: "🍊 Maharashtra", desc: "vada pav, misal, puran poli", img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80", id: "maharashtra" },
             { name: "🇯🇵 Japanese", desc: "sushi, ramen, tempura", img: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80", id: "coming" },
             { name: "🇮🇹 Italian", desc: "pasta, pizza, risotto", img: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80", id: "coming" },
             { name: "🇲🇽 Mexican", desc: "tacos, enchiladas, guacamole", img: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80", id: "coming" },
@@ -2624,7 +9179,8 @@ export default function FusionChefAI() {
           ].map(c => (
             <div key={c.name} className="cat-card" onClick={() => {
               if(c.id === "indian") { setIndianPage(true); }
-              else { alert("🚧 " + c.name + " recipes coming soon! Try Indian cuisine for now."); }
+              else if(c.id === "maharashtra") { setMaharashtraPage(true); }
+              else { alert("🚧 " + c.name + " recipes coming soon!"); }
             }}>
               <img src={c.img} alt={c.name} />
               <div className="cat-overlay" />
