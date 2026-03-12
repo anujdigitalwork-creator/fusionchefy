@@ -2117,7 +2117,8 @@ const maharashtraCuisineData = [
       "puran poli thali",
       "goda masala recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?indian,dal,lentil,soup,bowl,spiced,brass",
+    "img_search": "indian,dal,lentil,soup,bowl,spiced,brass"
   },
   {
     "seo_title": "Authentic Maharashtrian Drumstick Soup Recipe | FusionChef AI",
@@ -2212,7 +2213,8 @@ const maharashtraCuisineData = [
       "maharashtrian healthy soup",
       "moringa soup indian"
     ],
-    "img": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?drumstick,moringa,soup,indian,green",
+    "img_search": "drumstick,moringa,soup,indian,green"
   },
   {
     "seo_title": "Authentic Maharashtrian Tomato Saar Recipe | FusionChef AI",
@@ -2307,7 +2309,8 @@ const maharashtraCuisineData = [
       "kokani saar",
       "indian tomato broth"
     ],
-    "img": "https://images.unsplash.com/photo-1604152135912-04a022e23696?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?tomato,soup,indian,red,bowl,spiced",
+    "img_search": "tomato,soup,indian,red,bowl,spiced"
   },
   {
     "seo_title": "Authentic Maharashtrian Kokum Saar Recipe | FusionChef AI",
@@ -2386,7 +2389,8 @@ const maharashtraCuisineData = [
       "kokum coconut milk soup",
       "maharashtra cooling drink"
     ],
-    "img": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?kokum,purple,soup,coconut,indian",
+    "img_search": "kokum,purple,soup,coconut,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Chicken Rassa Recipe | FusionChef AI",
@@ -2477,7 +2481,8 @@ const maharashtraCuisineData = [
       "maharashtrian chicken curry",
       "vidarbha chicken"
     ],
-    "img": "https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?chicken,curry,spicy,red,indian,bowl",
+    "img_search": "chicken,curry,spicy,red,indian,bowl"
   },
   {
     "seo_title": "Authentic Maharashtrian Pithla Soup Recipe | FusionChef AI",
@@ -2567,7 +2572,8 @@ const maharashtraCuisineData = [
       "maharashtrian comfort food",
       "quick indian soup"
     ],
-    "img": "https://images.unsplash.com/photo-1576577445504-6af96477db52?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?besan,chickpea,soup,yellow,indian",
+    "img_search": "besan,chickpea,soup,yellow,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Mutton Rassa Soup Recipe | FusionChef AI",
@@ -2653,7 +2659,8 @@ const maharashtraCuisineData = [
       "maharashtrian mutton curry",
       "spicy mutton broth"
     ],
-    "img": "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?mutton,lamb,curry,spicy,indian,bowl",
+    "img_search": "mutton,lamb,curry,spicy,indian,bowl"
   },
   {
     "seo_title": "Authentic Maharashtrian Aamti Dal Recipe | FusionChef AI",
@@ -2750,7 +2757,8 @@ const maharashtraCuisineData = [
       "toor dal maharashtra",
       "maharashtrian thali recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?dal,lentil,indian,yellow,bowl,ghee",
+    "img_search": "dal,lentil,indian,yellow,bowl,ghee"
   },
   {
     "seo_title": "Authentic Maharashtrian Varan Recipe | FusionChef AI",
@@ -2820,7 +2828,8 @@ const maharashtraCuisineData = [
       "ganesh chaturthi recipe",
       "sattvic dal"
     ],
-    "img": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?toor,dal,plain,indian,ghee,bowl",
+    "img_search": "toor,dal,plain,indian,ghee,bowl"
   },
   {
     "seo_title": "Authentic Maharashtrian Bharli Vangi Shorba Recipe | FusionChef AI",
@@ -2905,7 +2914,8 @@ const maharashtraCuisineData = [
       "smoked eggplant soup indian",
       "modern maharashtrian recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?eggplant,brinjal,soup,smoky,indian",
+    "img_search": "eggplant,brinjal,soup,smoky,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Vada Pav Recipe | FusionChef AI",
@@ -3001,7 +3011,8 @@ const maharashtraCuisineData = [
       "batata vada recipe",
       "dry garlic chutney recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?vada,pav,mumbai,street,food,indian",
+    "img_search": "vada,pav,mumbai,street,food,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Misal Pav Recipe | FusionChef AI",
@@ -3098,7 +3109,8 @@ const maharashtraCuisineData = [
       "matki misal",
       "spicy indian street food"
     ],
-    "img": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?misal,sprouts,curry,spicy,pav,indian",
+    "img_search": "misal,sprouts,curry,spicy,pav,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Kanda Bhaji Recipe | FusionChef AI",
@@ -3189,7 +3201,8 @@ const maharashtraCuisineData = [
       "crispy onion pakora",
       "mumbai street snack"
     ],
-    "img": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?onion,pakora,fritter,crispy,fried,indian",
+    "img_search": "onion,pakora,fritter,crispy,fried,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Sabudana Vada Recipe | FusionChef AI",
@@ -3280,7 +3293,8 @@ const maharashtraCuisineData = [
       "tapioca patties recipe",
       "navratri snacks"
     ],
-    "img": "https://images.unsplash.com/photo-1630851840633-f96999247032?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?sabudana,tapioca,patty,fried,golden",
+    "img_search": "sabudana,tapioca,patty,fried,golden"
   },
   {
     "seo_title": "Authentic Maharashtrian Poha Recipe | FusionChef AI",
@@ -3382,7 +3396,8 @@ const maharashtraCuisineData = [
       "poha recipe",
       "indian breakfast ideas"
     ],
-    "img": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?poha,flattened,rice,breakfast,indian,yellow",
+    "img_search": "poha,flattened,rice,breakfast,indian,yellow"
   },
   {
     "seo_title": "Authentic Maharashtrian Thalipeeth Recipe | FusionChef AI",
@@ -3469,7 +3484,8 @@ const maharashtraCuisineData = [
       "multigrain indian flatbread",
       "maharashtra breakfast"
     ],
-    "img": "https://images.unsplash.com/photo-1620921568790-c1cf8e1b4314?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?thalipeeth,multigrain,pancake,flatbread,indian",
+    "img_search": "thalipeeth,multigrain,pancake,flatbread,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Batata Vada Recipe | FusionChef AI",
@@ -3560,7 +3576,8 @@ const maharashtraCuisineData = [
       "mumbai batata vada",
       "vada pav filling"
     ],
-    "img": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?batata,vada,potato,fried,ball,indian",
+    "img_search": "batata,vada,potato,fried,ball,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Chakli Recipe | FusionChef AI",
@@ -3651,7 +3668,8 @@ const maharashtraCuisineData = [
       "murukku maharashtra",
       "crispy indian snacks"
     ],
-    "img": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?chakli,murukku,spiral,crispy,snack,indian",
+    "img_search": "chakli,murukku,spiral,crispy,snack,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Kothimbir Vadi Recipe | FusionChef AI",
@@ -3743,7 +3761,8 @@ const maharashtraCuisineData = [
       "besan coriander cake",
       "tea time snack india"
     ],
-    "img": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?kothimbir,coriander,vadi,fried,cake",
+    "img_search": "kothimbir,coriander,vadi,fried,cake"
   },
   {
     "seo_title": "Authentic Maharashtrian Bharli Mirchi Recipe | FusionChef AI",
@@ -3835,7 +3854,8 @@ const maharashtraCuisineData = [
       "maharashtrian starter",
       "indian stuffed peppers"
     ],
-    "img": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?stuffed,green,chili,pepper,fried,indian",
+    "img_search": "stuffed,green,chili,pepper,fried,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Kachumber Salad Recipe | FusionChef AI",
@@ -3921,7 +3941,8 @@ const maharashtraCuisineData = [
       "cucumber tomato salad india",
       "indian thali salad"
     ],
-    "img": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?kachumber,cucumber,tomato,salad,indian,fresh",
+    "img_search": "kachumber,cucumber,tomato,salad,indian,fresh"
   },
   {
     "seo_title": "Authentic Maharashtrian Sprouted Moong Salad Recipe | FusionChef AI",
@@ -4011,7 +4032,8 @@ const maharashtraCuisineData = [
       "protein salad india",
       "moong sprout recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?moong,sprout,salad,indian,green,healthy",
+    "img_search": "moong,sprout,salad,indian,green,healthy"
   },
   {
     "seo_title": "Authentic Maharashtrian Raw Papaya Salad Recipe | FusionChef AI",
@@ -4106,7 +4128,8 @@ const maharashtraCuisineData = [
       "maharashtrian salad",
       "green papaya recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?raw,papaya,salad,indian,green,coconut",
+    "img_search": "raw,papaya,salad,indian,green,coconut"
   },
   {
     "seo_title": "Authentic Maharashtrian Kakdi Koshimbir Recipe | FusionChef AI",
@@ -4196,7 +4219,8 @@ const maharashtraCuisineData = [
       "cooling salad india",
       "cucumber yogurt salad"
     ],
-    "img": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?cucumber,yogurt,raita,indian,salad,white",
+    "img_search": "cucumber,yogurt,raita,indian,salad,white"
   },
   {
     "seo_title": "Authentic Maharashtrian Matki Usal Salad Recipe | FusionChef AI",
@@ -4287,7 +4311,8 @@ const maharashtraCuisineData = [
       "protein salad india",
       "healthy indian salad"
     ],
-    "img": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?moth,bean,sprout,salad,indian,healthy",
+    "img_search": "moth,bean,sprout,salad,indian,healthy"
   },
   {
     "seo_title": "Authentic Maharashtrian Carrot Koshimbir Recipe | FusionChef AI",
@@ -4377,7 +4402,8 @@ const maharashtraCuisineData = [
       "maharashtrian koshimbir",
       "vegan indian salad"
     ],
-    "img": "https://images.unsplash.com/photo-1600335895229-6e75511892c8?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?carrot,salad,indian,orange,grated,coconut",
+    "img_search": "carrot,salad,indian,orange,grated,coconut"
   },
   {
     "seo_title": "Authentic Maharashtrian Peanut Koshimbir Recipe | FusionChef AI",
@@ -4461,7 +4487,8 @@ const maharashtraCuisineData = [
       "peanut yogurt salad india",
       "fasting salad maharashtra"
     ],
-    "img": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?peanut,groundnut,salad,indian,yogurt",
+    "img_search": "peanut,groundnut,salad,indian,yogurt"
   },
   {
     "seo_title": "Authentic Maharashtrian Bharli Vangi Recipe | FusionChef AI",
@@ -4558,7 +4585,8 @@ const maharashtraCuisineData = [
       "goda masala recipe",
       "maharashtrian vegetarian main course"
     ],
-    "img": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?bharli,vangi,stuffed,brinjal,eggplant,maharashtra",
+    "img_search": "bharli,vangi,stuffed,brinjal,eggplant,maharashtra"
   },
   {
     "seo_title": "Authentic Maharashtrian Chicken Kolhapuri Recipe | FusionChef AI",
@@ -4655,7 +4683,8 @@ const maharashtraCuisineData = [
       "authentic chicken kolhapuri",
       "indian spicy chicken curry"
     ],
-    "img": "https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?kolhapuri,chicken,curry,spicy,dark,red",
+    "img_search": "kolhapuri,chicken,curry,spicy,dark,red"
   },
   {
     "seo_title": "Authentic Maharashtrian Masala Bhaat Recipe | FusionChef AI",
@@ -4753,7 +4782,8 @@ const maharashtraCuisineData = [
       "wedding rice maharashtra",
       "ganesh chaturthi recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?masala,bhaat,spiced,rice,maharashtra,vegetable",
+    "img_search": "masala,bhaat,spiced,rice,maharashtra,vegetable"
   },
   {
     "seo_title": "Authentic Maharashtrian Puran Poli Recipe | FusionChef AI",
@@ -4840,7 +4870,8 @@ const maharashtraCuisineData = [
       "chana dal sweet poli",
       "ganesh chaturthi food"
     ],
-    "img": "https://images.unsplash.com/photo-1620921568790-c1cf8e1b4314?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?puran,poli,sweet,flatbread,stuffed,indian",
+    "img_search": "puran,poli,sweet,flatbread,stuffed,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Bhakri Recipe | FusionChef AI",
@@ -4907,7 +4938,8 @@ const maharashtraCuisineData = [
       "gluten free indian bread",
       "jowar roti recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?bhakri,jowar,sorghum,flatbread,rustic,indian",
+    "img_search": "bhakri,jowar,sorghum,flatbread,rustic,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Pav Recipe | FusionChef AI",
@@ -4990,7 +5022,8 @@ const maharashtraCuisineData = [
       "vada pav bread recipe",
       "maharashtrian pav bun"
     ],
-    "img": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?pav,bread,rolls,soft,baked,indian",
+    "img_search": "pav,bread,rolls,soft,baked,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Amboli Recipe | FusionChef AI",
@@ -5062,7 +5095,8 @@ const maharashtraCuisineData = [
       "malvani breakfast",
       "rice pancake india"
     ],
-    "img": "https://images.unsplash.com/photo-1530610476181-d83430b64dcd?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?amboli,rice,pancake,thick,fermented,konkan",
+    "img_search": "amboli,rice,pancake,thick,fermented,konkan"
   },
   {
     "seo_title": "Authentic Maharashtrian Ghavan Recipe | FusionChef AI",
@@ -5133,7 +5167,8 @@ const maharashtraCuisineData = [
       "gluten free indian bread",
       "coastal maharashtra breakfast"
     ],
-    "img": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?ghavan,rice,crepe,thin,coconut,konkan",
+    "img_search": "ghavan,rice,crepe,thin,coconut,konkan"
   },
   {
     "seo_title": "Authentic Maharashtrian Dhapate Recipe | FusionChef AI",
@@ -5224,7 +5259,8 @@ const maharashtraCuisineData = [
       "traditional maharashtra bread",
       "healthy indian flatbread"
     ],
-    "img": "https://images.unsplash.com/photo-1630851840633-f96999247032?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?dhapate,multigrain,flatbread,rustic,indian",
+    "img_search": "dhapate,multigrain,flatbread,rustic,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Vangyache Bharit Recipe | FusionChef AI",
@@ -5321,7 +5357,8 @@ const maharashtraCuisineData = [
       "fire roasted eggplant india",
       "maharashtrian vegetarian recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?baingan,bharta,smoked,eggplant,indian,mash",
+    "img_search": "baingan,bharta,smoked,eggplant,indian,mash"
   },
   {
     "seo_title": "Authentic Maharashtrian Shrikhand Recipe | FusionChef AI",
@@ -5403,7 +5440,8 @@ const maharashtraCuisineData = [
       "shrikhand puri recipe",
       "indian festival dessert"
     ],
-    "img": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?shrikhand,yogurt,saffron,dessert,indian,sweet",
+    "img_search": "shrikhand,yogurt,saffron,dessert,indian,sweet"
   },
   {
     "seo_title": "Authentic Maharashtrian Modak Recipe | FusionChef AI",
@@ -5486,7 +5524,8 @@ const maharashtraCuisineData = [
       "steamed rice dumpling india",
       "maharashtrian festival sweet"
     ],
-    "img": "https://images.unsplash.com/photo-1558024920-b41e1887dc32?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?modak,steamed,dumpling,ganesh,sweet,rice",
+    "img_search": "modak,steamed,dumpling,ganesh,sweet,rice"
   },
   {
     "seo_title": "Authentic Maharashtrian Puranachi Poli Kheer Recipe | FusionChef AI",
@@ -5572,7 +5611,8 @@ const maharashtraCuisineData = [
       "rabri maharashtra",
       "indian festival dessert milk"
     ],
-    "img": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?basundi,milk,thickened,sweet,saffron,indian",
+    "img_search": "basundi,milk,thickened,sweet,saffron,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Gulachi Poli Recipe | FusionChef AI",
@@ -5648,7 +5688,8 @@ const maharashtraCuisineData = [
       "til jaggery poli",
       "quick indian sweet flatbread"
     ],
-    "img": "https://images.unsplash.com/photo-1574085733277-851d9d856a3a?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?gulachi,poli,jaggery,sesame,sweet,flatbread",
+    "img_search": "gulachi,poli,jaggery,sesame,sweet,flatbread"
   },
   {
     "seo_title": "Authentic Maharashtrian Kheer Recipe | FusionChef AI",
@@ -5735,7 +5776,8 @@ const maharashtraCuisineData = [
       "sabudana sweet",
       "upvas kheer recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?sabudana,kheer,tapioca,pudding,milk,sweet",
+    "img_search": "sabudana,kheer,tapioca,pudding,milk,sweet"
   },
   {
     "seo_title": "Authentic Maharashtrian Masala Chai Recipe | FusionChef AI",
@@ -5816,7 +5858,8 @@ const maharashtraCuisineData = [
       "maharashtrian chai",
       "street chai india"
     ],
-    "img": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?cutting,chai,masala,tea,mumbai,glass",
+    "img_search": "cutting,chai,masala,tea,mumbai,glass"
   },
   {
     "seo_title": "Authentic Maharashtrian Kolhapuri Masala Tea Recipe | FusionChef AI",
@@ -5901,7 +5944,8 @@ const maharashtraCuisineData = [
       "unusual indian tea recipes",
       "kolhapur street food"
     ],
-    "img": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?masala,chai,spiced,tea,indian,kulhad",
+    "img_search": "masala,chai,spiced,tea,indian,kulhad"
   },
   {
     "seo_title": "Authentic Maharashtrian Ginger Lemon Tea Recipe | FusionChef AI",
@@ -5976,7 +6020,8 @@ const maharashtraCuisineData = [
       "healthy indian tea",
       "black tea with lemon ginger"
     ],
-    "img": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?ginger,lemon,tea,black,indian,healthy",
+    "img_search": "ginger,lemon,tea,black,indian,healthy"
   },
   {
     "seo_title": "Authentic Maharashtrian Tulsi Ginger Tea Recipe | FusionChef AI",
@@ -6053,7 +6098,8 @@ const maharashtraCuisineData = [
       "immunity tea india",
       "herbal tea indian recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1563822249366-3efb23b8e0c9?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?tulsi,basil,ginger,herbal,tea,indian",
+    "img_search": "tulsi,basil,ginger,herbal,tea,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Spiced Milk Tea Recipe | FusionChef AI",
@@ -6129,7 +6175,8 @@ const maharashtraCuisineData = [
       "maharashtrian spiced milk",
       "cardamom saffron tea"
     ],
-    "img": "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?saffron,milk,tea,golden,indian,festive",
+    "img_search": "saffron,milk,tea,golden,indian,festive"
   },
   {
     "seo_title": "Authentic Maharashtrian Masala Kadha Tea Recipe | FusionChef AI",
@@ -6220,7 +6267,8 @@ const maharashtraCuisineData = [
       "ayurvedic spice decoction",
       "cold remedy india"
     ],
-    "img": "https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?kadha,herbal,spice,decoction,indian,immunity",
+    "img_search": "kadha,herbal,spice,decoction,indian,immunity"
   },
   {
     "seo_title": "Authentic Maharashtrian Kokum Sharbat Recipe | FusionChef AI",
@@ -6302,7 +6350,8 @@ const maharashtraCuisineData = [
       "konkan kokum juice",
       "digestive indian drink"
     ],
-    "img": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?kokum,sharbat,pink,drink,cold,indian",
+    "img_search": "kokum,sharbat,pink,drink,cold,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Filter Coffee Recipe | FusionChef AI",
@@ -6368,7 +6417,8 @@ const maharashtraCuisineData = [
       "south indian filter coffee recipe",
       "indian filter kaapi"
     ],
-    "img": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?filter,coffee,south,indian,tumbler,decoction",
+    "img_search": "filter,coffee,south,indian,tumbler,decoction"
   },
   {
     "seo_title": "Authentic Maharashtrian Cafe Coffee Recipe | FusionChef AI",
@@ -6434,7 +6484,8 @@ const maharashtraCuisineData = [
       "old pune cafe",
       "chicory coffee india"
     ],
-    "img": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?irani,cafe,coffee,pune,glass,frothy",
+    "img_search": "irani,cafe,coffee,pune,glass,frothy"
   },
   {
     "seo_title": "Authentic Maharashtrian Cold Coffee Recipe | FusionChef AI",
@@ -6510,7 +6561,8 @@ const maharashtraCuisineData = [
       "indian cafe cold coffee",
       "blended coffee recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?cold,coffee,iced,blended,indian,chocolate",
+    "img_search": "cold,coffee,iced,blended,indian,chocolate"
   },
   {
     "seo_title": "Authentic Maharashtrian Bajra Coffee Recipe | FusionChef AI",
@@ -6576,7 +6628,8 @@ const maharashtraCuisineData = [
       "gur coffee recipe",
       "natural sweetener coffee india"
     ],
-    "img": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?filter,coffee,jaggery,clay,cup,healthy",
+    "img_search": "filter,coffee,jaggery,clay,cup,healthy"
   },
   {
     "seo_title": "Authentic Maharashtrian Pav Bhaji Recipe | FusionChef AI",
@@ -6679,7 +6732,8 @@ const maharashtraCuisineData = [
       "maharashtrian main course",
       "indian vegetarian street food"
     ],
-    "img": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?pav,bhaji,mumbai,street,food,butter",
+    "img_search": "pav,bhaji,mumbai,street,food,butter"
   },
   {
     "seo_title": "Authentic Maharashtrian Matki Chi Usal Recipe | FusionChef AI",
@@ -6777,7 +6831,8 @@ const maharashtraCuisineData = [
       "maharashtrian main course",
       "misal base recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?matki,usal,moth,bean,curry,maharashtra",
+    "img_search": "matki,usal,moth,bean,curry,maharashtra"
   },
   {
     "seo_title": "Authentic Maharashtrian Kombdi Vade Recipe | FusionChef AI",
@@ -6869,7 +6924,8 @@ const maharashtraCuisineData = [
       "maharashtrian coastal food",
       "malvani cuisine recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?chicken,malvani,curry,konkan,fried,bread",
+    "img_search": "chicken,malvani,curry,konkan,fried,bread"
   },
   {
     "seo_title": "Authentic Maharashtrian Shepu Bhaji Recipe | FusionChef AI",
@@ -6960,7 +7016,8 @@ const maharashtraCuisineData = [
       "dill stir fry india",
       "shepu recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?dill,sabzi,green,stir,fry,indian",
+    "img_search": "dill,sabzi,green,stir,fry,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Zunka Recipe | FusionChef AI",
@@ -7057,7 +7114,8 @@ const maharashtraCuisineData = [
       "maharashtrian village food",
       "traditional zunka recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?zunka,besan,chickpea,dry,curry,maharashtra",
+    "img_search": "zunka,besan,chickpea,dry,curry,maharashtra"
   },
   {
     "seo_title": "Authentic Maharashtrian Hirwa Thecha Recipe | FusionChef AI",
@@ -7138,7 +7196,8 @@ const maharashtraCuisineData = [
       "green chili garlic relish",
       "bhakri condiment"
     ],
-    "img": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?thecha,green,chili,garlic,chutney,maharashtra",
+    "img_search": "thecha,green,chili,garlic,chutney,maharashtra"
   },
   {
     "seo_title": "Authentic Maharashtrian Dry Garlic Chutney Recipe | FusionChef AI",
@@ -7214,7 +7273,8 @@ const maharashtraCuisineData = [
       "garlic coconut chutney powder",
       "vada pav chutney recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?dry,garlic,coconut,chutney,powder,vada,pav",
+    "img_search": "dry,garlic,coconut,chutney,powder,vada,pav"
   },
   {
     "seo_title": "Authentic Maharashtrian Green Chutney Recipe | FusionChef AI",
@@ -7303,7 +7363,8 @@ const maharashtraCuisineData = [
       "vada pav green chutney",
       "indian green sauce recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?green,coriander,chutney,indian,fresh,sauce",
+    "img_search": "green,coriander,chutney,indian,fresh,sauce"
   },
   {
     "seo_title": "Authentic Maharashtrian Kanda Lasun Masala Recipe | FusionChef AI",
@@ -7379,7 +7440,8 @@ const maharashtraCuisineData = [
       "maharashtrian masala recipe",
       "caramelized onion masala"
     ],
-    "img": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?onion,garlic,masala,paste,caramelized,indian",
+    "img_search": "onion,garlic,masala,paste,caramelized,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Goda Masala Recipe | FusionChef AI",
@@ -7475,7 +7537,8 @@ const maharashtraCuisineData = [
       "dagad phool masala",
       "authentic goda masala ingredients"
     ],
-    "img": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?goda,masala,spice,blend,maharashtra,powder",
+    "img_search": "goda,masala,spice,blend,maharashtra,powder"
   },
   {
     "seo_title": "Authentic Maharashtrian Ambadi Pickle Recipe | FusionChef AI",
@@ -7562,7 +7625,8 @@ const maharashtraCuisineData = [
       "maharashtrian achar",
       "summer mango pickle recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?raw,mango,pickle,indian,kairi,loncha",
+    "img_search": "raw,mango,pickle,indian,kairi,loncha"
   },
   {
     "seo_title": "Authentic Maharashtrian Peanut Chutney Recipe | FusionChef AI",
@@ -7642,7 +7706,8 @@ const maharashtraCuisineData = [
       "maharashtrian peanut sauce",
       "bhakri condiment recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?peanut,chutney,groundnut,sauce,indian",
+    "img_search": "peanut,chutney,groundnut,sauce,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Tamarind Chutney Recipe | FusionChef AI",
@@ -7718,7 +7783,8 @@ const maharashtraCuisineData = [
       "chaat chutney recipe",
       "imli jaggery chutney"
     ],
-    "img": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?tamarind,jaggery,chutney,sweet,sour,indian",
+    "img_search": "tamarind,jaggery,chutney,sweet,sour,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Coconut Chutney Recipe | FusionChef AI",
@@ -7813,7 +7879,8 @@ const maharashtraCuisineData = [
       "white coconut chutney india",
       "maharashtrian dip recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?coconut,chutney,white,fresh,indian",
+    "img_search": "coconut,chutney,white,fresh,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Gajar Loncha Recipe | FusionChef AI",
@@ -7900,7 +7967,8 @@ const maharashtraCuisineData = [
       "quick carrot achar recipe",
       "maharashtrian loncha"
     ],
-    "img": "https://images.unsplash.com/photo-1600335895229-6e75511892c8?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?carrot,pickle,indian,spiced,loncha",
+    "img_search": "carrot,pickle,indian,spiced,loncha"
   },
   {
     "seo_title": "Authentic Maharashtrian Varan Bhaat Recipe | FusionChef AI",
@@ -7975,7 +8043,8 @@ const maharashtraCuisineData = [
       "festival food maharashtra",
       "simple indian comfort meal"
     ],
-    "img": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?varan,bhaat,dal,rice,ghee,maharashtra",
+    "img_search": "varan,bhaat,dal,rice,ghee,maharashtra"
   },
   {
     "seo_title": "Authentic Maharashtrian Bhel Puri Recipe | FusionChef AI",
@@ -8076,7 +8145,8 @@ const maharashtraCuisineData = [
       "puffed rice snack india",
       "juhu beach bhel"
     ],
-    "img": "https://images.unsplash.com/photo-1630851840633-f96999247032?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?bhel,puri,chaat,puffed,rice,mumbai",
+    "img_search": "bhel,puri,chaat,puffed,rice,mumbai"
   },
   {
     "seo_title": "Authentic Maharashtrian Tadgola Kheer Recipe | FusionChef AI",
@@ -8153,7 +8223,8 @@ const maharashtraCuisineData = [
       "maharashtrian summer dessert",
       "coastal maharashtra recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1488477304112-4944851de03d?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?ice,apple,palm,fruit,kheer,milk,dessert",
+    "img_search": "ice,apple,palm,fruit,kheer,milk,dessert"
   },
   {
     "seo_title": "Authentic Maharashtrian Narali Bhaat Recipe | FusionChef AI",
@@ -8251,7 +8322,8 @@ const maharashtraCuisineData = [
       "konkan sweet rice",
       "maharashtrian festival rice"
     ],
-    "img": "https://images.unsplash.com/photo-1516684732162-798a0062be99?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?narali,bhaat,coconut,rice,sweet,festive",
+    "img_search": "narali,bhaat,coconut,rice,sweet,festive"
   },
   {
     "seo_title": "Authentic Maharashtrian Kadhi Recipe | FusionChef AI",
@@ -8348,7 +8420,8 @@ const maharashtraCuisineData = [
       "kadhi rice",
       "maharashtrian thali recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1576577445504-6af96477db52?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?kadhi,yogurt,besan,curry,yellow,indian",
+    "img_search": "kadhi,yogurt,besan,curry,yellow,indian"
   },
   {
     "seo_title": "Authentic Maharashtrian Sol Kadhi Recipe | FusionChef AI",
@@ -8431,7 +8504,8 @@ const maharashtraCuisineData = [
       "pink digestive drink india",
       "konkan sol kadhi recipe"
     ],
-    "img": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=80"
+    "img": "https://source.unsplash.com/400x300/?sol,kadhi,kokum,coconut,pink,konkan",
+    "img_search": "sol,kadhi,kokum,coconut,pink,konkan"
   }
 ];
 
@@ -8861,8 +8935,20 @@ export default function FusionChefAI() {
                 <div className="indian-grid">
                   {filtered.map((dish, i) => (
                     <div key={i} className="indian-card" onClick={() => setMaharashtraModal(dish)}>
-                      <div className="indian-card-img" style={{padding:0,overflow:"hidden"}}>
-                        {dish.img ? <img src={dish.img} alt={dish.dish_name} style={{width:"100%",height:"100%",objectFit:"cover"}} /> : <span>{emojis[dish.category] || "🍽"}</span>}
+                      <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
+                        {dish.img ? (
+                          <img 
+                            src={dish.img} 
+                            alt={dish.dish_name} 
+                            loading="lazy"
+                            style={{width:"100%",height:"100%",objectFit:"cover"}}
+                            onError={e => { e.target.style.display="none"; e.target.nextSibling.style.display="flex"; }}
+                          />
+                        ) : null}
+                        <div style={{display: dish.img ? "none" : "flex", width:"100%", height:"100%", alignItems:"center", justifyContent:"center", flexDirection:"column", background:`linear-gradient(135deg, ${gradients[dish.category] || "#E8621A, #C9922A"})`}}>
+                          <span style={{fontSize:"2.5rem"}}>{emojis[dish.category] || "🍽"}</span>
+                          <span style={{fontSize:"0.65rem",color:"white",marginTop:"0.3rem",textAlign:"center",padding:"0 0.5rem",fontWeight:600}}>{dish.dish_name}</span>
+                        </div>
                       </div>
                       <div className="indian-card-body">
                         <div className="indian-cat-badge">{dish.category}</div>
@@ -8889,8 +8975,19 @@ export default function FusionChefAI() {
               <div className="modal-wrapper" onClick={e => e.stopPropagation()}>
                 <button className="modal-close" onClick={() => setMaharashtraModal(null)}>✕</button>
                 <div className="modal">
-                  <div style={{height:"240px", overflow:"hidden", position:"relative"}}>
-                    {maharashtraModal.img ? <img src={maharashtraModal.img} alt={maharashtraModal.dish_name} style={{width:"100%",height:"100%",objectFit:"cover"}} /> : <div style={{background:"linear-gradient(135deg,#E8621A,#C9922A)",height:"100%",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"5rem"}}>{{"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Tea":"🍵","Coffee":"☕","Salads":"🥗","Sides":"🫙"}[maharashtraModal.category]||"🍽"}</div>}
+                  <div style={{height:"260px", overflow:"hidden", position:"relative", background:"#f5f0ea"}}>
+                    {maharashtraModal.img ? (
+                      <img 
+                        src={maharashtraModal.img} 
+                        alt={maharashtraModal.dish_name}
+                        style={{width:"100%",height:"100%",objectFit:"cover"}}
+                        onError={e => { e.target.style.display="none"; e.target.nextSibling.style.display="flex"; }}
+                      />
+                    ) : null}
+                    <div style={{display:"none", background:"linear-gradient(135deg,#E8621A,#C9922A)",height:"260px",alignItems:"center",justifyContent:"center",flexDirection:"column",gap:"0.5rem"}}>
+                      <span style={{fontSize:"5rem"}}>{{"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Tea":"🍵","Coffee":"☕","Salads":"🥗","Sides":"🫙"}[maharashtraModal.category]||"🍽"}</span>
+                      <span style={{color:"white",fontWeight:700,fontSize:"1rem"}}>{maharashtraModal.dish_name}</span>
+                    </div>
                   </div>
                   <div className="modal-body">
                     <div className="indian-cat-badge">{maharashtraModal.category}</div>
