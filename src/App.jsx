@@ -216,6 +216,53 @@ const styles = `
   .footer-col ul li a:hover { color: var(--saffron); }
   .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.5rem; text-align: center; font-size: 0.8rem; max-width: 1100px; margin: 0 auto; }
 
+  /* FULL PAGE OVERLAY */
+  .full-page { position: fixed; inset: 0; background: var(--cream); z-index: 150; overflow-y: auto; animation: fadeIn 0.3s ease; }
+  .full-page-header { background: var(--charcoal); padding: 1.2rem 2.5rem; display: flex; align-items: center; gap: 1.2rem; position: sticky; top: 0; z-index: 10; }
+  .full-page-header h1 { font-family: 'Playfair Display', serif; color: white; font-size: 1.5rem; flex: 1; }
+  .full-page-header h1 em { color: var(--saffron); font-style: italic; }
+  .back-btn { background: transparent; border: 2px solid rgba(255,255,255,0.3); color: white; padding: 0.45rem 1.1rem; border-radius: 24px; cursor: pointer; font-family: 'DM Sans', sans-serif; font-size: 0.85rem; transition: all 0.2s; }
+  .back-btn:hover { background: var(--saffron); border-color: var(--saffron); }
+  .full-page-content { max-width: 1300px; margin: 0 auto; padding: 2.5rem 2rem; }
+
+  /* CUISINE EXPLORER */
+  .ce-continent { margin-bottom: 3rem; }
+  .ce-continent-title { font-size: 1.4rem; font-family: 'Playfair Display', serif; color: var(--charcoal); margin-bottom: 1.2rem; padding-bottom: 0.6rem; border-bottom: 3px solid var(--saffron); display: inline-block; }
+  .ce-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+  .ce-card { background: white; border-radius: 12px; overflow: hidden; cursor: pointer; box-shadow: 0 3px 12px rgba(0,0,0,0.08); transition: all 0.3s; }
+  .ce-card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(0,0,0,0.15); }
+  .ce-card-img { height: 130px; overflow: hidden; position: relative; }
+  .ce-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+  .ce-card:hover .ce-card-img img { transform: scale(1.08); }
+  .ce-card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%); }
+  .ce-card-body { padding: 0.8rem 1rem; }
+  .ce-card-body h3 { font-size: 0.92rem; color: var(--charcoal); font-weight: 600; }
+  .ce-card-body p { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem; font-style: italic; }
+  .ce-available { display: inline-block; background: var(--green); color: white; font-size: 0.65rem; padding: 0.15rem 0.55rem; border-radius: 10px; margin-top: 0.3rem; }
+  .ce-coming { display: inline-block; background: var(--cream-dark); color: var(--text-muted); font-size: 0.65rem; padding: 0.15rem 0.55rem; border-radius: 10px; margin-top: 0.3rem; }
+
+  /* RECIPE DATABASE */
+  .rdb-filters { background: white; border-radius: 14px; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 3px 12px rgba(0,0,0,0.07); }
+  .rdb-filters-row { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: flex-end; }
+  .rdb-filter-group { flex: 1; min-width: 180px; }
+  .rdb-filter-group label { display: block; font-size: 0.78rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+  .rdb-search-input { width: 100%; padding: 0.65rem 1rem; border: 2px solid var(--cream-dark); border-radius: 8px; font-size: 0.88rem; font-family: 'DM Sans', sans-serif; outline: none; transition: border 0.2s; }
+  .rdb-search-input:focus { border-color: var(--saffron); }
+  .rdb-select { width: 100%; padding: 0.65rem 1rem; border: 2px solid var(--cream-dark); border-radius: 8px; font-size: 0.88rem; font-family: 'DM Sans', sans-serif; outline: none; background: white; cursor: pointer; transition: border 0.2s; }
+  .rdb-select:focus { border-color: var(--saffron); }
+  .rdb-count { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.2rem; }
+  .rdb-count strong { color: var(--saffron); }
+  .rdb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.4rem; }
+  .rdb-card { background: white; border-radius: 14px; overflow: hidden; box-shadow: 0 3px 14px rgba(0,0,0,0.08); cursor: pointer; transition: all 0.3s; }
+  .rdb-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.14); }
+  .rdb-card-img { height: 170px; display: flex; align-items: center; justify-content: center; font-size: 4rem; position: relative; }
+  .rdb-card-body { padding: 1rem 1.2rem; }
+  .rdb-card-body h3 { font-size: 0.98rem; color: var(--charcoal); margin-bottom: 0.4rem; line-height: 1.4; }
+  .rdb-card-meta { display: flex; gap: 0.8rem; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; flex-wrap: wrap; align-items: center; }
+  .rdb-cuisine-tag { display: inline-block; background: rgba(232,98,26,0.1); color: var(--saffron); font-size: 0.72rem; font-weight: 600; padding: 0.2rem 0.7rem; border-radius: 10px; }
+  .rdb-empty { text-align: center; padding: 4rem; color: var(--text-muted); }
+  .rdb-empty p:first-child { font-size: 3rem; margin-bottom: 1rem; }
+
   /* INDIAN CUISINE PAGE */
   .indian-page { position: fixed; inset: 0; background: var(--cream); z-index: 150; overflow-y: auto; animation: fadeIn 0.3s ease; }
   .indian-header { background: var(--charcoal); padding: 1.5rem 2.5rem; display: flex; align-items: center; gap: 1.5rem; position: sticky; top: 0; z-index: 10; }
@@ -1960,6 +2007,12 @@ export default function FusionChefAI() {
   const [scrolled, setScrolled] = useState(false);
   const [recipeModal, setRecipeModal] = useState(null);
   const [indianPage, setIndianPage] = useState(false);
+  const [cuisineExplorer, setCuisineExplorer] = useState(false);
+  const [recipeDB, setRecipeDB] = useState(false);
+  const [recipeDBCategory, setRecipeDBCategory] = useState("All");
+  const [recipeDBCuisine, setRecipeDBCuisine] = useState("All");
+  const [recipeDBSearch, setRecipeDBSearch] = useState("");
+  const [recipeDBDifficulty, setRecipeDBDifficulty] = useState("All");
   const [indianCategory, setIndianCategory] = useState("All");
   const [indianSearch, setIndianSearch] = useState("");
   const [indianModal, setIndianModal] = useState(null);
@@ -1972,6 +2025,8 @@ export default function FusionChefAI() {
   const messagesEndRef = useRef(null);
 
   const scrollToSection = (id) => {
+    if (id === "cuisine-explorer") { setCuisineExplorer(true); setRecipeDB(false); return; }
+    if (id === "recipe-db") { setRecipeDB(true); setCuisineExplorer(false); return; }
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
@@ -2068,6 +2123,8 @@ export default function FusionChefAI() {
   const navLinks = [
     { label: "AI Chef", id: "ai-chef" },
     { label: "Trending", id: "trending" },
+    { label: "Cuisines", id: "cuisine-explorer" },
+    { label: "Recipes", id: "recipe-db" },
   ];
 
   return (
@@ -2152,6 +2209,175 @@ export default function FusionChefAI() {
         </div>
       )}
 
+
+      {/* CUISINE EXPLORER PAGE */}
+      {cuisineExplorer && (
+        <div className="full-page">
+          <div className="full-page-header">
+            <button className="back-btn" onClick={() => setCuisineExplorer(false)}>← Back</button>
+            <h1>🌍 Cuisine <em>Explorer</em></h1>
+          </div>
+          <div className="full-page-content">
+            {[
+              { continent: "🌏 Asian Cuisines", cuisines: [
+                { name: "🇮🇳 Indian", desc: "biryani, butter chicken, dosa", img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80", available: true },
+                { name: "🇯🇵 Japanese", desc: "sushi, ramen, tempura", img: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80" },
+                { name: "🇨🇳 Chinese", desc: "dim sum, Peking duck, stir-fries", img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80" },
+                { name: "🇹🇭 Thai", desc: "pad thai, green curry", img: "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=400&q=80" },
+                { name: "🇰🇷 Korean", desc: "kimchi, bibimbap, BBQ", img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&q=80" },
+                { name: "🇻🇳 Vietnamese", desc: "pho, banh mi", img: "https://images.unsplash.com/photo-1582878826629-33b7f57b2a3c?w=400&q=80" },
+                { name: "🇮🇩 Indonesian", desc: "nasi goreng, satay", img: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&q=80" },
+                { name: "🇵🇭 Filipino", desc: "adobo, lechon", img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" },
+              ]},
+              { continent: "🌍 European Cuisines", cuisines: [
+                { name: "🇮🇹 Italian", desc: "pasta, pizza, risotto", img: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80" },
+                { name: "🇫🇷 French", desc: "croissants, coq au vin", img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=80" },
+                { name: "🇪🇸 Spanish", desc: "paella, tapas", img: "https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=400&q=80" },
+                { name: "🇬🇷 Greek", desc: "moussaka, souvlaki", img: "https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&q=80" },
+                { name: "🇹🇷 Turkish", desc: "kebabs, baklava", img: "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=400&q=80" },
+                { name: "🇩🇪 German", desc: "sausages, schnitzel", img: "https://images.unsplash.com/photo-1599921841143-819065a55cc5?w=400&q=80" },
+                { name: "🇬🇧 British", desc: "fish and chips, pies", img: "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&q=80" },
+              ]},
+              { continent: "🌎 American Cuisines", cuisines: [
+                { name: "🇺🇸 American", desc: "burgers, BBQ", img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" },
+                { name: "🇲🇽 Mexican", desc: "tacos, enchiladas", img: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80" },
+                { name: "🇵🇪 Peruvian", desc: "ceviche, lomo saltado", img: "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400&q=80" },
+                { name: "🇧🇷 Brazilian", desc: "feijoada, churrasco", img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" },
+                { name: "🇦🇷 Argentinian", desc: "asado, empanadas", img: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&q=80" },
+              ]},
+              { continent: "🌍 Middle Eastern Cuisines", cuisines: [
+                { name: "🇱🇧 Lebanese", desc: "hummus, shawarma", img: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400&q=80" },
+                { name: "🇮🇷 Iranian", desc: "kebabs, saffron rice", img: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&q=80" },
+                { name: "🇮🇱 Israeli", desc: "falafel, shakshouka", img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80" },
+                { name: "🇴🇲 Omani", desc: "shuwa, majboos", img: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400&q=80" },
+              ]},
+              { continent: "🌍 African Cuisines", cuisines: [
+                { name: "🇲🇦 Moroccan", desc: "tagine, couscous", img: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&q=80" },
+                { name: "🇪🇹 Ethiopian", desc: "injera, doro wat", img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80" },
+                { name: "🇳🇬 Nigerian", desc: "jollof rice, egusi soup", img: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&q=80" },
+                { name: "🇿🇦 South African", desc: "braai, bobotie", img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" },
+              ]},
+              { continent: "🌏 Oceania Cuisines", cuisines: [
+                { name: "🇦🇺 Australian", desc: "modern fusion, seafood", img: "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&q=80" },
+                { name: "🇳🇿 New Zealand", desc: "lamb, pavlova", img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80" },
+              ]},
+            ].map(group => (
+              <div key={group.continent} className="ce-continent">
+                <h2 className="ce-continent-title">{group.continent}</h2>
+                <div className="ce-grid">
+                  {group.cuisines.map(c => (
+                    <div key={c.name} className="ce-card" onClick={() => {
+                      if(c.available) { setCuisineExplorer(false); setIndianPage(true); }
+                      else { alert("🚧 " + c.name + " recipes coming soon!"); }
+                    }}>
+                      <div className="ce-card-img">
+                        <img src={c.img} alt={c.name} />
+                        <div className="ce-card-overlay" />
+                      </div>
+                      <div className="ce-card-body">
+                        <h3>{c.name}</h3>
+                        <p>{c.desc}</p>
+                        {c.available ? <span className="ce-available">✅ Available</span> : <span className="ce-coming">🚧 Coming Soon</span>}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* RECIPE DATABASE PAGE */}
+      {recipeDB && (
+        <div className="full-page">
+          <div className="full-page-header">
+            <button className="back-btn" onClick={() => setRecipeDB(false)}>← Back</button>
+            <h1>📖 Recipe <em>Database</em></h1>
+          </div>
+          <div className="full-page-content">
+            <div className="rdb-filters">
+              <div className="rdb-filters-row">
+                <div className="rdb-filter-group" style={{flex:2}}>
+                  <label>🔍 Search Recipes</label>
+                  <input className="rdb-search-input" placeholder="Search by name, ingredient or flavor..." value={recipeDBSearch} onChange={e => setRecipeDBSearch(e.target.value)} />
+                </div>
+                <div className="rdb-filter-group">
+                  <label>🍽 Category</label>
+                  <select className="rdb-select" value={recipeDBCategory} onChange={e => setRecipeDBCategory(e.target.value)}>
+                    <option value="All">All Categories</option>
+                    {["Appetizers","Soups","Main Courses","Breads","Rice Preparations","Desserts","Beverages"].map(c => <option key={c} value={c}>{c}</option>)}
+                  </select>
+                </div>
+                <div className="rdb-filter-group">
+                  <label>📊 Difficulty</label>
+                  <select className="rdb-select" value={recipeDBDifficulty} onChange={e => setRecipeDBDifficulty(e.target.value)}>
+                    <option value="All">All Levels</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                  </select>
+                </div>
+                <div className="rdb-filter-group">
+                  <label>🌍 Cuisine</label>
+                  <select className="rdb-select" value={recipeDBCuisine} onChange={e => setRecipeDBCuisine(e.target.value)}>
+                    <option value="All">All Cuisines</option>
+                    <option value="Indian">🇮🇳 Indian</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            {(() => {
+              const allRecipes = [...indianCuisineData];
+              const filtered = allRecipes.filter(d => {
+                const matchCat = recipeDBCategory === "All" || d.category === recipeDBCategory;
+                const matchDiff = recipeDBDifficulty === "All" || d.difficulty_level === recipeDBDifficulty;
+                const matchCuisine = recipeDBCuisine === "All" || d.cuisine === recipeDBCuisine;
+                const matchSearch = !recipeDBSearch || 
+                  d.dish_name.toLowerCase().includes(recipeDBSearch.toLowerCase()) ||
+                  d.flavor_profile.some(f => f.toLowerCase().includes(recipeDBSearch.toLowerCase())) ||
+                  d.ingredients.some(i => i.name.toLowerCase().includes(recipeDBSearch.toLowerCase()));
+                return matchCat && matchDiff && matchCuisine && matchSearch;
+              });
+              const emojis = {"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Beverages":"☕"};
+              const gradients = {"Appetizers":"#E8621A, #C9922A","Soups":"#4A7C59, #2E7D32","Main Courses":"#C0392B, #E8621A","Breads":"#C9922A, #8B4513","Rice Preparations":"#4A7C59, #C9922A","Desserts":"#9B59B6, #E8621A","Beverages":"#1C6EA4, #4A7C59"};
+              return (
+                <>
+                  <div className="rdb-count">Showing <strong>{filtered.length}</strong> of <strong>{allRecipes.length}</strong> recipes</div>
+                  {filtered.length === 0 ? (
+                    <div className="rdb-empty"><p>🔍</p><p>No recipes found. Try different filters!</p></div>
+                  ) : (
+                    <div className="rdb-grid">
+                      {filtered.map((dish, i) => (
+                        <div key={i} className="rdb-card" onClick={() => { setRecipeDB(false); setIndianModal(dish); setIndianPage(true); }}>
+                          <div className="rdb-card-img" style={{background: `linear-gradient(135deg, ${gradients[dish.category] || "#E8621A, #C9922A"})`}}>
+                            <span>{emojis[dish.category] || "🍽"}</span>
+                          </div>
+                          <div className="rdb-card-body">
+                            <div style={{display:"flex", gap:"0.4rem", marginBottom:"0.4rem", flexWrap:"wrap"}}>
+                              <span className="rdb-cuisine-tag">{dish.cuisine}</span>
+                              <span className="indian-cat-badge">{dish.category}</span>
+                            </div>
+                            <h3>{dish.dish_name}</h3>
+                            <div className="rdb-card-meta">
+                              <span>⏱ {dish.prep_time_minutes + dish.cook_time_minutes} min</span>
+                              <span>🍽 {dish.servings} servings</span>
+                              <span className={`diff-badge diff-${dish.difficulty_level}`}>{dish.difficulty_level}</span>
+                            </div>
+                            <div style={{marginTop:"0.5rem"}}>
+                              {dish.dietary_tags.slice(0,2).map((t,j) => <span key={j} className="diet-tag">{t}</span>)}
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </>
+              );
+            })()}
+          </div>
+        </div>
+      )}
       {/* INDIAN CUISINE PAGE */}
       {indianPage && (
         <div className="indian-page">
@@ -2373,6 +2599,45 @@ export default function FusionChefAI() {
       </section>
 
 
+
+      {/* WORLD CUISINES */}
+      <section className="section categories-section" id="categories">
+        <div className="section-header">
+          <div className="section-tag">🌍 Worldwide</div>
+          <h2 className="section-title">Explore <em>World Cuisines</em></h2>
+          <p className="section-sub">Click any cuisine to explore authentic recipes from around the globe.</p>
+        </div>
+        <div className="cat-grid">
+          {[
+            { name: "🇮🇳 Indian", desc: "biryani, butter chicken, dosa", img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80", id: "indian" },
+            { name: "🇯🇵 Japanese", desc: "sushi, ramen, tempura", img: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80", id: "coming" },
+            { name: "🇮🇹 Italian", desc: "pasta, pizza, risotto", img: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80", id: "coming" },
+            { name: "🇲🇽 Mexican", desc: "tacos, enchiladas, guacamole", img: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80", id: "coming" },
+            { name: "🇨🇳 Chinese", desc: "dim sum, Peking duck, stir-fries", img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80", id: "coming" },
+            { name: "🇹🇭 Thai", desc: "pad thai, green curry", img: "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=400&q=80", id: "coming" },
+            { name: "🇫🇷 French", desc: "croissants, coq au vin", img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=80", id: "coming" },
+            { name: "🇰🇷 Korean", desc: "kimchi, bibimbap, BBQ", img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&q=80", id: "coming" },
+            { name: "🇬🇷 Greek", desc: "moussaka, souvlaki", img: "https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&q=80", id: "coming" },
+            { name: "🇲🇦 Moroccan", desc: "tagine, couscous", img: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&q=80", id: "coming" },
+            { name: "🇻🇳 Vietnamese", desc: "pho, banh mi", img: "https://images.unsplash.com/photo-1582878826629-33b7f57b2a3c?w=400&q=80", id: "coming" },
+            { name: "🇪🇸 Spanish", desc: "paella, tapas, churros", img: "https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=400&q=80", id: "coming" },
+          ].map(c => (
+            <div key={c.name} className="cat-card" onClick={() => {
+              if(c.id === "indian") { setIndianPage(true); }
+              else { alert("🚧 " + c.name + " recipes coming soon! Try Indian cuisine for now."); }
+            }}>
+              <img src={c.img} alt={c.name} />
+              <div className="cat-overlay" />
+              <div className="cat-info">
+                <h3>{c.name}</h3>
+                <span>{c.desc}</span>
+                {c.id === "indian" && <span style={{display:"inline-block",background:"var(--saffron)",color:"white",fontSize:"0.65rem",padding:"0.15rem 0.5rem",borderRadius:"10px",marginTop:"0.3rem"}}>✅ Available Now</span>}
+                {c.id === "coming" && <span style={{display:"inline-block",background:"rgba(255,255,255,0.2)",color:"white",fontSize:"0.65rem",padding:"0.15rem 0.5rem",borderRadius:"10px",marginTop:"0.3rem"}}>🚧 Coming Soon</span>}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* TRENDING */}
       <section className="section trending-section" id="trending">
