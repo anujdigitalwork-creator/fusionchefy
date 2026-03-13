@@ -3000,7 +3000,8 @@ const maharashtraCuisineData = [
       "maharashtrian street food",
       "batata vada recipe",
       "dry garlic chutney recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/appetizers/vadapav-maharashtra-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Misal Pav Recipe | FusionChef AI",
@@ -3096,7 +3097,8 @@ const maharashtraCuisineData = [
       "pune misal",
       "matki misal",
       "spicy indian street food"
-    ]
+    ],
+    "img": "/images/india/maharashtra/appetizers/misal-pav-maharashtra-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Kanda Bhaji Recipe | FusionChef AI",
@@ -3186,7 +3188,8 @@ const maharashtraCuisineData = [
       "maharashtrian bhaji",
       "crispy onion pakora",
       "mumbai street snack"
-    ]
+    ],
+    "img": "/images/india/maharashtra/appetizers/kanda-bhaji-maharashtra-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Sabudana Vada Recipe | FusionChef AI",
@@ -3276,7 +3279,8 @@ const maharashtraCuisineData = [
       "upvas recipe",
       "tapioca patties recipe",
       "navratri snacks"
-    ]
+    ],
+    "img": "/images/india/maharashtra/appetizers/sabudana-vada-maharashtra-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Poha Recipe | FusionChef AI",
@@ -3377,7 +3381,8 @@ const maharashtraCuisineData = [
       "mumbai breakfast",
       "poha recipe",
       "indian breakfast ideas"
-    ]
+    ],
+    "img": "/images/india/maharashtra/appetizers/pohe-maharashtra-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Thalipeeth Recipe | FusionChef AI",
@@ -3463,7 +3468,8 @@ const maharashtraCuisineData = [
       "bhajani recipe",
       "multigrain indian flatbread",
       "maharashtra breakfast"
-    ]
+    ],
+    "img": "/images/india/maharashtra/appetizers/thalipeeth-maharashtra-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Batata Vada Recipe | FusionChef AI",
@@ -3553,7 +3559,8 @@ const maharashtraCuisineData = [
       "maharashtrian snack",
       "mumbai batata vada",
       "vada pav filling"
-    ]
+    ],
+    "img": "/images/india/maharashtra/appetizers/batata-vada-maharashtra-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Chakli Recipe | FusionChef AI",
@@ -3643,7 +3650,8 @@ const maharashtraCuisineData = [
       "rice flour chakli",
       "murukku maharashtra",
       "crispy indian snacks"
-    ]
+    ],
+    "img": "/images/india/maharashtra/appetizers/chakali-maharashtra-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Kothimbir Vadi Recipe | FusionChef AI",
@@ -3734,7 +3742,8 @@ const maharashtraCuisineData = [
       "maharashtrian snack",
       "besan coriander cake",
       "tea time snack india"
-    ]
+    ],
+    "img": "/images/india/maharashtra/appetizers/kothimbir-vadi-maharashtra-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Bharli Mirchi Recipe | FusionChef AI",
@@ -3825,7 +3834,8 @@ const maharashtraCuisineData = [
       "besan stuffed chili",
       "maharashtrian starter",
       "indian stuffed peppers"
-    ]
+    ],
+    "img": "/images/india/maharashtra/appetizers/bharli-mirch-maharashtra-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Kachumber Salad Recipe | FusionChef AI",
@@ -8016,7 +8026,8 @@ const maharashtraCuisineData = [
       "maharashtrian chaat",
       "puffed rice snack india",
       "juhu beach bhel"
-    ]
+    ],
+    "img": "/images/india/maharashtra/appetizers/mumbai-bhel-puri-maharashtra-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Tadgola Kheer Recipe | FusionChef AI",
