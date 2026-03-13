@@ -4557,7 +4557,8 @@ const maharashtraCuisineData = [
       "maharashtrian eggplant recipe",
       "goda masala recipe",
       "maharashtrian vegetarian main course"
-    ]
+    ],
+    "img": "/images/india/maharashtra/main-courses/bharli-vangi-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Chicken Kolhapuri Recipe | FusionChef AI",
@@ -4653,7 +4654,8 @@ const maharashtraCuisineData = [
       "spicy maharashtrian chicken",
       "authentic chicken kolhapuri",
       "indian spicy chicken curry"
-    ]
+    ],
+    "img": "/images/india/maharashtra/main-courses/chicken-kolhapuri-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Masala Bhaat Recipe | FusionChef AI",
@@ -4750,7 +4752,8 @@ const maharashtraCuisineData = [
       "goda masala rice",
       "wedding rice maharashtra",
       "ganesh chaturthi recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/main-courses/masala-bhaat-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Puran Poli Recipe | FusionChef AI",
@@ -5311,7 +5314,8 @@ const maharashtraCuisineData = [
       "smoked brinjal maharashtra",
       "fire roasted eggplant india",
       "maharashtrian vegetarian recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/main-courses/vangyache-bharit-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Shrikhand Recipe | FusionChef AI",
@@ -6652,7 +6656,8 @@ const maharashtraCuisineData = [
       "pav bhaji masala recipe",
       "maharashtrian main course",
       "indian vegetarian street food"
-    ]
+    ],
+    "img": "/images/india/maharashtra/main-courses/pav-bhaji-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Matki Chi Usal Recipe | FusionChef AI",
@@ -6749,7 +6754,8 @@ const maharashtraCuisineData = [
       "sprouted matki recipe",
       "maharashtrian main course",
       "misal base recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/main-courses/matki-chi-usal-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Kombdi Vade Recipe | FusionChef AI",
@@ -6840,7 +6846,8 @@ const maharashtraCuisineData = [
       "konkan chicken curry",
       "maharashtrian coastal food",
       "malvani cuisine recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/main-courses/kombdi-vade-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Shepu Bhaji Recipe | FusionChef AI",
@@ -6930,7 +6937,8 @@ const maharashtraCuisineData = [
       "maharashtrian green sabzi",
       "dill stir fry india",
       "shepu recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/main-courses/shepu-bhaji-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Zunka Recipe | FusionChef AI",
@@ -7026,7 +7034,8 @@ const maharashtraCuisineData = [
       "besan dry curry",
       "maharashtrian village food",
       "traditional zunka recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/main-courses/zunka-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Hirwa Thecha Recipe | FusionChef AI",
@@ -8303,7 +8312,8 @@ const maharashtraCuisineData = [
       "besan kadhi recipe",
       "kadhi rice",
       "maharashtrian thali recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/main-courses/maharashtrian-kadhi.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Sol Kadhi Recipe | FusionChef AI",
