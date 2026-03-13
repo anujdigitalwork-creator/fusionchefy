@@ -3920,7 +3920,8 @@ const maharashtraCuisineData = [
       "maharashtrian salad",
       "cucumber tomato salad india",
       "indian thali salad"
-    ]
+    ],
+    "img": "/images/india/maharashtra/salads/kachumber-maharashtra-salad.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Sprouted Moong Salad Recipe | FusionChef AI",
@@ -4009,7 +4010,8 @@ const maharashtraCuisineData = [
       "maharashtrian healthy salad",
       "protein salad india",
       "moong sprout recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/salads/moodyachi-usal-salad-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Raw Papaya Salad Recipe | FusionChef AI",
@@ -4103,7 +4105,8 @@ const maharashtraCuisineData = [
       "kacha papaya salad india",
       "maharashtrian salad",
       "green papaya recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/salads/kacha-papaya-koshimbir-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Kakdi Koshimbir Recipe | FusionChef AI",
@@ -4192,7 +4195,8 @@ const maharashtraCuisineData = [
       "maharashtrian koshimbir",
       "cooling salad india",
       "cucumber yogurt salad"
-    ]
+    ],
+    "img": "/images/india/maharashtra/salads/kakdi-koshimbir-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Matki Usal Salad Recipe | FusionChef AI",
@@ -4282,7 +4286,8 @@ const maharashtraCuisineData = [
       "maharashtrian sprout salad",
       "protein salad india",
       "healthy indian salad"
-    ]
+    ],
+    "img": "/images/india/maharashtra/salads/matki-salad-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Carrot Koshimbir Recipe | FusionChef AI",
@@ -4371,7 +4376,8 @@ const maharashtraCuisineData = [
       "indian carrot salad",
       "maharashtrian koshimbir",
       "vegan indian salad"
-    ]
+    ],
+    "img": "/images/india/maharashtra/salads/gajar-koshimbir-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Peanut Koshimbir Recipe | FusionChef AI",
@@ -4454,7 +4460,8 @@ const maharashtraCuisineData = [
       "peanut salad maharashtra",
       "peanut yogurt salad india",
       "fasting salad maharashtra"
-    ]
+    ],
+    "img": "/images/india/maharashtra/salads/shenga-koshimbir-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Bharli Vangi Recipe | FusionChef AI",
