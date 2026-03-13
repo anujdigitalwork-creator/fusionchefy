@@ -2477,7 +2477,7 @@ const maharashtraCuisineData = [
       "maharashtrian chicken curry",
       "vidarbha chicken"
     ],
-    "img": "/images/india/maharashtra/soups/chicken-rassa.jpg"
+    "img": "/images/india/maharashtra/soups/chicken-rassa-maharashtra-soup.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Pithla Soup Recipe | FusionChef AI",
