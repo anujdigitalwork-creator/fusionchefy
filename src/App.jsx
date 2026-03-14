@@ -7137,7 +7137,8 @@ const maharashtraCuisineData = [
       "maharashtrian green chili chutney",
       "green chili garlic relish",
       "bhakri condiment"
-    ]
+    ],
+    "img": "/images/india/maharashtra/sides/hirwa-thecha-maharashtra-side.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Dry Garlic Chutney Recipe | FusionChef AI",
@@ -7212,7 +7213,8 @@ const maharashtraCuisineData = [
       "maharashtrian dry chutney",
       "garlic coconut chutney powder",
       "vada pav chutney recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/sides/lasun-khobra-chutney-maharashtra-side.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Green Chutney Recipe | FusionChef AI",
@@ -7300,7 +7302,8 @@ const maharashtraCuisineData = [
       "coriander coconut chutney",
       "vada pav green chutney",
       "indian green sauce recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/sides/hirvi-chutney-maharashtra-side.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Kanda Lasun Masala Recipe | FusionChef AI",
@@ -7375,7 +7378,8 @@ const maharashtraCuisineData = [
       "onion garlic paste india",
       "maharashtrian masala recipe",
       "caramelized onion masala"
-    ]
+    ],
+    "img": "/images/india/maharashtra/sides/kanda-lasun-masala-maharashtra-side.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Goda Masala Recipe | FusionChef AI",
@@ -7470,7 +7474,8 @@ const maharashtraCuisineData = [
       "how to make goda masala",
       "dagad phool masala",
       "authentic goda masala ingredients"
-    ]
+    ],
+    "img": "/images/india/maharashtra/sides/goda-masala-maharashtra-side.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Ambadi Pickle Recipe | FusionChef AI",
@@ -7556,7 +7561,8 @@ const maharashtraCuisineData = [
       "indian mango pickle",
       "maharashtrian achar",
       "summer mango pickle recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/sides/kairi-loncha-maharashtra-side.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Peanut Chutney Recipe | FusionChef AI",
@@ -7635,7 +7641,8 @@ const maharashtraCuisineData = [
       "groundnut chutney india",
       "maharashtrian peanut sauce",
       "bhakri condiment recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/sides/shenga-chutney-maharashtra-side.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Tamarind Chutney Recipe | FusionChef AI",
@@ -7710,7 +7717,8 @@ const maharashtraCuisineData = [
       "sweet tamarind sauce india",
       "chaat chutney recipe",
       "imli jaggery chutney"
-    ]
+    ],
+    "img": "/images/india/maharashtra/sides/chincha-gul-chutney-maharashtra-side.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Coconut Chutney Recipe | FusionChef AI",
@@ -7804,7 +7812,8 @@ const maharashtraCuisineData = [
       "konkan coconut chutney",
       "white coconut chutney india",
       "maharashtrian dip recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/sides/khobra-chutney-maharashtra-side.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Gajar Loncha Recipe | FusionChef AI",
@@ -7890,7 +7899,8 @@ const maharashtraCuisineData = [
       "indian carrot pickle",
       "quick carrot achar recipe",
       "maharashtrian loncha"
-    ]
+    ],
+    "img": "/images/india/maharashtra/sides/gajar-loncha-maharashtra-side.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Varan Bhaat Recipe | FusionChef AI",
@@ -8420,7 +8430,8 @@ const maharashtraCuisineData = [
       "malvani sol kadhi",
       "pink digestive drink india",
       "konkan sol kadhi recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/sides/sol-kadhi-maharashtra-side.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Phodnicha Bhat Recipe | FusionChef AI",
