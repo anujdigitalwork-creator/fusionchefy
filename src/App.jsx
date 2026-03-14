@@ -7948,7 +7948,8 @@ const maharashtraCuisineData = [
       "toor dal rice maharashtra",
       "festival food maharashtra",
       "simple indian comfort meal"
-    ]
+    ],
+    "img": "/images/india/maharashtra/rice/varan-bhaat-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Bhel Puri Recipe | FusionChef AI",
@@ -8222,7 +8223,8 @@ const maharashtraCuisineData = [
       "narali purnima recipe",
       "konkan sweet rice",
       "maharashtrian festival rice"
-    ]
+    ],
+    "img": "/images/india/maharashtra/rice/narali-bhaat-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Kadhi Recipe | FusionChef AI",
