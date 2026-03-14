@@ -6367,7 +6367,8 @@ const maharashtraCuisineData = [
       "vidarbha coffee",
       "south indian filter coffee recipe",
       "indian filter kaapi"
-    ]
+    ],
+    "img": "/images/india/maharashtra/coffee/nagpur-filter-coffee-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Cafe Coffee Recipe | FusionChef AI",
@@ -6432,7 +6433,8 @@ const maharashtraCuisineData = [
       "maharashtrian coffee",
       "old pune cafe",
       "chicory coffee india"
-    ]
+    ],
+    "img": "/images/india/maharashtra/coffee/pune-cafe-irani-coffee-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Cold Coffee Recipe | FusionChef AI",
@@ -6507,7 +6509,8 @@ const maharashtraCuisineData = [
       "nashik cold coffee",
       "indian cafe cold coffee",
       "blended coffee recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/coffee/nashik-cold-coffee-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Bajra Coffee Recipe | FusionChef AI",
@@ -6572,7 +6575,8 @@ const maharashtraCuisineData = [
       "maharashtrian coffee",
       "gur coffee recipe",
       "natural sweetener coffee india"
-    ]
+    ],
+    "img": "/images/india/maharashtra/coffee/jaggery-filter-coffee-maharashtra.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Pav Bhaji Recipe | FusionChef AI",
