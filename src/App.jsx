@@ -8804,7 +8804,8 @@ const punjabCuisineData = [
       "punjabi dal makhani",
       "black dal recipe",
       "restaurant style dal makhani"
-    ]
+    ],
+    "img": "/images/india/punjab/soups/dal-makhani-punjab-soup.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Sarson Ka Saag Recipe | FusionChef AI",
@@ -13574,7 +13575,8 @@ const punjabCuisineData = [
       "golden temple dal",
       "amritsar langar food",
       "urad dal punjab simple"
-    ]
+    ],
+    "img": "/images/india/punjab/soups/langar-di-dal-punjab-soup.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Saag Soup Recipe | FusionChef AI",
@@ -13669,7 +13671,8 @@ const punjabCuisineData = [
       "punjabi spinach soup",
       "green soup india",
       "spinach soup starter"
-    ]
+    ],
+    "img": "/images/india/punjab/soups/palak-shorba-punjab-soup.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Tomato Shorba Recipe | FusionChef AI",
@@ -13764,7 +13767,8 @@ const punjabCuisineData = [
       "punjabi tomato soup",
       "indian restaurant tomato shorba",
       "spiced tomato broth"
-    ]
+    ],
+    "img": "/images/india/punjab/soups/tamatar-shorba-punjab-soup.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Maah Ki Dal Recipe | FusionChef AI",
@@ -13855,7 +13859,8 @@ const punjabCuisineData = [
       "white urad dal punjab",
       "punjabi dal recipe",
       "urad dal everyday"
-    ]
+    ],
+    "img": "/images/india/punjab/soups/maah-ki-dal-punjab-soup.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Atte Ka Halwa Recipe | FusionChef AI",
