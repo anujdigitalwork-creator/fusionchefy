@@ -8709,6 +8709,5942 @@ const maharashtraCuisineData = [
   }
 ];
 
+const punjabCuisineData = [
+  {
+    "seo_title": "Authentic Punjabi Dal Makhani Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/dal-makhani",
+    "dish_name": "Dal Makhani",
+    "state": "Punjab",
+    "category": "Soups",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 480,
+    "cook_time_minutes": 60,
+    "total_time_minutes": 540,
+    "servings": 4,
+    "short_description": "Dal Makhani is Punjab's most iconic lentil preparation \u2014 black urad dal and rajma slow-cooked overnight with butter, cream and tomatoes into a velvety, deeply satisfying dal that is the soul of Punjabi cooking.",
+    "ingredients": [
+      {
+        "name": "Whole black urad dal",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Rajma (kidney beans)",
+        "quantity": "50",
+        "unit": "g"
+      },
+      {
+        "name": "Butter",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Fresh cream",
+        "quantity": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": "3",
+        "unit": "medium"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Garam masala",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak urad dal and rajma overnight in water.",
+      "Pressure cook together until completely soft \u2014 about 6-8 whistles.",
+      "Mash lightly and simmer on very low heat.",
+      "In a separate pan, heat butter and fry onion until golden.",
+      "Add ginger-garlic paste, tomatoes and spices. Cook until oil separates.",
+      "Add this masala to the dal and mix well.",
+      "Simmer on lowest heat for 30-45 minutes stirring occasionally.",
+      "Finish with cream and butter. Serve garnished with a cream swirl."
+    ],
+    "chef_notes": "The secret to restaurant-style Dal Makhani is the long slow simmer \u2014 the longer it cooks, the better it gets. Dhaba-style dal is cooked for 6-8 hours on a wood fire.",
+    "serving_suggestions": "Serve with butter naan, tandoori roti or jeera rice.",
+    "nutrition_estimate": {
+      "calories": "385",
+      "protein_g": "15",
+      "carbohydrates_g": "42",
+      "fat_g": "18"
+    },
+    "tags": [
+      "Vegetarian",
+      "Iconic",
+      "Slow Cooked",
+      "Punjabi"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Dal Makhani in a copper bowl, dark velvety lentils with cream swirl and butter, garnished with coriander, warm dramatic lighting",
+    "seo_keywords": [
+      "dal makhani recipe",
+      "punjabi dal makhani",
+      "black dal recipe",
+      "restaurant style dal makhani"
+    ],
+    "img": "https://images.pexels.com/photos/4331489/pexels-photo-4331489.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Sarson Ka Saag Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/sarson-ka-saag",
+    "dish_name": "Sarson Ka Saag",
+    "state": "Punjab",
+    "category": "Main Courses",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 60,
+    "total_time_minutes": 80,
+    "servings": 4,
+    "short_description": "Sarson Ka Saag is Punjab's most beloved winter dish \u2014 mustard greens slow-cooked with spinach, bathua and spices into a thick, earthy and deeply nourishing preparation. Served with makki di roti and white butter, it is the soul of Punjabi winter.",
+    "ingredients": [
+      {
+        "name": "Mustard greens (sarson)",
+        "quantity": "500",
+        "unit": "g"
+      },
+      {
+        "name": "Spinach",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Bathua (chenopodium)",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "2",
+        "unit": "inch"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "6",
+        "unit": "cloves"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Maize flour (makki atta)",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Butter",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Wash and roughly chop all greens.",
+      "Pressure cook greens with ginger, garlic and green chili for 3 whistles.",
+      "Blend coarsely \u2014 do not make smooth.",
+      "Add maize flour and cook stirring for 20 minutes.",
+      "Prepare tempering with butter, onion until golden.",
+      "Add tempering to saag and mix well.",
+      "Simmer 15 more minutes on low heat.",
+      "Serve topped with a generous dollop of white butter."
+    ],
+    "chef_notes": "Bathua (wild spinach) is essential for authentic sarson ka saag \u2014 it adds a distinctive earthiness. Maize flour thickens the saag and prevents it from being watery.",
+    "serving_suggestions": "Serve with makki di roti, white butter (makkhan) and jaggery.",
+    "nutrition_estimate": {
+      "calories": "185",
+      "protein_g": "6",
+      "carbohydrates_g": "18",
+      "fat_g": "10"
+    },
+    "tags": [
+      "Vegetarian",
+      "Winter Special",
+      "Iconic",
+      "Punjabi"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Sarson Ka Saag, deep green mustard greens in a brass bowl topped with white butter, served alongside makki di roti, rustic Punjabi setting",
+    "seo_keywords": [
+      "sarson ka saag recipe",
+      "punjabi saag",
+      "mustard greens recipe",
+      "sarson saag makki roti"
+    ],
+    "img": "https://images.pexels.com/photos/5410400/pexels-photo-5410400.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Butter Chicken Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/butter-chicken",
+    "dish_name": "Murgh Makhani",
+    "state": "Punjab",
+    "category": "Main Courses",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 40,
+    "cook_time_minutes": 45,
+    "total_time_minutes": 85,
+    "servings": 4,
+    "short_description": "Murgh Makhani \u2014 Butter Chicken \u2014 is arguably India's most famous dish, born in the kitchens of Delhi's Moti Mahal restaurant from Punjabi roots. Tandoor-roasted chicken in a velvety tomato-butter-cream sauce, it is indulgent, mildly spiced and universally beloved.",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "quantity": "800",
+        "unit": "g"
+      },
+      {
+        "name": "Butter",
+        "quantity": "5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Fresh cream",
+        "quantity": "150",
+        "unit": "ml"
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": "4",
+        "unit": "large"
+      },
+      {
+        "name": "Cashews",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onion",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Kashmiri red chili powder",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Kasuri methi",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garam masala",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Honey",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Marinate chicken in yogurt, ginger-garlic paste, Kashmiri chili and spices for 4 hours.",
+      "Grill or cook chicken in a very hot pan until charred. Set aside.",
+      "Cook onion, tomatoes and cashews together until soft. Blend smooth.",
+      "Heat butter, add the blended sauce and cook for 15 minutes.",
+      "Add Kashmiri chili, kasuri methi and garam masala.",
+      "Add grilled chicken pieces and simmer 15 minutes.",
+      "Finish with cream and honey. Adjust seasoning.",
+      "Garnish with cream swirl and kasuri methi."
+    ],
+    "chef_notes": "Kasuri methi (dried fenugreek) is the secret ingredient that gives Murgh Makhani its distinctive restaurant aroma. Always add it at the end. Kashmiri chili gives color without heat.",
+    "serving_suggestions": "Serve with butter naan, laccha paratha or steamed basmati rice.",
+    "nutrition_estimate": {
+      "calories": "420",
+      "protein_g": "32",
+      "carbohydrates_g": "14",
+      "fat_g": "26"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Iconic",
+      "Creamy",
+      "Punjabi"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Murgh Makhani butter chicken in a copper karahi, vibrant orange-red creamy sauce, tender chicken pieces, cream swirl, garnished with kasuri methi and green chili",
+    "seo_keywords": [
+      "butter chicken recipe",
+      "murgh makhani recipe",
+      "punjabi butter chicken",
+      "restaurant style butter chicken"
+    ],
+    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Amritsari Fish Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/amritsari-fish",
+    "dish_name": "Amritsari Machhi",
+    "state": "Punjab",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 50,
+    "servings": 4,
+    "short_description": "Amritsari Machhi is the legendary crispy fried fish from the holy city of Amritsar \u2014 marinated in a spiced besan-ajwain batter and deep fried to a glorious golden crunch. Served with green chutney and onion rings, it is street food perfection.",
+    "ingredients": [
+      {
+        "name": "Fish fillets (sole or pomfret)",
+        "quantity": "600",
+        "unit": "g"
+      },
+      {
+        "name": "Besan",
+        "quantity": "6",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rice flour",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ajwain (carom seeds)",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Kashmiri red chili",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Amchur (dry mango powder)",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "2",
+        "unit": "cups"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Clean fish and make cuts on both sides for marinade penetration.",
+      "Marinate with ginger-garlic paste, lemon, chili, amchur and salt for 20 minutes.",
+      "Make a thick batter with besan, rice flour, ajwain and water.",
+      "Dip marinated fish in batter.",
+      "Deep fry in hot oil until golden and crispy \u2014 about 4 minutes each side.",
+      "Drain and serve immediately with green chutney."
+    ],
+    "chef_notes": "Ajwain (carom seeds) is what makes this distinctly Amritsari. The double coating \u2014 marinate then batter \u2014 ensures the fish stays juicy inside while being incredibly crispy outside.",
+    "serving_suggestions": "Serve with green chutney, sliced onion rings and lemon wedges.",
+    "nutrition_estimate": {
+      "calories": "310",
+      "protein_g": "28",
+      "carbohydrates_g": "18",
+      "fat_g": "14"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Street Food",
+      "Amritsar",
+      "Crispy"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Amritsari Machhi, golden crispy fried fish pieces, served with green chutney and onion rings, newspaper wrap, street food atmosphere",
+    "seo_keywords": [
+      "amritsari machhi recipe",
+      "punjabi fried fish",
+      "amritsar fish fry",
+      "crispy fish recipe india"
+    ],
+    "img": "https://images.pexels.com/photos/9609816/pexels-photo-9609816.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Tandoori Chicken Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/tandoori-chicken",
+    "dish_name": "Tandoori Chicken",
+    "state": "Punjab",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 480,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 510,
+    "servings": 4,
+    "short_description": "Tandoori Chicken is Punjab's greatest gift to the world \u2014 chicken marinated in yogurt and spices then roasted in a blazing tandoor until charred and smoky. The iconic red-orange color, smoky aroma and juicy interior make it one of India's most recognizable dishes.",
+    "ingredients": [
+      {
+        "name": "Chicken legs and thighs",
+        "quantity": "800",
+        "unit": "g"
+      },
+      {
+        "name": "Thick yogurt",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Kashmiri red chili powder",
+        "quantity": "3",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mustard oil",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garam masala",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cumin powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "2",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Score chicken pieces deeply with a sharp knife.",
+      "First marinade: apply lemon juice, salt and chili for 30 minutes.",
+      "Second marinade: mix yogurt, ginger-garlic paste, mustard oil and all spices.",
+      "Coat chicken thoroughly and refrigerate overnight.",
+      "Cook in a very hot oven at 240\u00b0C or on a grill.",
+      "Cook for 25-30 minutes turning once until charred on edges.",
+      "Rest 5 minutes before serving with green chutney and sliced onions."
+    ],
+    "chef_notes": "Mustard oil is essential for authentic Tandoori flavor \u2014 do not substitute with regular oil. Overnight marination makes all the difference. The chicken should have dark charred spots.",
+    "serving_suggestions": "Serve with mint chutney, sliced onion, lemon wedges and laccha paratha.",
+    "nutrition_estimate": {
+      "calories": "295",
+      "protein_g": "35",
+      "carbohydrates_g": "5",
+      "fat_g": "14"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Iconic",
+      "Tandoor",
+      "Grilled"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Tandoori Chicken, charred smoky chicken legs on a sizzling plate, vibrant red-orange color, served with mint chutney and onion rings, dramatic dark background",
+    "seo_keywords": [
+      "tandoori chicken recipe",
+      "punjabi tandoori",
+      "clay oven chicken",
+      "authentic tandoori chicken marinade"
+    ],
+    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Paneer Tikka Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/paneer-tikka",
+    "dish_name": "Punjabi Paneer Tikka",
+    "state": "Punjab",
+    "category": "Appetizers",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 60,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 80,
+    "servings": 4,
+    "short_description": "Punjabi Paneer Tikka is the king of vegetarian starters \u2014 cubes of fresh cottage cheese marinated in a spiced yogurt mixture and grilled until blistered and smoky. Served on skewers with capsicum and onion, it is a party favourite across India.",
+    "ingredients": [
+      {
+        "name": "Paneer",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Thick yogurt",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Kashmiri red chili powder",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Besan",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Chaat masala",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Kasuri methi",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mustard oil",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Capsicum",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Cut paneer into large cubes. Cut capsicum and onion into squares.",
+      "Mix yogurt with all spices, besan, kasuri methi and mustard oil.",
+      "Marinate paneer, capsicum and onion in the mixture for 1 hour.",
+      "Thread onto skewers alternating paneer, capsicum and onion.",
+      "Grill on high heat or in oven at 220\u00b0C for 15-18 minutes.",
+      "Brush with butter and grill 2 more minutes until charred.",
+      "Sprinkle chaat masala and serve with mint chutney."
+    ],
+    "chef_notes": "Besan in the marinade helps it stick to the paneer and creates a light crust. Do not skip the charring \u2014 it's what gives tikka its distinctive smoky flavor.",
+    "serving_suggestions": "Serve with mint chutney, sliced onion and lemon wedges.",
+    "nutrition_estimate": {
+      "calories": "285",
+      "protein_g": "18",
+      "carbohydrates_g": "10",
+      "fat_g": "19"
+    },
+    "tags": [
+      "Vegetarian",
+      "Grilled",
+      "Party Starter",
+      "Punjabi"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Paneer Tikka on skewers, charred paneer cubes with capsicum and onion, vibrant orange marinade, sizzling plate, served with mint chutney",
+    "seo_keywords": [
+      "paneer tikka recipe",
+      "punjabi paneer tikka",
+      "grilled paneer recipe",
+      "vegetarian tikka"
+    ],
+    "img": "https://images.pexels.com/photos/9609834/pexels-photo-9609834.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Chole Bhature Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/chole-bhature",
+    "dish_name": "Chole Bhature",
+    "state": "Punjab",
+    "category": "Main Courses",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 480,
+    "cook_time_minutes": 60,
+    "total_time_minutes": 540,
+    "servings": 4,
+    "short_description": "Chole Bhature is Punjab's most iconic breakfast and brunch dish \u2014 deeply spiced chickpeas served with pillowy deep-fried bread. The dark, tangy chole and the puffed golden bhature together create one of India's most satisfying and beloved combinations.",
+    "ingredients": [
+      {
+        "name": "Dried chickpeas (kabuli chana)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Tea bag",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Onions",
+        "quantity": "3",
+        "unit": "large"
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": "3",
+        "unit": "large"
+      },
+      {
+        "name": "Chole masala",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Amchur",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Maida (for bhature)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Yogurt (for bhature)",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "2",
+        "unit": "cups"
+      },
+      {
+        "name": "Salt",
+        "quantity": "2",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak chickpeas overnight. Pressure cook with tea bag for dark color.",
+      "Fry onions until deep brown. Add ginger-garlic paste and tomatoes.",
+      "Add chole masala and amchur. Cook until oil separates.",
+      "Add cooked chickpeas and mash some for thick gravy.",
+      "Simmer 20 minutes. Adjust seasoning.",
+      "For bhature: knead maida with yogurt, salt and water into soft dough. Rest 2 hours.",
+      "Roll into oval shapes and deep fry until puffed and golden.",
+      "Serve chole with hot bhature, sliced onion and pickle."
+    ],
+    "chef_notes": "The tea bag trick gives chole its characteristic dark color naturally. Mashing some chickpeas creates a thick gravy without adding any thickener.",
+    "serving_suggestions": "Serve with pickled onions, green chili, mango pickle and lassi.",
+    "nutrition_estimate": {
+      "calories": "580",
+      "protein_g": "18",
+      "carbohydrates_g": "72",
+      "fat_g": "24"
+    },
+    "tags": [
+      "Vegetarian",
+      "Street Food",
+      "Breakfast",
+      "Iconic"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Chole Bhature, dark spiced chickpeas alongside golden puffed bhature, pickled onions and green chili, vibrant Punjabi dhaba setting",
+    "seo_keywords": [
+      "chole bhature recipe",
+      "punjabi chole bhature",
+      "chickpea curry puri",
+      "delhi chole bhature"
+    ],
+    "img": "https://images.pexels.com/photos/9609834/pexels-photo-9609834.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Rajma Chawal Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/rajma-chawal",
+    "dish_name": "Rajma Chawal",
+    "state": "Punjab",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 480,
+    "cook_time_minutes": 45,
+    "total_time_minutes": 525,
+    "servings": 4,
+    "short_description": "Rajma Chawal \u2014 red kidney bean curry with steamed rice \u2014 is Punjab's ultimate comfort food. Slow-cooked kidney beans in a thick onion-tomato masala, served over steamed rice with a drizzle of ghee. Simple, hearty and deeply nourishing.",
+    "ingredients": [
+      {
+        "name": "Rajma (kidney beans)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Onions",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": "3",
+        "unit": "large"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rajma masala",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Basmati rice",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Bay leaf",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak rajma overnight. Pressure cook until very soft.",
+      "Heat ghee with cumin seeds and bay leaf.",
+      "Add onions and fry until deep golden.",
+      "Add ginger-garlic paste and tomatoes. Cook until oil separates.",
+      "Add rajma masala and cooked rajma with its water.",
+      "Simmer 20 minutes mashing some beans for thick gravy.",
+      "Cook basmati rice separately.",
+      "Serve rajma over rice with ghee and raw onion salad."
+    ],
+    "chef_notes": "The rajma water from pressure cooking is liquid gold \u2014 never drain it. It thickens the curry and adds deep flavor. A good rajma masala is the key.",
+    "serving_suggestions": "Serve over steamed basmati rice with ghee, raw onion salad and pickle.",
+    "nutrition_estimate": {
+      "calories": "450",
+      "protein_g": "16",
+      "carbohydrates_g": "72",
+      "fat_g": "12"
+    },
+    "tags": [
+      "Vegetarian",
+      "Comfort Food",
+      "Everyday",
+      "Punjabi"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Rajma Chawal, dark red kidney bean curry over white basmati rice in a steel plate, ghee drizzle, raw onion on side, homestyle Punjabi setting",
+    "seo_keywords": [
+      "rajma chawal recipe",
+      "punjabi rajma recipe",
+      "kidney bean curry rice",
+      "rajma masala recipe"
+    ],
+    "img": "https://images.pexels.com/photos/4331489/pexels-photo-4331489.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Makki Di Roti Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/makki-di-roti",
+    "dish_name": "Makki Di Roti",
+    "state": "Punjab",
+    "category": "Breads",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 35,
+    "servings": 4,
+    "short_description": "Makki Di Roti is Punjab's iconic cornmeal flatbread \u2014 thick, rustic and slightly sweet, best eaten hot off the tawa with sarson ka saag and a generous knob of white butter. A winter staple that represents the heart of Punjabi rural cooking.",
+    "ingredients": [
+      {
+        "name": "Maize flour (makki atta)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Warm water",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "White butter (makkhan)",
+        "quantity": "4",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Mix maize flour with salt and warm water.",
+      "Knead into a soft dough \u2014 maize has no gluten so it will be crumbly.",
+      "Divide into balls and flatten on a wet cloth or between plastic sheets.",
+      "Carefully transfer to a hot dry tawa.",
+      "Cook on medium heat, pressing gently with a wet hand.",
+      "Cook on both sides until golden spots appear.",
+      "Apply white butter generously and serve immediately."
+    ],
+    "chef_notes": "Makki roti is gluten-free and requires patience to roll \u2014 use wet hands and a plastic sheet. Always eat fresh and hot as it hardens when cold.",
+    "serving_suggestions": "Serve hot with sarson ka saag, white butter and jaggery.",
+    "nutrition_estimate": {
+      "calories": "240",
+      "protein_g": "5",
+      "carbohydrates_g": "46",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Gluten-Free",
+      "Vegetarian",
+      "Winter Special",
+      "Traditional"
+    ],
+    "image_prompt": "Ultra realistic food photography of Makki Di Roti, thick golden cornmeal flatbread on a cast iron tawa, white butter melting on top, sarson ka saag alongside, rustic Punjabi winter setting",
+    "seo_keywords": [
+      "makki di roti recipe",
+      "cornmeal flatbread punjab",
+      "maize roti recipe",
+      "makki roti sarson saag"
+    ],
+    "img": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Butter Naan Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/butter-naan",
+    "dish_name": "Butter Naan",
+    "state": "Punjab",
+    "category": "Breads",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 120,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 140,
+    "servings": 4,
+    "short_description": "Butter Naan is Punjab's most celebrated bread \u2014 a leavened, pillowy flatbread cooked in a blazing tandoor and brushed with generous amounts of butter. Soft, slightly charred and irresistibly good, it is the perfect vehicle for Punjab's rich curries.",
+    "ingredients": [
+      {
+        "name": "All-purpose flour (maida)",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Yogurt",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Instant yeast",
+        "quantity": "5",
+        "unit": "g"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Butter",
+        "quantity": "5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Milk",
+        "quantity": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "Nigella seeds (kalonji)",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Activate yeast in warm milk with sugar for 10 minutes.",
+      "Mix flour, yogurt, salt and yeast mixture. Knead 10 minutes.",
+      "Rest covered for 1.5 hours until doubled.",
+      "Divide into balls and roll into teardrop shapes.",
+      "Press nigella seeds on top.",
+      "Cook on a very hot tawa or under a grill until puffed and charred.",
+      "Brush generously with butter immediately and serve."
+    ],
+    "chef_notes": "The hotter the cooking surface, the better the naan. A cast iron pan on highest heat gives good results at home. Brushing with butter while hot is non-negotiable.",
+    "serving_suggestions": "Serve with dal makhani, butter chicken, paneer dishes or any Punjabi curry.",
+    "nutrition_estimate": {
+      "calories": "290",
+      "protein_g": "7",
+      "carbohydrates_g": "46",
+      "fat_g": "9"
+    },
+    "tags": [
+      "Vegetarian",
+      "Bread",
+      "Tandoor",
+      "Iconic"
+    ],
+    "image_prompt": "Ultra realistic food photography of butter naan, pillowy charred flatbread glistening with butter, fresh coriander on top, served in a basket with a side of dal makhani, warm restaurant lighting",
+    "seo_keywords": [
+      "butter naan recipe",
+      "punjabi naan",
+      "homemade naan bread",
+      "tandoor naan recipe"
+    ],
+    "img": "https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Laccha Paratha Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/laccha-paratha",
+    "dish_name": "Laccha Paratha",
+    "state": "Punjab",
+    "category": "Breads",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 50,
+    "servings": 4,
+    "short_description": "Laccha Paratha is a multi-layered flaky whole wheat flatbread that is a Punjabi masterpiece. The concentric coiled layers created by folding and rolling the dough separate into crispy, buttery strata when cooked \u2014 making it one of the most texturally satisfying Indian breads.",
+    "ingredients": [
+      {
+        "name": "Whole wheat flour",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Warm water",
+        "quantity": "180",
+        "unit": "ml"
+      }
+    ],
+    "preparation_steps": [
+      "Knead flour, salt and water into a smooth soft dough. Rest 20 minutes.",
+      "Roll a ball into a large thin circle.",
+      "Brush generously with ghee.",
+      "Make pleats like a fan \u2014 fold accordion-style.",
+      "Roll the pleated strip into a coil.",
+      "Flatten the coil gently and roll into a circle.",
+      "Cook on hot tawa with ghee on both sides until golden and crispy.",
+      "Crush gently between palms to separate layers before serving."
+    ],
+    "chef_notes": "The crushing step after cooking is essential \u2014 it separates the layers and gives laccha paratha its signature flaky appearance. Do not skip this.",
+    "serving_suggestions": "Serve with dal makhani, any Punjabi curry, raita or butter.",
+    "nutrition_estimate": {
+      "calories": "310",
+      "protein_g": "7",
+      "carbohydrates_g": "44",
+      "fat_g": "12"
+    },
+    "tags": [
+      "Vegetarian",
+      "Flaky",
+      "Layered Bread",
+      "Punjabi"
+    ],
+    "image_prompt": "Ultra realistic food photography of laccha paratha, flaky multi-layered wheat flatbread crushed to show layers, golden and crispy, ghee glistening, served with dal makhani",
+    "seo_keywords": [
+      "laccha paratha recipe",
+      "layered paratha punjab",
+      "flaky paratha recipe",
+      "punjabi bread recipe"
+    ],
+    "img": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Aloo Paratha Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/aloo-paratha",
+    "dish_name": "Aloo Paratha",
+    "state": "Punjab",
+    "category": "Breads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 50,
+    "servings": 4,
+    "short_description": "Aloo Paratha is Punjab's most beloved stuffed flatbread \u2014 whole wheat dough filled with spiced mashed potatoes and cooked on a tawa with generous amounts of butter or ghee. The perfect Punjabi breakfast, served with yogurt, pickle and white butter.",
+    "ingredients": [
+      {
+        "name": "Whole wheat flour",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Potatoes",
+        "quantity": "4",
+        "unit": "large"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Coriander leaves",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ajwain",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Amchur",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Butter",
+        "quantity": "5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Knead wheat flour into soft dough. Rest 20 minutes.",
+      "Boil and mash potatoes completely smooth.",
+      "Mix mashed potato with green chili, ginger, coriander, ajwain, amchur and salt.",
+      "Roll dough ball into a small circle, place potato filling, seal completely.",
+      "Roll gently into a large circle \u2014 filling should not tear through.",
+      "Cook on hot tawa with generous butter on both sides.",
+      "Cook until golden brown patches appear.",
+      "Serve hot with white butter."
+    ],
+    "chef_notes": "The potato filling must be completely dry and lump-free \u2014 any moisture will cause the paratha to tear while rolling. A well-seasoned filling is the heart of a great Aloo Paratha.",
+    "serving_suggestions": "Serve with white butter, yogurt, mango pickle and a glass of lassi.",
+    "nutrition_estimate": {
+      "calories": "380",
+      "protein_g": "9",
+      "carbohydrates_g": "56",
+      "fat_g": "14"
+    },
+    "tags": [
+      "Vegetarian",
+      "Breakfast",
+      "Stuffed Bread",
+      "Punjabi"
+    ],
+    "image_prompt": "Ultra realistic food photography of Aloo Paratha, golden stuffed flatbread with butter melting on top, served with white yogurt, pickle and green chutney, homestyle Punjabi breakfast setting",
+    "seo_keywords": [
+      "aloo paratha recipe",
+      "punjabi aloo paratha",
+      "potato stuffed flatbread",
+      "breakfast paratha recipe"
+    ],
+    "img": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Kulcha Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/amritsari-kulcha",
+    "dish_name": "Amritsari Kulcha",
+    "state": "Punjab",
+    "category": "Breads",
+    "difficulty_level": "Hard",
+    "prep_time_minutes": 180,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 200,
+    "servings": 4,
+    "short_description": "Amritsari Kulcha is the legendary stuffed bread from the holy city \u2014 a leavened maida bread filled with spiced potato or paneer mixture and baked in a tandoor until blistered and golden. Served with chole and white butter, it is one of Punjab's most indulgent pleasures.",
+    "ingredients": [
+      {
+        "name": "Maida",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Yogurt",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Baking powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Potatoes (for filling)",
+        "quantity": "3",
+        "unit": "large"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Butter",
+        "quantity": "5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Pomegranate seeds (anardana)",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Knead maida with yogurt, baking powder, salt and water into soft dough. Rest 2-3 hours.",
+      "Make filling: mash potatoes with finely chopped onion, green chili, coriander and anardana.",
+      "Roll dough into circle, stuff with potato filling, seal.",
+      "Roll gently into thick oval shape.",
+      "Slap onto a very hot tawa or bake on inverted tawa at highest heat.",
+      "Cook until blistered and golden on both sides.",
+      "Apply generous butter immediately.",
+      "Serve with chole and white butter."
+    ],
+    "chef_notes": "Anardana (dried pomegranate seeds) is the secret ingredient that gives Amritsari kulcha its characteristic tangy complexity. Do not substitute.",
+    "serving_suggestions": "Serve with Punjabi chole, white butter, sliced onion and green chutney.",
+    "nutrition_estimate": {
+      "calories": "420",
+      "protein_g": "9",
+      "carbohydrates_g": "62",
+      "fat_g": "15"
+    },
+    "tags": [
+      "Vegetarian",
+      "Amritsar",
+      "Stuffed Bread",
+      "Iconic"
+    ],
+    "image_prompt": "Ultra realistic food photography of Amritsari Kulcha, blistered golden stuffed bread with butter, served alongside dark chole curry, authentic Amritsar dhaba setting",
+    "seo_keywords": [
+      "amritsari kulcha recipe",
+      "punjabi kulcha",
+      "stuffed kulcha",
+      "amritsar street food bread"
+    ],
+    "img": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Matar Paneer Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/matar-paneer",
+    "dish_name": "Matar Paneer",
+    "state": "Punjab",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 45,
+    "servings": 4,
+    "short_description": "Matar Paneer is a classic Punjabi curry of fresh green peas and cottage cheese in a rich onion-tomato gravy. Fragrant, mildly spiced and deeply satisfying, it is one of the most popular vegetarian dishes across North India.",
+    "ingredients": [
+      {
+        "name": "Paneer",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Green peas",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Onions",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": "3",
+        "unit": "medium"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "1.5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Kashmiri red chili",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Garam masala",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Kasuri methi",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Fresh cream",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Blend onion and tomato into a smooth paste.",
+      "Heat oil and cook the onion-tomato paste until oil separates.",
+      "Add ginger-garlic paste and all spices. Fry 5 minutes.",
+      "Add green peas and 200ml water. Simmer 10 minutes.",
+      "Add paneer cubes gently.",
+      "Simmer 10 more minutes.",
+      "Crush kasuri methi between palms and add.",
+      "Finish with cream. Serve garnished with coriander."
+    ],
+    "chef_notes": "Lightly frying paneer in butter before adding to curry keeps it soft and prevents crumbling. Fresh peas are ideal when in season.",
+    "serving_suggestions": "Serve with butter naan, laccha paratha or steamed basmati rice.",
+    "nutrition_estimate": {
+      "calories": "320",
+      "protein_g": "16",
+      "carbohydrates_g": "14",
+      "fat_g": "22"
+    },
+    "tags": [
+      "Vegetarian",
+      "Everyday",
+      "Classic",
+      "Punjabi"
+    ],
+    "image_prompt": "Ultra realistic food photography of Matar Paneer, paneer cubes and green peas in rich orange gravy in a copper karahi, garnished with cream and coriander, warm restaurant lighting",
+    "seo_keywords": [
+      "matar paneer recipe",
+      "punjabi matar paneer",
+      "peas paneer curry",
+      "paneer recipe indian"
+    ],
+    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Palak Paneer Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/palak-paneer",
+    "dish_name": "Palak Paneer",
+    "state": "Punjab",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 25,
+    "total_time_minutes": 40,
+    "servings": 4,
+    "short_description": "Palak Paneer is a jewel of Punjabi vegetarian cooking \u2014 soft cubes of cottage cheese nestled in a vibrant, silky spinach sauce seasoned with ginger, garlic and aromatic spices. Nutritious, beautiful and deeply satisfying.",
+    "ingredients": [
+      {
+        "name": "Spinach (palak)",
+        "quantity": "500",
+        "unit": "g"
+      },
+      {
+        "name": "Paneer",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Tomato",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "1.5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Cream",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Garam masala",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Blanch spinach in boiling water for 2 minutes. Shock in ice water.",
+      "Blend spinach with green chili into a smooth puree.",
+      "Heat ghee and fry cumin seeds, onion until golden.",
+      "Add ginger-garlic paste and tomato. Cook until oil separates.",
+      "Add spinach puree and garam masala. Simmer 10 minutes.",
+      "Add paneer cubes and cream.",
+      "Simmer 5 minutes. Serve hot."
+    ],
+    "chef_notes": "Blanching and shocking spinach preserves its brilliant green color. Do not overcook after adding spinach puree or it will lose its vibrant color.",
+    "serving_suggestions": "Serve with butter naan, tandoori roti or steamed rice.",
+    "nutrition_estimate": {
+      "calories": "290",
+      "protein_g": "18",
+      "carbohydrates_g": "8",
+      "fat_g": "20"
+    },
+    "tags": [
+      "Vegetarian",
+      "Healthy",
+      "Classic",
+      "Punjabi"
+    ],
+    "image_prompt": "Ultra realistic food photography of Palak Paneer, vibrant green spinach curry with white paneer cubes, cream swirl on top, garnished with ginger julienne, copper bowl, warm lighting",
+    "seo_keywords": [
+      "palak paneer recipe",
+      "punjabi palak paneer",
+      "spinach paneer curry",
+      "saag paneer recipe"
+    ],
+    "img": "https://images.pexels.com/photos/5410400/pexels-photo-5410400.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Kadhi Pakora Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/kadhi-pakora",
+    "dish_name": "Punjabi Kadhi Pakora",
+    "state": "Punjab",
+    "category": "Main Courses",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 45,
+    "total_time_minutes": 65,
+    "servings": 4,
+    "short_description": "Punjabi Kadhi Pakora is a thick, tangy yogurt-besan curry loaded with crispy fried onion fritters. Unlike its thinner counterparts from other regions, Punjabi kadhi is hearty, bold and deeply flavored \u2014 a true comfort food staple.",
+    "ingredients": [
+      {
+        "name": "Yogurt (sour)",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Besan",
+        "quantity": "6",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onion",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Fenugreek seeds",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Dried red chilies",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Whisk yogurt with besan, turmeric and salt until smooth.",
+      "Add 600ml water and mix well.",
+      "Cook kadhi on medium heat stirring constantly for 30-35 minutes until thick.",
+      "Make pakora batter with besan, sliced onion and spices. Fry until crispy.",
+      "Add pakoras to kadhi just before serving.",
+      "Prepare tempering with ghee, mustard seeds, fenugreek, dried chilies and garlic.",
+      "Pour tempering over kadhi and serve immediately."
+    ],
+    "chef_notes": "Sour yogurt is essential for authentic Punjabi kadhi \u2014 if yogurt isn't sour enough, add a squeeze of lemon. Add pakoras just before serving to keep them crispy.",
+    "serving_suggestions": "Serve with steamed rice, jeera rice or rotis.",
+    "nutrition_estimate": {
+      "calories": "340",
+      "protein_g": "12",
+      "carbohydrates_g": "32",
+      "fat_g": "18"
+    },
+    "tags": [
+      "Vegetarian",
+      "Comfort Food",
+      "Traditional",
+      "Punjabi"
+    ],
+    "image_prompt": "Ultra realistic food photography of Punjabi Kadhi Pakora, golden yellow thick kadhi with crispy pakoras, red tempering oil swirled on top, served over white rice, copper bowl",
+    "seo_keywords": [
+      "kadhi pakora recipe",
+      "punjabi kadhi recipe",
+      "yogurt curry fritters",
+      "kadhi chawal recipe"
+    ],
+    "img": "https://images.pexels.com/photos/4331489/pexels-photo-4331489.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Shahi Paneer Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/shahi-paneer",
+    "dish_name": "Shahi Paneer",
+    "state": "Punjab",
+    "category": "Main Courses",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 35,
+    "total_time_minutes": 55,
+    "servings": 4,
+    "short_description": "Shahi Paneer is the royal curry of Punjabi cuisine \u2014 a Mughal-influenced dish of paneer in a luxuriously rich cashew-cream-saffron gravy. Mildly spiced, aromatic and indulgent, it lives up to its regal name with every saffron-scented spoonful.",
+    "ingredients": [
+      {
+        "name": "Paneer",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Cashews",
+        "quantity": "5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onion",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Fresh cream",
+        "quantity": "150",
+        "unit": "ml"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cardamom",
+        "quantity": "3",
+        "unit": "pods"
+      },
+      {
+        "name": "Cloves",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "1.5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rose water",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Butter",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak cashews in warm water for 30 minutes. Blend smooth.",
+      "Soak saffron in 2 tablespoons warm milk.",
+      "Saut\u00e9 onions with cardamom and cloves until golden. Blend smooth.",
+      "Heat butter, add ginger-garlic paste and onion paste. Cook until oil separates.",
+      "Add cashew paste and cook 5 minutes.",
+      "Add cream, saffron milk and rose water. Simmer gently.",
+      "Add paneer cubes and simmer 8 minutes.",
+      "Garnish with saffron strands and silver leaf."
+    ],
+    "chef_notes": "Rose water and saffron define Shahi Paneer's Mughal character. Add them at the end \u2014 both are delicate and lose their fragrance with prolonged cooking.",
+    "serving_suggestions": "Serve with butter naan, sheermal or steamed basmati rice.",
+    "nutrition_estimate": {
+      "calories": "410",
+      "protein_g": "17",
+      "carbohydrates_g": "12",
+      "fat_g": "32"
+    },
+    "tags": [
+      "Vegetarian",
+      "Royal",
+      "Mughal",
+      "Creamy"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Shahi Paneer, paneer in pale golden saffron cream sauce, silver leaf garnish, served in an ornate copper bowl, elegant royal setting",
+    "seo_keywords": [
+      "shahi paneer recipe",
+      "royal paneer curry",
+      "mughal paneer recipe",
+      "creamy paneer dish punjab"
+    ],
+    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Lassi Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/sweet-lassi",
+    "dish_name": "Punjabi Sweet Lassi",
+    "state": "Punjab",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 10,
+    "servings": 2,
+    "short_description": "Punjabi Sweet Lassi is the world's most famous yogurt drink \u2014 thick, creamy, chilled and topped with a layer of malai (cream). Served in tall clay glasses, it is the perfect accompaniment to a hearty Punjabi meal and the ultimate summer cooler.",
+    "ingredients": [
+      {
+        "name": "Full fat yogurt",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Chilled water or milk",
+        "quantity": "150",
+        "unit": "ml"
+      },
+      {
+        "name": "Rose water",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Malai (cream layer)",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ice cubes",
+        "quantity": "6",
+        "unit": "pieces"
+      }
+    ],
+    "preparation_steps": [
+      "Blend yogurt with sugar, cardamom and water until frothy.",
+      "Add rose water and blend briefly.",
+      "Pour into tall chilled glasses with ice.",
+      "Top with a generous layer of malai (cream).",
+      "Optionally garnish with pistachios and rose petals.",
+      "Serve immediately."
+    ],
+    "chef_notes": "The malai (cream) layer on top is the signature of authentic Punjabi lassi \u2014 never skip it. Use full-fat yogurt for the thick, rich texture.",
+    "serving_suggestions": "Serve with chole bhature, aloo paratha or any Punjabi breakfast.",
+    "nutrition_estimate": {
+      "calories": "245",
+      "protein_g": "8",
+      "carbohydrates_g": "30",
+      "fat_g": "11"
+    },
+    "tags": [
+      "Beverage",
+      "Vegetarian",
+      "Summer Drink",
+      "Iconic"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Punjabi Sweet Lassi in a tall clay glass, frothy white yogurt drink topped with cream layer and rose petals, pistachio garnish, golden afternoon light",
+    "seo_keywords": [
+      "punjabi lassi recipe",
+      "sweet lassi recipe",
+      "yogurt drink india",
+      "punjabi sweet lassi"
+    ],
+    "img": "https://images.pexels.com/photos/3407777/pexels-photo-3407777.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Mango Lassi Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/mango-lassi",
+    "dish_name": "Aam Ki Lassi",
+    "state": "Punjab",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 10,
+    "servings": 2,
+    "short_description": "Aam Ki Lassi is Punjab's summer celebration in a glass \u2014 thick Alphonso or Kesar mango pulp blended with creamy yogurt and chilled milk into the most indulgent of all lassi varieties. Vibrant, fruity and deeply refreshing.",
+    "ingredients": [
+      {
+        "name": "Alphonso mango pulp",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Full fat yogurt",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Chilled milk",
+        "quantity": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ice cubes",
+        "quantity": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "0.1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Blend mango pulp, yogurt, milk, sugar and cardamom together.",
+      "Add ice and blend until frothy.",
+      "Pour into tall glasses.",
+      "Garnish with saffron strands and a drizzle of mango pulp.",
+      "Serve immediately."
+    ],
+    "chef_notes": "Always use Alphonso or Kesar mango pulp for best flavor. Fresh ripe mangoes blended in are even better when in season.",
+    "serving_suggestions": "Serve as a summer refreshment or alongside spicy Punjabi food.",
+    "nutrition_estimate": {
+      "calories": "265",
+      "protein_g": "7",
+      "carbohydrates_g": "42",
+      "fat_g": "8"
+    },
+    "tags": [
+      "Beverage",
+      "Vegetarian",
+      "Summer",
+      "Fruity"
+    ],
+    "image_prompt": "Ultra realistic food photography of Mango Lassi in a tall glass, vibrant golden yellow color, saffron strands garnish, condensation on glass, summer tropical setting",
+    "seo_keywords": [
+      "mango lassi recipe",
+      "aam lassi punjab",
+      "mango yogurt drink",
+      "alphonso mango lassi"
+    ],
+    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Nimbu Pani Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/nimbu-pani",
+    "dish_name": "Shikanji",
+    "state": "Punjab",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 5,
+    "servings": 2,
+    "short_description": "Shikanji is Punjab's beloved spiced lemonade \u2014 fresh lemon juice with black salt, roasted cumin, ginger and mint. More complex and satisfying than regular lemonade, it is a summer staple sold at every dhaba and street corner across Punjab.",
+    "ingredients": [
+      {
+        "name": "Lemon juice",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cold water",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Black salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Roasted cumin powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger juice",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mint leaves",
+        "quantity": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ice cubes",
+        "quantity": "6",
+        "unit": "pieces"
+      }
+    ],
+    "preparation_steps": [
+      "Dissolve sugar in a little water.",
+      "Mix lemon juice, black salt, cumin powder and ginger juice.",
+      "Add cold water and sugar syrup. Stir well.",
+      "Pour over ice in tall glasses.",
+      "Garnish with mint leaves and a lemon slice.",
+      "Serve immediately."
+    ],
+    "chef_notes": "Black salt is what makes Shikanji distinctive \u2014 it adds a sulphurous complexity that regular salt cannot replicate. Roasted cumin powder is essential.",
+    "serving_suggestions": "Serve as a cooling summer drink or alongside spicy street food.",
+    "nutrition_estimate": {
+      "calories": "55",
+      "protein_g": "0",
+      "carbohydrates_g": "13",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Beverage",
+      "Vegan",
+      "Summer",
+      "Street Food"
+    ],
+    "image_prompt": "Ultra realistic food photography of Shikanji lemonade in a tall glass with ice, bright yellow color, mint leaves and lemon slice, condensation, street food setting Punjab",
+    "seo_keywords": [
+      "shikanji recipe",
+      "punjabi lemonade",
+      "nimbu pani recipe",
+      "spiced lemonade india"
+    ],
+    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Aam Panna Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/aam-panna",
+    "dish_name": "Aam Panna",
+    "state": "Punjab",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 25,
+    "servings": 4,
+    "short_description": "Aam Panna is a tangy, cooling raw mango drink beloved across Punjab in summer \u2014 made with roasted or boiled raw green mangoes, black salt, roasted cumin and mint. A natural antidote to heat stroke, it is refreshing, tangy and deeply satisfying.",
+    "ingredients": [
+      {
+        "name": "Raw green mangoes",
+        "quantity": "3",
+        "unit": "medium"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Black salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Roasted cumin powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mint leaves",
+        "quantity": "10",
+        "unit": "pieces"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cold water",
+        "quantity": "600",
+        "unit": "ml"
+      },
+      {
+        "name": "Ice",
+        "quantity": "8",
+        "unit": "pieces"
+      }
+    ],
+    "preparation_steps": [
+      "Roast raw mangoes directly on flame until charred and soft.",
+      "Cool, peel and extract the pulp.",
+      "Blend pulp with sugar, black salt, cumin, mint and pepper.",
+      "Add cold water and blend until smooth.",
+      "Strain if desired. Pour over ice.",
+      "Garnish with mint and serve cold."
+    ],
+    "chef_notes": "Roasting the mango on direct flame adds a smoky complexity that boiling cannot achieve. The charred skin adds depth to the flavor.",
+    "serving_suggestions": "Serve ice cold as a summer refreshment or alongside spicy food.",
+    "nutrition_estimate": {
+      "calories": "85",
+      "protein_g": "1",
+      "carbohydrates_g": "20",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Vegan",
+      "Summer Drink",
+      "Cooling",
+      "Raw Mango"
+    ],
+    "image_prompt": "Ultra realistic food photography of Aam Panna in a tall glass, pale green color, mint leaves floating, ice cubes, condensation, bright summer photography",
+    "seo_keywords": [
+      "aam panna recipe",
+      "raw mango drink punjab",
+      "kacha aam panna",
+      "cooling summer drink india"
+    ],
+    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Chaas Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/masala-chaas",
+    "dish_name": "Masala Chaas",
+    "state": "Punjab",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 5,
+    "servings": 2,
+    "short_description": "Masala Chaas is Punjab's digestive spiced buttermilk \u2014 thin, tangy yogurt whisked with black salt, roasted cumin, ginger and mint. Lighter than lassi and deeply refreshing, it is the traditional Punjabi post-meal digestive.",
+    "ingredients": [
+      {
+        "name": "Yogurt",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Cold water",
+        "quantity": "300",
+        "unit": "ml"
+      },
+      {
+        "name": "Black salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Roasted cumin powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "0.5",
+        "unit": "inch"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "0.5",
+        "unit": "piece"
+      },
+      {
+        "name": "Mint leaves",
+        "quantity": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ice",
+        "quantity": "4",
+        "unit": "pieces"
+      }
+    ],
+    "preparation_steps": [
+      "Blend yogurt with water until smooth and frothy.",
+      "Add black salt, cumin powder, grated ginger and green chili.",
+      "Blend briefly.",
+      "Pour over ice into glasses.",
+      "Garnish with mint leaves and a pinch of cumin powder.",
+      "Serve immediately."
+    ],
+    "chef_notes": "Masala chaas must be thin and pourable \u2014 not thick like lassi. The black salt is what makes it distinctly Punjabi. Drink it cold for best results.",
+    "serving_suggestions": "Serve after a heavy Punjabi meal as a digestive.",
+    "nutrition_estimate": {
+      "calories": "65",
+      "protein_g": "4",
+      "carbohydrates_g": "7",
+      "fat_g": "2"
+    },
+    "tags": [
+      "Beverage",
+      "Digestive",
+      "Vegetarian",
+      "Cooling"
+    ],
+    "image_prompt": "Ultra realistic food photography of Masala Chaas spiced buttermilk in a tall glass, pale white frothy drink, cumin and mint garnish, bright clean food photography",
+    "seo_keywords": [
+      "masala chaas recipe",
+      "punjabi buttermilk",
+      "spiced chaas",
+      "digestive drink india"
+    ],
+    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Jeera Rice Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/jeera-rice",
+    "dish_name": "Punjabi Jeera Rice",
+    "state": "Punjab",
+    "category": "Rice Preparations",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 30,
+    "servings": 4,
+    "short_description": "Punjabi Jeera Rice is the perfect companion to any dal or curry \u2014 fluffy basmati rice tempered with cumin seeds in ghee, aromatic and fragrant. Simple to make yet impossibly satisfying, it is the most ordered rice dish at Punjabi dhabas.",
+    "ingredients": [
+      {
+        "name": "Basmati rice",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Bay leaf",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Wash basmati rice and soak 20 minutes. Drain.",
+      "Heat ghee in a heavy pot and add cumin seeds.",
+      "When cumin splutters, add bay leaves.",
+      "Add drained rice and fry gently for 2 minutes.",
+      "Add 550ml water and salt. Bring to boil.",
+      "Cover and cook on very low heat for 15 minutes.",
+      "Rest 5 minutes. Fluff gently.",
+      "Garnish with coriander and serve."
+    ],
+    "chef_notes": "The key to perfect jeera rice is not opening the lid while cooking. The steam does all the work. Use aged basmati for best aroma and long grains.",
+    "serving_suggestions": "Serve with dal makhani, rajma, any Punjabi curry or raita.",
+    "nutrition_estimate": {
+      "calories": "295",
+      "protein_g": "5",
+      "carbohydrates_g": "56",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Vegetarian",
+      "Everyday",
+      "Aromatic",
+      "Simple"
+    ],
+    "image_prompt": "Ultra realistic food photography of Punjabi Jeera Rice, long grain basmati rice in a steel bowl, cumin seeds visible, ghee sheen, garnished with coriander, served alongside dal makhani",
+    "seo_keywords": [
+      "jeera rice recipe",
+      "punjabi cumin rice",
+      "basmati rice recipe",
+      "jeera pulao recipe"
+    ],
+    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Biryani Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/chicken-biryani-punjabi",
+    "dish_name": "Punjabi Chicken Biryani",
+    "state": "Punjab",
+    "category": "Rice Preparations",
+    "difficulty_level": "Hard",
+    "prep_time_minutes": 60,
+    "cook_time_minutes": 60,
+    "total_time_minutes": 120,
+    "servings": 4,
+    "short_description": "Punjabi Chicken Biryani is a bold, deeply spiced layered rice dish \u2014 bold with caramelized onions, whole spices and marinated chicken. Richer and more intensely flavored than its southern counterparts, it reflects the hearty exuberance of Punjabi cooking.",
+    "ingredients": [
+      {
+        "name": "Basmati rice",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Chicken",
+        "quantity": "800",
+        "unit": "g"
+      },
+      {
+        "name": "Yogurt",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Fried onions (birista)",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Whole spices",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Biryani masala",
+        "quantity": "3",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mint leaves",
+        "quantity": "0.5",
+        "unit": "cup"
+      },
+      {
+        "name": "Salt",
+        "quantity": "2",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Marinate chicken in yogurt, ginger-garlic paste, biryani masala and half the fried onions. Rest 2 hours.",
+      "Par-cook basmati rice with whole spices until 70% done. Drain.",
+      "Cook marinated chicken until nearly done.",
+      "Layer in a heavy pot: chicken at bottom, rice on top.",
+      "Sprinkle saffron milk, fried onions, mint and ghee.",
+      "Seal with dough or foil and cook on very low heat (dum) for 25 minutes.",
+      "Open and gently mix from sides. Serve immediately."
+    ],
+    "chef_notes": "The dum (steam cooking) step is what makes biryani special. Use a heavy-bottomed pot and the lowest heat setting. Never rush the dum.",
+    "serving_suggestions": "Serve with raita, sliced onions and lemon wedges.",
+    "nutrition_estimate": {
+      "calories": "520",
+      "protein_g": "32",
+      "carbohydrates_g": "58",
+      "fat_g": "18"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Special Occasion",
+      "Dum Cooking",
+      "Festive"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Punjabi Chicken Biryani opened in a handi, layers of saffron rice and chicken visible, fried onions and mint garnish, dramatic steam, festive setting",
+    "seo_keywords": [
+      "punjabi chicken biryani recipe",
+      "north indian biryani",
+      "dum biryani recipe",
+      "chicken biryani punjab"
+    ],
+    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Kheer Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/chawal-ki-kheer",
+    "dish_name": "Chawal Ki Kheer",
+    "state": "Punjab",
+    "category": "Desserts",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 60,
+    "total_time_minutes": 70,
+    "servings": 6,
+    "short_description": "Chawal Ki Kheer is Punjab's most beloved festival dessert \u2014 rice simmered in full-fat milk with sugar, saffron and cardamom until the milk reduces to a thick, creamy pudding. Garnished with pistachios and rose petals, it is made at every Punjabi celebration.",
+    "ingredients": [
+      {
+        "name": "Full fat milk",
+        "quantity": "1.5",
+        "unit": "litre"
+      },
+      {
+        "name": "Basmati rice",
+        "quantity": "50",
+        "unit": "g"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "120",
+        "unit": "g"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Pistachios",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Almonds",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rose water",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Rinse basmati rice and soak 20 minutes.",
+      "Bring milk to boil in a heavy pan.",
+      "Add rice and simmer on medium heat for 45-50 minutes stirring frequently.",
+      "The milk should reduce by half and rice should dissolve.",
+      "Add sugar, saffron, cardamom and rose water.",
+      "Simmer 10 more minutes until thick and creamy.",
+      "Serve warm or chilled garnished with nuts and rose petals."
+    ],
+    "chef_notes": "Never use parboiled rice for kheer \u2014 use good quality basmati. Stirring frequently prevents the bottom from burning and helps break down the rice.",
+    "serving_suggestions": "Serve warm or chilled as a festival dessert.",
+    "nutrition_estimate": {
+      "calories": "295",
+      "protein_g": "8",
+      "carbohydrates_g": "44",
+      "fat_g": "10"
+    },
+    "tags": [
+      "Vegetarian",
+      "Festival Food",
+      "Dessert",
+      "Gluten-Free"
+    ],
+    "image_prompt": "Ultra realistic food photography of Chawal Ki Kheer in a clay pot, creamy saffron rice pudding, garnished with pistachios, almonds and rose petals, festive Punjabi setting",
+    "seo_keywords": [
+      "chawal ki kheer recipe",
+      "punjabi rice kheer",
+      "rice pudding india",
+      "festival kheer recipe"
+    ],
+    "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Gulab Jamun Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/gulab-jamun",
+    "dish_name": "Punjabi Gulab Jamun",
+    "state": "Punjab",
+    "category": "Desserts",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 60,
+    "servings": 6,
+    "short_description": "Gulab Jamun are Punjab's most celebrated festival sweet \u2014 soft, spongy milk-solid dumplings deep-fried to a deep golden brown and soaked in saffron-cardamom sugar syrup. Warm, syrupy and melt-in-mouth, they are India's most beloved sweet.",
+    "ingredients": [
+      {
+        "name": "Khoya (mawa)",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Paneer",
+        "quantity": "50",
+        "unit": "g"
+      },
+      {
+        "name": "Maida",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar (for syrup)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Water (for syrup)",
+        "quantity": "300",
+        "unit": "ml"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Rose water",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "2",
+        "unit": "cups"
+      }
+    ],
+    "preparation_steps": [
+      "Make sugar syrup with sugar, water, cardamom, saffron and rose water. Keep warm.",
+      "Knead khoya, paneer and maida into a smooth crack-free dough.",
+      "Shape into smooth small balls \u2014 no cracks.",
+      "Heat oil to 130-140\u00b0C \u2014 low temperature is critical.",
+      "Fry slowly on low heat turning constantly for 8-10 minutes until deep golden.",
+      "Transfer directly to warm sugar syrup.",
+      "Soak for minimum 2 hours before serving.",
+      "Serve warm with syrup."
+    ],
+    "chef_notes": "Low temperature frying is the most critical factor \u2014 too hot and the outside browns before the inside cooks. The balls must fry slowly and evenly for a soft interior.",
+    "serving_suggestions": "Serve warm with sugar syrup and a scoop of vanilla ice cream.",
+    "nutrition_estimate": {
+      "calories": "285",
+      "protein_g": "6",
+      "carbohydrates_g": "42",
+      "fat_g": "11"
+    },
+    "tags": [
+      "Vegetarian",
+      "Festival Sweet",
+      "Iconic",
+      "Dessert"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Gulab Jamun, deep golden spongy balls in saffron syrup in a brass bowl, garnished with pistachios and rose petals, festive golden lighting",
+    "seo_keywords": [
+      "gulab jamun recipe",
+      "punjabi gulab jamun",
+      "milk dumpling sweet",
+      "festival sweet india"
+    ],
+    "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Gajar Ka Halwa Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/gajar-ka-halwa",
+    "dish_name": "Gajar Ka Halwa",
+    "state": "Punjab",
+    "category": "Desserts",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 60,
+    "total_time_minutes": 80,
+    "servings": 6,
+    "short_description": "Gajar Ka Halwa is Punjab's quintessential winter dessert \u2014 grated red Delhi carrots slow-cooked in milk with ghee, sugar and cardamom until caramelized and deeply fragrant. Topped with khoya and nuts, it is the king of Indian winter sweets.",
+    "ingredients": [
+      {
+        "name": "Red carrots (Delhi gajar)",
+        "quantity": "1",
+        "unit": "kg"
+      },
+      {
+        "name": "Full fat milk",
+        "quantity": "500",
+        "unit": "ml"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Khoya",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Almonds",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cashews",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Raisins",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Peel and grate carrots on the fine side of the grater.",
+      "Cook grated carrots with milk in a heavy pan on medium heat.",
+      "Stir frequently until all milk is absorbed \u2014 about 30 minutes.",
+      "Add ghee and fry carrots until they start to change color.",
+      "Add sugar and continue cooking until moisture evaporates.",
+      "Add khoya and cardamom. Mix well.",
+      "Fry nuts in ghee and add to halwa.",
+      "Serve warm."
+    ],
+    "chef_notes": "Red Delhi carrots (available November-February) give the best color and sweetness. Orange carrots produce a paler, less flavorful halwa. The frying step after milk absorption is what caramelizes the sugars.",
+    "serving_suggestions": "Serve warm topped with a scoop of vanilla ice cream or rabri.",
+    "nutrition_estimate": {
+      "calories": "340",
+      "protein_g": "7",
+      "carbohydrates_g": "46",
+      "fat_g": "15"
+    },
+    "tags": [
+      "Vegetarian",
+      "Winter Special",
+      "Festival Sweet",
+      "Classic"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Gajar Ka Halwa, deep red carrot halwa in a copper bowl, garnished with silver leaf, pistachios and cashews, warm winter lighting",
+    "seo_keywords": [
+      "gajar ka halwa recipe",
+      "carrot halwa punjab",
+      "gajar halwa recipe",
+      "indian carrot pudding winter"
+    ],
+    "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Pinni Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/pinni",
+    "dish_name": "Pinni",
+    "state": "Punjab",
+    "category": "Desserts",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 50,
+    "servings": 8,
+    "short_description": "Pinni is Punjab's beloved winter energy sweet \u2014 whole wheat flour roasted in ghee with jaggery, dry fruits and nuts, shaped into balls. A traditional Punjabi home sweet made in winter for strength and warmth, it is packed with nutrition and deep flavor.",
+    "ingredients": [
+      {
+        "name": "Whole wheat flour (atta)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Jaggery, grated",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Almonds",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cashews",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Edible gum (gondh)",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Dry ginger powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Fry edible gum in ghee until it puffs up. Remove and crush.",
+      "Roast wheat flour in ghee on low heat stirring constantly for 20 minutes until golden and fragrant.",
+      "Cool slightly.",
+      "Add grated jaggery, cardamom, dry ginger and crushed gum.",
+      "Add chopped nuts and mix well.",
+      "While still warm, shape into balls.",
+      "Cool completely before storing."
+    ],
+    "chef_notes": "The flour must be roasted on low heat for at least 20 minutes \u2014 the nutty aroma is your guide. Shaping must be done while the mixture is warm and pliable.",
+    "serving_suggestions": "Serve as a winter sweet or energy snack with milk.",
+    "nutrition_estimate": {
+      "calories": "285",
+      "protein_g": "5",
+      "carbohydrates_g": "36",
+      "fat_g": "14"
+    },
+    "tags": [
+      "Vegetarian",
+      "Winter Sweet",
+      "Energy Food",
+      "Traditional"
+    ],
+    "image_prompt": "Ultra realistic food photography of Punjabi Pinni, golden round wheat flour and jaggery balls, dry fruits visible, arranged on a brass plate, warm winter Punjabi home setting",
+    "seo_keywords": [
+      "pinni recipe",
+      "punjabi pinni sweet",
+      "wheat jaggery balls india",
+      "winter sweet punjab"
+    ],
+    "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Kulfi Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/kulfi",
+    "dish_name": "Punjabi Kulfi",
+    "state": "Punjab",
+    "category": "Desserts",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 480,
+    "total_time_minutes": 510,
+    "servings": 6,
+    "short_description": "Punjabi Kulfi is India's original ice cream \u2014 a dense, creamy frozen dessert made with reduced milk, saffron, cardamom and pistachios. Richer, denser and more intensely flavored than regular ice cream, it is a summer treat with centuries of history.",
+    "ingredients": [
+      {
+        "name": "Full fat milk",
+        "quantity": "1",
+        "unit": "litre"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Pistachios",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Almonds",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cornflour",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rose water",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Reduce milk by half on medium heat stirring frequently \u2014 about 30 minutes.",
+      "Add sugar, saffron, cardamom and cornflour slurry.",
+      "Cook 10 more minutes until thick.",
+      "Add chopped pistachios and rose water.",
+      "Cool completely.",
+      "Pour into kulfi moulds or small cups.",
+      "Freeze for 6-8 hours until solid.",
+      "Unmould and serve immediately."
+    ],
+    "chef_notes": "Kulfi must be dense \u2014 it should not have air whipped in like ice cream. The richness comes from reduced milk. Serve immediately after unmoulding.",
+    "serving_suggestions": "Serve with falooda (vermicelli and basil seeds) or plain with rose syrup.",
+    "nutrition_estimate": {
+      "calories": "220",
+      "protein_g": "7",
+      "carbohydrates_g": "28",
+      "fat_g": "9"
+    },
+    "tags": [
+      "Vegetarian",
+      "Frozen Dessert",
+      "Summer",
+      "Traditional"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Punjabi Kulfi on sticks, golden saffron color, pistachio garnish, dripping in summer heat, traditional clay cups alongside",
+    "seo_keywords": [
+      "kulfi recipe",
+      "punjabi kulfi",
+      "indian ice cream",
+      "saffron kulfi recipe"
+    ],
+    "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Kaddu Ki Sabzi Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/kaddu-ki-sabzi",
+    "dish_name": "Kaddu Ki Sabzi",
+    "state": "Punjab",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 25,
+    "total_time_minutes": 40,
+    "servings": 4,
+    "short_description": "Kaddu Ki Sabzi is a beloved Punjabi pumpkin preparation with a unique sweet-sour-spicy balance. Cooked with fenugreek seeds, amchur and jaggery, this simple sabzi transforms humble pumpkin into a deeply flavorful dish that pairs beautifully with puri.",
+    "ingredients": [
+      {
+        "name": "Yellow pumpkin (kaddu)",
+        "quantity": "600",
+        "unit": "g"
+      },
+      {
+        "name": "Fenugreek seeds",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Jaggery",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Amchur",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Peel and cube pumpkin into medium pieces.",
+      "Heat oil and add fenugreek seeds until slightly darkened.",
+      "Add pumpkin and all dry spices. Toss well.",
+      "Cover and cook on medium heat for 15 minutes.",
+      "Add jaggery and amchur. Mix gently.",
+      "Cook uncovered 5 more minutes until slightly caramelized.",
+      "Serve garnished with coriander."
+    ],
+    "chef_notes": "Do not overcook the pumpkin \u2014 it should hold its shape while being tender. The sweet-sour balance of jaggery and amchur is the defining characteristic of this dish.",
+    "serving_suggestions": "Serve with puri, dal and rice as part of a Punjabi thali.",
+    "nutrition_estimate": {
+      "calories": "145",
+      "protein_g": "2",
+      "carbohydrates_g": "22",
+      "fat_g": "6"
+    },
+    "tags": [
+      "Vegetarian",
+      "Everyday",
+      "Simple",
+      "Vegan"
+    ],
+    "image_prompt": "Ultra realistic food photography of Kaddu Ki Sabzi, golden pumpkin pieces in a pan, caramelized edges, garnished with coriander, warm home cooking photography",
+    "seo_keywords": [
+      "kaddu ki sabzi recipe",
+      "punjabi pumpkin curry",
+      "sweet sour pumpkin india",
+      "kaddu recipe north india"
+    ],
+    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Baingan Bharta Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/baingan-bharta",
+    "dish_name": "Punjabi Baingan Bharta",
+    "state": "Punjab",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 40,
+    "servings": 4,
+    "short_description": "Punjabi Baingan Bharta is the definitive smoked eggplant dish of North India \u2014 fire-roasted brinjal mashed and cooked with onions, tomatoes and robust Punjabi spices. Smoky, hearty and deeply flavored, it is comfort food at its finest.",
+    "ingredients": [
+      {
+        "name": "Large brinjal",
+        "quantity": "1",
+        "unit": "kg"
+      },
+      {
+        "name": "Onion",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "1.5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Garam masala",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Roast brinjal on direct flame until completely charred. Peel and mash.",
+      "Heat oil and fry onions until golden.",
+      "Add ginger-garlic paste and green chili. Fry 2 minutes.",
+      "Add tomatoes and cook until oil separates.",
+      "Add chili powder and mashed brinjal. Mix well.",
+      "Cook on medium heat for 10 minutes.",
+      "Add garam masala and salt.",
+      "Garnish with coriander and serve."
+    ],
+    "chef_notes": "Char the brinjal until completely blackened \u2014 the more thorough the charring, the smokier and more flavorful the bharta. Adding a small piece of coal for extra smokiness is a dhaba trick.",
+    "serving_suggestions": "Serve with makki di roti, paratha or tandoori roti.",
+    "nutrition_estimate": {
+      "calories": "145",
+      "protein_g": "3",
+      "carbohydrates_g": "16",
+      "fat_g": "8"
+    },
+    "tags": [
+      "Vegetarian",
+      "Smoky",
+      "Classic",
+      "Vegan"
+    ],
+    "image_prompt": "Ultra realistic food photography of Punjabi Baingan Bharta, smoky charred eggplant mash in a pan, dark and earthy, garnished with green chili and coriander, rustic dhaba setting",
+    "seo_keywords": [
+      "baingan bharta recipe",
+      "punjabi eggplant recipe",
+      "smoked brinjal north india",
+      "roasted eggplant curry punjab"
+    ],
+    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Aloo Gobi Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/aloo-gobi",
+    "dish_name": "Aloo Gobi Punjabi Style",
+    "state": "Punjab",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 25,
+    "total_time_minutes": 40,
+    "servings": 4,
+    "short_description": "Punjabi Aloo Gobi is a dry stir-fry of potatoes and cauliflower with cumin, turmeric, ginger and garam masala \u2014 simple, satisfying and deeply aromatic. One of the most universally loved everyday sabzis of North India.",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Potatoes",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander powder",
+        "quantity": "1.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "0.75",
+        "unit": "tsp"
+      },
+      {
+        "name": "Garam masala",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Cut cauliflower into florets and potatoes into cubes.",
+      "Heat oil and add cumin seeds until they splutter.",
+      "Add onion and ginger. Fry until translucent.",
+      "Add all dry spices and fry 1 minute.",
+      "Add potatoes and cauliflower. Toss to coat with spices.",
+      "Cover and cook on low heat for 15-18 minutes.",
+      "Uncover and dry out on high heat for 3 minutes.",
+      "Sprinkle garam masala and coriander. Serve."
+    ],
+    "chef_notes": "The secret is cooking on low heat covered \u2014 then finishing on high heat uncovered. This steams the vegetables first then crisps them slightly.",
+    "serving_suggestions": "Serve with roti, paratha and dal as part of an everyday Punjabi meal.",
+    "nutrition_estimate": {
+      "calories": "175",
+      "protein_g": "4",
+      "carbohydrates_g": "22",
+      "fat_g": "8"
+    },
+    "tags": [
+      "Vegetarian",
+      "Everyday",
+      "Vegan",
+      "Simple"
+    ],
+    "image_prompt": "Ultra realistic food photography of Aloo Gobi, golden turmeric-spiced potato and cauliflower stir fry in a karahi, cumin seeds visible, garnished with coriander, homestyle Punjabi cooking",
+    "seo_keywords": [
+      "aloo gobi recipe",
+      "punjabi aloo gobi",
+      "potato cauliflower curry",
+      "dry aloo gobi sabzi"
+    ],
+    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Chaat Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/aloo-chaat",
+    "dish_name": "Amritsari Aloo Chaat",
+    "state": "Punjab",
+    "category": "Appetizers",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 30,
+    "servings": 4,
+    "short_description": "Amritsari Aloo Chaat is a legendary street food from Amritsar \u2014 crispy fried potato cubes tossed with tamarind chutney, green chutney, chaat masala, pomegranate and fresh coriander. Bold, tangy, spicy and utterly addictive.",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "quantity": "4",
+        "unit": "large"
+      },
+      {
+        "name": "Tamarind chutney",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chutney",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Chaat masala",
+        "quantity": "1.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Pomegranate seeds",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "small"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Boil potatoes until just cooked. Cool and cube.",
+      "Deep fry potato cubes until golden and crispy.",
+      "Drain and season with salt and a little chaat masala while hot.",
+      "In a bowl, combine fried potatoes with chutneys.",
+      "Add chaat masala, chili powder, pomegranate seeds and onion.",
+      "Toss well and top with coriander.",
+      "Squeeze lemon and serve immediately."
+    ],
+    "chef_notes": "Serve immediately \u2014 the potatoes must be crispy when eating. Do not toss with chutney too early or they will go soft.",
+    "serving_suggestions": "Serve as a street food snack or starter at parties.",
+    "nutrition_estimate": {
+      "calories": "265",
+      "protein_g": "4",
+      "carbohydrates_g": "38",
+      "fat_g": "12"
+    },
+    "tags": [
+      "Vegetarian",
+      "Street Food",
+      "Amritsar",
+      "Chaat"
+    ],
+    "image_prompt": "Ultra realistic food photography of Amritsari Aloo Chaat, crispy potato cubes with colorful chutneys, pomegranate seeds and coriander, vibrant street food photography",
+    "seo_keywords": [
+      "aloo chaat recipe",
+      "amritsari chaat",
+      "punjabi potato chaat",
+      "street food amritsar"
+    ],
+    "img": "https://images.pexels.com/photos/9609816/pexels-photo-9609816.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Gol Gappe Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/gol-gappe",
+    "dish_name": "Gol Gappe",
+    "state": "Punjab",
+    "category": "Appetizers",
+    "difficulty_level": "Hard",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 60,
+    "servings": 4,
+    "short_description": "Gol Gappe \u2014 known as Pani Puri in Mumbai \u2014 are Punjab's most beloved street food: crispy hollow semolina spheres filled with spiced potatoes and dunked in tangy tamarind-mint water. Each explosive bite is an experience of pure joy.",
+    "ingredients": [
+      {
+        "name": "Semolina (sooji)",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Maida",
+        "quantity": "50",
+        "unit": "g"
+      },
+      {
+        "name": "Baking soda",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mint leaves",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "name": "Tamarind",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Potatoes",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Black salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Roasted cumin powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "2",
+        "unit": "cups"
+      }
+    ],
+    "preparation_steps": [
+      "Knead semolina, maida and baking soda into a stiff dough. Rest 30 minutes.",
+      "Roll very thin and cut into small circles.",
+      "Deep fry on medium heat until puffed and golden. Drain and cool.",
+      "Blend mint, green chili, tamarind, black salt and cumin with water for pani.",
+      "Mash potatoes with chaat masala and salt for filling.",
+      "To serve: make a hole in gol gappe, fill with potato, dip in pani and eat immediately."
+    ],
+    "chef_notes": "The stiff dough and thin rolling are crucial for puffing up correctly. Fry on medium \u2014 too hot burns them before they puff, too cold and they don't puff at all.",
+    "serving_suggestions": "Serve immediately after assembling \u2014 eat within seconds of filling for maximum crunch.",
+    "nutrition_estimate": {
+      "calories": "245",
+      "protein_g": "5",
+      "carbohydrates_g": "42",
+      "fat_g": "7"
+    },
+    "tags": [
+      "Vegetarian",
+      "Street Food",
+      "Iconic",
+      "Chaat"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Gol Gappe, crispy round puris on a plate with green mint water, spiced potato filling, street food vendor setting Punjab",
+    "seo_keywords": [
+      "gol gappe recipe",
+      "pani puri punjab",
+      "punjabi street food",
+      "golgappa recipe"
+    ],
+    "img": "https://images.pexels.com/photos/9609816/pexels-photo-9609816.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Samosa Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/punjabi-samosa",
+    "dish_name": "Punjabi Samosa",
+    "state": "Punjab",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 45,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 75,
+    "servings": 4,
+    "short_description": "The Punjabi Samosa is larger, crispier and more boldly spiced than its counterparts \u2014 a thick pastry shell filled with spiced potatoes, green peas and whole cumin, deep fried to a shattering crunch. Punjab's definitive tea-time snack.",
+    "ingredients": [
+      {
+        "name": "Maida",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Potatoes",
+        "quantity": "4",
+        "unit": "large"
+      },
+      {
+        "name": "Green peas",
+        "quantity": "0.5",
+        "unit": "cup"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander seeds, crushed",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Amchur",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "2",
+        "unit": "cups"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Rub ghee into maida until sandy. Add water and knead into stiff dough. Rest 30 minutes.",
+      "Make filling: fry cumin and coriander seeds, add boiled mashed potatoes and peas.",
+      "Add ginger, green chili, amchur and salt. Cool completely.",
+      "Roll dough thin, cut into semicircles, form cones, fill and seal.",
+      "Deep fry on low-medium heat for 12-15 minutes until golden and crispy.",
+      "Serve with green and tamarind chutney."
+    ],
+    "chef_notes": "The key to a crispy samosa is frying on low-medium heat for longer \u2014 this gives the pastry time to dry out and become shattering crispy rather than soft.",
+    "serving_suggestions": "Serve with green chutney, tamarind chutney and a cup of chai.",
+    "nutrition_estimate": {
+      "calories": "285",
+      "protein_g": "6",
+      "carbohydrates_g": "36",
+      "fat_g": "14"
+    },
+    "tags": [
+      "Vegetarian",
+      "Street Food",
+      "Tea Time",
+      "Iconic"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of large Punjabi Samosa, shattering crispy golden pastry, served with vibrant green and brown chutneys, chai cup alongside, street food setting",
+    "seo_keywords": [
+      "punjabi samosa recipe",
+      "aloo samosa recipe",
+      "crispy samosa",
+      "indian street food samosa"
+    ],
+    "img": "https://images.pexels.com/photos/6210747/pexels-photo-6210747.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Dahi Bhalle Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/dahi-bhalle",
+    "dish_name": "Dahi Bhalle",
+    "state": "Punjab",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 240,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 260,
+    "servings": 4,
+    "short_description": "Dahi Bhalle are fluffy, soft lentil fritters soaked in cold water until spongy, then served in sweetened yogurt with tamarind chutney, green chutney, chaat masala and sev. A cooling, tangy and utterly delicious Punjabi chaat.",
+    "ingredients": [
+      {
+        "name": "Urad dal (skinned)",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Yogurt",
+        "quantity": "500",
+        "unit": "g"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Tamarind chutney",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chutney",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Chaat masala",
+        "quantity": "1.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Roasted cumin powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sev",
+        "quantity": "0.5",
+        "unit": "cup"
+      },
+      {
+        "name": "Pomegranate seeds",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "1",
+        "unit": "cup"
+      }
+    ],
+    "preparation_steps": [
+      "Soak urad dal for 4 hours. Grind to thick fluffy batter.",
+      "Fry spoonfuls in oil until golden. Remove.",
+      "Soak fried bhalle in lukewarm water for 20 minutes until soft and spongy.",
+      "Squeeze out water gently.",
+      "Whisk yogurt with sugar and cumin.",
+      "Place bhalle in a dish. Pour sweetened yogurt over them.",
+      "Top with both chutneys, chaat masala, chili powder and sev.",
+      "Garnish with pomegranate seeds and coriander."
+    ],
+    "chef_notes": "The soaking step is crucial \u2014 the bhalle must become very soft and spongy. Urad dal batter must be whipped until airy for soft bhalle.",
+    "serving_suggestions": "Serve chilled as a starter or chaat at festivals and celebrations.",
+    "nutrition_estimate": {
+      "calories": "295",
+      "protein_g": "12",
+      "carbohydrates_g": "38",
+      "fat_g": "11"
+    },
+    "tags": [
+      "Vegetarian",
+      "Chaat",
+      "Festival Food",
+      "Cooling"
+    ],
+    "image_prompt": "Ultra realistic food photography of Dahi Bhalle, soft white lentil fritters in creamy yogurt, topped with colorful chutneys, pomegranate seeds and sev, vibrant chaat photography",
+    "seo_keywords": [
+      "dahi bhalle recipe",
+      "dahi vada punjabi",
+      "lentil fritters yogurt",
+      "punjabi chaat recipe"
+    ],
+    "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Kachumber Salad Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/punjabi-kachumber",
+    "dish_name": "Punjabi Kachumber",
+    "state": "Punjab",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 10,
+    "servings": 4,
+    "short_description": "Punjabi Kachumber is a bold, crunchy raw salad of cucumber, tomato, onion and radish \u2014 seasoned assertively with black salt, chaat masala and lemon. The perfect cooling counterpoint to the rich, spiced curries of Punjabi cuisine.",
+    "ingredients": [
+      {
+        "name": "Cucumber",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Tomato",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Radish",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Black salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Chaat masala",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Dice all vegetables into even small pieces.",
+      "Mix together in a bowl.",
+      "Add black salt, chaat masala and lemon juice.",
+      "Toss well.",
+      "Garnish with coriander and green chili.",
+      "Serve immediately."
+    ],
+    "chef_notes": "Radish is the Punjabi element that sets this apart from other kachumbers. Black salt and chaat masala give it a distinctly North Indian character.",
+    "serving_suggestions": "Serve alongside any Punjabi main course as a cooling salad.",
+    "nutrition_estimate": {
+      "calories": "45",
+      "protein_g": "2",
+      "carbohydrates_g": "9",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Vegan",
+      "Salad",
+      "Everyday",
+      "Refreshing"
+    ],
+    "image_prompt": "Ultra realistic food photography of Punjabi Kachumber salad in a white bowl, colorful diced cucumber, tomato, onion and radish, lemon wedge, bright natural light",
+    "seo_keywords": [
+      "punjabi kachumber recipe",
+      "north indian salad",
+      "cucumber tomato onion salad punjab",
+      "kachumber salad recipe"
+    ],
+    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Mooli Salad Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/mooli-salad",
+    "dish_name": "Mooli Ka Raita",
+    "state": "Punjab",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 10,
+    "servings": 4,
+    "short_description": "Mooli Ka Raita is a simple, cooling Punjabi yogurt salad made with grated white radish \u2014 a winter staple that uses Punjab's famous winter mooli. Refreshing, digestive and the perfect accompaniment to any Punjabi meal.",
+    "ingredients": [
+      {
+        "name": "White radish (mooli)",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Yogurt",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Roasted cumin powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Black salt",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Grate radish and squeeze out all excess water.",
+      "Whisk yogurt until smooth.",
+      "Mix grated radish into yogurt.",
+      "Add black salt, cumin powder, green chili and salt.",
+      "Garnish with coriander.",
+      "Serve chilled."
+    ],
+    "chef_notes": "Squeezing the water out of radish is essential \u2014 otherwise the raita becomes very watery. Use white winter mooli for the mildest flavor.",
+    "serving_suggestions": "Serve alongside biryani, paratha or any Punjabi curry.",
+    "nutrition_estimate": {
+      "calories": "75",
+      "protein_g": "4",
+      "carbohydrates_g": "8",
+      "fat_g": "3"
+    },
+    "tags": [
+      "Vegetarian",
+      "Raita",
+      "Cooling",
+      "Winter"
+    ],
+    "image_prompt": "Ultra realistic food photography of Mooli Ka Raita in a white bowl, white yogurt with grated radish, cumin powder garnish, fresh coriander, clean minimal styling",
+    "seo_keywords": [
+      "mooli raita recipe",
+      "radish raita punjab",
+      "white radish yogurt",
+      "winter raita recipe"
+    ],
+    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Onion Salad Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/pyaz-sirka",
+    "dish_name": "Pyaz Sirka",
+    "state": "Punjab",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 5,
+    "servings": 4,
+    "short_description": "Pyaz Sirka \u2014 pickled onions in vinegar \u2014 are the iconic dhaba condiment of Punjab, served alongside every meal from butter chicken to dal makhani. The sharp vinegar pickle cuts through rich gravies and cleanses the palate perfectly.",
+    "ingredients": [
+      {
+        "name": "Red onions",
+        "quantity": "3",
+        "unit": "large"
+      },
+      {
+        "name": "White vinegar",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      }
+    ],
+    "preparation_steps": [
+      "Thinly slice onions into rings.",
+      "Mix vinegar, salt, sugar and chili powder together.",
+      "Toss onion rings in the pickling liquid.",
+      "Add sliced green chili.",
+      "Leave for 15 minutes minimum before serving.",
+      "Serve as a condiment alongside any Punjabi meal."
+    ],
+    "chef_notes": "These pickled onions turn a beautiful pink color after 15 minutes. They are even better after an hour. Keeps in the fridge for 3 days.",
+    "serving_suggestions": "Serve alongside any Punjabi curry, dal, biryani or grilled meats.",
+    "nutrition_estimate": {
+      "calories": "35",
+      "protein_g": "1",
+      "carbohydrates_g": "7",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Vegan",
+      "Pickle",
+      "Condiment",
+      "Dhaba"
+    ],
+    "image_prompt": "Ultra realistic food photography of Pyaz Sirka pickled onion rings in a small bowl, vibrant pink-purple color, vinegar sheen, green chili, classic Punjabi dhaba setting",
+    "seo_keywords": [
+      "pyaz sirka recipe",
+      "punjabi pickled onions",
+      "dhaba onion salad",
+      "vinegar onions india"
+    ],
+    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Chana Salad Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/chana-chaat-salad",
+    "dish_name": "Chana Chaat Salad",
+    "state": "Punjab",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 10,
+    "servings": 4,
+    "short_description": "Punjabi Chana Chaat Salad is a protein-packed salad of boiled chickpeas tossed with tomato, onion, green chili, chutneys and chaat masala. Quick, satisfying and deeply flavorful \u2014 it doubles as a healthy snack and a light meal.",
+    "ingredients": [
+      {
+        "name": "Boiled chickpeas",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Tomato",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Tamarind chutney",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chutney",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Chaat masala",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Combine chickpeas with diced tomato, onion and green chili.",
+      "Add both chutneys and chaat masala.",
+      "Add lemon juice and toss well.",
+      "Garnish with coriander.",
+      "Serve immediately."
+    ],
+    "chef_notes": "Best eaten immediately after dressing. If made ahead, keep the chutneys separate until serving.",
+    "serving_suggestions": "Serve as a healthy snack or light lunch.",
+    "nutrition_estimate": {
+      "calories": "195",
+      "protein_g": "10",
+      "carbohydrates_g": "30",
+      "fat_g": "3"
+    },
+    "tags": [
+      "Vegan",
+      "Protein Rich",
+      "Healthy",
+      "Chaat"
+    ],
+    "image_prompt": "Ultra realistic food photography of Chana Chaat Salad in a bowl, golden chickpeas with colorful vegetables and chutneys, vibrant fresh food photography",
+    "seo_keywords": [
+      "chana chaat recipe",
+      "punjabi chickpea salad",
+      "healthy chaat",
+      "boiled chana salad"
+    ],
+    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Masala Chai Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/punjabi-masala-chai",
+    "dish_name": "Punjabi Masala Chai",
+    "state": "Punjab",
+    "category": "Tea",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 2,
+    "cook_time_minutes": 8,
+    "total_time_minutes": 10,
+    "servings": 2,
+    "short_description": "Punjabi Masala Chai is the strongest, most aromatic of all Indian masala teas \u2014 made with full-fat milk, robust tea leaves, fresh ginger, cardamom and a generous hand with spices. Bold, thick and deeply warming, it is the heartbeat of Punjabi daily life.",
+    "ingredients": [
+      {
+        "name": "Water",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Full fat milk",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Strong CTC tea leaves",
+        "quantity": "2.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1.5",
+        "unit": "inch"
+      },
+      {
+        "name": "Cardamom",
+        "quantity": "4",
+        "unit": "pods"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Cinnamon",
+        "quantity": "0.5",
+        "unit": "inch"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Crush cardamom, black pepper and cinnamon.",
+      "Bring water to boil with crushed spices and grated ginger.",
+      "Add tea leaves and boil vigorously for 2 minutes.",
+      "Add milk and bring to a full rolling boil twice.",
+      "Add sugar.",
+      "Strain into cups and serve immediately."
+    ],
+    "chef_notes": "Punjabi chai must be strong and milky \u2014 the double boil is essential. CTC tea gives the right strength. Ginger must be fresh \u2014 powder is not acceptable.",
+    "serving_suggestions": "Serve with aloo paratha, samosa or any Punjabi snack.",
+    "nutrition_estimate": {
+      "calories": "95",
+      "protein_g": "4",
+      "carbohydrates_g": "12",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Beverage",
+      "Warming",
+      "Vegetarian",
+      "Morning Ritual"
+    ],
+    "image_prompt": "Ultra realistic food photography of Punjabi Masala Chai in a kulhad clay cup, deep amber tea color, steam rising, ginger and cardamom pods alongside, rustic dhaba morning setting",
+    "seo_keywords": [
+      "punjabi masala chai recipe",
+      "north indian tea recipe",
+      "strong masala chai",
+      "dhaba chai recipe"
+    ],
+    "img": "https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Noon Chai Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/noon-chai",
+    "dish_name": "Noon Chai",
+    "state": "Punjab",
+    "category": "Tea",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 25,
+    "servings": 2,
+    "short_description": "Noon Chai \u2014 also called Pink Tea or Kashmiri Chai \u2014 is a beautiful pink-hued salted tea made with special gunpowder tea leaves, milk, baking soda and salt. Popular in Punjab's northern regions and throughout Kashmir, it is floral, creamy and utterly unique.",
+    "ingredients": [
+      {
+        "name": "Kashmiri tea leaves (gunpowder)",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Water",
+        "quantity": "300",
+        "unit": "ml"
+      },
+      {
+        "name": "Full fat milk",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Baking soda",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cardamom",
+        "quantity": "2",
+        "unit": "pods"
+      },
+      {
+        "name": "Pistachios",
+        "quantity": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Boil tea leaves in water with baking soda for 10 minutes.",
+      "The liquid will turn dark red-brown.",
+      "Add milk and continue cooking for 5 minutes.",
+      "Add salt and cardamom.",
+      "Strain and whisk vigorously \u2014 this creates the pink color.",
+      "Pour back and forth between cups several times.",
+      "Garnish with crushed pistachios and serve."
+    ],
+    "chef_notes": "The baking soda and vigorous whisking are what create the famous pink color. Kashmiri tea leaves (gunpowder green tea) are essential \u2014 regular tea will not work.",
+    "serving_suggestions": "Serve with Kashmiri bread (girda) or any soft bread.",
+    "nutrition_estimate": {
+      "calories": "85",
+      "protein_g": "4",
+      "carbohydrates_g": "8",
+      "unit": "g",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Pink Tea",
+      "Kashmiri",
+      "Unique",
+      "Warming"
+    ],
+    "image_prompt": "Ultra realistic food photography of Noon Chai pink tea in a traditional cup, beautiful dusty rose pink color, pistachio garnish, elegant presentation, soft morning light",
+    "seo_keywords": [
+      "noon chai recipe",
+      "pink tea punjab",
+      "kashmiri chai recipe",
+      "salted pink tea india"
+    ],
+    "img": "https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Kahwa Tea Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/kahwa",
+    "dish_name": "Kahwa",
+    "state": "Punjab",
+    "category": "Tea",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 15,
+    "servings": 2,
+    "short_description": "Kahwa is a fragrant green tea from Kashmir and Punjab's northern regions, brewed with saffron, cardamom, cinnamon and almonds. A warming, aromatic and health-promoting drink, it is served at weddings and celebrations throughout northern Punjab.",
+    "ingredients": [
+      {
+        "name": "Kashmiri green tea",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Water",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cardamom",
+        "quantity": "3",
+        "unit": "pods"
+      },
+      {
+        "name": "Cinnamon",
+        "quantity": "0.5",
+        "unit": "inch"
+      },
+      {
+        "name": "Almonds",
+        "quantity": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "Honey",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Rose petals",
+        "quantity": "4",
+        "unit": "pieces"
+      }
+    ],
+    "preparation_steps": [
+      "Crush cardamom and break cinnamon.",
+      "Bring water to boil with saffron, cardamom and cinnamon.",
+      "Add green tea and simmer on low heat for 3 minutes.",
+      "Do not boil vigorously \u2014 green tea becomes bitter.",
+      "Strain into cups.",
+      "Add honey and garnish with slivered almonds and rose petals.",
+      "Serve immediately."
+    ],
+    "chef_notes": "Never boil green tea \u2014 it becomes bitter. Keep it at a gentle simmer. The saffron should bloom fully in the water before adding tea.",
+    "serving_suggestions": "Serve as a warming morning tea or after meals as a digestive.",
+    "nutrition_estimate": {
+      "calories": "45",
+      "protein_g": "1",
+      "carbohydrates_g": "8",
+      "fat_g": "2"
+    },
+    "tags": [
+      "Green Tea",
+      "Aromatic",
+      "Healthy",
+      "Kashmiri"
+    ],
+    "image_prompt": "Ultra realistic food photography of Kahwa in a traditional brass cup, golden saffron tea, almond slivers and rose petals floating, elegant Kashmiri setting",
+    "seo_keywords": [
+      "kahwa recipe",
+      "kashmiri green tea",
+      "saffron tea recipe",
+      "punjab noon chai kahwa"
+    ],
+    "img": "https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Tandoori Chai Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/tandoori-chai",
+    "dish_name": "Tandoori Chai",
+    "state": "Punjab",
+    "category": "Tea",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 20,
+    "servings": 2,
+    "short_description": "Tandoori Chai is Punjab's most theatrical tea experience \u2014 strong masala chai poured into a red-hot clay kulhad, which instantly chars and infuses the tea with an incredible smoky, earthy aroma. A sensation that has taken India's tea culture by storm.",
+    "ingredients": [
+      {
+        "name": "Water",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Full fat milk",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Strong tea leaves",
+        "quantity": "2.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Cardamom",
+        "quantity": "3",
+        "unit": "pods"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Clay kulhad",
+        "quantity": "2",
+        "unit": "pieces"
+      }
+    ],
+    "preparation_steps": [
+      "Prepare strong masala chai in the usual way.",
+      "Heat clay kulhads directly on gas flame until smoking hot and red.",
+      "Place smoking hot kulhads in a deep bowl.",
+      "Pour prepared chai slowly into the hot kulhads.",
+      "The chai will sizzle and smoke dramatically.",
+      "Allow to cool slightly and drink from the kulhad."
+    ],
+    "chef_notes": "The clay kulhad must be unglazed and new for best smoky flavor. Heat until you see small wisps of smoke rising from the clay. The sizzling smoke infuses the chai with an unforgettable earthy aroma.",
+    "serving_suggestions": "Serve at chai tapris or as a special theatrical experience with snacks.",
+    "nutrition_estimate": {
+      "calories": "90",
+      "protein_g": "4",
+      "carbohydrates_g": "12",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Smoky",
+      "Theatrical",
+      "Trending",
+      "Street Chai"
+    ],
+    "image_prompt": "Ultra realistic dramatic food photography of Tandoori Chai being poured into a smoking hot clay kulhad, steam and smoke dramatically rising, orange glow, street chai setting Punjab at dusk",
+    "seo_keywords": [
+      "tandoori chai recipe",
+      "smoky clay pot tea",
+      "kulhad chai punjab",
+      "trending indian tea"
+    ],
+    "img": "https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Badam Doodh Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/badam-doodh",
+    "dish_name": "Badam Doodh",
+    "state": "Punjab",
+    "category": "Tea",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 20,
+    "servings": 2,
+    "short_description": "Badam Doodh is Punjab's beloved almond milk drink \u2014 warm full-fat milk blended with soaked almonds, saffron, cardamom and sugar. A traditional nutrition drink fed to children and given at weddings, it is fragrant, creamy and deeply nourishing.",
+    "ingredients": [
+      {
+        "name": "Full fat milk",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Almonds",
+        "quantity": "15",
+        "unit": "pieces"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Pistachios",
+        "quantity": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak almonds in warm water for 1 hour. Peel and grind to paste.",
+      "Soak saffron in 1 tablespoon warm milk.",
+      "Bring milk to a gentle boil.",
+      "Add almond paste, saffron, cardamom and sugar.",
+      "Simmer on low heat for 5 minutes.",
+      "Froth by pouring between containers from height.",
+      "Serve warm garnished with pistachios."
+    ],
+    "chef_notes": "Soaking and peeling almonds is essential \u2014 unpeeled almonds give a bitter taste. Pouring from height creates the characteristic froth.",
+    "serving_suggestions": "Serve warm at night before bed or as a morning energy drink.",
+    "nutrition_estimate": {
+      "calories": "195",
+      "protein_g": "8",
+      "carbohydrates_g": "18",
+      "fat_g": "11"
+    },
+    "tags": [
+      "Nutrition Drink",
+      "Vegetarian",
+      "Warming",
+      "Traditional"
+    ],
+    "image_prompt": "Ultra realistic food photography of Badam Doodh in a tall glass, creamy golden almond milk, saffron strands and pistachio garnish, frothy top, warm cozy lighting",
+    "seo_keywords": [
+      "badam doodh recipe",
+      "almond milk drink india",
+      "punjabi almond milk",
+      "saffron almond milk"
+    ],
+    "img": "https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Espresso Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/punjabi-coffee",
+    "dish_name": "Amritsari Doodh Coffee",
+    "state": "Punjab",
+    "category": "Coffee",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 8,
+    "total_time_minutes": 13,
+    "servings": 2,
+    "short_description": "Amritsari Doodh Coffee is a rich, full-fat milky coffee from the holy city \u2014 made Punjabi-style with generous milk, strong coffee and cardamom, served frothy and scalding hot. Less sophisticated than filter coffee but deeply comforting and full of Punjabi warmth.",
+    "ingredients": [
+      {
+        "name": "Full fat milk",
+        "quantity": "350",
+        "unit": "ml"
+      },
+      {
+        "name": "Instant coffee",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Water",
+        "quantity": "50",
+        "unit": "ml"
+      }
+    ],
+    "preparation_steps": [
+      "Whisk instant coffee with a little warm water until frothy.",
+      "Heat milk until steaming.",
+      "Add coffee mixture, cardamom and sugar.",
+      "Whisk vigorously to create froth.",
+      "Pour from height into cups for extra froth.",
+      "Serve immediately."
+    ],
+    "chef_notes": "Whisking the coffee with water before adding milk creates a creamy froth similar to cafe-style coffee without any equipment.",
+    "serving_suggestions": "Serve with aloo paratha or any Punjabi morning snack.",
+    "nutrition_estimate": {
+      "calories": "130",
+      "protein_g": "6",
+      "carbohydrates_g": "16",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Coffee",
+      "Vegetarian",
+      "Morning",
+      "Punjabi"
+    ],
+    "image_prompt": "Ultra realistic food photography of Amritsari Doodh Coffee in a thick glass, frothy milky coffee, cardamom garnish, Amritsar morning setting",
+    "seo_keywords": [
+      "punjabi coffee recipe",
+      "amritsari doodh coffee",
+      "milky indian coffee",
+      "north india coffee"
+    ],
+    "img": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Iced Coffee Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/punjabi-cold-coffee",
+    "dish_name": "Punjabi Cold Coffee",
+    "state": "Punjab",
+    "category": "Coffee",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 5,
+    "servings": 2,
+    "short_description": "Punjabi Cold Coffee is a thick, creamy blended iced coffee drink \u2014 a staple of Punjab's urban cafe culture. Made with strong coffee, full-fat milk and ice cream, it is indulgent, sweet and deeply satisfying.",
+    "ingredients": [
+      {
+        "name": "Strong brewed coffee, cooled",
+        "quantity": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "Full fat milk",
+        "quantity": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "Vanilla ice cream",
+        "quantity": "2",
+        "unit": "scoops"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ice cubes",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Chocolate sauce",
+        "quantity": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Brew strong coffee and cool completely.",
+      "Blend coffee, milk, ice cream, sugar and ice until smooth.",
+      "Pour into tall chilled glasses.",
+      "Drizzle chocolate sauce on top.",
+      "Serve immediately with a straw."
+    ],
+    "chef_notes": "Use strong brewed coffee not instant for best flavor. The ice cream makes it thick and creamy \u2014 do not substitute with just milk.",
+    "serving_suggestions": "Serve as a summer refreshment or cafe-style dessert drink.",
+    "nutrition_estimate": {
+      "calories": "280",
+      "protein_g": "7",
+      "carbohydrates_g": "36",
+      "fat_g": "12"
+    },
+    "tags": [
+      "Coffee",
+      "Summer Drink",
+      "Indulgent",
+      "Cafe Style"
+    ],
+    "image_prompt": "Ultra realistic food photography of Punjabi Cold Coffee in a tall glass, thick blended coffee with whipped cream, chocolate drizzle, condensation on glass, vibrant cafe setting",
+    "seo_keywords": [
+      "punjabi cold coffee recipe",
+      "north india cold coffee",
+      "blended coffee india",
+      "cold coffee recipe"
+    ],
+    "img": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Thandai Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/thandai",
+    "dish_name": "Thandai",
+    "state": "Punjab",
+    "category": "Coffee",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 240,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 240,
+    "servings": 4,
+    "short_description": "Thandai is Punjab's festive Holi drink \u2014 a cooling milk beverage infused with a complex paste of almonds, rose petals, fennel seeds, melon seeds, cardamom, pepper and saffron. Chilled and sweet, it is served throughout the Holi festival season.",
+    "ingredients": [
+      {
+        "name": "Full fat milk",
+        "quantity": "800",
+        "unit": "ml"
+      },
+      {
+        "name": "Almonds",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Melon seeds (magaz)",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Fennel seeds",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rose petals, dried",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "Cardamom",
+        "quantity": "4",
+        "unit": "pods"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rose water",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak almonds, melon seeds, fennel, rose petals and pepper for 3-4 hours.",
+      "Grind soaked ingredients into a fine smooth paste.",
+      "Heat milk and dissolve sugar. Cool completely.",
+      "Mix thandai paste into cold milk.",
+      "Add saffron milk and rose water.",
+      "Strain through a fine sieve.",
+      "Chill for 2 hours and serve over ice."
+    ],
+    "chef_notes": "The soaking of the spices and nuts is essential for a smooth paste. The paste can be made in advance and stored in the fridge for 3 days.",
+    "serving_suggestions": "Serve ice cold during Holi celebrations with gujiya.",
+    "nutrition_estimate": {
+      "calories": "220",
+      "protein_g": "7",
+      "carbohydrates_g": "28",
+      "fat_g": "9"
+    },
+    "tags": [
+      "Holi Festival",
+      "Vegetarian",
+      "Cooling",
+      "Festive"
+    ],
+    "image_prompt": "Ultra realistic food photography of Thandai in a tall glass, pale creamy milk with rose petals and saffron strands, served with colorful Holi setting, rose petals scattered around",
+    "seo_keywords": [
+      "thandai recipe",
+      "holi drink punjab",
+      "rose almond milk drink",
+      "festive punjabi drink"
+    ],
+    "img": "https://images.pexels.com/photos/3407777/pexels-photo-3407777.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Papad Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/masala-papad",
+    "dish_name": "Masala Papad",
+    "state": "Punjab",
+    "category": "Appetizers",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 5,
+    "total_time_minutes": 15,
+    "servings": 4,
+    "short_description": "Masala Papad is a beloved Punjabi starter \u2014 a crispy urad dal wafer topped with finely diced onion, tomato, green chili, chaat masala and coriander. Crunchy, spicy, tangy and utterly addictive, it arrives at every Punjabi restaurant table.",
+    "ingredients": [
+      {
+        "name": "Urad dal papad",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Tomato",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Chaat masala",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "1",
+        "unit": "cup"
+      }
+    ],
+    "preparation_steps": [
+      "Deep fry or roast papads until puffed and golden.",
+      "Finely dice onion, tomato and green chili.",
+      "Mix with chaat masala, lemon juice and coriander.",
+      "Spread topping on papads just before serving.",
+      "Serve immediately \u2014 do not let papad go soggy."
+    ],
+    "chef_notes": "Top the papad with the masala just before serving to keep it crispy. Roasting over flame gives a better flavor than deep frying.",
+    "serving_suggestions": "Serve as a starter at Punjabi meals or as a quick snack.",
+    "nutrition_estimate": {
+      "calories": "115",
+      "protein_g": "5",
+      "carbohydrates_g": "12",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Vegetarian",
+      "Starter",
+      "Crispy",
+      "Quick"
+    ],
+    "image_prompt": "Ultra realistic food photography of Masala Papad on a white plate, crispy wafer topped with colorful diced onion, tomato and coriander, chaat masala dusted, restaurant presentation",
+    "seo_keywords": [
+      "masala papad recipe",
+      "punjabi papad appetizer",
+      "crispy papad topping",
+      "indian restaurant starter"
+    ],
+    "img": "https://images.pexels.com/photos/6210747/pexels-photo-6210747.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Mint Chutney Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/pudina-chutney",
+    "dish_name": "Pudina Chutney",
+    "state": "Punjab",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 10,
+    "servings": 6,
+    "short_description": "Punjabi Pudina Chutney is the essential green accompaniment to every tandoori dish, samosa, tikka and chaat \u2014 a vibrant, deeply flavored fresh mint sauce with coriander, green chili and lemon. Bold, fresh and irreplaceable.",
+    "ingredients": [
+      {
+        "name": "Fresh mint leaves",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Fresh coriander",
+        "quantity": "50",
+        "unit": "g"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "2",
+        "unit": "cloves"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "0.5",
+        "unit": "inch"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Black salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Roasted cumin powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "0.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Add all ingredients to a blender.",
+      "Blend with minimal water to a smooth paste.",
+      "Taste and adjust salt, lemon and chili.",
+      "Store refrigerated for up to 3 days."
+    ],
+    "chef_notes": "Use minimal water to keep the chutney thick and vibrant green. Adding yogurt makes it creamier for serving with tikkas.",
+    "serving_suggestions": "Serve with tandoori chicken, tikkas, samosas, kebabs and chaat.",
+    "nutrition_estimate": {
+      "calories": "25",
+      "protein_g": "1",
+      "carbohydrates_g": "4",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Vegan",
+      "Condiment",
+      "Essential",
+      "Gluten-Free"
+    ],
+    "image_prompt": "Ultra realistic food photography of Pudina Chutney in a small bowl, vibrant bright green, served alongside tandoori chicken and sliced onions, clean food photography",
+    "seo_keywords": [
+      "pudina chutney recipe",
+      "punjabi mint chutney",
+      "green chutney recipe",
+      "tandoori chutney"
+    ],
+    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Imli Chutney Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/imli-chutney",
+    "dish_name": "Imli Khajur Chutney",
+    "state": "Punjab",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 30,
+    "servings": 8,
+    "short_description": "Imli Khajur Chutney is Punjab's sweet-and-sour tamarind chutney made with dates and jaggery \u2014 a deep brown, thick sauce with complex layers of sweet, sour and spiced flavors. Essential for chaats, samosas and street food across Punjab.",
+    "ingredients": [
+      {
+        "name": "Tamarind",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Dates (khajur)",
+        "quantity": "80",
+        "unit": "g"
+      },
+      {
+        "name": "Jaggery",
+        "quantity": "80",
+        "unit": "g"
+      },
+      {
+        "name": "Ginger powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Roasted cumin powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Black salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.25",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak tamarind and dates in warm water for 30 minutes.",
+      "Remove seeds from dates.",
+      "Blend tamarind, dates and jaggery with soaking water.",
+      "Strain through a sieve.",
+      "Cook the strained liquid for 10 minutes until thickened.",
+      "Add all spices and simmer 5 more minutes.",
+      "Cool and store. Keeps 2 weeks refrigerated."
+    ],
+    "chef_notes": "Dates add a natural sweetness and thickness that jaggery alone cannot. Adjust sweet-sour balance by adding more tamarind or jaggery.",
+    "serving_suggestions": "Serve with samosa, gol gappe, dahi bhalle, aloo chaat and bhel puri.",
+    "nutrition_estimate": {
+      "calories": "70",
+      "protein_g": "0",
+      "carbohydrates_g": "17",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Vegan",
+      "Condiment",
+      "Sweet Chutney",
+      "Gluten-Free"
+    ],
+    "image_prompt": "Ultra realistic food photography of Imli Khajur Chutney in a small bowl, deep glossy brown sauce, served alongside samosas and chaat, dark moody food photography",
+    "seo_keywords": [
+      "imli chutney recipe",
+      "tamarind date chutney punjab",
+      "sweet chutney india",
+      "chaat chutney recipe"
+    ],
+    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Raita Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/boondi-raita",
+    "dish_name": "Boondi Raita",
+    "state": "Punjab",
+    "category": "Sides",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 10,
+    "servings": 4,
+    "short_description": "Boondi Raita is a classic Punjabi yogurt condiment made with tiny crispy chickpea flour droplets (boondi) soaked in spiced yogurt with cumin and coriander. Cooling, creamy and essential alongside biryani and rich Punjabi curries.",
+    "ingredients": [
+      {
+        "name": "Yogurt",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Boondi",
+        "quantity": "0.5",
+        "unit": "cup"
+      },
+      {
+        "name": "Roasted cumin powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Black salt",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak boondi in warm water for 5 minutes. Squeeze gently.",
+      "Whisk yogurt until smooth.",
+      "Add soaked boondi to yogurt.",
+      "Add all spices and salt.",
+      "Mix well and chill for 30 minutes before serving.",
+      "Garnish with cumin powder and chili powder."
+    ],
+    "chef_notes": "Soaking boondi briefly softens it just enough to be pleasantly tender without becoming mushy. Add boondi just before serving if you prefer more crunch.",
+    "serving_suggestions": "Serve alongside biryani, pulao, paratha or any Punjabi curry.",
+    "nutrition_estimate": {
+      "calories": "130",
+      "protein_g": "6",
+      "carbohydrates_g": "15",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Vegetarian",
+      "Cooling",
+      "Condiment",
+      "Classic"
+    ],
+    "image_prompt": "Ultra realistic food photography of Boondi Raita in a white bowl, creamy yogurt with tiny golden boondi, cumin and chili powder garnish, fresh coriander, clean food photography",
+    "seo_keywords": [
+      "boondi raita recipe",
+      "punjabi raita",
+      "yogurt condiment india",
+      "boondi yogurt recipe"
+    ],
+    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Achaar Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/mixed-achaar",
+    "dish_name": "Punjabi Mixed Achaar",
+    "state": "Punjab",
+    "category": "Sides",
+    "difficulty_level": "Hard",
+    "prep_time_minutes": 60,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 4320,
+    "servings": 16,
+    "short_description": "Punjabi Mixed Achaar is a bold, fiery mixed vegetable pickle with raw mango, turnip, cauliflower and carrots preserved in mustard oil with whole spices. A beloved condiment on every Punjabi table, it adds heat, tang and depth to any meal.",
+    "ingredients": [
+      {
+        "name": "Raw mango, cubed",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Turnip, cubed",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Cauliflower",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Carrots",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Mustard oil",
+        "quantity": "150",
+        "unit": "ml"
+      },
+      {
+        "name": "Mustard seeds, coarsely crushed",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Fenugreek seeds, coarsely crushed",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "3",
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "3",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Wash all vegetables and dry completely in sunlight for 2 hours.",
+      "Cut into large pieces.",
+      "Mix salt and turmeric. Coat vegetables thoroughly.",
+      "Leave in a jar in sunlight for 2 days.",
+      "Heat mustard oil to smoking point. Cool completely.",
+      "Mix all spices with vegetables.",
+      "Add cooled mustard oil and mix well.",
+      "Store in sterilized glass jars. Ready in 3 days."
+    ],
+    "chef_notes": "Drying vegetables completely before pickling is essential to prevent mold. Mustard oil must be heated to smoking point to remove bitterness. Sunlight is the best preservative.",
+    "serving_suggestions": "Serve as a condiment with any Punjabi meal, paratha or rice-dal.",
+    "nutrition_estimate": {
+      "calories": "55",
+      "protein_g": "1",
+      "carbohydrates_g": "4",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Vegan",
+      "Pickle",
+      "Traditional",
+      "Spicy"
+    ],
+    "image_prompt": "Ultra realistic food photography of Punjabi Mixed Achaar in a glass jar, colorful vegetables in mustard oil, vibrant red and yellow spices, rustic Punjabi kitchen background",
+    "seo_keywords": [
+      "punjabi achaar recipe",
+      "mixed vegetable pickle india",
+      "punjabi pickle recipe",
+      "mustard oil achaar"
+    ],
+    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Pindi Chole Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/pindi-chole",
+    "dish_name": "Pindi Chole",
+    "state": "Punjab",
+    "category": "Main Courses",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 480,
+    "cook_time_minutes": 50,
+    "total_time_minutes": 530,
+    "servings": 4,
+    "short_description": "Pindi Chole is a dry, intensely spiced chickpea preparation from Rawalpindi \u2014 darker, more tangy and far more robustly spiced than regular chole. Made with a special dry masala and no onion-tomato gravy, it is a distinctive and addictive Punjabi dish.",
+    "ingredients": [
+      {
+        "name": "Kabuli chana (chickpeas)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Tea bags",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Chole masala",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Anardana (pomegranate seeds)",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Amchur",
+        "quantity": "1.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "2",
+        "unit": "inch"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Oil",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Whole spices",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak chickpeas overnight. Pressure cook with tea bags for dark color.",
+      "Drain chickpeas, keeping liquid.",
+      "Heat oil and fry whole spices.",
+      "Add ginger and green chili.",
+      "Add cooked chickpeas and all dry masalas.",
+      "Add some cooking liquid. Cook on medium heat until dry.",
+      "Mash some chickpeas to bind.",
+      "Garnish with ginger julienne and green chili."
+    ],
+    "chef_notes": "Pindi chole should be almost dry \u2014 not like a gravy chole. Anardana and amchur together give it its characteristic sharp tang. The tea bag trick gives the dark color.",
+    "serving_suggestions": "Serve with kulcha, bhature or puri.",
+    "nutrition_estimate": {
+      "calories": "285",
+      "protein_g": "14",
+      "carbohydrates_g": "42",
+      "fat_g": "8"
+    },
+    "tags": [
+      "Vegetarian",
+      "Dry Curry",
+      "Tangy",
+      "Traditional"
+    ],
+    "image_prompt": "Ultra realistic food photography of Pindi Chole, dark dry spiced chickpeas in a pan, ginger julienne and green chili garnish, served with kulcha, rustic setting",
+    "seo_keywords": [
+      "pindi chole recipe",
+      "rawalpindi chole",
+      "dry chickpea curry punjab",
+      "pindi chane recipe"
+    ],
+    "img": "https://images.pexels.com/photos/9609834/pexels-photo-9609834.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Langar Dal Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/langar-dal",
+    "dish_name": "Langar Di Dal",
+    "state": "Punjab",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 45,
+    "total_time_minutes": 55,
+    "servings": 4,
+    "short_description": "Langar Di Dal is the blessed dal served at the Golden Temple's langar (community kitchen) in Amritsar \u2014 a simple, pure and deeply nourishing preparation of urad dal with minimal spices. Eaten by millions, it is perhaps the most spiritually significant food in India.",
+    "ingredients": [
+      {
+        "name": "Urad dal (split)",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Wash urad dal and pressure cook with turmeric until very soft.",
+      "Mash well.",
+      "Heat ghee and add cumin seeds.",
+      "Add ginger and green chili. Saut\u00e9 briefly.",
+      "Pour tempering over dal.",
+      "Simmer 10 minutes.",
+      "Season with salt and garnish with coriander.",
+      "Serve with roti and sabzi."
+    ],
+    "chef_notes": "The simplicity of Langar Dal is its beauty \u2014 no tomatoes, no heavy spices, just clean nourishing flavors. The ghee and cumin tempering is its only adornment.",
+    "serving_suggestions": "Serve with roti, sabzi and rice as a complete simple meal.",
+    "nutrition_estimate": {
+      "calories": "225",
+      "protein_g": "12",
+      "carbohydrates_g": "28",
+      "fat_g": "7"
+    },
+    "tags": [
+      "Vegetarian",
+      "Sattvic",
+      "Golden Temple",
+      "Simple"
+    ],
+    "image_prompt": "Ultra realistic food photography of Langar Di Dal, simple clean urad dal in a steel bowl, cumin tempering, minimal garnish, spiritual and peaceful setting, soft golden light",
+    "seo_keywords": [
+      "langar dal recipe",
+      "golden temple dal",
+      "amritsar langar food",
+      "urad dal punjab simple"
+    ],
+    "img": "https://images.pexels.com/photos/7625056/pexels-photo-7625056.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Saag Soup Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/saag-soup",
+    "dish_name": "Palak Shorba",
+    "state": "Punjab",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 30,
+    "servings": 4,
+    "short_description": "Palak Shorba is a light, vibrant green spinach soup from Punjab \u2014 blended spinach with garlic, ginger and spices, finished with cream and lemon. A nutritious and elegant starter that showcases Punjab's love for leafy greens.",
+    "ingredients": [
+      {
+        "name": "Spinach",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "4",
+        "unit": "cloves"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Fresh cream",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Butter",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Blanch spinach in boiling water for 2 minutes. Drain.",
+      "Blend spinach with garlic, ginger and green chili.",
+      "Heat butter and fry cumin with onion until golden.",
+      "Add spinach puree and 300ml water.",
+      "Simmer 10 minutes.",
+      "Season with salt and lemon juice.",
+      "Serve with a swirl of cream."
+    ],
+    "chef_notes": "Blanching and shocking spinach preserves the vibrant green color. Do not overcook after blending.",
+    "serving_suggestions": "Serve as a starter before any Punjabi meal.",
+    "nutrition_estimate": {
+      "calories": "95",
+      "protein_g": "4",
+      "carbohydrates_g": "8",
+      "fat_g": "6"
+    },
+    "tags": [
+      "Vegetarian",
+      "Healthy",
+      "Green Soup",
+      "Starter"
+    ],
+    "image_prompt": "Ultra realistic food photography of Palak Shorba green spinach soup in a white bowl, vibrant green color, cream swirl, crouton garnish, elegant restaurant presentation",
+    "seo_keywords": [
+      "palak shorba recipe",
+      "punjabi spinach soup",
+      "green soup india",
+      "spinach soup starter"
+    ],
+    "img": "https://images.pexels.com/photos/6544367/pexels-photo-6544367.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Tomato Shorba Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/tomato-shorba",
+    "dish_name": "Tamatar Shorba",
+    "state": "Punjab",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 25,
+    "total_time_minutes": 35,
+    "servings": 4,
+    "short_description": "Tamatar Shorba is a classic North Indian restaurant soup \u2014 a thin, spiced tomato broth with ginger, garlic and whole spices, finished with cream. It has graced the starters section of Punjabi restaurants for decades as the perfect warming opener.",
+    "ingredients": [
+      {
+        "name": "Ripe tomatoes",
+        "quantity": "600",
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Garlic",
+        "quantity": "3",
+        "unit": "cloves"
+      },
+      {
+        "name": "Whole spices",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Fresh cream",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Butter",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Roast tomatoes, onion, ginger and garlic together.",
+      "Blend until smooth and strain.",
+      "Heat butter with whole spices.",
+      "Add strained tomato liquid.",
+      "Add sugar, salt and simmer 15 minutes.",
+      "Finish with cream.",
+      "Garnish with coriander and serve hot."
+    ],
+    "chef_notes": "Roasting the tomatoes adds a depth of flavor that boiled tomatoes cannot achieve. The sugar is essential to balance tomato acidity.",
+    "serving_suggestions": "Serve as a restaurant-style starter before Punjabi curries.",
+    "nutrition_estimate": {
+      "calories": "105",
+      "protein_g": "2",
+      "carbohydrates_g": "12",
+      "fat_g": "6"
+    },
+    "tags": [
+      "Vegetarian",
+      "Restaurant Style",
+      "Soup",
+      "Classic"
+    ],
+    "image_prompt": "Ultra realistic food photography of Tamatar Shorba in an elegant white bowl, vibrant red tomato soup, cream swirl, coriander garnish, fine dining presentation",
+    "seo_keywords": [
+      "tamatar shorba recipe",
+      "punjabi tomato soup",
+      "indian restaurant tomato shorba",
+      "spiced tomato broth"
+    ],
+    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Maah Ki Dal Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/maah-ki-dal",
+    "dish_name": "Maah Ki Dal",
+    "state": "Punjab",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 35,
+    "total_time_minutes": 45,
+    "servings": 4,
+    "short_description": "Maah Ki Dal is the everyday white urad dal of Punjab \u2014 a simple, clean preparation of split urad with a ginger-garlic tempering. Less rich than Dal Makhani but equally satisfying, it is the everyday dal of Punjabi rural households.",
+    "ingredients": [
+      {
+        "name": "White urad dal (split)",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Tomato",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "0.75",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Wash and pressure cook urad dal with turmeric until soft.",
+      "Heat ghee and add cumin seeds.",
+      "Add onion and fry until golden.",
+      "Add ginger-garlic paste and tomato. Cook until oil separates.",
+      "Add red chili powder.",
+      "Pour tempering over dal.",
+      "Simmer 10 minutes. Adjust consistency.",
+      "Serve with ghee drizzle."
+    ],
+    "chef_notes": "Maah ki dal is naturally thicker than other dals due to the starchy nature of urad. Do not thin it too much \u2014 a creamy consistency is ideal.",
+    "serving_suggestions": "Serve with makki di roti, plain roti or rice.",
+    "nutrition_estimate": {
+      "calories": "240",
+      "protein_g": "12",
+      "carbohydrates_g": "28",
+      "fat_g": "9"
+    },
+    "tags": [
+      "Vegetarian",
+      "Everyday",
+      "Rural Punjab",
+      "Simple"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maah Ki Dal, creamy white urad dal in a copper bowl, ghee pool, cumin tempering, simple homestyle Punjabi photography",
+    "seo_keywords": [
+      "maah ki dal recipe",
+      "white urad dal punjab",
+      "punjabi dal recipe",
+      "urad dal everyday"
+    ],
+    "img": "https://images.pexels.com/photos/4331489/pexels-photo-4331489.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Atte Ka Halwa Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/atte-ka-halwa",
+    "dish_name": "Atte Ka Halwa",
+    "state": "Punjab",
+    "category": "Desserts",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 25,
+    "total_time_minutes": 30,
+    "servings": 4,
+    "short_description": "Atte Ka Halwa is Punjab's simplest and most comforting dessert \u2014 whole wheat flour roasted in generous ghee until golden and nutty, then cooked with sugar and water into a thick, fragrant pudding. Made at Sikh religious ceremonies and served with great love.",
+    "ingredients": [
+      {
+        "name": "Whole wheat flour",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Water",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Cardamom powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Almonds",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cashews",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Heat ghee in a heavy pan and add wheat flour.",
+      "Roast on low heat stirring constantly for 15-20 minutes until deep golden and fragrant.",
+      "Meanwhile boil water with sugar until dissolved.",
+      "Carefully pour sugar water into roasted flour \u2014 it will splutter.",
+      "Stir vigorously to prevent lumps.",
+      "Cook until halwa leaves sides of pan.",
+      "Add cardamom and nuts.",
+      "Serve warm."
+    ],
+    "chef_notes": "The flour must be roasted to a deep golden brown \u2014 this is what creates the distinctive nutty flavor. Rushing this step results in raw flour taste.",
+    "serving_suggestions": "Serve as prasad at religious ceremonies or as a warming winter dessert.",
+    "nutrition_estimate": {
+      "calories": "355",
+      "protein_g": "6",
+      "carbohydrates_g": "48",
+      "fat_g": "17"
+    },
+    "tags": [
+      "Vegetarian",
+      "Religious",
+      "Festival",
+      "Simple"
+    ],
+    "image_prompt": "Ultra realistic food photography of Atte Ka Halwa, golden wheat flour pudding in a brass thali, ghee sheen, garnished with almonds and cashews, warm devotional setting",
+    "seo_keywords": [
+      "atte ka halwa recipe",
+      "wheat flour halwa punjab",
+      "langar halwa",
+      "punjabi halwa recipe"
+    ],
+    "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Gobhi Paratha Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/gobhi-paratha",
+    "dish_name": "Gobhi Paratha",
+    "state": "Punjab",
+    "category": "Breads",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 50,
+    "servings": 4,
+    "short_description": "Gobhi Paratha is a beloved Punjabi stuffed flatbread filled with spiced grated cauliflower \u2014 a delicate and fragrant winter breakfast. The crispy golden exterior gives way to the warm, lightly spiced cauliflower filling, best enjoyed with white butter and yogurt.",
+    "ingredients": [
+      {
+        "name": "Whole wheat flour",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Cauliflower, grated",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ajwain",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Amchur",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Butter",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Grate cauliflower finely. Squeeze out all moisture.",
+      "Mix with green chili, ginger, coriander, ajwain, amchur and salt.",
+      "Make soft wheat dough. Rest 20 minutes.",
+      "Roll dough into circle, fill with cauliflower, seal and roll gently.",
+      "Cook on hot tawa with butter on both sides until golden.",
+      "Serve hot immediately."
+    ],
+    "chef_notes": "Squeezing all moisture from cauliflower is critical \u2014 wet filling causes the paratha to tear and become soggy. The filling must be completely dry.",
+    "serving_suggestions": "Serve with white butter, yogurt and sweet mango pickle.",
+    "nutrition_estimate": {
+      "calories": "310",
+      "protein_g": "8",
+      "carbohydrates_g": "44",
+      "fat_g": "12"
+    },
+    "tags": [
+      "Vegetarian",
+      "Breakfast",
+      "Winter",
+      "Stuffed Bread"
+    ],
+    "image_prompt": "Ultra realistic food photography of Gobhi Paratha, golden cauliflower stuffed flatbread with butter, served with white yogurt and pickle, winter Punjabi morning setting",
+    "seo_keywords": [
+      "gobhi paratha recipe",
+      "cauliflower stuffed paratha",
+      "punjabi gobi paratha",
+      "winter breakfast punjab"
+    ],
+    "img": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Bhature Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/bhature",
+    "dish_name": "Bhature",
+    "state": "Punjab",
+    "category": "Breads",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 120,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 140,
+    "servings": 4,
+    "short_description": "Bhature are Punjab's iconic deep-fried leavened breads \u2014 puffed up golden clouds of maida dough that are crispy outside and soft inside. The perfect partner to chole, they are a Punjabi breakfast institution.",
+    "ingredients": [
+      {
+        "name": "Maida (all-purpose flour)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Yogurt",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Semolina (sooji)",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Baking soda",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "3",
+        "unit": "cups"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Mix maida, sooji, yogurt, sugar, salt, baking soda and oil.",
+      "Knead into a smooth soft dough with minimal water.",
+      "Rest covered for 1.5-2 hours.",
+      "Divide into balls and roll into oval shapes.",
+      "Heat oil to 180\u00b0C.",
+      "Fry one at a time, pressing down gently so it puffs up.",
+      "Turn once. Fry until golden on both sides.",
+      "Serve immediately while hot."
+    ],
+    "chef_notes": "Hot oil and a soft rested dough are the keys to perfectly puffed bhature. Pressing down gently while frying forces it to puff. Never crowd the oil.",
+    "serving_suggestions": "Serve hot with pindi chole or regular chole, pickled onions and pickle.",
+    "nutrition_estimate": {
+      "calories": "295",
+      "protein_g": "6",
+      "carbohydrates_g": "40",
+      "fat_g": "13"
+    },
+    "tags": [
+      "Vegetarian",
+      "Deep Fried",
+      "Breakfast",
+      "Street Food"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Bhature, large puffed golden deep-fried bread, crispy and airy, served with dark chole curry, authentic Punjabi dhaba setting",
+    "seo_keywords": [
+      "bhature recipe",
+      "punjabi bhature",
+      "deep fried bread india",
+      "chole bhature bread recipe"
+    ],
+    "img": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Matar Kulcha Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/matar-kulcha",
+    "dish_name": "Matar Kulcha",
+    "state": "Punjab",
+    "category": "Main Courses",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 25,
+    "total_time_minutes": 45,
+    "servings": 4,
+    "short_description": "Matar Kulcha is a beloved Punjabi street food of spiced dried white peas served alongside soft kulcha bread. The tangy, chatpata matar with its tamarind and chaat masala dressing paired with kulcha is a Delhi and Punjab street food icon.",
+    "ingredients": [
+      {
+        "name": "Dried white peas (safed matar)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Kulcha bread",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Tamarind chutney",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Green chutney",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Chaat masala",
+        "quantity": "1.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Oil",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak and pressure cook white peas until soft.",
+      "Heat oil and fry ginger. Add cooked peas.",
+      "Add chaat masala, salt and some tamarind chutney.",
+      "Mash slightly and simmer 10 minutes.",
+      "Serve in a bowl. Top with both chutneys, raw onion and lemon.",
+      "Serve with buttered kulcha alongside."
+    ],
+    "chef_notes": "White dried peas (safed matar) are completely different from green peas. They have a unique starchy texture that absorbs the tangy dressing beautifully.",
+    "serving_suggestions": "Serve matar in a bowl with kulcha bread, raw onion and extra chutney.",
+    "nutrition_estimate": {
+      "calories": "385",
+      "protein_g": "14",
+      "carbohydrates_g": "62",
+      "fat_g": "9"
+    },
+    "tags": [
+      "Vegetarian",
+      "Street Food",
+      "Chaat",
+      "Punjabi"
+    ],
+    "image_prompt": "Ultra realistic professional food photography of Matar Kulcha, spiced white peas with colorful chutneys alongside soft kulcha bread, vibrant street food setting Punjab",
+    "seo_keywords": [
+      "matar kulcha recipe",
+      "punjabi matar chaat",
+      "white peas chaat",
+      "delhi street food matar kulcha"
+    ],
+    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Sookha Kala Chana Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/kala-chana",
+    "dish_name": "Sookha Kala Chana",
+    "state": "Punjab",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 480,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 510,
+    "servings": 4,
+    "short_description": "Sookha Kala Chana is a dry, rustic Punjabi preparation of black chickpeas \u2014 pressure cooked until tender then tossed in a bold tempering of cumin, ginger, amchur and green chili. A nutritious staple offered as prasad at Sikh temples and eaten as everyday dhaba food.",
+    "ingredients": [
+      {
+        "name": "Kala chana (black chickpeas)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Oil",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Amchur",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Chaat masala",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Soak kala chana overnight. Pressure cook until tender.",
+      "Heat oil and add cumin seeds.",
+      "Add ginger and green chili. Fry 1 minute.",
+      "Add drained chana and toss well.",
+      "Add amchur, chaat masala and salt.",
+      "Cook dry on high heat for 5 minutes.",
+      "Garnish with coriander and serve."
+    ],
+    "chef_notes": "Kala chana takes much longer to cook than kabuli chana. The longer it soaks and the higher the pressure cook, the better the texture.",
+    "serving_suggestions": "Serve as prasad, with puri, or alongside tea as a nutritious snack.",
+    "nutrition_estimate": {
+      "calories": "235",
+      "protein_g": "12",
+      "carbohydrates_g": "36",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Vegan",
+      "High Protein",
+      "Prasad",
+      "Everyday"
+    ],
+    "image_prompt": "Ultra realistic food photography of Sookha Kala Chana, dark spiced black chickpeas in a pan, garnished with coriander and green chili, simple rustic Punjabi presentation",
+    "seo_keywords": [
+      "kala chana recipe",
+      "black chickpea dry curry",
+      "punjabi chana recipe",
+      "sookha chana prasad"
+    ],
+    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Meetha Chawal Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/meetha-chawal",
+    "dish_name": "Meetha Chawal",
+    "state": "Punjab",
+    "category": "Rice Preparations",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 40,
+    "servings": 4,
+    "short_description": "Meetha Chawal \u2014 sweet saffron rice \u2014 is a Punjabi festival rice preparation made for special occasions and religious gatherings. Fragrant basmati cooked with saffron, ghee, whole spices and sugar, garnished with fried nuts and raisins.",
+    "ingredients": [
+      {
+        "name": "Basmati rice",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Saffron",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cardamom",
+        "quantity": "4",
+        "unit": "pods"
+      },
+      {
+        "name": "Cloves",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Almonds",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cashews",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Raisins",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Wash and soak basmati rice for 20 minutes.",
+      "Heat ghee and fry nuts and raisins. Remove.",
+      "Fry whole spices in remaining ghee.",
+      "Add drained rice and fry 2 minutes.",
+      "Add water, sugar and saffron soaked in warm water.",
+      "Bring to boil, cover and cook on very low heat for 18 minutes.",
+      "Fluff and garnish with fried nuts."
+    ],
+    "chef_notes": "The saffron must be soaked in warm water or milk to release its full color and aroma. Adding sugar with water ensures even distribution.",
+    "serving_suggestions": "Serve at Punjabi festivals, religious occasions or as a sweet side.",
+    "nutrition_estimate": {
+      "calories": "375",
+      "protein_g": "5",
+      "carbohydrates_g": "64",
+      "fat_g": "10"
+    },
+    "tags": [
+      "Vegetarian",
+      "Festival Food",
+      "Sweet Rice",
+      "Saffron"
+    ],
+    "image_prompt": "Ultra realistic food photography of Meetha Chawal saffron rice in a brass thali, golden yellow fragrant rice, fried almonds cashews and raisins garnish, festive Punjabi setting",
+    "seo_keywords": [
+      "meetha chawal recipe",
+      "saffron sweet rice punjab",
+      "zarda rice punjabi",
+      "festival rice recipe punjab"
+    ],
+    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Aloo Kulcha Salad Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/lahori-salad",
+    "dish_name": "Lahori Salad",
+    "state": "Punjab",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 15,
+    "servings": 4,
+    "short_description": "Lahori Salad is a robust, generously seasoned salad from the culinary tradition of undivided Punjab \u2014 sliced tomatoes, cucumbers, onions, radish and green chilies dressed with chaat masala, lemon and raw mango powder. Bold flavors befitting Punjabi cuisine.",
+    "ingredients": [
+      {
+        "name": "Tomatoes",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Cucumber",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Red onion",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "White radish",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Chaat masala",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Amchur",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Black salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Slice all vegetables into rounds or chunks.",
+      "Arrange on a serving plate.",
+      "Sprinkle chaat masala, amchur and black salt.",
+      "Squeeze lemon juice over everything.",
+      "Top with coriander and green chili.",
+      "Serve immediately."
+    ],
+    "chef_notes": "Lahori salad is presented with vegetables in larger pieces than kachumber \u2014 it's meant to be eaten alongside the main meal, not stirred in. The triple-sour combination of lemon, amchur and black salt is its signature.",
+    "serving_suggestions": "Serve alongside any Punjabi meat or vegetarian main course.",
+    "nutrition_estimate": {
+      "calories": "50",
+      "protein_g": "2",
+      "carbohydrates_g": "10",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Vegan",
+      "Refreshing",
+      "Tangy",
+      "Traditional"
+    ],
+    "image_prompt": "Ultra realistic food photography of Lahori Salad, colorful sliced vegetables on a white plate, chaat masala dusted, lemon wedge, fresh coriander, vibrant food photography",
+    "seo_keywords": [
+      "lahori salad recipe",
+      "punjabi salad",
+      "north indian salad recipe",
+      "chaat masala vegetable salad"
+    ],
+    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "seo_title": "Authentic Punjabi Dhaba Paneer Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/punjab/dhaba-paneer",
+    "dish_name": "Dhaba Style Paneer",
+    "state": "Punjab",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 25,
+    "total_time_minutes": 40,
+    "servings": 4,
+    "short_description": "Dhaba Style Paneer is the bold, rustic paneer curry of Punjab's roadside eateries \u2014 coarser, more aggressively spiced and more deeply flavored than restaurant versions. Cooked in mustard oil with whole spices and a robust onion-tomato base, it is unforgettable.",
+    "ingredients": [
+      {
+        "name": "Paneer",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Mustard oil",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Onion",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Tomato",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Ginger-garlic paste",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Coriander powder",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Red chili powder",
+        "quantity": "1.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Garam masala",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Kasuri methi",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Heat mustard oil to smoking point. Cool slightly.",
+      "Add whole spices and onion. Fry until golden.",
+      "Add ginger-garlic paste. Fry until raw smell goes.",
+      "Add tomatoes and all dry spices. Cook until oil separates.",
+      "Add paneer cubes cut into large pieces.",
+      "Toss well and add 150ml water.",
+      "Simmer 10 minutes.",
+      "Crush kasuri methi and add. Serve."
+    ],
+    "chef_notes": "Mustard oil is what makes dhaba paneer taste different from restaurant paneer \u2014 the pungent, slightly bitter oil adds a characteristic Punjabi intensity.",
+    "serving_suggestions": "Serve with laccha paratha, tandoori roti or steamed rice.",
+    "nutrition_estimate": {
+      "calories": "340",
+      "protein_g": "18",
+      "carbohydrates_g": "10",
+      "fat_g": "26"
+    },
+    "tags": [
+      "Vegetarian",
+      "Dhaba Style",
+      "Bold",
+      "Rustic"
+    ],
+    "image_prompt": "Ultra realistic food photography of Dhaba Style Paneer, bold rustic paneer curry in a karahi, dark spiced gravy, served on a roadside dhaba table with laccha paratha",
+    "seo_keywords": [
+      "dhaba paneer recipe",
+      "punjabi dhaba style paneer",
+      "roadside paneer curry",
+      "mustard oil paneer recipe"
+    ],
+    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+  }
+];
+
 const chips = ["Chicken + lemon + garlic", "Pasta in 20 mins", "Vegan dessert ideas", "Leftover rice recipes"];
 const welcome = { role: "ai", content: <><h4>👋 Hello, I'm FusionChef AI!</h4>Tell me what ingredients you have, a cuisine you're craving, or any dietary needs — I'll craft a recipe just for you.</> };
 
@@ -8724,6 +14660,11 @@ export default function FusionChefAI() {
   const [recipeModal, setRecipeModal] = useState(null);
   const [indianPage, setIndianPage] = useState(false);
   const [maharashtraPage, setMaharashtraPage] = useState(false);
+  const [punjabPage, setPunjabPage] = useState(false);
+  const [punjabCategory, setPunjabCategory] = useState("All");
+  const [punjabSearch, setPunjabSearch] = useState("");
+  const [punjabModal, setPunjabModal] = useState(null);
+  const [punjabGuidePage, setPunjabGuidePage] = useState(false);
   const [maharashtraGuidePage, setMaharashtraGuidePage] = useState(false);
   const [maharashtraCategory, setMaharashtraCategory] = useState("All");
   const [maharashtraSearch, setMaharashtraSearch] = useState("");
@@ -8941,7 +14882,7 @@ export default function FusionChefAI() {
           <div className="full-page-content">
             {[
               { continent: "🌏 Asian Cuisines", cuisines: [
-                { name: "🇮🇳 Indian", desc: "biryani, butter chicken, dosa", img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80", available: "indian", states: ["Maharashtra"] },
+                { name: "🇮🇳 Indian", desc: "biryani, butter chicken, dosa", img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80", available: "indian", states: ["Maharashtra", "Punjab"] },
                 { name: "🇯🇵 Japanese", desc: "sushi, ramen, tempura", img: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80" },
                 { name: "🇨🇳 Chinese", desc: "dim sum, Peking duck, stir-fries", img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80" },
                 { name: "🇹🇭 Thai", desc: "pad thai, green curry", img: "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=400&q=80" },
@@ -9002,7 +14943,7 @@ export default function FusionChefAI() {
                         {c.states && c.states.length > 0 && (
                           <div style={{marginTop:"0.4rem"}}>
                             {c.states.map(s => (
-                              <span key={s} onClick={e => { e.stopPropagation(); setCuisineExplorer(false); setMaharashtraPage(true); }} style={{display:"inline-block",background:"rgba(232,98,26,0.15)",color:"var(--saffron)",fontSize:"0.68rem",padding:"0.2rem 0.6rem",borderRadius:"10px",marginRight:"0.3rem",cursor:"pointer",fontWeight:600}}>📍 {s}</span>
+                              <span key={s} onClick={e => { e.stopPropagation(); setCuisineExplorer(false); if(s==="Maharashtra") setMaharashtraPage(true); else if(s==="Punjab") setPunjabPage(true); window.scrollTo({top:0,behavior:"smooth"}); }} style={{display:"inline-block",background:"rgba(232,98,26,0.15)",color:"var(--saffron)",fontSize:"0.68rem",padding:"0.2rem 0.6rem",borderRadius:"10px",marginRight:"0.3rem",cursor:"pointer",fontWeight:600}}>📍 {s}</span>
                             ))}
                           </div>
                         )}
@@ -9057,7 +14998,7 @@ export default function FusionChefAI() {
               </div>
             </div>
             {(() => {
-              const allRecipes = [...indianCuisineData, ...maharashtraCuisineData];
+              const allRecipes = [...indianCuisineData, ...maharashtraCuisineData, ...punjabCuisineData];
               const filtered = allRecipes.filter(d => {
                 const matchCat = recipeDBCategory === "All" || d.category === recipeDBCategory;
                 const matchDiff = recipeDBDifficulty === "All" || d.difficulty_level === recipeDBDifficulty;
@@ -9078,7 +15019,7 @@ export default function FusionChefAI() {
                   ) : (
                     <div className="rdb-grid">
                       {filtered.map((dish, i) => (
-                        <div key={i} className="rdb-card" onClick={() => { setRecipeDB(false); if(dish.state === "Maharashtra") { setMaharashtraModal(dish); setMaharashtraPage(true); } else { setIndianModal(dish); setIndianPage(true); } }}>
+                        <div key={i} className="rdb-card" onClick={() => { setRecipeDB(false); if(dish.state === "Maharashtra") { setMaharashtraModal(dish); setMaharashtraPage(true); } else if(dish.state === "Punjab") { setPunjabModal(dish); setPunjabPage(true); } else { setIndianModal(dish); setIndianPage(true); } window.scrollTo({top:0,behavior:"smooth"}); }}>
                           <div className="rdb-card-img" style={{padding:0,overflow:"hidden"}}>
                             {dish.img ? <img src={dish.img} alt={dish.dish_name} style={{width:"100%",height:"100%",objectFit:"cover"}} /> : <span>{emojis[dish.category] || "🍽"}</span>}
                           </div>
@@ -9108,6 +15049,224 @@ export default function FusionChefAI() {
         </div>
       )}
 
+
+
+      {/* PUNJAB CUISINE PAGE */}
+      {punjabPage && (
+        <div className="indian-page">
+          <div className="indian-header">
+            <button className="indian-back" onClick={() => setPunjabPage(false)}>← Back</button>
+            <button onClick={() => { setPunjabGuidePage(true); setPunjabPage(false); window.scrollTo({top:0,behavior:"smooth"}); }} style={{background:"rgba(74,124,89,0.15)",border:"1px solid #4A7C59",color:"#4A7C59",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button>
+            <h1>🌾 Punjab <em>Cuisine</em></h1>
+            <input className="indian-search" placeholder="Search dishes..." value={punjabSearch} onChange={e => setPunjabSearch(e.target.value)} />
+          </div>
+          <div className="indian-content">
+            {(() => {
+              const filtered = punjabCuisineData.filter(d => {
+                const matchCat = punjabCategory === "All" || d.category === punjabCategory;
+                const matchSearch = !punjabSearch || d.dish_name.toLowerCase().includes(punjabSearch.toLowerCase()) || d.tags.some(t => t.toLowerCase().includes(punjabSearch.toLowerCase()));
+                return matchCat && matchSearch;
+              });
+              const emojis = {"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Tea":"🍵","Coffee":"☕","Salads":"🥗","Sides":"🫙"};
+              const gradients = {"Appetizers":"#E8621A, #C9922A","Soups":"#4A7C59, #2E7D32","Main Courses":"#C0392B, #E8621A","Breads":"#C9922A, #8B4513","Rice Preparations":"#4A7C59, #C9922A","Desserts":"#9B59B6, #E8621A","Tea":"#1a6b3c, #2E7D32","Coffee":"#4a2c0a, #8B4513","Salads":"#2E7D32, #4A7C59","Sides":"#C9922A, #E8621A"};
+              return (
+                <>
+                  <div className="indian-cats">
+                    {["All","Soups","Appetizers","Salads","Main Courses","Breads","Rice Preparations","Desserts","Tea","Coffee","Sides"].map(cat => (
+                      <button key={cat} className={`cat-pill${punjabCategory === cat ? " active" : ""}`} onClick={() => setPunjabCategory(cat)}>{cat}</button>
+                    ))}
+                  </div>
+                  {filtered.length === 0 ? (
+                    <div className="indian-empty">🔍 No dishes found. Try a different search!</div>
+                  ) : (
+                    <div className="indian-grid">
+                      {filtered.map((dish, i) => (
+                        <div key={i} className="indian-card" onClick={() => setPunjabModal(dish)}>
+                          <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
+                            {dish.img ? (
+                              <img src={dish.img} alt={dish.dish_name} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}}
+                                onError={e => { e.target.style.display="none"; e.target.nextSibling.style.display="flex"; }} />
+                            ) : null}
+                            <div style={{display:dish.img?"none":"flex",width:"100%",height:"100%",alignItems:"center",justifyContent:"center",flexDirection:"column",background:`linear-gradient(135deg, ${gradients[dish.category]||"#4A7C59, #2E7D32"})`}}>
+                              <span style={{fontSize:"2.5rem"}}>{emojis[dish.category]||"🍽"}</span>
+                              <span style={{fontSize:"0.65rem",color:"white",marginTop:"0.3rem",textAlign:"center",padding:"0 0.5rem",fontWeight:600}}>{dish.dish_name}</span>
+                            </div>
+                          </div>
+                          <div className="indian-card-body">
+                            <div className="indian-cat-badge">{dish.category}</div>
+                            <h3>{dish.dish_name}</h3>
+                            <p style={{fontSize:"0.78rem",color:"var(--text-muted)",marginTop:"0.3rem",lineHeight:"1.4"}}>{dish.short_description ? dish.short_description.substring(0,80)+"..." : ""}</p>
+                            <div className="indian-card-meta">
+                              <span>⏱ {dish.prep_time_minutes + dish.cook_time_minutes} min</span>
+                              <span className={`diff-badge diff-${dish.difficulty_level.toLowerCase()}`}>{dish.difficulty_level}</span>
+                            </div>
+                            <div style={{marginTop:"0.5rem"}}>
+                              {dish.tags.slice(0,2).map((t,j) => <span key={j} className="diet-tag">{t}</span>)}
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </>
+              );
+            })()}
+          </div>
+
+          {/* PUNJAB DISH MODAL */}
+          {punjabModal && (
+            <div className="modal-overlay" onClick={() => setPunjabModal(null)}>
+              <div className="modal-wrapper" onClick={e => e.stopPropagation()}>
+                <button className="modal-close" onClick={() => setPunjabModal(null)}>✕</button>
+                <div className="modal">
+                  <div style={{height:"260px",overflow:"hidden",position:"relative",background:"#f5f0ea"}}>
+                    {punjabModal.img ? (
+                      <img src={punjabModal.img} alt={punjabModal.dish_name} style={{width:"100%",height:"100%",objectFit:"cover"}}
+                        onError={e => { e.target.style.display="none"; e.target.nextSibling.style.display="flex"; }} />
+                    ) : null}
+                    <div style={{display:"none",background:"linear-gradient(135deg,#4A7C59,#2E7D32)",height:"260px",alignItems:"center",justifyContent:"center",flexDirection:"column",gap:"0.5rem"}}>
+                      <span style={{fontSize:"5rem"}}>{{"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Tea":"🍵","Coffee":"☕","Salads":"🥗","Sides":"🫙"}[punjabModal.category]||"🍽"}</span>
+                      <span style={{color:"white",fontWeight:700,fontSize:"1rem"}}>{punjabModal.dish_name}</span>
+                    </div>
+                  </div>
+                  <div className="modal-body">
+                    <div className="indian-cat-badge">{punjabModal.category}</div>
+                    <h2>{punjabModal.dish_name}</h2>
+                    <p style={{fontSize:"0.88rem",color:"var(--text-muted)",lineHeight:"1.7",marginBottom:"1rem"}}>{punjabModal.short_description}</p>
+                    <div className="modal-meta">
+                      <span>⏱ Prep: {punjabModal.prep_time_minutes} min</span>
+                      <span>🔥 Cook: {punjabModal.cook_time_minutes} min</span>
+                      <span className={`diff-badge diff-${punjabModal.difficulty_level.toLowerCase()}`}>{punjabModal.difficulty_level}</span>
+                    </div>
+                    <div style={{marginTop:"0.6rem"}}>
+                      {punjabModal.tags.map((t,i) => <span key={i} className="diet-tag">{t}</span>)}
+                    </div>
+                    <div className="modal-section-title">Ingredients</div>
+                    <ul className="modal-ingredients">
+                      {punjabModal.ingredients.map((ing,i) => <li key={i}>{ing.quantity} {ing.unit} {ing.name}</li>)}
+                    </ul>
+                    <div className="modal-section-title">Instructions</div>
+                    <ol className="indian-modal-steps">
+                      {punjabModal.preparation_steps.map((step,i) => <li key={i}>{step}</li>)}
+                    </ol>
+                    {punjabModal.chef_notes && (<><div className="modal-section-title">👨‍🍳 Chef Notes</div><p style={{fontSize:"0.88rem",color:"var(--text-muted)",lineHeight:"1.7",background:"var(--cream)",padding:"0.8rem",borderRadius:"8px"}}>{punjabModal.chef_notes}</p></>)}
+                    {punjabModal.serving_suggestions && (<><div className="modal-section-title">🍽 Serving Suggestions</div><p style={{fontSize:"0.88rem",color:"var(--text-muted)",lineHeight:"1.7"}}>{punjabModal.serving_suggestions}</p></>)}
+                    {punjabModal.nutrition_estimate && (
+                      <><div className="modal-section-title">Nutrition Estimate</div>
+                      <div className="nutrition-grid">
+                        {Object.entries(punjabModal.nutrition_estimate).map(([k,v]) => (
+                          <div key={k} className="nutrition-box"><strong>{v}</strong><span>{k.replace(/_/g," ")}</span></div>
+                        ))}
+                      </div></>
+                    )}
+                    <div style={{marginTop:"1rem"}}>
+                      <div className="modal-section-title">🔍 SEO Keywords</div>
+                      <div>{punjabModal.seo_keywords && punjabModal.seo_keywords.map((k,i) => <span key={i} className="flavor-tag">{k}</span>)}</div>
+                    </div>
+                    <div style={{marginTop:"1.2rem"}}>
+                      <button className="btn-ask-chef" onClick={() => { setPunjabModal(null); setPunjabPage(false); setTimeout(() => scrollToSection("ai-chef"), 300); }}>
+                        ✨ Ask AI Chef about this dish
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* PUNJAB CUISINE GUIDE PAGE */}
+      {punjabGuidePage && (
+        <div style={{minHeight:"100vh",background:"#FFF8EE",fontFamily:"'DM Sans', sans-serif"}}>
+          <div style={{position:"relative",padding:"5rem 2rem 4rem",textAlign:"center",overflow:"hidden",minHeight:"420px",display:"flex",alignItems:"center",justifyContent:"center"}}>
+            <img src="/images/india/punjab/punjab-cuisine-banner.jpg" alt="Traditional Punjabi cuisine spread with butter chicken, sarson da saag, makki di roti and lassi"
+              style={{position:"absolute",top:0,left:0,width:"100%",height:"100%",objectFit:"cover",zIndex:0}}
+              onError={e => e.target.style.display="none"} />
+            <div style={{position:"absolute",top:0,left:0,right:0,bottom:0,background:"linear-gradient(135deg,rgba(28,28,28,0.85) 0%,rgba(0,40,0,0.75) 50%,rgba(74,124,89,0.6) 100%)",zIndex:1}}></div>
+            <div style={{position:"relative",zIndex:2,textAlign:"center"}}>
+              <button onClick={() => { setPunjabGuidePage(false); setPunjabPage(true); window.scrollTo({top:0,behavior:"smooth"}); }} style={{position:"absolute",top:"-3rem",left:0,background:"rgba(255,255,255,0.15)",border:"1px solid rgba(255,255,255,0.3)",color:"white",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.85rem"}}>← Back</button>
+              <span style={{background:"rgba(74,124,89,0.4)",color:"#90EE90",padding:"0.3rem 1rem",borderRadius:"20px",fontSize:"0.78rem",fontWeight:700,letterSpacing:"0.1em",textTransform:"uppercase"}}>Culinary Guide</span>
+              <h1 style={{fontFamily:"'Playfair Display',serif",fontSize:"clamp(2.5rem,6vw,4.5rem)",color:"white",margin:"1rem 0 0.5rem",lineHeight:1.1}}>Punjabi <em style={{color:"#90EE90"}}>Cuisine</em></h1>
+              <p style={{color:"rgba(255,255,255,0.7)",fontSize:"1.1rem",maxWidth:"600px",margin:"0 auto",lineHeight:1.7}}>Where Every Meal Tells a Story of Abundance, Spirit & Fire</p>
+            </div>
+          </div>
+
+          <div style={{maxWidth:"900px",margin:"0 auto",padding:"3rem 1.5rem"}}>
+            <section style={{marginBottom:"3rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1rem"}}>
+                <span style={{fontSize:"1.8rem"}}>🌾</span>
+                <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"2rem",color:"#1C1C1C",margin:0}}>Introduction</h2>
+              </div>
+              <div style={{width:"60px",height:"3px",background:"linear-gradient(90deg,#4A7C59,#2E7D32)",borderRadius:"2px",marginBottom:"1.5rem"}}></div>
+              <p style={{fontSize:"1.05rem",lineHeight:1.9,color:"#444",background:"white",padding:"1.8rem",borderRadius:"16px",borderLeft:"4px solid #4A7C59",boxShadow:"0 4px 20px rgba(0,0,0,0.06)"}}>
+                Punjabi cuisine is one of the world's most recognized and celebrated regional food traditions — a bold, abundant and deeply satisfying cooking style born in the fertile plains of the Punjab, the granary of India. Shaped by five rivers, the agricultural heritage of Jat farming communities, the spiritual generosity of the Sikh faith and the historical crossroads of the Silk Road, Punjabi food is generous in spirit, big in flavor and utterly honest in character. From the smoky grandeur of Tandoori Chicken to the winter soul food of Sarson Da Saag, from the street-food genius of Chole Bhature to the royal indulgence of Murgh Makhani — Punjabi cuisine speaks a universal language of nourishment and celebration that has crossed every ocean to become India's most globally beloved regional food.
+              </p>
+            </section>
+
+            <section style={{marginBottom:"3rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1rem"}}>
+                <span style={{fontSize:"1.8rem"}}>🗺️</span>
+                <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"2rem",color:"#1C1C1C",margin:0}}>Regional Highlights</h2>
+              </div>
+              <div style={{width:"60px",height:"3px",background:"linear-gradient(90deg,#4A7C59,#2E7D32)",borderRadius:"2px",marginBottom:"1.5rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(380px,1fr))",gap:"1.2rem"}}>
+                {[
+                  {region:"🏛️ Amritsar",color:"#8a6a1a",bg:"#f8f2e8",desc:"The spiritual and culinary heart of Punjab. Home to the legendary Amritsari Machhi, Kulcha-Chole and Langar Di Dal of the Golden Temple — dishes of extraordinary flavor and spiritual significance."},
+                  {region:"🌾 Rural Punjab",color:"#4A7C59",bg:"#e8f5ed",desc:"Sarson Da Saag with Makki Di Roti, Maah Ki Dal, Pinni and Atte Ka Halwa — the honest, sustaining food of farmers that forms the soul of Punjabi cooking."},
+                  {region:"🏙️ Ludhiana / Chandigarh",color:"#1a5c8a",bg:"#e8f0f8",desc:"Urban Punjab's vibrant food scene brings Dhaba culture to the city — bold Rajma Chawal, Kadhi Pakora, Butter Naan and the legendary Punjabi breakfast of Aloo Paratha."},
+                  {region:"🌉 Pindi / Lahori Heritage",color:"#8a1a1a",bg:"#f8e8e8",desc:"The culinary legacy of undivided Punjab — Pindi Chole, Lahori Salad and Gol Gappe carry the flavors of a shared cultural heritage that transcends borders."},
+                ].map((r,i) => (
+                  <div key={i} style={{background:r.bg,padding:"1.5rem",borderRadius:"16px",borderLeft:`4px solid ${r.color}`}}>
+                    <h3 style={{margin:"0 0 0.6rem",color:r.color,fontSize:"1.1rem",fontWeight:700}}>{r.region}</h3>
+                    <p style={{margin:0,fontSize:"0.88rem",color:"#444",lineHeight:1.8}}>{r.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section style={{marginBottom:"3rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1rem"}}>
+                <span style={{fontSize:"1.8rem"}}>📖</span>
+                <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"2rem",color:"#1C1C1C",margin:0}}>Recipe Categories</h2>
+              </div>
+              <div style={{width:"60px",height:"3px",background:"linear-gradient(90deg,#4A7C59,#2E7D32)",borderRadius:"2px",marginBottom:"1.5rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(260px,1fr))",gap:"1rem"}}>
+                {[
+                  {emoji:"🍜",cat:"Soups",desc:"From the sacred Langar Di Dal to the smoky Tamatar Shorba — warming, nourishing Punjabi broths."},
+                  {emoji:"🥟",cat:"Appetizers",desc:"Tandoori Chicken, Amritsari Machhi, Gol Gappe — Punjab's bold, theatrical starters."},
+                  {emoji:"🥗",cat:"Salads",desc:"Crispy Kachumber, tangy Pyaz Sirka and protein-rich Chana Chaat."},
+                  {emoji:"🍛",cat:"Main Courses",desc:"Butter Chicken, Sarson Da Saag, Chole Bhature — dishes that define Indian cuisine globally."},
+                  {emoji:"🫓",cat:"Breads",desc:"Makki Di Roti, Butter Naan, Amritsari Kulcha — legendary breads from the tandoor and tawa."},
+                  {emoji:"🍚",cat:"Rice Preparations",desc:"Jeera Rice, Punjabi Biryani and fragrant Meetha Chawal for every occasion."},
+                  {emoji:"🍮",cat:"Desserts",desc:"Gajar Ka Halwa, Gulab Jamun, Kulfi — Punjab's legendary festival sweets."},
+                  {emoji:"🍵",cat:"Tea",desc:"Masala Chai, Noon Chai, Tandoori Chai — the theatrical teas of Punjab."},
+                  {emoji:"☕",cat:"Coffee",desc:"Lassi, Thandai and Amritsari Coffee — Punjab's rich drinking culture."},
+                  {emoji:"🫙",cat:"Sides",desc:"Pudina Chutney, Imli Chutney, Boondi Raita — essential Punjabi condiments."},
+                ].map((c,i) => (
+                  <div key={i} style={{background:"white",padding:"1.3rem",borderRadius:"12px",boxShadow:"0 4px 15px rgba(0,0,0,0.06)",cursor:"pointer",transition:"transform 0.2s"}}
+                    onMouseEnter={e=>e.currentTarget.style.transform="translateY(-3px)"}
+                    onMouseLeave={e=>e.currentTarget.style.transform="translateY(0)"}
+                    onClick={() => { setPunjabGuidePage(false); setPunjabPage(true); setPunjabCategory(c.cat); window.scrollTo({top:0,behavior:"smooth"}); }}>
+                    <div style={{fontSize:"2rem",marginBottom:"0.5rem"}}>{c.emoji}</div>
+                    <h4 style={{margin:"0 0 0.4rem",color:"#4A7C59",fontSize:"1rem",fontWeight:700}}>{c.cat}</h4>
+                    <p style={{margin:0,fontSize:"0.82rem",color:"#666",lineHeight:1.6}}>{c.desc}</p>
+                    <div style={{marginTop:"0.8rem",fontSize:"0.75rem",color:"#4A7C59",fontWeight:600}}>Explore recipes →</div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <div style={{background:"linear-gradient(135deg,#4A7C59,#2E7D32)",borderRadius:"20px",padding:"2.5rem",textAlign:"center",color:"white"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.8rem",margin:"0 0 0.8rem"}}>Ready to Cook Punjabi? 🌾</h3>
+              <p style={{margin:"0 0 1.5rem",opacity:0.9,fontSize:"1rem"}}>Explore 66 authentic recipes with step-by-step instructions, chef notes and nutrition information.</p>
+              <button onClick={() => { setPunjabGuidePage(false); setPunjabPage(true); window.scrollTo({top:0,behavior:"smooth"}); }} style={{background:"white",color:"#4A7C59",border:"none",padding:"0.9rem 2.5rem",borderRadius:"30px",fontSize:"1rem",fontWeight:700,cursor:"pointer"}}>
+                Browse All Recipes →
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* MAHARASHTRA CUISINE GUIDE PAGE */}
       {maharashtraGuidePage && (
@@ -9417,7 +15576,8 @@ export default function FusionChefAI() {
           <div className="indian-content">
             <div style={{background:"rgba(232,98,26,0.08)",borderRadius:"12px",padding:"1rem 1.2rem",marginBottom:"1.5rem",display:"flex",alignItems:"center",gap:"1rem",flexWrap:"wrap"}}>
               <span style={{fontSize:"0.85rem",color:"var(--charcoal)",fontWeight:600}}>🗺️ Explore by State:</span>
-              <button onClick={() => { setIndianPage(false); setMaharashtraPage(true); }} style={{background:"var(--saffron)",color:"white",border:"none",borderRadius:"20px",padding:"0.4rem 1rem",fontSize:"0.8rem",fontWeight:600,cursor:"pointer"}}>🍊 Maharashtra</button>
+              <button onClick={() => { setIndianPage(false); setMaharashtraPage(true); window.scrollTo({top:0,behavior:"smooth"}); }} style={{background:"var(--saffron)",color:"white",border:"none",borderRadius:"20px",padding:"0.4rem 1rem",fontSize:"0.8rem",fontWeight:600,cursor:"pointer"}}>🍊 Maharashtra</button>
+              <button onClick={() => { setIndianPage(false); setPunjabPage(true); window.scrollTo({top:0,behavior:"smooth"}); }} style={{background:"#4A7C59",color:"white",border:"none",borderRadius:"20px",padding:"0.4rem 1rem",fontSize:"0.8rem",fontWeight:600,cursor:"pointer"}}>🌾 Punjab</button>
               <span style={{fontSize:"0.75rem",color:"var(--text-muted)"}}>More states coming soon...</span>
             </div>
             <div className="indian-cats">
