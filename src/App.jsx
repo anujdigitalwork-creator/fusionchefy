@@ -5402,7 +5402,8 @@ const maharashtraCuisineData = [
       "saffron yogurt dessert",
       "shrikhand puri recipe",
       "indian festival dessert"
-    ]
+    ],
+    "img": "/images/india/maharashtra/desserts/shrikhand-maharashtra-dessert.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Modak Recipe | FusionChef AI",
@@ -5484,7 +5485,8 @@ const maharashtraCuisineData = [
       "ganesh chaturthi modak",
       "steamed rice dumpling india",
       "maharashtrian festival sweet"
-    ]
+    ],
+    "img": "/images/india/maharashtra/desserts/ukadiche-modak-maharashtra-dessert.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Puranachi Poli Kheer Recipe | FusionChef AI",
@@ -5569,7 +5571,8 @@ const maharashtraCuisineData = [
       "thickened sweet milk india",
       "rabri maharashtra",
       "indian festival dessert milk"
-    ]
+    ],
+    "img": "/images/india/maharashtra/desserts/basundi-maharashtra-dessert.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Gulachi Poli Recipe | FusionChef AI",
@@ -5644,7 +5647,8 @@ const maharashtraCuisineData = [
       "maharashtrian sweet poli",
       "til jaggery poli",
       "quick indian sweet flatbread"
-    ]
+    ],
+    "img": "/images/india/maharashtra/desserts/gulachi-poli-maharashtra-dessert.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Kheer Recipe | FusionChef AI",
@@ -5730,7 +5734,8 @@ const maharashtraCuisineData = [
       "maharashtrian fasting dessert",
       "sabudana sweet",
       "upvas kheer recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/desserts/sabudana-kheer-maharashtra-dessert.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Masala Chai Recipe | FusionChef AI",
@@ -5810,7 +5815,8 @@ const maharashtraCuisineData = [
       "indian spiced tea",
       "maharashtrian chai",
       "street chai india"
-    ]
+    ],
+    "img": "/images/india/maharashtra/tea/cutting-chai-maharashtra-tea.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Kolhapuri Masala Tea Recipe | FusionChef AI",
@@ -5894,7 +5900,8 @@ const maharashtraCuisineData = [
       "onion tea india",
       "unusual indian tea recipes",
       "kolhapur street food"
-    ]
+    ],
+    "img": "/images/india/maharashtra/tea/kolhapuri-kanda-chai-maharashtra-tea.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Ginger Lemon Tea Recipe | FusionChef AI",
@@ -5968,7 +5975,8 @@ const maharashtraCuisineData = [
       "maharashtrian tea recipe",
       "healthy indian tea",
       "black tea with lemon ginger"
-    ]
+    ],
+    "img": "/images/india/maharashtra/tea/adrak-lemon-chai-maharashtra-tea.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Tulsi Ginger Tea Recipe | FusionChef AI",
@@ -6044,7 +6052,8 @@ const maharashtraCuisineData = [
       "ayurvedic tea maharashtra",
       "immunity tea india",
       "herbal tea indian recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/tea/tulsi-adrak-chai-maharashtra-tea.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Spiced Milk Tea Recipe | FusionChef AI",
@@ -6119,7 +6128,8 @@ const maharashtraCuisineData = [
       "festive indian tea",
       "maharashtrian spiced milk",
       "cardamom saffron tea"
-    ]
+    ],
+    "img": "/images/india/maharashtra/tea/kesar-doodh-chai-maharashtra-tea.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Masala Kadha Tea Recipe | FusionChef AI",
@@ -6209,7 +6219,8 @@ const maharashtraCuisineData = [
       "maharashtrian kadha recipe",
       "ayurvedic spice decoction",
       "cold remedy india"
-    ]
+    ],
+    "img": "/images/india/maharashtra/tea/masala-kadha-maharashtra-tea.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Kokum Sharbat Recipe | FusionChef AI",
@@ -6290,7 +6301,8 @@ const maharashtraCuisineData = [
       "maharashtrian summer drink",
       "konkan kokum juice",
       "digestive indian drink"
-    ]
+    ],
+    "img": "/images/india/maharashtra/tea/kokum-sharbat-maharashtra-tea.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Filter Coffee Recipe | FusionChef AI",
@@ -8126,7 +8138,8 @@ const maharashtraCuisineData = [
       "palm fruit milk sweet",
       "maharashtrian summer dessert",
       "coastal maharashtra recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/desserts/tadgola-kheer-maharashtra-dessert.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Narali Bhaat Recipe | FusionChef AI",
