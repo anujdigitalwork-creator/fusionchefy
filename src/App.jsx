@@ -8804,8 +8804,7 @@ const punjabCuisineData = [
       "punjabi dal makhani",
       "black dal recipe",
       "restaurant style dal makhani"
-    ],
-    "img": "https://images.pexels.com/photos/4331489/pexels-photo-4331489.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Sarson Ka Saag Recipe | FusionChef AI",
@@ -8901,8 +8900,7 @@ const punjabCuisineData = [
       "punjabi saag",
       "mustard greens recipe",
       "sarson saag makki roti"
-    ],
-    "img": "https://images.pexels.com/photos/5410400/pexels-photo-5410400.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Butter Chicken Recipe | FusionChef AI",
@@ -9008,8 +9006,7 @@ const punjabCuisineData = [
       "murgh makhani recipe",
       "punjabi butter chicken",
       "restaurant style butter chicken"
-    ],
-    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Amritsari Fish Recipe | FusionChef AI",
@@ -9103,8 +9100,7 @@ const punjabCuisineData = [
       "punjabi fried fish",
       "amritsar fish fry",
       "crispy fish recipe india"
-    ],
-    "img": "https://images.pexels.com/photos/9609816/pexels-photo-9609816.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Tandoori Chicken Recipe | FusionChef AI",
@@ -9199,8 +9195,7 @@ const punjabCuisineData = [
       "punjabi tandoori",
       "clay oven chicken",
       "authentic tandoori chicken marinade"
-    ],
-    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Paneer Tikka Recipe | FusionChef AI",
@@ -9300,8 +9295,7 @@ const punjabCuisineData = [
       "punjabi paneer tikka",
       "grilled paneer recipe",
       "vegetarian tikka"
-    ],
-    "img": "https://images.pexels.com/photos/9609834/pexels-photo-9609834.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Chole Bhature Recipe | FusionChef AI",
@@ -9402,8 +9396,7 @@ const punjabCuisineData = [
       "punjabi chole bhature",
       "chickpea curry puri",
       "delhi chole bhature"
-    ],
-    "img": "https://images.pexels.com/photos/9609834/pexels-photo-9609834.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Rajma Chawal Recipe | FusionChef AI",
@@ -9499,8 +9492,7 @@ const punjabCuisineData = [
       "punjabi rajma recipe",
       "kidney bean curry rice",
       "rajma masala recipe"
-    ],
-    "img": "https://images.pexels.com/photos/4331489/pexels-photo-4331489.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Makki Di Roti Recipe | FusionChef AI",
@@ -9565,8 +9557,7 @@ const punjabCuisineData = [
       "cornmeal flatbread punjab",
       "maize roti recipe",
       "makki roti sarson saag"
-    ],
-    "img": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Butter Naan Recipe | FusionChef AI",
@@ -9651,8 +9642,7 @@ const punjabCuisineData = [
       "punjabi naan",
       "homemade naan bread",
       "tandoor naan recipe"
-    ],
-    "img": "https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Laccha Paratha Recipe | FusionChef AI",
@@ -9718,8 +9708,7 @@ const punjabCuisineData = [
       "layered paratha punjab",
       "flaky paratha recipe",
       "punjabi bread recipe"
-    ],
-    "img": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Aloo Paratha Recipe | FusionChef AI",
@@ -9810,8 +9799,7 @@ const punjabCuisineData = [
       "punjabi aloo paratha",
       "potato stuffed flatbread",
       "breakfast paratha recipe"
-    ],
-    "img": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Kulcha Recipe | FusionChef AI",
@@ -9907,8 +9895,7 @@ const punjabCuisineData = [
       "punjabi kulcha",
       "stuffed kulcha",
       "amritsar street food bread"
-    ],
-    "img": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Matar Paneer Recipe | FusionChef AI",
@@ -10009,8 +9996,7 @@ const punjabCuisineData = [
       "punjabi matar paneer",
       "peas paneer curry",
       "paneer recipe indian"
-    ],
-    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Palak Paneer Recipe | FusionChef AI",
@@ -10110,8 +10096,7 @@ const punjabCuisineData = [
       "punjabi palak paneer",
       "spinach paneer curry",
       "saag paneer recipe"
-    ],
-    "img": "https://images.pexels.com/photos/5410400/pexels-photo-5410400.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Kadhi Pakora Recipe | FusionChef AI",
@@ -10211,8 +10196,7 @@ const punjabCuisineData = [
       "punjabi kadhi recipe",
       "yogurt curry fritters",
       "kadhi chawal recipe"
-    ],
-    "img": "https://images.pexels.com/photos/4331489/pexels-photo-4331489.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Shahi Paneer Recipe | FusionChef AI",
@@ -10313,8 +10297,7 @@ const punjabCuisineData = [
       "royal paneer curry",
       "mughal paneer recipe",
       "creamy paneer dish punjab"
-    ],
-    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Lassi Recipe | FusionChef AI",
@@ -10393,8 +10376,7 @@ const punjabCuisineData = [
       "sweet lassi recipe",
       "yogurt drink india",
       "punjabi sweet lassi"
-    ],
-    "img": "https://images.pexels.com/photos/3407777/pexels-photo-3407777.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Mango Lassi Recipe | FusionChef AI",
@@ -10472,8 +10454,7 @@ const punjabCuisineData = [
       "aam lassi punjab",
       "mango yogurt drink",
       "alphonso mango lassi"
-    ],
-    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Nimbu Pani Recipe | FusionChef AI",
@@ -10557,8 +10538,7 @@ const punjabCuisineData = [
       "punjabi lemonade",
       "nimbu pani recipe",
       "spiced lemonade india"
-    ],
-    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Aam Panna Recipe | FusionChef AI",
@@ -10642,8 +10622,7 @@ const punjabCuisineData = [
       "raw mango drink punjab",
       "kacha aam panna",
       "cooling summer drink india"
-    ],
-    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Chaas Recipe | FusionChef AI",
@@ -10727,8 +10706,7 @@ const punjabCuisineData = [
       "punjabi buttermilk",
       "spiced chaas",
       "digestive drink india"
-    ],
-    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Jeera Rice Recipe | FusionChef AI",
@@ -10804,8 +10782,7 @@ const punjabCuisineData = [
       "punjabi cumin rice",
       "basmati rice recipe",
       "jeera pulao recipe"
-    ],
-    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Biryani Recipe | FusionChef AI",
@@ -10905,8 +10882,7 @@ const punjabCuisineData = [
       "north indian biryani",
       "dum biryani recipe",
       "chicken biryani punjab"
-    ],
-    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Kheer Recipe | FusionChef AI",
@@ -10991,8 +10967,7 @@ const punjabCuisineData = [
       "punjabi rice kheer",
       "rice pudding india",
       "festival kheer recipe"
-    ],
-    "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Gulab Jamun Recipe | FusionChef AI",
@@ -11083,8 +11058,7 @@ const punjabCuisineData = [
       "punjabi gulab jamun",
       "milk dumpling sweet",
       "festival sweet india"
-    ],
-    "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Gajar Ka Halwa Recipe | FusionChef AI",
@@ -11175,8 +11149,7 @@ const punjabCuisineData = [
       "carrot halwa punjab",
       "gajar halwa recipe",
       "indian carrot pudding winter"
-    ],
-    "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Pinni Recipe | FusionChef AI",
@@ -11261,8 +11234,7 @@ const punjabCuisineData = [
       "punjabi pinni sweet",
       "wheat jaggery balls india",
       "winter sweet punjab"
-    ],
-    "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Kulfi Recipe | FusionChef AI",
@@ -11348,8 +11320,7 @@ const punjabCuisineData = [
       "punjabi kulfi",
       "indian ice cream",
       "saffron kulfi recipe"
-    ],
-    "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Kaddu Ki Sabzi Recipe | FusionChef AI",
@@ -11434,8 +11405,7 @@ const punjabCuisineData = [
       "punjabi pumpkin curry",
       "sweet sour pumpkin india",
       "kaddu recipe north india"
-    ],
-    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Baingan Bharta Recipe | FusionChef AI",
@@ -11531,8 +11501,7 @@ const punjabCuisineData = [
       "punjabi eggplant recipe",
       "smoked brinjal north india",
       "roasted eggplant curry punjab"
-    ],
-    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Aloo Gobi Recipe | FusionChef AI",
@@ -11633,8 +11602,7 @@ const punjabCuisineData = [
       "punjabi aloo gobi",
       "potato cauliflower curry",
       "dry aloo gobi sabzi"
-    ],
-    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Chaat Recipe | FusionChef AI",
@@ -11729,8 +11697,7 @@ const punjabCuisineData = [
       "amritsari chaat",
       "punjabi potato chaat",
       "street food amritsar"
-    ],
-    "img": "https://images.pexels.com/photos/9609816/pexels-photo-9609816.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Gol Gappe Recipe | FusionChef AI",
@@ -11824,8 +11791,7 @@ const punjabCuisineData = [
       "pani puri punjab",
       "punjabi street food",
       "golgappa recipe"
-    ],
-    "img": "https://images.pexels.com/photos/9609816/pexels-photo-9609816.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Samosa Recipe | FusionChef AI",
@@ -11924,8 +11890,7 @@ const punjabCuisineData = [
       "aloo samosa recipe",
       "crispy samosa",
       "indian street food samosa"
-    ],
-    "img": "https://images.pexels.com/photos/6210747/pexels-photo-6210747.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Dahi Bhalle Recipe | FusionChef AI",
@@ -12026,8 +11991,7 @@ const punjabCuisineData = [
       "dahi vada punjabi",
       "lentil fritters yogurt",
       "punjabi chaat recipe"
-    ],
-    "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Kachumber Salad Recipe | FusionChef AI",
@@ -12116,8 +12080,7 @@ const punjabCuisineData = [
       "north indian salad",
       "cucumber tomato onion salad punjab",
       "kachumber salad recipe"
-    ],
-    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Mooli Salad Recipe | FusionChef AI",
@@ -12196,8 +12159,7 @@ const punjabCuisineData = [
       "radish raita punjab",
       "white radish yogurt",
       "winter raita recipe"
-    ],
-    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Onion Salad Recipe | FusionChef AI",
@@ -12271,8 +12233,7 @@ const punjabCuisineData = [
       "punjabi pickled onions",
       "dhaba onion salad",
       "vinegar onions india"
-    ],
-    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Chana Salad Recipe | FusionChef AI",
@@ -12360,8 +12321,7 @@ const punjabCuisineData = [
       "punjabi chickpea salad",
       "healthy chaat",
       "boiled chana salad"
-    ],
-    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Masala Chai Recipe | FusionChef AI",
@@ -12445,8 +12405,7 @@ const punjabCuisineData = [
       "north indian tea recipe",
       "strong masala chai",
       "dhaba chai recipe"
-    ],
-    "img": "https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Noon Chai Recipe | FusionChef AI",
@@ -12527,8 +12486,7 @@ const punjabCuisineData = [
       "pink tea punjab",
       "kashmiri chai recipe",
       "salted pink tea india"
-    ],
-    "img": "https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Kahwa Tea Recipe | FusionChef AI",
@@ -12613,8 +12571,7 @@ const punjabCuisineData = [
       "kashmiri green tea",
       "saffron tea recipe",
       "punjab noon chai kahwa"
-    ],
-    "img": "https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Tandoori Chai Recipe | FusionChef AI",
@@ -12693,8 +12650,7 @@ const punjabCuisineData = [
       "smoky clay pot tea",
       "kulhad chai punjab",
       "trending indian tea"
-    ],
-    "img": "https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Badam Doodh Recipe | FusionChef AI",
@@ -12769,8 +12725,7 @@ const punjabCuisineData = [
       "almond milk drink india",
       "punjabi almond milk",
       "saffron almond milk"
-    ],
-    "img": "https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Espresso Recipe | FusionChef AI",
@@ -12839,8 +12794,7 @@ const punjabCuisineData = [
       "amritsari doodh coffee",
       "milky indian coffee",
       "north india coffee"
-    ],
-    "img": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Iced Coffee Recipe | FusionChef AI",
@@ -12913,8 +12867,7 @@ const punjabCuisineData = [
       "north india cold coffee",
       "blended coffee india",
       "cold coffee recipe"
-    ],
-    "img": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Thandai Recipe | FusionChef AI",
@@ -13009,8 +12962,7 @@ const punjabCuisineData = [
       "holi drink punjab",
       "rose almond milk drink",
       "festive punjabi drink"
-    ],
-    "img": "https://images.pexels.com/photos/3407777/pexels-photo-3407777.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Papad Recipe | FusionChef AI",
@@ -13093,8 +13045,7 @@ const punjabCuisineData = [
       "punjabi papad appetizer",
       "crispy papad topping",
       "indian restaurant starter"
-    ],
-    "img": "https://images.pexels.com/photos/6210747/pexels-photo-6210747.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Mint Chutney Recipe | FusionChef AI",
@@ -13181,8 +13132,7 @@ const punjabCuisineData = [
       "punjabi mint chutney",
       "green chutney recipe",
       "tandoori chutney"
-    ],
-    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Imli Chutney Recipe | FusionChef AI",
@@ -13267,8 +13217,7 @@ const punjabCuisineData = [
       "tamarind date chutney punjab",
       "sweet chutney india",
       "chaat chutney recipe"
-    ],
-    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Raita Recipe | FusionChef AI",
@@ -13347,8 +13296,7 @@ const punjabCuisineData = [
       "punjabi raita",
       "yogurt condiment india",
       "boondi yogurt recipe"
-    ],
-    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Achaar Recipe | FusionChef AI",
@@ -13444,8 +13392,7 @@ const punjabCuisineData = [
       "mixed vegetable pickle india",
       "punjabi pickle recipe",
       "mustard oil achaar"
-    ],
-    "img": "https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Pindi Chole Recipe | FusionChef AI",
@@ -13541,8 +13488,7 @@ const punjabCuisineData = [
       "rawalpindi chole",
       "dry chickpea curry punjab",
       "pindi chane recipe"
-    ],
-    "img": "https://images.pexels.com/photos/9609834/pexels-photo-9609834.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Langar Dal Recipe | FusionChef AI",
@@ -13628,8 +13574,7 @@ const punjabCuisineData = [
       "golden temple dal",
       "amritsar langar food",
       "urad dal punjab simple"
-    ],
-    "img": "https://images.pexels.com/photos/7625056/pexels-photo-7625056.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Saag Soup Recipe | FusionChef AI",
@@ -13724,8 +13669,7 @@ const punjabCuisineData = [
       "punjabi spinach soup",
       "green soup india",
       "spinach soup starter"
-    ],
-    "img": "https://images.pexels.com/photos/6544367/pexels-photo-6544367.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Tomato Shorba Recipe | FusionChef AI",
@@ -13820,8 +13764,7 @@ const punjabCuisineData = [
       "punjabi tomato soup",
       "indian restaurant tomato shorba",
       "spiced tomato broth"
-    ],
-    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Maah Ki Dal Recipe | FusionChef AI",
@@ -13912,8 +13855,7 @@ const punjabCuisineData = [
       "white urad dal punjab",
       "punjabi dal recipe",
       "urad dal everyday"
-    ],
-    "img": "https://images.pexels.com/photos/4331489/pexels-photo-4331489.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Atte Ka Halwa Recipe | FusionChef AI",
@@ -13994,8 +13936,7 @@ const punjabCuisineData = [
       "wheat flour halwa punjab",
       "langar halwa",
       "punjabi halwa recipe"
-    ],
-    "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Gobhi Paratha Recipe | FusionChef AI",
@@ -14084,8 +14025,7 @@ const punjabCuisineData = [
       "cauliflower stuffed paratha",
       "punjabi gobi paratha",
       "winter breakfast punjab"
-    ],
-    "img": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Bhature Recipe | FusionChef AI",
@@ -14171,8 +14111,7 @@ const punjabCuisineData = [
       "punjabi bhature",
       "deep fried bread india",
       "chole bhature bread recipe"
-    ],
-    "img": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Matar Kulcha Recipe | FusionChef AI",
@@ -14266,8 +14205,7 @@ const punjabCuisineData = [
       "punjabi matar chaat",
       "white peas chaat",
       "delhi street food matar kulcha"
-    ],
-    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Sookha Kala Chana Recipe | FusionChef AI",
@@ -14357,8 +14295,7 @@ const punjabCuisineData = [
       "black chickpea dry curry",
       "punjabi chana recipe",
       "sookha chana prasad"
-    ],
-    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Meetha Chawal Recipe | FusionChef AI",
@@ -14448,8 +14385,7 @@ const punjabCuisineData = [
       "saffron sweet rice punjab",
       "zarda rice punjabi",
       "festival rice recipe punjab"
-    ],
-    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Aloo Kulcha Salad Recipe | FusionChef AI",
@@ -14543,8 +14479,7 @@ const punjabCuisineData = [
       "punjabi salad",
       "north indian salad recipe",
       "chaat masala vegetable salad"
-    ],
-    "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   },
   {
     "seo_title": "Authentic Punjabi Dhaba Paneer Recipe | FusionChef AI",
@@ -14640,8 +14575,7 @@ const punjabCuisineData = [
       "punjabi dhaba style paneer",
       "roadside paneer curry",
       "mustard oil paneer recipe"
-    ],
-    "img": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400"
+    ]
   }
 ];
 
