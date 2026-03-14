@@ -8724,6 +8724,7 @@ export default function FusionChefAI() {
   const [recipeModal, setRecipeModal] = useState(null);
   const [indianPage, setIndianPage] = useState(false);
   const [maharashtraPage, setMaharashtraPage] = useState(false);
+  const [maharashtraGuidePage, setMaharashtraGuidePage] = useState(false);
   const [maharashtraCategory, setMaharashtraCategory] = useState("All");
   const [maharashtraSearch, setMaharashtraSearch] = useState("");
   const [maharashtraModal, setMaharashtraModal] = useState(null);
@@ -9107,11 +9108,179 @@ export default function FusionChefAI() {
         </div>
       )}
 
+
+      {/* MAHARASHTRA CUISINE GUIDE PAGE */}
+      {maharashtraGuidePage && (
+        <div style={{minHeight:"100vh", background:"#FFF8EE", fontFamily:"'DM Sans', sans-serif"}}>
+          {/* Hero */}
+          <div style={{background:"linear-gradient(135deg, #1C1C1C 0%, #2d1a00 50%, #E8621A 100%)", padding:"5rem 2rem 4rem", textAlign:"center", position:"relative", overflow:"hidden"}}>
+            <div style={{position:"absolute",top:0,left:0,right:0,bottom:0,backgroundImage:"radial-gradient(circle at 20% 50%, rgba(232,98,26,0.3) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(201,146,42,0.2) 0%, transparent 40%)"}}></div>
+            <button onClick={() => setMaharashtraGuidePage(false)} style={{position:"absolute",top:"1.5rem",left:"1.5rem",background:"rgba(255,255,255,0.15)",border:"1px solid rgba(255,255,255,0.3)",color:"white",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.85rem"}}>← Back</button>
+            <div style={{position:"relative",zIndex:1}}>
+              <span style={{background:"rgba(232,98,26,0.3)",color:"#ffb347",padding:"0.3rem 1rem",borderRadius:"20px",fontSize:"0.78rem",fontWeight:700,letterSpacing:"0.1em",textTransform:"uppercase"}}>Culinary Guide</span>
+              <h1 style={{fontFamily:"'Playfair Display', serif",fontSize:"clamp(2.5rem,6vw,4.5rem)",color:"white",margin:"1rem 0 0.5rem",lineHeight:1.1}}>Maharashtrian <em style={{color:"#E8621A"}}>Cuisine</em></h1>
+              <p style={{color:"rgba(255,255,255,0.7)",fontSize:"1.1rem",maxWidth:"600px",margin:"0 auto",lineHeight:1.7}}>Where Every Meal Tells a Story of Culture, Tradition & Flavor</p>
+            </div>
+          </div>
+
+          <div style={{maxWidth:"900px",margin:"0 auto",padding:"3rem 1.5rem"}}>
+
+            {/* Introduction */}
+            <section style={{marginBottom:"3rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1rem"}}>
+                <span style={{fontSize:"1.8rem"}}>🌾</span>
+                <h2 style={{fontFamily:"'Playfair Display', serif",fontSize:"2rem",color:"#1C1C1C",margin:0}}>Introduction</h2>
+              </div>
+              <div style={{width:"60px",height:"3px",background:"linear-gradient(90deg,#E8621A,#C9922A)",borderRadius:"2px",marginBottom:"1.5rem"}}></div>
+              <p style={{fontSize:"1.05rem",lineHeight:1.9,color:"#444",background:"white",padding:"1.8rem",borderRadius:"16px",borderLeft:"4px solid #E8621A",boxShadow:"0 4px 20px rgba(0,0,0,0.06)"}}>
+                Maharashtrian cuisine is one of India's most diverse and deeply rooted culinary traditions, shaped by the vast geography, rich history, and vibrant culture of Maharashtra — India's third-largest state. Stretching from the lush Konkan coastline to the rugged Deccan plateau and the expansive Vidarbha plains, the cuisine of Maharashtra is a magnificent tapestry of flavors, textures, and aromas. It is a cuisine of contrasts — bold yet subtle, fiery yet balanced, rustic yet refined. From the iconic Vada Pav of Mumbai's bustling streets to the ceremonial sweetness of Puran Poli served at festivals, Maharashtrian food is deeply intertwined with the everyday life and celebrations of its people. Characterized by the masterful use of local spices like goda masala, the tartness of kokum, the earthiness of peanuts, and the sweetness of jaggery, this cuisine offers a uniquely satisfying culinary experience that is wholesome, flavorful, and soulful at its core.
+              </p>
+            </section>
+
+            {/* History */}
+            <section style={{marginBottom:"3rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1rem"}}>
+                <span style={{fontSize:"1.8rem"}}>📜</span>
+                <h2 style={{fontFamily:"'Playfair Display', serif",fontSize:"2rem",color:"#1C1C1C",margin:0}}>History & Heritage</h2>
+              </div>
+              <div style={{width:"60px",height:"3px",background:"linear-gradient(90deg,#E8621A,#C9922A)",borderRadius:"2px",marginBottom:"1.5rem"}}></div>
+              <p style={{fontSize:"1.05rem",lineHeight:1.9,color:"#444",background:"white",padding:"1.8rem",borderRadius:"16px",boxShadow:"0 4px 20px rgba(0,0,0,0.06)"}}>
+                The culinary heritage of Maharashtra spans thousands of years, influenced by ancient trade routes, royal kitchens, and agricultural practices deeply rooted in the land. The Maratha Empire under Chhatrapati Shivaji Maharaj played a pivotal role in establishing a distinct Maharashtrian identity, and this pride extended naturally to its food culture. The fertile black soil of the Deccan plateau gave rise to sorghum (jowar), pearl millet (bajra), and lentils as staple crops, while the Konkan coast — blessed with coconut palms, kokum trees, and abundant seafood — developed an entirely different coastal cuisine. The influence of the Brahmin, Marathwada, and Varhadi communities added layers of vegetarian refinement, while the warrior communities of Kolhapur contributed their legendary fiery meat preparations. Colonial trade brought new vegetables like potatoes and tomatoes, which were seamlessly absorbed into local recipes, creating beloved dishes like Vada Pav and Pav Bhaji that are now synonymous with Mumbai's identity.
+              </p>
+            </section>
+
+            {/* Key Ingredients */}
+            <section style={{marginBottom:"3rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1rem"}}>
+                <span style={{fontSize:"1.8rem"}}>🌿</span>
+                <h2 style={{fontFamily:"'Playfair Display', serif",fontSize:"2rem",color:"#1C1C1C",margin:0}}>Key Ingredients</h2>
+              </div>
+              <div style={{width:"60px",height:"3px",background:"linear-gradient(90deg,#E8621A,#C9922A)",borderRadius:"2px",marginBottom:"1.5rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill, minmax(260px, 1fr))",gap:"1rem"}}>
+                {[
+                  {emoji:"🌶️", name:"Goda Masala", desc:"Maharashtra's signature spice blend of 20+ ingredients including stone flower, giving dishes their unique sweet-spiced aroma."},
+                  {emoji:"🍋", name:"Kokum", desc:"A dried purple fruit from the Konkan coast, used as a souring agent in curries and cooling summer drinks like Sol Kadhi."},
+                  {emoji:"🥜", name:"Peanuts", desc:"The backbone of Maharashtrian cooking — roasted peanuts appear in chutneys, curries, rice dishes and salads across the state."},
+                  {emoji:"🥥", name:"Coconut", desc:"Fresh, dried and as milk — coconut is indispensable in Konkan cuisine, adding richness and sweetness to curries and chutneys."},
+                  {emoji:"🍯", name:"Jaggery", desc:"Unrefined cane sugar that brings a distinctive sweetness to dals, chutneys and sweets, balancing the heat of spices."},
+                  {emoji:"🌱", name:"Curry Leaves", desc:"A fragrant tempering essential that imparts an unmistakable aroma to almost every Maharashtrian dish."},
+                  {emoji:"🫘", name:"Lentils & Legumes", desc:"Toor dal, chana dal, matki and moong form the protein foundation of the Maharashtrian vegetarian diet."},
+                  {emoji:"🌾", name:"Jowar & Bajra", desc:"Sorghum and pearl millet are the traditional grains of rural Maharashtra, used to make the beloved nutritious bhakri."},
+                ].map((ing,i) => (
+                  <div key={i} style={{background:"white",padding:"1.2rem",borderRadius:"12px",boxShadow:"0 4px 15px rgba(0,0,0,0.06)",display:"flex",gap:"0.8rem",alignItems:"flex-start"}}>
+                    <span style={{fontSize:"1.8rem",flexShrink:0}}>{ing.emoji}</span>
+                    <div>
+                      <h4 style={{margin:"0 0 0.3rem",color:"#1C1C1C",fontSize:"0.95rem",fontWeight:700}}>{ing.name}</h4>
+                      <p style={{margin:0,fontSize:"0.82rem",color:"#666",lineHeight:1.6}}>{ing.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Regional Variations */}
+            <section style={{marginBottom:"3rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1rem"}}>
+                <span style={{fontSize:"1.8rem"}}>🗺️</span>
+                <h2 style={{fontFamily:"'Playfair Display', serif",fontSize:"2rem",color:"#1C1C1C",margin:0}}>Regional Variations</h2>
+              </div>
+              <div style={{width:"60px",height:"3px",background:"linear-gradient(90deg,#E8621A,#C9922A)",borderRadius:"2px",marginBottom:"1.5rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill, minmax(400px, 1fr))",gap:"1.2rem"}}>
+                {[
+                  {region:"🌊 Konkan Cuisine",color:"#1a6b8a",bg:"#e8f4f8",desc:"The coastal strip of Maharashtra produces India's most distinctive seafood cuisine. Featuring coconut milk, kokum, and Malvani masala, Konkan cooking is rich, tangy and aromatic. Signature dishes include Kombdi Vade, Sol Kadhi, Amboli and Ghavan."},
+                  {region:"🔥 Kolhapuri Cuisine",color:"#8a1a1a",bg:"#f8e8e8",desc:"Kolhapur is Maharashtra's culinary capital for spice lovers. The legendary Kolhapuri masala — ground fresh from 25+ spices — creates dishes of extraordinary heat and complexity. Chicken Kolhapuri, Mutton Rassa and Tambda Rassa are its crown jewels."},
+                  {region:"🏙️ Pune / Desh Cuisine",color:"#4A7C59",bg:"#e8f5ed",desc:"The cuisine of Pune and the Deccan plateau is characterized by a perfect sweet-sour-spicy balance using goda masala and tamarind-jaggery combinations. Bharli Vangi, Aamti Dal and the festival foods of Puran Poli and Masala Bhaat define this region."},
+                  {region:"🌅 Vidarbha Cuisine",color:"#8a6a1a",bg:"#f8f2e8",desc:"The eastern Vidarbha region is known for its bold flavors and liberal use of sesame seeds, poppy seeds and dried coconut. Saoji cuisine — named after the weaver community — produces some of India's most intensely spiced mutton and chicken preparations."},
+                ].map((r,i) => (
+                  <div key={i} style={{background:r.bg,padding:"1.5rem",borderRadius:"16px",borderLeft:`4px solid ${r.color}`}}>
+                    <h3 style={{margin:"0 0 0.6rem",color:r.color,fontSize:"1.1rem",fontWeight:700}}>{r.region}</h3>
+                    <p style={{margin:0,fontSize:"0.88rem",color:"#444",lineHeight:1.8}}>{r.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Thali Structure */}
+            <section style={{marginBottom:"3rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1rem"}}>
+                <span style={{fontSize:"1.8rem"}}>🍽️</span>
+                <h2 style={{fontFamily:"'Playfair Display', serif",fontSize:"2rem",color:"#1C1C1C",margin:0}}>The Maharashtrian Thali</h2>
+              </div>
+              <div style={{width:"60px",height:"3px",background:"linear-gradient(90deg,#E8621A,#C9922A)",borderRadius:"2px",marginBottom:"1.5rem"}}></div>
+              <div style={{background:"white",padding:"2rem",borderRadius:"16px",boxShadow:"0 4px 20px rgba(0,0,0,0.06)"}}>
+                <p style={{fontSize:"1.05rem",lineHeight:1.9,color:"#444",marginTop:0}}>A traditional Maharashtrian thali is a beautifully balanced complete meal served on a large steel plate or banana leaf. Each element has a specific role and position, reflecting centuries of nutritional wisdom.</p>
+                <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill, minmax(200px, 1fr))",gap:"0.8rem",marginTop:"1.2rem"}}>
+                  {[
+                    {item:"🍚 Bhaat",desc:"Steamed rice — the centerpiece"},
+                    {item:"🥣 Varan/Aamti",desc:"Toor dal — thin and comforting"},
+                    {item:"🥬 Bhaji",desc:"Seasonal vegetable dry preparation"},
+                    {item:"🫓 Bhakri/Poli",desc:"Flatbread — jowar or wheat"},
+                    {item:"🥗 Koshimbir",desc:"Fresh raw salad with coconut"},
+                    {item:"🫙 Loncha",desc:"Pickle — sweet, sour or spicy"},
+                    {item:"🍮 Dessert",desc:"Shrikhand, kheer or modak"},
+                    {item:"🥛 Taak",desc:"Buttermilk — the digestive finale"},
+                  ].map((t,i) => (
+                    <div key={i} style={{background:"#FFF8EE",padding:"0.8rem 1rem",borderRadius:"10px",border:"1px solid #f0e0cc"}}>
+                      <div style={{fontWeight:700,fontSize:"0.9rem",color:"#1C1C1C"}}>{t.item}</div>
+                      <div style={{fontSize:"0.78rem",color:"#888",marginTop:"0.2rem"}}>{t.desc}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            {/* Recipe Categories */}
+            <section style={{marginBottom:"3rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1rem"}}>
+                <span style={{fontSize:"1.8rem"}}>📖</span>
+                <h2 style={{fontFamily:"'Playfair Display', serif",fontSize:"2rem",color:"#1C1C1C",margin:0}}>Recipe Categories</h2>
+              </div>
+              <div style={{width:"60px",height:"3px",background:"linear-gradient(90deg,#E8621A,#C9922A)",borderRadius:"2px",marginBottom:"1.5rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill, minmax(260px, 1fr))",gap:"1rem"}}>
+                {[
+                  {emoji:"🍜",cat:"Soups",desc:"From the soul-warming Katachi Amti to the cooling Kokum Saar, Maharashtrian soups are light, spiced broths that set the tone for every meal."},
+                  {emoji:"🥟",cat:"Appetizers",desc:"Street food legends like Vada Pav and Misal Pav sit alongside monsoon classics like Kanda Bhaji and festive Chakli."},
+                  {emoji:"🥗",cat:"Salads",desc:"The koshimbir tradition celebrates raw vegetables dressed simply with coconut, lemon and peanuts — fresh, crunchy and vibrant."},
+                  {emoji:"🍛",cat:"Main Courses",desc:"The heart of Maharashtrian cooking — bold curries like Chicken Kolhapuri, smoky Vangyache Bharit and the legendary Kombdi Vade."},
+                  {emoji:"🫓",cat:"Breads",desc:"From the rustic Jowar Bhakri to the festive sweetness of Puran Poli, Maharashtrian breads are an art form in themselves."},
+                  {emoji:"🍚",cat:"Rice Preparations",desc:"Fragrant Masala Bhaat, celebratory Narali Bhaat and the everyday comfort of Varan Bhaat represent rice in all its glory."},
+                  {emoji:"🍮",cat:"Desserts",desc:"Silky Shrikhand, divine Ukadiche Modak and creamy Basundi — Maharashtrian sweets are festive, indulgent and deeply satisfying."},
+                  {emoji:"🍵",cat:"Tea",desc:"From the iconic Mumbai Cutting Chai to healing Masala Kadha and the cooling Kokum Sharbat — beverages are a ritual here."},
+                  {emoji:"☕",cat:"Coffee",desc:"Pune's Irani cafe culture, Nagpur's filter coffee tradition and the indulgent Nashik Cold Coffee celebrate coffee Maharashtra's way."},
+                  {emoji:"🫙",cat:"Sides",desc:"The condiment table of Maharashtra — fiery Thecha, smoky Dry Garlic Chutney, tangy pickles and the essential Goda Masala."},
+                ].map((c,i) => (
+                  <div key={i} style={{background:"white",padding:"1.3rem",borderRadius:"12px",boxShadow:"0 4px 15px rgba(0,0,0,0.06)",cursor:"pointer",transition:"transform 0.2s"}}
+                    onMouseEnter={e=>e.currentTarget.style.transform="translateY(-3px)"}
+                    onMouseLeave={e=>e.currentTarget.style.transform="translateY(0)"}
+                    onClick={() => { setMaharashtraGuidePage(false); setMaharashtraPage(true); setMaharashtraCategory(c.cat); }}>
+                    <div style={{fontSize:"2rem",marginBottom:"0.5rem"}}>{c.emoji}</div>
+                    <h4 style={{margin:"0 0 0.4rem",color:"#E8621A",fontSize:"1rem",fontWeight:700}}>{c.cat}</h4>
+                    <p style={{margin:0,fontSize:"0.82rem",color:"#666",lineHeight:1.6}}>{c.desc}</p>
+                    <div style={{marginTop:"0.8rem",fontSize:"0.75rem",color:"#E8621A",fontWeight:600}}>Explore recipes →</div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* CTA */}
+            <div style={{background:"linear-gradient(135deg,#E8621A,#C9922A)",borderRadius:"20px",padding:"2.5rem",textAlign:"center",color:"white"}}>
+              <h3 style={{fontFamily:"'Playfair Display', serif",fontSize:"1.8rem",margin:"0 0 0.8rem"}}>Ready to Cook Maharashtrian? 🍊</h3>
+              <p style={{margin:"0 0 1.5rem",opacity:0.9,fontSize:"1rem"}}>Explore 77 authentic recipes with step-by-step instructions, chef notes and nutrition information.</p>
+              <button onClick={() => { setMaharashtraGuidePage(false); setMaharashtraPage(true); }} style={{background:"white",color:"#E8621A",border:"none",padding:"0.9rem 2.5rem",borderRadius:"30px",fontSize:"1rem",fontWeight:700,cursor:"pointer"}}>
+                Browse All Recipes →
+              </button>
+            </div>
+
+          </div>
+        </div>
+      )}
+
       {/* MAHARASHTRA CUISINE PAGE */}
       {maharashtraPage && (
         <div className="indian-page">
           <div className="indian-header">
             <button className="indian-back" onClick={() => setMaharashtraPage(false)}>← Back</button>
+            <button onClick={() => setMaharashtraGuidePage(true)} style={{background:"rgba(232,98,26,0.15)",border:"1px solid #E8621A",color:"#E8621A",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button>
             <h1>🍊 Maharashtra <em>Cuisine</em></h1>
             <input className="indian-search" placeholder="Search dishes..." value={maharashtraSearch} onChange={e => setMaharashtraSearch(e.target.value)} />
           </div>
