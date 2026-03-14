@@ -4839,7 +4839,8 @@ const maharashtraCuisineData = [
       "holi special recipe",
       "chana dal sweet poli",
       "ganesh chaturthi food"
-    ]
+    ],
+    "img": "/images/india/maharashtra/breads/puran-poli-maharashtra-bread.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Bhakri Recipe | FusionChef AI",
@@ -4905,7 +4906,8 @@ const maharashtraCuisineData = [
       "maharashtrian bhakri",
       "gluten free indian bread",
       "jowar roti recipe"
-    ]
+    ],
+    "img": "/images/india/maharashtra/breads/jowar-bhakri-maharashtra-bread.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Pav Recipe | FusionChef AI",
@@ -4987,7 +4989,8 @@ const maharashtraCuisineData = [
       "soft dinner rolls india",
       "vada pav bread recipe",
       "maharashtrian pav bun"
-    ]
+    ],
+    "img": "/images/india/maharashtra/breads/homemade-pav-maharashtra-bread.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Amboli Recipe | FusionChef AI",
@@ -5058,7 +5061,8 @@ const maharashtraCuisineData = [
       "maharashtrian fermented bread",
       "malvani breakfast",
       "rice pancake india"
-    ]
+    ],
+    "img": "/images/india/maharashtra/breads/amboli-maharashtra-bread.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Ghavan Recipe | FusionChef AI",
@@ -5128,7 +5132,8 @@ const maharashtraCuisineData = [
       "maharashtrian rice bread",
       "gluten free indian bread",
       "coastal maharashtra breakfast"
-    ]
+    ],
+    "img": "/images/india/maharashtra/breads/ghavan-maharashtra-bread.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Dhapate Recipe | FusionChef AI",
@@ -5218,7 +5223,8 @@ const maharashtraCuisineData = [
       "jowar wheat flatbread",
       "traditional maharashtra bread",
       "healthy indian flatbread"
-    ]
+    ],
+    "img": "/images/india/maharashtra/breads/dhapate-maharashtra-bread.jpg"
   },
   {
     "seo_title": "Authentic Maharashtrian Vangyache Bharit Recipe | FusionChef AI",
@@ -8396,6 +8402,280 @@ const maharashtraCuisineData = [
       "pink digestive drink india",
       "konkan sol kadhi recipe"
     ]
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Phodnicha Bhat Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/phodnicha-bhat",
+    "dish_name": "Phodnicha Bhat",
+    "state": "Maharashtra",
+    "category": "Rice Preparations",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 20,
+    "servings": 4,
+    "short_description": "Phodnicha Bhat is Maharashtra's beloved leftover rice stir-fry \u2014 day-old rice tempered with mustard seeds, curry leaves, onion, green chili and turmeric. Quick, fragrant and deeply satisfying, it is a staple morning dish across Maharashtrian households.",
+    "ingredients": [
+      {
+        "name": "Cooked leftover rice",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Green chili",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Curry leaves",
+        "quantity": "10",
+        "unit": "pieces"
+      },
+      {
+        "name": "Turmeric",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Grated coconut",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Heat oil in a pan and add mustard seeds. Let them splutter.",
+      "Add curry leaves, green chili and sliced onion.",
+      "Saut\u00e9 until onion turns translucent.",
+      "Add turmeric and leftover rice. Mix well on high heat.",
+      "Toss for 3-4 minutes until rice is heated through.",
+      "Add salt, lemon juice, coconut and coriander.",
+      "Serve hot with yogurt or pickle."
+    ],
+    "chef_notes": "Day-old cold rice works best \u2014 fresh rice becomes mushy. Break any lumps before adding to the pan. High heat gives the rice a slight crispy texture.",
+    "serving_suggestions": "Serve with fresh yogurt, pickle and papad for a quick breakfast or lunch.",
+    "nutrition_estimate": {
+      "calories": "285",
+      "protein_g": "5",
+      "carbohydrates_g": "52",
+      "fat_g": "6"
+    },
+    "tags": [
+      "Vegetarian",
+      "Quick",
+      "Leftover Rice",
+      "Everyday"
+    ],
+    "image_prompt": "Ultra realistic food photography of Maharashtrian phodnicha bhat tempered rice in a steel plate, golden yellow color, mustard seeds and curry leaves visible, garnished with coconut and coriander",
+    "seo_keywords": [
+      "phodnicha bhat recipe",
+      "maharashtrian fried rice",
+      "leftover rice india",
+      "tempered rice maharashtra"
+    ],
+    "img": "/images/india/maharashtra/rice/phodnicha-bhat-maharashtra.jpg"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Indrayani Rice Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/indrayani-rice",
+    "dish_name": "Indrayani Rice",
+    "state": "Maharashtra",
+    "category": "Rice Preparations",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 30,
+    "servings": 4,
+    "short_description": "Indrayani is a premium short-grain rice variety grown exclusively in the Maval region near Pune, Maharashtra. Cooked simply with ghee and minimal spices, its natural aroma and sticky texture make it one of Maharashtra's most prized rice preparations.",
+    "ingredients": [
+      {
+        "name": "Indrayani rice",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Ghee",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Water",
+        "quantity": "500",
+        "unit": "ml"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Curry leaves",
+        "quantity": "5",
+        "unit": "pieces"
+      },
+      {
+        "name": "Cumin seeds",
+        "quantity": "0.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Wash Indrayani rice gently 2-3 times until water runs clear.",
+      "Soak for 20 minutes.",
+      "Heat ghee in a heavy pot and add cumin and curry leaves.",
+      "Add drained rice and fry gently for 2 minutes.",
+      "Add water and salt. Bring to boil.",
+      "Cover and cook on very low heat for 18 minutes.",
+      "Rest for 5 minutes before serving with generous ghee."
+    ],
+    "chef_notes": "Indrayani rice has a natural floral aroma that requires no heavy spicing. Cook it simply \u2014 the rice is the star. Available in Pune markets and online.",
+    "serving_suggestions": "Serve with any Maharashtrian dal, kadhi or simple varan. Best enjoyed with ghee.",
+    "nutrition_estimate": {
+      "calories": "310",
+      "protein_g": "6",
+      "carbohydrates_g": "62",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Vegetarian",
+      "Premium Rice",
+      "Pune",
+      "Traditional"
+    ],
+    "image_prompt": "Ultra realistic food photography of Indrayani rice in a traditional brass plate, perfectly cooked short grain rice, ghee pool, curry leaves garnish, clean minimal styling",
+    "seo_keywords": [
+      "indrayani rice recipe",
+      "maharashtrian premium rice",
+      "maval rice pune",
+      "indrayani chawal recipe"
+    ],
+    "img": "/images/india/maharashtra/rice/indrayani-rice-maharashtra.jpg"
+  },
+  {
+    "seo_title": "Authentic Maharashtrian Kolhapuri Bhat Recipe | FusionChef AI",
+    "slug": "/indian-cuisine/maharashtra/kolhapuri-bhat",
+    "dish_name": "Kolhapuri Bhat",
+    "state": "Maharashtra",
+    "category": "Rice Preparations",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 50,
+    "servings": 4,
+    "short_description": "Kolhapuri Bhat is a fiery, aromatic spiced rice from the culinary capital of Maharashtra \u2014 Kolhapur. Made with the legendary Kolhapuri masala, roasted coconut and dry red chilies, this rice dish packs the bold, unapologetic heat that Kolhapur is famous for.",
+    "ingredients": [
+      {
+        "name": "Basmati rice",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Kolhapuri masala",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Grated coconut, roasted",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Dried red chilies",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Mustard seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Curry leaves",
+        "quantity": "10",
+        "unit": "pieces"
+      },
+      {
+        "name": "Oil",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Coriander",
+        "quantity": "3",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Wash and soak basmati rice for 20 minutes.",
+      "Heat oil and add mustard seeds, curry leaves and dried red chilies.",
+      "Add sliced onion and fry until golden.",
+      "Add Kolhapuri masala and roasted coconut. Fry 3 minutes.",
+      "Add drained rice and toss to coat.",
+      "Add 550ml water and salt. Bring to boil.",
+      "Cover and cook on low heat for 18 minutes.",
+      "Garnish with coriander and roasted coconut."
+    ],
+    "chef_notes": "Kolhapuri masala is the key \u2014 do not substitute with regular garam masala. The roasted coconut adds a smoky depth that complements the fiery masala perfectly.",
+    "serving_suggestions": "Serve with Kolhapuri chicken rassa, sol kadhi and papad.",
+    "nutrition_estimate": {
+      "calories": "340",
+      "protein_g": "7",
+      "carbohydrates_g": "58",
+      "fat_g": "9"
+    },
+    "tags": [
+      "Spicy",
+      "Vegetarian",
+      "Kolhapuri",
+      "Festival Food"
+    ],
+    "image_prompt": "Ultra realistic food photography of spicy Kolhapuri bhat in a copper plate, reddish-orange spiced rice, roasted coconut and coriander garnish, dramatic Kolhapuri setting",
+    "seo_keywords": [
+      "kolhapuri bhat recipe",
+      "spicy maharashtrian rice",
+      "kolhapur rice recipe",
+      "kolhapuri masala rice"
+    ],
+    "img": "/images/india/maharashtra/rice/kolhapuri-bhat-maharashtra.jpg"
   }
 ];
 
