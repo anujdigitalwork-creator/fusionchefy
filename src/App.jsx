@@ -9280,7 +9280,7 @@ export default function FusionChefAI() {
         <div className="indian-page">
           <div className="indian-header">
             <button className="indian-back" onClick={() => setMaharashtraPage(false)}>← Back</button>
-            <button onClick={() => setMaharashtraGuidePage(true)} style={{background:"rgba(232,98,26,0.15)",border:"1px solid #E8621A",color:"#E8621A",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button>
+            <button onClick={() => { setMaharashtraGuidePage(true); setMaharashtraPage(false); }} style={{background:"rgba(232,98,26,0.15)",border:"1px solid #E8621A",color:"#E8621A",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button>
             <h1>🍊 Maharashtra <em>Cuisine</em></h1>
             <input className="indian-search" placeholder="Search dishes..." value={maharashtraSearch} onChange={e => setMaharashtraSearch(e.target.value)} />
           </div>
