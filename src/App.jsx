@@ -9113,8 +9113,9 @@ export default function FusionChefAI() {
       {maharashtraGuidePage && (
         <div style={{minHeight:"100vh", background:"#FFF8EE", fontFamily:"'DM Sans', sans-serif"}}>
           {/* Hero */}
-          <div style={{background:"linear-gradient(135deg, #1C1C1C 0%, #2d1a00 50%, #E8621A 100%)", padding:"5rem 2rem 4rem", textAlign:"center", position:"relative", overflow:"hidden"}}>
-            <div style={{position:"absolute",top:0,left:0,right:0,bottom:0,backgroundImage:"radial-gradient(circle at 20% 50%, rgba(232,98,26,0.3) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(201,146,42,0.2) 0%, transparent 40%)"}}></div>
+          <div style={{position:"relative", padding:"5rem 2rem 4rem", textAlign:"center", overflow:"hidden", minHeight:"420px", display:"flex", alignItems:"center", justifyContent:"center"}}>
+            <img src="/images/india/maharashtra/maharashtrian-cuisine-banner.jpg" alt="Traditional Maharashtrian cuisine thali spread with vada pav, modak, bhakri and various curries" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%",objectFit:"cover",zIndex:0}} />
+            <div style={{position:"absolute",top:0,left:0,right:0,bottom:0,background:"linear-gradient(135deg, rgba(28,28,28,0.85) 0%, rgba(45,26,0,0.75) 50%, rgba(232,98,26,0.6) 100%)",zIndex:1}}></div>
             <button onClick={() => setMaharashtraGuidePage(false)} style={{position:"absolute",top:"1.5rem",left:"1.5rem",background:"rgba(255,255,255,0.15)",border:"1px solid rgba(255,255,255,0.3)",color:"white",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.85rem"}}>← Back</button>
             <div style={{position:"relative",zIndex:1}}>
               <span style={{background:"rgba(232,98,26,0.3)",color:"#ffb347",padding:"0.3rem 1rem",borderRadius:"20px",fontSize:"0.78rem",fontWeight:700,letterSpacing:"0.1em",textTransform:"uppercase"}}>Culinary Guide</span>
