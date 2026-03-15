@@ -14598,6 +14598,18 @@ export default function FusionChefAI() {
   const [scrolled, setScrolled] = useState(false);
   const [recipeModal, setRecipeModal] = useState(null);
   const [indianPage, setIndianPage] = useState(false);
+
+  // Scroll to top on initial website load
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, []);
+
+  // Scroll to top whenever any page opens or closes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [indianPage, maharashtraPage, punjabPage, maharashtraGuidePage, punjabGuidePage, 
+      aboutPage, contactPage, privacyPage, termsPage, careersPage,
+      cuisineExplorer, recipeDB]);
   const [aboutPage, setAboutPage] = useState(false);
   const [contactPage, setContactPage] = useState(false);
   const [privacyPage, setPrivacyPage] = useState(false);
