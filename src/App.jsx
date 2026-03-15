@@ -14661,19 +14661,24 @@ export default function FusionChefAI() {
     setMessages(m => [...m, { role: "user", content: query }]);
     setLoading(true);
     try {
-      const GROQ_KEY = "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";
+      const GROQ_KEY = "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";
       const systemPrompt = "You are FusionChef AI, a warm and creative culinary AI. When users ask for recipes, respond with a catchy dish name, 5-7 key ingredients, 3-4 brief cooking steps, and a helpful tip. Keep it enthusiastic and under 250 words.";
       const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_KEY },
         body: JSON.stringify({
-          model: "llama-3.1-8b-instant",
+          model: "llama3-8b-8192",
           messages: [{ role: "system", content: systemPrompt }, { role: "user", content: query }],
           max_tokens: 500,
           temperature: 0.8
         })
       });
       const data = await res.json();
+      if (!res.ok) {
+        console.error("Groq API error:", data);
+        setMessages(m => [...m, { role: "ai", content: "⚠️ API Error: " + (data.error?.message || "Unknown error. Please try again.") }]);
+        return;
+      }
       const reply = data.choices?.[0]?.message?.content || "Hmm, let me think on that...";
       setMessages(m => [...m, { role: "ai", content: reply }]);
     } catch {
@@ -14697,12 +14702,12 @@ export default function FusionChefAI() {
     setSearchResults(local);
     // AI generates more results
     try {
-      const GROQ_KEY = "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";
+      const GROQ_KEY = "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";
       const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_KEY },
         body: JSON.stringify({
-          model: "llama-3.1-8b-instant",
+          model: "llama3-8b-8192",
           messages: [
             { role: "system", content: 'You are FusionChef AI. Generate exactly 3 recipe suggestions for the search query. Respond ONLY with a valid JSON array, no extra text. Format: [{"title":"...","chef":"Chef Name","time":"30 min","difficulty":"easy","ingredients":["item1","item2","item3","item4","item5"],"steps":["Step 1","Step 2","Step 3"],"img":"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80","isAI":true}]' },
             { role: "user", content: "Search: " + query }
