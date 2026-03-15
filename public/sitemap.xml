@@ -1,16 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-<loc>https://fusionchefy.vercel.app/</loc>
-<lastmod>2026-03-14</lastmod>
-<priority>1.0</priority>
-</url>
+  <!-- Main Pages -->
+  <url>
+    <loc>https://fusionchefy.vercel.app/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-<loc>https://fusionchefy.vercel.app/cuisines/maharashtrian</loc>
-<lastmod>2026-03-14</lastmod>
-<priority>0.9</priority>
-</url>
+  <!-- About & Info Pages -->
+  <url>
+    <loc>https://fusionchefy.vercel.app/about</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fusionchefy.vercel.app/contact</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fusionchefy.vercel.app/privacy-policy</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://fusionchefy.vercel.app/terms-of-use</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://fusionchefy.vercel.app/careers</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- World Cuisines -->
+  <url>
+    <loc>https://fusionchefy.vercel.app/cuisines</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Indian Cuisine -->
+  <url>
+    <loc>https://fusionchefy.vercel.app/cuisines/indian</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Maharashtra Cuisine -->
+  <url>
+    <loc>https://fusionchefy.vercel.app/cuisines/indian/maharashtra</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://fusionchefy.vercel.app/cuisines/indian/maharashtra/guide</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Maharashtra Dishes - Soups -->
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/katachi-amti</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/tomato-saar</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/kokum-saar</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/chicken-rassa</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/mutton-rassa</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/aamti-dal</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/varan</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Maharashtra Dishes - Appetizers -->
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/vada-pav</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/misal-pav</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/kanda-bhaji</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/sabudana-vada</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/kanda-poha</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/thalipeeth</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/batata-vada</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/chakli</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/mumbai-bhel-puri</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Maharashtra Dishes - Main Courses -->
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/bharli-vangi</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/chicken-kolhapuri</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/masala-bhaat</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/pav-bhaji</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/kombdi-vade</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/zunka</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/maharashtrian-kadhi</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Maharashtra Dishes - Breads -->
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/puran-poli</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/jowar-bhakri</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/amboli</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/ghavan</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Maharashtra Dishes - Desserts -->
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/shrikhand</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/steamed-modak</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/basundi</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/maharashtra/sabudana-kheer</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Punjab Cuisine -->
+  <url>
+    <loc>https://fusionchefy.vercel.app/cuisines/indian/punjab</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://fusionchefy.vercel.app/cuisines/indian/punjab/guide</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Punjab Dishes - Soups -->
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/dal-makhani</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/langar-dal</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/saag-soup</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/tomato-shorba</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/maah-ki-dal</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Punjab Dishes - Appetizers -->
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/tandoori-chicken</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/amritsari-fish</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/paneer-tikka</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/punjabi-samosa</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/gol-gappe</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/dahi-bhalle</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/amritsari-aloo-chaat</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Punjab Dishes - Main Courses -->
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/butter-chicken</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/sarson-ka-saag</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/chole-bhature</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/rajma-chawal</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/palak-paneer</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/kadhi-pakora</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/shahi-paneer</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/matar-paneer</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/pindi-chole</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/baingan-bharta</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Punjab Dishes - Breads -->
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/makki-di-roti</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/butter-naan</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/aloo-paratha</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/amritsari-kulcha</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/laccha-paratha</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/gobhi-paratha</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/bhature</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Punjab Dishes - Desserts -->
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/gajar-ka-halwa</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/gulab-jamun</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/kulfi</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/chawal-ki-kheer</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/atte-ka-halwa</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fusionchefy.vercel.app/indian-cuisine/punjab/pinni</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Recipe Database -->
+  <url>
+    <loc>https://fusionchefy.vercel.app/recipes</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
 </urlset>
