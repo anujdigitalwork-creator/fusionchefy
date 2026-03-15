@@ -14598,6 +14598,11 @@ export default function FusionChefAI() {
   const [scrolled, setScrolled] = useState(false);
   const [recipeModal, setRecipeModal] = useState(null);
   const [indianPage, setIndianPage] = useState(false);
+  const [aboutPage, setAboutPage] = useState(false);
+  const [contactPage, setContactPage] = useState(false);
+  const [privacyPage, setPrivacyPage] = useState(false);
+  const [termsPage, setTermsPage] = useState(false);
+  const [careersPage, setCareersPage] = useState(false);
   const [maharashtraPage, setMaharashtraPage] = useState(false);
   const [punjabPage, setPunjabPage] = useState(false);
   const [punjabCategory, setPunjabCategory] = useState("All");
@@ -14994,6 +14999,174 @@ export default function FusionChefAI() {
       )}
 
 
+
+
+      {/* ===== ABOUT PAGE ===== */}
+      {aboutPage && (
+        <div style={{minHeight:"100vh",background:"#FFF8EE",fontFamily:"'DM Sans',sans-serif"}}>
+          <div style={{background:"linear-gradient(135deg,#1C1C1C,#2d1a00)",padding:"4rem 2rem 3rem",textAlign:"center",position:"relative"}}>
+            <button onClick={()=>setAboutPage(false)} style={{position:"absolute",top:"1.5rem",left:"1.5rem",background:"rgba(255,255,255,0.15)",border:"1px solid rgba(255,255,255,0.3)",color:"white",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.85rem"}}>← Back</button>
+            <h1 style={{fontFamily:"'Playfair Display',serif",fontSize:"clamp(2rem,5vw,3.5rem)",color:"white",margin:"0 0 0.5rem"}}>About <em style={{color:"#E8621A"}}>FusionChef AI</em></h1>
+            <p style={{color:"rgba(255,255,255,0.7)",fontSize:"1rem",maxWidth:"500px",margin:"0 auto"}}>Where Every Meal Tells a Story</p>
+          </div>
+          <div style={{maxWidth:"800px",margin:"0 auto",padding:"3rem 1.5rem"}}>
+            <div style={{background:"white",borderRadius:"20px",padding:"2.5rem",boxShadow:"0 8px 40px rgba(0,0,0,0.08)",marginBottom:"2rem"}}>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.8rem",color:"#1C1C1C",marginTop:0}}>About FusionChef AI</h2>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#E8621A,#C9922A)",borderRadius:"2px",marginBottom:"1.5rem"}}></div>
+              <p style={{fontSize:"1.05rem",lineHeight:1.9,color:"#444"}}>FusionChef AI is a modern culinary platform created to inspire chefs, home cooks, and food lovers around the world. The platform combines traditional culinary knowledge with artificial intelligence to provide high-quality recipes, chef tips, and global cuisine inspiration.</p>
+              <p style={{fontSize:"1.05rem",lineHeight:1.9,color:"#444"}}>Founded by <strong>Chef Anuj Vikas Lonkar</strong>, a professional culinary instructor with international hospitality experience, FusionChef AI aims to make cooking knowledge accessible, creative, and innovative.</p>
+              <p style={{fontSize:"1.05rem",lineHeight:1.9,color:"#444"}}>From authentic world cuisines to modern fusion dishes, FusionChef AI is designed to be a place where every meal tells a story.</p>
+              <div style={{background:"linear-gradient(135deg,rgba(232,98,26,0.08),rgba(201,146,42,0.08))",borderRadius:"16px",padding:"1.5rem",marginTop:"1.5rem",borderLeft:"4px solid #E8621A"}}>
+                <p style={{fontSize:"1.1rem",fontWeight:700,color:"#E8621A",margin:"0 0 0.5rem",fontStyle:"italic"}}>"Our mission is simple: To educate, inspire, and connect food lovers through technology and culinary artistry."</p>
+              </div>
+            </div>
+            <div style={{background:"white",borderRadius:"20px",padding:"2.5rem",boxShadow:"0 8px 40px rgba(0,0,0,0.08)",marginBottom:"2rem"}}>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.8rem",color:"#1C1C1C",marginTop:0}}>Meet the Founder</h2>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#E8621A,#C9922A)",borderRadius:"2px",marginBottom:"1.5rem"}}></div>
+              <div style={{display:"flex",gap:"1.5rem",alignItems:"flex-start",flexWrap:"wrap"}}>
+                <div style={{width:"80px",height:"80px",borderRadius:"50%",background:"linear-gradient(135deg,#E8621A,#C9922A)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"2rem",flexShrink:0}}>👨‍🍳</div>
+                <div style={{flex:1}}>
+                  <h3 style={{margin:"0 0 0.3rem",fontSize:"1.3rem",color:"#1C1C1C"}}>Chef Anuj Vikas Lonkar</h3>
+                  <p style={{margin:"0 0 0.8rem",color:"#E8621A",fontWeight:600,fontSize:"0.9rem"}}>Culinary Instructor & Founder of FusionChef AI</p>
+                  <p style={{margin:0,fontSize:"0.95rem",lineHeight:1.8,color:"#555"}}>A passionate culinary professional with expertise in world cuisines, Chef Anuj brings together his love for authentic cooking and modern technology to create a platform that makes culinary knowledge accessible to everyone — from beginners to professionals.</p>
+                  <div style={{display:"flex",gap:"0.8rem",marginTop:"1rem",flexWrap:"wrap"}}>
+                    <a href="https://instagram.com/teach_taste_cook" target="_blank" rel="noopener noreferrer" style={{background:"#E8621A",color:"white",padding:"0.4rem 1rem",borderRadius:"20px",textDecoration:"none",fontSize:"0.82rem",fontWeight:600}}>📸 Instagram</a>
+                    <a href="https://www.linkedin.com/in/anuj-lonkar-5a5709162" target="_blank" rel="noopener noreferrer" style={{background:"#0077B5",color:"white",padding:"0.4rem 1rem",borderRadius:"20px",textDecoration:"none",fontSize:"0.82rem",fontWeight:600}}>💼 LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(200px,1fr))",gap:"1rem",marginBottom:"2rem"}}>
+              {[["🌍","World Cuisines","Authentic recipes from 30+ global cuisines"],["🤖","AI-Powered","Smart recipe suggestions and chef tips"],["👨‍🍳","Expert Led","Founded by a professional culinary instructor"],["📱","Always Accessible","Learn cooking anytime, anywhere"]].map(([e,t,d])=>(
+                <div key={t} style={{background:"white",borderRadius:"16px",padding:"1.5rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)",textAlign:"center"}}>
+                  <div style={{fontSize:"2rem",marginBottom:"0.5rem"}}>{e}</div>
+                  <h4 style={{margin:"0 0 0.4rem",color:"#1C1C1C",fontSize:"0.95rem"}}>{t}</h4>
+                  <p style={{margin:0,fontSize:"0.8rem",color:"#888",lineHeight:1.5}}>{d}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ===== CONTACT PAGE ===== */}
+      {contactPage && (
+        <div style={{minHeight:"100vh",background:"#FFF8EE",fontFamily:"'DM Sans',sans-serif"}}>
+          <div style={{background:"linear-gradient(135deg,#1C1C1C,#2d1a00)",padding:"4rem 2rem 3rem",textAlign:"center",position:"relative"}}>
+            <button onClick={()=>setContactPage(false)} style={{position:"absolute",top:"1.5rem",left:"1.5rem",background:"rgba(255,255,255,0.15)",border:"1px solid rgba(255,255,255,0.3)",color:"white",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.85rem"}}>← Back</button>
+            <h1 style={{fontFamily:"'Playfair Display',serif",fontSize:"clamp(2rem,5vw,3.5rem)",color:"white",margin:"0 0 0.5rem"}}>Contact <em style={{color:"#E8621A"}}>Us</em></h1>
+            <p style={{color:"rgba(255,255,255,0.7)",fontSize:"1rem"}}>We would love to hear from you</p>
+          </div>
+          <div style={{maxWidth:"700px",margin:"0 auto",padding:"3rem 1.5rem"}}>
+            <div style={{background:"white",borderRadius:"20px",padding:"2.5rem",boxShadow:"0 8px 40px rgba(0,0,0,0.08)",marginBottom:"1.5rem"}}>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.8rem",color:"#1C1C1C",marginTop:0}}>Get In Touch</h2>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#E8621A,#C9922A)",borderRadius:"2px",marginBottom:"1.5rem"}}></div>
+              <p style={{fontSize:"1rem",lineHeight:1.8,color:"#555",marginBottom:"2rem"}}>For inquiries, collaborations, or feedback, please reach out. We are always happy to connect with fellow food lovers, chefs and culinary enthusiasts.</p>
+              {[["📧","Email","anuj.digitalwork@gmail.com","mailto:anuj.digitalwork@gmail.com"],["📍","Location","India",null]].map(([e,l,v,href])=>(
+                <div key={l} style={{display:"flex",gap:"1rem",alignItems:"center",padding:"1rem",background:"#FFF8EE",borderRadius:"12px",marginBottom:"1rem"}}>
+                  <span style={{fontSize:"1.5rem",flexShrink:0}}>{e}</span>
+                  <div>
+                    <div style={{fontWeight:700,fontSize:"0.85rem",color:"#888",textTransform:"uppercase",letterSpacing:"0.05em"}}>{l}</div>
+                    {href ? <a href={href} style={{color:"#E8621A",fontSize:"1rem",fontWeight:600,textDecoration:"none"}}>{v}</a> : <div style={{color:"#333",fontSize:"1rem",fontWeight:600}}>{v}</div>}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div style={{background:"white",borderRadius:"20px",padding:"2rem",boxShadow:"0 8px 40px rgba(0,0,0,0.08)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.3rem",color:"#1C1C1C",marginTop:0}}>Connect on Social Media</h3>
+              <div style={{display:"flex",gap:"1rem",flexWrap:"wrap",marginTop:"1rem"}}>
+                <a href="https://instagram.com/teach_taste_cook" target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",gap:"0.5rem",background:"linear-gradient(135deg,#E8621A,#C9922A)",color:"white",padding:"0.7rem 1.2rem",borderRadius:"12px",textDecoration:"none",fontWeight:600,fontSize:"0.9rem"}}>📸 @teach_taste_cook</a>
+                <a href="https://www.linkedin.com/in/anuj-lonkar-5a5709162" target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",gap:"0.5rem",background:"#0077B5",color:"white",padding:"0.7rem 1.2rem",borderRadius:"12px",textDecoration:"none",fontWeight:600,fontSize:"0.9rem"}}>💼 LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ===== PRIVACY POLICY PAGE ===== */}
+      {privacyPage && (
+        <div style={{minHeight:"100vh",background:"#FFF8EE",fontFamily:"'DM Sans',sans-serif"}}>
+          <div style={{background:"linear-gradient(135deg,#1C1C1C,#2d1a00)",padding:"4rem 2rem 3rem",textAlign:"center",position:"relative"}}>
+            <button onClick={()=>setPrivacyPage(false)} style={{position:"absolute",top:"1.5rem",left:"1.5rem",background:"rgba(255,255,255,0.15)",border:"1px solid rgba(255,255,255,0.3)",color:"white",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.85rem"}}>← Back</button>
+            <h1 style={{fontFamily:"'Playfair Display',serif",fontSize:"clamp(2rem,5vw,3.5rem)",color:"white",margin:"0 0 0.5rem"}}>Privacy <em style={{color:"#E8621A"}}>Policy</em></h1>
+            <p style={{color:"rgba(255,255,255,0.7)",fontSize:"0.9rem"}}>Last updated: March 2025</p>
+          </div>
+          <div style={{maxWidth:"800px",margin:"0 auto",padding:"3rem 1.5rem"}}>
+            <div style={{background:"white",borderRadius:"20px",padding:"2.5rem",boxShadow:"0 8px 40px rgba(0,0,0,0.08)"}}>
+              {[
+                ["🔒 Our Commitment to Privacy","FusionChef AI respects your privacy. We are committed to protecting any personal information you share with us while using our platform."],
+                ["📧 Information We Collect","We collect limited information such as email addresses when users subscribe to our newsletter. This information is used only to send recipe updates, chef tips, and platform improvements."],
+                ["🚫 How We Use Your Information","We do not sell, trade, or share personal information with third parties. Your data is used solely to improve your experience on FusionChef AI."],
+                ["🍪 Cookies","Cookies may be used to improve website performance and user experience. These are small files stored on your device that help us understand how you use our platform."],
+                ["🤖 AI Features","Our AI Chef feature processes your food-related queries to provide recipe suggestions and culinary tips. These queries are not stored or used for any purpose beyond providing you with an immediate response."],
+                ["📬 Contact Us About Privacy","If you have questions about this policy, please contact us at anuj.digitalwork@gmail.com"]
+              ].map(([title,text])=>(
+                <div key={title} style={{marginBottom:"2rem"}}>
+                  <h3 style={{color:"#E8621A",fontSize:"1.1rem",margin:"0 0 0.6rem"}}>{title}</h3>
+                  <p style={{color:"#555",lineHeight:1.8,margin:0,fontSize:"0.95rem"}}>{text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ===== TERMS OF USE PAGE ===== */}
+      {termsPage && (
+        <div style={{minHeight:"100vh",background:"#FFF8EE",fontFamily:"'DM Sans',sans-serif"}}>
+          <div style={{background:"linear-gradient(135deg,#1C1C1C,#2d1a00)",padding:"4rem 2rem 3rem",textAlign:"center",position:"relative"}}>
+            <button onClick={()=>setTermsPage(false)} style={{position:"absolute",top:"1.5rem",left:"1.5rem",background:"rgba(255,255,255,0.15)",border:"1px solid rgba(255,255,255,0.3)",color:"white",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.85rem"}}>← Back</button>
+            <h1 style={{fontFamily:"'Playfair Display',serif",fontSize:"clamp(2rem,5vw,3.5rem)",color:"white",margin:"0 0 0.5rem"}}>Terms of <em style={{color:"#E8621A"}}>Use</em></h1>
+            <p style={{color:"rgba(255,255,255,0.7)",fontSize:"0.9rem"}}>Last updated: March 2025</p>
+          </div>
+          <div style={{maxWidth:"800px",margin:"0 auto",padding:"3rem 1.5rem"}}>
+            <div style={{background:"white",borderRadius:"20px",padding:"2.5rem",boxShadow:"0 8px 40px rgba(0,0,0,0.08)"}}>
+              {[
+                ["✅ Acceptance of Terms","By using FusionChef AI, you agree to use the website for lawful purposes only. Continued use of the website indicates acceptance of these terms."],
+                ["📚 Content Usage","All recipes, content, and images on this website are for informational and educational purposes only. Unauthorized reproduction or redistribution of any content without written permission is prohibited."],
+                ["🤖 AI Chef Feature","The AI Chef feature is provided as a culinary guidance tool. Responses are generated by artificial intelligence and should be used as suggestions only. FusionChef AI is not responsible for outcomes based on AI recommendations."],
+                ["🔄 Changes to Content","FusionChef AI reserves the right to update, modify, or remove any content at any time without prior notice. We continuously strive to improve the quality and accuracy of our content."],
+                ["🛡️ Limitation of Liability","FusionChef AI shall not be liable for any direct, indirect, or consequential damages arising from the use of this platform or reliance on any content herein."],
+                ["📬 Contact","For questions regarding these terms, please contact us at anuj.digitalwork@gmail.com"]
+              ].map(([title,text])=>(
+                <div key={title} style={{marginBottom:"2rem"}}>
+                  <h3 style={{color:"#E8621A",fontSize:"1.1rem",margin:"0 0 0.6rem"}}>{title}</h3>
+                  <p style={{color:"#555",lineHeight:1.8,margin:0,fontSize:"0.95rem"}}>{text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ===== CAREERS PAGE ===== */}
+      {careersPage && (
+        <div style={{minHeight:"100vh",background:"#FFF8EE",fontFamily:"'DM Sans',sans-serif"}}>
+          <div style={{background:"linear-gradient(135deg,#1C1C1C,#2d1a00)",padding:"4rem 2rem 3rem",textAlign:"center",position:"relative"}}>
+            <button onClick={()=>setCareersPage(false)} style={{position:"absolute",top:"1.5rem",left:"1.5rem",background:"rgba(255,255,255,0.15)",border:"1px solid rgba(255,255,255,0.3)",color:"white",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.85rem"}}>← Back</button>
+            <h1 style={{fontFamily:"'Playfair Display',serif",fontSize:"clamp(2rem,5vw,3.5rem)",color:"white",margin:"0 0 0.5rem"}}><em style={{color:"#E8621A"}}>Careers</em> & Press</h1>
+            <p style={{color:"rgba(255,255,255,0.7)",fontSize:"1rem"}}>Join the FusionChef AI journey</p>
+          </div>
+          <div style={{maxWidth:"700px",margin:"0 auto",padding:"3rem 1.5rem"}}>
+            <div style={{background:"white",borderRadius:"20px",padding:"2.5rem",boxShadow:"0 8px 40px rgba(0,0,0,0.08)",marginBottom:"1.5rem"}}>
+              <div style={{fontSize:"3rem",marginBottom:"1rem"}}>👨‍🍳</div>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.8rem",color:"#1C1C1C",marginTop:0}}>Careers</h2>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#E8621A,#C9922A)",borderRadius:"2px",marginBottom:"1.5rem"}}></div>
+              <p style={{fontSize:"1rem",lineHeight:1.8,color:"#555"}}>We are not currently hiring, but future opportunities will be posted here. If you are a passionate culinary professional, food writer, or tech enthusiast who shares our vision of making cooking knowledge accessible to everyone — we would love to hear from you.</p>
+              <div style={{background:"#FFF8EE",borderRadius:"12px",padding:"1.2rem",marginTop:"1.5rem",borderLeft:"4px solid #E8621A"}}>
+                <p style={{margin:0,fontSize:"0.9rem",color:"#666"}}>📬 Send your profile and interests to <a href="mailto:anuj.digitalwork@gmail.com" style={{color:"#E8621A",fontWeight:600}}>anuj.digitalwork@gmail.com</a></p>
+              </div>
+            </div>
+            <div style={{background:"white",borderRadius:"20px",padding:"2.5rem",boxShadow:"0 8px 40px rgba(0,0,0,0.08)"}}>
+              <div style={{fontSize:"3rem",marginBottom:"1rem"}}>📰</div>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.8rem",color:"#1C1C1C",marginTop:0}}>Press & Media</h2>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#E8621A,#C9922A)",borderRadius:"2px",marginBottom:"1.5rem"}}></div>
+              <p style={{fontSize:"1rem",lineHeight:1.8,color:"#555"}}>For media inquiries, partnerships, press features or collaboration opportunities, please reach out to our founder directly.</p>
+              <a href="mailto:anuj.digitalwork@gmail.com" style={{display:"inline-block",marginTop:"1rem",background:"linear-gradient(135deg,#E8621A,#C9922A)",color:"white",padding:"0.8rem 1.8rem",borderRadius:"25px",textDecoration:"none",fontWeight:700,fontSize:"0.95rem"}}>📧 Media Inquiries</a>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* PUNJAB CUISINE PAGE */}
       {punjabPage && (
@@ -15870,7 +16043,12 @@ export default function FusionChefAI() {
           </div>
         </div>
         <div className="footer-bottom">
-          © 2026 FusionChef AI. All rights reserved. Powered by <span style={{color:"var(--saffron)"}}>Anthropic Claude</span>.
+          <div style={{display:"flex",gap:"1.5rem",justifyContent:"center",flexWrap:"wrap",marginBottom:"0.8rem"}}>
+            {[["About Us",()=>setAboutPage(true)],["Contact Us",()=>setContactPage(true)],["Privacy Policy",()=>setPrivacyPage(true)],["Terms of Use",()=>setTermsPage(true)],["Careers",()=>setCareersPage(true)]].map(([label,fn])=>(
+              <button key={label} onClick={()=>{fn();window.scrollTo({top:0,behavior:"smooth"});}} style={{background:"none",border:"none",color:"rgba(255,255,255,0.6)",fontSize:"0.82rem",cursor:"pointer",textDecoration:"underline",padding:0}}>{label}</button>
+            ))}
+          </div>
+          © 2025 FusionChef AI by <strong style={{color:"var(--saffron)"}}>Chef Anuj Vikas Lonkar</strong>. All rights reserved. Powered by <span style={{color:"var(--saffron)"}}>Anthropic Claude</span>.
         </div>
       </footer>
     </>
