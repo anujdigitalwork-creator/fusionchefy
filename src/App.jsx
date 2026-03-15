@@ -14667,7 +14667,7 @@ export default function FusionChefAI() {
         method: "POST",
         headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_KEY },
         body: JSON.stringify({
-          model: "llama3-8b-8192",
+          model: "llama-3.3-70b-versatile",
           messages: [{ role: "system", content: systemPrompt }, { role: "user", content: query }],
           max_tokens: 500,
           temperature: 0.8
@@ -14707,7 +14707,7 @@ export default function FusionChefAI() {
         method: "POST",
         headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_KEY },
         body: JSON.stringify({
-          model: "llama3-8b-8192",
+          model: "llama-3.3-70b-versatile",
           messages: [
             { role: "system", content: 'You are FusionChef AI. Generate exactly 3 recipe suggestions for the search query. Respond ONLY with a valid JSON array, no extra text. Format: [{"title":"...","chef":"Chef Name","time":"30 min","difficulty":"easy","ingredients":["item1","item2","item3","item4","item5"],"steps":["Step 1","Step 2","Step 3"],"img":"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80","isAI":true}]' },
             { role: "user", content: "Search: " + query }
