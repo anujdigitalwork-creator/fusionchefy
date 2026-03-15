@@ -14936,15 +14936,15 @@ export default function FusionChefAI() {
                   <label>🍽 Category</label>
                   <select className="rdb-select" value={recipeDBCategory} onChange={e => setRecipeDBCategory(e.target.value)}>
                     <option value="All">All Categories</option>
-                    {["Appetizers","Soups","Main Courses","Breads","Rice Preparations","Desserts","Beverages"].map(c => <option key={c} value={c}>{c}</option>)}
+                    {["Soups","Appetizers","Salads","Main Courses","Breads","Rice Preparations","Desserts","Tea","Coffee","Sides"].map(c => <option key={c} value={c}>{c}</option>)}
                   </select>
                 </div>
                 <div className="rdb-filter-group">
                   <label>📊 Difficulty</label>
                   <select className="rdb-select" value={recipeDBDifficulty} onChange={e => setRecipeDBDifficulty(e.target.value)}>
                     <option value="All">All Levels</option>
-                    <option value="easy">Easy</option>
-                    <option value="medium">Medium</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
                     <option value="hard">Hard</option>
                   </select>
                 </div>
@@ -14952,8 +14952,9 @@ export default function FusionChefAI() {
                   <label>🌍 Cuisine</label>
                   <select className="rdb-select" value={recipeDBCuisine} onChange={e => setRecipeDBCuisine(e.target.value)}>
                     <option value="All">All Cuisines</option>
-                    <option value="Indian">🇮🇳 Indian</option>
-                    <option value="Maharashtrian">🍊 Maharashtra</option>
+                    <option value="India">🇮🇳 Indian</option>
+                    <option value="Maharashtra">🍊 Maharashtra</option>
+                    <option value="Punjab">🌾 Punjab</option>
                   </select>
                 </div>
               </div>
@@ -14963,15 +14964,15 @@ export default function FusionChefAI() {
               const filtered = allRecipes.filter(d => {
                 const matchCat = recipeDBCategory === "All" || d.category === recipeDBCategory;
                 const matchDiff = recipeDBDifficulty === "All" || d.difficulty_level === recipeDBDifficulty;
-                const matchCuisine = recipeDBCuisine === "All" || d.cuisine === recipeDBCuisine;
+                const matchCuisine = recipeDBCuisine === "All" || d.state === recipeDBCuisine;
                 const matchSearch = !recipeDBSearch || 
                   d.dish_name.toLowerCase().includes(recipeDBSearch.toLowerCase()) ||
-                  d.flavor_profile.some(f => f.toLowerCase().includes(recipeDBSearch.toLowerCase())) ||
-                  d.ingredients.some(i => i.name.toLowerCase().includes(recipeDBSearch.toLowerCase()));
+                  (d.tags && d.tags.some(t => t.toLowerCase().includes(recipeDBSearch.toLowerCase()))) ||
+                  (d.ingredients && d.ingredients.some(i => i.name.toLowerCase().includes(recipeDBSearch.toLowerCase())));
                 return matchCat && matchDiff && matchCuisine && matchSearch;
               });
-              const emojis = {"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Beverages":"☕"};
-              const gradients = {"Appetizers":"#E8621A, #C9922A","Soups":"#4A7C59, #2E7D32","Main Courses":"#C0392B, #E8621A","Breads":"#C9922A, #8B4513","Rice Preparations":"#4A7C59, #C9922A","Desserts":"#9B59B6, #E8621A","Beverages":"#1C6EA4, #4A7C59"};
+              const emojis = {"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Beverages":"☕","Tea":"🍵","Coffee":"☕","Salads":"🥗","Sides":"🫙"};
+              const gradients = {"Appetizers":"#E8621A, #C9922A","Soups":"#4A7C59, #2E7D32","Main Courses":"#C0392B, #E8621A","Breads":"#C9922A, #8B4513","Rice Preparations":"#4A7C59, #C9922A","Desserts":"#9B59B6, #E8621A","Beverages":"#1C6EA4, #4A7C59","Tea":"#1a6b3c, #2E7D32","Coffee":"#4a2c0a, #8B4513","Salads":"#2E7D32, #4A7C59","Sides":"#C9922A, #E8621A"};
               return (
                 <>
                   <div className="rdb-count">Showing <strong>{filtered.length}</strong> of <strong>{allRecipes.length}</strong> recipes</div>
