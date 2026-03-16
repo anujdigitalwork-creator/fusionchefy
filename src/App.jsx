@@ -9101,7 +9101,8 @@ const punjabCuisineData = [
       "punjabi fried fish",
       "amritsar fish fry",
       "crispy fish recipe india"
-    ]
+    ],
+    "img": "/images/india/punjab/appetizers/amritsari-machhi-punjab-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Tandoori Chicken Recipe | FusionChef AI",
@@ -9196,7 +9197,8 @@ const punjabCuisineData = [
       "punjabi tandoori",
       "clay oven chicken",
       "authentic tandoori chicken marinade"
-    ]
+    ],
+    "img": "/images/india/punjab/appetizers/tandoori-chicken-punjab-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Paneer Tikka Recipe | FusionChef AI",
@@ -9296,7 +9298,8 @@ const punjabCuisineData = [
       "punjabi paneer tikka",
       "grilled paneer recipe",
       "vegetarian tikka"
-    ]
+    ],
+    "img": "/images/india/punjab/appetizers/paneer-tikka-punjab-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Chole Bhature Recipe | FusionChef AI",
@@ -11698,7 +11701,8 @@ const punjabCuisineData = [
       "amritsari chaat",
       "punjabi potato chaat",
       "street food amritsar"
-    ]
+    ],
+    "img": "/images/india/punjab/appetizers/amritsari-aloo-chaat-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Gol Gappe Recipe | FusionChef AI",
@@ -11792,7 +11796,8 @@ const punjabCuisineData = [
       "pani puri punjab",
       "punjabi street food",
       "golgappa recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/appetizers/gol-gappe-punjab-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Samosa Recipe | FusionChef AI",
@@ -11891,7 +11896,8 @@ const punjabCuisineData = [
       "aloo samosa recipe",
       "crispy samosa",
       "indian street food samosa"
-    ]
+    ],
+    "img": "/images/india/punjab/appetizers/punjabi-samosa-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Dahi Bhalle Recipe | FusionChef AI",
@@ -11992,7 +11998,8 @@ const punjabCuisineData = [
       "dahi vada punjabi",
       "lentil fritters yogurt",
       "punjabi chaat recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/appetizers/dahi-bhalle-punjab-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Kachumber Salad Recipe | FusionChef AI",
@@ -13046,7 +13053,8 @@ const punjabCuisineData = [
       "punjabi papad appetizer",
       "crispy papad topping",
       "indian restaurant starter"
-    ]
+    ],
+    "img": "/images/india/punjab/appetizers/masala-papad-punjab-appetizer.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Mint Chutney Recipe | FusionChef AI",
