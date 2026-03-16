@@ -10986,7 +10986,8 @@ const punjabCuisineData = [
       "punjabi rice kheer",
       "rice pudding india",
       "festival kheer recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/desserts/chawal-ki-kheer-punjab-dessert.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Gulab Jamun Recipe | FusionChef AI",
@@ -11077,7 +11078,8 @@ const punjabCuisineData = [
       "punjabi gulab jamun",
       "milk dumpling sweet",
       "festival sweet india"
-    ]
+    ],
+    "img": "/images/india/punjab/desserts/gulab-jamun-punjab-dessert.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Gajar Ka Halwa Recipe | FusionChef AI",
@@ -11168,7 +11170,8 @@ const punjabCuisineData = [
       "carrot halwa punjab",
       "gajar halwa recipe",
       "indian carrot pudding winter"
-    ]
+    ],
+    "img": "/images/india/punjab/desserts/gajar-ka-halwa-punjab-dessert.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Pinni Recipe | FusionChef AI",
@@ -11253,7 +11256,8 @@ const punjabCuisineData = [
       "punjabi pinni sweet",
       "wheat jaggery balls india",
       "winter sweet punjab"
-    ]
+    ],
+    "img": "/images/india/punjab/desserts/pinni-punjab-dessert.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Kulfi Recipe | FusionChef AI",
@@ -11339,7 +11343,8 @@ const punjabCuisineData = [
       "punjabi kulfi",
       "indian ice cream",
       "saffron kulfi recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/desserts/punjabi-kulfi-dessert.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Kaddu Ki Sabzi Recipe | FusionChef AI",
@@ -13972,7 +13977,8 @@ const punjabCuisineData = [
       "wheat flour halwa punjab",
       "langar halwa",
       "punjabi halwa recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/desserts/atte-ka-halwa-punjab-dessert.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Gobhi Paratha Recipe | FusionChef AI",
