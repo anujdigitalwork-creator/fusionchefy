@@ -12088,7 +12088,8 @@ const punjabCuisineData = [
       "north indian salad",
       "cucumber tomato onion salad punjab",
       "kachumber salad recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/salads/punjabi-kachumber-salad.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Mooli Salad Recipe | FusionChef AI",
@@ -12167,7 +12168,8 @@ const punjabCuisineData = [
       "radish raita punjab",
       "white radish yogurt",
       "winter raita recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/salads/mooli-raita-punjab-salad.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Onion Salad Recipe | FusionChef AI",
@@ -12241,7 +12243,8 @@ const punjabCuisineData = [
       "punjabi pickled onions",
       "dhaba onion salad",
       "vinegar onions india"
-    ]
+    ],
+    "img": "/images/india/punjab/salads/pyaz-sirka-punjab-salad.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Chana Salad Recipe | FusionChef AI",
@@ -12329,7 +12332,8 @@ const punjabCuisineData = [
       "punjabi chickpea salad",
       "healthy chaat",
       "boiled chana salad"
-    ]
+    ],
+    "img": "/images/india/punjab/salads/chana-chaat-punjab-salad.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Masala Chai Recipe | FusionChef AI",
@@ -14492,7 +14496,8 @@ const punjabCuisineData = [
       "punjabi salad",
       "north indian salad recipe",
       "chaat masala vegetable salad"
-    ]
+    ],
+    "img": "/images/india/punjab/salads/lahori-salad-punjab.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Dhaba Paneer Recipe | FusionChef AI",
