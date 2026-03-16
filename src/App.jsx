@@ -9565,7 +9565,8 @@ const punjabCuisineData = [
       "cornmeal flatbread punjab",
       "maize roti recipe",
       "makki roti sarson saag"
-    ]
+    ],
+    "img": "/images/india/punjab/breads/makki-di-roti-punjab-bread.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Butter Naan Recipe | FusionChef AI",
@@ -9650,7 +9651,8 @@ const punjabCuisineData = [
       "punjabi naan",
       "homemade naan bread",
       "tandoor naan recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/breads/butter-naan-punjab-bread.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Laccha Paratha Recipe | FusionChef AI",
@@ -9716,7 +9718,8 @@ const punjabCuisineData = [
       "layered paratha punjab",
       "flaky paratha recipe",
       "punjabi bread recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/breads/laccha-paratha-punjab-bread.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Aloo Paratha Recipe | FusionChef AI",
@@ -9807,7 +9810,8 @@ const punjabCuisineData = [
       "punjabi aloo paratha",
       "potato stuffed flatbread",
       "breakfast paratha recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/breads/aloo-paratha-punjab-bread.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Kulcha Recipe | FusionChef AI",
@@ -9903,7 +9907,8 @@ const punjabCuisineData = [
       "punjabi kulcha",
       "stuffed kulcha",
       "amritsar street food bread"
-    ]
+    ],
+    "img": "/images/india/punjab/breads/amritsari-kulcha-punjab-bread.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Matar Paneer Recipe | FusionChef AI",
@@ -14054,7 +14059,8 @@ const punjabCuisineData = [
       "cauliflower stuffed paratha",
       "punjabi gobi paratha",
       "winter breakfast punjab"
-    ]
+    ],
+    "img": "/images/india/punjab/breads/gobhi-paratha-punjab-bread.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Bhature Recipe | FusionChef AI",
@@ -14140,7 +14146,8 @@ const punjabCuisineData = [
       "punjabi bhature",
       "deep fried bread india",
       "chole bhature bread recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/breads/bhature-punjab-bread.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Matar Kulcha Recipe | FusionChef AI",
