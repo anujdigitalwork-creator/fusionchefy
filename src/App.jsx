@@ -15896,7 +15896,6 @@ export default function FusionChefAI() {
           ))}
         </ul>
         <div className="nav-right">
-          <input className="nav-search" placeholder="Search recipes..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)} onKeyDown={e => e.key === "Enter" && handleSearch()} />
           <button className="btn-ai" onClick={() => scrollToSection("ai-chef")}>✨ Ask AI Chef</button>
         </div>
       </nav>
