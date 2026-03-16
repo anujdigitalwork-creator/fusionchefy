@@ -10799,7 +10799,8 @@ const punjabCuisineData = [
       "punjabi cumin rice",
       "basmati rice recipe",
       "jeera pulao recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/rice/jeera-rice-punjab-rice.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Biryani Recipe | FusionChef AI",
@@ -10899,7 +10900,8 @@ const punjabCuisineData = [
       "north indian biryani",
       "dum biryani recipe",
       "chicken biryani punjab"
-    ]
+    ],
+    "img": "/images/india/punjab/rice/punjabi-chicken-biryani-rice.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Kheer Recipe | FusionChef AI",
@@ -14423,7 +14425,8 @@ const punjabCuisineData = [
       "saffron sweet rice punjab",
       "zarda rice punjabi",
       "festival rice recipe punjab"
-    ]
+    ],
+    "img": "/images/india/punjab/rice/meetha-chawal-punjab-rice.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Aloo Kulcha Salad Recipe | FusionChef AI",
