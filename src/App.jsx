@@ -8901,7 +8901,8 @@ const punjabCuisineData = [
       "punjabi saag",
       "mustard greens recipe",
       "sarson saag makki roti"
-    ]
+    ],
+    "img": "/images/india/punjab/main-courses/sarson-da-saag-punjab-main.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Butter Chicken Recipe | FusionChef AI",
@@ -9007,7 +9008,8 @@ const punjabCuisineData = [
       "murgh makhani recipe",
       "punjabi butter chicken",
       "restaurant style butter chicken"
-    ]
+    ],
+    "img": "/images/india/punjab/main-courses/murgh-makhani-punjab-main.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Amritsari Fish Recipe | FusionChef AI",
@@ -9400,7 +9402,8 @@ const punjabCuisineData = [
       "punjabi chole bhature",
       "chickpea curry puri",
       "delhi chole bhature"
-    ]
+    ],
+    "img": "/images/india/punjab/main-courses/chole-bhature-punjab-main.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Rajma Chawal Recipe | FusionChef AI",
@@ -9496,7 +9499,8 @@ const punjabCuisineData = [
       "punjabi rajma recipe",
       "kidney bean curry rice",
       "rajma masala recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/main-courses/rajma-chawal-punjab-main.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Makki Di Roti Recipe | FusionChef AI",
@@ -10000,7 +10004,8 @@ const punjabCuisineData = [
       "punjabi matar paneer",
       "peas paneer curry",
       "paneer recipe indian"
-    ]
+    ],
+    "img": "/images/india/punjab/main-courses/matar-paneer-punjab-main.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Palak Paneer Recipe | FusionChef AI",
@@ -10100,7 +10105,8 @@ const punjabCuisineData = [
       "punjabi palak paneer",
       "spinach paneer curry",
       "saag paneer recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/main-courses/palak-paneer-punjab-main.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Kadhi Pakora Recipe | FusionChef AI",
@@ -10200,7 +10206,8 @@ const punjabCuisineData = [
       "punjabi kadhi recipe",
       "yogurt curry fritters",
       "kadhi chawal recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/main-courses/punjabi-kadhi-pakora-punjab-main.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Shahi Paneer Recipe | FusionChef AI",
@@ -10301,7 +10308,8 @@ const punjabCuisineData = [
       "royal paneer curry",
       "mughal paneer recipe",
       "creamy paneer dish punjab"
-    ]
+    ],
+    "img": "/images/india/punjab/main-courses/shahi-paneer-punjab-main.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Lassi Recipe | FusionChef AI",
@@ -11409,7 +11417,8 @@ const punjabCuisineData = [
       "punjabi pumpkin curry",
       "sweet sour pumpkin india",
       "kaddu recipe north india"
-    ]
+    ],
+    "img": "/images/india/punjab/main-courses/kaddu-ki-sabzi-punjab-main.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Baingan Bharta Recipe | FusionChef AI",
@@ -11505,7 +11514,8 @@ const punjabCuisineData = [
       "punjabi eggplant recipe",
       "smoked brinjal north india",
       "roasted eggplant curry punjab"
-    ]
+    ],
+    "img": "/images/india/punjab/main-courses/baingan-bharta-punjab-main.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Aloo Gobi Recipe | FusionChef AI",
@@ -11606,7 +11616,8 @@ const punjabCuisineData = [
       "punjabi aloo gobi",
       "potato cauliflower curry",
       "dry aloo gobi sabzi"
-    ]
+    ],
+    "img": "/images/india/punjab/main-courses/aloo-gobi-punjab-main.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Chaat Recipe | FusionChef AI",
@@ -13501,7 +13512,8 @@ const punjabCuisineData = [
       "rawalpindi chole",
       "dry chickpea curry punjab",
       "pindi chane recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/main-courses/pindi-chole-punjab-main.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Langar Dal Recipe | FusionChef AI",
@@ -14222,7 +14234,8 @@ const punjabCuisineData = [
       "punjabi matar chaat",
       "white peas chaat",
       "delhi street food matar kulcha"
-    ]
+    ],
+    "img": "/images/india/punjab/main-courses/matar-kulcha-punjab-main.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Sookha Kala Chana Recipe | FusionChef AI",
@@ -14312,7 +14325,8 @@ const punjabCuisineData = [
       "black chickpea dry curry",
       "punjabi chana recipe",
       "sookha chana prasad"
-    ]
+    ],
+    "img": "/images/india/punjab/main-courses/sookha-kala-chana-punjab-main.jpg"
   },
   {
     "seo_title": "Authentic Punjabi Meetha Chawal Recipe | FusionChef AI",
@@ -14593,7 +14607,8 @@ const punjabCuisineData = [
       "punjabi dhaba style paneer",
       "roadside paneer curry",
       "mustard oil paneer recipe"
-    ]
+    ],
+    "img": "/images/india/punjab/main-courses/dhaba-paneer-punjab-main.jpg"
   }
 ];
 
