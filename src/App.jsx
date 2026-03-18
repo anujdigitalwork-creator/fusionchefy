@@ -12471,6 +12471,7 @@ const punjabCuisineData = [
       "Morning Ritual"
     ],
     "image_prompt": "Ultra realistic food photography of Punjabi Masala Chai in a kulhad clay cup, deep amber tea color, steam rising, ginger and cardamom pods alongside, rustic dhaba morning setting",
+    "img": "/images/india/punjab/tea/masala-chai-punjab-tea.jpg",
     "seo_keywords": [
       "punjabi masala chai recipe",
       "north indian tea recipe",
@@ -12552,6 +12553,7 @@ const punjabCuisineData = [
       "Warming"
     ],
     "image_prompt": "Ultra realistic food photography of Noon Chai pink tea in a traditional cup, beautiful dusty rose pink color, pistachio garnish, elegant presentation, soft morning light",
+    "img": "/images/india/punjab/tea/noon-chai-punjab-tea.jpg",
     "seo_keywords": [
       "noon chai recipe",
       "pink tea punjab",
@@ -12637,6 +12639,7 @@ const punjabCuisineData = [
       "Kashmiri"
     ],
     "image_prompt": "Ultra realistic food photography of Kahwa in a traditional brass cup, golden saffron tea, almond slivers and rose petals floating, elegant Kashmiri setting",
+    "img": "/images/india/punjab/tea/kahwa-punjab-tea.jpg",
     "seo_keywords": [
       "kahwa recipe",
       "kashmiri green tea",
@@ -12716,6 +12719,7 @@ const punjabCuisineData = [
       "Street Chai"
     ],
     "image_prompt": "Ultra realistic dramatic food photography of Tandoori Chai being poured into a smoking hot clay kulhad, steam and smoke dramatically rising, orange glow, street chai setting Punjab at dusk",
+    "img": "/images/india/punjab/tea/tandoori-chai-punjab-tea.jpg",
     "seo_keywords": [
       "tandoori chai recipe",
       "smoky clay pot tea",
@@ -12791,6 +12795,7 @@ const punjabCuisineData = [
       "Traditional"
     ],
     "image_prompt": "Ultra realistic food photography of Badam Doodh in a tall glass, creamy golden almond milk, saffron strands and pistachio garnish, frothy top, warm cozy lighting",
+    "img": "/images/india/punjab/tea/badam-doodh-punjab-tea.jpg",
     "seo_keywords": [
       "badam doodh recipe",
       "almond milk drink india",
