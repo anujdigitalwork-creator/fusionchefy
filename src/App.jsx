@@ -10424,6 +10424,7 @@ const punjabCuisineData = [
       "Iconic"
     ],
     "image_prompt": "Ultra realistic professional food photography of Punjabi Sweet Lassi in a tall clay glass, frothy white yogurt drink topped with cream layer and rose petals, pistachio garnish, golden afternoon light",
+    "img": "/images/india/punjab/sides/punjabi-sweet-lassi-punjab-sides.jpg",
     "seo_keywords": [
       "punjabi lassi recipe",
       "sweet lassi recipe",
@@ -10502,6 +10503,7 @@ const punjabCuisineData = [
       "Fruity"
     ],
     "image_prompt": "Ultra realistic food photography of Mango Lassi in a tall glass, vibrant golden yellow color, saffron strands garnish, condensation on glass, summer tropical setting",
+    "img": "/images/india/punjab/sides/aam-ki-lassi-punjab-sides.jpg",
     "seo_keywords": [
       "mango lassi recipe",
       "aam lassi punjab",
@@ -10586,6 +10588,7 @@ const punjabCuisineData = [
       "Street Food"
     ],
     "image_prompt": "Ultra realistic food photography of Shikanji lemonade in a tall glass with ice, bright yellow color, mint leaves and lemon slice, condensation, street food setting Punjab",
+    "img": "/images/india/punjab/sides/shikanji-punjab-sides.jpg",
     "seo_keywords": [
       "shikanji recipe",
       "punjabi lemonade",
@@ -10670,6 +10673,7 @@ const punjabCuisineData = [
       "Raw Mango"
     ],
     "image_prompt": "Ultra realistic food photography of Aam Panna in a tall glass, pale green color, mint leaves floating, ice cubes, condensation, bright summer photography",
+    "img": "/images/india/punjab/sides/aam-panna-punjab-sides.jpg",
     "seo_keywords": [
       "aam panna recipe",
       "raw mango drink punjab",
@@ -10754,6 +10758,7 @@ const punjabCuisineData = [
       "Cooling"
     ],
     "image_prompt": "Ultra realistic food photography of Masala Chaas spiced buttermilk in a tall glass, pale white frothy drink, cumin and mint garnish, bright clean food photography",
+    "img": "/images/india/punjab/sides/masala-chaas-punjab-sides.jpg",
     "seo_keywords": [
       "masala chaas recipe",
       "punjabi buttermilk",
@@ -12865,6 +12870,7 @@ const punjabCuisineData = [
       "Punjabi"
     ],
     "image_prompt": "Ultra realistic food photography of Amritsari Doodh Coffee in a thick glass, frothy milky coffee, cardamom garnish, Amritsar morning setting",
+    "img": "/images/india/punjab/coffee/amritsari-doodh-coffee-punjab.jpg",
     "seo_keywords": [
       "punjabi coffee recipe",
       "amritsari doodh coffee",
@@ -12938,6 +12944,7 @@ const punjabCuisineData = [
       "Cafe Style"
     ],
     "image_prompt": "Ultra realistic food photography of Punjabi Cold Coffee in a tall glass, thick blended coffee with whipped cream, chocolate drizzle, condensation on glass, vibrant cafe setting",
+    "img": "/images/india/punjab/coffee/punjabi-cold-coffee-punjab.jpg",
     "seo_keywords": [
       "punjabi cold coffee recipe",
       "north india cold coffee",
@@ -13033,6 +13040,7 @@ const punjabCuisineData = [
       "Festive"
     ],
     "image_prompt": "Ultra realistic food photography of Thandai in a tall glass, pale creamy milk with rose petals and saffron strands, served with colorful Holi setting, rose petals scattered around",
+    "img": "/images/india/punjab/coffee/thandai-punjab-coffee.jpg",
     "seo_keywords": [
       "thandai recipe",
       "holi drink punjab",
@@ -13204,6 +13212,7 @@ const punjabCuisineData = [
       "Gluten-Free"
     ],
     "image_prompt": "Ultra realistic food photography of Pudina Chutney in a small bowl, vibrant bright green, served alongside tandoori chicken and sliced onions, clean food photography",
+    "img": "/images/india/punjab/sides/pudina-chutney-punjab-sides.jpg",
     "seo_keywords": [
       "pudina chutney recipe",
       "punjabi mint chutney",
@@ -13289,6 +13298,7 @@ const punjabCuisineData = [
       "Gluten-Free"
     ],
     "image_prompt": "Ultra realistic food photography of Imli Khajur Chutney in a small bowl, deep glossy brown sauce, served alongside samosas and chaat, dark moody food photography",
+    "img": "/images/india/punjab/sides/imli-khajur-chutney-punjab-sides.jpg",
     "seo_keywords": [
       "imli chutney recipe",
       "tamarind date chutney punjab",
@@ -13368,6 +13378,7 @@ const punjabCuisineData = [
       "Classic"
     ],
     "image_prompt": "Ultra realistic food photography of Boondi Raita in a white bowl, creamy yogurt with tiny golden boondi, cumin and chili powder garnish, fresh coriander, clean food photography",
+    "img": "/images/india/punjab/sides/boondi-raita-punjab-sides.jpg",
     "seo_keywords": [
       "boondi raita recipe",
       "punjabi raita",
@@ -13464,6 +13475,7 @@ const punjabCuisineData = [
       "Spicy"
     ],
     "image_prompt": "Ultra realistic food photography of Punjabi Mixed Achaar in a glass jar, colorful vegetables in mustard oil, vibrant red and yellow spices, rustic Punjabi kitchen background",
+    "img": "/images/india/punjab/sides/punjabi-mixed-achaar-punjab-sides.jpg",
     "seo_keywords": [
       "punjabi achaar recipe",
       "mixed vegetable pickle india",
