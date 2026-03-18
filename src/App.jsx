@@ -16310,7 +16310,7 @@ function RecipePage({ allData }) {
         <div style={{ fontSize:"4rem", marginBottom:"1rem" }}>🍽</div>
         <h2 style={{ fontFamily:"'Playfair Display',serif", marginBottom:"0.5rem" }}>Recipe not found</h2>
         <p style={{ color:"#7A6A55", marginBottom:"1.5rem" }}>This dish might have moved or doesn't exist yet.</p>
-        <button onClick={() => navigate(-1)} style={{ background:"#E8621A", color:"white", border:"none", padding:"0.8rem 2rem", borderRadius:"24px", cursor:"pointer", fontFamily:"'DM Sans',sans-serif", fontWeight:600 }}>← Back to FusionChef AI</button>
+        <button onClick={() => { window.history.length > 1 ? navigate(-1) : navigate("/") }} style={{ background:"#E8621A", color:"white", border:"none", padding:"0.8rem 2rem", borderRadius:"24px", cursor:"pointer", fontFamily:"'DM Sans',sans-serif", fontWeight:600 }}>← Back to FusionChef AI</button>
       </div>
     );
   }
@@ -16323,9 +16323,9 @@ function RecipePage({ allData }) {
 
       {/* Nav */}
       <div style={{background:"#1C1C1C",padding:"1rem 2rem",display:"flex",alignItems:"center",gap:"1rem",position:"sticky",top:0,zIndex:10}}>
-        <button onClick={() => navigate(-1)} style={{background:"transparent",border:"2px solid rgba(255,255,255,0.3)",color:"white",padding:"0.4rem 1rem",borderRadius:"24px",cursor:"pointer",fontFamily:"'DM Sans',sans-serif",fontSize:"0.85rem"}}>← Back</button>
+        <button onClick={() => { window.history.length > 1 ? navigate(-1) : navigate("/") }} style={{background:"transparent",border:"2px solid rgba(255,255,255,0.3)",color:"white",padding:"0.4rem 1rem",borderRadius:"24px",cursor:"pointer",fontFamily:"'DM Sans',sans-serif",fontSize:"0.85rem"}}>← Back</button>
         <span style={{color:"#E8621A",fontSize:"1.4rem"}}>🍴</span>
-        <span onClick={() => navigate(-1)} style={{fontFamily:"'Playfair Display',serif",color:"white",fontSize:"1.2rem",cursor:"pointer"}}>FusionChef <em style={{color:"#E8621A"}}>AI</em></span>
+        <span onClick={() => { window.history.length > 1 ? navigate(-1) : navigate("/") }} style={{fontFamily:"'Playfair Display',serif",color:"white",fontSize:"1.2rem",cursor:"pointer"}}>FusionChef <em style={{color:"#E8621A"}}>AI</em></span>
       </div>
 
       {/* Hero */}
@@ -16426,7 +16426,7 @@ function RecipePage({ allData }) {
         </div>
 
         <div style={{textAlign:"center",marginTop:"2rem"}}>
-          <button onClick={() => navigate(-1)} style={{background:"#E8621A",color:"white",border:"none",padding:"0.9rem 2.5rem",borderRadius:"30px",fontSize:"1rem",fontWeight:700,cursor:"pointer",fontFamily:"'DM Sans',sans-serif"}}>
+          <button onClick={() => { window.history.length > 1 ? navigate(-1) : navigate("/") }} style={{background:"#E8621A",color:"white",border:"none",padding:"0.9rem 2.5rem",borderRadius:"30px",fontSize:"1rem",fontWeight:700,cursor:"pointer",fontFamily:"'DM Sans',sans-serif"}}>
             ← Explore More Recipes
           </button>
         </div>
