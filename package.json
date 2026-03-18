@@ -18,30 +18,3 @@
     "vite": "^5.1.4"
   }
 }
-```
-
----
-
-## Do this on GitHub right now:
-
-1. Go to your repo → click **`package.json`**
-2. Click the **pencil ✏️ icon**
-3. **Select all** and **delete** the existing code
-4. **Paste** the code above
-5. Click **"Commit changes"** → **"Commit directly to main"** → **"Commit changes"**
-
----
-
-## Next steps after this:
-
-Once you commit this, I need **2 more things** from you:
-
-**1. Your `vite.config.js`** — paste it here like you did with `package.json`
-
-**2. Your `App.jsx`** — either upload the file or share the Raw GitHub URL
-
-Then I'll write you the complete updated `App.jsx` with full recipe routing like:
-```
-fusionchefy.vercel.app/cuisine/indian/main-courses/butter-chicken
-fusionchefy.vercel.app/cuisine/maharashtra/desserts/puran-poli
-fusionchefy.vercel.app/cuisine/punjab/main-courses/butter-chicken
