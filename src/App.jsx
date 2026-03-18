@@ -1,4 +1,40 @@
 import React, { useState, useEffect, useRef } from "react";
+import { BrowserRouter, Routes, Route, useParams, useNavigate } from "react-router-dom";
+
+// ─── Google Analytics 4 Setup ────────────────────────────────────────────────
+const GA_ID = "G-6MVKQHR38Y";
+
+// Inject gtag scripts into <head> once
+function injectGA() {
+  if (document.getElementById("ga-script")) return;
+  const s1 = document.createElement("script");
+  s1.id = "ga-script";
+  s1.async = true;
+  s1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+  document.head.appendChild(s1);
+
+  const s2 = document.createElement("script");
+  s2.id = "ga-init";
+  s2.innerHTML = `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${GA_ID}', { send_page_view: true });
+  `;
+  document.head.appendChild(s2);
+}
+
+// Safe gtag event helper — works even before gtag fully loads
+function gtagEvent(eventName, params = {}) {
+  if (typeof window !== "undefined") {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: eventName, ...params });
+    if (typeof window.gtag === "function") {
+      window.gtag("event", eventName, params);
+    }
+  }
+}
+// ─────────────────────────────────────────────────────────────────────────────
 
 const FONTS = `@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap');`;
 
@@ -14631,7 +14667,7 @@ const punjabCuisineData = [
 const chips = ["Chicken + lemon + garlic", "Pasta in 20 mins", "Vegan dessert ideas", "Leftover rice recipes"];
 const welcome = { role: "ai", content: <><h4>👋 Hello, I'm FusionChef AI!</h4>Tell me what ingredients you have, a cuisine you're craving, or any dietary needs — I'll craft a recipe just for you.</> };
 
-export default function FusionChefAI() {
+function FusionChefAI() {
   const [slide, setSlide] = useState(0);
   const [liked, setLiked] = useState({});
   const [messages, setMessages] = useState([welcome]);
@@ -14675,6 +14711,102 @@ export default function FusionChefAI() {
   const [catModal, setCatModal] = useState(null);
   const messagesEndRef = useRef(null);
 
+  // ── GA4: Inject scripts once on mount ──────────────────────────────────────
+  useEffect(() => {
+    injectGA();
+    gtagEvent("page_view", {
+      page_title: "FusionChef AI – Home",
+      page_location: window.location.href,
+    });
+  }, []);
+
+  // ── GA4: Virtual page views for SPA navigation ─────────────────────────────
+  useEffect(() => {
+    const pages = [
+      [indianPage,           "Indian Cuisine"],
+      [maharashtraPage,      "Maharashtra Cuisine"],
+      [punjabPage,           "Punjab Cuisine"],
+      [maharashtraGuidePage, "Maharashtra Guide"],
+      [punjabGuidePage,      "Punjab Guide"],
+      [aboutPage,            "About Us"],
+      [contactPage,          "Contact Us"],
+      [privacyPage,          "Privacy Policy"],
+      [termsPage,            "Terms of Use"],
+      [careersPage,          "Careers"],
+      [cuisineExplorer,      "Cuisine Explorer"],
+      [recipeDB,             "Recipe Database"],
+    ];
+    const active = pages.find(([state]) => state);
+    const title = active ? `FusionChef AI – ${active[1]}` : "FusionChef AI – Home";
+    document.title = title;
+    gtagEvent("page_view", {
+      page_title: title,
+      page_location: window.location.href,
+    });
+  }, [indianPage, maharashtraPage, punjabPage, maharashtraGuidePage, punjabGuidePage,
+      aboutPage, contactPage, privacyPage, termsPage, careersPage,
+      cuisineExplorer, recipeDB]);
+
+  // ── GA4: Track recipe modal opens ──────────────────────────────────────────
+  useEffect(() => {
+    if (indianModal) {
+      gtagEvent("view_recipe", {
+        recipe_name: indianModal.dish_name,
+        cuisine: "Indian",
+        category: indianModal.category,
+        difficulty: indianModal.difficulty_level,
+      });
+    }
+  }, [indianModal]);
+
+  useEffect(() => {
+    if (maharashtraModal) {
+      gtagEvent("view_recipe", {
+        recipe_name: maharashtraModal.dish_name,
+        cuisine: "Maharashtra",
+        category: maharashtraModal.category,
+        difficulty: maharashtraModal.difficulty_level,
+      });
+    }
+  }, [maharashtraModal]);
+
+  useEffect(() => {
+    if (punjabModal) {
+      gtagEvent("view_recipe", {
+        recipe_name: punjabModal.dish_name,
+        cuisine: "Punjab",
+        category: punjabModal.category,
+        difficulty: punjabModal.difficulty_level,
+      });
+    }
+  }, [punjabModal]);
+
+  useEffect(() => {
+    if (recipeModal) {
+      gtagEvent("view_recipe", {
+        recipe_name: recipeModal.title,
+        cuisine: "Trending",
+        category: recipeModal.chef || "Unknown",
+      });
+    }
+  }, [recipeModal]);
+
+  useEffect(() => {
+    if (chefModal) {
+      gtagEvent("view_chef_profile", {
+        chef_name: chefModal.name,
+        specialty: chefModal.specialty,
+      });
+    }
+  }, [chefModal]);
+
+  // ── GA4: Newsletter subscription ───────────────────────────────────────────
+  useEffect(() => {
+    if (subscribed) {
+      gtagEvent("newsletter_signup", { email_domain: email.split("@")[1] || "unknown" });
+    }
+  }, [subscribed]);
+
   // Scroll to top on initial load and page changes
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
@@ -14704,6 +14836,34 @@ export default function FusionChefAI() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // ── GA4: Scroll depth milestones (25 / 50 / 75 / 90 %) ───────────────────
+  useEffect(() => {
+    const milestones = new Set();
+    const onScrollDepth = () => {
+      const scrolled = window.scrollY + window.innerHeight;
+      const total = document.documentElement.scrollHeight;
+      const pct = Math.floor((scrolled / total) * 100);
+      [25, 50, 75, 90].forEach(m => {
+        if (pct >= m && !milestones.has(m)) {
+          milestones.add(m);
+          gtagEvent("scroll_depth", { depth_percent: m, page_title: document.title });
+        }
+      });
+    };
+    window.addEventListener("scroll", onScrollDepth, { passive: true });
+    return () => window.removeEventListener("scroll", onScrollDepth);
+  }, []);
+
+  // ── GA4: Time-on-site engagement milestones ────────────────────────────────
+  useEffect(() => {
+    const timers = [
+      setTimeout(() => gtagEvent("time_on_site", { seconds: 30 }), 30000),
+      setTimeout(() => gtagEvent("time_on_site", { seconds: 60 }), 60000),
+      setTimeout(() => gtagEvent("time_on_site", { seconds: 120 }), 120000),
+    ];
+    return () => timers.forEach(clearTimeout);
+  }, []);
+
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
@@ -14721,6 +14881,11 @@ export default function FusionChefAI() {
     setInput("");
     setMessages(m => [...m, { role: "user", content: query }]);
     setLoading(true);
+    gtagEvent("ai_chef_query", {
+      query_text: query.substring(0, 100),
+      query_length: query.length,
+      is_chip: !!text,
+    });
     try {
       const GROQ_KEY = "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";
       const systemPrompt = "You are FusionChef AI, a warm and creative culinary AI. When users ask for recipes, respond with a catchy dish name, 5-7 key ingredients, 3-4 brief cooking steps, and a helpful tip. Keep it enthusiastic and under 250 words.";
@@ -14754,6 +14919,7 @@ export default function FusionChefAI() {
     setSearchModal(true);
     setSearchLoading(true);
     setSearchResults([]);
+    gtagEvent("search", { search_term: query });
     // Search existing recipes
     const local = trending.filter(r =>
       r.title.toLowerCase().includes(query.toLowerCase()) ||
@@ -14844,7 +15010,7 @@ export default function FusionChefAI() {
                   <div className="modal-chef-stat"><strong>{chefModal.awards}</strong><span>Awards</span></div>
                 </div>
                 <p className="modal-chef-bio">{chefModal.bio}</p>
-                <button className="btn-ask-chef" onClick={() => { setChefModal(null); scrollToSection("ai-chef"); }}>
+                <button className="btn-ask-chef" onClick={() => { gtagEvent("ask_ai_chef_from_chef", { chef_name: chefModal.name, specialty: chefModal.specialty }); setChefModal(null); scrollToSection("ai-chef"); }}>
                   ✨ Ask AI Chef about {chefModal.name.split(" ")[0]}'s recipes
                 </button>
               </div>
@@ -15255,7 +15421,7 @@ export default function FusionChefAI() {
                   ) : (
                     <div className="indian-grid">
                       {filtered.map((dish, i) => (
-                        <div key={i} className="indian-card" onClick={() => setPunjabModal(dish)}>
+                        <div key={i} className="indian-card" onClick={() => { window.location.href = `/cuisine/punjab/${dish.category.toLowerCase().replace(/[^a-z0-9]+/g,"-")}/${dish.dish_name.toLowerCase().replace(/[^a-z0-9]+/g,"-")}`; }}>
                           <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
                             {dish.img ? (
                               <img src={dish.img} alt={dish.dish_name} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}}
@@ -15338,7 +15504,7 @@ export default function FusionChefAI() {
                       <div>{punjabModal.seo_keywords && punjabModal.seo_keywords.map((k,i) => <span key={i} className="flavor-tag">{k}</span>)}</div>
                     </div>
                     <div style={{marginTop:"1.2rem"}}>
-                      <button className="btn-ask-chef" onClick={() => { setPunjabModal(null); setPunjabPage(false); setTimeout(() => scrollToSection("ai-chef"), 300); }}>
+                      <button className="btn-ask-chef" onClick={() => { gtagEvent("ask_ai_chef_from_recipe", { dish_name: punjabModal.dish_name, cuisine: "Punjab" }); setPunjabModal(null); setPunjabPage(false); setTimeout(() => scrollToSection("ai-chef"), 300); }}>
                         ✨ Ask AI Chef about this dish
                       </button>
                     </div>
@@ -15637,7 +15803,7 @@ export default function FusionChefAI() {
               ) : (
                 <div className="indian-grid">
                   {filtered.map((dish, i) => (
-                    <div key={i} className="indian-card" onClick={() => setMaharashtraModal(dish)}>
+                    <div key={i} className="indian-card" onClick={() => { window.location.href = `/cuisine/maharashtra/${dish.category.toLowerCase().replace(/[^a-z0-9]+/g,"-")}/${dish.dish_name.toLowerCase().replace(/[^a-z0-9]+/g,"-")}`; }}>
                       <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
                         {dish.img ? (
                           <img 
@@ -15727,7 +15893,7 @@ export default function FusionChefAI() {
                       <div>{maharashtraModal.seo_keywords && maharashtraModal.seo_keywords.map((k,i) => <span key={i} className="flavor-tag">{k}</span>)}</div>
                     </div>
                     <div style={{marginTop:"1.2rem"}}>
-                      <button className="btn-ask-chef" onClick={() => { setMaharashtraModal(null); setMaharashtraPage(false); setTimeout(() => { scrollToSection("ai-chef"); }, 300); }}>
+                      <button className="btn-ask-chef" onClick={() => { gtagEvent("ask_ai_chef_from_recipe", { dish_name: maharashtraModal.dish_name, cuisine: "Maharashtra" }); setMaharashtraModal(null); setMaharashtraPage(false); setTimeout(() => { scrollToSection("ai-chef"); }, 300); }}>
                         ✨ Ask AI Chef about this dish
                       </button>
                     </div>
@@ -15771,7 +15937,7 @@ export default function FusionChefAI() {
               ) : (
                 <div className="indian-grid">
                   {filtered.map((dish, i) => (
-                    <div key={i} className="indian-card" onClick={() => setIndianModal(dish)}>
+                    <div key={i} className="indian-card" onClick={() => { window.location.href = `/cuisine/indian/${dish.category.toLowerCase().replace(/[^a-z0-9]+/g,"-")}/${dish.dish_name.toLowerCase().replace(/[^a-z0-9]+/g,"-")}`; }}>
                       <div className="indian-card-img" style={{padding:0,overflow:"hidden"}}>
                         {dish.img ? <img src={dish.img} alt={dish.dish_name} style={{width:"100%",height:"100%",objectFit:"cover"}} /> : <span>{emojis[dish.category] || "🍽"}</span>}
                       </div>
@@ -15836,7 +16002,7 @@ export default function FusionChefAI() {
                       </div></>
                     )}
                     <div style={{marginTop:"1.2rem"}}>
-                      <button className="btn-ask-chef" onClick={() => { setIndianModal(null); setIndianPage(false); setTimeout(() => { scrollToSection("ai-chef"); sendMessage("Give me more tips for cooking " + indianModal.dish_name); }, 300); }}>
+                      <button className="btn-ask-chef" onClick={() => { gtagEvent("ask_ai_chef_from_recipe", { dish_name: indianModal.dish_name, cuisine: "Indian" }); setIndianModal(null); setIndianPage(false); setTimeout(() => { scrollToSection("ai-chef"); sendMessage("Give me more tips for cooking " + indianModal.dish_name); }, 300); }}>
                         ✨ Ask AI Chef about this dish
                       </button>
                     </div>
@@ -15868,7 +16034,7 @@ export default function FusionChefAI() {
               ) : (
                 <div className="search-results-grid">
                   {searchResults.map((r, i) => (
-                    <div key={i} className="search-result-card" onClick={() => { setSearchModal(false); setRecipeModal(r); }}>
+                    <div key={i} className="search-result-card" onClick={() => { gtagEvent("search_result_click", { recipe_name: r.title, result_position: i + 1, is_ai: !!r.isAI }); setSearchModal(false); setRecipeModal(r); }}>
                       <div className="search-result-img"><img src={r.img} alt={r.title} onError={e => e.target.src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80"} /></div>
                       <div className="search-result-body">
                         <div className="recipe-chef">{r.chef} {r.isAI && <span className="ai-badge">✨ AI</span>}</div>
@@ -15896,7 +16062,7 @@ export default function FusionChefAI() {
           ))}
         </ul>
         <div className="nav-right">
-          <button className="btn-ai" onClick={() => scrollToSection("ai-chef")}>✨ Ask AI Chef</button>
+          <button className="btn-ai" onClick={() => { gtagEvent("cta_click", { cta_name: "Ask AI Chef", location: "navbar" }); scrollToSection("ai-chef"); }}>✨ Ask AI Chef</button>
         </div>
       </nav>
 
@@ -15913,8 +16079,8 @@ export default function FusionChefAI() {
           <h1>{heroSlides[slide].title}</h1>
           <p>{heroSlides[slide].desc}</p>
           <div className="hero-btns">
-            <button className="btn-primary" onClick={() => scrollToSection("trending")}>Explore Recipes</button>
-            <button className="btn-outline" onClick={() => scrollToSection("ai-chef")}>✨ Generate with AI</button>
+            <button className="btn-primary" onClick={() => { gtagEvent("cta_click", { cta_name: "Explore Recipes", location: "hero" }); scrollToSection("trending"); }}>Explore Recipes</button>
+            <button className="btn-outline" onClick={() => { gtagEvent("cta_click", { cta_name: "Generate with AI", location: "hero" }); scrollToSection("ai-chef"); }}>✨ Generate with AI</button>
           </div>
         </div>
         <div className="hero-dots">
@@ -15990,6 +16156,7 @@ export default function FusionChefAI() {
             { name: "🇪🇸 Spanish", desc: "paella, tapas, churros", img: "https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=400&q=80", id: "coming" },
           ].map(c => (
             <div key={c.name} className="cat-card" onClick={() => {
+              gtagEvent("cuisine_click", { cuisine_name: c.name, is_available: c.id !== "coming" });
               if(c.id === "indian") { setIndianPage(true); }
               else if(c.id === "maharashtra") { setMaharashtraPage(true); }
               else { alert("🚧 " + c.name + " recipes coming soon!"); }
@@ -16016,11 +16183,11 @@ export default function FusionChefAI() {
         </div>
         <div className="trending-scroll" id="recipes">
           {trending.map((r, i) => (
-            <div key={i} className="recipe-card" onClick={() => setRecipeModal(r)}>
+            <div key={i} className="recipe-card" onClick={() => { gtagEvent("recipe_card_click", { recipe_name: r.title, chef: r.chef, difficulty: r.difficulty, section: "trending" }); setRecipeModal(r); }}>
               <div className="recipe-card-img">
                 <img src={r.img} alt={r.title} />
                 <span className={`recipe-badge ${r.difficulty}`}>{r.difficulty.charAt(0).toUpperCase()+r.difficulty.slice(1)}</span>
-                <button className={`heart-btn${liked[i] ? " liked" : ""}`} onClick={e => { e.stopPropagation(); setLiked(l => ({ ...l, [i]: !l[i] })); }}>
+                <button className={`heart-btn${liked[i] ? " liked" : ""}`} onClick={e => { e.stopPropagation(); const nowLiked = !liked[i]; setLiked(l => ({ ...l, [i]: nowLiked })); gtagEvent(nowLiked ? "recipe_liked" : "recipe_unliked", { recipe_name: r.title, chef: r.chef }); }}>
                   {liked[i] ? "❤️" : "🤍"}
                 </button>
               </div>
@@ -16046,7 +16213,7 @@ export default function FusionChefAI() {
         </div>
         <div className="chefs-grid">
           {chefs.map(c => (
-            <div key={c.name} className="chef-card" onClick={() => setChefModal(c)}>
+            <div key={c.name} className="chef-card" onClick={() => { gtagEvent("chef_profile_click", { chef_name: c.name, specialty: c.specialty }); setChefModal(c); }}>
               <img src={c.img} alt={c.name} className="chef-avatar" />
               <h3>{c.name}</h3>
               <div className="chef-specialty">{c.specialty}</div>
@@ -16070,7 +16237,7 @@ export default function FusionChefAI() {
         ) : (
           <div className="newsletter-form">
             <input className="newsletter-input" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
-            <button className="newsletter-btn" onClick={() => email && setSubscribed(true)}>Subscribe →</button>
+            <button className="newsletter-btn" onClick={() => { if(email) { gtagEvent("newsletter_subscribe_click", { email_domain: email.split("@")[1] || "unknown" }); setSubscribed(true); } }}>Subscribe →</button>
           </div>
         )}
       </section>
@@ -16101,7 +16268,7 @@ export default function FusionChefAI() {
         <div className="footer-bottom">
           <div style={{display:"flex",gap:"1.5rem",justifyContent:"center",flexWrap:"wrap",marginBottom:"0.8rem"}}>
             {[["About Us",()=>setAboutPage(true)],["Contact Us",()=>setContactPage(true)],["Privacy Policy",()=>setPrivacyPage(true)],["Terms of Use",()=>setTermsPage(true)],["Careers",()=>setCareersPage(true)]].map(([label,fn])=>(
-              <button key={label} onClick={()=>{fn();window.scrollTo({top:0,behavior:"smooth"});}} style={{background:"none",border:"none",color:"rgba(255,255,255,0.6)",fontSize:"0.82rem",cursor:"pointer",textDecoration:"underline",padding:0}}>{label}</button>
+              <button key={label} onClick={()=>{ gtagEvent("footer_link_click", { link_label: label }); fn(); window.scrollTo({top:0,behavior:"smooth"}); }} style={{background:"none",border:"none",color:"rgba(255,255,255,0.6)",fontSize:"0.82rem",cursor:"pointer",textDecoration:"underline",padding:0}}>{label}</button>
             ))}
           </div>
           © 2025 FusionChef AI by <strong style={{color:"var(--saffron)"}}>Chef Anuj Vikas Lonkar</strong>. All rights reserved. Powered by <span style={{color:"var(--saffron)"}}>Anthropic Claude</span>.
@@ -16110,3 +16277,180 @@ export default function FusionChefAI() {
     </>
   );
 }
+
+// ─── Slug helpers ─────────────────────────────────────────────────────────────
+function toSlug(str) {
+  return str.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+}
+
+// ─── Individual Recipe Page ───────────────────────────────────────────────────
+function RecipePage({ allData }) {
+  const { cuisine, category, dish } = useParams();
+  const navigate = useNavigate();
+
+  const dataSet = allData[cuisine] || [];
+  const recipe = dataSet.find(
+    r => toSlug(r.dish_name) === dish && toSlug(r.category) === category
+  );
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+    if (recipe) {
+      document.title = `${recipe.dish_name} – FusionChef AI`;
+      gtagEvent("page_view", {
+        page_title: `${recipe.dish_name} – FusionChef AI`,
+        page_location: window.location.href,
+      });
+    }
+  }, [recipe]);
+
+  if (!recipe) {
+    return (
+      <div style={{ minHeight:"100vh", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", background:"#FFF8EE", fontFamily:"'DM Sans',sans-serif" }}>
+        <div style={{ fontSize:"4rem", marginBottom:"1rem" }}>🍽</div>
+        <h2 style={{ fontFamily:"'Playfair Display',serif", marginBottom:"0.5rem" }}>Recipe not found</h2>
+        <p style={{ color:"#7A6A55", marginBottom:"1.5rem" }}>This dish might have moved or doesn't exist yet.</p>
+        <button onClick={() => navigate("/")} style={{ background:"#E8621A", color:"white", border:"none", padding:"0.8rem 2rem", borderRadius:"24px", cursor:"pointer", fontFamily:"'DM Sans',sans-serif", fontWeight:600 }}>← Back to FusionChef AI</button>
+      </div>
+    );
+  }
+
+  const emojis = {"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Beverages":"☕","Tea":"🍵","Coffee":"☕","Salads":"🥗","Sides":"🫙"};
+
+  return (
+    <div style={{ minHeight:"100vh", background:"#FFF8EE", fontFamily:"'DM Sans',sans-serif" }}>
+      <style>{`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap'); :root{--saffron:#E8621A;--saffron-light:#F47B35;--cream:#FFF8EE;--cream-dark:#F5EDDB;--charcoal:#1C1C1C;--text-muted:#7A6A55;--green:#4A7C59;--gold:#C9922A;}`}</style>
+
+      {/* Nav */}
+      <div style={{background:"#1C1C1C",padding:"1rem 2rem",display:"flex",alignItems:"center",gap:"1rem",position:"sticky",top:0,zIndex:10}}>
+        <button onClick={() => navigate("/")} style={{background:"transparent",border:"2px solid rgba(255,255,255,0.3)",color:"white",padding:"0.4rem 1rem",borderRadius:"24px",cursor:"pointer",fontFamily:"'DM Sans',sans-serif",fontSize:"0.85rem"}}>← Back</button>
+        <span style={{color:"#E8621A",fontSize:"1.4rem"}}>🍴</span>
+        <span onClick={() => navigate("/")} style={{fontFamily:"'Playfair Display',serif",color:"white",fontSize:"1.2rem",cursor:"pointer"}}>FusionChef <em style={{color:"#E8621A"}}>AI</em></span>
+      </div>
+
+      {/* Hero */}
+      <div style={{height:"340px",overflow:"hidden",position:"relative",background:"#1C1C1C"}}>
+        {recipe.img
+          ? <img src={recipe.img} alt={recipe.dish_name} style={{width:"100%",height:"100%",objectFit:"cover",opacity:0.85}} />
+          : <div style={{height:"100%",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"8rem"}}>{emojis[recipe.category]||"🍽"}</div>
+        }
+        <div style={{position:"absolute",inset:0,background:"linear-gradient(to top,rgba(28,28,28,0.85) 0%,transparent 60%)"}} />
+        <div style={{position:"absolute",bottom:"2rem",left:"2.5rem",color:"white"}}>
+          <div style={{display:"inline-block",background:"#E8621A",fontSize:"0.72rem",fontWeight:700,padding:"0.25rem 0.8rem",borderRadius:"12px",marginBottom:"0.5rem",textTransform:"uppercase",letterSpacing:"0.08em"}}>{recipe.category}</div>
+          <h1 style={{fontFamily:"'Playfair Display',serif",fontSize:"clamp(1.8rem,4vw,3rem)",lineHeight:1.15,textShadow:"0 2px 20px rgba(0,0,0,0.5)"}}>{recipe.dish_name}</h1>
+          <div style={{display:"flex",gap:"1rem",marginTop:"0.6rem",fontSize:"0.85rem",opacity:0.85,flexWrap:"wrap"}}>
+            <span>⏱ {recipe.prep_time_minutes + recipe.cook_time_minutes} min total</span>
+            <span>🍽 {recipe.servings} servings</span>
+            <span style={{background:recipe.difficulty_level==="easy"?"#4A7C59":recipe.difficulty_level==="medium"?"#C9922A":"#C0392B",padding:"0.1rem 0.6rem",borderRadius:"10px",fontSize:"0.72rem",fontWeight:700,textTransform:"capitalize"}}>{recipe.difficulty_level}</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Body */}
+      <div style={{maxWidth:"860px",margin:"0 auto",padding:"2.5rem 1.5rem"}}>
+
+        {/* Tags */}
+        <div style={{display:"flex",flexWrap:"wrap",gap:"0.5rem",marginBottom:"2rem"}}>
+          {(recipe.dietary_tags||[]).map((t,i) => <span key={i} style={{background:"rgba(74,124,89,0.15)",color:"#4A7C59",fontSize:"0.78rem",padding:"0.3rem 0.9rem",borderRadius:"20px",fontWeight:600}}>{t}</span>)}
+          {(recipe.flavor_profile||[]).map((t,i) => <span key={i} style={{background:"#F5EDDB",color:"#1C1C1C",fontSize:"0.78rem",padding:"0.3rem 0.9rem",borderRadius:"20px"}}>{t}</span>)}
+        </div>
+
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"2rem"}}>
+          {/* Ingredients */}
+          <div>
+            <h2 style={{fontFamily:"'Playfair Display',serif",color:"#E8621A",fontSize:"1.4rem",marginBottom:"1rem",paddingBottom:"0.5rem",borderBottom:"2px solid #F5EDDB"}}>🧂 Ingredients</h2>
+            <ul style={{listStyle:"none",padding:0}}>
+              {(recipe.ingredients||[]).map((ing,i) => (
+                <li key={i} style={{padding:"0.5rem 0",borderBottom:"1px solid #F5EDDB",fontSize:"0.9rem",color:"#1C1C1C",display:"flex",justifyContent:"space-between"}}>
+                  <span>{ing.name}</span>
+                  <span style={{color:"#7A6A55",fontWeight:600}}>{ing.quantity} {ing.unit}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Nutrition */}
+          {recipe.nutrition_estimate && Object.keys(recipe.nutrition_estimate).length > 0 && (
+            <div>
+              <h2 style={{fontFamily:"'Playfair Display',serif",color:"#E8621A",fontSize:"1.4rem",marginBottom:"1rem",paddingBottom:"0.5rem",borderBottom:"2px solid #F5EDDB"}}>📊 Nutrition</h2>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"0.8rem"}}>
+                {Object.entries(recipe.nutrition_estimate).map(([k,v]) => (
+                  <div key={k} style={{background:"#F5EDDB",borderRadius:"10px",padding:"0.8rem",textAlign:"center"}}>
+                    <strong style={{display:"block",fontSize:"1.1rem",color:"#E8621A"}}>{v}</strong>
+                    <span style={{fontSize:"0.72rem",color:"#7A6A55"}}>{k.replace(/_/g," ")}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Steps */}
+        <div style={{marginTop:"2.5rem"}}>
+          <h2 style={{fontFamily:"'Playfair Display',serif",color:"#E8621A",fontSize:"1.4rem",marginBottom:"1.2rem",paddingBottom:"0.5rem",borderBottom:"2px solid #F5EDDB"}}>👨‍🍳 Instructions</h2>
+          <ol style={{listStyle:"none",padding:0}}>
+            {(recipe.preparation_steps||[]).map((step,i) => (
+              <li key={i} style={{padding:"1rem 0 1rem 3.5rem",borderBottom:"1px solid #F5EDDB",position:"relative",fontSize:"0.95rem",lineHeight:1.7,color:"#1C1C1C"}}>
+                <span style={{position:"absolute",left:0,top:"1rem",width:"28px",height:"28px",background:"#E8621A",color:"white",borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"0.78rem",fontWeight:700}}>{i+1}</span>
+                {step}
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        {/* Chef Notes */}
+        {recipe.chef_notes && (
+          <div style={{marginTop:"2rem",background:"rgba(232,98,26,0.08)",border:"1px solid rgba(232,98,26,0.2)",borderRadius:"14px",padding:"1.4rem"}}>
+            <h3 style={{fontFamily:"'Playfair Display',serif",color:"#E8621A",marginBottom:"0.6rem"}}>💡 Chef Notes</h3>
+            <p style={{fontSize:"0.92rem",color:"#1C1C1C",lineHeight:1.7}}>{recipe.chef_notes}</p>
+          </div>
+        )}
+
+        {/* Serving */}
+        {recipe.serving_suggestions && (
+          <div style={{marginTop:"1.5rem",background:"#F5EDDB",borderRadius:"14px",padding:"1.4rem"}}>
+            <h3 style={{fontFamily:"'Playfair Display',serif",color:"#1C1C1C",marginBottom:"0.6rem"}}>🍽 Serving Suggestions</h3>
+            <p style={{fontSize:"0.92rem",color:"#7A6A55",lineHeight:1.7}}>{recipe.serving_suggestions}</p>
+          </div>
+        )}
+
+        {/* Share */}
+        <div style={{marginTop:"2.5rem",background:"#1C1C1C",borderRadius:"16px",padding:"2rem",textAlign:"center"}}>
+          <h3 style={{fontFamily:"'Playfair Display',serif",color:"white",marginBottom:"0.5rem"}}>Share this recipe 🔗</h3>
+          <p style={{color:"rgba(255,255,255,0.55)",fontSize:"0.85rem",marginBottom:"1.2rem"}}>Perfect for Pinterest, WhatsApp or Instagram</p>
+          <input readOnly value={window.location.href}
+            onClick={e => { e.target.select(); navigator.clipboard.writeText(window.location.href); gtagEvent("recipe_link_copied",{dish_name:recipe.dish_name}); }}
+            style={{width:"100%",padding:"0.8rem 1.2rem",borderRadius:"8px",border:"none",fontFamily:"'DM Sans',sans-serif",fontSize:"0.85rem",marginBottom:"0.5rem",cursor:"pointer"}}
+          />
+          <p style={{color:"rgba(255,255,255,0.4)",fontSize:"0.75rem"}}>Click the URL above to copy it</p>
+        </div>
+
+        <div style={{textAlign:"center",marginTop:"2rem"}}>
+          <button onClick={() => navigate("/")} style={{background:"#E8621A",color:"white",border:"none",padding:"0.9rem 2.5rem",borderRadius:"30px",fontSize:"1rem",fontWeight:700,cursor:"pointer",fontFamily:"'DM Sans',sans-serif"}}>
+            ← Explore More Recipes
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Root App with Router ─────────────────────────────────────────────────────
+function AppWithRouter() {
+  const allData = {
+    indian: indianCuisineData,
+    maharashtra: typeof maharashtraCuisineData !== "undefined" ? maharashtraCuisineData : [],
+    punjab: typeof punjabCuisineData !== "undefined" ? punjabCuisineData : [],
+  };
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/cuisine/:cuisine/:category/:dish" element={<RecipePage allData={allData} />} />
+        <Route path="*" element={<FusionChefAI />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export { toSlug };
+export default AppWithRouter;
