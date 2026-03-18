@@ -14714,6 +14714,34 @@ function FusionChefAI() {
   // ── GA4: Inject scripts once on mount ──────────────────────────────────────
   useEffect(() => {
     injectGA();
+
+    // Homepage SEO meta tags
+    const setMeta = (attr, key, value) => {
+      let el = document.querySelector(`meta[${attr}="${key}"]`);
+      if (!el) { el = document.createElement("meta"); el.setAttribute(attr, key); document.head.appendChild(el); }
+      el.setAttribute("content", value);
+    };
+    const BASE = "https://fusionchefy.vercel.app";
+    const homeDesc = "FusionChef AI — Discover authentic Indian, Maharashtrian and Punjabi recipes powered by AI. Get personalized recipes, explore world cuisines, and cook like a chef.";
+    document.title = "FusionChef AI – Authentic World Recipes Powered by AI";
+    setMeta("name", "description", homeDesc);
+    setMeta("name", "keywords", "Indian recipes, Maharashtrian food, Punjabi cuisine, AI recipes, butter chicken, biryani, vada pav, FusionChef AI");
+    setMeta("name", "robots", "index, follow");
+    setMeta("property", "og:title", "FusionChef AI – Authentic World Recipes");
+    setMeta("property", "og:description", homeDesc);
+    setMeta("property", "og:url", BASE);
+    setMeta("property", "og:type", "website");
+    setMeta("property", "og:site_name", "FusionChef AI");
+    setMeta("name", "twitter:card", "summary_large_image");
+    setMeta("name", "twitter:title", "FusionChef AI – Authentic World Recipes");
+    setMeta("name", "twitter:description", homeDesc);
+
+    // Website schema
+    const schema = { "@context":"https://schema.org", "@type":"WebSite", "name":"FusionChef AI", "url":BASE, "description":homeDesc, "potentialAction":{ "@type":"SearchAction", "target":{ "@type":"EntryPoint", "urlTemplate":`${BASE}/?search={search_term_string}` }, "query-input":"required name=search_term_string" }};
+    let schemaEl = document.getElementById("site-schema");
+    if (!schemaEl) { schemaEl = document.createElement("script"); schemaEl.id = "site-schema"; schemaEl.type = "application/ld+json"; document.head.appendChild(schemaEl); }
+    schemaEl.textContent = JSON.stringify(schema);
+
     gtagEvent("page_view", {
       page_title: "FusionChef AI – Home",
       page_location: window.location.href,
@@ -16295,13 +16323,98 @@ function RecipePage({ allData }) {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
-    if (recipe) {
-      document.title = `${recipe.dish_name} – FusionChef AI`;
-      gtagEvent("page_view", {
-        page_title: `${recipe.dish_name} – FusionChef AI`,
-        page_location: window.location.href,
-      });
-    }
+    if (!recipe) return;
+
+    const BASE_URL = "https://fusionchefy.vercel.app";
+    const pageUrl = `${BASE_URL}/cuisine/${cuisine}/${category}/${dish}`;
+    const title = `${recipe.dish_name} Recipe – Authentic ${cuisine.charAt(0).toUpperCase()+cuisine.slice(1)} Cuisine | FusionChef AI`;
+    const description = `Learn how to make authentic ${recipe.dish_name} — a ${recipe.category} from ${cuisine.charAt(0).toUpperCase()+cuisine.slice(1)} cuisine. ${recipe.difficulty_level.charAt(0).toUpperCase()+recipe.difficulty_level.slice(1)} recipe, ready in ${recipe.prep_time_minutes + recipe.cook_time_minutes} minutes. ${(recipe.flavor_profile||[]).join(", ")} flavors. Serves ${recipe.servings}.`;
+    const image = recipe.img || `${BASE_URL}/og-image.jpg`;
+
+    // ── Page title
+    document.title = title;
+
+    // ── Helper to set/create meta tags
+    const setMeta = (attr, key, value) => {
+      let el = document.querySelector(`meta[${attr}="${key}"]`);
+      if (!el) { el = document.createElement("meta"); el.setAttribute(attr, key); document.head.appendChild(el); }
+      el.setAttribute("content", value);
+    };
+
+    // ── Standard SEO meta tags
+    setMeta("name", "description", description);
+    setMeta("name", "keywords", [
+      recipe.dish_name, cuisine, recipe.category,
+      ...(recipe.dietary_tags||[]), ...(recipe.flavor_profile||[]),
+      "Indian recipe", "FusionChef AI", "authentic recipe"
+    ].join(", "));
+    setMeta("name", "robots", "index, follow");
+    setMeta("name", "author", "FusionChef AI");
+
+    // ── Open Graph (Facebook, WhatsApp, Pinterest previews)
+    setMeta("property", "og:title", title);
+    setMeta("property", "og:description", description);
+    setMeta("property", "og:image", image);
+    setMeta("property", "og:url", pageUrl);
+    setMeta("property", "og:type", "article");
+    setMeta("property", "og:site_name", "FusionChef AI");
+
+    // ── Twitter Card
+    setMeta("name", "twitter:card", "summary_large_image");
+    setMeta("name", "twitter:title", title);
+    setMeta("name", "twitter:description", description);
+    setMeta("name", "twitter:image", image);
+
+    // ── Canonical URL
+    let canonical = document.querySelector("link[rel='canonical']");
+    if (!canonical) { canonical = document.createElement("link"); canonical.setAttribute("rel", "canonical"); document.head.appendChild(canonical); }
+    canonical.setAttribute("href", pageUrl);
+
+    // ── JSON-LD Schema (Google Recipe Rich Results)
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "Recipe",
+      "name": recipe.dish_name,
+      "description": description,
+      "image": [image],
+      "author": { "@type": "Organization", "name": "FusionChef AI", "url": BASE_URL },
+      "publisher": { "@type": "Organization", "name": "FusionChef AI", "url": BASE_URL },
+      "datePublished": "2025-01-01",
+      "prepTime": `PT${recipe.prep_time_minutes}M`,
+      "cookTime": `PT${recipe.cook_time_minutes}M`,
+      "totalTime": `PT${recipe.prep_time_minutes + recipe.cook_time_minutes}M`,
+      "recipeYield": `${recipe.servings} servings`,
+      "recipeCategory": recipe.category,
+      "recipeCuisine": cuisine.charAt(0).toUpperCase() + cuisine.slice(1),
+      "keywords": (recipe.flavor_profile||[]).join(", "),
+      "recipeIngredient": (recipe.ingredients||[]).map(i => `${i.quantity} ${i.unit} ${i.name}`.trim()),
+      "recipeInstructions": (recipe.preparation_steps||[]).map((step, idx) => ({
+        "@type": "HowToStep",
+        "position": idx + 1,
+        "text": step
+      })),
+      "suitableForDiet": (recipe.dietary_tags||[]).includes("vegetarian") ? "https://schema.org/VegetarianDiet" : undefined,
+      "nutrition": recipe.nutrition_estimate ? {
+        "@type": "NutritionInformation",
+        "calories": recipe.nutrition_estimate.calories || recipe.nutrition_estimate.Calories || ""
+      } : undefined,
+    };
+
+    let schemaEl = document.getElementById("recipe-schema");
+    if (!schemaEl) { schemaEl = document.createElement("script"); schemaEl.id = "recipe-schema"; schemaEl.type = "application/ld+json"; document.head.appendChild(schemaEl); }
+    schemaEl.textContent = JSON.stringify(schema);
+
+    // ── GA4 page view
+    gtagEvent("page_view", {
+      page_title: title,
+      page_location: pageUrl,
+    });
+
+    // ── Cleanup on unmount
+    return () => {
+      const schemaTag = document.getElementById("recipe-schema");
+      if (schemaTag) schemaTag.remove();
+    };
   }, [recipe]);
 
   if (!recipe) {
