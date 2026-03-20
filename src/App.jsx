@@ -303,6 +303,4692 @@ const chefs = [
   { name: "Kenji Mori", specialty: "Japanese Cuisine", followers: "3.1M", dish: "🍱 Signature: Wagyu Ramen", img: "https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=200&q=80", bio: "Chef Kenji Mori is Japan's most-followed culinary personality. A master of both traditional washoku and modern Japanese gastronomy, he has earned three Michelin stars across his restaurants.", recipes: 215, awards: 12 },
 ];
 
+const japaneseCuisineData = [
+  {
+    "dish_name": "Nigiri Sushi",
+    "state": "Japan",
+    "category": "Sushi",
+    "difficulty_level": "Hard",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 50,
+    "servings": 2,
+    "short_description": "Hand-pressed oval rice topped with fresh sliced fish or seafood \u2014 the purest and most iconic expression of Japanese sushi craftsmanship, requiring years to master.",
+    "ingredients": [
+      {
+        "name": "Sushi rice",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Fresh salmon or tuna",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Rice vinegar",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Wasabi",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Cook sushi rice and season with rice vinegar, sugar and salt while hot.",
+      "Fan the rice as you fold in the seasoning \u2014 never stir.",
+      "Slice fish at an angle into 7-8mm thick pieces.",
+      "Wet your hands with vinegared water.",
+      "Take a small ball of rice (about 20g) and press firmly into an oval.",
+      "Dab a tiny amount of wasabi on the fish slice.",
+      "Press the fish onto the rice with two fingers, shaping into a neat nigiri.",
+      "Serve immediately with soy sauce on the side."
+    ],
+    "chef_notes": "The rice temperature is critical \u2014 it should be body temperature when shaping. Too cold and it becomes hard; too hot and it falls apart. Genuine nigiri masters spend years perfecting the pressure and shape.",
+    "serving_suggestions": "Serve with pickled ginger (gari), wasabi and soy sauce. Eat in one bite, fish-side down into the soy sauce.",
+    "nutrition_estimate": {
+      "calories": "185",
+      "protein_g": "14",
+      "carbohydrates_g": "24",
+      "fat_g": "3"
+    },
+    "tags": [
+      "Japanese",
+      "Traditional",
+      "Seafood",
+      "Iconic"
+    ],
+    "seo_keywords": [
+      "nigiri sushi recipe",
+      "how to make nigiri",
+      "japanese sushi rice",
+      "authentic nigiri"
+    ]
+  },
+  {
+    "dish_name": "Maki Roll",
+    "state": "Japan",
+    "category": "Sushi",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 50,
+    "servings": 2,
+    "short_description": "Vinegared rice and fillings rolled in nori seaweed sheets and sliced into bite-sized rounds \u2014 the most globally recognized form of sushi, available in endless variations.",
+    "ingredients": [
+      {
+        "name": "Sushi rice",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Nori sheets",
+        "quantity": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "Cucumber",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Avocado",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Fresh tuna or salmon",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Bamboo rolling mat (makisu)",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Wasabi",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Prepare seasoned sushi rice and cool to room temperature.",
+      "Place nori sheet shiny-side down on bamboo mat.",
+      "Spread rice evenly over nori, leaving 2cm at the top edge.",
+      "Lay fillings in a line across the center of the rice.",
+      "Using the mat, roll firmly from the bottom, pressing evenly.",
+      "Seal the edge with a dab of water.",
+      "Slice with a sharp wet knife using one clean stroke per cut.",
+      "Serve cut-side up with soy sauce and pickled ginger."
+    ],
+    "chef_notes": "A wet knife is essential for clean cuts \u2014 wipe and rewet between each slice. Do not press down when cutting; use a smooth sawing motion. The rice should completely cover the nori to prevent unraveling.",
+    "serving_suggestions": "Serve with soy sauce, pickled ginger and wasabi. Arrange cut-side up for visual presentation.",
+    "nutrition_estimate": {
+      "calories": "210",
+      "protein_g": "10",
+      "carbohydrates_g": "32",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Japanese",
+      "Iconic",
+      "Beginner Friendly",
+      "Versatile"
+    ],
+    "seo_keywords": [
+      "maki roll recipe",
+      "how to make sushi roll",
+      "japanese maki sushi",
+      "homemade sushi"
+    ]
+  },
+  {
+    "dish_name": "Temaki",
+    "state": "Japan",
+    "category": "Sushi",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 40,
+    "servings": 2,
+    "short_description": "A hand-rolled cone of nori filled with rice, fish and vegetables \u2014 casual, fresh and eaten immediately to preserve the seaweed's perfect crunch.",
+    "ingredients": [
+      {
+        "name": "Sushi rice",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Nori sheets, halved",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Fresh salmon",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Cucumber sticks",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Avocado slices",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Tobiko (flying fish roe)",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Wasabi",
+        "quantity": "0.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Prepare and season sushi rice, cool slightly.",
+      "Cut nori sheets in half crosswise.",
+      "Hold a half nori sheet in your left hand, shiny-side down.",
+      "Place a small amount of rice on the left side of the nori.",
+      "Add wasabi and your choice of fillings diagonally.",
+      "Roll the nori into a cone shape from left to right.",
+      "Seal with a grain of rice.",
+      "Eat immediately to enjoy the nori at its crispiest."
+    ],
+    "chef_notes": "Temaki must be eaten within minutes \u2014 the nori softens quickly once filled. At hand roll parties (temaki parties), guests roll their own at the table, making it one of the most interactive Japanese dining experiences.",
+    "serving_suggestions": "Serve with soy sauce for dipping. Best eaten immediately \u2014 do not plate ahead of time.",
+    "nutrition_estimate": {
+      "calories": "165",
+      "protein_g": "9",
+      "carbohydrates_g": "22",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Japanese",
+      "Hand Roll",
+      "Interactive",
+      "Fresh"
+    ],
+    "seo_keywords": [
+      "temaki hand roll recipe",
+      "japanese hand rolled sushi",
+      "temaki cone sushi"
+    ]
+  },
+  {
+    "dish_name": "Sashimi",
+    "state": "Japan",
+    "category": "Sushi",
+    "difficulty_level": "Hard",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 20,
+    "servings": 2,
+    "short_description": "Pure, pristine slices of the freshest raw fish served without rice \u2014 the ultimate test of ingredient quality and a chef's knife skill.",
+    "ingredients": [
+      {
+        "name": "Sashimi-grade tuna (maguro)",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Sashimi-grade salmon",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Shiso leaves",
+        "quantity": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "Daikon radish, shredded",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Wasabi",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon slices",
+        "quantity": "2",
+        "unit": "pieces"
+      }
+    ],
+    "preparation_steps": [
+      "Ensure fish is sashimi-grade and ice cold before slicing.",
+      "Use the sharpest knife available \u2014 a Yanagiba sashimi knife is ideal.",
+      "Slice fish against the grain at a 45-degree angle.",
+      "Cut in one smooth pull \u2014 never saw back and forth.",
+      "Each slice should be 7-8mm thick for tuna, slightly thinner for delicate fish.",
+      "Arrange on a chilled plate over shredded daikon.",
+      "Garnish with shiso leaves and wasabi.",
+      "Serve immediately with soy sauce."
+    ],
+    "chef_notes": "Only use sashimi-grade fish. The single most important factor is freshness \u2014 sashimi should never smell fishy. The angle of the cut and the sharpness of the knife determine the texture and mouthfeel of each slice.",
+    "serving_suggestions": "Serve on a chilled plate with soy sauce, wasabi and pickled ginger. Eat within minutes of preparation.",
+    "nutrition_estimate": {
+      "calories": "140",
+      "protein_g": "24",
+      "carbohydrates_g": "1",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Japanese",
+      "Raw",
+      "Premium",
+      "Gluten-Free"
+    ],
+    "seo_keywords": [
+      "sashimi recipe",
+      "how to cut sashimi",
+      "japanese raw fish",
+      "sashimi grade fish"
+    ]
+  },
+  {
+    "dish_name": "Chirashi Sushi",
+    "state": "Japan",
+    "category": "Sushi",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 50,
+    "servings": 2,
+    "short_description": "A scattered sushi bowl of vinegared rice topped with an artful arrangement of fish, vegetables and garnishes \u2014 a festive dish made for Hinamatsuri and special celebrations.",
+    "ingredients": [
+      {
+        "name": "Sushi rice",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Mixed sashimi (tuna, salmon, yellowtail)",
+        "quantity": "250",
+        "unit": "g"
+      },
+      {
+        "name": "Ikura (salmon roe)",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Tamagoyaki (rolled omelette)",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Cucumber",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Shiso leaves",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Wasabi and soy sauce",
+        "quantity": "1",
+        "unit": "serving"
+      }
+    ],
+    "preparation_steps": [
+      "Prepare and season sushi rice, spread in a wide lacquer bowl.",
+      "Slice all sashimi into even pieces.",
+      "Arrange toppings artfully over the rice \u2014 this is where creativity shines.",
+      "Place sashimi slices in groups by variety.",
+      "Add tamagoyaki, cucumber slices and shiso leaves.",
+      "Top with ikura (salmon roe) in small clusters.",
+      "Garnish with sesame seeds and thinly sliced nori.",
+      "Serve with wasabi and soy sauce on the side."
+    ],
+    "chef_notes": "Chirashi literally means 'scattered' \u2014 the visual presentation is as important as the taste. Traditionally made in a lacquered wooden box (jubako), it is the most home-friendly form of sushi as it requires no rolling skill.",
+    "serving_suggestions": "Serve in a beautiful bowl or lacquer box. Each person adds their own soy sauce and wasabi.",
+    "nutrition_estimate": {
+      "calories": "340",
+      "protein_g": "22",
+      "carbohydrates_g": "44",
+      "fat_g": "7"
+    },
+    "tags": [
+      "Japanese",
+      "Festival",
+      "Bowl",
+      "Colourful"
+    ],
+    "seo_keywords": [
+      "chirashi sushi recipe",
+      "scattered sushi bowl",
+      "japanese sushi bowl",
+      "chirashizushi"
+    ]
+  },
+  {
+    "dish_name": "Inari Sushi",
+    "state": "Japan",
+    "category": "Sushi",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 30,
+    "servings": 2,
+    "short_description": "Sweetened deep-fried tofu pockets filled with vinegared rice \u2014 a popular vegetarian sushi option with a beautiful sweet-savory character beloved by all ages.",
+    "ingredients": [
+      {
+        "name": "Sushi rice",
+        "quantity": "250",
+        "unit": "g"
+      },
+      {
+        "name": "Inari age (seasoned tofu pouches)",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rice vinegar",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Prepare seasoned sushi rice and mix in sesame seeds.",
+      "Open the inari tofu pouches carefully \u2014 they open like a pocket.",
+      "Fill each pouch with a golf-ball amount of sushi rice.",
+      "Press gently to fill all corners without overstuffing.",
+      "Fold the open edge under or leave open showing the rice.",
+      "Arrange on a plate fold-side down.",
+      "Optionally garnish with a pinch of sesame seeds on top.",
+      "Serve at room temperature."
+    ],
+    "chef_notes": "Inari age pouches are available pre-seasoned in Japanese grocery stores. The sweet-savory tofu perfectly complements the tangy rice. This is one of the most beginner-friendly sushi to make at home.",
+    "serving_suggestions": "Serve at room temperature as a snack, bento box item or picnic food. No soy sauce needed.",
+    "nutrition_estimate": {
+      "calories": "195",
+      "protein_g": "7",
+      "carbohydrates_g": "32",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Vegetarian",
+      "Beginner",
+      "Sweet",
+      "Bento"
+    ],
+    "seo_keywords": [
+      "inari sushi recipe",
+      "tofu pocket sushi",
+      "vegetarian sushi",
+      "inari age recipe"
+    ]
+  },
+  {
+    "dish_name": "Uramaki (Inside-Out Roll)",
+    "state": "Japan",
+    "category": "Sushi",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 50,
+    "servings": 2,
+    "short_description": "Rice on the outside, nori on the inside \u2014 the California Roll and Dragon Roll belong to this category, beloved for their soft, creamy texture and visual drama.",
+    "ingredients": [
+      {
+        "name": "Sushi rice",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Nori sheets",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Imitation crab or fresh crab",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Avocado",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Cucumber",
+        "quantity": "0.5",
+        "unit": "piece"
+      },
+      {
+        "name": "Tobiko (flying fish roe)",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Cover bamboo mat with plastic wrap.",
+      "Place nori on the mat and spread rice over the entire nori surface.",
+      "Sprinkle sesame seeds or tobiko over the rice.",
+      "Flip the nori so the rice faces down on the plastic-covered mat.",
+      "Place fillings along the center of the nori.",
+      "Roll firmly using the mat, keeping pressure even.",
+      "Roll the outside in tobiko or sesame seeds for decoration.",
+      "Slice with a sharp wet knife into 8 pieces."
+    ],
+    "chef_notes": "The plastic wrap on the mat is essential \u2014 without it, rice will stick to the bamboo. Press firmly while rolling to ensure the rice outside adheres well. Chilling the roll for 5 minutes before cutting gives cleaner slices.",
+    "serving_suggestions": "Serve with soy sauce, wasabi and pickled ginger. Cut-side up for presentation.",
+    "nutrition_estimate": {
+      "calories": "235",
+      "protein_g": "8",
+      "carbohydrates_g": "36",
+      "fat_g": "7"
+    },
+    "tags": [
+      "Japanese",
+      "California Roll",
+      "Creative",
+      "Popular"
+    ],
+    "seo_keywords": [
+      "uramaki recipe",
+      "california roll recipe",
+      "inside out sushi roll",
+      "dragon roll recipe"
+    ]
+  },
+  {
+    "dish_name": "Gunkan Maki",
+    "state": "Japan",
+    "category": "Sushi",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 25,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 45,
+    "servings": 2,
+    "short_description": "Battleship-shaped sushi \u2014 a band of nori wraps around rice to create a cup that holds soft toppings like sea urchin, salmon roe and fermented soybean.",
+    "ingredients": [
+      {
+        "name": "Sushi rice",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Nori strips (2cm wide)",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ikura (salmon roe)",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Uni (sea urchin)",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Tobiko (flying fish roe)",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Shape sushi rice into small oval mounds (about 15g each).",
+      "Cut nori into strips approximately 2cm wide and 15cm long.",
+      "Wrap a nori strip around each rice oval, pressing the seam with a grain of rice.",
+      "The nori should extend 1cm above the rice to form a cup.",
+      "Fill the nori cup with your chosen topping.",
+      "Do not press down on the topping \u2014 let it mound naturally.",
+      "Serve immediately \u2014 the nori softens quickly.",
+      "Dip the rice side (not the topping) into soy sauce."
+    ],
+    "chef_notes": "Gunkan means 'battleship' in Japanese \u2014 the shape resembles a warship. This style was invented specifically to hold soft toppings that cannot be placed on regular nigiri. Eat immediately after assembly.",
+    "serving_suggestions": "Serve immediately with soy sauce. Dip only the rice side \u2014 never the topping.",
+    "nutrition_estimate": {
+      "calories": "155",
+      "protein_g": "8",
+      "carbohydrates_g": "22",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Japanese",
+      "Seafood",
+      "Premium",
+      "Unique"
+    ],
+    "seo_keywords": [
+      "gunkan maki recipe",
+      "battleship sushi",
+      "ikura sushi",
+      "uni gunkan maki"
+    ]
+  },
+  {
+    "dish_name": "Temari Sushi",
+    "state": "Japan",
+    "category": "Sushi",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 50,
+    "servings": 2,
+    "short_description": "Delicate ball-shaped sushi wrapped in thin slices of fish or vegetable \u2014 a visually stunning form traditionally made for Hinamatsuri Doll Festival celebrations.",
+    "ingredients": [
+      {
+        "name": "Sushi rice",
+        "quantity": "250",
+        "unit": "g"
+      },
+      {
+        "name": "Sashimi-grade salmon, thinly sliced",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Cucumber, thinly sliced",
+        "quantity": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ikura (salmon roe)",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Shiso leaves",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Lemon zest",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Prepare and cool seasoned sushi rice.",
+      "Place a sheet of plastic wrap on a flat surface.",
+      "Lay a thin slice of salmon in the center.",
+      "Place a small ball of rice (about 20g) on the salmon.",
+      "Gather the corners of the plastic wrap and twist to form a perfect sphere.",
+      "Unwrap and place on serving plate, salmon-side up.",
+      "Garnish with ikura, lemon zest or shiso.",
+      "Serve immediately with soy sauce."
+    ],
+    "chef_notes": "Temari balls are the most beginner-friendly sushi to make beautifully \u2014 the plastic wrap does all the shaping work. They are perfect for home entertaining as they can be made 30 minutes ahead and refrigerated.",
+    "serving_suggestions": "Arrange on a beautiful plate or leaf. Serve with soy sauce and wasabi.",
+    "nutrition_estimate": {
+      "calories": "170",
+      "protein_g": "10",
+      "carbohydrates_g": "24",
+      "fat_g": "3"
+    },
+    "tags": [
+      "Japanese",
+      "Decorative",
+      "Festival",
+      "Beginner"
+    ],
+    "seo_keywords": [
+      "temari sushi recipe",
+      "ball sushi japanese",
+      "decorative sushi",
+      "hinamatsuri sushi"
+    ]
+  },
+  {
+    "dish_name": "Oshi Sushi",
+    "state": "Japan",
+    "category": "Sushi",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 50,
+    "servings": 2,
+    "short_description": "Pressed sushi from the Osaka tradition \u2014 layers of rice and fish compacted in a wooden mold and sliced into elegant rectangular pieces with clean edges.",
+    "ingredients": [
+      {
+        "name": "Sushi rice",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Cured mackerel (shime saba)",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Kombu (kelp)",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Rice vinegar",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Soy sauce and wasabi to serve",
+        "quantity": "1",
+        "unit": "serving"
+      }
+    ],
+    "preparation_steps": [
+      "Prepare and season sushi rice.",
+      "Line an oshi sushi mold (or loaf pan) with plastic wrap.",
+      "Layer cured mackerel skin-side down in the mold.",
+      "Press sushi rice firmly on top in an even layer.",
+      "Place the lid on top and press firmly for 30 minutes.",
+      "Refrigerate for 1 hour for best texture.",
+      "Unmold and remove plastic wrap.",
+      "Slice with a sharp wet knife into rectangular pieces."
+    ],
+    "chef_notes": "Oshi sushi is the oldest form of sushi \u2014 historically fish was pressed with rice and salt for fermentation. Today the curing is much lighter. The pressed texture gives each piece a dense, satisfying bite unlike any rolled sushi.",
+    "serving_suggestions": "Serve sliced into rectangles with soy sauce and wasabi. Excellent as part of a bento box.",
+    "nutrition_estimate": {
+      "calories": "200",
+      "protein_g": "12",
+      "carbohydrates_g": "28",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Japanese",
+      "Osaka",
+      "Traditional",
+      "Pressed"
+    ],
+    "seo_keywords": [
+      "oshi sushi recipe",
+      "pressed sushi osaka",
+      "box sushi recipe",
+      "battera sushi"
+    ]
+  },
+  {
+    "dish_name": "Gyoza",
+    "state": "Japan",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 45,
+    "servings": 4,
+    "short_description": "Crispy pan-fried dumplings filled with minced pork, cabbage and ginger \u2014 golden on one side, steamed-tender on the other, served with a tangy ponzu dipping sauce.",
+    "ingredients": [
+      {
+        "name": "Gyoza wrappers",
+        "quantity": "30",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ground pork",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Cabbage, finely chopped",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Ginger, grated",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Garlic, minced",
+        "quantity": "2",
+        "unit": "cloves"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame oil",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Salt cabbage and squeeze out all moisture \u2014 this is critical.",
+      "Mix pork, cabbage, ginger, garlic, soy sauce and sesame oil.",
+      "Place 1 tsp filling in center of each wrapper.",
+      "Wet edges with water and fold, creating 5-6 pleats on one side.",
+      "Heat oil in a flat pan. Place gyoza flat-side down.",
+      "Fry on medium-high heat until golden \u2014 about 3 minutes.",
+      "Add 3 tbsp water, cover immediately and steam for 5 minutes.",
+      "Remove lid, cook until water evaporates and bottoms are crispy."
+    ],
+    "chef_notes": "The yaki-mushi (fry-steam) technique is what gives gyoza their perfect contrast \u2014 crispy bottom and tender top. Squeezing every drop of water from the cabbage prevents soggy filling.",
+    "serving_suggestions": "Serve crispy-side up with a dipping sauce of soy sauce, rice vinegar and chili oil.",
+    "nutrition_estimate": {
+      "calories": "245",
+      "protein_g": "14",
+      "carbohydrates_g": "26",
+      "fat_g": "9"
+    },
+    "tags": [
+      "Japanese",
+      "Dumpling",
+      "Pan-Fried",
+      "Izakaya"
+    ],
+    "seo_keywords": [
+      "gyoza recipe authentic",
+      "japanese pan fried dumplings",
+      "pork gyoza recipe",
+      "crispy gyoza"
+    ]
+  },
+  {
+    "dish_name": "Edamame",
+    "state": "Japan",
+    "category": "Appetizers",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 2,
+    "cook_time_minutes": 8,
+    "total_time_minutes": 10,
+    "servings": 4,
+    "short_description": "Young soybeans steamed in their pods and sprinkled with sea salt \u2014 the quintessential Japanese bar snack, healthy, satisfying and impossible to stop eating.",
+    "ingredients": [
+      {
+        "name": "Fresh or frozen edamame in pods",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Sea salt",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Water for boiling",
+        "quantity": "1",
+        "unit": "litre"
+      }
+    ],
+    "preparation_steps": [
+      "Bring a large pot of water to a rolling boil.",
+      "Add 1 tsp salt to the water.",
+      "Add edamame pods and boil for 4-5 minutes until tender.",
+      "Drain immediately.",
+      "Sprinkle generously with remaining sea salt while hot.",
+      "Toss to coat evenly.",
+      "Serve in a bowl at the table.",
+      "Eat by squeezing the beans directly from the pod into your mouth."
+    ],
+    "chef_notes": "Fresh edamame are in season in summer \u2014 frozen work equally well year-round. The salt should be applied while hot so it adheres. Do not overcook \u2014 they should retain a slight bite.",
+    "serving_suggestions": "Serve warm as a snack with cold beer or sake. Provide a bowl for the empty pods.",
+    "nutrition_estimate": {
+      "calories": "120",
+      "protein_g": "11",
+      "carbohydrates_g": "9",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Vegan",
+      "Healthy",
+      "Bar Snack",
+      "Quick"
+    ],
+    "seo_keywords": [
+      "edamame recipe",
+      "japanese soybean snack",
+      "how to cook edamame",
+      "healthy japanese appetizer"
+    ]
+  },
+  {
+    "dish_name": "Karaage",
+    "state": "Japan",
+    "category": "Appetizers",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 60,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 75,
+    "servings": 4,
+    "short_description": "Japanese-style fried chicken marinated in soy, ginger and sake \u2014 incredibly juicy inside with a shatteringly crispy exterior. Japan's most beloved fried food.",
+    "ingredients": [
+      {
+        "name": "Chicken thighs, boneless",
+        "quantity": "600",
+        "unit": "g"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sake",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ginger, grated",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Garlic, grated",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Potato starch (katakuriko)",
+        "quantity": "6",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Oil for deep frying",
+        "quantity": "500",
+        "unit": "ml"
+      }
+    ],
+    "preparation_steps": [
+      "Cut chicken thighs into bite-sized pieces.",
+      "Marinate with soy sauce, sake, ginger and garlic for minimum 30 minutes.",
+      "Drain excess marinade.",
+      "Coat each piece thoroughly in potato starch.",
+      "Heat oil to 160\u00b0C and fry in batches for 3 minutes.",
+      "Remove and rest for 3 minutes \u2014 this is the resting fry technique.",
+      "Return to 180\u00b0C oil and fry again for 2 minutes until deeply golden.",
+      "Drain and serve immediately with lemon wedges."
+    ],
+    "chef_notes": "The double-fry technique (age-naosu) is the secret to karaage's extraordinary crunch. Potato starch gives a lighter, crispier crust than flour. Chicken thighs are essential \u2014 breast meat will dry out.",
+    "serving_suggestions": "Serve immediately with lemon wedges, Japanese mayo and shredded cabbage.",
+    "nutrition_estimate": {
+      "calories": "310",
+      "protein_g": "24",
+      "carbohydrates_g": "18",
+      "fat_g": "16"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Crispy",
+      "Izakaya",
+      "Beloved"
+    ],
+    "seo_keywords": [
+      "karaage recipe",
+      "japanese fried chicken",
+      "crispy karaage",
+      "double fry chicken japan"
+    ]
+  },
+  {
+    "dish_name": "Takoyaki",
+    "state": "Japan",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 30,
+    "servings": 4,
+    "short_description": "Osaka's iconic street food \u2014 crispy balls of batter filled with tender octopus, topped with bonito flakes, Japanese mayo and tangy takoyaki sauce.",
+    "ingredients": [
+      {
+        "name": "Takoyaki batter (flour, dashi, egg)",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Cooked octopus, diced",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Green onions, chopped",
+        "quantity": "4",
+        "unit": "stalks"
+      },
+      {
+        "name": "Pickled ginger (beni shoga)",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Takoyaki sauce",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Japanese mayo (Kewpie)",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Bonito flakes (katsuobushi)",
+        "quantity": "10",
+        "unit": "g"
+      },
+      {
+        "name": "Aonori (dried seaweed flakes)",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Heat a takoyaki pan and oil each hole generously.",
+      "Pour batter to fill all holes completely.",
+      "Place octopus, green onion and pickled ginger in each hole.",
+      "Pour more batter over the fillings.",
+      "When edges begin to set, use a pick to rotate each ball 90 degrees.",
+      "Continue rotating and shaping into perfect spheres.",
+      "Cook until golden and crispy all over \u2014 about 8-10 minutes total.",
+      "Top with takoyaki sauce, mayo, bonito flakes and aonori. Serve immediately."
+    ],
+    "chef_notes": "The rotation technique requires practice \u2014 the goal is to capture the uncooked batter inside as you turn. A proper takoyaki pan is essential. Bonito flakes will wave dramatically from the heat \u2014 this is the signature presentation.",
+    "serving_suggestions": "Serve immediately in the pan or a boat. Eat carefully \u2014 the inside stays molten hot for several minutes.",
+    "nutrition_estimate": {
+      "calories": "265",
+      "protein_g": "12",
+      "carbohydrates_g": "28",
+      "fat_g": "12"
+    },
+    "tags": [
+      "Japanese",
+      "Street Food",
+      "Osaka",
+      "Seafood"
+    ],
+    "seo_keywords": [
+      "takoyaki recipe",
+      "japanese octopus balls",
+      "osaka street food",
+      "takoyaki pan recipe"
+    ]
+  },
+  {
+    "dish_name": "Agedashi Tofu",
+    "state": "Japan",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 30,
+    "servings": 2,
+    "short_description": "Silken tofu lightly dusted in potato starch, deep-fried until golden and served in a delicate dashi broth with grated daikon and ginger.",
+    "ingredients": [
+      {
+        "name": "Silken tofu",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Potato starch",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Dashi stock",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Daikon, grated",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ginger, grated",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "500",
+        "unit": "ml"
+      }
+    ],
+    "preparation_steps": [
+      "Press tofu gently between paper towels for 20 minutes to remove moisture.",
+      "Cut into large cubes (about 5cm).",
+      "Make dashi broth: combine dashi, mirin and soy sauce. Warm gently.",
+      "Dust tofu cubes gently in potato starch, shaking off excess.",
+      "Deep fry in 170\u00b0C oil for 3-4 minutes until golden.",
+      "Drain and place in a deep serving bowl.",
+      "Pour warm dashi broth around the tofu.",
+      "Top with grated daikon and ginger. Serve immediately."
+    ],
+    "chef_notes": "Silken tofu's delicate texture is essential \u2014 firm tofu will not absorb the dashi broth the same way. The potato starch coating creates a very thin, delicate crust that dissolves slightly in the broth, thickening it beautifully.",
+    "serving_suggestions": "Serve immediately in a deep bowl with the dashi broth poured around it. The broth is meant to be sipped.",
+    "nutrition_estimate": {
+      "calories": "195",
+      "protein_g": "9",
+      "carbohydrates_g": "18",
+      "fat_g": "10"
+    },
+    "tags": [
+      "Vegetarian",
+      "Japanese",
+      "Tofu",
+      "Izakaya"
+    ],
+    "seo_keywords": [
+      "agedashi tofu recipe",
+      "japanese fried tofu dashi",
+      "silken tofu recipe",
+      "izakaya tofu"
+    ]
+  },
+  {
+    "dish_name": "Yakitori",
+    "state": "Japan",
+    "category": "Appetizers",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 35,
+    "servings": 4,
+    "short_description": "Skewered chicken grilled over charcoal and basted with a sweet-salty tare sauce \u2014 every part of the chicken is celebrated in this beloved izakaya staple.",
+    "ingredients": [
+      {
+        "name": "Chicken thighs",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Spring onions",
+        "quantity": "6",
+        "unit": "stalks"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sake",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Bamboo skewers, soaked",
+        "quantity": "12",
+        "unit": "pieces"
+      }
+    ],
+    "preparation_steps": [
+      "Make tare sauce: simmer soy sauce, mirin, sake and sugar until slightly thickened.",
+      "Cut chicken into 3cm cubes.",
+      "Thread onto soaked bamboo skewers alternating with spring onion pieces.",
+      "Grill over high heat (charcoal is traditional) for 3 minutes.",
+      "Brush with tare sauce generously and continue grilling.",
+      "Baste and turn every minute for 8-10 minutes total.",
+      "The chicken should be slightly charred and lacquered with sauce.",
+      "Serve immediately with a sprinkle of shichimi togarashi."
+    ],
+    "chef_notes": "Charcoal grilling (binchotan) is the authentic method \u2014 it gives yakitori its distinctive smoky character that gas grilling cannot replicate. The tare sauce should be applied multiple times to build up a lacquered coating.",
+    "serving_suggestions": "Serve on skewers with cold beer or sake. Sprinkle with shichimi togarashi or sea salt.",
+    "nutrition_estimate": {
+      "calories": "195",
+      "protein_g": "18",
+      "carbohydrates_g": "12",
+      "fat_g": "8"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Grilled",
+      "Izakaya",
+      "Charcoal"
+    ],
+    "seo_keywords": [
+      "yakitori recipe",
+      "japanese chicken skewer",
+      "tare sauce recipe",
+      "izakaya chicken grill"
+    ]
+  },
+  {
+    "dish_name": "Chawanmushi",
+    "state": "Japan",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 35,
+    "servings": 4,
+    "short_description": "A silky, savory steamed egg custard studded with chicken, shrimp and mushrooms \u2014 one of Japan's most refined and comforting starters served at formal meals.",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "quantity": "3",
+        "unit": "large"
+      },
+      {
+        "name": "Dashi stock",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Chicken, small pieces",
+        "quantity": "80",
+        "unit": "g"
+      },
+      {
+        "name": "Shrimp, peeled",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Shiitake mushrooms",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Mitsuba or trefoil",
+        "quantity": "4",
+        "unit": "sprigs"
+      }
+    ],
+    "preparation_steps": [
+      "Make dashi and cool to room temperature.",
+      "Whisk eggs gently \u2014 avoid creating bubbles.",
+      "Mix eggs with dashi, soy sauce and mirin. Strain through a fine sieve.",
+      "Place chicken, shrimp and mushrooms in chawanmushi cups.",
+      "Gently pour egg mixture over fillings.",
+      "Cover cups with foil or lids.",
+      "Steam on very low heat for 15-18 minutes until just set.",
+      "The custard should barely wobble when done. Garnish with mitsuba."
+    ],
+    "chef_notes": "The egg-to-dashi ratio is critical \u2014 too much egg makes it rubbery; too little and it won't set. Straining removes any chalazae that would cause lumps. Steam at very low temperature \u2014 high heat creates holes in the custard.",
+    "serving_suggestions": "Serve hot in individual cups with a small spoon. The custard should be silky smooth with no bubbles.",
+    "nutrition_estimate": {
+      "calories": "125",
+      "protein_g": "12",
+      "carbohydrates_g": "4",
+      "fat_g": "6"
+    },
+    "tags": [
+      "Japanese",
+      "Steamed",
+      "Elegant",
+      "Kaiseki"
+    ],
+    "seo_keywords": [
+      "chawanmushi recipe",
+      "japanese steamed egg custard",
+      "savory custard recipe",
+      "kaiseki starter"
+    ]
+  },
+  {
+    "dish_name": "Tamagoyaki",
+    "state": "Japan",
+    "category": "Appetizers",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 15,
+    "servings": 2,
+    "short_description": "A sweet rolled Japanese omelette made in layers, creating a beautifully striped cross-section \u2014 served as sushi topping, bento staple or elegant starter.",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "quantity": "3",
+        "unit": "large"
+      },
+      {
+        "name": "Dashi stock",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Whisk eggs with dashi, soy sauce, sugar and mirin.",
+      "Strain the mixture through a fine sieve.",
+      "Heat a tamagoyaki pan (rectangular) with a thin layer of oil.",
+      "Pour a thin layer of egg and let it set 70%.",
+      "Roll from one end to the other using chopsticks.",
+      "Push the roll to one end, add more egg under and over it.",
+      "Repeat rolling and adding egg 4-5 times.",
+      "Shape using a bamboo mat while hot. Slice and serve."
+    ],
+    "chef_notes": "A rectangular tamagoyaki pan gives the characteristic shape but a round pan works too. The key is thin layers \u2014 each addition should be thin enough to see through slightly before rolling. The roll should be compact and tight.",
+    "serving_suggestions": "Slice into rounds and serve as a starter, sushi topping or bento component.",
+    "nutrition_estimate": {
+      "calories": "145",
+      "protein_g": "10",
+      "carbohydrates_g": "8",
+      "fat_g": "8"
+    },
+    "tags": [
+      "Vegetarian",
+      "Japanese",
+      "Bento",
+      "Rolled Omelette"
+    ],
+    "seo_keywords": [
+      "tamagoyaki recipe",
+      "japanese rolled egg",
+      "sweet omelette japan",
+      "dashimaki tamago"
+    ]
+  },
+  {
+    "dish_name": "Tsukemono",
+    "state": "Japan",
+    "category": "Appetizers",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 1455,
+    "servings": 4,
+    "short_description": "Japanese quick pickled vegetables \u2014 cucumber, daikon and carrot preserved in rice vinegar and salt to create a refreshing, palate-cleansing side.",
+    "ingredients": [
+      {
+        "name": "Cucumber",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Daikon radish",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Carrot",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Rice vinegar",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Kombu (kelp)",
+        "quantity": "5",
+        "unit": "cm piece"
+      }
+    ],
+    "preparation_steps": [
+      "Slice vegetables thinly and evenly.",
+      "Salt the vegetables and rest 10 minutes. Rinse and squeeze dry.",
+      "Heat rice vinegar and sugar until sugar dissolves. Cool.",
+      "Add kombu piece to the pickling liquid.",
+      "Combine vegetables and pickling liquid in a zip-lock bag.",
+      "Remove air and seal. Refrigerate for minimum 24 hours.",
+      "The vegetables will soften slightly and absorb the brine.",
+      "Serve in small portions as a palate cleanser."
+    ],
+    "chef_notes": "Kombu adds a subtle umami depth to the pickling brine. Tsukemono are served at virtually every Japanese meal as a digestive aid and palate refresher. They keep refrigerated for up to 5 days.",
+    "serving_suggestions": "Serve in small portions alongside rice, sashimi or any Japanese meal.",
+    "nutrition_estimate": {
+      "calories": "35",
+      "protein_g": "1",
+      "carbohydrates_g": "8",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Vegan",
+      "Pickled",
+      "Traditional",
+      "Cleansing"
+    ],
+    "seo_keywords": [
+      "tsukemono recipe",
+      "japanese pickled vegetables",
+      "quick japanese pickle",
+      "asazuke recipe"
+    ]
+  },
+  {
+    "dish_name": "Sunomono",
+    "state": "Japan",
+    "category": "Appetizers",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 25,
+    "servings": 2,
+    "short_description": "A refreshing vinegar-dressed salad of cucumber and seafood \u2014 light, clean and palate-cleansing, traditionally served at the very start of a Japanese meal.",
+    "ingredients": [
+      {
+        "name": "Japanese cucumber",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Cooked shrimp or crab",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Rice vinegar",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Slice cucumber paper-thin using a mandoline or sharp knife.",
+      "Salt cucumber slices and rest 10 minutes.",
+      "Squeeze out all excess water firmly.",
+      "Mix rice vinegar, sugar, salt and soy sauce into sanbaizu dressing.",
+      "Toss cucumber with dressing.",
+      "Add shrimp or crab.",
+      "Chill for 10 minutes before serving.",
+      "Garnish with sesame seeds and serve in small bowls."
+    ],
+    "chef_notes": "Sanbaizu (three-flavored vinegar) is the classic sunomono dressing \u2014 equal parts vinegar, mirin and soy sauce. Paper-thin cucumber slices are essential for the correct texture. Squeeze the cucumber thoroughly to prevent a watery salad.",
+    "serving_suggestions": "Serve chilled in small deep bowls as the first course of a Japanese meal.",
+    "nutrition_estimate": {
+      "calories": "65",
+      "protein_g": "7",
+      "carbohydrates_g": "8",
+      "fat_g": "1"
+    },
+    "tags": [
+      "Japanese",
+      "Light",
+      "Seafood",
+      "Starter"
+    ],
+    "seo_keywords": [
+      "sunomono recipe",
+      "japanese cucumber seafood salad",
+      "vinegar dressed salad japan",
+      "sanbaizu recipe"
+    ]
+  },
+  {
+    "dish_name": "Miso Soup",
+    "state": "Japan",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 15,
+    "servings": 4,
+    "short_description": "Japan's most essential daily soup \u2014 dashi broth dissolved with fermented miso paste, served with tofu, wakame seaweed and spring onion. The cornerstone of Japanese home cooking.",
+    "ingredients": [
+      {
+        "name": "Dashi stock",
+        "quantity": "800",
+        "unit": "ml"
+      },
+      {
+        "name": "White or red miso paste",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Silken tofu",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Dried wakame seaweed",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Spring onions, sliced",
+        "quantity": "2",
+        "unit": "stalks"
+      },
+      {
+        "name": "Kombu",
+        "quantity": "10",
+        "unit": "cm piece"
+      },
+      {
+        "name": "Katsuobushi (bonito flakes)",
+        "quantity": "15",
+        "unit": "g"
+      }
+    ],
+    "preparation_steps": [
+      "Make dashi: soak kombu in cold water for 30 minutes, then heat.",
+      "Remove kombu just before boiling. Add bonito flakes.",
+      "Steep 3 minutes, then strain.",
+      "Rehydrate wakame in cold water for 5 minutes. Drain.",
+      "Bring dashi to a gentle simmer.",
+      "Dissolve miso paste in a ladle of dashi, then add to the pot.",
+      "Never boil after adding miso \u2014 it destroys the flavor.",
+      "Add tofu and wakame. Serve garnished with spring onions."
+    ],
+    "chef_notes": "Never boil miso soup \u2014 the miso's delicate probiotics and volatile aromatics are destroyed above 70\u00b0C. Make fresh dashi daily if possible; the difference from instant dashi is profound. White miso (shiro) is milder; red miso (aka) is bolder.",
+    "serving_suggestions": "Serve in lacquer bowls immediately. Part of every traditional Japanese breakfast and most meals.",
+    "nutrition_estimate": {
+      "calories": "65",
+      "protein_g": "5",
+      "carbohydrates_g": "6",
+      "fat_g": "2"
+    },
+    "tags": [
+      "Vegan Option",
+      "Japanese",
+      "Daily",
+      "Umami"
+    ],
+    "seo_keywords": [
+      "miso soup recipe authentic",
+      "how to make dashi",
+      "japanese miso soup",
+      "homemade miso soup"
+    ]
+  },
+  {
+    "dish_name": "Ramen",
+    "state": "Japan",
+    "category": "Soups",
+    "difficulty_level": "Hard",
+    "prep_time_minutes": 60,
+    "cook_time_minutes": 240,
+    "total_time_minutes": 300,
+    "servings": 2,
+    "short_description": "Japan's most globally celebrated noodle soup \u2014 rich broth with wheat noodles, chashu pork, soft-boiled marinated egg and toppings. Each of Japan's regions has its own distinctive style.",
+    "ingredients": [
+      {
+        "name": "Ramen noodles (fresh or dried)",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Pork belly (for chashu)",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Chicken and pork bones (for broth)",
+        "quantity": "1",
+        "unit": "kg"
+      },
+      {
+        "name": "Soy sauce tare",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Soft-boiled eggs",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Bamboo shoots (menma)",
+        "quantity": "50",
+        "unit": "g"
+      },
+      {
+        "name": "Nori sheets",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Spring onions",
+        "quantity": "2",
+        "unit": "stalks"
+      }
+    ],
+    "preparation_steps": [
+      "Make broth: roast bones until golden, then simmer in water for 4 hours.",
+      "Strain broth and skim fat. Season with tare.",
+      "Make chashu: roll pork belly, tie with twine, brown all sides.",
+      "Braise chashu in soy sauce, mirin and sake for 2 hours.",
+      "Soft-boil eggs for 6 minutes, peel and marinate in chashu braising liquid.",
+      "Cook ramen noodles in boiling water until just done.",
+      "Warm bowls with hot water.",
+      "Assemble: noodles, hot broth, chashu slices, egg half, menma, nori and spring onion."
+    ],
+    "chef_notes": "Great ramen requires proper layering \u2014 tare (seasoning sauce) goes in the bowl first, then hot broth, then noodles and toppings. Each component can take years to perfect. The tonkotsu style requires 12+ hours of boiling for the characteristic milky broth.",
+    "serving_suggestions": "Serve immediately in large warmed bowls. Slurping is encouraged \u2014 it aerates the noodles and is a sign of appreciation.",
+    "nutrition_estimate": {
+      "calories": "520",
+      "protein_g": "28",
+      "carbohydrates_g": "48",
+      "fat_g": "22"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Iconic",
+      "Noodle Soup",
+      "Comfort"
+    ],
+    "seo_keywords": [
+      "ramen recipe authentic",
+      "tonkotsu ramen",
+      "shoyu ramen recipe",
+      "japanese noodle soup"
+    ]
+  },
+  {
+    "dish_name": "Udon Soup",
+    "state": "Japan",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 25,
+    "servings": 2,
+    "short_description": "Thick, chewy wheat noodles in a clear dashi broth \u2014 a comforting, mild soup that showcases the pure umami depth of Japanese stock-making at its finest.",
+    "ingredients": [
+      {
+        "name": "Fresh or frozen udon noodles",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Dashi stock",
+        "quantity": "600",
+        "unit": "ml"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Aburaage (fried tofu pouch)",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Spring onions",
+        "quantity": "2",
+        "unit": "stalks"
+      },
+      {
+        "name": "Kamaboko (fish cake)",
+        "quantity": "4",
+        "unit": "slices"
+      }
+    ],
+    "preparation_steps": [
+      "Make broth: combine dashi, soy sauce and mirin. Bring to a gentle simmer.",
+      "Simmer aburaage in broth for 5 minutes to infuse.",
+      "Cook udon noodles in boiling water according to package.",
+      "Drain and rinse noodles with hot water.",
+      "Divide noodles between warmed bowls.",
+      "Ladle hot broth over noodles.",
+      "Top with aburaage, kamaboko, spring onions and optional tempura.",
+      "Serve immediately \u2014 udon absorbs broth quickly."
+    ],
+    "chef_notes": "The best udon is koshi ga aru \u2014 it has a resilient chew. Fresh udon noodles are far superior to dried. Kake udon (plain udon in broth) is the purest expression of the dish; Kitsune udon (with sweetened aburaage) is the most popular.",
+    "serving_suggestions": "Serve immediately in large bowls. Add tempura on top for Tempura Udon.",
+    "nutrition_estimate": {
+      "calories": "310",
+      "protein_g": "10",
+      "carbohydrates_g": "56",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Vegetarian Option",
+      "Japanese",
+      "Comfort",
+      "Noodle"
+    ],
+    "seo_keywords": [
+      "udon soup recipe",
+      "japanese udon noodles",
+      "kitsune udon recipe",
+      "dashi udon broth"
+    ]
+  },
+  {
+    "dish_name": "Soba Noodle Soup",
+    "state": "Japan",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 25,
+    "servings": 2,
+    "short_description": "Earthy buckwheat noodles in a refined dashi-soy broth \u2014 celebrated for their nutty flavor and served both hot and cold in Japan's most contemplative noodle tradition.",
+    "ingredients": [
+      {
+        "name": "Dried soba noodles",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Dashi stock",
+        "quantity": "600",
+        "unit": "ml"
+      },
+      {
+        "name": "Soy sauce (preferably light)",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Spring onions",
+        "quantity": "2",
+        "unit": "stalks"
+      },
+      {
+        "name": "Wasabi",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Nori, cut in strips",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Grated ginger",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Make tsuyu broth: combine dashi, soy sauce and mirin. Bring to simmer.",
+      "Cook soba noodles in boiling water for 4-5 minutes.",
+      "Drain and rinse thoroughly under cold running water \u2014 this removes starch.",
+      "For cold soba (zaru soba): serve noodles on a bamboo tray with tsuyu on the side.",
+      "For hot soba: place noodles in bowl and ladle hot broth over.",
+      "Top with spring onions, nori, ginger and wasabi.",
+      "For cold version: dip noodles into tsuyu before eating.",
+      "At the end, add soba-yu (soba cooking water) to remaining tsuyu and drink."
+    ],
+    "chef_notes": "Rinsing soba under cold water removes surface starch and gives the noodles their characteristic slippery texture. Adding the soba-yu cooking water to the dipping sauce at the end is a traditional Japanese practice to avoid waste.",
+    "serving_suggestions": "Serve hot in autumn and winter; cold (zaru soba) in spring and summer. Slurping loudly is expected and appreciated.",
+    "nutrition_estimate": {
+      "calories": "290",
+      "protein_g": "12",
+      "carbohydrates_g": "54",
+      "fat_g": "2"
+    },
+    "tags": [
+      "Vegan Option",
+      "Japanese",
+      "Buckwheat",
+      "Seasonal"
+    ],
+    "seo_keywords": [
+      "soba noodle soup recipe",
+      "japanese buckwheat noodles",
+      "zaru soba recipe",
+      "cold soba japan"
+    ]
+  },
+  {
+    "dish_name": "Tonjiru",
+    "state": "Japan",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 25,
+    "total_time_minutes": 40,
+    "servings": 4,
+    "short_description": "A hearty miso soup enriched with pork belly and root vegetables \u2014 daikon, carrot, burdock and taro make this a substantial, deeply warming winter meal in a bowl.",
+    "ingredients": [
+      {
+        "name": "Pork belly, sliced",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Daikon radish",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Carrot",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Burdock root (gobo)",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Taro (satoimo)",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Dashi stock",
+        "quantity": "800",
+        "unit": "ml"
+      },
+      {
+        "name": "Miso paste",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame oil",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Cut all vegetables into irregular bite-sized pieces (rangiri cut).",
+      "Soak burdock in water briefly to remove bitterness.",
+      "Heat sesame oil in a pot and saut\u00e9 pork until lightly cooked.",
+      "Add vegetables and saut\u00e9 together for 3 minutes.",
+      "Add dashi and bring to a gentle boil.",
+      "Skim any foam that rises.",
+      "Simmer until all vegetables are tender \u2014 about 15 minutes.",
+      "Dissolve miso in a ladle of broth and add. Never boil after."
+    ],
+    "chef_notes": "The sesame oil used to saut\u00e9 the vegetables at the start adds a distinctive nuttiness that sets tonjiru apart from simple miso soup. Burdock root is the key flavor ingredient \u2014 do not omit it.",
+    "serving_suggestions": "Serve in large bowls as a warming winter soup alongside rice. Can be a complete meal.",
+    "nutrition_estimate": {
+      "calories": "245",
+      "protein_g": "14",
+      "carbohydrates_g": "22",
+      "fat_g": "11"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Winter",
+      "Hearty",
+      "Japanese"
+    ],
+    "seo_keywords": [
+      "tonjiru recipe",
+      "japanese pork miso soup",
+      "hearty miso soup",
+      "pork vegetable soup japan"
+    ]
+  },
+  {
+    "dish_name": "Osuimono",
+    "state": "Japan",
+    "category": "Soups",
+    "difficulty_level": "Hard",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 30,
+    "servings": 2,
+    "short_description": "An exquisitely clear, lightly seasoned dashi broth \u2014 the most refined soup in Japanese cuisine, served at formal kaiseki dinners as a testament to perfect dashi mastery.",
+    "ingredients": [
+      {
+        "name": "Premium dashi (ichiban dashi)",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Light soy sauce (usukuchi)",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sake",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mitsuba (Japanese parsley)",
+        "quantity": "4",
+        "unit": "sprigs"
+      },
+      {
+        "name": "Fu (wheat gluten cake)",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Yuzu zest",
+        "quantity": "1",
+        "unit": "pinch"
+      }
+    ],
+    "preparation_steps": [
+      "Make premium ichiban dashi from kombu and first-press bonito flakes.",
+      "Strain through fine cheesecloth for crystal clarity.",
+      "Season very lightly with usukuchi soy sauce, sake and salt.",
+      "The broth should be pale golden and completely transparent.",
+      "Warm the garnishes (fu, mitsuba) in a separate pot of water.",
+      "Place garnishes artfully in lacquer bowls.",
+      "Ladle hot dashi over the garnishes.",
+      "Add a small curl of yuzu zest. Serve immediately."
+    ],
+    "chef_notes": "Osuimono is the ultimate test of a Japanese chef \u2014 its simplicity means there is nowhere to hide. The dashi must be absolutely perfect. Usukuchi (light-colored) soy sauce preserves the broth's pale color. Yuzu is used for its fragrance, not flavor.",
+    "serving_suggestions": "Serve in covered lacquer bowls at formal meals. Lift the lid and inhale the yuzu fragrance before drinking.",
+    "nutrition_estimate": {
+      "calories": "25",
+      "protein_g": "2",
+      "carbohydrates_g": "3",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Japanese",
+      "Kaiseki",
+      "Elegant",
+      "Clear Soup"
+    ],
+    "seo_keywords": [
+      "osuimono recipe",
+      "japanese clear soup",
+      "kaiseki soup",
+      "dashi clear broth"
+    ]
+  },
+  {
+    "dish_name": "Ozoni",
+    "state": "Japan",
+    "category": "Soups",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 40,
+    "servings": 4,
+    "short_description": "Japan's celebratory New Year's mochi soup \u2014 each region has its own distinct version, making it one of the most regionally diverse and culturally significant Japanese dishes.",
+    "ingredients": [
+      {
+        "name": "Mochi rice cakes",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Dashi stock",
+        "quantity": "800",
+        "unit": "ml"
+      },
+      {
+        "name": "Chicken",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Kamaboko (fish cake)",
+        "quantity": "4",
+        "unit": "slices"
+      },
+      {
+        "name": "Mitsuba",
+        "quantity": "4",
+        "unit": "sprigs"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Yuzu zest",
+        "quantity": "1",
+        "unit": "pinch"
+      }
+    ],
+    "preparation_steps": [
+      "Toast mochi in a toaster oven or dry pan until puffed and golden.",
+      "Make dashi broth and season with soy sauce and mirin.",
+      "Poach chicken in broth until cooked, shred finely.",
+      "Bring broth to a gentle simmer.",
+      "Add kamaboko slices and chicken.",
+      "Place toasted mochi in bowls.",
+      "Ladle hot broth over mochi.",
+      "Garnish with mitsuba and yuzu zest. Serve immediately."
+    ],
+    "chef_notes": "Mochi swells dramatically in the broth \u2014 do not leave it too long or it will completely dissolve. In the Kanto (Tokyo) region, broth is clear; in Kansai (Osaka), it is white miso-based. Both versions are traditionally eaten on New Year's Day.",
+    "serving_suggestions": "Serve on New Year's Day as the first meal of the year. Eat carefully \u2014 mochi can be a choking hazard for the elderly.",
+    "nutrition_estimate": {
+      "calories": "285",
+      "protein_g": "14",
+      "carbohydrates_g": "42",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Japanese",
+      "New Year",
+      "Festival",
+      "Mochi"
+    ],
+    "seo_keywords": [
+      "ozoni recipe",
+      "japanese new year soup mochi",
+      "osechi ryori",
+      "mochi soup recipe"
+    ]
+  },
+  {
+    "dish_name": "Kenchinjiru",
+    "state": "Japan",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 40,
+    "servings": 4,
+    "short_description": "A Buddhist temple soup of root vegetables, tofu and konnyaku simmered in a sesame-oil-scented kombu dashi \u2014 deeply nourishing and completely plant-based.",
+    "ingredients": [
+      {
+        "name": "Firm tofu",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Daikon radish",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Carrot",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Burdock root",
+        "quantity": "80",
+        "unit": "g"
+      },
+      {
+        "name": "Konnyaku",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Kombu dashi",
+        "quantity": "800",
+        "unit": "ml"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame oil",
+        "quantity": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Crumble tofu into large pieces by hand \u2014 do not cut.",
+      "Cut all vegetables and konnyaku into rough pieces.",
+      "Heat sesame oil in a pot and saut\u00e9 all ingredients together.",
+      "Add kombu dashi and bring to a boil.",
+      "Skim any foam, reduce heat and simmer 15 minutes.",
+      "Season with soy sauce.",
+      "Add mirin for a touch of sweetness.",
+      "Serve garnished with yuzu zest or spring onions."
+    ],
+    "chef_notes": "Kenchinjiru originated at Kencho-ji temple in Kamakura in the 13th century. The tofu must be crumbled by hand as tradition dictates. Sesame oil is the key aromatic that distinguishes this from other miso soups.",
+    "serving_suggestions": "Serve as a warming vegan meal with steamed rice. Perfect for cold winter days.",
+    "nutrition_estimate": {
+      "calories": "120",
+      "protein_g": "7",
+      "carbohydrates_g": "14",
+      "fat_g": "5"
+    },
+    "tags": [
+      "Vegan",
+      "Buddhist",
+      "Temple Food",
+      "Traditional"
+    ],
+    "seo_keywords": [
+      "kenchinjiru recipe",
+      "japanese vegetable soup vegan",
+      "buddhist temple soup",
+      "shojin ryori"
+    ]
+  },
+  {
+    "dish_name": "Kabocha Soup",
+    "state": "Japan",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 25,
+    "total_time_minutes": 40,
+    "servings": 4,
+    "short_description": "A velvety, sweet Japanese pumpkin soup with subtle miso and ginger notes \u2014 warming, deeply flavored and a modern classic of Japanese home cooking.",
+    "ingredients": [
+      {
+        "name": "Kabocha squash",
+        "quantity": "600",
+        "unit": "g"
+      },
+      {
+        "name": "Dashi or vegetable stock",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Coconut milk",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "White miso",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "1",
+        "unit": "inch"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Butter or oil",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Peel kabocha and cut into cubes (skin can be left on for color).",
+      "Saut\u00e9 onion in butter until soft.",
+      "Add kabocha and ginger. Toss briefly.",
+      "Add dashi and bring to a boil.",
+      "Simmer until kabocha is completely tender \u2014 about 15 minutes.",
+      "Blend completely smooth with an immersion blender.",
+      "Stir in coconut milk and dissolved white miso.",
+      "Warm gently \u2014 do not boil. Serve with a drizzle of cream."
+    ],
+    "chef_notes": "Japanese kabocha is sweeter and drier than Western pumpkins \u2014 its skin is edible and nutritious. The white miso adds umami without discoloring the soup. Never boil after adding miso.",
+    "serving_suggestions": "Serve warm in bowls with toasted pumpkin seeds and a drizzle of cream or sesame oil.",
+    "nutrition_estimate": {
+      "calories": "155",
+      "protein_g": "3",
+      "carbohydrates_g": "22",
+      "fat_g": "7"
+    },
+    "tags": [
+      "Vegan",
+      "Japanese",
+      "Pumpkin",
+      "Warming"
+    ],
+    "seo_keywords": [
+      "kabocha soup recipe",
+      "japanese pumpkin soup",
+      "kabocha miso soup",
+      "japanese squash soup"
+    ]
+  },
+  {
+    "dish_name": "Zosui",
+    "state": "Japan",
+    "category": "Soups",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 20,
+    "servings": 2,
+    "short_description": "A comforting Japanese rice porridge cooked in seasoned dashi broth with vegetables and egg \u2014 the ultimate comfort food for cold days and the traditional final course of a hot pot meal.",
+    "ingredients": [
+      {
+        "name": "Cooked rice",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Dashi stock",
+        "quantity": "500",
+        "unit": "ml"
+      },
+      {
+        "name": "Egg",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "Spring onions",
+        "quantity": "2",
+        "unit": "stalks"
+      },
+      {
+        "name": "Shiitake mushrooms",
+        "quantity": "3",
+        "unit": "pieces"
+      }
+    ],
+    "preparation_steps": [
+      "Rinse cooked rice under cold water to remove surface starch.",
+      "Bring dashi to a gentle simmer.",
+      "Add rinsed rice and sliced mushrooms.",
+      "Season with soy sauce and salt.",
+      "Simmer 8-10 minutes until rice softens into the broth.",
+      "Beat eggs and drizzle slowly in a circle over the surface.",
+      "Cover and cook 1 minute until eggs are softly set.",
+      "Serve garnished with spring onions and a drizzle of sesame oil."
+    ],
+    "chef_notes": "Zosui is traditionally made at the end of a nabemono (hot pot) meal using the enriched leftover broth. Rinsing the rice first prevents the soup from becoming too starchy and cloudy.",
+    "serving_suggestions": "Serve in the cooking pot at the end of a hot pot meal or as a comforting standalone dish.",
+    "nutrition_estimate": {
+      "calories": "225",
+      "protein_g": "10",
+      "carbohydrates_g": "36",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Japanese",
+      "Comfort",
+      "Rice Soup",
+      "Hot Pot"
+    ],
+    "seo_keywords": [
+      "zosui recipe",
+      "japanese rice soup",
+      "dashi rice porridge",
+      "nabemono finish"
+    ]
+  },
+  {
+    "dish_name": "Wakame Seaweed Salad",
+    "state": "Japan",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 10,
+    "servings": 2,
+    "short_description": "Tender wakame seaweed tossed in a sesame-soy-rice vinegar dressing \u2014 refreshing, mineral-rich and the most popular Japanese restaurant salad worldwide.",
+    "ingredients": [
+      {
+        "name": "Dried wakame seaweed",
+        "quantity": "15",
+        "unit": "g"
+      },
+      {
+        "name": "Rice vinegar",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame oil",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cucumber",
+        "quantity": "0.5",
+        "unit": "piece"
+      }
+    ],
+    "preparation_steps": [
+      "Rehydrate wakame in cold water for 5-10 minutes until expanded.",
+      "Drain and gently squeeze out excess water.",
+      "Cut any large pieces into bite-sized strips.",
+      "Thinly slice cucumber.",
+      "Whisk rice vinegar, soy sauce, sesame oil and sugar together.",
+      "Toss wakame and cucumber in the dressing.",
+      "Garnish with toasted sesame seeds.",
+      "Serve chilled."
+    ],
+    "chef_notes": "Dried wakame expands enormously in water \u2014 15g dried makes a full salad. Do not over-soak or it becomes slimy. The dressing can be made ahead but dress the salad just before serving.",
+    "serving_suggestions": "Serve chilled as a starter or side dish. Pairs beautifully with grilled fish.",
+    "nutrition_estimate": {
+      "calories": "45",
+      "protein_g": "2",
+      "carbohydrates_g": "6",
+      "fat_g": "2"
+    },
+    "tags": [
+      "Vegan",
+      "Japanese",
+      "Seaweed",
+      "Refreshing"
+    ],
+    "seo_keywords": [
+      "wakame salad recipe",
+      "japanese seaweed salad",
+      "sesame seaweed dressing",
+      "healthy japanese salad"
+    ]
+  },
+  {
+    "dish_name": "Goma-ae",
+    "state": "Japan",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 5,
+    "total_time_minutes": 15,
+    "servings": 2,
+    "short_description": "Blanched spinach or green beans dressed in a rich, nutty ground sesame sauce \u2014 one of Japan's most beloved vegetable preparations, found in every bento box.",
+    "ingredients": [
+      {
+        "name": "Fresh spinach",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "White sesame seeds",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "1.5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Dashi",
+        "quantity": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Toast sesame seeds in a dry pan until fragrant and golden.",
+      "Grind toasted sesame in a suribachi (mortar) until a paste forms.",
+      "Mix sesame paste with soy sauce, sugar, mirin and dashi.",
+      "Blanch spinach in boiling water for 30 seconds.",
+      "Transfer immediately to ice water.",
+      "Squeeze out ALL water from blanched spinach firmly.",
+      "Cut into 5cm lengths.",
+      "Dress with sesame sauce just before serving."
+    ],
+    "chef_notes": "Grinding the sesame seeds is what distinguishes authentic goma-ae from inferior versions \u2014 pre-ground sesame lacks the aromatic oils. Squeeze the blanched spinach very firmly; any remaining water dilutes the dressing.",
+    "serving_suggestions": "Serve in small portions as part of a Japanese meal or bento box.",
+    "nutrition_estimate": {
+      "calories": "95",
+      "protein_g": "5",
+      "carbohydrates_g": "7",
+      "fat_g": "6"
+    },
+    "tags": [
+      "Vegan",
+      "Japanese",
+      "Sesame",
+      "Bento"
+    ],
+    "seo_keywords": [
+      "goma-ae recipe",
+      "japanese sesame spinach",
+      "gomae dressing",
+      "sesame dressed greens japan"
+    ]
+  },
+  {
+    "dish_name": "Hiyashi Chuka",
+    "state": "Japan",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 30,
+    "servings": 2,
+    "short_description": "Cold ramen noodles topped with julienned cucumber, egg crepe, ham and pickled ginger \u2014 a colorful, refreshing Japanese summer noodle salad.",
+    "ingredients": [
+      {
+        "name": "Ramen noodles",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Eggs",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Ham or chashu pork",
+        "quantity": "80",
+        "unit": "g"
+      },
+      {
+        "name": "Cucumber",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Hiyashi chuka sauce (soy, vinegar, sesame)",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Pickled ginger",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Cook ramen noodles and rinse under cold water. Drain well.",
+      "Make thin egg crepes and julienne into strips.",
+      "Julienne cucumber and ham into thin matchstick pieces.",
+      "Arrange cold noodles in a circular mound in bowls.",
+      "Arrange toppings in colorful sections over the noodles.",
+      "Drizzle hiyashi chuka sauce over everything.",
+      "Garnish with pickled ginger and sesame seeds.",
+      "Serve immediately while cold."
+    ],
+    "chef_notes": "Hiyashi means 'chilled' and chuka means 'Chinese-style' \u2014 reflecting the Chinese-influenced origins of ramen in Japan. The visual presentation with colorful arranged toppings is as important as the taste.",
+    "serving_suggestions": "Serve immediately on chilled plates. A Japanese summer classic \u2014 seen on every restaurant menu from June to August.",
+    "nutrition_estimate": {
+      "calories": "350",
+      "protein_g": "16",
+      "carbohydrates_g": "48",
+      "fat_g": "10"
+    },
+    "tags": [
+      "Japanese",
+      "Summer",
+      "Noodle Salad",
+      "Cold"
+    ],
+    "seo_keywords": [
+      "hiyashi chuka recipe",
+      "cold ramen salad",
+      "japanese summer noodles",
+      "chilled noodle dish japan"
+    ]
+  },
+  {
+    "dish_name": "Daikon Salad",
+    "state": "Japan",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 15,
+    "servings": 2,
+    "short_description": "Finely shredded raw daikon dressed with a ponzu-sesame dressing and topped with crispy fried shallots \u2014 fresh, peppery and texturally delightful.",
+    "ingredients": [
+      {
+        "name": "Daikon radish",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Ponzu sauce",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame oil",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Crispy fried shallots",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Shiso leaves",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Lemon juice",
+        "quantity": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Peel daikon and shred into very fine, thin strips (katsuramuki or mandoline).",
+      "Soak shredded daikon in cold water for 5 minutes for crispness.",
+      "Drain thoroughly and pat dry.",
+      "Arrange on plates with shiso leaves.",
+      "Mix ponzu, sesame oil and lemon juice.",
+      "Drizzle dressing over daikon.",
+      "Top with crispy shallots and sesame seeds.",
+      "Serve immediately."
+    ],
+    "chef_notes": "Fine shredding is the key to great daikon salad \u2014 a julienne peeler or mandoline gives far better results than a knife. Soaking in cold water crisps up the shreds dramatically. Ponzu's citrus-soy character is a natural partner for daikon's peppery bite.",
+    "serving_suggestions": "Serve as a refreshing side with grilled fish, tempura or any rich Japanese dish.",
+    "nutrition_estimate": {
+      "calories": "55",
+      "protein_g": "1",
+      "carbohydrates_g": "10",
+      "fat_g": "2"
+    },
+    "tags": [
+      "Vegan",
+      "Japanese",
+      "Refreshing",
+      "Cleansing"
+    ],
+    "seo_keywords": [
+      "daikon salad recipe",
+      "japanese radish salad",
+      "ponzu dressing salad",
+      "shredded daikon recipe"
+    ]
+  },
+  {
+    "dish_name": "Japanese Potato Salad",
+    "state": "Japan",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 35,
+    "servings": 4,
+    "short_description": "Japan's uniquely beloved potato salad \u2014 fluffy mashed potato mixed with cucumber, carrot and Kewpie mayo into a creamy, subtly sweet version unlike anything else.",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Kewpie Japanese mayo",
+        "quantity": "5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cucumber",
+        "quantity": "0.5",
+        "unit": "piece"
+      },
+      {
+        "name": "Carrot",
+        "quantity": "0.5",
+        "unit": "medium"
+      },
+      {
+        "name": "Ham",
+        "quantity": "50",
+        "unit": "g"
+      },
+      {
+        "name": "Rice vinegar",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt and white pepper",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Boil potatoes until completely tender.",
+      "Mash roughly \u2014 some texture is desirable. Add rice vinegar while hot.",
+      "Thinly slice cucumber, salt and squeeze out water.",
+      "Blanch carrot slices briefly until just tender.",
+      "Mix Kewpie mayo into warm potatoes.",
+      "Fold in cucumber, carrot and ham.",
+      "Season with salt and white pepper.",
+      "Refrigerate for 30 minutes before serving."
+    ],
+    "chef_notes": "Kewpie mayonnaise is the non-negotiable ingredient \u2014 it contains egg yolks only (no egg whites) and rice vinegar, giving it a richer, more complex flavor than Western mayo. Adding vinegar to the warm potatoes helps them absorb it deeply.",
+    "serving_suggestions": "Serve as a bento side or alongside tonkatsu, karaage or any Japanese main course.",
+    "nutrition_estimate": {
+      "calories": "225",
+      "protein_g": "5",
+      "carbohydrates_g": "28",
+      "fat_g": "11"
+    },
+    "tags": [
+      "Japanese",
+      "Comfort",
+      "Bento",
+      "Creamy"
+    ],
+    "seo_keywords": [
+      "japanese potato salad recipe",
+      "kewpie mayo potato salad",
+      "japanese style potato salad"
+    ]
+  },
+  {
+    "dish_name": "Kaiso Seaweed Salad",
+    "state": "Japan",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 15,
+    "servings": 2,
+    "short_description": "A colorful mixed seaweed salad featuring multiple varieties of sea vegetables with a citrus ponzu dressing \u2014 rich in minerals, iodine and ocean umami.",
+    "ingredients": [
+      {
+        "name": "Mixed dried seaweed (kaiso)",
+        "quantity": "20",
+        "unit": "g"
+      },
+      {
+        "name": "Ponzu sauce",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame oil",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Toasted sesame seeds",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cucumber",
+        "quantity": "0.5",
+        "unit": "piece"
+      }
+    ],
+    "preparation_steps": [
+      "Rehydrate mixed kaiso in cold water for 10 minutes.",
+      "The seaweed will expand and show its varied colors.",
+      "Drain and gently squeeze out water.",
+      "Mix ponzu, sesame oil and mirin into a dressing.",
+      "Toss seaweed with dressing.",
+      "Add thinly sliced cucumber.",
+      "Garnish with sesame seeds.",
+      "Serve immediately or refrigerate briefly."
+    ],
+    "chef_notes": "Mixed kaiso contains varieties like wakame, agar-agar strands, mekabu and hijiki \u2014 each with different textures and colors. Do not over-soak or they lose their texture.",
+    "serving_suggestions": "Serve chilled as a starter alongside miso soup or sashimi.",
+    "nutrition_estimate": {
+      "calories": "40",
+      "protein_g": "2",
+      "carbohydrates_g": "6",
+      "fat_g": "2"
+    },
+    "tags": [
+      "Vegan",
+      "Japanese",
+      "Seaweed",
+      "Mineral Rich"
+    ],
+    "seo_keywords": [
+      "kaiso salad recipe",
+      "mixed seaweed salad japan",
+      "sea vegetable salad",
+      "japanese ocean salad"
+    ]
+  },
+  {
+    "dish_name": "Burdock Root Salad",
+    "state": "Japan",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 25,
+    "servings": 2,
+    "short_description": "Julienned burdock root simmered and dressed in sesame mayo \u2014 earthy, crunchy and deeply Japanese in its celebration of root vegetable flavor.",
+    "ingredients": [
+      {
+        "name": "Burdock root (gobo)",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Carrot",
+        "quantity": "0.5",
+        "unit": "medium"
+      },
+      {
+        "name": "Kewpie mayo",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Rice vinegar",
+        "quantity": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Peel burdock and immediately place in cold water with a splash of vinegar to prevent browning.",
+      "Julienne burdock and carrot into thin matchsticks.",
+      "Blanch burdock in boiling water for 3-4 minutes until just tender but still crunchy.",
+      "Drain and cool.",
+      "Mix Kewpie mayo, toasted sesame, soy sauce and rice vinegar.",
+      "Toss burdock and carrot in the dressing.",
+      "Garnish with extra sesame seeds.",
+      "Serve at room temperature."
+    ],
+    "chef_notes": "Burdock turns brown quickly when cut \u2014 keep it in acidulated water. The distinctive earthy flavor of burdock is one of Japan's most unique vegetable tastes. It is also considered highly beneficial for digestion.",
+    "serving_suggestions": "Serve as a side dish or bento component alongside rice and miso soup.",
+    "nutrition_estimate": {
+      "calories": "130",
+      "protein_g": "3",
+      "carbohydrates_g": "14",
+      "fat_g": "7"
+    },
+    "tags": [
+      "Vegan",
+      "Japanese",
+      "Root Vegetable",
+      "Bento"
+    ],
+    "seo_keywords": [
+      "gobo salad recipe",
+      "burdock root salad japan",
+      "kinpira gobo salad",
+      "japanese root vegetable"
+    ]
+  },
+  {
+    "dish_name": "Sunomono Cucumber Salad",
+    "state": "Japan",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 15,
+    "servings": 2,
+    "short_description": "Paper-thin cucumber slices in a sweet rice vinegar and sesame dressing \u2014 crisp, cool and palate-cleansing, a staple of every traditional Japanese meal.",
+    "ingredients": [
+      {
+        "name": "Japanese cucumber",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Rice vinegar",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1.5",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Shrimp (optional)",
+        "quantity": "4",
+        "unit": "pieces"
+      }
+    ],
+    "preparation_steps": [
+      "Slice cucumbers paper-thin using a mandoline.",
+      "Salt slices and rest 10 minutes.",
+      "Squeeze out ALL water from cucumber firmly.",
+      "Mix rice vinegar, sugar, salt and soy sauce into sanbaizu.",
+      "Toss cucumber with dressing.",
+      "Add cooked shrimp if using.",
+      "Garnish with sesame seeds.",
+      "Chill 10 minutes before serving."
+    ],
+    "chef_notes": "Sanbaizu is the classic Japanese vinegar dressing \u2014 a balanced trinity of vinegar, sweetness and salt. Japanese cucumbers are thinner-skinned and less watery than Western varieties. Squeezing the salted cucumber completely transforms the texture.",
+    "serving_suggestions": "Serve chilled in small bowls as the first course of a Japanese meal.",
+    "nutrition_estimate": {
+      "calories": "45",
+      "protein_g": "2",
+      "carbohydrates_g": "9",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Vegan",
+      "Japanese",
+      "Cleansing",
+      "Light"
+    ],
+    "seo_keywords": [
+      "sunomono recipe",
+      "japanese cucumber salad",
+      "sanbaizu dressing",
+      "rice vinegar cucumber salad"
+    ]
+  },
+  {
+    "dish_name": "Tofu Salad",
+    "state": "Japan",
+    "category": "Salads",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 15,
+    "servings": 2,
+    "short_description": "Silken tofu served over shredded vegetables with a fragrant sesame-ginger-soy dressing \u2014 light, protein-rich and deeply satisfying as a cooling Japanese starter.",
+    "ingredients": [
+      {
+        "name": "Silken tofu",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame oil",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Ginger, grated",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Spring onions",
+        "quantity": "2",
+        "unit": "stalks"
+      },
+      {
+        "name": "Bonito flakes",
+        "quantity": "5",
+        "unit": "g"
+      },
+      {
+        "name": "Shredded lettuce",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Sesame seeds",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Drain silken tofu gently and cut into thick slabs.",
+      "Arrange shredded lettuce on a plate.",
+      "Place tofu carefully over the lettuce.",
+      "Combine soy sauce, sesame oil and grated ginger.",
+      "Drizzle dressing over tofu generously.",
+      "Top with spring onions and bonito flakes.",
+      "The bonito flakes will wave from the heat of the tofu.",
+      "Sprinkle sesame seeds and serve immediately."
+    ],
+    "chef_notes": "Handle silken tofu very gently \u2014 it breaks easily. The warmth of the soy dressing is what makes the bonito flakes wave. This dish is best served immediately as the tofu continues to release water.",
+    "serving_suggestions": "Serve as a light summer starter or protein-rich side dish.",
+    "nutrition_estimate": {
+      "calories": "120",
+      "protein_g": "10",
+      "carbohydrates_g": "5",
+      "fat_g": "7"
+    },
+    "tags": [
+      "Vegetarian",
+      "Japanese",
+      "Tofu",
+      "Light"
+    ],
+    "seo_keywords": [
+      "japanese tofu salad",
+      "silken tofu dressing",
+      "hiyayakko recipe",
+      "tofu with ginger soy"
+    ]
+  },
+  {
+    "dish_name": "Agedashi Eggplant Salad",
+    "state": "Japan",
+    "category": "Salads",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 30,
+    "servings": 2,
+    "short_description": "Deep-fried Japanese eggplant served at room temperature in a sweet-sour dashi dressing \u2014 a sophisticated warm-weather salad from refined Japanese home cooking.",
+    "ingredients": [
+      {
+        "name": "Japanese eggplant (nasu)",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Dashi stock",
+        "quantity": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rice vinegar",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Grated daikon",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Ginger",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "200",
+        "unit": "ml"
+      }
+    ],
+    "preparation_steps": [
+      "Score eggplant skin in a crosshatch pattern.",
+      "Deep fry eggplant in 160\u00b0C oil until completely tender \u2014 about 4 minutes.",
+      "Drain and cool to room temperature.",
+      "Make dressing: warm dashi, soy sauce, mirin and rice vinegar briefly.",
+      "Cool dressing completely.",
+      "Place eggplant in a shallow dish.",
+      "Pour cooled dressing over eggplant and marinate 10 minutes.",
+      "Serve topped with grated daikon and ginger."
+    ],
+    "chef_notes": "Japanese eggplant is much thinner and less bitter than Western varieties \u2014 do not salt before frying. The scoring of the skin allows both oil penetration during frying and dressing absorption afterward.",
+    "serving_suggestions": "Serve at room temperature as a refined summer salad or alongside grilled fish.",
+    "nutrition_estimate": {
+      "calories": "155",
+      "protein_g": "2",
+      "carbohydrates_g": "14",
+      "fat_g": "10"
+    },
+    "tags": [
+      "Vegan",
+      "Japanese",
+      "Eggplant",
+      "Refined"
+    ],
+    "seo_keywords": [
+      "japanese eggplant salad",
+      "nasu dengaku salad",
+      "fried eggplant japanese dressing",
+      "agedashi nasu"
+    ]
+  },
+  {
+    "dish_name": "Tonkatsu",
+    "state": "Japan",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 35,
+    "servings": 2,
+    "short_description": "A thick pork cutlet breaded in panko and deep-fried until golden \u2014 served with shredded cabbage, steamed rice and the iconic sweet-tangy tonkatsu sauce.",
+    "ingredients": [
+      {
+        "name": "Pork loin cutlets",
+        "quantity": "2",
+        "unit": "large (200g each)"
+      },
+      {
+        "name": "Panko breadcrumbs",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Flour",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Egg",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Tonkatsu sauce",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Shredded cabbage",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Oil for frying",
+        "quantity": "500",
+        "unit": "ml"
+      },
+      {
+        "name": "Steamed rice",
+        "quantity": "2",
+        "unit": "servings"
+      }
+    ],
+    "preparation_steps": [
+      "Score the fat rim of each cutlet to prevent curling.",
+      "Pound cutlets to even thickness.",
+      "Season with salt and pepper.",
+      "Dredge in flour, dip in beaten egg, coat in panko.",
+      "Press panko firmly onto the surface.",
+      "Heat oil to 160\u00b0C and fry for 7-8 minutes until golden.",
+      "Do not raise temperature \u2014 low and slow gives even cooking.",
+      "Rest on a rack for 2 minutes before slicing. Serve with sauce."
+    ],
+    "chef_notes": "The low frying temperature (160\u00b0C vs 180\u00b0C for most frying) is the secret to tonkatsu \u2014 it allows the thick pork to cook through before the coating browns. Resting on a rack prevents steam from softening the crust.",
+    "serving_suggestions": "Serve sliced over shredded cabbage with tonkatsu sauce, Japanese mustard and steamed rice. Miso soup on the side.",
+    "nutrition_estimate": {
+      "calories": "485",
+      "protein_g": "36",
+      "carbohydrates_g": "32",
+      "fat_g": "24"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Crispy",
+      "Japanese",
+      "Comfort"
+    ],
+    "seo_keywords": [
+      "tonkatsu recipe authentic",
+      "japanese pork cutlet panko",
+      "crispy tonkatsu sauce",
+      "katsu recipe"
+    ]
+  },
+  {
+    "dish_name": "Tempura",
+    "state": "Japan",
+    "category": "Main Courses",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 35,
+    "servings": 2,
+    "short_description": "Seafood and vegetables encased in an ethereally light, crispy batter and fried in clean oil \u2014 a Portuguese-inspired dish that Japan elevated into a culinary art form.",
+    "ingredients": [
+      {
+        "name": "Large shrimp, peeled",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Sweet potato",
+        "quantity": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "Shiitake mushrooms",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ice cold water",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Cake flour or tempura flour",
+        "quantity": "120",
+        "unit": "g"
+      },
+      {
+        "name": "Egg yolk",
+        "quantity": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Dashi, mirin, soy sauce (for dipping broth)",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Grated daikon",
+        "quantity": "4",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Prepare all ingredients and keep cold.",
+      "Make batter: mix ice cold water and egg yolk briefly.",
+      "Add sifted flour all at once and mix with just 3-4 strokes \u2014 lumps are fine.",
+      "Heat clean oil (sesame or vegetable) to 170\u00b0C.",
+      "Dip shrimp and vegetables in batter and fry immediately.",
+      "Fry in small batches for 2-3 minutes until just golden.",
+      "Drain on a rack immediately.",
+      "Serve with warm dipping broth and grated daikon."
+    ],
+    "chef_notes": "Tempura batter must be ice cold and barely mixed \u2014 overmixing develops gluten and makes it heavy. The batter should have visible flour streaks. Fry in small batches to maintain oil temperature. Eat immediately \u2014 tempura loses its crunch quickly.",
+    "serving_suggestions": "Serve immediately on absorbent paper with tentsuyu dipping broth and grated daikon. Never plate ahead.",
+    "nutrition_estimate": {
+      "calories": "380",
+      "protein_g": "18",
+      "carbohydrates_g": "36",
+      "fat_g": "18"
+    },
+    "tags": [
+      "Japanese",
+      "Fried",
+      "Light Batter",
+      "Iconic"
+    ],
+    "seo_keywords": [
+      "tempura recipe authentic",
+      "japanese light batter frying",
+      "shrimp tempura",
+      "how to make tempura"
+    ]
+  },
+  {
+    "dish_name": "Teriyaki Chicken",
+    "state": "Japan",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 30,
+    "servings": 2,
+    "short_description": "Chicken glazed in a glossy, sweet-salty soy-mirin-sake sauce and grilled until lacquered and caramelized \u2014 Japan's most globally replicated flavor, and justifiably so.",
+    "ingredients": [
+      {
+        "name": "Chicken thighs, skin-on",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sake",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Score the skin of chicken thighs in a crosshatch pattern.",
+      "Combine soy sauce, mirin, sake and sugar into teriyaki sauce.",
+      "Heat oil in a pan. Place chicken skin-side down.",
+      "Cook on medium heat until skin is golden \u2014 8 minutes.",
+      "Flip and cook 5 more minutes.",
+      "Add teriyaki sauce to the pan.",
+      "Baste repeatedly as the sauce reduces and caramelizes.",
+      "Slice and serve with cooking sauce drizzled over."
+    ],
+    "chef_notes": "The word teriyaki comes from 'teri' (shine/glaze) and 'yaki' (grill). The shine of a properly reduced teriyaki sauce is the visual signal of success. Chicken thighs are essential \u2014 breast meat dries out under the heat needed to caramelize the sauce.",
+    "serving_suggestions": "Serve over steamed rice with pickled cucumber and miso soup.",
+    "nutrition_estimate": {
+      "calories": "340",
+      "protein_g": "28",
+      "carbohydrates_g": "18",
+      "fat_g": "16"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Japanese",
+      "Glazed",
+      "Iconic"
+    ],
+    "seo_keywords": [
+      "teriyaki chicken recipe",
+      "japanese teriyaki sauce",
+      "glazed chicken soy",
+      "authentic teriyaki"
+    ]
+  },
+  {
+    "dish_name": "Chicken Katsu Curry",
+    "state": "Japan",
+    "category": "Main Courses",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 50,
+    "servings": 2,
+    "short_description": "Crispy panko chicken cutlet over Japanese curry rice \u2014 Japan's most beloved comfort food, with a mild, subtly sweet curry sauce that is completely unique to Japanese cuisine.",
+    "ingredients": [
+      {
+        "name": "Chicken breast, pounded thin",
+        "quantity": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Panko breadcrumbs",
+        "quantity": "80",
+        "unit": "g"
+      },
+      {
+        "name": "Japanese curry roux blocks",
+        "quantity": "80",
+        "unit": "g"
+      },
+      {
+        "name": "Potato",
+        "quantity": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "Carrot",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Onion",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Steamed Japanese rice",
+        "quantity": "2",
+        "unit": "servings"
+      },
+      {
+        "name": "Oil for frying and sauteing",
+        "quantity": "3",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Saut\u00e9 onion until golden. Add potato and carrot.",
+      "Add 600ml water and simmer until vegetables are tender.",
+      "Reduce heat and dissolve curry roux blocks into the broth.",
+      "Simmer 10 minutes until thick. Keep warm.",
+      "Bread chicken: flour, egg, panko.",
+      "Deep fry at 170\u00b0C for 6-7 minutes until golden.",
+      "Slice chicken diagonally.",
+      "Serve rice in a bowl, pour curry on half, place chicken on top."
+    ],
+    "chef_notes": "Japanese curry is unlike Indian or Thai curry \u2014 it uses a roux-based sauce that creates a thick, mild, slightly sweet and deeply savory profile. The combination of Western-style curry with Japanese rice and tonkatsu is one of Japan's greatest fusion inventions.",
+    "serving_suggestions": "Serve with fukujinzuke (pickled relish) on the side. The traditional presentation splits rice and curry in the bowl.",
+    "nutrition_estimate": {
+      "calories": "620",
+      "protein_g": "38",
+      "carbohydrates_g": "72",
+      "fat_g": "20"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Japanese",
+      "Comfort",
+      "Curry"
+    ],
+    "seo_keywords": [
+      "chicken katsu curry recipe",
+      "japanese curry rice",
+      "katsu curry sauce",
+      "japanese comfort food"
+    ]
+  },
+  {
+    "dish_name": "Okonomiyaki",
+    "state": "Japan",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 30,
+    "servings": 2,
+    "short_description": "A savory Japanese pancake filled with cabbage, pork and seafood, topped with mayo, bonito flakes and okonomiyaki sauce \u2014 Osaka's most iconic and irresistible dish.",
+    "ingredients": [
+      {
+        "name": "Cabbage, finely shredded",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Flour",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Dashi stock",
+        "quantity": "120",
+        "unit": "ml"
+      },
+      {
+        "name": "Eggs",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Pork belly slices",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Okonomiyaki sauce",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Kewpie mayo",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Bonito flakes (katsuobushi)",
+        "quantity": "10",
+        "unit": "g"
+      },
+      {
+        "name": "Aonori",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Make batter: whisk flour, dashi and eggs together.",
+      "Fold in shredded cabbage \u2014 the cabbage should dominate.",
+      "Heat oil in a pan. Pour batter into a thick round cake.",
+      "Lay pork belly slices on top.",
+      "Cook on medium heat for 5 minutes until set on bottom.",
+      "Flip carefully and cook 5 more minutes.",
+      "The okonomiyaki should be cooked through and golden on both sides.",
+      "Top with okonomiyaki sauce, zig-zagged mayo, bonito flakes and aonori."
+    ],
+    "chef_notes": "Okonomi means 'what you like' \u2014 the filling is completely customizable. The key is not overmixing the batter and being generous with the cabbage. The flip is the most nerve-wracking moment \u2014 a flat spatula and confidence are your tools.",
+    "serving_suggestions": "Serve immediately on a hot plate. The bonito flakes should be waving in the heat when served.",
+    "nutrition_estimate": {
+      "calories": "395",
+      "protein_g": "18",
+      "carbohydrates_g": "38",
+      "fat_g": "20"
+    },
+    "tags": [
+      "Japanese",
+      "Osaka",
+      "Savory Pancake",
+      "Versatile"
+    ],
+    "seo_keywords": [
+      "okonomiyaki recipe",
+      "japanese savory pancake",
+      "osaka street food recipe",
+      "japanese pancake"
+    ]
+  },
+  {
+    "dish_name": "Unagi Don",
+    "state": "Japan",
+    "category": "Main Courses",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 30,
+    "servings": 2,
+    "short_description": "Grilled freshwater eel glazed with sweet kabayaki sauce, served over steamed rice \u2014 a luxurious bowl that has been a Japanese midsummer tradition for centuries.",
+    "ingredients": [
+      {
+        "name": "Grilled unagi (pre-cooked eel)",
+        "quantity": "2",
+        "unit": "fillets"
+      },
+      {
+        "name": "Steamed Japanese rice",
+        "quantity": "2",
+        "unit": "servings"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sake",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sansho pepper",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Nori",
+        "quantity": "1",
+        "unit": "sheet"
+      }
+    ],
+    "preparation_steps": [
+      "Make kabayaki sauce: combine soy sauce, mirin, sake and sugar.",
+      "Simmer until slightly reduced and glossy.",
+      "Heat a pan and warm pre-cooked eel skin-side down.",
+      "Brush kabayaki sauce over eel repeatedly.",
+      "Turn and brush the other side.",
+      "Grill briefly to caramelize the sauce.",
+      "Place hot rice in deep lacquer boxes.",
+      "Lay eel on top of rice. Drizzle with remaining sauce. Sprinkle sansho."
+    ],
+    "chef_notes": "Eating unagi is a centuries-old Japanese midsummer tradition believed to restore energy during the Doyo (the hottest days). Pre-cooked unagi from Japanese grocery stores is excellent quality. The sansho pepper garnish is non-negotiable.",
+    "serving_suggestions": "Serve in a lacquer box (jubako) with pickled vegetables and clear soup.",
+    "nutrition_estimate": {
+      "calories": "520",
+      "protein_g": "28",
+      "carbohydrates_g": "58",
+      "fat_g": "20"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Japanese",
+      "Luxurious",
+      "Traditional"
+    ],
+    "seo_keywords": [
+      "unagi don recipe",
+      "japanese grilled eel rice",
+      "kabayaki eel recipe",
+      "unadon recipe"
+    ]
+  },
+  {
+    "dish_name": "Oyakodon",
+    "state": "Japan",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 25,
+    "servings": 2,
+    "short_description": "Chicken and egg simmered together in a sweet dashi broth and served over rice \u2014 the name means 'parent and child', a poetic Japanese description of this beloved bowl.",
+    "ingredients": [
+      {
+        "name": "Chicken thighs, sliced",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Eggs",
+        "quantity": "3",
+        "unit": "large"
+      },
+      {
+        "name": "Onion",
+        "quantity": "0.5",
+        "unit": "large"
+      },
+      {
+        "name": "Dashi stock",
+        "quantity": "150",
+        "unit": "ml"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Steamed rice",
+        "quantity": "2",
+        "unit": "servings"
+      },
+      {
+        "name": "Spring onions and mitsuba to garnish",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Combine dashi, soy sauce, mirin and sugar in a small pan.",
+      "Add sliced onion and cook until tender.",
+      "Add chicken pieces and cook through in the broth.",
+      "Beat eggs lightly \u2014 a few streaks of white and yolk are desirable.",
+      "Pour 2/3 of the egg over the chicken in a circle.",
+      "Cover and cook 30 seconds until just setting.",
+      "Add remaining egg \u2014 the outer edge should set but center remain runny.",
+      "Slide immediately over a bowl of hot rice. Garnish with spring onion."
+    ],
+    "chef_notes": "The key is the egg \u2014 it should be partially set (han-nama, meaning half-raw) with a glossy, custardy texture. Pour the egg in two additions to achieve different textures. The moment of sliding it off the pan onto rice is the chef's skill.",
+    "serving_suggestions": "Serve immediately over hot rice in deep bowls. The runny egg continues cooking on the hot rice.",
+    "nutrition_estimate": {
+      "calories": "445",
+      "protein_g": "30",
+      "carbohydrates_g": "48",
+      "fat_g": "14"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Japanese",
+      "Bowl",
+      "Comfort"
+    ],
+    "seo_keywords": [
+      "oyakodon recipe",
+      "japanese chicken egg rice bowl",
+      "parent child donburi",
+      "oyako rice bowl"
+    ]
+  },
+  {
+    "dish_name": "Sukiyaki",
+    "state": "Japan",
+    "category": "Main Courses",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 40,
+    "servings": 4,
+    "short_description": "Thinly sliced premium beef, tofu, vegetables and noodles cooked in a sweet soy broth at the table and dipped in raw beaten egg \u2014 a beloved Japanese winter celebration dish.",
+    "ingredients": [
+      {
+        "name": "Thinly sliced beef (ribeye)",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Firm tofu",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Shirataki noodles",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Napa cabbage",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Shiitake mushrooms",
+        "quantity": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "Spring onions",
+        "quantity": "3",
+        "unit": "stalks"
+      },
+      {
+        "name": "Sukiyaki broth (warishita)",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Raw eggs for dipping",
+        "quantity": "4",
+        "unit": "pieces"
+      }
+    ],
+    "preparation_steps": [
+      "Make warishita: combine soy sauce, mirin, sake and sugar.",
+      "Prepare all vegetables, tofu and noodles.",
+      "Heat an iron sukiyaki pot at the table on a portable burner.",
+      "Add a piece of beef fat to grease the pot.",
+      "Sear beef slices briefly \u2014 they should be rare.",
+      "Pour warishita over beef.",
+      "Add vegetables, tofu and noodles around the meat.",
+      "Each diner dips cooked ingredients in their bowl of raw beaten egg before eating."
+    ],
+    "chef_notes": "Sukiyaki is one of Japan's great communal dining experiences \u2014 ingredients are cooked and eaten as they're ready. The raw egg dipping is non-negotiable for authentic sukiyaki \u2014 it cools the hot food and creates a silky coating.",
+    "serving_suggestions": "Cook and eat at the table with a portable burner. Serve with steamed rice.",
+    "nutrition_estimate": {
+      "calories": "440",
+      "protein_g": "30",
+      "carbohydrates_g": "22",
+      "fat_g": "26"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Japanese",
+      "Hot Pot",
+      "Communal"
+    ],
+    "seo_keywords": [
+      "sukiyaki recipe authentic",
+      "japanese beef hot pot",
+      "sukiyaki warishita sauce",
+      "communal japanese cooking"
+    ]
+  },
+  {
+    "dish_name": "Yakisoba",
+    "state": "Japan",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 25,
+    "servings": 2,
+    "short_description": "Stir-fried wheat noodles with pork, cabbage and vegetables in a savory sauce \u2014 Japan's quintessential festival street food found at every summer matsuri.",
+    "ingredients": [
+      {
+        "name": "Yakisoba noodles (pre-cooked)",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Pork belly slices",
+        "quantity": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Cabbage, roughly chopped",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Carrot, julienned",
+        "quantity": "0.5",
+        "unit": "medium"
+      },
+      {
+        "name": "Yakisoba sauce",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Bonito flakes and aonori to top",
+        "quantity": "10",
+        "unit": "g"
+      },
+      {
+        "name": "Pickled red ginger (beni shoga)",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Heat oil in a large wok or griddle on high heat.",
+      "Stir-fry pork belly until cooked and golden.",
+      "Add cabbage and carrot. Stir-fry 2 minutes.",
+      "Add pre-cooked noodles and break up any clumps.",
+      "Add yakisoba sauce and toss vigorously over high heat.",
+      "The noodles should be slightly crispy at the edges.",
+      "Plate and top with bonito flakes, aonori and pickled ginger.",
+      "Serve immediately."
+    ],
+    "chef_notes": "High heat is essential \u2014 yakisoba should be smoky and slightly charred at the edges (yakizuke). The noodles are pre-cooked and just need to absorb the sauce and char. At festivals, it is cooked on giant iron griddles (teppan) for the best smoky flavor.",
+    "serving_suggestions": "Serve on a plate with pickled ginger, bonito flakes and aonori. A Japanese summer festival essential.",
+    "nutrition_estimate": {
+      "calories": "420",
+      "protein_g": "18",
+      "carbohydrates_g": "52",
+      "fat_g": "16"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Japanese",
+      "Street Food",
+      "Festival"
+    ],
+    "seo_keywords": [
+      "yakisoba recipe",
+      "japanese fried noodles",
+      "matsuri street food",
+      "teppanyaki noodles"
+    ]
+  },
+  {
+    "dish_name": "Shabu-Shabu",
+    "state": "Japan",
+    "category": "Main Courses",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 40,
+    "servings": 4,
+    "short_description": "Ultra-thin slices of premium beef swished in simmering kombu dashi at the table and dipped in ponzu or sesame sauce \u2014 the most elegant of all Japanese hot pot dishes.",
+    "ingredients": [
+      {
+        "name": "Thinly sliced beef (paper-thin)",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Napa cabbage",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Tofu",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Enoki and shiitake mushrooms",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Kombu dashi broth",
+        "quantity": "1.5",
+        "unit": "litre"
+      },
+      {
+        "name": "Ponzu sauce",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sesame sauce (goma dare)",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Spring onions and grated daikon",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Prepare kombu dashi broth and heat in a donabe (clay pot) at the table.",
+      "Arrange all ingredients beautifully on a large plate.",
+      "When broth is simmering, each diner picks up one beef slice with chopsticks.",
+      "Swish (shabu-shabu motion) in the broth for 3-5 seconds \u2014 just until pink disappears.",
+      "Dip immediately in ponzu or sesame sauce.",
+      "Cook vegetables in the broth as you go.",
+      "At the end, add udon noodles to the enriched broth.",
+      "Drink the final broth as soup."
+    ],
+    "chef_notes": "The name 'shabu-shabu' is onomatopoeia for the sound the thin beef makes when swished in broth. The beef must be sliced paper-thin \u2014 freeze for 30 minutes before slicing at home for better control. Overcooking ruins it.",
+    "serving_suggestions": "Cook and eat at the table. Finish with udon in the broth for\u7de0\u3081 (shime \u2014 the final course).",
+    "nutrition_estimate": {
+      "calories": "360",
+      "protein_g": "28",
+      "carbohydrates_g": "14",
+      "fat_g": "22"
+    },
+    "tags": [
+      "Non-Vegetarian",
+      "Japanese",
+      "Hot Pot",
+      "Elegant"
+    ],
+    "seo_keywords": [
+      "shabu shabu recipe",
+      "japanese hot pot beef",
+      "ponzu sauce beef",
+      "thinly sliced beef japan"
+    ]
+  },
+  {
+    "dish_name": "Mochi",
+    "state": "Japan",
+    "category": "Desserts",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 30,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 50,
+    "servings": 6,
+    "short_description": "Chewy glutinous rice cakes with sweet red bean or ice cream fillings \u2014 a sacred Japanese confection with over 1000 years of history, made for every celebration.",
+    "ingredients": [
+      {
+        "name": "Shiratamako (glutinous rice flour)",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "60",
+        "unit": "g"
+      },
+      {
+        "name": "Water",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Sweet red bean paste (anko)",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Potato starch for dusting",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Food coloring (optional)",
+        "quantity": "1",
+        "unit": "drop"
+      }
+    ],
+    "preparation_steps": [
+      "Mix shiratamako, sugar and water until completely smooth.",
+      "Microwave for 2 minutes, stir, microwave 1 more minute.",
+      "The mochi should be translucent and very sticky.",
+      "Dust a surface generously with potato starch.",
+      "Turn out mochi and dust top with more starch.",
+      "Divide into 12 pieces with oiled scissors.",
+      "Flatten each piece and place a ball of anko in the center.",
+      "Stretch mochi around filling and pinch to seal."
+    ],
+    "chef_notes": "Mochi dough is extremely sticky \u2014 potato starch is your best friend. Work quickly as the dough is easiest to handle while still warm. Shiratamako gives a smoother, chewier texture than regular mochiko flour.",
+    "serving_suggestions": "Serve the same day at room temperature. Mochi hardens when refrigerated.",
+    "nutrition_estimate": {
+      "calories": "175",
+      "protein_g": "3",
+      "carbohydrates_g": "38",
+      "fat_g": "1"
+    },
+    "tags": [
+      "Vegetarian",
+      "Japanese",
+      "Traditional",
+      "Festival"
+    ],
+    "seo_keywords": [
+      "mochi recipe homemade",
+      "japanese rice cake",
+      "how to make mochi",
+      "daifuku mochi recipe"
+    ]
+  },
+  {
+    "dish_name": "Matcha Parfait",
+    "state": "Japan",
+    "category": "Desserts",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 15,
+    "servings": 2,
+    "short_description": "A towering glass parfait of matcha ice cream, red bean, mochi, cornflakes and whipped cream \u2014 Japan's theatrical take on the parfait, found at every Japanese cafe.",
+    "ingredients": [
+      {
+        "name": "Matcha ice cream",
+        "quantity": "4",
+        "unit": "scoops"
+      },
+      {
+        "name": "Sweet red bean paste",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mochi pieces",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Cornflakes",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Whipped cream",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Matcha powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Kanten jelly cubes",
+        "quantity": "50",
+        "unit": "g"
+      }
+    ],
+    "preparation_steps": [
+      "Chill parfait glasses in the freezer for 10 minutes.",
+      "Layer cornflakes at the bottom for crunch.",
+      "Add kanten jelly cubes.",
+      "Add a scoop of matcha ice cream.",
+      "Add red bean paste and mochi pieces.",
+      "Add another scoop of ice cream.",
+      "Top with whipped cream.",
+      "Dust with matcha powder and garnish with a mochi piece."
+    ],
+    "chef_notes": "The Japanese parfait is an art form of layering textures \u2014 crunchy, creamy, chewy and smooth should all be present. The cornflakes at the bottom absorb the melting ice cream without becoming immediately soggy, adding textural contrast throughout.",
+    "serving_suggestions": "Serve immediately in a tall clear glass with a long spoon. The visual impact is part of the experience.",
+    "nutrition_estimate": {
+      "calories": "385",
+      "protein_g": "6",
+      "carbohydrates_g": "58",
+      "fat_g": "16"
+    },
+    "tags": [
+      "Vegetarian",
+      "Japanese",
+      "Matcha",
+      "Cafe Dessert"
+    ],
+    "seo_keywords": [
+      "matcha parfait recipe",
+      "japanese green tea parfait",
+      "japanese cafe dessert",
+      "matcha ice cream parfait"
+    ]
+  },
+  {
+    "dish_name": "Dorayaki",
+    "state": "Japan",
+    "category": "Desserts",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 35,
+    "servings": 6,
+    "short_description": "Two fluffy honey pancakes sandwiching sweet red bean paste \u2014 a beloved Japanese confection immortalized globally as Doraemon's favorite treat.",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "quantity": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "80",
+        "unit": "g"
+      },
+      {
+        "name": "Honey",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Flour",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Baking soda",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sweet red bean paste (anko)",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Oil",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Beat eggs and sugar until pale and ribbony.",
+      "Add honey and mirin. Mix well.",
+      "Sift in flour and baking soda. Mix gently.",
+      "Rest the batter for 30 minutes.",
+      "Heat a pan on very low heat. Lightly oil.",
+      "Pour a small circle of batter and cook until bubbles form on surface.",
+      "Flip and cook 30 more seconds until just done.",
+      "Sandwich two pancakes with a generous layer of red bean paste."
+    ],
+    "chef_notes": "The resting of the batter is crucial \u2014 it allows the baking soda to activate and creates fluffier pancakes. The distinctive brown mottling on the surface comes from the honey caramelizing. Very low heat is essential to cook through without burning.",
+    "serving_suggestions": "Serve at room temperature as a snack or dessert. Best eaten the day they are made.",
+    "nutrition_estimate": {
+      "calories": "195",
+      "protein_g": "5",
+      "carbohydrates_g": "36",
+      "fat_g": "4"
+    },
+    "tags": [
+      "Vegetarian",
+      "Japanese",
+      "Pancake",
+      "Red Bean"
+    ],
+    "seo_keywords": [
+      "dorayaki recipe",
+      "japanese pancake sweet bean",
+      "doraemon dorayaki",
+      "anko pancake recipe"
+    ]
+  },
+  {
+    "dish_name": "Taiyaki",
+    "state": "Japan",
+    "category": "Desserts",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 35,
+    "servings": 8,
+    "short_description": "Fish-shaped waffles filled with sweet red bean paste \u2014 a crispy, golden street confection from Japan's seasonal markets that has delighted generations.",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Baking powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Egg",
+        "quantity": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Milk",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Sweet red bean paste (anko)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Oil for pan",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "preparation_steps": [
+      "Make batter: whisk flour, baking powder and sugar.",
+      "Add egg and milk. Mix until smooth.",
+      "Heat taiyaki mold on stove over medium heat.",
+      "Lightly oil both sides of the mold.",
+      "Pour batter into one side to fill half.",
+      "Place a generous amount of anko in the center.",
+      "Pour a little more batter to cover the anko.",
+      "Close the mold and cook 3-4 minutes each side."
+    ],
+    "chef_notes": "The taiyaki mold is essential \u2014 it gives the iconic fish shape. The batter should be thin enough to fill the mold completely. Anko should be generous and centered. The resulting fish should be golden, crispy outside and soft inside.",
+    "serving_suggestions": "Serve hot from the mold. Available in Japanese supermarkets as a frozen version, but nothing beats fresh.",
+    "nutrition_estimate": {
+      "calories": "155",
+      "protein_g": "4",
+      "carbohydrates_g": "28",
+      "fat_g": "3"
+    },
+    "tags": [
+      "Vegetarian",
+      "Japanese",
+      "Street Food",
+      "Red Bean"
+    ],
+    "seo_keywords": [
+      "taiyaki recipe",
+      "japanese fish waffle",
+      "red bean waffle japan",
+      "taiyaki mold recipe"
+    ]
+  },
+  {
+    "dish_name": "Kakigori",
+    "state": "Japan",
+    "category": "Desserts",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 0,
+    "total_time_minutes": 10,
+    "servings": 2,
+    "short_description": "Finely shaved ice flavored with syrups, condensed milk and sweet toppings \u2014 Japan's beloved summer street dessert, lighter and more refined than any other shaved ice in the world.",
+    "ingredients": [
+      {
+        "name": "Block ice or ice cubes",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Matcha syrup",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sweet red bean paste",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Sweetened condensed milk",
+        "quantity": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Mochi pieces",
+        "quantity": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Strawberry or yuzu syrup",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Shave ice using a kakigori machine or high-powered blender.",
+      "The ice should be like fresh powder snow \u2014 not crushed ice.",
+      "Mound shaved ice in a bowl, building it high.",
+      "Drizzle matcha syrup over the ice.",
+      "Add condensed milk for creaminess.",
+      "Top with red bean paste and mochi.",
+      "Add more syrup layers as you eat your way through the mound.",
+      "Serve immediately before it melts."
+    ],
+    "chef_notes": "The quality of kakigori depends entirely on the fineness of the shave \u2014 true kakigori ice should melt on the tongue like snow, not crunch. High-end kakigori shops in Japan use natural ice blocks from mountain lakes, shaved paper-thin.",
+    "serving_suggestions": "Serve immediately in a tall mound. Eat quickly but not too quickly \u2014 the cold can cause brain freeze!",
+    "nutrition_estimate": {
+      "calories": "145",
+      "protein_g": "2",
+      "carbohydrates_g": "32",
+      "fat_g": "2"
+    },
+    "tags": [
+      "Vegetarian",
+      "Japanese",
+      "Summer",
+      "Shaved Ice"
+    ],
+    "seo_keywords": [
+      "kakigori recipe",
+      "japanese shaved ice",
+      "matcha kakigori",
+      "japanese summer dessert"
+    ]
+  },
+  {
+    "dish_name": "Wagashi",
+    "state": "Japan",
+    "category": "Desserts",
+    "difficulty_level": "Hard",
+    "prep_time_minutes": 60,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 70,
+    "servings": 8,
+    "short_description": "Traditional Japanese confections made from bean paste and seasonal ingredients \u2014 delicate artworks that celebrate nature's seasons through edible sculpture.",
+    "ingredients": [
+      {
+        "name": "White bean paste (shiroan)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Gyuhi (soft mochi)",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Matcha powder",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Food coloring (pink, green)",
+        "quantity": "2",
+        "unit": "drops"
+      },
+      {
+        "name": "Potato starch for dusting",
+        "quantity": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "preparation_steps": [
+      "Divide white bean paste into portions.",
+      "Color portions with natural coloring \u2014 pink for sakura, green for matcha.",
+      "Make gyuhi by mixing mochiko with water and microwaving.",
+      "Flatten a small piece of gyuhi and wrap around bean paste ball.",
+      "Shape into seasonal forms \u2014 cherry blossoms, maple leaves, snowflakes.",
+      "Use a bamboo skewer to press fine details.",
+      "Dust lightly with potato starch to prevent sticking.",
+      "Serve on a small paper or lacquer tray."
+    ],
+    "chef_notes": "Wagashi is the edible art form of Japan \u2014 professional wagashi makers train for years. The shapes always represent the current season. Serve with bitter matcha tea to balance the sweetness \u2014 the contrast is fundamental to wagashi appreciation.",
+    "serving_suggestions": "Serve with a bowl of frothy matcha tea (usucha) in a traditional tea ceremony setting.",
+    "nutrition_estimate": {
+      "calories": "145",
+      "protein_g": "3",
+      "carbohydrates_g": "30",
+      "fat_g": "2"
+    },
+    "tags": [
+      "Vegetarian",
+      "Japanese",
+      "Traditional",
+      "Artisan"
+    ],
+    "seo_keywords": [
+      "wagashi recipe",
+      "japanese traditional sweets",
+      "nerikiri recipe",
+      "japanese tea ceremony sweet"
+    ]
+  },
+  {
+    "dish_name": "Anmitsu",
+    "state": "Japan",
+    "category": "Desserts",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 180,
+    "servings": 4,
+    "short_description": "A cooling dessert bowl of kanten jelly cubes, sweet red bean paste, fruit and mochi, drizzled with black sugar syrup \u2014 a Meiji-era Tokyo classic that remains timeless.",
+    "ingredients": [
+      {
+        "name": "Kanten (agar-agar)",
+        "quantity": "4",
+        "unit": "g"
+      },
+      {
+        "name": "Water",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Sweet red bean paste",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Kuromitsu (black sugar syrup)",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Seasonal fruits",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Shiratama mochi",
+        "quantity": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "Vanilla ice cream (for cream anmitsu)",
+        "quantity": "2",
+        "unit": "scoops"
+      }
+    ],
+    "preparation_steps": [
+      "Dissolve kanten in water and bring to a boil, stirring.",
+      "Pour into a flat container and cool at room temperature.",
+      "Refrigerate until firmly set \u2014 about 2 hours.",
+      "Cut kanten jelly into 1cm cubes.",
+      "Make shiratama: mix shiratamako with water, form balls, boil until they float.",
+      "Arrange kanten cubes in bowls.",
+      "Add red bean paste, fruit and shiratama mochi.",
+      "Drizzle generously with kuromitsu. Serve chilled."
+    ],
+    "chef_notes": "Kanten (Japanese agar) sets firmer than Western gelatin and at a higher temperature \u2014 it can be served at room temperature without melting. Kuromitsu (black sugar syrup) is the defining flavor of anmitsu and cannot be substituted.",
+    "serving_suggestions": "Serve chilled in a lacquer or pottery bowl. A perfect summer dessert at traditional Japanese cafes (anmitsumise).",
+    "nutrition_estimate": {
+      "calories": "195",
+      "protein_g": "3",
+      "carbohydrates_g": "44",
+      "fat_g": "1"
+    },
+    "tags": [
+      "Vegan",
+      "Japanese",
+      "Summer",
+      "Traditional"
+    ],
+    "seo_keywords": [
+      "anmitsu recipe",
+      "japanese jelly dessert",
+      "kanten dessert",
+      "kuromitsu syrup dessert"
+    ]
+  },
+  {
+    "dish_name": "Warabi Mochi",
+    "state": "Japan",
+    "category": "Desserts",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 50,
+    "servings": 4,
+    "short_description": "A delicate, translucent jelly made from bracken fern starch, dusted with kinako roasted soybean flour and drizzled with kuromitsu black sugar syrup.",
+    "ingredients": [
+      {
+        "name": "Warabi-ko (bracken starch) or katakuriko",
+        "quantity": "60",
+        "unit": "g"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Water",
+        "quantity": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Kinako (roasted soybean flour)",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Kuromitsu (black sugar syrup)",
+        "quantity": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "pinch"
+      }
+    ],
+    "preparation_steps": [
+      "Mix warabi-ko, sugar and water until completely dissolved.",
+      "Cook over medium heat, stirring constantly.",
+      "The mixture will begin to thicken and turn translucent.",
+      "Continue stirring for 5-7 minutes until very thick and glossy.",
+      "Pour into a container dusted with kinako.",
+      "Cool at room temperature for 30 minutes.",
+      "Cut into cubes with a knife dusted in kinako.",
+      "Dust all sides in kinako and drizzle with kuromitsu."
+    ],
+    "chef_notes": "Warabi mochi is much more delicate and translucent than rice mochi. The kinako dusting is essential \u2014 the nutty roasted soybean flavor is the perfect complement to the subtle sweetness. True warabi-ko is expensive; potato starch is a common substitute.",
+    "serving_suggestions": "Serve immediately or within a few hours. Warabi mochi does not keep well \u2014 the texture changes after several hours.",
+    "nutrition_estimate": {
+      "calories": "135",
+      "protein_g": "3",
+      "carbohydrates_g": "28",
+      "fat_g": "2"
+    },
+    "tags": [
+      "Vegan",
+      "Japanese",
+      "Summer Dessert",
+      "Traditional"
+    ],
+    "seo_keywords": [
+      "warabi mochi recipe",
+      "japanese bracken starch jelly",
+      "kinako kuromitsu dessert",
+      "warabimochi"
+    ]
+  },
+  {
+    "dish_name": "Yokan",
+    "state": "Japan",
+    "category": "Desserts",
+    "difficulty_level": "Easy",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 240,
+    "servings": 8,
+    "short_description": "A firm, dense jelly made from red bean paste, agar and sugar \u2014 Japan's most venerable confection, presented in elegant rectangular blocks and gifted during festivals.",
+    "ingredients": [
+      {
+        "name": "Smooth red bean paste (koshian)",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Kanten (agar powder)",
+        "quantity": "4",
+        "unit": "g"
+      },
+      {
+        "name": "Water",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "pinch"
+      }
+    ],
+    "preparation_steps": [
+      "Dissolve kanten powder in cold water.",
+      "Bring to a boil stirring constantly.",
+      "Add sugar and salt. Stir until dissolved.",
+      "Add smooth red bean paste (koshian) and mix well.",
+      "Cook on low heat for 5 minutes, stirring.",
+      "Pour into a loaf pan lined with plastic wrap.",
+      "Cool at room temperature for 30 minutes.",
+      "Refrigerate 2-3 hours until set. Slice and serve."
+    ],
+    "chef_notes": "Yokan has been made in Japan for over 500 years and was brought from China by Buddhist monks. The two main varieties are neri yokan (firm, keeps for weeks) and mizu yokan (softer, more water, summer version). Both are excellent gifts.",
+    "serving_suggestions": "Serve in thin slices on a small plate with green tea. A traditional Japanese souvenir gift (omiyage).",
+    "nutrition_estimate": {
+      "calories": "125",
+      "protein_g": "3",
+      "carbohydrates_g": "28",
+      "fat_g": "0"
+    },
+    "tags": [
+      "Vegan",
+      "Japanese",
+      "Traditional",
+      "Gift Food"
+    ],
+    "seo_keywords": [
+      "yokan recipe",
+      "japanese red bean jelly",
+      "wagashi yokan",
+      "traditional japanese confection"
+    ]
+  },
+  {
+    "dish_name": "Matcha Ice Cream",
+    "state": "Japan",
+    "category": "Desserts",
+    "difficulty_level": "Medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 360,
+    "servings": 6,
+    "short_description": "Intensely flavored ceremonial grade matcha ice cream \u2014 Japan's most globally beloved dessert flavor, with a vivid green color and complex bitter-sweet balance.",
+    "ingredients": [
+      {
+        "name": "Ceremonial grade matcha powder",
+        "quantity": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Heavy cream",
+        "quantity": "300",
+        "unit": "ml"
+      },
+      {
+        "name": "Whole milk",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "Egg yolks",
+        "quantity": "4",
+        "unit": "large"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "120",
+        "unit": "g"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1",
+        "unit": "pinch"
+      }
+    ],
+    "preparation_steps": [
+      "Whisk matcha with 3 tbsp hot water into a smooth paste.",
+      "Heat cream and milk together until steaming.",
+      "Whisk egg yolks and sugar until pale.",
+      "Slowly pour hot cream into yolks, whisking constantly.",
+      "Return to pot and cook on low heat until custard coats a spoon.",
+      "Strain and stir in matcha paste.",
+      "Cool completely over ice bath.",
+      "Churn in ice cream machine until frozen. Freeze 4 hours."
+    ],
+    "chef_notes": "Ceremonial grade matcha gives the most vibrant color and complex flavor \u2014 culinary grade matcha produces a duller, more bitter result. The custard base must be cooked gently \u2014 scrambled eggs in ice cream is a common mistake.",
+    "serving_suggestions": "Serve in small scoops in a waffle cone or alongside mochi and red bean paste.",
+    "nutrition_estimate": {
+      "calories": "265",
+      "protein_g": "5",
+      "carbohydrates_g": "28",
+      "fat_g": "15"
+    },
+    "tags": [
+      "Vegetarian",
+      "Japanese",
+      "Matcha",
+      "Ice Cream"
+    ],
+    "seo_keywords": [
+      "matcha ice cream recipe",
+      "japanese green tea ice cream",
+      "ceremonial matcha dessert",
+      "green tea gelato"
+    ]
+  }
+];
+
 const chips = ["Chicken + lemon + garlic", "Pasta in 20 mins", "Vegan dessert ideas", "Leftover rice recipes"];
 const welcome = { role: "ai", content: <><h4>👋 Hello, I'm FusionChef AI!</h4>Tell me what ingredients you have, a cuisine you're craving, or any dietary needs — I'll craft a recipe just for you.</> };
 
@@ -2699,6 +7385,7 @@ function FusionChefAI() {
   const [scrolled, setScrolled] = useState(false);
   const [recipeModal, setRecipeModal] = useState(null);
   const [indianPage, setIndianPage] = useState(false);
+
   const [aboutPage, setAboutPage] = useState(false);
   const [contactPage, setContactPage] = useState(false);
   const [privacyPage, setPrivacyPage] = useState(false);
@@ -2770,6 +7457,345 @@ function FusionChefAI() {
 
   useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, []);
   useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
+
+
+  // ═══════════════════════════════════════
+  // JAPANESE CUISINE PAGE
+  // ═══════════════════════════════════════
+  const [japaneseView, setJapaneseView] = useState("guide"); // "guide" | "recipes"
+  const [japaneseCategory, setJapaneseCategory] = useState("All");
+  const [japaneseSearch, setJapaneseSearch] = useState("");
+  const [japaneseModal, setJapaneseModal] = useState(null);
+
+  const renderJapanesePage = () => {
+    const categories = ["All","Sushi","Appetizers","Soups","Salads","Main Courses","Desserts"];
+    const emojis = {"Sushi":"🍣","Appetizers":"🥟","Soups":"🍜","Salads":"🥗","Main Courses":"🍱","Desserts":"🍡"};
+    const gradients = {"Sushi":"#BC002D,#8B0000","Appetizers":"#E8621A,#C9922A","Soups":"#4A7C59,#2E7D32","Salads":"#2E7D32,#4A7C59","Main Courses":"#1a3a7a,#2d5a8e","Desserts":"#9B59B6,#7D3C98"};
+
+    const filtered = japaneseCuisineData.filter(d => {
+      const matchCat = japaneseCategory === "All" || d.category === japaneseCategory;
+      const matchSearch = !japaneseSearch ||
+        d.dish_name.toLowerCase().includes(japaneseSearch.toLowerCase()) ||
+        (d.tags && d.tags.some(t => t.toLowerCase().includes(japaneseSearch.toLowerCase())));
+      return matchCat && matchSearch;
+    });
+
+    const DishCard = ({dish}) => (
+      <div className="indian-card" onClick={() => setJapaneseModal(dish)}>
+        <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
+          {dish.img ? (
+            <img src={dish.img} alt={dish.dish_name} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}}
+              onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}} />
+          ) : null}
+          <div style={{display:dish.img?"none":"flex",width:"100%",height:"100%",alignItems:"center",justifyContent:"center",flexDirection:"column",background:`linear-gradient(135deg,${gradients[dish.category]||"#BC002D,#8B0000"})`}}>
+            <span style={{fontSize:"2.5rem"}}>{emojis[dish.category]||"🍽"}</span>
+            <span style={{fontSize:"0.65rem",color:"white",marginTop:"0.3rem",textAlign:"center",padding:"0 0.5rem",fontWeight:600}}>{dish.dish_name}</span>
+          </div>
+        </div>
+        <div className="indian-card-body">
+          <div className="indian-cat-badge" style={{background:"rgba(188,0,45,0.1)",color:"#BC002D"}}>{emojis[dish.category]} {dish.category}</div>
+          <h3>{dish.dish_name}</h3>
+          <p style={{fontSize:"0.78rem",color:"var(--text-muted)",marginTop:"0.3rem",lineHeight:"1.4"}}>{dish.short_description?dish.short_description.substring(0,85)+"...":""}</p>
+          <div className="indian-card-meta">
+            <span>⏱ {dish.prep_time_minutes + dish.cook_time_minutes} min</span>
+            <span>🍽 {dish.servings} servings</span>
+            <span className={`diff-badge diff-${dish.difficulty_level.toLowerCase()}`}>{dish.difficulty_level}</span>
+          </div>
+          <div style={{marginTop:"0.5rem"}}>
+            {dish.tags && dish.tags.slice(0,2).map((t,i)=><span key={i} className="diet-tag">{t}</span>)}
+          </div>
+        </div>
+      </div>
+    );
+
+    const DishModal = () => {
+      if (!japaneseModal) return null;
+      const d = japaneseModal;
+      return (
+        <div className="modal-overlay" onClick={()=>setJapaneseModal(null)}>
+          <div className="modal-wrapper" onClick={e=>e.stopPropagation()}>
+            <button className="modal-close" onClick={()=>setJapaneseModal(null)}>✕</button>
+            <div className="modal">
+              <div style={{height:"260px",overflow:"hidden",position:"relative",background:"#f5f0ea"}}>
+                {d.img ? (
+                  <img src={d.img} alt={d.dish_name} style={{width:"100%",height:"100%",objectFit:"cover"}}
+                    onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}} />
+                ) : null}
+                <div style={{display:"flex",background:`linear-gradient(135deg,${gradients[d.category]||"#BC002D,#8B0000"})`,height:"260px",alignItems:"center",justifyContent:"center",flexDirection:"column",gap:"0.5rem"}}>
+                  <span style={{fontSize:"5rem"}}>{emojis[d.category]||"🍽"}</span>
+                  <span style={{color:"white",fontWeight:700,fontSize:"1rem"}}>{d.dish_name}</span>
+                </div>
+              </div>
+              <div className="modal-body">
+                <div className="indian-cat-badge" style={{background:"rgba(188,0,45,0.1)",color:"#BC002D"}}>{emojis[d.category]} {d.category}</div>
+                <h2>{d.dish_name}</h2>
+                <div style={{display:"flex",gap:"1rem",flexWrap:"wrap",margin:"0.6rem 0",fontSize:"0.85rem",color:"#666"}}>
+                  <span>⏱ {d.total_time_minutes} min total</span>
+                  <span>🍽 {d.servings} servings</span>
+                  <span className={`diff-badge diff-${d.difficulty_level.toLowerCase()}`}>{d.difficulty_level}</span>
+                </div>
+                <div style={{marginBottom:"0.8rem"}}>{d.tags && d.tags.map((t,i)=><span key={i} className="diet-tag">{t}</span>)}</div>
+                <p style={{fontSize:"0.88rem",color:"var(--text-muted)",lineHeight:"1.7",marginBottom:"1rem"}}>{d.short_description}</p>
+
+                <div className="modal-section-title">🧂 Ingredients</div>
+                <ul className="modal-ingredients">
+                  {d.ingredients && d.ingredients.map((ing,i)=>(
+                    <li key={i}><strong>{ing.quantity} {ing.unit}</strong> {ing.name}</li>
+                  ))}
+                </ul>
+
+                {d.nutrition_estimate && (
+                  <>
+                    <div className="modal-section-title">📊 Nutrition</div>
+                    <div className="nutrition-grid">
+                      {Object.entries(d.nutrition_estimate).map(([k,v])=>(
+                        <div key={k} className="nutrition-box"><strong>{v}</strong><span>{k.replace(/_/g," ")}</span></div>
+                      ))}
+                    </div>
+                  </>
+                )}
+
+                <div className="modal-section-title">👨‍🍳 Instructions</div>
+                <ol className="indian-modal-steps">
+                  {d.preparation_steps && d.preparation_steps.map((step,i)=><li key={i}>{step}</li>)}
+                </ol>
+
+                {d.chef_notes && (
+                  <>
+                    <div className="modal-section-title">💡 Chef Notes</div>
+                    <p style={{fontSize:"0.88rem",color:"var(--text-muted)",lineHeight:"1.7",background:"#fff8ee",padding:"0.9rem",borderRadius:"10px",borderLeft:"3px solid #BC002D"}}>{d.chef_notes}</p>
+                  </>
+                )}
+
+                {d.serving_suggestions && (
+                  <>
+                    <div className="modal-section-title">🍽 Serving Suggestions</div>
+                    <p style={{fontSize:"0.88rem",color:"var(--text-muted)",lineHeight:"1.7"}}>{d.serving_suggestions}</p>
+                  </>
+                )}
+
+                {d.seo_keywords && (
+                  <div style={{marginTop:"1rem"}}>
+                    <div className="modal-section-title">🔍 SEO Keywords</div>
+                    <div>{d.seo_keywords.map((k,i)=><span key={i} className="flavor-tag">{k}</span>)}</div>
+                  </div>
+                )}
+
+                <div style={{marginTop:"1.2rem",paddingTop:"1rem",borderTop:"1px solid #eee",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+                  <button onClick={()=>setJapaneseModal(null)} style={{background:"none",border:"1px solid #ddd",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.85rem",color:"#666"}}>← Explore More Recipes</button>
+                  <button onClick={()=>{navigator.clipboard&&navigator.clipboard.writeText(window.location.href);}} style={{background:"#BC002D",color:"white",border:"none",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.85rem",fontWeight:600}}>Share this recipe 🔗</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    };
+
+    return (
+      <div style={{minHeight:"100vh",background:"#FFFAF8",fontFamily:"'DM Sans',sans-serif"}}>
+        {/* HERO BANNER */}
+        <div style={{position:"relative",minHeight:"420px",display:"flex",alignItems:"center",justifyContent:"center",overflow:"hidden"}}>
+          <img src="/images/japan/japan-cuisine-banner.jpg" alt="Authentic Japanese cuisine spread"
+            style={{position:"absolute",top:0,left:0,width:"100%",height:"100%",objectFit:"cover",zIndex:0}}
+            onError={e=>e.target.style.display="none"} />
+          <div style={{position:"absolute",inset:0,background:"linear-gradient(135deg,rgba(28,28,28,0.88) 0%,rgba(140,0,26,0.7) 60%,rgba(188,0,45,0.5) 100%)",zIndex:1}}></div>
+          <div style={{position:"relative",zIndex:2,textAlign:"center",padding:"2rem"}}>
+            <button onClick={()=>setJapanesePage(false)} style={{position:"absolute",top:"-1rem",left:0,background:"rgba(255,255,255,0.15)",border:"1px solid rgba(255,255,255,0.3)",color:"white",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.85rem"}}>← Back</button>
+            <span style={{background:"rgba(188,0,45,0.5)",color:"#FFB3B3",padding:"0.3rem 1rem",borderRadius:"20px",fontSize:"0.78rem",fontWeight:700,letterSpacing:"0.1em",textTransform:"uppercase"}}>🗾 Asian Cuisine</span>
+            <h1 style={{fontFamily:"'Playfair Display',serif",fontSize:"clamp(2.5rem,6vw,4.5rem)",color:"white",margin:"1rem 0 0.5rem",lineHeight:1.1}}>Japanese <em style={{color:"#FFB3B3"}}>Cuisine</em></h1>
+            <p style={{color:"rgba(255,255,255,0.75)",fontSize:"1rem",maxWidth:"580px",margin:"0 auto 1.5rem",lineHeight:1.7}}>The Art of Simplicity — Where Every Dish Honours the Ingredient</p>
+            <div style={{display:"flex",gap:"1rem",justifyContent:"center",flexWrap:"wrap"}}>
+              <button onClick={()=>setJapaneseView("guide")} style={{background:japaneseView==="guide"?"#BC002D":"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.4)",padding:"0.6rem 1.5rem",borderRadius:"25px",cursor:"pointer",fontWeight:600,fontSize:"0.9rem"}}>📖 Cuisine Guide</button>
+              <button onClick={()=>setJapaneseView("recipes")} style={{background:japaneseView==="recipes"?"#BC002D":"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.4)",padding:"0.6rem 1.5rem",borderRadius:"25px",cursor:"pointer",fontWeight:600,fontSize:"0.9rem"}}>🍽 Browse Recipes</button>
+            </div>
+          </div>
+        </div>
+
+        {/* CUISINE GUIDE VIEW */}
+        {japaneseView === "guide" && (
+          <div style={{maxWidth:"900px",margin:"0 auto",padding:"3rem 1.5rem"}}>
+
+            {/* Stats Row */}
+            <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(180px,1fr))",gap:"1rem",marginBottom:"3rem"}}>
+              {[["🍣","60 Recipes","Across 6 Categories"],["⭐","Most Michelin Stars","In the World"],["🗾","UNESCO Heritage","Washoku 2013"],["🎌","2000+ Years","Of Culinary History"]].map(([e,t,s])=>(
+                <div key={t} style={{background:"white",borderRadius:"16px",padding:"1.3rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)",textAlign:"center"}}>
+                  <div style={{fontSize:"1.8rem",marginBottom:"0.4rem"}}>{e}</div>
+                  <div style={{fontWeight:700,color:"#1C1C1C",fontSize:"0.95rem"}}>{t}</div>
+                  <div style={{color:"#888",fontSize:"0.78rem",marginTop:"0.2rem"}}>{s}</div>
+                </div>
+              ))}
+            </div>
+
+            {/* History & Origins */}
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}>
+                <span style={{fontSize:"1.8rem"}}>📜</span>
+                <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>History & Origins</h2>
+              </div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#BC002D,#E8621A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{background:"white",borderRadius:"16px",padding:"1.8rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)",borderLeft:"4px solid #BC002D"}}>
+                <p style={{fontSize:"1rem",lineHeight:1.9,color:"#444",margin:"0 0 1rem"}}>Japanese cuisine — known as <strong>Washoku (和食)</strong> — is one of the world's most refined culinary traditions, recognized by UNESCO as an Intangible Cultural Heritage of Humanity in 2013. Spanning over 2,000 years of history, it evolved from ancient rice cultivation traditions, Buddhist vegetarian principles and the extraordinary bounty of an island nation surrounded by rich seas.</p>
+                <p style={{fontSize:"1rem",lineHeight:1.9,color:"#444",margin:"0 0 1rem"}}>The arrival of Buddhism in the 6th century gave rise to <strong>Shojin Ryori</strong> — sophisticated temple cuisine that shunned meat and fish. The Edo period (1603–1868) saw the flowering of sushi, tempura and soba in the streets of Edo (Tokyo), while the Meiji Restoration (1868) opened Japan to Western influences, creating beloved fusion dishes like Tonkatsu, Japanese Curry and Korokke that are now considered authentically Japanese.</p>
+                <p style={{fontSize:"1rem",lineHeight:1.9,color:"#444",margin:0}}>Today Japan has <strong>more Michelin-starred restaurants than any other country in the world</strong>, with Tokyo alone holding more stars than Paris, reflecting the extraordinary depth and precision of Japanese culinary culture.</p>
+              </div>
+            </section>
+
+            {/* Key Principles */}
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}>
+                <span style={{fontSize:"1.8rem"}}>🎌</span>
+                <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Key Principles</h2>
+              </div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#BC002D,#E8621A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(260px,1fr))",gap:"1rem"}}>
+                {[
+                  {emoji:"🌸",title:"Shun (旬) — Seasonality","desc":"Ingredients are used at their absolute peak season. A Japanese chef changes their entire menu four times a year to reflect nature's calendar."},
+                  {emoji:"⚖️",title:"Ma (間) — Balance","desc":"Every meal balances five flavors (sweet, sour, salty, bitter, umami), five colors and five cooking methods — a philosophy of completeness."},
+                  {emoji:"🔪",title:"Technique Over Seasoning","desc":"Japanese cooking trusts the ingredient above all else. Minimal seasoning and precise technique allow natural flavors to shine."},
+                  {emoji:"🎨",title:"Moritsuke — Presentation","desc":"Visual arrangement is as important as taste. Food is plated to evoke landscapes, seasons or natural beauty — eating begins with the eyes."},
+                  {emoji:"♻️",title:"Mottainai — No Waste","desc":"A deep cultural principle of zero waste — every part of an ingredient is used, from fish bones for dashi to vegetable peelings in pickles."},
+                  {emoji:"🙏",title:"Itadakimasu — Gratitude","desc":"The ritual phrase before eating means 'I humbly receive'. Japanese food culture is rooted in deep gratitude for ingredients and the people who prepared them."},
+                ].map((p,i)=>(
+                  <div key={i} style={{background:"white",borderRadius:"14px",padding:"1.3rem",boxShadow:"0 4px 15px rgba(0,0,0,0.06)"}}>
+                    <div style={{fontSize:"1.8rem",marginBottom:"0.5rem"}}>{p.emoji}</div>
+                    <h4 style={{margin:"0 0 0.5rem",color:"#BC002D",fontSize:"0.9rem",fontWeight:700}}>{p.title}</h4>
+                    <p style={{margin:0,fontSize:"0.82rem",color:"#555",lineHeight:1.7}}>{p.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Core Ingredients */}
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}>
+                <span style={{fontSize:"1.8rem"}}>🌊</span>
+                <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Core Ingredients</h2>
+              </div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#BC002D,#E8621A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(200px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {i:"🍱",n:"Dashi",d:"The sacred stock — kombu and bonito. The foundation of virtually every Japanese dish."},
+                  {i:"🫙",n:"Miso",d:"Fermented soybean paste — white (mild), red (bold), mixed. Japan's most versatile seasoning."},
+                  {i:"🫗",n:"Soy Sauce (Shoyu)",d:"Dark or light — the defining condiment that adds umami and color to every dish."},
+                  {i:"🍶",n:"Mirin & Sake",d:"Sweet rice wine (mirin) and cooking sake — they add sweetness, depth and the characteristic Japanese glaze."},
+                  {i:"🍚",n:"Japanese Rice",d:"Short-grain sticky rice (koshihikari) — the centerpiece of every Japanese meal. Never substituted."},
+                  {i:"🌿",n:"Nori & Seaweed",d:"Wakame, kombu, nori — Japan's essential sea vegetables that provide ocean umami."},
+                  {i:"🫚",n:"Sesame Oil",d:"Toasted sesame oil used for finishing and flavoring — never for high-heat cooking."},
+                  {i:"🍋",n:"Yuzu",d:"Japan's prized citrus — its fragrant zest and juice are used to perfume soups, sauces and desserts."},
+                ].map((ing,i)=>(
+                  <div key={i} style={{background:"white",borderRadius:"12px",padding:"1rem",boxShadow:"0 3px 12px rgba(0,0,0,0.05)"}}>
+                    <div style={{fontSize:"1.5rem",marginBottom:"0.3rem"}}>{ing.i}</div>
+                    <h5 style={{margin:"0 0 0.3rem",color:"#1C1C1C",fontSize:"0.9rem",fontWeight:700}}>{ing.n}</h5>
+                    <p style={{margin:0,fontSize:"0.78rem",color:"#666",lineHeight:1.5}}>{ing.d}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Meal Structure */}
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}>
+                <span style={{fontSize:"1.8rem"}}>🍽</span>
+                <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Meal Structure</h2>
+              </div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#BC002D,#E8621A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{background:"white",borderRadius:"16px",padding:"1.8rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)"}}>
+                <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(250px,1fr))",gap:"1.2rem"}}>
+                  {[
+                    {title:"🏠 Ichiju Sansai (一汁三菜)","desc":"The traditional home meal format: one soup + three sides + rice. This 1-3-3 structure (ichiju sansai) creates balanced nutrition and varied flavors in every meal."},
+                    {title:"🏯 Kaiseki (懐石)","desc":"The ultimate Japanese dining experience — a multi-course seasonal tasting menu served in a precise order at ryokan (inns) and high-end restaurants. Each course showcases a different cooking technique."},
+                    {title:"🍣 Omakase (おまかせ)","desc":"'I leave it to you' — the chef decides everything. The highest expression of trust between diner and chef, common at sushi counters and fine dining."},
+                    {title:"🏮 Izakaya (居酒屋)","desc":"Japanese gastropub dining — multiple small shared plates enjoyed casually with beer or sake. Yakitori, karaage, gyoza and edamame dominate the menu."},
+                  ].map((m,i)=>(
+                    <div key={i} style={{background:"#FFFAF8",borderRadius:"12px",padding:"1.2rem",borderLeft:"3px solid #BC002D"}}>
+                      <h4 style={{margin:"0 0 0.5rem",color:"#BC002D",fontSize:"0.92rem",fontWeight:700}}>{m.title}</h4>
+                      <p style={{margin:0,fontSize:"0.83rem",color:"#555",lineHeight:1.7}}>{m.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            {/* Recipe Categories */}
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}>
+                <span style={{fontSize:"1.8rem"}}>📖</span>
+                <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Recipe Categories</h2>
+              </div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#BC002D,#E8621A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(240px,1fr))",gap:"0.9rem"}}>
+                {[
+                  {emoji:"🍣",cat:"Sushi",count:10,desc:"Nigiri, Maki, Temaki, Sashimi, Chirashi, Inari, Uramaki, Gunkan and more"},
+                  {emoji:"🥟",cat:"Appetizers",count:10,desc:"Gyoza, Edamame, Karaage, Takoyaki, Chawanmushi, Yakitori and more"},
+                  {emoji:"🍜",cat:"Soups",count:10,desc:"Ramen, Miso Soup, Udon, Soba, Tonjiru, Osuimono and more"},
+                  {emoji:"🥗",cat:"Salads",count:10,desc:"Wakame Salad, Goma-ae, Hiyashi Chuka, Daikon Salad and more"},
+                  {emoji:"🍱",cat:"Main Courses",count:10,desc:"Tonkatsu, Tempura, Teriyaki, Okonomiyaki, Sukiyaki and more"},
+                  {emoji:"🍡",cat:"Desserts",count:10,desc:"Mochi, Matcha Parfait, Dorayaki, Wagashi, Kakigori and more"},
+                ].map((c,i)=>(
+                  <div key={i} style={{background:"white",borderRadius:"14px",padding:"1.3rem",boxShadow:"0 4px 15px rgba(0,0,0,0.06)",cursor:"pointer",transition:"transform 0.2s"}}
+                    onMouseEnter={e=>e.currentTarget.style.transform="translateY(-3px)"}
+                    onMouseLeave={e=>e.currentTarget.style.transform="translateY(0)"}
+                    onClick={()=>{setJapaneseCategory(c.cat);setJapaneseView("recipes");window.scrollTo({top:0,behavior:"smooth"});}}>
+                    <div style={{fontSize:"2rem",marginBottom:"0.4rem"}}>{c.emoji}</div>
+                    <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.3rem"}}>
+                      <h4 style={{margin:0,color:"#BC002D",fontSize:"1rem",fontWeight:700}}>{c.cat}</h4>
+                      <span style={{background:"rgba(188,0,45,0.1)",color:"#BC002D",fontSize:"0.7rem",fontWeight:700,padding:"0.1rem 0.4rem",borderRadius:"8px"}}>{c.count}</span>
+                    </div>
+                    <p style={{margin:0,fontSize:"0.8rem",color:"#666",lineHeight:1.5}}>{c.desc}</p>
+                    <div style={{marginTop:"0.7rem",fontSize:"0.75rem",color:"#BC002D",fontWeight:600}}>Explore recipes →</div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <div style={{background:"linear-gradient(135deg,#BC002D,#8B0000)",borderRadius:"20px",padding:"2.5rem",textAlign:"center",color:"white"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.8rem",margin:"0 0 0.8rem"}}>Ready to Explore Japanese Cuisine? 🍣</h3>
+              <p style={{margin:"0 0 1.5rem",opacity:0.9,fontSize:"1rem"}}>60 authentic recipes with step-by-step instructions, chef notes and nutrition information.</p>
+              <button onClick={()=>{setJapaneseView("recipes");window.scrollTo({top:0,behavior:"smooth"});}} style={{background:"white",color:"#BC002D",border:"none",padding:"0.9rem 2.5rem",borderRadius:"30px",fontSize:"1rem",fontWeight:700,cursor:"pointer"}}>
+                Browse All Recipes →
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* RECIPES VIEW */}
+        {japaneseView === "recipes" && (
+          <div className="indian-content">
+            <div className="indian-header" style={{background:"#1C1C1C"}}>
+              <input className="indian-search" placeholder="Search Japanese dishes..." value={japaneseSearch} onChange={e=>setJapaneseSearch(e.target.value)}
+                style={{background:"rgba(255,255,255,0.1)",border:"1px solid rgba(255,255,255,0.2)",color:"white"}} />
+            </div>
+            <div className="indian-cats">
+              {categories.map(cat=>(
+                <button key={cat} className={`cat-pill${japaneseCategory===cat?" active":""}`} onClick={()=>setJapaneseCategory(cat)}
+                  style={japaneseCategory===cat?{background:"#BC002D",borderColor:"#BC002D"}:{}}>{emojis[cat]||""} {cat}</button>
+              ))}
+            </div>
+            {/* Sushi category special header */}
+            {japaneseCategory==="Sushi" && (
+              <div style={{background:"linear-gradient(135deg,#BC002D,#8B0000)",borderRadius:"14px",padding:"1.2rem 1.5rem",margin:"0 0 1.5rem",color:"white"}}>
+                <h3 style={{margin:"0 0 0.3rem",fontFamily:"'Playfair Display',serif",fontSize:"1.3rem"}}>🍣 The Art of Sushi</h3>
+                <p style={{margin:0,fontSize:"0.85rem",opacity:0.85,lineHeight:1.6}}>Japan's most iconic contribution to world cuisine — 10 essential sushi styles from the delicate Nigiri to the theatrical Gunkan Maki. Each form is a different expression of the ancient art of vinegared rice.</p>
+              </div>
+            )}
+            {filtered.length === 0 ? (
+              <div className="indian-empty">🔍 No dishes found. Try a different search!</div>
+            ) : (
+              <div className="indian-grid">
+                {filtered.map((dish,i)=><DishCard key={i} dish={dish} />)}
+              </div>
+            )}
+            <div style={{textAlign:"center",marginTop:"2rem"}}>
+              <button onClick={()=>{setJapaneseView("guide");window.scrollTo({top:0,behavior:"smooth"});}} style={{background:"none",border:"1px solid #BC002D",color:"#BC002D",padding:"0.6rem 1.5rem",borderRadius:"20px",cursor:"pointer",fontWeight:600}}>← Back to Cuisine Guide</button>
+            </div>
+          </div>
+        )}
+
+        <DishModal />
+      </div>
+    );
+  };
 
   const scrollToSection = (id) => {
     if (id === "cuisine-explorer") { setCuisineExplorer(true); setRecipeDB(false); return; }
@@ -3197,7 +8223,7 @@ function FusionChefAI() {
 
       {/* ── ASIAN CUISINE PAGES (shared renderer) ── */}
       {chinesePage && renderCuisinePage({ data: chineseCuisineData, name: "Chinese", flag: "🇨🇳", color: "#8B1A1A", setPage: setChinesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
-      {japanesePage && renderCuisinePage({ data: japaneseCuisineData, name: "Japanese", flag: "🇯🇵", color: "#BC002D", setPage: setJapanesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
+      {japanesePage && renderJapanesePage()}
       {thaiPage && renderCuisinePage({ data: thaiCuisineData, name: "Thai", flag: "🇹🇭", color: "#1a3a7a", setPage: setThaiPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
       {koreanPage && renderCuisinePage({ data: koreanCuisineData, name: "Korean", flag: "🇰🇷", color: "#003478", setPage: setKoreanPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
       {vietnamesePage && renderCuisinePage({ data: vietnameseCuisineData, name: "Vietnamese", flag: "🇻🇳", color: "#9B1B30", setPage: setVietnamesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
