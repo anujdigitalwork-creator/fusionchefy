@@ -7359,6 +7359,703 @@ function FusionChefAI() {
     );
   };
 
+
+  const [chineseView, setChineseView] = useState("guide");
+  const [chineseCategory, setChineseCategory] = useState("All");
+  const [chineseSearch, setChineseSearch] = useState("");
+  const renderChinesePage = () => {
+    const allCats = ["All","Appetizers","Soups","Salads","Main Courses","Rice Preparations","Desserts"];
+    const emojis = {"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Salads":"🥗","Rice Preparations":"🍚","Desserts":"🍮"};
+    const grads = {"Appetizers":"#E8621A,#C9922A","Soups":"#4A7C59,#2E7D32","Main Courses":"#8B1A1A,#C0392B","Salads":"#2E7D32,#4A7C59","Rice Preparations":"#C9922A,#8B4513","Desserts":"#9B59B6,#7D3C98"};
+    const prData = [{e:"🌡️",t:"Balance of Yin & Yang",d:"Foods are classified as heating or cooling. Meals are composed to achieve balance — a concept rooted in Traditional Chinese Medicine."},{e:"🔥",t:"Wok Hei — Breath of the Wok",d:"The intense smoky, charred quality from a blazing wok is the most prized element in Chinese stir-fry cooking."},{e:"🌶️",t:"The 5 Flavors",d:"Sour, sweet, bitter, spicy and salty must be present in a complete Chinese meal — each flavor corresponds to an organ in Chinese medicine."},{e:"🍽️",t:"Communal Dining",d:"Chinese meals are always shared — multiple dishes at the center of the table for everyone. Individual plating is a Western concept."},{e:"♻️",t:"Zero Waste Philosophy",d:"Every part of every ingredient is used — from pig trotters to fish heads. Chinese cooking pioneered nose-to-tail cooking millennia ago."},{e:"🌿",t:"Medicinal Food",d:"Food is medicine in Chinese tradition. Ginger, garlic and goji berries are used for both flavor and health benefits simultaneously."}];
+    const ingData = [{i:"🥢",n:"Soy Sauce",d:"The defining condiment — light soy for seasoning, dark soy for depth and color."},{i:"🧅",n:"Ginger & Garlic",d:"The aromatic foundation of virtually every Chinese dish — always fresh, never powdered."},{i:"🌶️",n:"Doubanjiang",d:"Fermented spicy bean paste from Sichuan — the soul of Chinese spicy cooking."},{i:"🍶",n:"Shaoxing Rice Wine",d:"China's essential cooking wine — adds depth, removes fishiness and tenderizes meat."},{i:"⭐",n:"Five Spice Powder",d:"Star anise, cloves, cinnamon, Sichuan pepper and fennel — the defining Chinese spice blend."},{i:"🫚",n:"Sesame Oil",d:"Added at the end of cooking only — its fragrance is destroyed by heat."},{i:"🥄",n:"Oyster Sauce",d:"Thick, sweet-savory sauce made from oyster extracts — essential for Cantonese stir-fries."},{i:"🌸",n:"Sichuan Pepper",d:"Creates the unique ma (numbing) sensation that defines Sichuan cuisine."}];
+    const mealData = [{t:"🍱 Family Style Dining",d:"All dishes served simultaneously at the center of the table. A typical Chinese family meal has 4-6 dishes plus soup and rice — all shared."},{t:"🫕 Hot Pot (火锅)",d:"A simmering broth at the table into which diners dip raw ingredients. Sichuan spicy broth is the most famous version."},{t:"🥟 Dim Sum (點心)",d:"Cantonese brunch culture of small steamed and fried dishes served in bamboo baskets with tea (yum cha)."},{t:"🏮 Banquet Style",d:"Formal banquets follow a strict sequence — cold appetizers, hot dishes, whole fish, soup and dessert — each symbolizing prosperity and good fortune."}];
+    const catData = [{e:"🥟",c:"Appetizers",n:10,d:"Dim Sum, Spring Rolls, Dumplings, Scallion Pancakes"},{e:"🍜",c:"Soups",n:10,d:"Hot & Sour, Wonton, Egg Drop, Congee"},{e:"🥗",c:"Salads",n:10,d:"Smacked Cucumber, Cold Sesame Noodles, Seaweed Salad"},{e:"🍛",c:"Main Courses",n:10,d:"Kung Pao Chicken, Mapo Tofu, Peking Duck, Sweet & Sour Pork"},{e:"🍚",c:"Rice Preparations",n:10,d:"Fried Rice, Congee, Clay Pot Rice"},{e:"🍮",c:"Desserts",n:10,d:"Tang Yuan, Egg Tarts, Sesame Balls, Mango Pudding"}];
+    const filtered = chineseCuisineData.filter(d => {
+      const mc = chineseCategory === "All" || d.category === chineseCategory;
+      const ms = !chineseSearch || d.dish_name.toLowerCase().includes(chineseSearch.toLowerCase()) || (d.tags && d.tags.some(t => t.toLowerCase().includes(chineseSearch.toLowerCase())));
+      return mc && ms;
+    });
+    return (
+      <div style={{minHeight:"100vh",background:"#FFF5F5",fontFamily:"'DM Sans',sans-serif"}}>
+        <div style={{position:"relative",minHeight:"400px",display:"flex",alignItems:"center",justifyContent:"center",overflow:"hidden"}}>
+          <img src="/images/china/china-cuisine-banner.jpg" alt="Chinese cuisine" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%",objectFit:"cover",zIndex:0}} onError={e=>e.target.style.display="none"} />
+          <div style={{position:"absolute",inset:0,background:"linear-gradient(135deg,rgba(139,26,26,0.88),rgba(180,0,0,0.7),rgba(100,0,0,0.5))",zIndex:1}}></div>
+          <div style={{position:"relative",zIndex:2,textAlign:"center",padding:"2rem"}}>
+            <button onClick={()=>setChinesePage(false)} style={{position:"absolute",top:"-1rem",left:0,background:"rgba(255,255,255,0.15)",border:"1px solid rgba(255,255,255,0.3)",color:"white",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.85rem"}}>← Back</button>
+            <span style={{background:"rgba(0,0,0,0.3)",color:"#FFB3B3",padding:"0.3rem 1rem",borderRadius:"20px",fontSize:"0.78rem",fontWeight:700,letterSpacing:"0.1em",textTransform:"uppercase"}}>🌏 Asian Cuisine</span>
+            <h1 style={{fontFamily:"'Playfair Display',serif",fontSize:"clamp(2.5rem,6vw,4.5rem)",color:"white",margin:"1rem 0 0.5rem",lineHeight:1.1}}>🇨🇳 Chinese <em style={{color:"#FFB3B3"}}>Cuisine</em></h1>
+            <p style={{color:"rgba(255,255,255,0.75)",fontSize:"1rem",maxWidth:"580px",margin:"0 auto 1.5rem",lineHeight:1.7}}>The World's Oldest Living Culinary Tradition — 5000 Years of Flavor</p>
+            <div style={{display:"flex",gap:"1rem",justifyContent:"center",flexWrap:"wrap"}}>
+              <button onClick={()=>setChineseView("guide")} style={{background:chineseView==="guide"?"#8B1A1A":"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.4)",padding:"0.6rem 1.5rem",borderRadius:"25px",cursor:"pointer",fontWeight:600,fontSize:"0.9rem"}}>📖 Cuisine Guide</button>
+              <button onClick={()=>setChineseView("recipes")} style={{background:chineseView==="recipes"?"#8B1A1A":"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.4)",padding:"0.6rem 1.5rem",borderRadius:"25px",cursor:"pointer",fontWeight:600,fontSize:"0.9rem"}}>🍽 Browse Recipes</button>
+            </div>
+          </div>
+        </div>
+        {chineseView==="guide" && (
+          <div style={{maxWidth:"900px",margin:"0 auto",padding:"3rem 1.5rem"}}>
+            <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(180px,1fr))",gap:"1rem",marginBottom:"3rem"}}>
+              {[["🍜","60 Recipes","Across 6 Categories"],["🏆","8 Great Cuisines","Regional Traditions"],["🌍","Most Eaten","Cuisine on Earth"],["📜","5000+ Years","Culinary History"]].map(([e,t,s])=>(
+                <div key={t} style={{background:"white",borderRadius:"16px",padding:"1.3rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)",textAlign:"center"}}>
+                  <div style={{fontSize:"1.8rem",marginBottom:"0.4rem"}}>{e}</div>
+                  <div style={{fontWeight:700,color:"#1C1C1C",fontSize:"0.95rem"}}>{t}</div>
+                  <div style={{color:"#888",fontSize:"0.78rem",marginTop:"0.2rem"}}>{s}</div>
+                </div>
+              ))}
+            </div>
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}>
+                <span style={{fontSize:"1.8rem"}}>📜</span>
+                <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>History & Origins</h2>
+              </div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#8B1A1A,#E8621A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{background:"white",borderRadius:"16px",padding:"1.8rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)",borderLeft:"4px solid #8B1A1A"}}>
+                <p style={{fontSize:"1rem",lineHeight:1.9,color:"#444",margin:"0 0 1rem"}}>Chinese cuisine is the world's oldest and most diverse culinary tradition — a 5,000-year history spanning eight distinct culinary schools. From the fiery numbing spice of Sichuan to the delicate dim sum of Cantonese kitchens, Chinese cuisine represents hundreds of distinct regional traditions.</p>
+                <p style={{fontSize:"1rem",lineHeight:1.9,color:"#444",margin:"0 0 1rem"}}>The foundational principle of Chinese cooking is the balance of yin and yang — cooling and warming foods, contrasting textures, and the five fundamental flavors of sour, sweet, bitter, spicy and salty. Rice and noodles form the starchy backbone, with vegetables, tofu and seafood elevated through techniques refined over millennia.</p>
+                <p style={{fontSize:"1rem",lineHeight:1.9,color:"#444",margin:0}}>Today Chinese cuisine is the most widely eaten food in the world — every major city on every continent has a Chinatown, making it the most globally influential culinary tradition in human history.</p>
+              </div>
+            </section>
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}>
+                <span style={{fontSize:"1.8rem"}}>🎯</span>
+                <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Key Principles</h2>
+              </div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#8B1A1A,#E8621A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(260px,1fr))",gap:"1rem"}}>
+                {prData.map((p,i)=>(
+                  <div key={i} style={{background:"white",borderRadius:"14px",padding:"1.3rem",boxShadow:"0 4px 15px rgba(0,0,0,0.06)"}}>
+                    <div style={{fontSize:"1.8rem",marginBottom:"0.5rem"}}>{p.e}</div>
+                    <h4 style={{margin:"0 0 0.5rem",color:"#8B1A1A",fontSize:"0.9rem",fontWeight:700}}>{p.t}</h4>
+                    <p style={{margin:0,fontSize:"0.82rem",color:"#555",lineHeight:1.7}}>{p.d}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}>
+                <span style={{fontSize:"1.8rem"}}>🌿</span>
+                <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Core Ingredients</h2>
+              </div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#8B1A1A,#E8621A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(200px,1fr))",gap:"0.8rem"}}>
+                {ingData.map((ing,i)=>(
+                  <div key={i} style={{background:"white",borderRadius:"12px",padding:"1rem",boxShadow:"0 3px 12px rgba(0,0,0,0.05)"}}>
+                    <div style={{fontSize:"1.5rem",marginBottom:"0.3rem"}}>{ing.i}</div>
+                    <h5 style={{margin:"0 0 0.3rem",color:"#1C1C1C",fontSize:"0.9rem",fontWeight:700}}>{ing.n}</h5>
+                    <p style={{margin:0,fontSize:"0.78rem",color:"#666",lineHeight:1.5}}>{ing.d}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}>
+                <span style={{fontSize:"1.8rem"}}>🍽</span>
+                <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Meal Structure</h2>
+              </div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#8B1A1A,#E8621A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{background:"white",borderRadius:"16px",padding:"1.8rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)"}}>
+                <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(250px,1fr))",gap:"1.2rem"}}>
+                  {mealData.map((m,i)=>(
+                    <div key={i} style={{background:"#FFF5F5",borderRadius:"12px",padding:"1.2rem",borderLeft:"3px solid #8B1A1A"}}>
+                      <h4 style={{margin:"0 0 0.5rem",color:"#8B1A1A",fontSize:"0.92rem",fontWeight:700}}>{m.t}</h4>
+                      <p style={{margin:0,fontSize:"0.83rem",color:"#555",lineHeight:1.7}}>{m.d}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}>
+                <span style={{fontSize:"1.8rem"}}>📖</span>
+                <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Recipe Categories</h2>
+              </div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#8B1A1A,#E8621A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(240px,1fr))",gap:"0.9rem"}}>
+                {catData.map((cat,i)=>(
+                  <div key={i} style={{background:"white",borderRadius:"14px",padding:"1.3rem",boxShadow:"0 4px 15px rgba(0,0,0,0.06)",cursor:"pointer",transition:"transform 0.2s"}}
+                    onMouseEnter={e=>e.currentTarget.style.transform="translateY(-3px)"}
+                    onMouseLeave={e=>e.currentTarget.style.transform="translateY(0)"}
+                    onClick={()=>{setChineseCategory(cat.c);setChineseView("recipes");window.scrollTo({top:0,behavior:"smooth"});}}>
+                    <div style={{fontSize:"2rem",marginBottom:"0.4rem"}}>{cat.e}</div>
+                    <div style={{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.3rem"}}>
+                      <h4 style={{margin:0,color:"#8B1A1A",fontSize:"1rem",fontWeight:700}}>{cat.c}</h4>
+                      <span style={{background:"rgba(0,0,0,0.07)",color:"#8B1A1A",fontSize:"0.7rem",fontWeight:700,padding:"0.1rem 0.4rem",borderRadius:"8px"}}>{cat.n}</span>
+                    </div>
+                    <p style={{margin:0,fontSize:"0.8rem",color:"#666",lineHeight:1.5}}>{cat.d}</p>
+                    <div style={{marginTop:"0.7rem",fontSize:"0.75rem",color:"#8B1A1A",fontWeight:600}}>Explore recipes →</div>
+                  </div>
+                ))}
+              </div>
+            </section>
+            <div style={{background:"linear-gradient(135deg,#8B1A1A,rgba(0,0,0,0.8))",borderRadius:"20px",padding:"2.5rem",textAlign:"center",color:"white"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.8rem",margin:"0 0 0.8rem"}}>Ready to Explore Chinese Cuisine? 🇨🇳</h3>
+              <p style={{margin:"0 0 1.5rem",opacity:0.9}}>Authentic recipes with step-by-step instructions, chef notes and nutrition information.</p>
+              <button onClick={()=>{setChineseView("recipes");window.scrollTo({top:0,behavior:"smooth"});}} style={{background:"white",color:"#8B1A1A",border:"none",padding:"0.9rem 2.5rem",borderRadius:"30px",fontSize:"1rem",fontWeight:700,cursor:"pointer"}}>Browse All Recipes →</button>
+            </div>
+          </div>
+        )}
+        {chineseView==="recipes" && (
+          <div className="indian-content">
+            <div style={{padding:"1rem 1.5rem 0",display:"flex",gap:"0.8rem",alignItems:"center",flexWrap:"wrap"}}>
+              <input className="indian-search" placeholder="Search Chinese dishes..." value={chineseSearch} onChange={e=>setChineseSearch(e.target.value)} style={{flex:1,minWidth:"200px"}} />
+              <button onClick={()=>setChineseView("guide")} style={{background:"none",border:"1px solid #8B1A1A",color:"#8B1A1A",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontWeight:600,fontSize:"0.85rem"}}>← Guide</button>
+            </div>
+            <div className="indian-cats">
+              {allCats.map(cat=>(
+                <button key={cat} className={`cat-pill${chineseCategory===cat?" active":""}`} onClick={()=>setChineseCategory(cat)}
+                  style={chineseCategory===cat?{background:"#8B1A1A",borderColor:"#8B1A1A"}:{}}>
+                  {emojis[cat]||""}{" "}{cat}
+                </button>
+              ))}
+            </div>
+            {filtered.length===0 ? (
+              <div className="indian-empty">🔍 No dishes found!</div>
+            ) : (
+              <div className="indian-grid">
+                {filtered.map((dish,i)=>(
+                  <div key={i} className="indian-card" onClick={()=>{ window.location.href=`/cuisine/chinese/${toSlug(dish.category)}/${toSlug(dish.dish_name)}`; }}>
+                    <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
+                      {dish.img?(<img src={dish.img} alt={dish.dish_name} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}}/>):null}
+                      <div style={{display:dish.img?"none":"flex",width:"100%",height:"100%",alignItems:"center",justifyContent:"center",flexDirection:"column",background:`linear-gradient(135deg,${grads[dish.category]||"#8B1A1A,#C0392B"})`}}>
+                        <span style={{fontSize:"2.5rem"}}>{emojis[dish.category]||"🍽"}</span>
+                        <span style={{fontSize:"0.65rem",color:"white",marginTop:"0.3rem",textAlign:"center",padding:"0 0.5rem",fontWeight:600}}>{dish.dish_name}</span>
+                      </div>
+                    </div>
+                    <div className="indian-card-body">
+                      <div className="indian-cat-badge" style={{background:"rgba(0,0,0,0.07)",color:"#8B1A1A"}}>{emojis[dish.category]||""}{" "}{dish.category}</div>
+                      <h3>{dish.dish_name}</h3>
+                      <p style={{fontSize:"0.78rem",color:"var(--text-muted)",marginTop:"0.3rem",lineHeight:"1.4"}}>{dish.short_description?dish.short_description.substring(0,85)+"...":""}</p>
+                      <div className="indian-card-meta">
+                        <span>⏱ {dish.prep_time_minutes+dish.cook_time_minutes} min</span>
+                        <span>🍽 {dish.servings} servings</span>
+                        <span className={`diff-badge diff-${dish.difficulty_level.toLowerCase()}`}>{dish.difficulty_level}</span>
+                      </div>
+                      <div style={{marginTop:"0.5rem"}}>{dish.tags&&dish.tags.slice(0,2).map((t,i)=><span key={i} className="diet-tag">{t}</span>)}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+            <div style={{textAlign:"center",marginTop:"2rem",paddingBottom:"2rem"}}>
+              <button onClick={()=>{setChineseView("guide");window.scrollTo({top:0,behavior:"smooth"});}} style={{background:"none",border:"1px solid #8B1A1A",color:"#8B1A1A",padding:"0.6rem 1.5rem",borderRadius:"20px",cursor:"pointer",fontWeight:600}}>← Back to Cuisine Guide</button>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
+
+
+  // ═══════════════════════════════════════════════════════════════
+  // THAI CUISINE PAGE
+  // ═══════════════════════════════════════════════════════════════
+  const [thaiView, setThaiView] = useState("guide");
+  const [thaiCategory, setThaiCategory] = useState("All");
+  const [thaiSearch, setThaiSearch] = useState("");
+
+  const renderThaiPage = () => {
+    const categories = ["All","Appetizers","Soups","Salads","Main Courses","Desserts"];
+    const emojis = {"Appetizers":"🥟","Soups":"🍜","Salads":"🥗","Main Courses":"🍛","Desserts":"🍮"};
+    const grads = {"Appetizers":"#E8621A,#C9922A","Soups":"#4A7C59,#2E7D32","Main Courses":"#8B1A1A,#C0392B","Salads":"#2E7D32,#4A7C59","Desserts":"#9B59B6,#7D3C98"};
+    const filtered = thaiCuisineData.filter(d => {
+      const matchCat = thaiCategory === "All" || d.category === thaiCategory;
+      const matchSearch = !thaiSearch || d.dish_name.toLowerCase().includes(thaiSearch.toLowerCase());
+      return matchCat && matchSearch;
+    });
+    return (
+      <div style={{minHeight:"100vh",background:"#FFFAF5",fontFamily:"'DM Sans',sans-serif"}}>
+        <div style={{position:"relative",minHeight:"400px",display:"flex",alignItems:"center",justifyContent:"center",overflow:"hidden"}}>
+          <img src="/images/thailand/thailand-cuisine-banner.jpg" alt="Thai cuisine" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%",objectFit:"cover",zIndex:0}} onError={e=>e.target.style.display="none"} />
+          <div style={{position:"absolute",inset:0,background:"linear-gradient(135deg,rgba(28,28,28,0.88),rgba(180,60,0,0.75),rgba(232,98,26,0.5))",zIndex:1}}></div>
+          <div style={{position:"relative",zIndex:2,textAlign:"center",padding:"2rem"}}>
+            <button onClick={()=>setThaiPage(false)} style={{position:"absolute",top:"-1rem",left:0,background:"rgba(255,255,255,0.15)",border:"1px solid rgba(255,255,255,0.3)",color:"white",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.85rem"}}>← Back</button>
+            <span style={{background:"rgba(200,60,0,0.5)",color:"#FFD9B3",padding:"0.3rem 1rem",borderRadius:"20px",fontSize:"0.78rem",fontWeight:700,letterSpacing:"0.1em",textTransform:"uppercase"}}>🌍 Asian Cuisine</span>
+            <h1 style={{fontFamily:"'Playfair Display',serif",fontSize:"clamp(2.5rem,6vw,4.5rem)",color:"white",margin:"1rem 0 0.5rem",lineHeight:1.1}}>Thai <em style={{color:"#FFD9B3"}}>Cuisine</em></h1>
+            <p style={{color:"rgba(255,255,255,0.75)",fontSize:"1rem",maxWidth:"560px",margin:"0 auto 1.5rem",lineHeight:1.7}}>The Art of Balance — Sweet, Sour, Salty, Spicy and Bitter in Every Bite</p>
+            <div style={{display:"flex",gap:"1rem",justifyContent:"center",flexWrap:"wrap"}}>
+              <button onClick={()=>setThaiView("guide")} style={{background:thaiView==="guide"?"#E8621A":"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.4)",padding:"0.6rem 1.5rem",borderRadius:"25px",cursor:"pointer",fontWeight:600,fontSize:"0.9rem"}}>📖 Cuisine Guide</button>
+              <button onClick={()=>setThaiView("recipes")} style={{background:thaiView==="recipes"?"#E8621A":"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.4)",padding:"0.6rem 1.5rem",borderRadius:"25px",cursor:"pointer",fontWeight:600,fontSize:"0.9rem"}}>🍽 Browse Recipes</button>
+            </div>
+          </div>
+        </div>
+
+        {thaiView === "guide" && (
+          <div style={{maxWidth:"900px",margin:"0 auto",padding:"3rem 1.5rem"}}>
+            <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(180px,1fr))",gap:"1rem",marginBottom:"3rem"}}>
+              {[["🍜",`${thaiCuisineData.length} Recipes`,"Authentic Thai Dishes"],["🌶️","World's Most","Aromatic Cuisine"],["🌿","UNESCO Listed","Thai Royal Cuisine"],["🏯","700+ Years","Of Culinary History"]].map(([e,t,s])=>(
+                <div key={t} style={{background:"white",borderRadius:"16px",padding:"1.3rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)",textAlign:"center"}}>
+                  <div style={{fontSize:"1.8rem",marginBottom:"0.4rem"}}>{e}</div>
+                  <div style={{fontWeight:700,color:"#1C1C1C",fontSize:"0.95rem"}}>{t}</div>
+                  <div style={{color:"#888",fontSize:"0.78rem",marginTop:"0.2rem"}}>{s}</div>
+                </div>
+              ))}
+            </div>
+
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}><span style={{fontSize:"1.8rem"}}>📜</span><h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>History & Origins</h2></div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#E8621A,#C9922A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{background:"white",borderRadius:"16px",padding:"1.8rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)",borderLeft:"4px solid #E8621A"}}>
+                <p style={{fontSize:"1rem",lineHeight:1.9,color:"#444",margin:"0 0 1rem"}}>Thai cuisine has evolved over 700 years from the ancient Sukhothai and Ayutthaya kingdoms, absorbing Chinese, Indian, Malay and Portuguese influences while developing a uniquely Thai identity rooted in the extraordinary abundance of fresh herbs, aromatics and tropical ingredients that grow in the Kingdom's fertile land.</p>
+                <p style={{fontSize:"1rem",lineHeight:1.9,color:"#444",margin:"0 0 1rem"}}>The arrival of the Portuguese in the 16th century introduced the chili pepper — now indispensable to Thai cooking — transforming a cuisine that had relied on peppercorns for heat. The royal courts of the Chakri dynasty refined and codified Thai cooking, creating the ornate tradition of <strong>Thai Royal Cuisine</strong>, where vegetables are carved into flowers and sauces require hours of preparation.</p>
+                <p style={{fontSize:"1rem",lineHeight:1.9,color:"#444",margin:0}}>Today Thai cuisine is one of the world's most popular — <strong>Pad Thai, Green Curry and Tom Yum Goong</strong> are recognized globally as symbols of Thai culinary excellence.</p>
+              </div>
+            </section>
+
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}><span style={{fontSize:"1.8rem"}}>🎌</span><h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Key Principles</h2></div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#E8621A,#C9922A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(260px,1fr))",gap:"1rem"}}>
+                {[
+                  {emoji:"⚖️",title:"5 Flavor Balance",desc:"Every Thai dish seeks a perfect balance of sweet, sour, salty, spicy and bitter. Adjusting these five flavors is the fundamental skill of Thai cooking."},
+                  {emoji:"🌿",title:"Fresh Herbs First",desc:"Thai cooking relies on fresh aromatic herbs — lemongrass, galangal, kaffir lime leaves and Thai basil — added at the end to preserve their fragrance."},
+                  {emoji:"🔥",title:"Wok Speed",desc:"Thai stir-frying is done at blazing speed over extreme heat — each dish spends only 2-3 minutes in the wok to preserve the fresh, bright flavors."},
+                  {emoji:"🥥",title:"Coconut Mastery",desc:"Coconut milk and cream are the soul of Thai curries — they provide richness, sweetness and the canvas on which spice pastes bloom into extraordinary sauces."},
+                  {emoji:"🌶️",title:"Paste Foundations",desc:"Thai curry pastes — green, red, yellow, massaman — are pounded from scratch with a granite mortar. The effort of hand-pounding releases oils that blending cannot."},
+                  {emoji:"🌸",title:"Presentation as Art",desc:"Thai food presentation is elaborate and beautiful — carved vegetables, flowers made from chili and garnishes arranged with artistic precision reflect Thai aesthetics."},
+                ].map((p,i)=>(
+                  <div key={i} style={{background:"white",borderRadius:"14px",padding:"1.3rem",boxShadow:"0 4px 15px rgba(0,0,0,0.06)"}}>
+                    <div style={{fontSize:"1.8rem",marginBottom:"0.5rem"}}>{p.emoji}</div>
+                    <h4 style={{margin:"0 0 0.5rem",color:"#E8621A",fontSize:"0.9rem",fontWeight:700}}>{p.title}</h4>
+                    <p style={{margin:0,fontSize:"0.82rem",color:"#555",lineHeight:1.7}}>{p.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}><span style={{fontSize:"1.8rem"}}>🌊</span><h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Core Ingredients</h2></div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#E8621A,#C9922A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(200px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {i:"🌿",n:"Lemongrass",d:"The signature Thai aromatic — its citrusy, floral fragrance defines Thai soups and curry pastes."},
+                  {i:"🫚",n:"Fish Sauce (Nam Pla)",d:"Thailand's essential seasoning — fermented fish sauce provides the salty, umami depth in virtually every Thai dish."},
+                  {i:"🥥",n:"Coconut Milk",d:"The rich, sweet base of Thai curries — provides creaminess and carries the complex flavors of the curry paste."},
+                  {i:"🌶️",n:"Thai Chilies",d:"Bird's eye chilies — tiny, fiery and essential. Thai food uses them fresh, dried and in pastes simultaneously."},
+                  {i:"🍋",n:"Kaffir Lime Leaves",d:"Deeply aromatic double-lobed leaves that give Thai curries and soups their unmistakable citrus fragrance."},
+                  {i:"🫙",n:"Galangal",d:"Related to ginger but earthier and more medicinal — an essential component of all Thai curry pastes."},
+                  {i:"🌸",n:"Thai Basil",d:"Anise-scented Thai basil is completely different from Italian basil — used in stir-fries and curries for its distinctive flavor."},
+                  {i:"🦐",n:"Shrimp Paste (Kapi)",d:"Fermented shrimp paste forms the pungent, savory base of all Thai curry pastes — essential for authentic flavor."},
+                ].map((ing,i)=>(
+                  <div key={i} style={{background:"white",borderRadius:"12px",padding:"1rem",boxShadow:"0 3px 12px rgba(0,0,0,0.05)"}}>
+                    <div style={{fontSize:"1.5rem",marginBottom:"0.3rem"}}>{ing.i}</div>
+                    <h5 style={{margin:"0 0 0.3rem",color:"#1C1C1C",fontSize:"0.9rem",fontWeight:700}}>{ing.n}</h5>
+                    <p style={{margin:0,fontSize:"0.78rem",color:"#666",lineHeight:1.5}}>{ing.d}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}><span style={{fontSize:"1.8rem"}}>🍽</span><h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Meal Structure</h2></div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#E8621A,#C9922A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{background:"white",borderRadius:"16px",padding:"1.8rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)"}}>
+                <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(250px,1fr))",gap:"1.2rem"}}>
+                  {[
+                    {title:"🏠 Family Style Sharing",desc:"Thai meals are always communal — multiple dishes arrive simultaneously and are shared by everyone at the table. Rice is the centerpiece; everything else accompanies it."},
+                    {title:"🌶️ Curry + Rice",desc:"The core Thai meal is a curry (kaeng) with jasmine rice. Green curry, red curry and massaman are the most beloved — each with a distinct heat and aromatic profile."},
+                    {title:"🍜 Street Food Culture",desc:"Thailand has arguably the world's greatest street food culture. From Bangkok's Chinatown to Chiang Mai's Night Bazaar, streets are lined with hawker stalls serving extraordinary food."},
+                    {title:"🫙 Condiment Table",desc:"Every Thai table has a set of four condiments — fish sauce, sugar, chili flakes and chili vinegar — allowing diners to adjust the four flavors to personal preference."},
+                  ].map((m,i)=>(
+                    <div key={i} style={{background:"#FFFAF5",borderRadius:"12px",padding:"1.2rem",borderLeft:"3px solid #E8621A"}}>
+                      <h4 style={{margin:"0 0 0.5rem",color:"#E8621A",fontSize:"0.92rem",fontWeight:700}}>{m.title}</h4>
+                      <p style={{margin:0,fontSize:"0.83rem",color:"#555",lineHeight:1.7}}>{m.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            <div style={{background:"linear-gradient(135deg,#E8621A,#C9922A)",borderRadius:"20px",padding:"2.5rem",textAlign:"center",color:"white"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.8rem",margin:"0 0 0.8rem"}}>Ready to Cook Thai? 🌶️</h3>
+              <p style={{margin:"0 0 1.5rem",opacity:0.9,fontSize:"1rem"}}>{thaiCuisineData.length} authentic recipes with step-by-step instructions and chef notes.</p>
+              <button onClick={()=>{setThaiView("recipes");window.scrollTo({top:0,behavior:"smooth"});}} style={{background:"white",color:"#E8621A",border:"none",padding:"0.9rem 2.5rem",borderRadius:"30px",fontSize:"1rem",fontWeight:700,cursor:"pointer"}}>Browse All Recipes →</button>
+            </div>
+          </div>
+        )}
+
+        {thaiView === "recipes" && (
+          <div className="indian-content">
+            <div style={{padding:"1rem 1.5rem 0"}}>
+              <input className="indian-search" placeholder="Search Thai dishes..." value={thaiSearch} onChange={e=>setThaiSearch(e.target.value)} />
+            </div>
+            <div className="indian-cats">
+              {categories.map(cat=>(
+                <button key={cat} className={`cat-pill${thaiCategory===cat?" active":""}`} onClick={()=>setThaiCategory(cat)}>{emojis[cat]||""} {cat}</button>
+              ))}
+            </div>
+            {filtered.length === 0 ? <div className="indian-empty">🔍 No dishes found!</div> : (
+              <div className="indian-grid">
+                {filtered.map((dish,i)=>(
+                  <div key={i} className="indian-card" onClick={()=>{window.location.href=`/cuisine/thai/${toSlug(dish.category)}/${toSlug(dish.dish_name)}`;  }}>
+                    <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
+                      {dish.img?<img src={dish.img} alt={dish.dish_name} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}}/>:null}
+                      <div style={{display:dish.img?"none":"flex",width:"100%",height:"100%",alignItems:"center",justifyContent:"center",flexDirection:"column",background:`linear-gradient(135deg,${grads[dish.category]||"#E8621A,#C9922A"})`}}>
+                        <span style={{fontSize:"2.5rem"}}>{emojis[dish.category]||"🍽"}</span>
+                        <span style={{fontSize:"0.65rem",color:"white",marginTop:"0.3rem",textAlign:"center",padding:"0 0.5rem",fontWeight:600}}>{dish.dish_name}</span>
+                      </div>
+                    </div>
+                    <div className="indian-card-body">
+                      <div className="indian-cat-badge">{dish.category}</div>
+                      <h3>{dish.dish_name}</h3>
+                      <p style={{fontSize:"0.78rem",color:"var(--text-muted)",marginTop:"0.3rem",lineHeight:"1.4"}}>{dish.short_description?dish.short_description.substring(0,80)+"...":""}</p>
+                      <div className="indian-card-meta">
+                        <span>⏱ {(dish.prep_time_minutes||0)+(dish.cook_time_minutes||0)} min</span>
+                        <span className={`diff-badge diff-${(dish.difficulty_level||"easy").toLowerCase()}`}>{dish.difficulty_level}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+            <div style={{textAlign:"center",marginTop:"2rem",paddingBottom:"2rem"}}>
+              <button onClick={()=>{setThaiView("guide");window.scrollTo({top:0,behavior:"smooth"});}} style={{background:"none",border:"1px solid #E8621A",color:"#E8621A",padding:"0.6rem 1.5rem",borderRadius:"20px",cursor:"pointer",fontWeight:600}}>← Back to Cuisine Guide</button>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
+
+  // ═══════════════════════════════════════════════════════════════
+  // KOREAN CUISINE PAGE
+  // ═══════════════════════════════════════════════════════════════
+  const [koreanView, setKoreanView] = useState("guide");
+  const [koreanCategory, setKoreanCategory] = useState("All");
+  const [koreanSearch, setKoreanSearch] = useState("");
+
+  const renderKoreanPage = () => {
+    const categories = ["All","Appetizers","Soups","Salads","Main Courses","Desserts"];
+    const emojis = {"Appetizers":"🥟","Soups":"🍜","Salads":"🥗","Main Courses":"🍱","Desserts":"🍡"};
+    const grads = {"Appetizers":"#E8621A,#C9922A","Soups":"#4A7C59,#2E7D32","Main Courses":"#1a3a7a,#2d5a8e","Salads":"#2E7D32,#4A7C59","Desserts":"#9B59B6,#7D3C98"};
+    const filtered = koreanCuisineData.filter(d => {
+      const matchCat = koreanCategory === "All" || d.category === koreanCategory;
+      const matchSearch = !koreanSearch || d.dish_name.toLowerCase().includes(koreanSearch.toLowerCase());
+      return matchCat && matchSearch;
+    });
+    return (
+      <div style={{minHeight:"100vh",background:"#FFF8F8",fontFamily:"'DM Sans',sans-serif"}}>
+        <div style={{position:"relative",minHeight:"400px",display:"flex",alignItems:"center",justifyContent:"center",overflow:"hidden"}}>
+          <img src="/images/korea/korea-cuisine-banner.jpg" alt="Korean cuisine" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%",objectFit:"cover",zIndex:0}} onError={e=>e.target.style.display="none"} />
+          <div style={{position:"absolute",inset:0,background:"linear-gradient(135deg,rgba(28,28,28,0.88),rgba(180,0,40,0.75),rgba(200,0,60,0.5))",zIndex:1}}></div>
+          <div style={{position:"relative",zIndex:2,textAlign:"center",padding:"2rem"}}>
+            <button onClick={()=>setKoreanPage(false)} style={{position:"absolute",top:"-1rem",left:0,background:"rgba(255,255,255,0.15)",border:"1px solid rgba(255,255,255,0.3)",color:"white",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.85rem"}}>← Back</button>
+            <span style={{background:"rgba(180,0,40,0.5)",color:"#FFB3C1",padding:"0.3rem 1rem",borderRadius:"20px",fontSize:"0.78rem",fontWeight:700,letterSpacing:"0.1em",textTransform:"uppercase"}}>🌍 Asian Cuisine</span>
+            <h1 style={{fontFamily:"'Playfair Display',serif",fontSize:"clamp(2.5rem,6vw,4.5rem)",color:"white",margin:"1rem 0 0.5rem",lineHeight:1.1}}>Korean <em style={{color:"#FFB3C1"}}>Cuisine</em></h1>
+            <p style={{color:"rgba(255,255,255,0.75)",fontSize:"1rem",maxWidth:"560px",margin:"0 auto 1.5rem",lineHeight:1.7}}>The Power of Fermentation — Bold, Fiery and Deeply Nourishing</p>
+            <div style={{display:"flex",gap:"1rem",justifyContent:"center",flexWrap:"wrap"}}>
+              <button onClick={()=>setKoreanView("guide")} style={{background:koreanView==="guide"?"#C0003C":"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.4)",padding:"0.6rem 1.5rem",borderRadius:"25px",cursor:"pointer",fontWeight:600,fontSize:"0.9rem"}}>📖 Cuisine Guide</button>
+              <button onClick={()=>setKoreanView("recipes")} style={{background:koreanView==="recipes"?"#C0003C":"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.4)",padding:"0.6rem 1.5rem",borderRadius:"25px",cursor:"pointer",fontWeight:600,fontSize:"0.9rem"}}>🍽 Browse Recipes</button>
+            </div>
+          </div>
+        </div>
+
+        {koreanView === "guide" && (
+          <div style={{maxWidth:"900px",margin:"0 auto",padding:"3rem 1.5rem"}}>
+            <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(180px,1fr))",gap:"1rem",marginBottom:"3rem"}}>
+              {[["🍜",`${koreanCuisineData.length} Recipes`,"Authentic Korean Dishes"],["🥢","Hallyu Wave","Global Food Phenomenon"],["🫙","5000+ Years","Fermentation Tradition"],["🌶️","UNESCO Listed","Kimchi Heritage"]].map(([e,t,s])=>(
+                <div key={t} style={{background:"white",borderRadius:"16px",padding:"1.3rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)",textAlign:"center"}}>
+                  <div style={{fontSize:"1.8rem",marginBottom:"0.4rem"}}>{e}</div>
+                  <div style={{fontWeight:700,color:"#1C1C1C",fontSize:"0.95rem"}}>{t}</div>
+                  <div style={{color:"#888",fontSize:"0.78rem",marginTop:"0.2rem"}}>{s}</div>
+                </div>
+              ))}
+            </div>
+
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}><span style={{fontSize:"1.8rem"}}>📜</span><h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>History & Origins</h2></div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#C0003C,#E8621A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{background:"white",borderRadius:"16px",padding:"1.8rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)",borderLeft:"4px solid #C0003C"}}>
+                <p style={{fontSize:"1rem",lineHeight:1.9,color:"#444",margin:"0 0 1rem"}}>Korean cuisine spans over 5,000 years of history, rooted in the agricultural traditions of the Korean peninsula. The three kingdoms period (57 BC–668 AD) saw the development of sophisticated court cuisines, while the Joseon dynasty (1392–1897) codified Korean food culture, establishing the elaborate <strong>hanjeongsik</strong> (Korean full-course meal) traditions that persist today.</p>
+                <p style={{fontSize:"1rem",lineHeight:1.9,color:"#444",margin:"0 0 1rem"}}>The introduction of chili peppers from Portugal via Japan in the late 16th century transformed Korean cuisine — turning kimchi from a simple salt-preserved vegetable into the fiery, complex fermented dish that is now a <strong>UNESCO Intangible Cultural Heritage</strong> and a global symbol of Korean identity.</p>
+                <p style={{fontSize:"1rem",lineHeight:1.9,color:"#444",margin:0}}>The <strong>Hallyu (Korean Wave)</strong> of the 21st century — through K-drama, K-pop and globally popular shows like Squid Game — has driven unprecedented global curiosity about Korean food, making bibimbap, Korean BBQ and tteokbokki household names worldwide.</p>
+              </div>
+            </section>
+
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}><span style={{fontSize:"1.8rem"}}>🎌</span><h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Key Principles</h2></div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#C0003C,#E8621A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(260px,1fr))",gap:"1rem"}}>
+                {[
+                  {emoji:"🫙",title:"Fermentation (Fermented Foods)",desc:"Korea is the world's greatest fermentation culture — kimchi, doenjang, ganjang and gochujang are all fermented and provide probiotic benefits alongside profound flavor."},
+                  {emoji:"🌶️",title:"Gochugaru — Korean Chili",desc:"Korean coarse red chili flakes have a distinctive flavor — fruity, smoky and moderately hot — completely different from any other chili in the world."},
+                  {emoji:"🥢",title:"Banchan Culture",desc:"Korean meals are defined by banchan — small side dishes served alongside rice. A proper Korean meal may have 5-20 banchan covering the entire table."},
+                  {emoji:"🔥",title:"Korean BBQ (Gogi-gui)",desc:"Grilling meat at the table over charcoal or gas is a fundamental Korean dining ritual — galbi (ribs) and samgyeopsal (pork belly) wrapped in lettuce leaves."},
+                  {emoji:"🍲",title:"Jjigae & Guk",desc:"Soups and stews are essential at every Korean meal — from the fiery kimchi jjigae to the gentle doenjang jjigae, they provide warmth and nourishment."},
+                  {emoji:"⚖️",title:"Five Color Philosophy",desc:"Korean Royal Court cuisine was governed by the philosophy of five colors (red, green, yellow, white, black) — each representing a direction, element and health benefit."},
+                ].map((p,i)=>(
+                  <div key={i} style={{background:"white",borderRadius:"14px",padding:"1.3rem",boxShadow:"0 4px 15px rgba(0,0,0,0.06)"}}>
+                    <div style={{fontSize:"1.8rem",marginBottom:"0.5rem"}}>{p.emoji}</div>
+                    <h4 style={{margin:"0 0 0.5rem",color:"#C0003C",fontSize:"0.9rem",fontWeight:700}}>{p.title}</h4>
+                    <p style={{margin:0,fontSize:"0.82rem",color:"#555",lineHeight:1.7}}>{p.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}><span style={{fontSize:"1.8rem"}}>🌊</span><h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Core Ingredients</h2></div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#C0003C,#E8621A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(200px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {i:"🌶️",n:"Gochugaru",d:"Coarse Korean chili flakes — the essential seasoning for kimchi, gochujang and countless Korean dishes."},
+                  {i:"🫙",n:"Gochujang",d:"Fermented red chili paste — sweet, spicy and deeply savory. The backbone of Korean cooking."},
+                  {i:"🫙",n:"Doenjang",d:"Fermented soybean paste — Korea's answer to miso, richer and more pungent, essential for jjigae."},
+                  {i:"🧄",n:"Garlic",d:"Koreans are among the world's largest garlic consumers per capita — it appears in almost every savory dish."},
+                  {i:"🥬",n:"Napa Cabbage",d:"The base vegetable for kimchi — transformed through fermentation into Korea's national dish."},
+                  {i:"🌿",n:"Sesame Oil",d:"Toasted sesame oil is the finishing touch for nearly every Korean dish — its nutty fragrance is the signature aroma."},
+                  {i:"🍶",n:"Ganjang (Soy Sauce)",d:"Korean soy sauce comes in two forms — soup soy sauce (lighter) and regular soy sauce (darker) — used for different purposes."},
+                  {i:"🌸",n:"Perilla Leaves",d:"Korean perilla (kkaennip) is used fresh as a wrap for grilled meats and as a banchan — its anise flavor is distinctly Korean."},
+                ].map((ing,i)=>(
+                  <div key={i} style={{background:"white",borderRadius:"12px",padding:"1rem",boxShadow:"0 3px 12px rgba(0,0,0,0.05)"}}>
+                    <div style={{fontSize:"1.5rem",marginBottom:"0.3rem"}}>{ing.i}</div>
+                    <h5 style={{margin:"0 0 0.3rem",color:"#1C1C1C",fontSize:"0.9rem",fontWeight:700}}>{ing.n}</h5>
+                    <p style={{margin:0,fontSize:"0.78rem",color:"#666",lineHeight:1.5}}>{ing.d}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}><span style={{fontSize:"1.8rem"}}>🍽</span><h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Meal Structure</h2></div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#C0003C,#E8621A)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{background:"white",borderRadius:"16px",padding:"1.8rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)"}}>
+                <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(250px,1fr))",gap:"1.2rem"}}>
+                  {[
+                    {title:"🍚 Rice is the Core",desc:"Korean meals are built around a bowl of steamed short-grain rice. Everything else — soups, stews, banchan — exists to complement the rice."},
+                    {title:"🥘 Banchan Spread",desc:"A table covered with small shared side dishes (banchan) — kimchi, namul (seasoned vegetables), japchae and more — is the defining image of Korean dining."},
+                    {title:"🔥 Korean BBQ Ritual",desc:"Samgyeopsal (pork belly) and galbi (beef ribs) grilled at the table, wrapped in lettuce with garlic, ssamjang and kimchi — one of the world's great dining experiences."},
+                    {title:"🍲 Jjigae Comfort",desc:"A bubbling, fiery stew (jjigae) served in a hot stone pot is the ultimate Korean comfort food — kimchi jjigae and sundubu jjigae are the most beloved."},
+                  ].map((m,i)=>(
+                    <div key={i} style={{background:"#FFF8F8",borderRadius:"12px",padding:"1.2rem",borderLeft:"3px solid #C0003C"}}>
+                      <h4 style={{margin:"0 0 0.5rem",color:"#C0003C",fontSize:"0.92rem",fontWeight:700}}>{m.title}</h4>
+                      <p style={{margin:0,fontSize:"0.83rem",color:"#555",lineHeight:1.7}}>{m.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            <div style={{background:"linear-gradient(135deg,#C0003C,#8B0020)",borderRadius:"20px",padding:"2.5rem",textAlign:"center",color:"white"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.8rem",margin:"0 0 0.8rem"}}>Ready to Cook Korean? 🌶️</h3>
+              <p style={{margin:"0 0 1.5rem",opacity:0.9,fontSize:"1rem"}}>{koreanCuisineData.length} authentic recipes with step-by-step instructions and chef notes.</p>
+              <button onClick={()=>{setKoreanView("recipes");window.scrollTo({top:0,behavior:"smooth"});}} style={{background:"white",color:"#C0003C",border:"none",padding:"0.9rem 2.5rem",borderRadius:"30px",fontSize:"1rem",fontWeight:700,cursor:"pointer"}}>Browse All Recipes →</button>
+            </div>
+          </div>
+        )}
+
+        {koreanView === "recipes" && (
+          <div className="indian-content">
+            <div style={{padding:"1rem 1.5rem 0"}}>
+              <input className="indian-search" placeholder="Search Korean dishes..." value={koreanSearch} onChange={e=>setKoreanSearch(e.target.value)} />
+            </div>
+            <div className="indian-cats">
+              {categories.map(cat=>(
+                <button key={cat} className={`cat-pill${koreanCategory===cat?" active":""}`} onClick={()=>setKoreanCategory(cat)} style={koreanCategory===cat?{background:"#C0003C",borderColor:"#C0003C"}:{}}>{emojis[cat]||""} {cat}</button>
+              ))}
+            </div>
+            {filtered.length === 0 ? <div className="indian-empty">🔍 No dishes found!</div> : (
+              <div className="indian-grid">
+                {filtered.map((dish,i)=>(
+                  <div key={i} className="indian-card" onClick={()=>{window.location.href=`/cuisine/korean/${toSlug(dish.category)}/${toSlug(dish.dish_name)}`;}}>
+                    <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
+                      {dish.img?<img src={dish.img} alt={dish.dish_name} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}}/>:null}
+                      <div style={{display:dish.img?"none":"flex",width:"100%",height:"100%",alignItems:"center",justifyContent:"center",flexDirection:"column",background:`linear-gradient(135deg,${grads[dish.category]||"#C0003C,#8B0020"})`}}>
+                        <span style={{fontSize:"2.5rem"}}>{emojis[dish.category]||"🍽"}</span>
+                        <span style={{fontSize:"0.65rem",color:"white",marginTop:"0.3rem",textAlign:"center",padding:"0 0.5rem",fontWeight:600}}>{dish.dish_name}</span>
+                      </div>
+                    </div>
+                    <div className="indian-card-body">
+                      <div className="indian-cat-badge" style={{background:"rgba(192,0,60,0.1)",color:"#C0003C"}}>{dish.category}</div>
+                      <h3>{dish.dish_name}</h3>
+                      <p style={{fontSize:"0.78rem",color:"var(--text-muted)",marginTop:"0.3rem",lineHeight:"1.4"}}>{dish.short_description?dish.short_description.substring(0,80)+"...":""}</p>
+                      <div className="indian-card-meta">
+                        <span>⏱ {(dish.prep_time_minutes||0)+(dish.cook_time_minutes||0)} min</span>
+                        <span className={`diff-badge diff-${(dish.difficulty_level||"easy").toLowerCase()}`}>{dish.difficulty_level}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+            <div style={{textAlign:"center",marginTop:"2rem",paddingBottom:"2rem"}}>
+              <button onClick={()=>{setKoreanView("guide");window.scrollTo({top:0,behavior:"smooth"});}} style={{background:"none",border:"1px solid #C0003C",color:"#C0003C",padding:"0.6rem 1.5rem",borderRadius:"20px",cursor:"pointer",fontWeight:600}}>← Back to Cuisine Guide</button>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
+
+  // ═══════════════════════════════════════════════════════════════
+  // VIETNAMESE CUISINE PAGE
+  // ═══════════════════════════════════════════════════════════════
+  const [vietnameseView, setVietnameseView] = useState("guide");
+  const [vietnameseCategory, setVietnameseCategory] = useState("All");
+  const [vietnameseSearch, setVietnameseSearch] = useState("");
+
+  const renderVietnamesePage = () => {
+    const categories = ["All","Appetizers","Soups","Salads","Main Courses","Desserts"];
+    const emojis = {"Appetizers":"🥟","Soups":"🍜","Salads":"🥗","Main Courses":"🍱","Desserts":"🍡"};
+    const grads = {"Appetizers":"#E8621A,#C9922A","Soups":"#4A7C59,#2E7D32","Main Courses":"#8B1A1A,#C0392B","Salads":"#2E7D32,#4A7C59","Desserts":"#9B59B6,#7D3C98"};
+    const filtered = vietnameseCuisineData.filter(d => {
+      const matchCat = vietnameseCategory === "All" || d.category === vietnameseCategory;
+      const matchSearch = !vietnameseSearch || d.dish_name.toLowerCase().includes(vietnameseSearch.toLowerCase());
+      return matchCat && matchSearch;
+    });
+    return (
+      <div style={{minHeight:"100vh",background:"#F8FFF8",fontFamily:"'DM Sans',sans-serif"}}>
+        <div style={{position:"relative",minHeight:"400px",display:"flex",alignItems:"center",justifyContent:"center",overflow:"hidden"}}>
+          <img src="/images/vietnam/vietnam-cuisine-banner.jpg" alt="Vietnamese cuisine" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%",objectFit:"cover",zIndex:0}} onError={e=>e.target.style.display="none"} />
+          <div style={{position:"absolute",inset:0,background:"linear-gradient(135deg,rgba(28,28,28,0.88),rgba(0,100,40,0.75),rgba(0,150,60,0.5))",zIndex:1}}></div>
+          <div style={{position:"relative",zIndex:2,textAlign:"center",padding:"2rem"}}>
+            <button onClick={()=>setVietnamesePage(false)} style={{position:"absolute",top:"-1rem",left:0,background:"rgba(255,255,255,0.15)",border:"1px solid rgba(255,255,255,0.3)",color:"white",padding:"0.5rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.85rem"}}>← Back</button>
+            <span style={{background:"rgba(0,100,40,0.5)",color:"#B3FFD1",padding:"0.3rem 1rem",borderRadius:"20px",fontSize:"0.78rem",fontWeight:700,letterSpacing:"0.1em",textTransform:"uppercase"}}>🌍 Asian Cuisine</span>
+            <h1 style={{fontFamily:"'Playfair Display',serif",fontSize:"clamp(2.5rem,6vw,4.5rem)",color:"white",margin:"1rem 0 0.5rem",lineHeight:1.1}}>Vietnamese <em style={{color:"#B3FFD1"}}>Cuisine</em></h1>
+            <p style={{color:"rgba(255,255,255,0.75)",fontSize:"1rem",maxWidth:"560px",margin:"0 auto 1.5rem",lineHeight:1.7}}>Light, Fresh and Fragrant — The Healthiest Cuisine in Asia</p>
+            <div style={{display:"flex",gap:"1rem",justifyContent:"center",flexWrap:"wrap"}}>
+              <button onClick={()=>setVietnameseView("guide")} style={{background:vietnameseView==="guide"?"#006428":"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.4)",padding:"0.6rem 1.5rem",borderRadius:"25px",cursor:"pointer",fontWeight:600,fontSize:"0.9rem"}}>📖 Cuisine Guide</button>
+              <button onClick={()=>setVietnameseView("recipes")} style={{background:vietnameseView==="recipes"?"#006428":"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.4)",padding:"0.6rem 1.5rem",borderRadius:"25px",cursor:"pointer",fontWeight:600,fontSize:"0.9rem"}}>🍽 Browse Recipes</button>
+            </div>
+          </div>
+        </div>
+
+        {vietnameseView === "guide" && (
+          <div style={{maxWidth:"900px",margin:"0 auto",padding:"3rem 1.5rem"}}>
+            <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(180px,1fr))",gap:"1rem",marginBottom:"3rem"}}>
+              {[["🍜",`${vietnameseCuisineData.length} Recipes`,"Authentic Vietnamese Dishes"],["🌿","Asia's Healthiest","Fresh Herb Cuisine"],["🏆","Pho & Banh Mi","World Famous Dishes"],["🌍","French Influenced","Colonial Fusion Heritage"]].map(([e,t,s])=>(
+                <div key={t} style={{background:"white",borderRadius:"16px",padding:"1.3rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)",textAlign:"center"}}>
+                  <div style={{fontSize:"1.8rem",marginBottom:"0.4rem"}}>{e}</div>
+                  <div style={{fontWeight:700,color:"#1C1C1C",fontSize:"0.95rem"}}>{t}</div>
+                  <div style={{color:"#888",fontSize:"0.78rem",marginTop:"0.2rem"}}>{s}</div>
+                </div>
+              ))}
+            </div>
+
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}><span style={{fontSize:"1.8rem"}}>📜</span><h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>History & Origins</h2></div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#006428,#4A7C59)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{background:"white",borderRadius:"16px",padding:"1.8rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)",borderLeft:"4px solid #006428"}}>
+                <p style={{fontSize:"1rem",lineHeight:1.9,color:"#444",margin:"0 0 1rem"}}>Vietnamese cuisine is one of Asia's oldest and most sophisticated, shaped by over 2,000 years of history across a narrow, diverse country stretching from the mountains of the north to the Mekong Delta in the south. Chinese domination for 1,000 years (111 BC–939 AD) introduced chopsticks, noodles and stir-frying, while Vietnam's indigenous culture developed its own distinctive love of <strong>fresh herbs, nuoc cham (fish sauce dressing) and light, unfried preparations</strong>.</p>
+                <p style={{fontSize:"1rem",lineHeight:1.9,color:"#444",margin:"0 0 1rem"}}>French colonization (1858–1954) left a profound culinary legacy — the baguette became banh mi, paté and butter were incorporated, and Vietnamese café culture was born. The result is a unique <strong>Franco-Vietnamese fusion</strong> that produced some of the world's most beloved street foods.</p>
+                <p style={{fontSize:"1rem",lineHeight:1.9,color:"#444",margin:0}}>Today Vietnamese cuisine is celebrated globally for being <strong>the healthiest in Asia</strong> — abundant in fresh vegetables, herbs and lean proteins, with minimal oil and maximum freshness. Pho and Banh Mi are now recognized worldwide as iconic dishes.</p>
+              </div>
+            </section>
+
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}><span style={{fontSize:"1.8rem"}}>🎌</span><h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Key Principles</h2></div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#006428,#4A7C59)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(260px,1fr))",gap:"1rem"}}>
+                {[
+                  {emoji:"🌿",title:"Fresh Herb Abundance",desc:"Vietnamese cooking uses fresh herbs more abundantly than any other cuisine — mint, cilantro, Thai basil, perilla and Vietnamese coriander are served in large quantities at every meal."},
+                  {emoji:"⚖️",title:"Yin-Yang Balance",desc:"Vietnamese cooking philosophy centers on balancing hot and cold, heavy and light ingredients — ginger with fish, chili with lime, fat with fresh vegetables."},
+                  {emoji:"🥗",title:"Freshness Over Heat",desc:"Unlike many Asian cuisines, Vietnamese cooking often requires no cooking at all — raw herbs, fresh vegetables and barely-cooked proteins are celebrated for their natural flavors."},
+                  {emoji:"🫙",title:"Nuoc Cham — The Master Sauce",desc:"Vietnam's essential dipping sauce — fish sauce, lime juice, garlic, chili and sugar — appears at virtually every Vietnamese meal and transforms every dish it touches."},
+                  {emoji:"🍜",title:"Pho Broth Philosophy",desc:"A great pho broth requires 12+ hours of careful simmering — bones are charred, spices are toasted and the resulting liquid is one of the most complex broths in world cooking."},
+                  {emoji:"🌶️",title:"Regional Diversity",desc:"Northern Vietnamese food is subtle and delicate; Central Vietnamese food is the spiciest; Southern Vietnamese food is sweetest with the most fresh herbs. Three cuisines in one country."},
+                ].map((p,i)=>(
+                  <div key={i} style={{background:"white",borderRadius:"14px",padding:"1.3rem",boxShadow:"0 4px 15px rgba(0,0,0,0.06)"}}>
+                    <div style={{fontSize:"1.8rem",marginBottom:"0.5rem"}}>{p.emoji}</div>
+                    <h4 style={{margin:"0 0 0.5rem",color:"#006428",fontSize:"0.9rem",fontWeight:700}}>{p.title}</h4>
+                    <p style={{margin:0,fontSize:"0.82rem",color:"#555",lineHeight:1.7}}>{p.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}><span style={{fontSize:"1.8rem"}}>🌊</span><h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Core Ingredients</h2></div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#006428,#4A7C59)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(200px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {i:"🫙",n:"Fish Sauce (Nuoc Mam)",d:"Vietnam's essential seasoning — the finest quality fish sauce comes from Phu Quoc island and is considered the best in Southeast Asia."},
+                  {i:"🍋",n:"Lime",d:"Fresh lime juice is used in virtually every Vietnamese dish and dipping sauce — it provides the essential sourness and brightness."},
+                  {i:"🌿",n:"Fresh Herbs Platter",d:"A plate of fresh mint, cilantro, bean sprouts and perilla accompanies almost every Vietnamese dish for diners to add themselves."},
+                  {i:"🌶️",n:"Bird's Eye Chili",d:"Used sliced fresh in nuoc cham and condiments — Vietnamese chili usage is more restrained than Thai but no less essential."},
+                  {i:"🫚",n:"Lemongrass",d:"Charred lemongrass is the key aromatic in pho broth and the marinade for grilled meats — its citrusy smoke defines Vietnamese BBQ."},
+                  {i:"🍜",n:"Rice Noodles",d:"Flat rice noodles (banh pho) are the soul of pho, while vermicelli (bun) underpins dozens of other Vietnamese noodle dishes."},
+                  {i:"🥬",n:"Bean Sprouts",d:"Crunchy fresh bean sprouts are an essential textural addition to pho and many other Vietnamese dishes — always served raw for maximum crunch."},
+                  {i:"🫙",n:"Hoisin Sauce",d:"The sweet, thick condiment served alongside pho for dipping — also used as a marinade and in banh mi with char siu pork."},
+                ].map((ing,i)=>(
+                  <div key={i} style={{background:"white",borderRadius:"12px",padding:"1rem",boxShadow:"0 3px 12px rgba(0,0,0,0.05)"}}>
+                    <div style={{fontSize:"1.5rem",marginBottom:"0.3rem"}}>{ing.i}</div>
+                    <h5 style={{margin:"0 0 0.3rem",color:"#1C1C1C",fontSize:"0.9rem",fontWeight:700}}>{ing.n}</h5>
+                    <p style={{margin:0,fontSize:"0.78rem",color:"#666",lineHeight:1.5}}>{ing.d}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section style={{marginBottom:"2.5rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"0.8rem"}}><span style={{fontSize:"1.8rem"}}>🍽</span><h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.9rem",color:"#1C1C1C",margin:0}}>Meal Structure</h2></div>
+              <div style={{width:"50px",height:"3px",background:"linear-gradient(90deg,#006428,#4A7C59)",borderRadius:"2px",marginBottom:"1.2rem"}}></div>
+              <div style={{background:"white",borderRadius:"16px",padding:"1.8rem",boxShadow:"0 4px 20px rgba(0,0,0,0.06)"}}>
+                <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(250px,1fr))",gap:"1.2rem"}}>
+                  {[
+                    {title:"🍚 Rice is Central",desc:"Vietnamese meals center on steamed rice — broken rice (com tam), rice porridge (chao) and rice noodles are the three forms it takes at different meal times."},
+                    {title:"🌿 Build Your Own Bowl",desc:"Vietnamese dining often involves assembly — each diner wraps their food in lettuce, adds their herbs of choice and dips in nuoc cham for a personalized flavor experience."},
+                    {title:"🍜 Pho Breakfast",desc:"Pho is traditionally a breakfast dish in Vietnam — a bowl of steaming broth with noodles and beef eaten in the early morning before the heat of the day begins."},
+                    {title:"🥖 Banh Mi Street Food",desc:"Vietnam's legendary street sandwich — a crispy French baguette with pâté, cold cuts, pickled vegetables, fresh herbs and chili — eaten standing on the street for less than $1."},
+                  ].map((m,i)=>(
+                    <div key={i} style={{background:"#F8FFF8",borderRadius:"12px",padding:"1.2rem",borderLeft:"3px solid #006428"}}>
+                      <h4 style={{margin:"0 0 0.5rem",color:"#006428",fontSize:"0.92rem",fontWeight:700}}>{m.title}</h4>
+                      <p style={{margin:0,fontSize:"0.83rem",color:"#555",lineHeight:1.7}}>{m.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            <div style={{background:"linear-gradient(135deg,#006428,#004d1e)",borderRadius:"20px",padding:"2.5rem",textAlign:"center",color:"white"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.8rem",margin:"0 0 0.8rem"}}>Ready to Cook Vietnamese? 🍜</h3>
+              <p style={{margin:"0 0 1.5rem",opacity:0.9,fontSize:"1rem"}}>{vietnameseCuisineData.length} authentic recipes with step-by-step instructions and chef notes.</p>
+              <button onClick={()=>{setVietnameseView("recipes");window.scrollTo({top:0,behavior:"smooth"});}} style={{background:"white",color:"#006428",border:"none",padding:"0.9rem 2.5rem",borderRadius:"30px",fontSize:"1rem",fontWeight:700,cursor:"pointer"}}>Browse All Recipes →</button>
+            </div>
+          </div>
+        )}
+
+        {vietnameseView === "recipes" && (
+          <div className="indian-content">
+            <div style={{padding:"1rem 1.5rem 0"}}>
+              <input className="indian-search" placeholder="Search Vietnamese dishes..." value={vietnameseSearch} onChange={e=>setVietnameseSearch(e.target.value)} />
+            </div>
+            <div className="indian-cats">
+              {categories.map(cat=>(
+                <button key={cat} className={`cat-pill${vietnameseCategory===cat?" active":""}`} onClick={()=>setVietnameseCategory(cat)} style={vietnameseCategory===cat?{background:"#006428",borderColor:"#006428"}:{}}>{emojis[cat]||""} {cat}</button>
+              ))}
+            </div>
+            {filtered.length === 0 ? <div className="indian-empty">🔍 No dishes found!</div> : (
+              <div className="indian-grid">
+                {filtered.map((dish,i)=>(
+                  <div key={i} className="indian-card" onClick={()=>{window.location.href=`/cuisine/vietnamese/${toSlug(dish.category)}/${toSlug(dish.dish_name)}`;}}>
+                    <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
+                      {dish.img?<img src={dish.img} alt={dish.dish_name} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}}/>:null}
+                      <div style={{display:dish.img?"none":"flex",width:"100%",height:"100%",alignItems:"center",justifyContent:"center",flexDirection:"column",background:`linear-gradient(135deg,${grads[dish.category]||"#006428,#004d1e"})`}}>
+                        <span style={{fontSize:"2.5rem"}}>{emojis[dish.category]||"🍽"}</span>
+                        <span style={{fontSize:"0.65rem",color:"white",marginTop:"0.3rem",textAlign:"center",padding:"0 0.5rem",fontWeight:600}}>{dish.dish_name}</span>
+                      </div>
+                    </div>
+                    <div className="indian-card-body">
+                      <div className="indian-cat-badge" style={{background:"rgba(0,100,40,0.1)",color:"#006428"}}>{dish.category}</div>
+                      <h3>{dish.dish_name}</h3>
+                      <p style={{fontSize:"0.78rem",color:"var(--text-muted)",marginTop:"0.3rem",lineHeight:"1.4"}}>{dish.short_description?dish.short_description.substring(0,80)+"...":""}</p>
+                      <div className="indian-card-meta">
+                        <span>⏱ {(dish.prep_time_minutes||0)+(dish.cook_time_minutes||0)} min</span>
+                        <span className={`diff-badge diff-${(dish.difficulty_level||"easy").toLowerCase()}`}>{dish.difficulty_level}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+            <div style={{textAlign:"center",marginTop:"2rem",paddingBottom:"2rem"}}>
+              <button onClick={()=>{setVietnameseView("guide");window.scrollTo({top:0,behavior:"smooth"});}} style={{background:"none",border:"1px solid #006428",color:"#006428",padding:"0.6rem 1.5rem",borderRadius:"20px",cursor:"pointer",fontWeight:600}}>← Back to Cuisine Guide</button>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
+
   const scrollToSection = (id) => {
     if (id === "cuisine-explorer") { setCuisineExplorer(true); setRecipeDB(false); return; }
     if (id === "recipe-db") { setRecipeDB(true); setCuisineExplorer(false); return; }
@@ -7784,11 +8481,11 @@ function FusionChefAI() {
       )}
 
       {/* ── ASIAN CUISINE PAGES (shared renderer) ── */}
-      {chinesePage && renderCuisinePage({ data: chineseCuisineData, name: "Chinese", flag: "🇨🇳", color: "#8B1A1A", setPage: setChinesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
+      {chinesePage && renderChinesePage()}
       {japanesePage && renderJapanesePage()}
-      {thaiPage && renderCuisinePage({ data: thaiCuisineData, name: "Thai", flag: "🇹🇭", color: "#1a3a7a", setPage: setThaiPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
-      {koreanPage && renderCuisinePage({ data: koreanCuisineData, name: "Korean", flag: "🇰🇷", color: "#003478", setPage: setKoreanPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
-      {vietnamesePage && renderCuisinePage({ data: vietnameseCuisineData, name: "Vietnamese", flag: "🇻🇳", color: "#9B1B30", setPage: setVietnamesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
+      {thaiPage && renderThaiPage()}
+      {koreanPage && renderKoreanPage()}
+      {vietnamesePage && renderVietnamesePage()}
 
       {/* ── INDIAN PAGE ── */}
       {indianPage && (
