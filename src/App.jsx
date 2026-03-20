@@ -2647,7 +2647,8 @@ const vietnameseCuisineData = [
     flavor_profile: ["sweet", "caramel", "silky", "eggy"],
     dietary_tags: ["vegetarian", "gluten-free"],
     img: "https://images.unsplash.com/photo-1558024920-b41e1887dc32?w=400&q=80",
-
+  },
+];
 
 // ─── HELPER ──────────────────────────────────────────────────────────────────
 function toSlug(str) {
