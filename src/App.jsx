@@ -63,15 +63,15 @@ const styles = `
   .section-title{font-size:clamp(1.8rem,3vw,2.8rem);color:var(--charcoal);line-height:1.2;}
   .section-title em{color:var(--saffron);font-style:italic;}
   .section-sub{color:var(--text-muted);font-size:1rem;margin-top:0.6rem;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.7;}
-  .ai-section{background:var(--charcoal);padding:5rem 2.5rem;position:relative;overflow:hidden;}
-  .ai-section::before{content:'';position:absolute;top:-50%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(232,98,26,0.12) 0%,transparent 70%);pointer-events:none;}
-  .ai-section .section-tag{color:var(--saffron-light);}
-  .ai-section .section-title{color:white;}
-  .ai-section .section-sub{color:rgba(255,255,255,0.55);}
+  
+  
+  
+  
+  
   .ai-container{max-width:760px;margin:0 auto;}
   .ai-chat-box{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;backdrop-filter:blur(10px);}
   .ai-chat-header{background:rgba(232,98,26,0.15);border-bottom:1px solid rgba(255,255,255,0.08);padding:1rem 1.5rem;display:flex;align-items:center;gap:0.8rem;}
-  .ai-chef-avatar{width:36px;height:36px;background:var(--saffron);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;}
+  
   .ai-chat-header-text h4{color:white;font-size:0.95rem;font-family:'Playfair Display',serif;}
   .ai-chat-header-text span{color:rgba(255,255,255,0.5);font-size:0.75rem;}
   .ai-messages{padding:1.5rem;min-height:180px;max-height:340px;overflow-y:auto;display:flex;flex-direction:column;gap:1rem;}
@@ -2841,7 +2841,6 @@ function FusionChefAI() {
   };
 
   const navLinks = [
-    { label: "AI Chef", id: "ai-chef" },
     { label: "Trending", id: "trending" },
     { label: "Cuisines", id: "cuisine-explorer" },
     { label: "Recipes", id: "recipe-db" },
@@ -2896,7 +2895,7 @@ function FusionChefAI() {
                 </div></>
               )}
               <div style={{marginTop:"1.2rem"}}>
-                <button className="btn-ask-chef" onClick={()=>{onClose();setTimeout(()=>scrollToSection("ai-chef"),300);}}>✨ Ask AI Chef about this dish</button>
+                
               </div>
             </div>
           </div>
@@ -3010,7 +3009,7 @@ function FusionChefAI() {
                   <div className="modal-chef-stat"><strong>{chefModal.awards}</strong><span>Awards</span></div>
                 </div>
                 <p className="modal-chef-bio">{chefModal.bio}</p>
-                <button className="btn-ask-chef" onClick={()=>{setChefModal(null);scrollToSection("ai-chef");}}>✨ Ask AI Chef</button>
+                
               </div>
             </div>
           </div>
@@ -3395,9 +3394,9 @@ function FusionChefAI() {
         </div>
         <ul className="nav-links">
           {navLinks.map(l=>(<li key={l.label}><a onClick={()=>scrollToSection(l.id)}>{l.label}</a></li>))}
+          <li><a onClick={()=>{ setAboutPage(true); window.scrollTo({top:0,behavior:"smooth"}); }}>About Us</a></li>
         </ul>
         <div className="nav-right">
-          <button className="btn-ai" onClick={()=>scrollToSection("ai-chef")}>✨ Ask AI Chef</button>
         </div>
       </nav>
 
@@ -3415,7 +3414,7 @@ function FusionChefAI() {
           <p>{heroSlides[slide].desc}</p>
           <div className="hero-btns">
             <button className="btn-primary" onClick={()=>scrollToSection("trending")}>Explore Recipes</button>
-            <button className="btn-outline" onClick={()=>scrollToSection("ai-chef")}>✨ Generate with AI</button>
+            
           </div>
         </div>
         <div className="hero-dots">
@@ -3424,37 +3423,7 @@ function FusionChefAI() {
       </section>
 
       {/* ── AI CHEF ── */}
-      <section className="ai-section" id="ai-chef">
-        <div className="section-header">
-          <div className="section-tag">✨ Powered by Anthropic</div>
-          <h2 className="section-title">Your Personal <em style={{color:"var(--saffron-light)"}}>AI Chef</em></h2>
-          <p className="section-sub">Tell me your ingredients, cravings, or dietary needs — I'll craft a custom recipe in seconds.</p>
-        </div>
-        <div className="ai-container">
-          <div className="ai-chat-box">
-            <div className="ai-chat-header">
-              <div className="ai-chef-avatar">👨‍🍳</div>
-              <div className="ai-chat-header-text"><h4>FusionChef AI</h4><span>● Online · Powered by Claude</span></div>
-            </div>
-            <div className="ai-messages">
-              {messages.map((m,i)=>(
-                <div key={i} className={`msg ${m.role}`}>
-                  {typeof m.content==="string"?m.content.split("\n").map((line,j)=><p key={j}>{line}</p>):m.content}
-                </div>
-              ))}
-              {loading&&<div className="msg ai"><div className="typing"><span/><span/><span/></div></div>}
-              <div ref={messagesEndRef}/>
-            </div>
-            <div className="ai-input-row">
-              <input className="ai-input" placeholder="E.g. I have chicken, garlic, and spinach..." value={input} onChange={e=>setInput(e.target.value)} onKeyDown={e=>e.key==="Enter"&&sendMessage()}/>
-              <button className="ai-send" onClick={()=>sendMessage()}>➤</button>
-            </div>
-          </div>
-          <div className="ai-chips">
-            {chips.map(c=>(<button key={c} className="ai-chip" onClick={()=>sendMessage(c)}>💬 {c}</button>))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* ── WORLD CUISINES ── */}
       <section className="section categories-section" id="categories">
@@ -3570,7 +3539,7 @@ function FusionChefAI() {
             </div>
           </div>
           <div className="footer-col"><h4>Recipes</h4><ul>{["Breakfast","Lunch","Dinner","Baking","Vegetarian","Healthy"].map(l=><li key={l}><a href="#" onClick={()=>scrollToSection("categories")}>{l}</a></li>)}</ul></div>
-          <div className="footer-col"><h4>Discover</h4><ul>{[["Chefs","chefs"],["Trending","trending"],["AI Chef","ai-chef"],["Cuisines","cuisine-explorer"],["Recipes","recipe-db"]].map(([l,id])=><li key={l}><a href="#" onClick={()=>scrollToSection(id)}>{l}</a></li>)}</ul></div>
+          <div className="footer-col"><h4>Discover</h4><ul>{[["Chefs","chefs"],["Trending","trending"],["Cuisines","cuisine-explorer"],["Recipes","recipe-db"]].map(([l,id])=><li key={l}><a href="#" onClick={()=>scrollToSection(id)}>{l}</a></li>)}</ul></div>
           <div className="footer-col"><h4>Company</h4><ul>{["About Us","Careers","Press","Contact","Privacy","Terms"].map(l=><li key={l}><a href="#">{l}</a></li>)}</ul></div>
         </div>
         <div className="footer-bottom">
