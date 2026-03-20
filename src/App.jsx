@@ -7044,7 +7044,7 @@ function FusionChefAI() {
     });
 
     const DishCard = ({dish}) => (
-      <div className="indian-card" onClick={() => setJapaneseModal(dish)}>
+      <div className="indian-card" onClick={() => { window.location.href=`/cuisine/japanese/${toSlug(dish.category)}/${toSlug(dish.dish_name)}`; }}>
         <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
           {dish.img ? (
             <img src={dish.img} alt={dish.dish_name} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}}
@@ -7355,7 +7355,6 @@ function FusionChefAI() {
           </div>
         )}
 
-        <DishModal />
       </div>
     );
   };
@@ -8201,7 +8200,7 @@ function RecipePage({ allData }) {
     );
   }
 
-  const emojis = {"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Beverages":"☕","Tea":"🍵","Coffee":"☕","Salads":"🥗","Sides":"🫙"};
+  const emojis = {"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Beverages":"☕","Tea":"🍵","Coffee":"☕","Salads":"🥗","Sides":"🫙","Sushi":"🍣"};
 
   return (
     <div style={{minHeight:"100vh",background:"#FFF8EE",fontFamily:"'DM Sans',sans-serif"}}>
