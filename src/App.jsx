@@ -304,7 +304,7 @@ const chefs = [
 ];
 
 const chips = ["Chicken + lemon + garlic", "Pasta in 20 mins", "Vegan dessert ideas", "Leftover rice recipes"];
-const welcome = { role: "ai", content: <><h4>👋 Hello, I'm FusionChef AI!</h4>Tell me what ingredients you have, a cuisine you're craving, or any dietary needs — I'll craft a recipe just for you.</> };
+const welcome = { role: "ai", content: <><h4>👋 Hello, I'm Fusion Chef!</h4>Tell me what ingredients you have, a cuisine you're craving, or any dietary needs — I'll craft a recipe just for you.</> };
 
 
 const indianCuisineData = [
@@ -2763,7 +2763,7 @@ function FusionChefAI() {
       [koreanPage,"Korean Cuisine"],[vietnamesePage,"Vietnamese Cuisine"],
     ];
     const active = pages.find(([state]) => state);
-    const title = active ? `FusionChef AI – ${active[1]}` : "FusionChef AI – Authentic World Recipes Powered by AI";
+    const title = active ? `Fusion Chef – ${active[1]}` : "Fusion Chef – Authentic World Recipes Powered by AI";
     document.title = title;
     gtagEvent("page_view", { page_title: title, page_location: window.location.href });
   }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
@@ -2810,7 +2810,7 @@ function FusionChefAI() {
       const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_KEY },
-        body: JSON.stringify({ model: "llama-3.3-70b-versatile", messages: [{ role: "system", content: "You are FusionChef AI, a warm and creative culinary AI. When users ask for recipes, respond with a catchy dish name, 5-7 key ingredients, 3-4 brief cooking steps, and a helpful tip. Keep it enthusiastic and under 250 words." }, { role: "user", content: query }], max_tokens: 500, temperature: 0.8 })
+        body: JSON.stringify({ model: "llama-3.3-70b-versatile", messages: [{ role: "system", content: "You are Fusion Chef, a warm and creative culinary AI. When users ask for recipes, respond with a catchy dish name, 5-7 key ingredients, 3-4 brief cooking steps, and a helpful tip. Keep it enthusiastic and under 250 words." }, { role: "user", content: query }], max_tokens: 500, temperature: 0.8 })
       });
       const data = await res.json();
       const reply = data.choices?.[0]?.message?.content || "Hmm, let me think on that...";
@@ -2830,7 +2830,7 @@ function FusionChefAI() {
       const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_KEY },
-        body: JSON.stringify({ model: "llama-3.3-70b-versatile", messages: [{ role: "system", content: 'You are FusionChef AI. Generate exactly 3 recipe suggestions. Respond ONLY with a valid JSON array: [{"title":"...","chef":"Chef Name","time":"30 min","difficulty":"easy","ingredients":["item1","item2","item3"],"steps":["Step 1","Step 2","Step 3"],"img":"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80","isAI":true}]' }, { role: "user", content: "Search: " + query }], max_tokens: 1000, temperature: 0.7 })
+        body: JSON.stringify({ model: "llama-3.3-70b-versatile", messages: [{ role: "system", content: 'You are Fusion Chef. Generate exactly 3 recipe suggestions. Respond ONLY with a valid JSON array: [{"title":"...","chef":"Chef Name","time":"30 min","difficulty":"easy","ingredients":["item1","item2","item3"],"steps":["Step 1","Step 2","Step 3"],"img":"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80","isAI":true}]' }, { role: "user", content: "Search: " + query }], max_tokens: 1000, temperature: 0.7 })
       });
       const data = await res.json();
       const text = data.choices?.[0]?.message?.content || "[]";
@@ -2976,7 +2976,7 @@ function FusionChefAI() {
             <div className="modal">
               <img src={recipeModal.img} alt={recipeModal.title} className="modal-img" />
               <div className="modal-body">
-                <div className="recipe-chef">{recipeModal.chef||"FusionChef AI"} {recipeModal.isAI&&<span className="ai-badge">✨ AI</span>}</div>
+                <div className="recipe-chef">{recipeModal.chef||"Fusion Chef"} {recipeModal.isAI&&<span className="ai-badge">✨ AI</span>}</div>
                 <h2>{recipeModal.title||"Recipe"}</h2>
                 <div className="modal-meta">
                   <span>⏱ {recipeModal.time||"30 min"}</span>
@@ -3388,7 +3388,7 @@ function FusionChefAI() {
       <nav className={`nav${scrolled?" scrolled":""}`}>
         <div className="nav-logo" onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}>
           <span style={{fontSize:"1.5rem"}}>🍴</span>
-          <span className="logo-text">FusionChef <span className="logo-ai">AI</span></span>
+          <span className="logo-text">Fusion <span className="logo-ai">Chef</span></span>
         </div>
         <ul className="nav-links">
           {navLinks.map(l=>(<li key={l.label}><a onClick={()=>scrollToSection(l.id)}>{l.label}</a></li>))}
@@ -3494,7 +3494,7 @@ function FusionChefAI() {
         <div className="section-header">
           <div className="section-tag">Meet the Team</div>
           <h2 className="section-title">Featured <em>Chefs</em></h2>
-          <p className="section-sub">World-class culinary talent, curated and celebrated by FusionChef AI.</p>
+          <p className="section-sub">World-class culinary talent, curated and celebrated by Fusion Chef.</p>
         </div>
         <div className="chefs-grid">
           {chefs.map(c=>(
@@ -3514,7 +3514,7 @@ function FusionChefAI() {
         <h2>Get Weekly Recipes, Chef Tips & AI Picks</h2>
         <p>Join 420,000+ food lovers. Unsubscribe anytime.</p>
         {subscribed?(
-          <p style={{color:"white",fontWeight:600,fontSize:"1.1rem"}}>🎉 You're in! Welcome to the FusionChef family.</p>
+          <p style={{color:"white",fontWeight:600,fontSize:"1.1rem"}}>🎉 You're in! Welcome to the Fusion Chef family.</p>
         ):(
           <div className="newsletter-form">
             <input className="newsletter-input" placeholder="Your email address" value={email} onChange={e=>setEmail(e.target.value)}/>
@@ -3527,7 +3527,7 @@ function FusionChefAI() {
       <footer className="footer">
         <div className="footer-grid">
           <div className="footer-brand">
-            <h2>FusionChef <em>AI</em></h2>
+            <h2>Fusion <em>Chef</em></h2>
             <p>Where every meal tells a story. AI-powered recipes, world-class chefs, and culinary inspiration — all in one place.</p>
             <div className="footer-socials">
               {["📘","📸","🐦","▶️","📌"].map((s,i)=><a key={i} className="social-btn" href="#">{s}</a>)}
@@ -3538,7 +3538,7 @@ function FusionChefAI() {
           <div className="footer-col"><h4>Company</h4><ul>{["About Us","Careers","Press","Contact","Privacy","Terms"].map(l=><li key={l}><a href="#">{l}</a></li>)}</ul></div>
         </div>
         <div className="footer-bottom">
-          © 2025 FusionChef AI by <strong style={{color:"var(--saffron)"}}>Chef Anuj Vikas Lonkar</strong>. All rights reserved. Powered by <span style={{color:"var(--saffron)"}}>Anthropic Claude</span>.
+          © 2025 Fusion Chef by <strong style={{color:"var(--saffron)"}}>Chef Anuj Vikas Lonkar</strong>. All rights reserved. Powered by <span style={{color:"var(--saffron)"}}>Anthropic Claude</span>.
         </div>
       </footer>
     </>
@@ -3561,7 +3561,7 @@ function RecipePage({ allData }) {
     if (!recipe) return;
     const BASE_URL = "https://fusionchefy.vercel.app";
     const pageUrl = `${BASE_URL}/cuisine/${cuisine}/${category}/${dish}`;
-    const title = `${recipe.dish_name} Recipe – Authentic ${cuisine.charAt(0).toUpperCase()+cuisine.slice(1)} Cuisine | FusionChef AI`;
+    const title = `${recipe.dish_name} Recipe – Authentic ${cuisine.charAt(0).toUpperCase()+cuisine.slice(1)} Cuisine | Fusion Chef`;
     const description = recipe.short_description || `Learn how to make authentic ${recipe.dish_name} from ${cuisine} cuisine.`;
     document.title = title;
     const setMeta = (attr, key, value) => {
@@ -3581,7 +3581,7 @@ function RecipePage({ allData }) {
     const schema = {
       "@context":"https://schema.org","@type":"Recipe",
       "name":recipe.dish_name,"description":description,
-      "image":[recipe.img||""],"author":{"@type":"Organization","name":"FusionChef AI","url":BASE_URL},
+      "image":[recipe.img||""],"author":{"@type":"Organization","name":"Fusion Chef","url":BASE_URL},
       "prepTime":`PT${recipe.prep_time_minutes}M`,"cookTime":`PT${recipe.cook_time_minutes}M`,
       "totalTime":`PT${recipe.prep_time_minutes+recipe.cook_time_minutes}M`,
       "recipeYield":`${recipe.servings} servings`,"recipeCategory":recipe.category,
@@ -3602,7 +3602,7 @@ function RecipePage({ allData }) {
         <div style={{fontSize:"4rem",marginBottom:"1rem"}}>🍽</div>
         <h2 style={{fontFamily:"'Playfair Display',serif",marginBottom:"0.5rem"}}>Recipe not found</h2>
         <p style={{color:"#7A6A55",marginBottom:"1.5rem"}}>This dish might have moved or doesn't exist yet.</p>
-        <button onClick={()=>{window.history.length>1?navigate(-1):navigate("/")}} style={{background:"#E8621A",color:"white",border:"none",padding:"0.8rem 2rem",borderRadius:"24px",cursor:"pointer",fontFamily:"'DM Sans',sans-serif",fontWeight:600}}>← Back to FusionChef AI</button>
+        <button onClick={()=>{window.history.length>1?navigate(-1):navigate("/")}} style={{background:"#E8621A",color:"white",border:"none",padding:"0.8rem 2rem",borderRadius:"24px",cursor:"pointer",fontFamily:"'DM Sans',sans-serif",fontWeight:600}}>← Back to Fusion Chef</button>
       </div>
     );
   }
@@ -3615,7 +3615,7 @@ function RecipePage({ allData }) {
       <div style={{background:"#1C1C1C",padding:"1rem 2rem",display:"flex",alignItems:"center",gap:"1rem",position:"sticky",top:0,zIndex:10}}>
         <button onClick={()=>{window.history.length>1?navigate(-1):navigate("/")}} style={{background:"transparent",border:"2px solid rgba(255,255,255,0.3)",color:"white",padding:"0.4rem 1rem",borderRadius:"24px",cursor:"pointer",fontFamily:"'DM Sans',sans-serif",fontSize:"0.85rem"}}>← Back</button>
         <span style={{color:"#E8621A",fontSize:"1.4rem"}}>🍴</span>
-        <span onClick={()=>navigate("/")} style={{fontFamily:"'Playfair Display',serif",color:"white",fontSize:"1.2rem",cursor:"pointer"}}>FusionChef <em style={{color:"#E8621A"}}>AI</em></span>
+        <span onClick={()=>navigate("/")} style={{fontFamily:"'Playfair Display',serif",color:"white",fontSize:"1.2rem",cursor:"pointer"}}>Fusion <em style={{color:"#E8621A"}}>Chef</em></span>
       </div>
       <div style={{height:"340px",overflow:"hidden",position:"relative",background:"#1C1C1C"}}>
         {recipe.img?<img src={recipe.img} alt={recipe.dish_name} style={{width:"100%",height:"100%",objectFit:"cover",opacity:0.85}}/>:<div style={{height:"100%",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"8rem"}}>{emojis[recipe.category]||"🍽"}</div>}
