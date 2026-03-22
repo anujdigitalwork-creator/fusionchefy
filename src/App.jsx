@@ -3538,7 +3538,7 @@ function FusionChefAI() {
           <div className="footer-col"><h4>Company</h4><ul>{["About Us","Careers","Press","Contact","Privacy","Terms"].map(l=><li key={l}><a href="#">{l}</a></li>)}</ul></div>
         </div>
         <div className="footer-bottom">
-          © 2025 Fusion Chef by <strong style={{color:"var(--saffron)"}}>Chef Anuj Vikas Lonkar</strong>. All rights reserved. Powered by <span style={{color:"var(--saffron)"}}>Anthropic Claude</span>.
+          © 2026 <strong style={{color:"var(--saffron)"}}>Fusion Chef</strong> by <strong style={{color:"var(--saffron)"}}>Anuj Vikas Lonkar</strong>. All rights reserved.
         </div>
       </footer>
     </>
