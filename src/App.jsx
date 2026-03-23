@@ -1915,6 +1915,7 @@ function FusionChefAI() {
         </div>
         <ul className="nav-links">
           {navLinks.map(l=>(<li key={l.label}><a onClick={()=>scrollToSection(l.id)}>{l.label}</a></li>))}
+          <li><a onClick={()=>setAboutPage(true)}>About Us</a></li>
         </ul>
         <div className="nav-right">
           <button className="btn-ai" onClick={()=>setCuisineExplorer(true)}>🌍 Explore Cuisines</button>
