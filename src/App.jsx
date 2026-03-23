@@ -1019,9 +1019,402 @@ const chineseCuisineData = [
     img: "https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=400&q=80",
     tags: ["Hong Kong", "Dim Sum", "Baked", "Classic"]
   }
-];
+// ── NEW CHINESE DISHES TO ADD ────────────────────────────────────────────────
 
-// ─────────────────────────────────────────────────────────────────────────────
+  // ── RICE PREPARATIONS ──────────────────────────────────────────────────────
+  {
+    dish_name: "Yangzhou Fried Rice",
+    cuisine: "Chinese",
+    country_of_origin: "China",
+    category: "Rice Preparations",
+    difficulty_level: "easy",
+    prep_time_minutes: 15,
+    cook_time_minutes: 15,
+    total_time_minutes: 30,
+    servings: 4,
+    short_description: "China's most celebrated fried rice — golden egg-coated grains stir-fried with prawns, ham, peas and spring onion. Born in Yangzhou, perfected across the world.",
+    ingredients: [
+      { name: "Cold cooked jasmine rice", quantity: "600", unit: "g" },
+      { name: "Eggs", quantity: "3", unit: "large" },
+      { name: "Tiger prawns", quantity: "150", unit: "g" },
+      { name: "Chinese ham or bacon", quantity: "100", unit: "g" },
+      { name: "Frozen peas", quantity: "80", unit: "g" },
+      { name: "Spring onion", quantity: "4", unit: "stalks" },
+      { name: "Soy sauce", quantity: "2", unit: "tbsp" },
+      { name: "Sesame oil", quantity: "1", unit: "tsp" },
+      { name: "Vegetable oil", quantity: "3", unit: "tbsp" },
+      { name: "Salt", quantity: "0.5", unit: "tsp" },
+      { name: "White pepper", quantity: "0.5", unit: "tsp" },
+    ],
+    preparation_steps: [
+      "Use cold day-old rice — fresh rice makes it soggy. Break up all clumps.",
+      "Beat eggs with a pinch of salt.",
+      "Heat wok until smoking. Add oil and scramble eggs until just set. Remove.",
+      "Reheat wok, add more oil, stir-fry prawns until pink. Remove.",
+      "Add rice to blazing hot wok. Stir-fry vigorously, pressing against wok.",
+      "Add ham and peas. Season with soy sauce and white pepper.",
+      "Return eggs and prawns. Toss everything together rapidly.",
+      "Drizzle sesame oil and toss with spring onion. Serve immediately.",
+    ],
+    chef_notes: "Wok hei — the breath of the wok — is everything in fried rice. The highest possible heat creates that smoky, slightly charred aroma that makes restaurant fried rice so irresistible. Never use fresh rice.",
+    serving_suggestions: "Serve immediately in a hot bowl. Perfect alongside any Chinese main course.",
+    nutrition_estimate: { calories: "385", protein_g: "18", carbohydrates_g: "52", fat_g: "12" },
+    tags: ["Fried Rice", "Yangzhou", "Classic", "Chinese"],
+    img: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&q=80",
+  },
+  {
+    dish_name: "Claypot Rice (Bo Zai Fan)",
+    cuisine: "Chinese",
+    country_of_origin: "China",
+    category: "Rice Preparations",
+    difficulty_level: "medium",
+    prep_time_minutes: 20,
+    cook_time_minutes: 30,
+    total_time_minutes: 50,
+    servings: 4,
+    short_description: "A Cantonese street food icon — rice cooked in a clay pot until a crispy golden crust forms on the bottom, topped with Chinese sausage, chicken and a drizzle of dark soy sauce.",
+    ingredients: [
+      { name: "Jasmine rice", quantity: "400", unit: "g" },
+      { name: "Chinese sausage (lap cheong)", quantity: "3", unit: "pieces" },
+      { name: "Chicken thigh", quantity: "300", unit: "g" },
+      { name: "Shiitake mushrooms", quantity: "6", unit: "pieces" },
+      { name: "Dark soy sauce", quantity: "2", unit: "tbsp" },
+      { name: "Light soy sauce", quantity: "2", unit: "tbsp" },
+      { name: "Oyster sauce", quantity: "2", unit: "tbsp" },
+      { name: "Sesame oil", quantity: "1", unit: "tsp" },
+      { name: "Ginger", quantity: "3", unit: "slices" },
+      { name: "Spring onion", quantity: "3", unit: "stalks" },
+    ],
+    preparation_steps: [
+      "Soak rice 30 minutes. Marinate chicken with soy, oyster sauce and ginger.",
+      "Slice Chinese sausage diagonally. Soak and slice shiitake mushrooms.",
+      "Cook rice in clay pot with water until almost absorbed — about 15 minutes.",
+      "Arrange chicken, sausage and mushrooms on top of rice.",
+      "Cover and cook on lowest heat 15 more minutes.",
+      "Turn heat to high for last 2 minutes to create crispy rice crust.",
+      "Drizzle dark soy and sesame oil over everything.",
+      "Garnish with spring onion and bring to table in the clay pot.",
+    ],
+    chef_notes: "The crispy rice crust at the bottom (guo ba) is the most prized part. The high heat at the end is essential — listen for the gentle crackling sound.",
+    serving_suggestions: "Serve at the table in the clay pot. Scrape the golden crust from the bottom for a special treat.",
+    nutrition_estimate: { calories: "465", protein_g: "24", carbohydrates_g: "58", fat_g: "14" },
+    tags: ["Claypot", "Cantonese", "Street Food", "Chinese"],
+    img: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&q=80",
+  },
+  {
+    dish_name: "Congee (Jook / Rice Porridge)",
+    cuisine: "Chinese",
+    country_of_origin: "China",
+    category: "Rice Preparations",
+    difficulty_level: "easy",
+    prep_time_minutes: 10,
+    cook_time_minutes: 60,
+    total_time_minutes: 70,
+    servings: 4,
+    short_description: "China's ultimate healing comfort food — silky smooth rice porridge cooked until the grains dissolve, topped with century egg, ginger, spring onion and crispy you tiao.",
+    ingredients: [
+      { name: "Jasmine rice", quantity: "150", unit: "g" },
+      { name: "Chicken stock", quantity: "1.5", unit: "litres" },
+      { name: "Ginger", quantity: "4", unit: "slices" },
+      { name: "Century egg (pidan)", quantity: "2", unit: "pieces" },
+      { name: "Salted pork or chicken", quantity: "200", unit: "g" },
+      { name: "Spring onion", quantity: "4", unit: "stalks" },
+      { name: "White pepper", quantity: "1", unit: "tsp" },
+      { name: "Sesame oil", quantity: "1", unit: "tbsp" },
+      { name: "Soy sauce", quantity: "2", unit: "tbsp" },
+      { name: "You tiao (fried dough sticks)", quantity: "2", unit: "pieces" },
+    ],
+    preparation_steps: [
+      "Rinse rice and soak 30 minutes for faster cooking.",
+      "Bring chicken stock to boil with ginger slices.",
+      "Add rice and boil vigorously 10 minutes, then reduce to simmer.",
+      "Simmer 45-50 minutes, stirring occasionally until grains dissolve completely.",
+      "Shred chicken or pork into the congee. Season with salt and white pepper.",
+      "Slice century eggs into wedges.",
+      "Ladle into bowls and top with century egg, spring onion.",
+      "Drizzle with sesame oil and soy sauce. Add crispy you tiao alongside.",
+    ],
+    chef_notes: "Congee should be as smooth as silk — cook until you cannot distinguish individual rice grains. A rice-to-water ratio of 1:10 ensures proper consistency. Worth every minute of cooking.",
+    serving_suggestions: "Serve hot for breakfast or when feeling under the weather. The you tiao should be dipped into the congee.",
+    nutrition_estimate: { calories: "285", protein_g: "16", carbohydrates_g: "38", fat_g: "8" },
+    tags: ["Congee", "Healing", "Breakfast", "Cantonese"],
+    img: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80",
+  },
+  {
+    dish_name: "Sticky Rice in Lotus Leaf (Lo Mai Gai)",
+    cuisine: "Chinese",
+    country_of_origin: "China",
+    category: "Rice Preparations",
+    difficulty_level: "hard",
+    prep_time_minutes: 60,
+    cook_time_minutes: 45,
+    total_time_minutes: 105,
+    servings: 6,
+    short_description: "A dim sum masterpiece — glutinous rice stuffed with chicken, mushrooms, Chinese sausage and egg yolk, wrapped in a fragrant lotus leaf and steamed until tender and aromatic.",
+    ingredients: [
+      { name: "Glutinous rice", quantity: "500", unit: "g" },
+      { name: "Dried lotus leaves", quantity: "6", unit: "pieces" },
+      { name: "Chicken thigh", quantity: "300", unit: "g" },
+      { name: "Chinese sausage", quantity: "2", unit: "pieces" },
+      { name: "Dried shiitake mushrooms", quantity: "8", unit: "pieces" },
+      { name: "Salted egg yolks", quantity: "6", unit: "pieces" },
+      { name: "Oyster sauce", quantity: "3", unit: "tbsp" },
+      { name: "Dark soy sauce", quantity: "2", unit: "tbsp" },
+      { name: "Sesame oil", quantity: "2", unit: "tsp" },
+      { name: "Spring onion", quantity: "4", unit: "stalks" },
+    ],
+    preparation_steps: [
+      "Soak glutinous rice 4 hours. Soak dried lotus leaves and mushrooms 30 minutes.",
+      "Steam rice 25 minutes until cooked. Season with oyster sauce and soy sauce.",
+      "Marinate chicken with soy, oyster sauce and sesame oil. Pan-fry until golden.",
+      "Slice sausage. Squeeze mushrooms and slice.",
+      "Lay lotus leaf flat. Place large scoop of rice in centre.",
+      "Add chicken, mushroom, sausage and salted egg yolk on top.",
+      "Cover with more rice and wrap the lotus leaf tightly around.",
+      "Steam parcels for 45 minutes until fragrant.",
+    ],
+    chef_notes: "The lotus leaf is not just a wrapper — it perfumes the rice with an irreplaceable floral, grassy aroma during steaming. Dried lotus leaves must be softened in hot water first.",
+    serving_suggestions: "Serve at dim sum brunch. Unwrap at the table for the dramatic reveal of aroma.",
+    nutrition_estimate: { calories: "485", protein_g: "22", carbohydrates_g: "68", fat_g: "14" },
+    tags: ["Dim Sum", "Lotus Leaf", "Glutinous Rice", "Cantonese"],
+    img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80",
+  },
+  {
+    dish_name: "Steamed Egg White Rice (Bao Fan)",
+    cuisine: "Chinese",
+    country_of_origin: "China",
+    category: "Rice Preparations",
+    difficulty_level: "easy",
+    prep_time_minutes: 10,
+    cook_time_minutes: 25,
+    total_time_minutes: 35,
+    servings: 4,
+    short_description: "Simple, nourishing Cantonese rice cooked with preserved vegetables and pork — the everyday rice dish of millions of Chinese homes, fragrant and deeply satisfying.",
+    ingredients: [
+      { name: "Jasmine rice", quantity: "400", unit: "g" },
+      { name: "Water", quantity: "480", unit: "ml" },
+      { name: "Preserved mustard greens (mei cai)", quantity: "60", unit: "g" },
+      { name: "Ground pork", quantity: "150", unit: "g" },
+      { name: "Soy sauce", quantity: "2", unit: "tbsp" },
+      { name: "Oyster sauce", quantity: "1", unit: "tbsp" },
+      { name: "Sesame oil", quantity: "1", unit: "tsp" },
+      { name: "Ginger", quantity: "2", unit: "slices" },
+    ],
+    preparation_steps: [
+      "Rinse rice until water runs clear. Add to rice cooker or pot.",
+      "Soak preserved mustard greens in water 15 minutes to reduce saltiness.",
+      "Season pork with soy sauce and oyster sauce.",
+      "Drain and squeeze mustard greens. Chop roughly.",
+      "Place seasoned pork and mustard greens on top of uncooked rice.",
+      "Cook rice normally — pork and greens steam on top.",
+      "When done, drizzle sesame oil and fluff with chopsticks.",
+    ],
+    chef_notes: "Preserved mustard greens add a unique umami depth that fresh vegetables cannot replicate. Always soak to remove excess salt before using.",
+    serving_suggestions: "Serve as part of a simple Chinese home meal with stir-fried greens and soup.",
+    nutrition_estimate: { calories: "345", protein_g: "14", carbohydrates_g: "56", fat_g: "8" },
+    tags: ["Home Cooking", "Simple", "Everyday", "Cantonese"],
+    img: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&q=80",
+  },
+
+  // ── ADDITIONAL AUTHENTIC DISHES ────────────────────────────────────────────
+  {
+    dish_name: "Beggar's Chicken (Jiaohua Ji)",
+    cuisine: "Chinese",
+    country_of_origin: "China",
+    category: "Main Courses",
+    difficulty_level: "hard",
+    prep_time_minutes: 60,
+    cook_time_minutes: 180,
+    total_time_minutes: 240,
+    servings: 4,
+    short_description: "A legendary Chinese dish — a whole chicken stuffed with aromatics, wrapped in lotus leaves and clay, then baked for hours. The clay is cracked at the table for a dramatic reveal.",
+    ingredients: [
+      { name: "Whole chicken", quantity: "1.5", unit: "kg" },
+      { name: "Dried lotus leaves", quantity: "4", unit: "pieces" },
+      { name: "Shaoxing wine", quantity: "4", unit: "tbsp" },
+      { name: "Dark soy sauce", quantity: "3", unit: "tbsp" },
+      { name: "Five spice powder", quantity: "2", unit: "tsp" },
+      { name: "Ginger", quantity: "1", unit: "inch" },
+      { name: "Spring onion", quantity: "4", unit: "stalks" },
+      { name: "Shiitake mushrooms", quantity: "6", unit: "pieces" },
+      { name: "Chinese sausage", quantity: "2", unit: "pieces" },
+      { name: "Air-dry clay or baking dough", quantity: "2", unit: "kg" },
+    ],
+    preparation_steps: [
+      "Marinate whole chicken in soy sauce, Shaoxing wine and five spice overnight.",
+      "Soak lotus leaves until pliable.",
+      "Stuff chicken cavity with ginger, spring onion, mushrooms and sausage.",
+      "Wrap chicken tightly in two layers of lotus leaves, then foil.",
+      "Encase completely in clay or thick dough, sealing all edges.",
+      "Bake at 200°C for 3 hours.",
+      "Bring to the table and crack the clay shell dramatically.",
+      "The fragrant steam release is part of the experience.",
+    ],
+    chef_notes: "This dish is about theatre as much as flavour. The clay seals in all moisture and the lotus leaf perfumes the chicken as it steams inside. Modern versions use baking dough instead of clay.",
+    serving_suggestions: "Crack the clay shell at the table for maximum drama. Serve with steamed rice and vegetables.",
+    nutrition_estimate: { calories: "485", protein_g: "42", carbohydrates_g: "12", fat_g: "28" },
+    tags: ["Legendary", "Whole Chicken", "Traditional", "Chinese"],
+    img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80",
+  },
+  {
+    dish_name: "Red Braised Pork Belly (Hong Shao Rou)",
+    cuisine: "Chinese",
+    country_of_origin: "China",
+    category: "Main Courses",
+    difficulty_level: "medium",
+    prep_time_minutes: 20,
+    cook_time_minutes: 90,
+    total_time_minutes: 110,
+    servings: 4,
+    short_description: "Chairman Mao's favourite dish — thick slabs of pork belly braised in soy sauce, Shaoxing wine and rock sugar until meltingly tender and lacquered with a glossy mahogany glaze.",
+    ingredients: [
+      { name: "Pork belly", quantity: "800", unit: "g" },
+      { name: "Shaoxing wine", quantity: "4", unit: "tbsp" },
+      { name: "Dark soy sauce", quantity: "3", unit: "tbsp" },
+      { name: "Light soy sauce", quantity: "2", unit: "tbsp" },
+      { name: "Rock sugar", quantity: "40", unit: "g" },
+      { name: "Ginger", quantity: "5", unit: "slices" },
+      { name: "Spring onion", quantity: "4", unit: "stalks" },
+      { name: "Star anise", quantity: "3", unit: "pieces" },
+      { name: "Cinnamon stick", quantity: "1", unit: "piece" },
+      { name: "Water", quantity: "300", unit: "ml" },
+    ],
+    preparation_steps: [
+      "Blanch pork belly in boiling water 5 minutes. Rinse and cut into 4cm cubes.",
+      "Melt rock sugar in a wok until amber caramel forms.",
+      "Add pork belly and toss to coat in caramel.",
+      "Add Shaoxing wine, soy sauces, ginger, spring onion and spices.",
+      "Add water to just cover the pork.",
+      "Braise covered on low heat for 1 hour.",
+      "Remove lid and increase heat to reduce sauce until thick and glossy.",
+      "Serve over steamed rice with braising sauce poured over.",
+    ],
+    chef_notes: "Rock sugar, not regular sugar, is essential for the glossy lacquered finish. The long braising time breaks down the collagen in pork belly into silky, jiggly gelatin.",
+    serving_suggestions: "Serve over steamed white rice. The braising sauce is as precious as the pork itself.",
+    nutrition_estimate: { calories: "520", protein_g: "28", carbohydrates_g: "18", fat_g: "38" },
+    tags: ["Braised Pork", "Hunan", "Mao's Favourite", "Chinese"],
+    img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80",
+  },
+  {
+    dish_name: "Buddha's Delight (Luo Han Zhai)",
+    cuisine: "Chinese",
+    country_of_origin: "China",
+    category: "Main Courses",
+    difficulty_level: "medium",
+    prep_time_minutes: 30,
+    cook_time_minutes: 25,
+    total_time_minutes: 55,
+    servings: 4,
+    short_description: "A magnificent Chinese New Year vegetarian dish — a medley of 18 dried and fresh ingredients including tofu skin, glass noodles, lotus root and mushrooms, braised in a rich vegetarian sauce.",
+    ingredients: [
+      { name: "Firm tofu", quantity: "200", unit: "g" },
+      { name: "Dried lily buds", quantity: "30", unit: "g" },
+      { name: "Dried wood ear mushrooms", quantity: "20", unit: "g" },
+      { name: "Glass noodles", quantity: "100", unit: "g" },
+      { name: "Lotus root", quantity: "150", unit: "g" },
+      { name: "Napa cabbage", quantity: "200", unit: "g" },
+      { name: "Dried shiitake mushrooms", quantity: "8", unit: "pieces" },
+      { name: "Fried tofu puffs", quantity: "100", unit: "g" },
+      { name: "Oyster sauce (or vegetarian)", quantity: "3", unit: "tbsp" },
+      { name: "Soy sauce", quantity: "2", unit: "tbsp" },
+      { name: "Sesame oil", quantity: "1", unit: "tsp" },
+    ],
+    preparation_steps: [
+      "Soak all dried ingredients separately in warm water 20 minutes.",
+      "Drain and reserve mushroom soaking water.",
+      "Fry tofu until golden on all sides.",
+      "Stir-fry ginger in hot oil. Add mushrooms and lily buds.",
+      "Add all vegetables and tofu. Pour in mushroom soaking water.",
+      "Add oyster sauce and soy sauce.",
+      "Simmer 15 minutes until vegetables are tender.",
+      "Add glass noodles last. Drizzle sesame oil before serving.",
+    ],
+    chef_notes: "Traditionally served on the first day of Chinese New Year as a cleansing, auspicious meal. Each ingredient carries symbolic meaning for luck and prosperity.",
+    serving_suggestions: "Serve as a centrepiece dish for Chinese New Year celebrations with steamed rice.",
+    nutrition_estimate: { calories: "245", protein_g: "12", carbohydrates_g: "32", fat_g: "9" },
+    tags: ["Vegetarian", "Chinese New Year", "Buddhist", "Auspicious"],
+    img: "https://images.unsplash.com/photo-1562802378-063ec186a863?w=400&q=80",
+  },
+  {
+    dish_name: "Sichuan Boiled Fish (Shui Zhu Yu)",
+    cuisine: "Chinese",
+    country_of_origin: "China",
+    category: "Main Courses",
+    difficulty_level: "medium",
+    prep_time_minutes: 25,
+    cook_time_minutes: 20,
+    total_time_minutes: 45,
+    servings: 4,
+    short_description: "A breathtaking Sichuan dish — silky fish fillets poached in a fiery broth of dried chillies, Sichuan peppercorns and bean paste, finished with smoking hot oil poured over to release the full aroma.",
+    ingredients: [
+      { name: "White fish fillets (grass carp or bass)", quantity: "600", unit: "g" },
+      { name: "Dried red chillies", quantity: "20", unit: "pieces" },
+      { name: "Sichuan peppercorns", quantity: "2", unit: "tbsp" },
+      { name: "Doubanjiang (spicy bean paste)", quantity: "3", unit: "tbsp" },
+      { name: "Bean sprouts", quantity: "200", unit: "g" },
+      { name: "Egg white", quantity: "1", unit: "piece" },
+      { name: "Cornstarch", quantity: "2", unit: "tbsp" },
+      { name: "Garlic", quantity: "6", unit: "cloves" },
+      { name: "Ginger", quantity: "1", unit: "inch" },
+      { name: "Vegetable oil", quantity: "6", unit: "tbsp" },
+      { name: "Chicken stock", quantity: "500", unit: "ml" },
+    ],
+    preparation_steps: [
+      "Slice fish thinly. Marinate with egg white, cornstarch and salt.",
+      "Blanch bean sprouts. Place in deep bowl.",
+      "Fry doubanjiang in oil until fragrant and red oil separates.",
+      "Add garlic and ginger. Add stock and bring to boil.",
+      "Gently slide fish slices into broth. Cook 2-3 minutes only.",
+      "Pour fish and broth over bean sprouts in bowl.",
+      "Top with dried chillies, Sichuan peppercorns, garlic and spring onion.",
+      "Heat oil until smoking. Pour over the toppings — stand back for the dramatic sizzle.",
+    ],
+    chef_notes: "The hot oil pour at the end is non-negotiable — it is what activates the Sichuan peppercorns' numbing ma la flavour. The fish must be velvet-smooth from the egg white marinade.",
+    serving_suggestions: "Serve immediately with steamed rice. The numbing heat of Sichuan peppercorn is the defining experience.",
+    nutrition_estimate: { calories: "320", protein_g: "34", carbohydrates_g: "12", fat_g: "16" },
+    tags: ["Sichuan", "Spicy", "Ma La", "Fish"],
+    img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80",
+  },
+  {
+    dish_name: "Steamed Whole Fish with Ginger & Scallion",
+    cuisine: "Chinese",
+    country_of_origin: "China",
+    category: "Main Courses",
+    difficulty_level: "easy",
+    prep_time_minutes: 15,
+    cook_time_minutes: 12,
+    total_time_minutes: 27,
+    servings: 4,
+    short_description: "The quintessential Cantonese banquet dish — a whole fish steamed to perfect tenderness, draped with julienned ginger and spring onion, then finished with smoking hot oil and soy sauce.",
+    ingredients: [
+      { name: "Whole sea bass or red snapper", quantity: "800", unit: "g" },
+      { name: "Ginger", quantity: "2", unit: "inch" },
+      { name: "Spring onion", quantity: "6", unit: "stalks" },
+      { name: "Light soy sauce", quantity: "4", unit: "tbsp" },
+      { name: "Shaoxing wine", quantity: "2", unit: "tbsp" },
+      { name: "Sesame oil", quantity: "1", unit: "tsp" },
+      { name: "Sugar", quantity: "1", unit: "tsp" },
+      { name: "Vegetable oil", quantity: "4", unit: "tbsp" },
+      { name: "Coriander", quantity: "4", unit: "sprigs" },
+      { name: "Red chilli", quantity: "1", unit: "piece" },
+    ],
+    preparation_steps: [
+      "Score fish on both sides with 3 diagonal cuts to the bone.",
+      "Rub fish inside and out with ginger and Shaoxing wine.",
+      "Place on steaming plate with spring onion underneath.",
+      "Steam over high heat 10-12 minutes depending on size.",
+      "Discard liquid that accumulates. Pour soy sauce mixed with sugar over fish.",
+      "Top with fresh julienned ginger, spring onion, coriander and chilli.",
+      "Heat oil until smoking — nearly burning.",
+      "Pour oil over the fish — the sizzle is the cooking method.",
+    ],
+    chef_notes: "The fish is done when eyes turn white and flesh flakes at the thickest part. The smoking oil pour is essential — it partially cooks the fresh aromatics and releases their full fragrance.",
+    serving_suggestions: "Serve at the centre of a Cantonese banquet. Serving a whole fish symbolises abundance and completeness.",
+    nutrition_estimate: { calories: "265", protein_g: "36", carbohydrates_g: "6", fat_g: "11" },
+    tags: ["Cantonese", "Steamed Fish", "Banquet", "Healthy"],
+    img: "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=400&q=80",
+  },
+];
 
 const japaneseCuisineData = [
   // ── SUSHI ──────────────────────────────────────────────────────────────────
@@ -2354,6 +2747,7 @@ function FusionChefAI() {
   const [punjabGuidePage, setPunjabGuidePage] = useState(false);
   const [maharashtraGuidePage, setMaharashtraGuidePage] = useState(false);
   const [japaneseGuidePage, setJapaneseGuidePage] = useState(false);
+  const [chineseGuidePage, setChineseGuidePage] = useState(false);
   const [maharashtraCategory, setMaharashtraCategory] = useState("All");
   const [maharashtraSearch, setMaharashtraSearch] = useState("");
   const [maharashtraModal, setMaharashtraModal] = useState(null);
@@ -2399,7 +2793,7 @@ function FusionChefAI() {
   useEffect(() => {
     const pages = [
       [indianPage,"Indian Cuisine"],[maharashtraPage,"Maharashtra Cuisine"],[punjabPage,"Punjab Cuisine"],
-      [maharashtraGuidePage,"Maharashtra Guide"],[punjabGuidePage,"Punjab Guide"],[japaneseGuidePage,"Japanese Guide"],
+      [maharashtraGuidePage,"Maharashtra Guide"],[punjabGuidePage,"Punjab Guide"],[japaneseGuidePage,"Japanese Guide"],[chineseGuidePage,"Chinese Guide"],
       [aboutPage,"About Us"],[contactPage,"Contact Us"],[privacyPage,"Privacy Policy"],
       [termsPage,"Terms of Use"],[careersPage,"Careers"],[cuisineExplorer,"Cuisine Explorer"],[recipeDB,"Recipe Database"],
       [chinesePage,"Chinese Cuisine"],[japanesePage,"Japanese Cuisine"],[thaiPage,"Thai Cuisine"],
@@ -2409,10 +2803,10 @@ function FusionChefAI() {
     const title = active ? `Fusion Chef – ${active[1]}` : "Fusion Chef – 200+ Recipes from Every Corner of the World";
     document.title = title;
     gtagEvent("page_view", { page_title: title, page_location: window.location.href });
-  }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
+  }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
 
   useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, []);
-  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
+  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
 
   const scrollToSection = (id) => {
     if (id === "cuisine-explorer") { setCuisineExplorer(true); setRecipeDB(false); return; }
@@ -2838,7 +3232,7 @@ function FusionChefAI() {
       )}
 
       {/* ── ASIAN CUISINE PAGES (shared renderer) ── */}
-      {chinesePage && renderCuisinePage({ data: chineseCuisineData, name: "Chinese", flag: "🇨🇳", color: "#8B1A1A", setPage: setChinesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
+      {chinesePage && renderCuisinePage({ data: chineseCuisineData, name: "Chinese", flag: "🇨🇳", color: "#8B1A1A", setPage: setChinesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Rice Preparations","Desserts"], guideBtn: <button onClick={()=>{setChinesePage(false);setChineseGuidePage(true);}} style={{background:"rgba(139,26,26,0.15)",border:"1px solid #8B1A1A",color:"#8B1A1A",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
       {japanesePage && renderCuisinePage({ data: japaneseCuisineData, name: "Japanese", flag: "🇯🇵", color: "#BC002D", setPage: setJapanesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Sushi","Appetizers","Soups","Salads","Main Courses","Rice Preparations","Desserts"], guideBtn: <button onClick={()=>{setJapanesePage(false);setJapaneseGuidePage(true);}} style={{background:"rgba(188,0,45,0.15)",border:"1px solid #BC002D",color:"#BC002D",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
       {thaiPage && renderCuisinePage({ data: thaiCuisineData, name: "Thai", flag: "🇹🇭", color: "#1a3a7a", setPage: setThaiPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
       {koreanPage && renderCuisinePage({ data: koreanCuisineData, name: "Korean", flag: "🇰🇷", color: "#003478", setPage: setKoreanPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
@@ -2996,6 +3390,204 @@ function FusionChefAI() {
             })()}
           </div>
           {punjabModal&&renderDishModal(punjabModal,()=>setPunjabModal(null),"Punjab")}
+        </div>
+      )}
+
+
+      {/* ── CHINESE CUISINE GUIDE ── */}
+      {chineseGuidePage && (
+        <div className="full-page" style={{background:"#FDFAF6"}}>
+          <div className="full-page-header" style={{background:"#8B1A1A"}}>
+            <button className="back-btn" onClick={()=>setChineseGuidePage(false)}>← Back</button>
+            <button className="back-btn" style={{marginLeft:"auto",background:"rgba(255,255,255,0.15)"}} onClick={()=>{setChineseGuidePage(false);setChinesePage(true);}}>🥢 Browse Recipes</button>
+            <h1 style={{color:"white"}}>🇨🇳 Chinese <em>Cuisine Guide</em></h1>
+          </div>
+          <div className="full-page-content" style={{maxWidth:"860px",margin:"0 auto",padding:"2rem 1.5rem"}}>
+
+            {/* Hero */}
+            <div style={{background:"#8B1A1A",borderRadius:"16px",padding:"2.5rem",color:"white",marginBottom:"2rem",position:"relative",overflow:"hidden"}}>
+              <div style={{position:"absolute",right:"-20px",top:"-20px",fontSize:"8rem",opacity:0.1}}>🐉</div>
+              <div style={{fontSize:"0.8rem",letterSpacing:"3px",opacity:0.8,marginBottom:"0.5rem"}}>COMPLETE GUIDE</div>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"2rem",marginBottom:"0.8rem",color:"white"}}>The Dragon's Table — 5,000 Years of Chinese Cuisine</h2>
+              <p style={{opacity:0.9,lineHeight:1.7,maxWidth:"580px"}}>Chinese cuisine is the world's oldest and most diverse culinary tradition. Spanning 5,000 years of history, 23 provinces and 1.4 billion tastes, it encompasses everything from delicate Cantonese dim sum to face-numbing Sichuan fire — and everything in between.</p>
+              <div style={{display:"flex",gap:"1rem",marginTop:"1.5rem",flexWrap:"wrap"}}>
+                {["🥟 Dumplings","🍜 Noodles","🦆 Peking Duck","🍱 Dim Sum","🌶️ Ma La"].map(t=>(
+                  <span key={t} style={{background:"rgba(255,255,255,0.2)",padding:"0.3rem 0.8rem",borderRadius:"20px",fontSize:"0.8rem"}}>{t}</span>
+                ))}
+              </div>
+            </div>
+
+            {/* History */}
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#8B1A1A",marginBottom:"1rem",fontSize:"1.3rem"}}>📜 History & Origins</h3>
+              <p style={{lineHeight:1.8,color:"#444",marginBottom:"1rem"}}>Chinese culinary history stretches back to the Neolithic period, with evidence of rice cultivation dating to 7000 BCE. The Zhou Dynasty (1046–256 BCE) codified the first formal rules of Chinese cooking and dining etiquette. Confucius himself wrote extensively on food — insisting that rice should never be too white, meat never cut against the grain, and meals should always be taken at regular hours.</p>
+              <p style={{lineHeight:1.8,color:"#444",marginBottom:"1rem"}}>The Silk Road brought new ingredients — sesame, coriander, grapes and pomegranates — that transformed Chinese cooking from the Han Dynasty onwards. The Tang and Song dynasties (618–1279 CE) saw restaurant culture explode in cities like Hangzhou and Kaifeng, with menus offering hundreds of dishes to urban diners.</p>
+              <p style={{lineHeight:1.8,color:"#444"}}>The Qing Dynasty (1644–1912) gave the world the imperial banquet tradition — an extravagant multi-course feast called Man-Han Quanxi with over 108 dishes across three days. Today, Chinese cuisine encompasses eight distinct regional culinary traditions, each as complex and proud as any national cuisine in the world.</p>
+            </div>
+
+            {/* Eight Cuisines */}
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#8B1A1A",marginBottom:"1rem",fontSize:"1.3rem"}}>🗺️ The Eight Great Regional Cuisines</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(240px,1fr))",gap:"1rem"}}>
+                {[
+                  {region:"🥟 Cantonese (Yue)",province:"Guangdong",flavor:"Fresh, delicate, light",famous:"Dim sum, roast goose, steamed fish, congee",note:"The world's most exported Chinese cuisine — the origin of dim sum culture and Chinatown cooking"},
+                  {region:"🌶️ Sichuan (Chuan)",province:"Sichuan",flavor:"Ma La — numbing and spicy",famous:"Mapo tofu, kung pao, dan dan noodles, hot pot",note:"The most internationally celebrated regional cuisine — the Sichuan peppercorn creates a unique numbing sensation"},
+                  {region:"🦆 Beijing (Lu)",province:"Shandong / Beijing",flavor:"Rich, salty, robust",famous:"Peking duck, zhajiangmian, dumplings, lamb hotpot",note:"The imperial capital cuisine — refined, ceremonial and deeply satisfying"},
+                  {region:"🍜 Shanghainese (Hu)",province:"Shanghai / Jiangsu",flavor:"Sweet, rich, red-braised",famous:"Xiaolongbao, red braised pork, hairy crab, lion's head",note:"Famous for red braising technique and the beloved soup dumplings of Din Tai Fung"},
+                  {region:"🐟 Fujian (Min)",province:"Fujian",flavor:"Umami-rich, light broths",famous:"Buddha Jumps Over the Wall, oyster omelette, peanut soup",note:"A seafood-forward cuisine known for its extraordinary umami depth and complex broths"},
+                  {region:"🫙 Hunan (Xiang)",province:"Hunan",flavor:"Hot, sour, smoky",famous:"Chairman Mao's red braised pork, smoked meats, stinky tofu",note:"Even spicier than Sichuan but without the numbing — pure, direct chilli heat"},
+                  {region:"🥩 Zhejiang (Zhe)",province:"Zhejiang",flavor:"Fresh, tender, mild",famous:"Dongpo pork, West Lake fish, longjing tea chicken",note:"Refined and elegant — uses Longjing tea as an ingredient in famous dishes"},
+                  {region:"🍖 Anhui (Hui)",province:"Anhui",flavor:"Wild, earthy, preserved",famous:"Hairy tofu, braised soft-shell turtle, stinky pike",note:"Makes bold use of wild game, mountain plants and preserved ingredients"},
+                ].map(r=>(
+                  <div key={r.region} style={{background:"#FDF5F5",borderRadius:"10px",padding:"1.2rem",border:"1px solid #f0dede"}}>
+                    <strong style={{color:"#8B1A1A",display:"block",marginBottom:"0.2rem"}}>{r.region}</strong>
+                    <div style={{fontSize:"0.72rem",color:"#888",marginBottom:"0.3rem"}}>{r.province}</div>
+                    <div style={{fontSize:"0.78rem",color:"#C9922A",fontWeight:600,marginBottom:"0.3rem"}}>Flavour: {r.flavor}</div>
+                    <div style={{fontSize:"0.76rem",color:"#555",marginBottom:"0.4rem"}}>🍽 {r.famous}</div>
+                    <p style={{fontSize:"0.74rem",color:"#777",lineHeight:1.5,fontStyle:"italic"}}>{r.note}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Essential Ingredients */}
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#8B1A1A",marginBottom:"1rem",fontSize:"1.3rem"}}>🥢 Essential Ingredients & Sauces</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(160px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {name:"Soy Sauce",desc:"The cornerstone — light soy for seasoning, dark soy for colour and braising"},
+                  {name:"Shaoxing Wine",desc:"Fermented rice wine — essential for marinades, sauces and eliminating gaminess"},
+                  {name:"Oyster Sauce",desc:"Thick, sweet-savoury sauce from oyster extracts — the secret of Cantonese stir-fries"},
+                  {name:"Doubanjiang",desc:"Sichuan's sacred spicy bean paste — the soul of Sichuan cooking"},
+                  {name:"Sesame Oil",desc:"Always added at the end — a finishing oil, never for cooking at high heat"},
+                  {name:"Five Spice",desc:"Star anise, cinnamon, cloves, fennel and Sichuan pepper — the aroma of Chinese cooking"},
+                  {name:"Sichuan Peppercorn",desc:"Not pepper at all — a citrus family berry that creates unique numbing ma sensation"},
+                  {name:"Dried Chilli",desc:"Facing heaven chillies and Sichuan chillies — dried for stir-fries, fresh for heat"},
+                  {name:"Black Vinegar",desc:"Chinkiang vinegar — malty, complex, used in dumplings and braises"},
+                  {name:"Cornstarch",desc:"Velveting ingredient for silky meat — also thickens sauces and creates glossy finishes"},
+                  {name:"Fermented Black Beans",desc:"Intensely savoury preserved beans — the base of black bean sauce"},
+                  {name:"Hoisin Sauce",desc:"Sweet, thick plum-based sauce — Peking duck's essential companion"},
+                ].map(i=>(
+                  <div key={i.name} style={{background:"#FDF5F5",borderRadius:"8px",padding:"0.9rem",border:"1px solid #f0dede"}}>
+                    <strong style={{color:"#8B1A1A",fontSize:"0.85rem",display:"block"}}>{i.name}</strong>
+                    <p style={{fontSize:"0.75rem",color:"#666",marginTop:"0.3rem",lineHeight:1.5}}>{i.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Cooking Techniques */}
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#8B1A1A",marginBottom:"1rem",fontSize:"1.3rem"}}>🔥 Essential Chinese Cooking Techniques</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {tech:"Wok Hei (鑊氣)",desc:"The breath of the wok — the smoky, slightly charred flavour only achievable at extremely high heat in a well-seasoned wok"},
+                  {tech:"Velveting (上漿)",desc:"Marinating meat in egg white and cornstarch before cooking — creates silky, tender texture impossible to achieve otherwise"},
+                  {tech:"Red Braising (紅燒)",desc:"Slow braising in soy sauce, rice wine and sugar until deeply mahogany coloured and meltingly tender"},
+                  {tech:"Bang Bang (拍)",desc:"Smashing vegetables like cucumber with the flat of a knife — breaks cell walls to absorb dressings better"},
+                  {tech:"Dry Frying (乾炒)",desc:"Frying without oil or with very little oil until ingredients are slightly charred and concentrated"},
+                  {tech:"Twice Cooking (回鍋)",desc:"Boiling then stir-frying — creates a distinctive texture and allows deeply flavoured sauce to penetrate"},
+                ].map(t=>(
+                  <div key={t.tech} style={{background:"#FDF5F5",borderRadius:"8px",padding:"1rem",borderLeft:"3px solid #8B1A1A"}}>
+                    <strong style={{color:"#8B1A1A",fontSize:"0.88rem",display:"block"}}>{t.tech}</strong>
+                    <p style={{fontSize:"0.78rem",color:"#666",marginTop:"0.4rem",lineHeight:1.6}}>{t.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Dim Sum Guide */}
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#8B1A1A",marginBottom:"0.5rem",fontSize:"1.3rem"}}>🥟 The World of Dim Sum</h3>
+              <p style={{lineHeight:1.8,color:"#444",marginBottom:"1rem",fontSize:"0.9rem"}}>Dim sum — literally "touch the heart" — is the Cantonese tradition of yum cha (drinking tea) accompanied by small dishes. Originating in teahouses along the Silk Road, it evolved into one of the world's great culinary traditions. A proper dim sum brunch can feature over 100 different items.</p>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {item:"Har Gow",desc:"Translucent shrimp dumplings — the benchmark dish by which a dim sum chef is judged"},
+                  {item:"Siu Mai",desc:"Open-topped pork and prawn dumplings with a bright orange roe crown"},
+                  {item:"Char Siu Bao",desc:"BBQ pork buns — both steamed (fluffy) and baked (glazed) versions"},
+                  {item:"Cheung Fun",desc:"Silky rice noodle rolls filled with prawn, beef or char siu, doused in soy sauce"},
+                  {item:"Egg Tart",desc:"Flaky pastry shell holding a smooth, barely-set egg custard — Macanese-Portuguese influence"},
+                  {item:"Turnip Cake",desc:"Pan-fried rice flour cake with daikon and dried shrimp — crispy outside, soft inside"},
+                  {item:"Chicken Feet",desc:"Phoenix claws — braised in black bean sauce until gelatinously tender"},
+                  {item:"Lo Mai Gai",desc:"Glutinous rice with chicken and sausage wrapped in a fragrant lotus leaf"},
+                ].map(d=>(
+                  <div key={d.item} style={{background:"#FDF5F5",borderRadius:"8px",padding:"0.9rem",borderLeft:"3px solid #C9922A"}}>
+                    <strong style={{color:"#C9922A",fontSize:"0.85rem"}}>{d.item}</strong>
+                    <p style={{fontSize:"0.75rem",color:"#666",marginTop:"0.3rem",lineHeight:1.5}}>{d.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Dining Customs */}
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#8B1A1A",marginBottom:"1rem",fontSize:"1.3rem"}}>🥢 Dining Culture & Etiquette</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(230px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {rule:"Lazy Susan",desc:"The rotating centrepiece of Chinese round tables — dishes are shared by all and spun to reach everyone"},
+                  {rule:"Tea Culture",desc:"Tea is poured for elders first, then working down by age — tap two fingers to say thank you without interrupting conversation"},
+                  {rule:"Bones on table",desc:"It is perfectly acceptable to place bones and shells on the table or a side plate — never in your rice bowl"},
+                  {rule:"Pouring alcohol",desc:"Never pour your own drink. Fill others' glasses and someone will fill yours. Gan bei means bottoms up"},
+                  {rule:"Offering food",desc:"Placing choice morsels in someone else's bowl is a high compliment — use the reverse end of your chopsticks"},
+                  {rule:"Finishing your bowl",desc:"In some regions, emptying your bowl signals you want more. In others, leaving a little shows the host provided abundantly"},
+                  {rule:"Fish etiquette",desc:"Never flip a whole fish at the table — in fishing communities it symbolises a boat capsizing"},
+                  {rule:"Ordering culture",desc:"Order more dishes than people — generosity is the essence of Chinese hospitality"},
+                ].map(c=>(
+                  <div key={c.rule} style={{background:"#FDF5F5",borderRadius:"8px",padding:"0.9rem",borderLeft:"3px solid #8B1A1A"}}>
+                    <strong style={{color:"#8B1A1A",fontSize:"0.85rem",display:"block"}}>{c.rule}</strong>
+                    <p style={{fontSize:"0.78rem",color:"#666",marginTop:"0.3rem",lineHeight:1.6}}>{c.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Festival Foods */}
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#8B1A1A",marginBottom:"1rem",fontSize:"1.3rem"}}>🎊 Festival & Celebration Foods</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {festival:"🧧 Chinese New Year",foods:"Dumplings (jiaozi) symbolise wealth, whole fish for abundance, tang yuan for family unity, nian gao for prosperity"},
+                  {festival:"🥮 Mid-Autumn Festival",foods:"Mooncakes filled with lotus paste and salted egg yolk — eaten while gazing at the full moon"},
+                  {festival:"🐉 Dragon Boat Festival",foods:"Zongzi — glutinous rice stuffed with pork and wrapped in bamboo leaves to commemorate poet Qu Yuan"},
+                  {festival:"⛄ Winter Solstice (Dongzhi)",foods:"Tang yuan — glutinous rice balls in sweet ginger soup — symbolising family reunion"},
+                  {festival:"🎂 Birthdays",foods:"Long-life noodles (changshou mian) — never cut — eaten unbroken to ensure longevity"},
+                  {festival:"👶 Red Egg Ceremony",foods:"Red-dyed hard boiled eggs given to guests at a baby's one-month celebration — red symbolises luck"},
+                ].map(f=>(
+                  <div key={f.festival} style={{background:"#FDF5F5",borderRadius:"8px",padding:"0.9rem",border:"1px solid #f0dede"}}>
+                    <strong style={{color:"#8B1A1A",fontSize:"0.85rem",display:"block",marginBottom:"0.3rem"}}>{f.festival}</strong>
+                    <p style={{fontSize:"0.76rem",color:"#666",lineHeight:1.5}}>{f.foods}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Must Try */}
+            <div style={{background:"linear-gradient(135deg,#8B1A1A,#5C0E0E)",borderRadius:"12px",padding:"1.8rem",marginBottom:"2rem",color:"white"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",marginBottom:"1rem",fontSize:"1.3rem"}}>⭐ 10 Must-Try Chinese Dishes</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:"0.6rem"}}>
+                {[
+                  "🦆 Peking Duck — Beijing's greatest imperial dish",
+                  "🥟 Xiaolongbao — Shanghai's legendary soup dumplings",
+                  "🌶️ Mapo Tofu — Sichuan's silky, fiery masterpiece",
+                  "🍜 Dan Dan Noodles — street food of Chengdu",
+                  "🥩 Red Braised Pork — Mao's beloved hong shao rou",
+                  "🫕 Sichuan Hot Pot — the communal fire pot experience",
+                  "🍱 Dim Sum Brunch — yum cha at its finest",
+                  "🍚 Claypot Rice — Cantonese street food perfection",
+                  "🐟 Sichuan Boiled Fish — fiery, silky, numbing",
+                  "🥮 Mooncake — Mid-Autumn Festival's iconic sweet",
+                ].map((d,i)=>(
+                  <div key={i} style={{background:"rgba(255,255,255,0.12)",borderRadius:"8px",padding:"0.7rem",fontSize:"0.82rem",lineHeight:1.5}}>{d}</div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{textAlign:"center",paddingBottom:"2rem"}}>
+              <button onClick={()=>{setChineseGuidePage(false);setChinesePage(true);}} style={{background:"#8B1A1A",color:"white",border:"none",padding:"0.9rem 2.5rem",borderRadius:"25px",fontSize:"1rem",fontWeight:600,cursor:"pointer"}}>
+                🥢 Browse All Chinese Recipes →
+              </button>
+            </div>
+          </div>
         </div>
       )}
 
