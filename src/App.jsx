@@ -312,11 +312,13 @@ import {
   maharashtraCuisineData,
   punjabCuisineData,
   chineseCuisineData,
+} from "./indianData.js";
+import {
   japaneseCuisineData,
   thaiCuisineData,
   koreanCuisineData,
   vietnameseCuisineData,
-} from "./asianCuisineData.js";
+} from "./asianData.js";
 
 function toSlug(str) {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
