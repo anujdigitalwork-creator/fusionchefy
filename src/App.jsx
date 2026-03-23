@@ -575,7 +575,7 @@ function FusionChefAI() {
             <div className="indian-grid">
               {filtered.map((dish,i)=>(
                 <div key={i} className="indian-card" onClick={()=>{
-                  window.location.href=`/cuisine/${name.toLowerCase()}/${dish.category.toLowerCase().replace(/[^a-z0-9]+/g,"-")}/${dish.dish_name.toLowerCase().replace(/[^a-z0-9]+/g,"-")}`;
+                  window.location.href=`/cuisine/${name.toLowerCase()}/${toSlug(dish.category)}/${toSlug(dish.dish_name)}`;
                 }}>
                   <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
                     {dish.img ? <img src={dish.img} alt={dish.dish_name} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}} /> : null}
@@ -803,7 +803,7 @@ function FusionChefAI() {
                         <div key={i} className="rdb-card" onClick={()=>{
                           setRecipeDB(false);
                           const cuisineName=(dish.state||dish.cuisine||"indian").toLowerCase();
-                          window.location.href=`/cuisine/${cuisineName}/${dish.category.toLowerCase().replace(/[^a-z0-9]+/g,"-")}/${dish.dish_name.toLowerCase().replace(/[^a-z0-9]+/g,"-")}`;
+                          window.location.href=`/cuisine/${cuisineName}/${toSlug(dish.category)}/${toSlug(dish.dish_name)}`;
                         }}>
                           <div className="rdb-card-img" style={{padding:0,overflow:"hidden"}}>
                             {dish.img?<img src={dish.img} alt={dish.dish_name} style={{width:"100%",height:"100%",objectFit:"cover"}}/>:<span>{cardEmojis[dish.category]||"🍽"}</span>}
@@ -870,7 +870,7 @@ function FusionChefAI() {
               return filtered.length===0?<div className="indian-empty">🔍 No dishes found.</div>:(
                 <div className="indian-grid">
                   {filtered.map((dish,i)=>(
-                    <div key={i} className="indian-card" onClick={()=>{window.location.href=`/cuisine/indian/${dish.category.toLowerCase().replace(/[^a-z0-9]+/g,"-")}/${dish.dish_name.toLowerCase().replace(/[^a-z0-9]+/g,"-")}`;  }}>
+                    <div key={i} className="indian-card" onClick={()=>{window.location.href=`/cuisine/indian/${toSlug(dish.category)}/${toSlug(dish.dish_name)}`;}}>
                       <div className="indian-card-img" style={{padding:0,overflow:"hidden"}}>
                         {dish.img?<img src={dish.img} alt={dish.dish_name} style={{width:"100%",height:"100%",objectFit:"cover"}}/>:<span>{cardEmojis[dish.category]||"🍽"}</span>}
                       </div>
@@ -918,7 +918,7 @@ function FusionChefAI() {
               return filtered.length===0?<div className="indian-empty">🔍 No dishes found.</div>:(
                 <div className="indian-grid">
                   {filtered.map((dish,i)=>(
-                    <div key={i} className="indian-card" onClick={()=>{window.location.href=`/cuisine/maharashtra/${dish.category.toLowerCase().replace(/[^a-z0-9]+/g,"-")}/${dish.dish_name.toLowerCase().replace(/[^a-z0-9]+/g,"-")}`;  }}>
+                    <div key={i} className="indian-card" onClick={()=>{window.location.href=`/cuisine/maharashtra/${toSlug(dish.category)}/${toSlug(dish.dish_name)}`;}}>
                       <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
                         {dish.img?<img src={dish.img} alt={dish.dish_name} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}}/>:null}
                         <div style={{display:dish.img?"none":"flex",width:"100%",height:"100%",alignItems:"center",justifyContent:"center",flexDirection:"column",background:`linear-gradient(135deg, ${cardGradients[dish.category]||"#E8621A, #C9922A"})`}}>
@@ -969,7 +969,7 @@ function FusionChefAI() {
               return filtered.length===0?<div className="indian-empty">🔍 No dishes found.</div>:(
                 <div className="indian-grid">
                   {filtered.map((dish,i)=>(
-                    <div key={i} className="indian-card" onClick={()=>{window.location.href=`/cuisine/punjab/${dish.category.toLowerCase().replace(/[^a-z0-9]+/g,"-")}/${dish.dish_name.toLowerCase().replace(/[^a-z0-9]+/g,"-")}`;  }}>
+                    <div key={i} className="indian-card" onClick={()=>{window.location.href=`/cuisine/punjab/${toSlug(dish.category)}/${toSlug(dish.dish_name)}`;}}>
                       <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
                         {dish.img?<img src={dish.img} alt={dish.dish_name} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}}/>:null}
                         <div style={{display:dish.img?"none":"flex",width:"100%",height:"100%",alignItems:"center",justifyContent:"center",flexDirection:"column",background:`linear-gradient(135deg, ${cardGradients[dish.category]||"#4A7C59, #2E7D32"})`}}>
