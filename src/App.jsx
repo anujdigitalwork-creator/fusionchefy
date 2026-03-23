@@ -13,6 +13,7 @@ import {
   vietnameseCuisineData,
 } from "./asianData.js";
 
+
 const GA_ID = "G-6MVKQHR38Y";
 function injectGA() {
   if (document.getElementById("ga-script")) return;
@@ -349,6 +350,7 @@ function FusionChefAI() {
   const [maharashtraGuidePage, setMaharashtraGuidePage] = useState(false);
   const [japaneseGuidePage, setJapaneseGuidePage] = useState(false);
   const [chineseGuidePage, setChineseGuidePage] = useState(false);
+  const [thaiGuidePage, setThaiGuidePage] = useState(false);
   const [maharashtraCategory, setMaharashtraCategory] = useState("All");
   const [maharashtraSearch, setMaharashtraSearch] = useState("");
   const [maharashtraModal, setMaharashtraModal] = useState(null);
@@ -394,7 +396,7 @@ function FusionChefAI() {
   useEffect(() => {
     const pages = [
       [indianPage,"Indian Cuisine"],[maharashtraPage,"Maharashtra Cuisine"],[punjabPage,"Punjab Cuisine"],
-      [maharashtraGuidePage,"Maharashtra Guide"],[punjabGuidePage,"Punjab Guide"],[japaneseGuidePage,"Japanese Guide"],[chineseGuidePage,"Chinese Guide"],
+      [maharashtraGuidePage,"Maharashtra Guide"],[punjabGuidePage,"Punjab Guide"],[japaneseGuidePage,"Japanese Guide"],[chineseGuidePage,"Chinese Guide"],[thaiGuidePage,"Thai Guide"],
       [aboutPage,"About Us"],[contactPage,"Contact Us"],[privacyPage,"Privacy Policy"],
       [termsPage,"Terms of Use"],[careersPage,"Careers"],[cuisineExplorer,"Cuisine Explorer"],[recipeDB,"Recipe Database"],
       [chinesePage,"Chinese Cuisine"],[japanesePage,"Japanese Cuisine"],[thaiPage,"Thai Cuisine"],
@@ -404,10 +406,10 @@ function FusionChefAI() {
     const title = active ? `Fusion Chef – ${active[1]}` : "Fusion Chef – 200+ Recipes from Every Corner of the World";
     document.title = title;
     gtagEvent("page_view", { page_title: title, page_location: window.location.href });
-  }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
+  }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
 
   useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, []);
-  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
+  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
 
   const scrollToSection = (id) => {
     if (id === "cuisine-explorer") { setCuisineExplorer(true); setRecipeDB(false); return; }
@@ -835,7 +837,7 @@ function FusionChefAI() {
       {/* ── ASIAN CUISINE PAGES (shared renderer) ── */}
       {chinesePage && renderCuisinePage({ data: chineseCuisineData, name: "Chinese", flag: "🇨🇳", color: "#8B1A1A", setPage: setChinesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Rice Preparations","Desserts"], guideBtn: <button onClick={()=>{setChinesePage(false);setChineseGuidePage(true);}} style={{background:"rgba(139,26,26,0.15)",border:"1px solid #8B1A1A",color:"#8B1A1A",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
       {japanesePage && renderCuisinePage({ data: japaneseCuisineData, name: "Japanese", flag: "🇯🇵", color: "#BC002D", setPage: setJapanesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Sushi","Appetizers","Soups","Salads","Main Courses","Rice Preparations","Desserts"], guideBtn: <button onClick={()=>{setJapanesePage(false);setJapaneseGuidePage(true);}} style={{background:"rgba(188,0,45,0.15)",border:"1px solid #BC002D",color:"#BC002D",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
-      {thaiPage && renderCuisinePage({ data: thaiCuisineData, name: "Thai", flag: "🇹🇭", color: "#1a3a7a", setPage: setThaiPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
+      {thaiPage && renderCuisinePage({ data: thaiCuisineData, name: "Thai", flag: "🇹🇭", color: "#1a3a7a", setPage: setThaiPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"], guideBtn: <button onClick={()=>{setThaiPage(false);setThaiGuidePage(true);}} style={{background:"rgba(26,58,122,0.15)",border:"1px solid #1a3a7a",color:"#1a3a7a",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
       {koreanPage && renderCuisinePage({ data: koreanCuisineData, name: "Korean", flag: "🇰🇷", color: "#003478", setPage: setKoreanPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
       {vietnamesePage && renderCuisinePage({ data: vietnameseCuisineData, name: "Vietnamese", flag: "🇻🇳", color: "#9B1B30", setPage: setVietnamesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
 
@@ -994,6 +996,184 @@ function FusionChefAI() {
         </div>
       )}
 
+
+
+      {/* ── THAI CUISINE GUIDE ── */}
+      {thaiGuidePage && (
+        <div className="full-page" style={{background:"#FDFAF6"}}>
+          <div className="full-page-header" style={{background:"#1a3a7a"}}>
+            <button className="back-btn" onClick={()=>setThaiGuidePage(false)}>← Back</button>
+            <button className="back-btn" style={{marginLeft:"auto",background:"rgba(255,255,255,0.15)"}} onClick={()=>{setThaiGuidePage(false);setThaiPage(true);}}>🍜 Browse Recipes</button>
+            <h1 style={{color:"white"}}>🇹🇭 Thai <em>Cuisine Guide</em></h1>
+          </div>
+          <div className="full-page-content" style={{maxWidth:"860px",margin:"0 auto",padding:"2rem 1.5rem"}}>
+
+            {/* Hero */}
+            <div style={{background:"linear-gradient(135deg,#1a3a7a,#C0392B)",borderRadius:"16px",padding:"2.5rem",color:"white",marginBottom:"2rem",position:"relative",overflow:"hidden"}}>
+              <div style={{position:"absolute",right:"-20px",top:"-20px",fontSize:"8rem",opacity:0.1}}>🐘</div>
+              <div style={{fontSize:"0.8rem",letterSpacing:"3px",opacity:0.8,marginBottom:"0.5rem"}}>COMPLETE GUIDE</div>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"2rem",marginBottom:"0.8rem",color:"white"}}>Land of Smiles — Thailand's Magnificent Cuisine</h2>
+              <p style={{opacity:0.9,lineHeight:1.7,maxWidth:"580px"}}>Thai cuisine is a magnificent balancing act — simultaneously sweet, sour, salty, spicy and bitter in every bite. Rooted in royal court traditions and street food culture, it is one of the world's most complex, aromatic and immediately loveable food traditions.</p>
+              <div style={{display:"flex",gap:"1rem",marginTop:"1.5rem",flexWrap:"wrap"}}>
+                {["🍜 Pad Thai","🍛 Green Curry","🥗 Som Tam","🫙 Tom Yum","🥭 Mango Sticky Rice"].map(t=>(
+                  <span key={t} style={{background:"rgba(255,255,255,0.2)",padding:"0.3rem 0.8rem",borderRadius:"20px",fontSize:"0.8rem"}}>{t}</span>
+                ))}
+              </div>
+            </div>
+
+            {/* History */}
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#1a3a7a",marginBottom:"1rem",fontSize:"1.3rem"}}>📜 History & Origins</h3>
+              <p style={{lineHeight:1.8,color:"#444",marginBottom:"1rem"}}>Thai cuisine has been shaped by over 1,000 years of history, royal patronage and diverse cultural influences. The Kingdom of Sukhothai (13th century) established the foundations of Thai food culture, while the Ayutthaya period (1351–1767) saw the arrival of Portuguese missionaries who introduced the chilli pepper — which transformed Thai cooking forever.</p>
+              <p style={{lineHeight:1.8,color:"#444",marginBottom:"1rem"}}>The royal court cuisine of the Bangkok period (1782–present) refined Thai cooking to an art form. Royal chefs developed intricate carved fruit and vegetable decorations, multi-layered flavour profiles and the philosophy of balance that defines Thai cuisine today. Dishes like miang kham and sangkaya originate directly from the royal court.</p>
+              <p style={{lineHeight:1.8,color:"#444"}}>The 20th century saw Pad Thai promoted as a national dish during the 1930s, and Thailand's street food culture blossom into what is now widely regarded as the world's greatest street food scene. Bangkok's street food was awarded UNESCO recognition in 2017.</p>
+            </div>
+
+            {/* Five Flavours */}
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#1a3a7a",marginBottom:"1rem",fontSize:"1.3rem"}}>⚖️ The Five Flavours of Thai Cooking</h3>
+              <p style={{lineHeight:1.8,color:"#444",marginBottom:"1rem",fontSize:"0.9rem"}}>Every authentic Thai dish achieves a precise balance of all five flavours simultaneously. No single flavour dominates — they harmonise.</p>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(150px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {flavour:"🍋 Sour",source:"Lime juice, tamarind, kaffir lime, lemongrass",role:"Brightens and lifts — the most important flavour in Thai cooking"},
+                  {flavour:"🧂 Salty",source:"Fish sauce (nam pla), shrimp paste, oyster sauce",role:"Provides depth and umami — fish sauce is the soul of Thai cooking"},
+                  {flavour:"🌶️ Spicy",source:"Bird's eye chilli, dried chilli, chilli paste",role:"Creates heat and stimulates appetite — adjusted to personal tolerance"},
+                  {flavour:"🍯 Sweet",source:"Palm sugar, coconut milk, coconut sugar",role:"Rounds and balances — palm sugar has a unique caramel depth"},
+                  {flavour:"🌿 Bitter",source:"Bitter melon, kaffir lime peel, holy basil stems",role:"Adds complexity and aids digestion — often from fresh herbs"},
+                ].map(f=>(
+                  <div key={f.flavour} style={{background:"#F0F4FF",borderRadius:"8px",padding:"1rem",textAlign:"center",border:"1px solid #d0daf0"}}>
+                    <div style={{fontSize:"1.3rem",marginBottom:"0.4rem"}}>{f.flavour.split(" ")[0]}</div>
+                    <strong style={{color:"#1a3a7a",fontSize:"0.85rem",display:"block"}}>{f.flavour.split(" ").slice(1).join(" ")}</strong>
+                    <p style={{fontSize:"0.72rem",color:"#666",marginTop:"0.3rem",lineHeight:1.5}}>{f.source}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Regional Cuisines */}
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#1a3a7a",marginBottom:"1rem",fontSize:"1.3rem"}}>🗺️ Four Regional Cuisines</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(240px,1fr))",gap:"1rem"}}>
+                {[
+                  {region:"🏙️ Central Thailand",city:"Bangkok",flavor:"Balanced, coconut-rich, aromatic",famous:"Pad Thai, green curry, tom yum, pad kra pao",note:"The royal court cuisine — most internationally known, uses coconut milk generously"},
+                  {region:"🌶️ Northeastern (Isaan)",city:"Khon Kaen",flavor:"Bold, spicy, fermented, sour",famous:"Som tam, larb, sticky rice, grilled chicken, nam tok",note:"Thailand's rustic heartland — much spicier with fermented fish (pla ra) as the base"},
+                  {region:"🏔️ Northern Thailand",city:"Chiang Mai",flavor:"Mild, herbal, no coconut milk",famous:"Khao soi, sai oua sausage, nam prik noom, gaeng om",note:"Influenced by Burma and Yunnan China — uses dill and other herbs unique in Thai cooking"},
+                  {region:"🌊 Southern Thailand",city:"Phuket",flavor:"Very spicy, coconut-heavy, turmeric",famous:"Massaman curry, khao yam, gaeng tai pla, pad sataw",note:"Muslim-influenced in the deep south — uses more spices and seafood than other regions"},
+                ].map(r=>(
+                  <div key={r.region} style={{background:"#F0F4FF",borderRadius:"10px",padding:"1.2rem",border:"1px solid #d0daf0"}}>
+                    <strong style={{color:"#1a3a7a",display:"block",marginBottom:"0.2rem"}}>{r.region}</strong>
+                    <div style={{fontSize:"0.72rem",color:"#888",marginBottom:"0.3rem"}}>{r.city}</div>
+                    <div style={{fontSize:"0.78rem",color:"#C9922A",fontWeight:600,marginBottom:"0.3rem"}}>Flavour: {r.flavor}</div>
+                    <div style={{fontSize:"0.76rem",color:"#555",marginBottom:"0.4rem"}}>🍽 {r.famous}</div>
+                    <p style={{fontSize:"0.74rem",color:"#777",lineHeight:1.5,fontStyle:"italic"}}>{r.note}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Essential Ingredients */}
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#1a3a7a",marginBottom:"1rem",fontSize:"1.3rem"}}>🌿 The Holy Trinity & Essential Ingredients</h3>
+              <div style={{background:"#F0F4FF",borderRadius:"8px",padding:"1rem",marginBottom:"1rem",border:"1px solid #d0daf0"}}>
+                <strong style={{color:"#1a3a7a"}}>The Aromatic Holy Trinity:</strong>
+                <span style={{fontSize:"0.85rem",color:"#444",marginLeft:"0.5rem"}}>🍋 Lemongrass + 🌿 Galangal + 🍃 Kaffir Lime Leaves — these three form the backbone of most Thai soups and curries</span>
+              </div>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(160px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {name:"Fish Sauce (Nam Pla)",desc:"The salt of Thailand — fermented fish liquid that adds deep umami to everything"},
+                  {name:"Shrimp Paste (Kapi)",desc:"Pungent fermented shrimp — the base of most curry pastes and dipping sauces"},
+                  {name:"Palm Sugar",desc:"Unrefined sugar from palm trees — deeper, more caramel-like than white sugar"},
+                  {name:"Tamarind",desc:"Sour fruit pulp — essential in pad thai, massaman and many sauces"},
+                  {name:"Bird's Eye Chilli",desc:"Tiny but ferociously hot — the chilli of choice in Thai cooking"},
+                  {name:"Holy Basil (Kra Pao)",desc:"Peppery, clove-scented basil — entirely different from Italian or Thai sweet basil"},
+                  {name:"Pandan Leaves",desc:"Fragrant tropical leaf — used to perfume coconut desserts and sticky rice"},
+                  {name:"Kaffir Lime",desc:"Both the zest and leaves are used — intensely aromatic, cannot be substituted"},
+                  {name:"Galangal",desc:"Related to ginger but piney and medicinal — cannot be substituted with ginger"},
+                  {name:"Lemongrass",desc:"Fragrant citrus grass — used bruised in soups, finely sliced in salads"},
+                  {name:"Coconut Milk",desc:"The creamer of Thai curries — use full-fat for authentic richness"},
+                  {name:"Rice (Jasmine & Sticky)",desc:"Two types: fragrant jasmine rice in Central/South, glutinous sticky rice in North/Isaan"},
+                ].map(i=>(
+                  <div key={i.name} style={{background:"#F0F4FF",borderRadius:"8px",padding:"0.9rem",border:"1px solid #d0daf0"}}>
+                    <strong style={{color:"#1a3a7a",fontSize:"0.82rem",display:"block"}}>{i.name}</strong>
+                    <p style={{fontSize:"0.74rem",color:"#666",marginTop:"0.3rem",lineHeight:1.5}}>{i.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Curry Paste Guide */}
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#1a3a7a",marginBottom:"1rem",fontSize:"1.3rem"}}>🍛 Guide to Thai Curry Pastes</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {paste:"Green Curry (Gaeng Keow Wan)",heat:"🌶🌶🌶🌶",color:"Bright green",base:"Fresh green chillies, galangal, lemongrass",note:"Hottest curry — fresh chillies give vivid colour and sharp heat"},
+                  {paste:"Red Curry (Gaeng Daeng)",heat:"🌶🌶🌶",color:"Deep red",base:"Dried red chillies, galangal, shrimp paste",note:"Most versatile — works with chicken, beef, seafood or vegetables"},
+                  {paste:"Yellow Curry (Gaeng Leuang)",heat:"🌶🌶",color:"Golden yellow",base:"Turmeric, cumin, dried chilli",note:"Influenced by Indian curry — mildest with warming spices"},
+                  {paste:"Panang",heat:"🌶🌶",color:"Dark red",base:"Dried chilli, roasted peanuts, galangal",note:"Thick paste with peanuts — creates rich dry-style curry"},
+                  {paste:"Massaman",heat:"🌶",color:"Brown",base:"Dried chilli, Persian spices, roasted peanuts",note:"Mildest — unique blend of Southeast Asian and Middle Eastern spices"},
+                  {paste:"Nam Prik Pao",heat:"🌶🌶",color:"Dark brown",base:"Roasted dried chilli, garlic, shallots",note:"Roasted chilli paste — added to Tom Yum for depth and richness"},
+                ].map(p=>(
+                  <div key={p.paste} style={{background:"#F0F4FF",borderRadius:"8px",padding:"1rem",border:"1px solid #d0daf0"}}>
+                    <strong style={{color:"#1a3a7a",fontSize:"0.82rem",display:"block",marginBottom:"0.2rem"}}>{p.paste}</strong>
+                    <div style={{fontSize:"0.75rem",marginBottom:"0.3rem"}}>{p.heat} Heat level</div>
+                    <div style={{fontSize:"0.75rem",color:"#555",marginBottom:"0.3rem"}}><strong>Base:</strong> {p.base}</div>
+                    <p style={{fontSize:"0.73rem",color:"#777",lineHeight:1.5,fontStyle:"italic"}}>{p.note}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Street Food */}
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#1a3a7a",marginBottom:"1rem",fontSize:"1.3rem"}}>🛵 Thai Street Food Culture</h3>
+              <p style={{lineHeight:1.8,color:"#444",marginBottom:"1rem",fontSize:"0.9rem"}}>Thailand has the world's most celebrated street food scene. Bangkok's streets, night markets and food courts operate 24 hours, serving food so good that Michelin has awarded stars to humble street carts. The concept of eating at home is almost foreign — Thais eat out for almost every meal.</p>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {dish:"Pad Thai",location:"Nationwide",desc:"The national noodle dish — every city has its definitive version"},
+                  {dish:"Som Tam",location:"Everywhere",desc:"Green papaya salad pounded to order in a mortar — can be adjusted to your heat level"},
+                  {dish:"Mango Sticky Rice",location:"Night Markets",desc:"Seasonal in mango season — some vendors have 2-hour queues"},
+                  {dish:"Boat Noodles",location:"Bangkok canals",desc:"Tiny bowls of intensely flavoured broth — eat 10 in one sitting"},
+                  {dish:"Roti",location:"Muslim areas",desc:"Flaky flatbread with condensed milk or egg — Southern Thai street food icon"},
+                  {dish:"Pad Kra Pao",location:"Every corner",desc:"Holy basil stir-fry — the most ordered delivery food in Thailand"},
+                ].map(s=>(
+                  <div key={s.dish} style={{background:"#F0F4FF",borderRadius:"8px",padding:"0.9rem",borderLeft:"3px solid #1a3a7a"}}>
+                    <strong style={{color:"#1a3a7a",fontSize:"0.85rem"}}>{s.dish}</strong>
+                    <div style={{fontSize:"0.72rem",color:"#C9922A",marginTop:"0.2rem",fontWeight:600}}>📍 {s.location}</div>
+                    <p style={{fontSize:"0.74rem",color:"#666",marginTop:"0.3rem",lineHeight:1.5}}>{s.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Must Try */}
+            <div style={{background:"linear-gradient(135deg,#1a3a7a,#C0392B)",borderRadius:"12px",padding:"1.8rem",marginBottom:"2rem",color:"white"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",marginBottom:"1rem",fontSize:"1.3rem"}}>⭐ 10 Must-Try Thai Dishes</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:"0.6rem"}}>
+                {[
+                  "🍜 Tom Yum Goong — the soul of Thailand",
+                  "🥭 Mango Sticky Rice — Thailand's greatest dessert",
+                  "🍛 Green Curry — fiery, aromatic perfection",
+                  "🥗 Som Tam — papaya salad with attitude",
+                  "🍝 Pad Thai — the nation's favourite noodle",
+                  "🌿 Pad Kra Pao — holy basil everyday magic",
+                  "🍲 Massaman Curry — voted world's best food",
+                  "🐟 Tom Kha Gai — silky coconut chicken soup",
+                  "🥟 Tod Mun Pla — bouncy Thai fish cakes",
+                  "🍮 Sangkaya Fak Thong — pumpkin custard wonder",
+                ].map((d,i)=>(
+                  <div key={i} style={{background:"rgba(255,255,255,0.12)",borderRadius:"8px",padding:"0.7rem",fontSize:"0.82rem",lineHeight:1.5}}>{d}</div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{textAlign:"center",paddingBottom:"2rem"}}>
+              <button onClick={()=>{setThaiGuidePage(false);setThaiPage(true);}} style={{background:"#1a3a7a",color:"white",border:"none",padding:"0.9rem 2.5rem",borderRadius:"25px",fontSize:"1rem",fontWeight:600,cursor:"pointer"}}>
+                🍜 Browse All Thai Recipes →
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ── CHINESE CUISINE GUIDE ── */}
       {chineseGuidePage && (
