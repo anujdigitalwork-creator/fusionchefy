@@ -1023,7 +1023,6 @@ const chineseCuisineData = [
 
 // ─────────────────────────────────────────────────────────────────────────────
 
-
 const japaneseCuisineData = [
   // ── SUSHI ──────────────────────────────────────────────────────────────────
   { dish_name:"Nigiri Sushi", state:"Japan", cuisine:"Japanese", category:"Sushi", difficulty_level:"Hard", prep_time_minutes:60, cook_time_minutes:30, total_time_minutes:90, servings:4, short_description:"The purest form of sushi — hand-pressed vinegared rice topped with the finest slices of raw fish. Each piece is a study in balance, simplicity and technique.", ingredients:[{name:"Sushi rice",quantity:"400",unit:"g"},{name:"Rice vinegar",quantity:"4",unit:"tbsp"},{name:"Sugar",quantity:"2",unit:"tbsp"},{name:"Salt",quantity:"1",unit:"tsp"},{name:"Fresh tuna (maguro)",quantity:"200",unit:"g"},{name:"Fresh salmon",quantity:"200",unit:"g"},{name:"Wasabi paste",quantity:"2",unit:"tbsp"},{name:"Soy sauce",quantity:"4",unit:"tbsp"},{name:"Pickled ginger",quantity:"4",unit:"tbsp"}], preparation_steps:["Cook sushi rice and season with rice vinegar, sugar and salt mixture while still warm.","Fan the rice while mixing to give it a glossy shine. Cool to room temperature.","Slice fish at 45-degree angle into pieces approximately 7cm x 3cm x 5mm thick.","Wet your hands with water-vinegar mixture to prevent sticking.","Take a small ball of rice (about 15g), press firmly into an oval shape.","Dab a tiny amount of wasabi on top of the rice.","Drape fish over the rice and press gently to adhere.","Serve immediately with soy sauce and pickled ginger."], chef_notes:"The rice temperature is critical — it should be body temperature when you form nigiri. Too cold and it becomes dense, too warm and the fish deteriorates.", serving_suggestions:"Serve with soy sauce for dipping, wasabi and pickled ginger to cleanse the palate between pieces.", nutrition_estimate:{calories:"280",protein_g:"18",carbohydrates_g:"38",fat_g:"5"}, tags:["Sushi","Traditional","Japanese","Raw Fish"], img:"https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&q=80" },
@@ -1105,6 +1104,425 @@ const japaneseCuisineData = [
   { dish_name:"Mitarashi Dango", state:"Japan", cuisine:"Japanese", category:"Desserts", difficulty_level:"Medium", prep_time_minutes:20, cook_time_minutes:15, total_time_minutes:35, servings:6, short_description:"Chewy rice flour dumplings on bamboo skewers glazed with a sweet soy sauce — one of Japan's oldest street sweets, sold at temples and festivals for centuries.", ingredients:[{name:"Joshinko (rice flour)",quantity:"100",unit:"g"},{name:"Shiratamako (glutinous rice flour)",quantity:"100",unit:"g"},{name:"Water",quantity:"180",unit:"ml"},{name:"Soy sauce",quantity:"4",unit:"tbsp"},{name:"Mirin",quantity:"4",unit:"tbsp"},{name:"Sugar",quantity:"4",unit:"tbsp"},{name:"Potato starch",quantity:"1",unit:"tbsp"},{name:"Water for sauce",quantity:"100",unit:"ml"}], preparation_steps:["Mix both flours together.","Gradually add water and knead into smooth dough.","Roll into small balls slightly smaller than a marble.","Boil in water until they float, then 2 more minutes.","Transfer to ice water.","Thread 3-4 onto bamboo skewers.","Make glaze: combine soy, mirin, sugar and dissolved starch.","Heat until thickened and glossy.","Grill or pan-fry skewers until lightly browned.","Brush with warm glaze generously."], chef_notes:"The combination of two rice flours creates the perfect chewy yet tender texture. The dango should be slightly browned before glazing.", serving_suggestions:"Serve warm at room temperature. A classic Japanese festival sweet.", nutrition_estimate:{calories:"185",protein_g:"3",carbohydrates_g:"42",fat_g:"0"}, tags:["Dango","Street Food","Festival","Traditional"], img:"https://images.unsplash.com/photo-1558024920-b41e1887dc32?w=400&q=80" },
 ];
 
+const thaiCuisineData = [
+  // ── APPETIZERS ──────────────────────────────────────────────────────────────
+  {
+    dish_name: "Chicken Satay with Peanut Sauce",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Appetizers",
+    difficulty_level: "easy",
+    prep_time_minutes: 30,
+    cook_time_minutes: 15,
+    servings: 4,
+    short_description: "Tender coconut-marinated chicken skewers grilled over charcoal and served with a rich, spiced peanut sauce and tangy cucumber relish — Thailand's most exported street food snack.",
+    ingredients: [
+      { name: "Chicken breast", quantity: "500", unit: "g" },
+      { name: "Coconut milk", quantity: "200", unit: "ml" },
+      { name: "Turmeric powder", quantity: "1", unit: "tsp" },
+      { name: "Lemongrass", quantity: "2", unit: "stalks" },
+      { name: "Peanut butter", quantity: "4", unit: "tbsp" },
+      { name: "Red curry paste", quantity: "2", unit: "tbsp" },
+      { name: "Fish sauce", quantity: "2", unit: "tbsp" },
+      { name: "Palm sugar", quantity: "2", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Slice chicken into thin strips. Marinate with coconut milk, turmeric, lemongrass and fish sauce for 2 hours.",
+      "Thread onto pre-soaked bamboo skewers.",
+      "Make peanut sauce: simmer coconut milk with red curry paste, peanut butter, fish sauce and palm sugar.",
+      "Grill skewers over high heat for 3-4 minutes each side until caramelized.",
+      "Serve with warm peanut sauce and fresh cucumber relish."
+    ],
+    chef_notes: "The turmeric in the marinade gives satay its characteristic golden-yellow color. Real charcoal grilling is what creates the smoky, slightly charred exterior that defines authentic Thai satay.",
+    serving_suggestions: "Serve with ajat (cucumber relish in sweetened vinegar) and peanut sauce.",
+    flavor_profile: ["savory", "nutty", "aromatic", "slightly smoky"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80",
+    tags: ["Street Food", "Grilled", "Classic", "Party Food"]
+  },
+  {
+    dish_name: "Tod Mun Pla (Thai Fish Cakes)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Appetizers",
+    difficulty_level: "medium",
+    prep_time_minutes: 20,
+    cook_time_minutes: 15,
+    servings: 4,
+    short_description: "Bouncy, spiced Thai fish cakes made with red curry paste and kaffir lime leaves — a popular street food with a unique springy texture achieved by beating the fish paste until elastic.",
+    ingredients: [
+      { name: "White fish fillets", quantity: "400", unit: "g" },
+      { name: "Red curry paste", quantity: "2", unit: "tbsp" },
+      { name: "Kaffir lime leaves, finely sliced", quantity: "4", unit: "pieces" },
+      { name: "Long beans, sliced", quantity: "50", unit: "g" },
+      { name: "Fish sauce", quantity: "1", unit: "tbsp" },
+      { name: "Egg", quantity: "1", unit: "piece" },
+      { name: "Sugar", quantity: "1", unit: "tsp" },
+      { name: "Oil for frying", quantity: "1", unit: "cup" }
+    ],
+    preparation_steps: [
+      "Process fish fillets in a food processor until a smooth paste.",
+      "Add curry paste, fish sauce, egg and sugar. Process until the mixture becomes sticky and elastic.",
+      "Stir in kaffir lime leaves and long beans by hand.",
+      "Shape into round flat cakes about 1cm thick.",
+      "Shallow fry at 175°C for 3 minutes each side until deeply golden. Serve with sweet chili sauce."
+    ],
+    chef_notes: "The 'beating' of the paste in the processor activates the fish protein and creates the characteristic springy, bouncy texture. Under-mixed paste produces dense, heavy cakes.",
+    serving_suggestions: "Serve with sweet chili sauce and a classic cucumber relish.",
+    flavor_profile: ["spicy", "aromatic", "springy", "savory"],
+    dietary_tags: ["dairy-free", "gluten-free"],
+    img: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80",
+    tags: ["Street Food", "Seafood", "Thai Classic", "Appetizer"]
+  },
+  {
+    dish_name: "Miang Kham (Betel Leaf Wraps)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Appetizers",
+    difficulty_level: "easy",
+    prep_time_minutes: 20,
+    cook_time_minutes: 10,
+    servings: 6,
+    short_description: "Thailand's most elegant one-bite appetizer — wild betel or spinach leaves used as edible cups for a collection of fresh ingredients: dried shrimp, roasted coconut, ginger, lime, peanuts and a sweet palm sugar sauce.",
+    ingredients: [
+      { name: "Fresh betel or spinach leaves", quantity: "24", unit: "pieces" },
+      { name: "Dried shrimp", quantity: "3", unit: "tbsp" },
+      { name: "Toasted coconut", quantity: "4", unit: "tbsp" },
+      { name: "Fresh ginger, diced", quantity: "3", unit: "tbsp" },
+      { name: "Lime, diced with skin", quantity: "1", unit: "piece" },
+      { name: "Roasted peanuts", quantity: "3", unit: "tbsp" },
+      { name: "Palm sugar", quantity: "3", unit: "tbsp" },
+      { name: "Fish sauce", quantity: "2", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Make the sweet sauce: cook palm sugar, fish sauce and dried shrimp in a pan until thick.",
+      "Prepare all fresh ingredients into small, uniform pieces.",
+      "Arrange betel leaves in a cup shape on a serving platter.",
+      "Fill each leaf with a selection of all ingredients.",
+      "Add a small spoonful of the sweet sauce and fold leaf around the filling to eat in one bite."
+    ],
+    chef_notes: "Miang Kham is designed to be eaten in one or two bites — the explosion of six different flavors (bitter, sour, salty, sweet, spicy, savory) simultaneously is the whole point of the dish.",
+    serving_suggestions: "Serve as an elaborate cocktail snack or elegant party appetizer.",
+    flavor_profile: ["complex", "fresh", "sweet-sour-spicy", "aromatic"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80",
+    tags: ["Elegant", "Traditional", "Party Food", "One-Bite"]
+  },
+
+  // ── SOUPS ────────────────────────────────────────────────────────────────────
+  {
+    dish_name: "Tom Yum Goong (Spicy Prawn Soup)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Soups",
+    difficulty_level: "easy",
+    prep_time_minutes: 15,
+    cook_time_minutes: 15,
+    servings: 4,
+    short_description: "Thailand's most iconic soup — a fiery, sour broth fragrant with lemongrass, galangal, kaffir lime leaves and fresh chilies, loaded with plump prawns. A UNESCO-recognized culinary treasure.",
+    ingredients: [
+      { name: "Tiger prawns", quantity: "400", unit: "g" },
+      { name: "Lemongrass", quantity: "3", unit: "stalks" },
+      { name: "Galangal", quantity: "5", unit: "slices" },
+      { name: "Kaffir lime leaves", quantity: "6", unit: "pieces" },
+      { name: "Bird's eye chilies", quantity: "5", unit: "pieces" },
+      { name: "Fish sauce", quantity: "3", unit: "tbsp" },
+      { name: "Lime juice", quantity: "4", unit: "tbsp" },
+      { name: "Straw mushrooms", quantity: "150", unit: "g" }
+    ],
+    preparation_steps: [
+      "Bruise lemongrass, galangal and kaffir lime leaves. Simmer in water 10 minutes to infuse.",
+      "Add mushrooms and whole chilies to the broth.",
+      "Add prawns and cook 3 minutes until just cooked through.",
+      "Remove from heat. Season with fish sauce and lime juice — add these OFF the heat.",
+      "Garnish with coriander and serve immediately."
+    ],
+    chef_notes: "The four aromatics (lemongrass, galangal, kaffir lime leaves, chilies) are bruised rather than chopped — they flavor the broth but are NOT eaten. Add fish sauce and lime juice after removing from heat to preserve their fresh brightness.",
+    serving_suggestions: "Serve in individual bowls with steamed jasmine rice alongside.",
+    flavor_profile: ["sour", "spicy", "aromatic", "citrusy"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=400&q=80",
+    tags: ["Iconic", "Spicy", "Street Food", "UNESCO Heritage"]
+  },
+  {
+    dish_name: "Tom Kha Gai (Coconut Chicken Soup)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Soups",
+    difficulty_level: "easy",
+    prep_time_minutes: 15,
+    cook_time_minutes: 20,
+    servings: 4,
+    short_description: "The gentler, creamier sibling of Tom Yum — a fragrant coconut milk broth with chicken, galangal and mushrooms, brightened with lime and fish sauce. Rich, mellow and deeply comforting.",
+    ingredients: [
+      { name: "Chicken thighs, sliced", quantity: "400", unit: "g" },
+      { name: "Coconut milk", quantity: "400", unit: "ml" },
+      { name: "Chicken broth", quantity: "400", unit: "ml" },
+      { name: "Galangal", quantity: "5", unit: "slices" },
+      { name: "Lemongrass", quantity: "2", unit: "stalks" },
+      { name: "Kaffir lime leaves", quantity: "5", unit: "pieces" },
+      { name: "Oyster mushrooms", quantity: "150", unit: "g" },
+      { name: "Fish sauce and lime juice", quantity: "3", unit: "tbsp each" }
+    ],
+    preparation_steps: [
+      "Bring coconut milk and broth to a gentle simmer. Add bruised aromatics.",
+      "Infuse 10 minutes on low heat.",
+      "Add chicken and mushrooms. Simmer gently 8-10 minutes.",
+      "Remove from heat. Season with fish sauce, lime juice and a pinch of sugar.",
+      "Serve garnished with coriander and fresh red chili slices."
+    ],
+    chef_notes: "Never boil coconut milk vigorously — gentle simmering keeps it smooth and creamy. Boiling causes it to break and become grainy.",
+    serving_suggestions: "Serve as a soup course or over steamed rice as a light main meal.",
+    flavor_profile: ["creamy", "aromatic", "mildly spicy", "tangy"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80",
+    tags: ["Comfort Food", "Coconut", "Mild", "Classic"]
+  },
+
+  // ── SALADS ───────────────────────────────────────────────────────────────────
+  {
+    dish_name: "Som Tum (Green Papaya Salad)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Salads",
+    difficulty_level: "easy",
+    prep_time_minutes: 20,
+    cook_time_minutes: 0,
+    servings: 4,
+    short_description: "The national salad of Thailand — shredded unripe green papaya pounded with garlic, chilies, fish sauce, lime and palm sugar in a traditional wooden mortar. Bold, crunchy, fiery and refreshing.",
+    ingredients: [
+      { name: "Green papaya", quantity: "400", unit: "g" },
+      { name: "Bird's eye chilies", quantity: "3", unit: "pieces" },
+      { name: "Garlic", quantity: "3", unit: "cloves" },
+      { name: "Cherry tomatoes", quantity: "6", unit: "pieces" },
+      { name: "Long beans", quantity: "60", unit: "g" },
+      { name: "Dried shrimp", quantity: "2", unit: "tbsp" },
+      { name: "Fish sauce", quantity: "2", unit: "tbsp" },
+      { name: "Lime juice", quantity: "3", unit: "tbsp" },
+      { name: "Palm sugar", quantity: "2", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Peel and julienne green papaya using a shredder or cleaver technique.",
+      "Pound garlic and chilies in a large mortar until broken.",
+      "Add long beans and tomatoes, bruise gently (don't pulverize).",
+      "Add papaya, dried shrimp, fish sauce, lime and palm sugar. Pound and toss repeatedly.",
+      "Taste for the balance of spicy, sour, sweet and salty. Serve with sticky rice."
+    ],
+    chef_notes: "Som Tum should be pounded, not stirred — the bruising action releases the aromatic compounds. The flavor balance of spicy-sour-sweet-salty-savory is key: adjust until all four are present simultaneously.",
+    serving_suggestions: "Serve with sticky rice and grilled chicken (khao niao and gai yang).",
+    flavor_profile: ["spicy", "sour", "sweet", "crunchy", "fresh"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=400&q=80",
+    tags: ["Isaan", "National Dish", "Street Food", "Healthy"]
+  },
+  {
+    dish_name: "Larb Gai (Spicy Chicken Salad)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Salads",
+    difficulty_level: "easy",
+    prep_time_minutes: 20,
+    cook_time_minutes: 10,
+    servings: 4,
+    short_description: "Thailand's sacred national 'salad' — minced chicken tossed with toasted rice powder, fish sauce, lime, dried chilies and fresh herbs. Served at room temperature, it is the definitive dish of Northeastern Thailand.",
+    ingredients: [
+      { name: "Ground chicken", quantity: "400", unit: "g" },
+      { name: "Uncooked rice", quantity: "3", unit: "tbsp" },
+      { name: "Dried red chilies", quantity: "3", unit: "pieces" },
+      { name: "Fish sauce", quantity: "3", unit: "tbsp" },
+      { name: "Lime juice", quantity: "4", unit: "tbsp" },
+      { name: "Shallots, sliced", quantity: "4", unit: "pieces" },
+      { name: "Fresh mint and coriander", quantity: "1", unit: "large bunch" },
+      { name: "Spring onions", quantity: "3", unit: "stalks" }
+    ],
+    preparation_steps: [
+      "Dry-toast uncooked rice in a pan until golden. Grind coarsely — this is khao khua (toasted rice powder).",
+      "Toast dried chilies briefly and grind.",
+      "Cook ground chicken with a little water — do not add oil. Cook until just done.",
+      "Remove from heat. Add fish sauce, lime juice, shallots, toasted rice powder and dried chili.",
+      "Fold in fresh herbs. Serve at room temperature with fresh vegetables."
+    ],
+    chef_notes: "Toasted rice powder (khao khua) is the defining ingredient of larb — it adds a nutty crunch that is impossible to replicate with anything else. Make it fresh for each batch.",
+    serving_suggestions: "Serve with sticky rice, raw cabbage, mint and long beans.",
+    flavor_profile: ["sour", "herby", "savory", "toasty", "fresh"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1555126634-323283e090fa?w=400&q=80",
+    tags: ["Isaan", "National Salad", "Healthy", "Low Fat"]
+  },
+
+  // ── MAIN COURSES ─────────────────────────────────────────────────────────────
+  {
+    dish_name: "Pad Thai",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Main Courses",
+    difficulty_level: "medium",
+    prep_time_minutes: 20,
+    cook_time_minutes: 10,
+    servings: 4,
+    short_description: "Thailand's national noodle dish — flat rice noodles stir-fried over high heat with eggs, tofu or shrimp, in a sweet-savory tamarind-based sauce, topped with bean sprouts, peanuts and a squeeze of lime.",
+    ingredients: [
+      { name: "Flat rice noodles (sen lek)", quantity: "400", unit: "g" },
+      { name: "Tiger shrimp", quantity: "200", unit: "g" },
+      { name: "Firm tofu", quantity: "150", unit: "g" },
+      { name: "Eggs", quantity: "3", unit: "pieces" },
+      { name: "Tamarind paste", quantity: "3", unit: "tbsp" },
+      { name: "Fish sauce", quantity: "3", unit: "tbsp" },
+      { name: "Palm sugar", quantity: "2", unit: "tbsp" },
+      { name: "Bean sprouts and roasted peanuts", quantity: "1", unit: "portion" }
+    ],
+    preparation_steps: [
+      "Soak rice noodles in room-temp water 30 minutes until pliable but not soft.",
+      "Mix tamarind, fish sauce and palm sugar for the Pad Thai sauce.",
+      "Wok-fry tofu until golden. Push to side, fry shrimp briefly. Push aside.",
+      "Add noodles and sauce. Toss on high heat until noodles absorb liquid.",
+      "Push to side, scramble eggs, mix with noodles. Serve topped with bean sprouts, peanuts, lime and dried chili."
+    ],
+    chef_notes: "Wok hei (breath of the wok) requires extremely high heat — this is why restaurant Pad Thai tastes different. Cook in small portions at the highest heat to achieve the characteristic char and smokiness.",
+    serving_suggestions: "Serve with a small dish of fish sauce, sugar, dried chili and vinegar for self-seasoning.",
+    flavor_profile: ["sweet", "sour", "savory", "nutty", "smoky"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=400&q=80",
+    tags: ["National Dish", "Street Food", "Noodles", "Iconic"]
+  },
+  {
+    dish_name: "Thai Green Curry (Gaeng Keow Wan)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Main Courses",
+    difficulty_level: "medium",
+    prep_time_minutes: 20,
+    cook_time_minutes: 25,
+    servings: 4,
+    short_description: "The jewel of Thai cuisine — chicken or vegetables in a vibrant, aromatic green curry sauce made from fresh green chilies, lemongrass, galangal and coconut milk. The greenest, most fragrant of all Thai curries.",
+    ingredients: [
+      { name: "Chicken thighs", quantity: "500", unit: "g" },
+      { name: "Coconut milk", quantity: "400", unit: "ml" },
+      { name: "Green curry paste", quantity: "3", unit: "tbsp" },
+      { name: "Thai eggplants", quantity: "200", unit: "g" },
+      { name: "Kaffir lime leaves", quantity: "6", unit: "pieces" },
+      { name: "Fish sauce", quantity: "3", unit: "tbsp" },
+      { name: "Palm sugar", quantity: "1", unit: "tbsp" },
+      { name: "Thai basil leaves", quantity: "1", unit: "large handful" }
+    ],
+    preparation_steps: [
+      "Fry green curry paste in thick coconut cream skimmed from the top of the can, until oil separates.",
+      "Add chicken and cook until no longer pink on outside.",
+      "Add remaining coconut milk and eggplants. Simmer 15 minutes.",
+      "Season with fish sauce and palm sugar. Tear in kaffir lime leaves.",
+      "Remove from heat and fold in fresh Thai basil. Serve with jasmine rice."
+    ],
+    chef_notes: "Frying the curry paste in thick coconut cream (not oil) is the authentic technique — it 'blooms' the paste and creates a richer, more deeply flavored curry. Thai basil goes in at the very end, off the heat.",
+    serving_suggestions: "Serve with steamed jasmine rice and a refreshing cucumber salad.",
+    flavor_profile: ["aromatic", "creamy", "spicy", "fresh", "herby"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=400&q=80",
+    tags: ["Iconic", "Curry", "Coconut", "Aromatic"]
+  },
+  {
+    dish_name: "Khao Pad (Thai Fried Rice)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Main Courses",
+    difficulty_level: "easy",
+    prep_time_minutes: 10,
+    cook_time_minutes: 10,
+    servings: 4,
+    short_description: "Thailand's everyday fried rice — a rapid wok-tossed dish of day-old jasmine rice with egg, vegetables and your choice of protein in an umami-rich oyster and fish sauce seasoning.",
+    ingredients: [
+      { name: "Day-old jasmine rice", quantity: "4", unit: "cups" },
+      { name: "Eggs", quantity: "3", unit: "pieces" },
+      { name: "Prawns or chicken", quantity: "300", unit: "g" },
+      { name: "Garlic", quantity: "4", unit: "cloves" },
+      { name: "Oyster sauce", quantity: "2", unit: "tbsp" },
+      { name: "Fish sauce", quantity: "2", unit: "tbsp" },
+      { name: "Spring onions and tomatoes", quantity: "1", unit: "portion" },
+      { name: "White sugar", quantity: "1", unit: "tsp" }
+    ],
+    preparation_steps: [
+      "Get wok screaming hot. Fry minced garlic in oil until golden.",
+      "Add protein and cook quickly on high heat.",
+      "Push to sides, crack eggs into center and scramble partially.",
+      "Add rice and break up clumps while stir-frying vigorously.",
+      "Season with oyster sauce, fish sauce and sugar. Serve with lime wedge and cucumber."
+    ],
+    chef_notes: "Day-old refrigerated rice is essential — fresh rice has too much moisture and creates a mushy result. Each grain should be separate after frying. Maximum heat is critical throughout.",
+    serving_suggestions: "Serve with fresh cucumber slices, spring onions, lime wedge and fish sauce chili.",
+    flavor_profile: ["savory", "umami", "smoky", "simple"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&q=80",
+    tags: ["Everyday", "Street Food", "Quick", "Wok"]
+  },
+
+  // ── DESSERTS ─────────────────────────────────────────────────────────────────
+  {
+    dish_name: "Mango Sticky Rice (Khao Niao Mamuang)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Desserts",
+    difficulty_level: "easy",
+    prep_time_minutes: 30,
+    cook_time_minutes: 30,
+    servings: 4,
+    short_description: "Thailand's most celebrated dessert — sweet, fragrant coconut sticky rice paired with perfectly ripe Nam Dok Mai mangoes and drizzled with sweet coconut cream. Simple perfection in every bite.",
+    ingredients: [
+      { name: "Glutinous rice", quantity: "400", unit: "g" },
+      { name: "Ripe mangoes", quantity: "4", unit: "pieces" },
+      { name: "Coconut milk", quantity: "400", unit: "ml" },
+      { name: "Sugar", quantity: "5", unit: "tbsp" },
+      { name: "Salt", quantity: "1", unit: "tsp" },
+      { name: "Toasted sesame seeds or mung beans", quantity: "2", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Soak glutinous rice 6-8 hours or overnight. Steam for 25-30 minutes until translucent.",
+      "Warm coconut milk with sugar and salt until dissolved. Do not boil.",
+      "Remove rice from steamer and immediately mix with 3/4 of the coconut sauce.",
+      "Let rice absorb sauce for 15 minutes — it will become creamy and sticky.",
+      "Serve alongside sliced ripe mango, drizzled with remaining coconut sauce and sprinkled with sesame seeds."
+    ],
+    chef_notes: "The rice absorbs the coconut sauce best when it's still hot from the steamer — this is when the starches are most receptive. Wait for the rice to cool to room temperature before serving.",
+    serving_suggestions: "Serve at room temperature alongside chilled, sliced ripe mango.",
+    flavor_profile: ["sweet", "creamy", "tropical", "fragrant"],
+    dietary_tags: ["vegetarian", "vegan", "gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=80",
+    tags: ["Iconic", "Summer Dessert", "Traditional", "Simple"]
+  },
+  {
+    dish_name: "Khanom Krok (Coconut Pancakes)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Desserts",
+    difficulty_level: "medium",
+    prep_time_minutes: 15,
+    cook_time_minutes: 15,
+    servings: 6,
+    short_description: "Tiny, soft Thai street dessert pancakes made in a special cast iron pan — a crispy coconut rice flour base with a creamy, slightly savory coconut custard center. The contrast of textures is enchanting.",
+    ingredients: [
+      { name: "Rice flour", quantity: "150", unit: "g" },
+      { name: "Coconut milk", quantity: "300", unit: "ml" },
+      { name: "Coconut cream", quantity: "150", unit: "ml" },
+      { name: "Sugar", quantity: "3", unit: "tbsp" },
+      { name: "Salt", quantity: "0.5", unit: "tsp" },
+      { name: "Spring onion greens", quantity: "2", unit: "stalks" },
+      { name: "Corn kernels", quantity: "3", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Make base batter: rice flour with half the coconut milk and sugar.",
+      "Make top batter: coconut cream with a pinch of salt.",
+      "Heat khanom krok pan (hemispherical moulds) and grease well.",
+      "Fill 3/4 full with base batter. Cook until edges set.",
+      "Add a spoonful of coconut cream topping with corn or spring onion. Cover and cook until custard just sets."
+    ],
+    chef_notes: "The half-savory, half-sweet character of khanom krok is intentional — Thai desserts often play with this contrast. The salt in the coconut cream topping amplifies the sweetness.",
+    serving_suggestions: "Serve fresh from the pan, two per serving, as an afternoon snack.",
+    flavor_profile: ["sweet", "creamy", "coconutty", "slightly salty"],
+    dietary_tags: ["vegetarian", "vegan", "gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80",
+    tags: ["Street Dessert", "Traditional", "Coconut", "Sweet"]
+  }
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
 const koreanCuisineData = [
   // ── APPETIZERS ──────────────────────────────────────────────────────────────
   {
