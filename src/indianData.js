@@ -713,9 +713,7 @@ const chineseCuisineData = [
     dietary_tags: ["vegetarian"],
     img: "https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=400&q=80",
     tags: ["Hong Kong", "Dim Sum", "Baked", "Classic"]
-  }
-// ── NEW CHINESE DISHES TO ADD ────────────────────────────────────────────────
-
+  },
   // ── RICE PREPARATIONS ──────────────────────────────────────────────────────
   {
     dish_name: "Yangzhou Fried Rice",
