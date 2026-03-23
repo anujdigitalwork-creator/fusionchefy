@@ -1,0 +1,1312 @@
+// ── Fusion Chef — Asian Cuisine Data ────────────────────────────────────────
+const japaneseCuisineData = [
+  // ── SUSHI ──────────────────────────────────────────────────────────────────
+  { dish_name:"Nigiri Sushi", state:"Japan", cuisine:"Japanese", category:"Sushi", difficulty_level:"Hard", prep_time_minutes:60, cook_time_minutes:30, total_time_minutes:90, servings:4, short_description:"The purest form of sushi — hand-pressed vinegared rice topped with the finest slices of raw fish. Each piece is a study in balance, simplicity and technique.", ingredients:[{name:"Sushi rice",quantity:"400",unit:"g"},{name:"Rice vinegar",quantity:"4",unit:"tbsp"},{name:"Sugar",quantity:"2",unit:"tbsp"},{name:"Salt",quantity:"1",unit:"tsp"},{name:"Fresh tuna (maguro)",quantity:"200",unit:"g"},{name:"Fresh salmon",quantity:"200",unit:"g"},{name:"Wasabi paste",quantity:"2",unit:"tbsp"},{name:"Soy sauce",quantity:"4",unit:"tbsp"},{name:"Pickled ginger",quantity:"4",unit:"tbsp"}], preparation_steps:["Cook sushi rice and season with rice vinegar, sugar and salt mixture while still warm.","Fan the rice while mixing to give it a glossy shine. Cool to room temperature.","Slice fish at 45-degree angle into pieces approximately 7cm x 3cm x 5mm thick.","Wet your hands with water-vinegar mixture to prevent sticking.","Take a small ball of rice (about 15g), press firmly into an oval shape.","Dab a tiny amount of wasabi on top of the rice.","Drape fish over the rice and press gently to adhere.","Serve immediately with soy sauce and pickled ginger."], chef_notes:"The rice temperature is critical — it should be body temperature when you form nigiri. Too cold and it becomes dense, too warm and the fish deteriorates.", serving_suggestions:"Serve with soy sauce for dipping, wasabi and pickled ginger to cleanse the palate between pieces.", nutrition_estimate:{calories:"280",protein_g:"18",carbohydrates_g:"38",fat_g:"5"}, tags:["Sushi","Traditional","Japanese","Raw Fish"], img:"https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&q=80" },
+  { dish_name:"Maki Sushi", state:"Japan", cuisine:"Japanese", category:"Sushi", difficulty_level:"Medium", prep_time_minutes:45, cook_time_minutes:30, total_time_minutes:75, servings:4, short_description:"Classic rolled sushi — vinegared rice and fillings wrapped in crisp nori seaweed. The most recognisable form of sushi worldwide.", ingredients:[{name:"Sushi rice",quantity:"400",unit:"g"},{name:"Nori sheets",quantity:"6",unit:"pieces"},{name:"Fresh tuna",quantity:"150",unit:"g"},{name:"Cucumber",quantity:"1",unit:"medium"},{name:"Avocado",quantity:"1",unit:"large"},{name:"Rice vinegar",quantity:"4",unit:"tbsp"},{name:"Sugar",quantity:"2",unit:"tbsp"},{name:"Salt",quantity:"1",unit:"tsp"},{name:"Sesame seeds",quantity:"2",unit:"tbsp"}], preparation_steps:["Season cooked sushi rice with vinegar, sugar and salt. Cool completely.","Lay nori sheet shiny-side down on bamboo mat.","Spread thin layer of rice over nori leaving 2cm border at top.","Sprinkle sesame seeds over rice.","Place fillings in a line across the centre.","Roll firmly using the bamboo mat, applying gentle pressure.","Seal the edge with water.","Using a sharp wet knife, cut into 6-8 pieces with clean decisive strokes."], chef_notes:"A sharp knife is essential. Wet the blade between each cut. Press firmly but not so hard that the filling squeezes out.", serving_suggestions:"Arrange cut-side up on a platter. Serve with soy sauce, wasabi and pickled ginger.", nutrition_estimate:{calories:"265",protein_g:"12",carbohydrates_g:"42",fat_g:"6"}, tags:["Sushi","Maki","Japanese","Beginner Friendly"], img:"https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=400&q=80" },
+  { dish_name:"Temaki Sushi (Hand Roll)", state:"Japan", cuisine:"Japanese", category:"Sushi", difficulty_level:"Easy", prep_time_minutes:30, cook_time_minutes:20, total_time_minutes:50, servings:4, short_description:"A casual, cone-shaped hand roll of nori filled with rice, fish and vegetables — perfect for interactive dinner parties and home sushi nights.", ingredients:[{name:"Sushi rice",quantity:"300",unit:"g"},{name:"Nori sheets",quantity:"8",unit:"pieces"},{name:"Salmon sashimi",quantity:"150",unit:"g"},{name:"Tuna sashimi",quantity:"150",unit:"g"},{name:"Cucumber",quantity:"1",unit:"medium"},{name:"Avocado",quantity:"1",unit:"large"},{name:"Cream cheese",quantity:"50",unit:"g"},{name:"Wasabi",quantity:"2",unit:"tbsp"},{name:"Tobiko (fish roe)",quantity:"4",unit:"tbsp"}], preparation_steps:["Prepare all fillings — slice fish, julienne cucumber, slice avocado.","Cut nori sheets in half.","Hold half-nori sheet in palm.","Place small amount of rice on left side of nori.","Add wasabi and chosen fillings diagonally.","Roll into a cone shape from left to right.","Seal the point with a grain of rice.","Eat immediately — temaki goes soggy if left too long."], chef_notes:"Temaki is best eaten the moment it is made. Set up all ingredients as a spread and let everyone make their own — it makes for a wonderful interactive meal.", serving_suggestions:"Set up as a DIY sushi station with all fillings in separate bowls. Perfect for parties.", nutrition_estimate:{calories:"245",protein_g:"16",carbohydrates_g:"34",fat_g:"7"}, tags:["Sushi","Hand Roll","Party Food","Interactive"], img:"https://images.unsplash.com/photo-1559410545-0bdcd187e0a6?w=400&q=80" },
+  { dish_name:"Uramaki (Inside-Out Roll)", state:"Japan", cuisine:"Japanese", category:"Sushi", difficulty_level:"Hard", prep_time_minutes:50, cook_time_minutes:30, total_time_minutes:80, servings:4, short_description:"The California and spicy tuna rolls that made sushi famous worldwide — rice on the outside, nori wrapping the fillings inside. A modern sushi innovation.", ingredients:[{name:"Sushi rice",quantity:"400",unit:"g"},{name:"Nori sheets",quantity:"4",unit:"pieces"},{name:"Imitation crab",quantity:"150",unit:"g"},{name:"Avocado",quantity:"2",unit:"large"},{name:"Cucumber",quantity:"1",unit:"medium"},{name:"Mayonnaise",quantity:"4",unit:"tbsp"},{name:"Sesame seeds",quantity:"4",unit:"tbsp"},{name:"Tobiko",quantity:"4",unit:"tbsp"},{name:"Sriracha",quantity:"1",unit:"tbsp"}], preparation_steps:["Cover bamboo mat with cling film.","Lay nori on mat and cover completely with seasoned rice.","Flip nori so rice is face down on the mat.","Place fillings on nori in a line.","Roll firmly using the mat, rice-side out.","Roll the completed roll in sesame seeds or tobiko.","Slice with sharp wet knife.","Drizzle with spicy mayo to serve."], chef_notes:"The plastic-wrapped mat is the key technique — it prevents rice from sticking. Use very sharp knife and wipe clean between cuts.", serving_suggestions:"Drizzle with Japanese mayo and sriracha. Serve on a slate board for visual impact.", nutrition_estimate:{calories:"310",protein_g:"11",carbohydrates_g:"46",fat_g:"10"}, tags:["Sushi","California Roll","Modern Japanese","Popular"], img:"https://images.unsplash.com/photo-1617196034295-9216b6b269b1?w=400&q=80" },
+  { dish_name:"Chirashi Sushi", state:"Japan", cuisine:"Japanese", category:"Sushi", difficulty_level:"Medium", prep_time_minutes:40, cook_time_minutes:30, total_time_minutes:70, servings:4, short_description:"Scattered sushi — a beautiful bowl of seasoned rice topped with an artful arrangement of sashimi, vegetables and garnishes. Japan's most celebratory sushi dish.", ingredients:[{name:"Sushi rice",quantity:"500",unit:"g"},{name:"Tuna sashimi",quantity:"150",unit:"g"},{name:"Salmon sashimi",quantity:"150",unit:"g"},{name:"Prawn",quantity:"8",unit:"pieces"},{name:"Ikura (salmon roe)",quantity:"4",unit:"tbsp"},{name:"Tamago (egg omelette)",quantity:"2",unit:"pieces"},{name:"Cucumber",quantity:"1",unit:"medium"},{name:"Shiso leaves",quantity:"8",unit:"pieces"},{name:"Pickled ginger",quantity:"4",unit:"tbsp"}], preparation_steps:["Prepare seasoned sushi rice and spread in wide serving bowls.","Cook prawns until pink and cool. Slice tamago into rectangles.","Slice all sashimi at an angle into clean pieces.","Arrange sashimi, prawns and tamago artfully over the rice.","Place ikura in small clusters.","Tuck shiso leaves between pieces for colour and flavour.","Garnish with cucumber slices and pickled ginger.","Serve at room temperature."], chef_notes:"Chirashi is about visual beauty — arrange with colour contrast in mind. Use odd numbers of pieces for each item as Japanese aesthetic tradition dictates.", serving_suggestions:"Serve in individual lacquer bowls with soy sauce on the side. Perfect for celebrations.", nutrition_estimate:{calories:"420",protein_g:"28",carbohydrates_g:"52",fat_g:"9"}, tags:["Sushi","Celebration","Festive","Japanese"], img:"https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&q=80" },
+  { dish_name:"Sashimi Platter", state:"Japan", cuisine:"Japanese", category:"Sushi", difficulty_level:"Hard", prep_time_minutes:30, cook_time_minutes:0, total_time_minutes:30, servings:4, short_description:"The purest expression of Japanese cuisine — pristine slices of the freshest raw fish served without rice. A dish where only the quality of the fish matters.", ingredients:[{name:"Sashimi-grade tuna",quantity:"200",unit:"g"},{name:"Sashimi-grade salmon",quantity:"200",unit:"g"},{name:"Yellowtail (hamachi)",quantity:"150",unit:"g"},{name:"Scallop",quantity:"8",unit:"pieces"},{name:"Wasabi",quantity:"3",unit:"tbsp"},{name:"Soy sauce",quantity:"6",unit:"tbsp"},{name:"Daikon radish",quantity:"100",unit:"g"},{name:"Shiso leaves",quantity:"12",unit:"pieces"},{name:"Lemon",quantity:"1",unit:"piece"}], preparation_steps:["Ensure all fish is sashimi-grade and very cold (nearly frozen for easier slicing).","Grate daikon into fine shreds and squeeze out excess water.","Using the sharpest knife available, slice tuna against the grain at 45 degrees, 8mm thick.","Slice salmon with same technique.","Slice yellowtail slightly thinner than tuna.","Score scallops on top in a crosshatch pattern.","Arrange on a chilled plate over daikon with shiso leaves.","Add wasabi and serve immediately."], chef_notes:"Never use a serrated knife for sashimi. One clean pulling stroke creates a clean cut that preserves the texture. The fish must be at its freshest.", serving_suggestions:"Serve on ice-filled plate with soy sauce, wasabi and ponzu dipping sauce.", nutrition_estimate:{calories:"220",protein_g:"36",carbohydrates_g:"2",fat_g:"7"}, tags:["Sashimi","Raw Fish","Premium","Japanese"], img:"https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=400&q=80" },
+  { dish_name:"Salmon Avocado Roll", state:"Japan", cuisine:"Japanese", category:"Sushi", difficulty_level:"Medium", prep_time_minutes:35, cook_time_minutes:20, total_time_minutes:55, servings:4, short_description:"The world's most beloved sushi roll — creamy avocado and buttery salmon wrapped in seasoned rice and nori. Rich, satisfying and universally adored.", ingredients:[{name:"Sushi rice",quantity:"300",unit:"g"},{name:"Fresh salmon",quantity:"200",unit:"g"},{name:"Ripe avocado",quantity:"2",unit:"large"},{name:"Nori sheets",quantity:"4",unit:"pieces"},{name:"Cream cheese",quantity:"60",unit:"g"},{name:"Lemon juice",quantity:"1",unit:"tbsp"},{name:"Sesame seeds",quantity:"3",unit:"tbsp"},{name:"Japanese mayo",quantity:"3",unit:"tbsp"}], preparation_steps:["Season sushi rice and cool completely.","Slice salmon into long strips, 1cm thick.","Halve and slice avocado, toss in lemon juice to prevent browning.","Lay nori on bamboo mat. Spread rice evenly.","Place salmon and avocado in a line across the centre.","Add a line of cream cheese alongside.","Roll firmly using the mat.","Coat outside in sesame seeds.","Slice into 8 pieces and drizzle with Japanese mayo."], chef_notes:"Choosing a ripe avocado is critical — it should yield to gentle pressure. Unripe avocado is hard and flavourless in sushi.", serving_suggestions:"Drizzle with Japanese mayo and serve with soy sauce.", nutrition_estimate:{calories:"340",protein_g:"16",carbohydrates_g:"40",fat_g:"14"}, tags:["Sushi","Salmon","Popular","Crowd Pleaser"], img:"https://images.unsplash.com/photo-1617196034295-9216b6b269b1?w=400&q=80" },
+  { dish_name:"Dragon Roll", state:"Japan", cuisine:"Japanese", category:"Sushi", difficulty_level:"Hard", prep_time_minutes:50, cook_time_minutes:20, total_time_minutes:70, servings:4, short_description:"A showstopping sushi roll topped with thin avocado slices arranged to resemble dragon scales — as impressive visually as it is delicious.", ingredients:[{name:"Sushi rice",quantity:"400",unit:"g"},{name:"Tempura prawns",quantity:"8",unit:"pieces"},{name:"Avocado",quantity:"3",unit:"large"},{name:"Nori sheets",quantity:"4",unit:"pieces"},{name:"Cucumber",quantity:"1",unit:"medium"},{name:"Eel sauce",quantity:"4",unit:"tbsp"},{name:"Tobiko",quantity:"3",unit:"tbsp"},{name:"Japanese mayo",quantity:"3",unit:"tbsp"}], preparation_steps:["Prepare tempura prawns and cool slightly.","Season and cool sushi rice completely.","Make uramaki base with prawn and cucumber inside.","Slice avocado thinly and fan out.","Lay avocado slices over the top of the roll and press gently with cling film.","Using the mat, press the avocado into the curved shape of the roll.","Remove cling film and slice through.","Drizzle with eel sauce and Japanese mayo. Top with tobiko."], chef_notes:"The cling film technique is essential for shaping the avocado scales without them falling off during slicing.", serving_suggestions:"Present on a long slate board. Drizzle generously with eel sauce for the full visual impact.", nutrition_estimate:{calories:"385",protein_g:"14",carbohydrates_g:"48",fat_g:"16"}, tags:["Sushi","Showstopper","Dragon Roll","Creative"], img:"https://images.unsplash.com/photo-1617196034295-9216b6b269b1?w=400&q=80" },
+  { dish_name:"Spicy Tuna Roll", state:"Japan", cuisine:"Japanese", category:"Sushi", difficulty_level:"Medium", prep_time_minutes:30, cook_time_minutes:20, total_time_minutes:50, servings:4, short_description:"Finely chopped tuna mixed with spicy sriracha mayo, rolled in seasoned rice and nori — bold, fiery and deeply satisfying.", ingredients:[{name:"Sushi rice",quantity:"300",unit:"g"},{name:"Fresh tuna",quantity:"250",unit:"g"},{name:"Sriracha sauce",quantity:"3",unit:"tbsp"},{name:"Japanese mayo",quantity:"4",unit:"tbsp"},{name:"Nori sheets",quantity:"4",unit:"pieces"},{name:"Sesame oil",quantity:"1",unit:"tsp"},{name:"Green onion",quantity:"3",unit:"stalks"},{name:"Sesame seeds",quantity:"2",unit:"tbsp"}], preparation_steps:["Finely chop tuna into small pieces — not a paste, keep some texture.","Mix tuna with sriracha, Japanese mayo, sesame oil and green onion.","Taste and adjust heat level.","Season sushi rice and cool.","Lay nori on mat, spread rice evenly.","Spread spicy tuna mixture in a line across the centre.","Roll firmly and seal.","Roll in sesame seeds, slice and serve."], chef_notes:"The spicy tuna mixture should be made just before rolling — it deteriorates quickly. Adjust sriracha to taste but keep some noticeable heat.", serving_suggestions:"Drizzle with extra sriracha mayo and garnish with thinly sliced green onion.", nutrition_estimate:{calories:"295",protein_g:"18",carbohydrates_g:"38",fat_g:"9"}, tags:["Sushi","Spicy","Tuna","Bold"], img:"https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=400&q=80" },
+  { dish_name:"Tamago Sushi", state:"Japan", cuisine:"Japanese", category:"Sushi", difficulty_level:"Medium", prep_time_minutes:20, cook_time_minutes:25, total_time_minutes:45, servings:4, short_description:"Sweet Japanese omelette sushi — layers of thin egg cooked with mirin and sugar, wrapped around vinegared rice. A beloved sushi bar classic.", ingredients:[{name:"Eggs",quantity:"6",unit:"large"},{name:"Mirin",quantity:"3",unit:"tbsp"},{name:"Sugar",quantity:"2",unit:"tbsp"},{name:"Soy sauce",quantity:"1",unit:"tbsp"},{name:"Dashi stock",quantity:"4",unit:"tbsp"},{name:"Sushi rice",quantity:"250",unit:"g"},{name:"Nori strips",quantity:"4",unit:"pieces"},{name:"Vegetable oil",quantity:"2",unit:"tbsp"}], preparation_steps:["Whisk eggs with mirin, sugar, soy sauce and dashi until smooth.","Strain through fine sieve for perfectly smooth texture.","Heat rectangular tamagoyaki pan with thin layer of oil.","Pour thin layer of egg mixture, cook until just set.","Roll from one end to the other.","Push roll to far end, add oil, pour another thin layer of egg.","Continue building layers, rolling each time.","Cool completely, slice and place on pressed rice ovals.","Wrap nori strip around the base."], chef_notes:"The tamagoyaki pan (rectangular Japanese omelette pan) is ideal but a regular pan works. The key is very thin layers and rolling before the egg is fully set.", serving_suggestions:"Serve as part of a sushi platter. Excellent for those who prefer no raw fish.", nutrition_estimate:{calories:"195",protein_g:"10",carbohydrates_g:"28",fat_g:"6"}, tags:["Sushi","Vegetarian","Egg","Traditional"], img:"https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&q=80" },
+
+  // ── APPETIZERS ──────────────────────────────────────────────────────────────
+  { dish_name:"Gyoza (Pan-Fried Dumplings)", state:"Japan", cuisine:"Japanese", category:"Appetizers", difficulty_level:"Medium", prep_time_minutes:45, cook_time_minutes:15, total_time_minutes:60, servings:4, short_description:"Japan's iconic pan-fried dumplings — crispy on the bottom, tender on top, filled with juicy pork and cabbage. A beloved izakaya staple.", ingredients:[{name:"Gyoza wrappers",quantity:"30",unit:"pieces"},{name:"Ground pork",quantity:"300",unit:"g"},{name:"Cabbage",quantity:"150",unit:"g"},{name:"Garlic",quantity:"3",unit:"cloves"},{name:"Ginger",quantity:"1",unit:"inch"},{name:"Soy sauce",quantity:"2",unit:"tbsp"},{name:"Sesame oil",quantity:"1",unit:"tbsp"},{name:"Green onion",quantity:"3",unit:"stalks"},{name:"Sesame oil for frying",quantity:"2",unit:"tbsp"}], preparation_steps:["Finely chop cabbage, sprinkle with salt, wait 10 minutes, then squeeze out all moisture.","Mix pork with cabbage, garlic, ginger, soy sauce, sesame oil and green onion.","Place filling in centre of wrapper. Fold and pleat one side to create 5-6 pleats.","Heat oil in pan over medium-high. Place gyoza flat-side down in rows.","Fry until golden brown on bottom — about 3 minutes.","Add 60ml water, cover immediately (it will spit).","Steam until water evaporates — about 5 minutes.","Remove lid and cook 1 more minute until bases are crispy again."], chef_notes:"The water-steam method creates the perfect gyoza — crispy on one side, soft and juicy on the other. Never flip them.", serving_suggestions:"Serve crispy-side up with soy-rice vinegar dipping sauce and chili oil.", nutrition_estimate:{calories:"285",protein_g:"16",carbohydrates_g:"30",fat_g:"11"}, tags:["Appetizer","Dumplings","Izakaya","Japanese"], img:"https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=400&q=80" },
+  { dish_name:"Takoyaki (Octopus Balls)", state:"Japan", cuisine:"Japanese", category:"Appetizers", difficulty_level:"Hard", prep_time_minutes:20, cook_time_minutes:25, total_time_minutes:45, servings:4, short_description:"Osaka's most beloved street food — crispy spherical dough balls filled with tender octopus, topped with takoyaki sauce, mayo, bonito flakes and aonori.", ingredients:[{name:"Takoyaki flour",quantity:"200",unit:"g"},{name:"Eggs",quantity:"3",unit:"large"},{name:"Dashi stock",quantity:"600",unit:"ml"},{name:"Cooked octopus",quantity:"200",unit:"g"},{name:"Tenkasu (tempura scraps)",quantity:"50",unit:"g"},{name:"Pickled ginger",quantity:"40",unit:"g"},{name:"Green onion",quantity:"4",unit:"stalks"},{name:"Takoyaki sauce",quantity:"6",unit:"tbsp"},{name:"Japanese mayo",quantity:"4",unit:"tbsp"},{name:"Katsuobushi (bonito flakes)",quantity:"20",unit:"g"},{name:"Aonori (green seaweed)",quantity:"2",unit:"tbsp"}], preparation_steps:["Mix takoyaki flour with dashi and eggs into smooth thin batter.","Heat takoyaki pan and brush generously with oil.","Fill each cavity to the brim with batter.","Add octopus piece, tenkasu, ginger and green onion to each.","When edges start to set, use skewer to rotate each ball 90 degrees.","Keep rotating until round and golden all over — about 10 minutes total.","Transfer to plate, drizzle with takoyaki sauce and mayo.","Top with bonito flakes and aonori. Serve immediately."], chef_notes:"The rotation technique is an art — you must rotate the ball while the inside is still liquid to form a perfect sphere. Takoyaki pan moulds are essential.", serving_suggestions:"Serve piping hot immediately — bonito flakes should be dancing from the heat.", nutrition_estimate:{calories:"310",protein_g:"18",carbohydrates_g:"34",fat_g:"12"}, tags:["Street Food","Osaka","Appetizer","Octopus"], img:"https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&q=80" },
+  { dish_name:"Agedashi Tofu", state:"Japan", cuisine:"Japanese", category:"Appetizers", difficulty_level:"Medium", prep_time_minutes:20, cook_time_minutes:15, total_time_minutes:35, servings:4, short_description:"Silken tofu dusted in starch, deep fried to a light crispy shell, served in a delicate dashi broth — one of Japan's most elegant appetisers.", ingredients:[{name:"Silken tofu",quantity:"600",unit:"g"},{name:"Potato starch",quantity:"6",unit:"tbsp"},{name:"Dashi stock",quantity:"300",unit:"ml"},{name:"Mirin",quantity:"3",unit:"tbsp"},{name:"Soy sauce",quantity:"3",unit:"tbsp"},{name:"Grated daikon",quantity:"100",unit:"g"},{name:"Grated ginger",quantity:"1",unit:"tsp"},{name:"Green onion",quantity:"2",unit:"stalks"},{name:"Oil for frying",quantity:"2",unit:"cups"}], preparation_steps:["Drain tofu, wrap in towel and press for 30 minutes to remove moisture.","Cut into large cubes.","Combine dashi, mirin and soy sauce in small pot. Heat gently.","Dust tofu cubes generously in potato starch, shaking off excess.","Deep fry at 180°C until light golden and crispy — about 3-4 minutes.","Place in individual bowls.","Pour warm dashi broth around (not over) the tofu.","Top with grated daikon, ginger and sliced green onion."], chef_notes:"The starch coating must be thin and even. Too thick and it becomes heavy. The broth should complement, not drown the tofu.", serving_suggestions:"Serve immediately in individual ceramic bowls — the crispy shell absorbs the broth over time.", nutrition_estimate:{calories:"175",protein_g:"9",carbohydrates_g:"18",fat_g:"8"}, tags:["Vegetarian","Tofu","Traditional","Japanese"], img:"https://images.unsplash.com/photo-1562802378-063ec186a863?w=400&q=80" },
+  { dish_name:"Karaage (Japanese Fried Chicken)", state:"Japan", cuisine:"Japanese", category:"Appetizers", difficulty_level:"Easy", prep_time_minutes:30, cook_time_minutes:15, total_time_minutes:45, servings:4, short_description:"Japan's ultimate fried chicken — bite-sized pieces marinated in soy, ginger and garlic, double-fried to an impossibly juicy, crispy perfection.", ingredients:[{name:"Chicken thighs",quantity:"600",unit:"g"},{name:"Soy sauce",quantity:"4",unit:"tbsp"},{name:"Sake",quantity:"2",unit:"tbsp"},{name:"Mirin",quantity:"2",unit:"tbsp"},{name:"Garlic",quantity:"3",unit:"cloves"},{name:"Ginger",quantity:"1",unit:"inch"},{name:"Potato starch",quantity:"100",unit:"g"},{name:"Oil for frying",quantity:"2",unit:"cups"},{name:"Lemon",quantity:"2",unit:"pieces"}], preparation_steps:["Cut chicken thighs into bite-sized pieces.","Marinate with soy sauce, sake, mirin, garlic and ginger for 30 minutes minimum.","Remove chicken from marinade and pat dry.","Coat generously in potato starch.","First fry at 160°C for 4 minutes. Remove and rest 3 minutes.","Second fry at 180°C for 2 minutes until very crispy and golden.","Drain on wire rack.","Serve with lemon wedges and Japanese mayo."], chef_notes:"The double-fry technique is the secret to karaage. The first fry cooks the chicken through, the second fry creates that shattering crispy exterior.", serving_suggestions:"Serve hot with lemon wedges, Japanese mayo and shredded cabbage.", nutrition_estimate:{calories:"345",protein_g:"28",carbohydrates_g:"22",fat_g:"16"}, tags:["Fried Chicken","Popular","Izakaya","Japanese"], img:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80" },
+  { dish_name:"Edamame with Sea Salt", state:"Japan", cuisine:"Japanese", category:"Appetizers", difficulty_level:"Easy", prep_time_minutes:5, cook_time_minutes:5, total_time_minutes:10, servings:4, short_description:"Young soybeans boiled or steamed and finished with flaky sea salt — Japan's most addictive, healthy snack and the perfect izakaya opener.", ingredients:[{name:"Fresh edamame in pods",quantity:"400",unit:"g"},{name:"Sea salt",quantity:"2",unit:"tbsp"},{name:"Water",quantity:"1",unit:"litre"},{name:"Sesame oil",quantity:"1",unit:"tsp"}], preparation_steps:["Trim both ends of edamame pods with scissors.","Rub pods with 1 tbsp salt and let sit 5 minutes.","Bring water to rolling boil with remaining salt.","Add edamame and boil 4-5 minutes until tender but still bright green.","Drain and immediately toss with a tiny drizzle of sesame oil.","Sprinkle with flaky sea salt.","Serve warm or at room temperature."], chef_notes:"Do not overcook edamame — they should be bright green and have a slight bite. Overcooked edamame turns yellow and mushy.", serving_suggestions:"Serve in a bowl with empty shells bowl alongside. Perfect with cold Japanese beer.", nutrition_estimate:{calories:"120",protein_g:"11",carbohydrates_g:"10",fat_g:"5"}, tags:["Healthy","Vegetarian","Izakaya","Quick"], img:"https://images.unsplash.com/photo-1562802378-063ec186a863?w=400&q=80" },
+  { dish_name:"Yakitori (Grilled Chicken Skewers)", state:"Japan", cuisine:"Japanese", category:"Appetizers", difficulty_level:"Easy", prep_time_minutes:30, cook_time_minutes:15, total_time_minutes:45, servings:4, short_description:"Skewers of chicken grilled over charcoal and glazed with tare sauce — Japan's most beloved izakaya food, eaten with cold beer and good company.", ingredients:[{name:"Chicken thighs",quantity:"500",unit:"g"},{name:"Green onion",quantity:"6",unit:"stalks"},{name:"Soy sauce",quantity:"4",unit:"tbsp"},{name:"Mirin",quantity:"4",unit:"tbsp"},{name:"Sake",quantity:"2",unit:"tbsp"},{name:"Sugar",quantity:"2",unit:"tbsp"},{name:"Bamboo skewers",quantity:"12",unit:"pieces"},{name:"Shichimi (7-spice)",quantity:"1",unit:"tsp"}], preparation_steps:["Soak bamboo skewers in water 30 minutes.","Make tare sauce: combine soy sauce, mirin, sake and sugar. Simmer until slightly thickened.","Cut chicken thighs into 3cm pieces.","Thread chicken alternating with green onion pieces.","Grill over high heat, turning regularly.","Brush with tare sauce in the last 2 minutes.","Grill 1 more minute after final glaze.","Serve immediately with shichimi on the side."], chef_notes:"Charcoal gives authentic yakitori its smoky character but a hot grill pan works well at home. The tare sauce should caramelise on the final glaze, not burn.", serving_suggestions:"Serve piping hot immediately with cold beer. Arrange on a wooden board.", nutrition_estimate:{calories:"245",protein_g:"26",carbohydrates_g:"14",fat_g:"9"}, tags:["Grilled","Izakaya","Chicken","Japanese"], img:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80" },
+  { dish_name:"Tempura Vegetables & Prawns", state:"Japan", cuisine:"Japanese", category:"Appetizers", difficulty_level:"Medium", prep_time_minutes:20, cook_time_minutes:20, total_time_minutes:40, servings:4, short_description:"The lightest, crispiest batter imaginable — Japanese tempura transforms prawns and vegetables into golden, feather-light fritters served with tentsuyu dipping sauce.", ingredients:[{name:"Tiger prawns",quantity:"12",unit:"pieces"},{name:"Sweet potato",quantity:"1",unit:"medium"},{name:"Broccoli",quantity:"150",unit:"g"},{name:"Zucchini",quantity:"1",unit:"medium"},{name:"Cold water",quantity:"200",unit:"ml"},{name:"Egg",quantity:"1",unit:"large"},{name:"Flour",quantity:"180",unit:"g"},{name:"Dashi stock",quantity:"200",unit:"ml"},{name:"Soy sauce",quantity:"3",unit:"tbsp"},{name:"Mirin",quantity:"3",unit:"tbsp"},{name:"Grated daikon",quantity:"60",unit:"g"}], preparation_steps:["Make tentsuyu: combine dashi, soy and mirin. Heat gently.","Peel and devein prawns, keeping tails on.","Slice vegetables 5mm thick.","Make batter: whisk egg with ice-cold water. Add flour and stir minimally — lumps are fine, do not overmix.","Heat oil to 180°C.","Dip prawns and vegetables in batter and fry in small batches.","Fry until just golden — 2 minutes for prawns, 3 for vegetables.","Drain on rack immediately.","Serve with tentsuyu and grated daikon."], chef_notes:"Cold batter is the secret to light tempura. Use ice water or add ice cubes to the batter bowl. Never overmix — lumpy batter creates the characteristic light texture.", serving_suggestions:"Serve immediately after frying on paper-lined plates with tentsuyu dipping sauce.", nutrition_estimate:{calories:"285",protein_g:"16",carbohydrates_g:"36",fat_g:"9"}, tags:["Tempura","Fried","Light","Japanese"], img:"https://images.unsplash.com/photo-1617196034295-9216b6b269b1?w=400&q=80" },
+  { dish_name:"Chawanmushi (Steamed Egg Custard)", state:"Japan", cuisine:"Japanese", category:"Appetizers", difficulty_level:"Medium", prep_time_minutes:20, cook_time_minutes:20, total_time_minutes:40, servings:4, short_description:"A silken, savory steamed egg custard hiding treasures of prawn, chicken and mushroom within — elegant, delicate and deeply Japanese.", ingredients:[{name:"Eggs",quantity:"4",unit:"large"},{name:"Dashi stock",quantity:"500",unit:"ml"},{name:"Soy sauce",quantity:"1",unit:"tbsp"},{name:"Mirin",quantity:"1",unit:"tbsp"},{name:"Prawns",quantity:"8",unit:"pieces"},{name:"Chicken breast",quantity:"100",unit:"g"},{name:"Shiitake mushrooms",quantity:"4",unit:"pieces"},{name:"Mitsuba or parsley",quantity:"4",unit:"sprigs"}], preparation_steps:["Make dashi and cool to room temperature. Season with soy and mirin.","Whisk eggs gently — avoid creating bubbles.","Strain egg mixture through fine sieve.","Slowly add cooled dashi to eggs while stirring.","Strain mixture again for perfectly smooth custard.","Place prawns, chicken and mushrooms in cups.","Pour custard mixture over fillings.","Steam on low heat for 12-15 minutes until just set.","Garnish with mitsuba and serve in cups."], chef_notes:"The low steam is critical — high heat creates bubbles and a rough texture. The custard should wobble like jelly when done, not be firm.", serving_suggestions:"Serve in the steaming cups with small spoons. Best enjoyed warm as a starter.", nutrition_estimate:{calories:"145",protein_g:"14",carbohydrates_g:"6",fat_g:"7"}, tags:["Steamed","Egg","Elegant","Traditional"], img:"https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80" },
+  { dish_name:"Ebi Furai (Japanese Fried Prawns)", state:"Japan", cuisine:"Japanese", category:"Appetizers", difficulty_level:"Easy", prep_time_minutes:20, cook_time_minutes:10, total_time_minutes:30, servings:4, short_description:"Butterflied prawns coated in a crispy panko breadcrumb shell — one of Japan's most popular Western-influenced dishes, served with rich tartar sauce.", ingredients:[{name:"Tiger prawns",quantity:"12",unit:"large"},{name:"Panko breadcrumbs",quantity:"200",unit:"g"},{name:"Flour",quantity:"80",unit:"g"},{name:"Eggs",quantity:"2",unit:"large"},{name:"Salt",quantity:"1",unit:"tsp"},{name:"Pepper",quantity:"0.5",unit:"tsp"},{name:"Oil for frying",quantity:"2",unit:"cups"},{name:"Japanese tartar sauce",quantity:"6",unit:"tbsp"},{name:"Lemon",quantity:"2",unit:"pieces"}], preparation_steps:["Peel prawns leaving tails, devein and butterfly along back.","Score underside to prevent curling during frying.","Season with salt and pepper.","Dredge in flour, then egg, then panko, pressing firmly.","Deep fry at 175°C for 2-3 minutes until golden.","Drain on wire rack.","Serve with tartar sauce and lemon."], chef_notes:"Scoring the underside of each prawn is what keeps them straight and beautiful. Panko creates a dramatically lighter and crispier coating than regular breadcrumbs.", serving_suggestions:"Serve with Japanese tartar sauce, shredded cabbage and lemon wedges.", nutrition_estimate:{calories:"265",protein_g:"20",carbohydrates_g:"24",fat_g:"10"}, tags:["Fried","Prawns","Yoshoku","Popular"], img:"https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&q=80" },
+  { dish_name:"Onigiri (Rice Balls)", state:"Japan", cuisine:"Japanese", category:"Appetizers", difficulty_level:"Easy", prep_time_minutes:20, cook_time_minutes:30, total_time_minutes:50, servings:4, short_description:"Japan's ultimate portable snack — seasoned rice balls filled with tuna mayo, pickled plum or salmon and wrapped in crispy nori. Comfort food in its purest form.", ingredients:[{name:"Japanese short-grain rice",quantity:"400",unit:"g"},{name:"Tuna",quantity:"100",unit:"g"},{name:"Japanese mayo",quantity:"3",unit:"tbsp"},{name:"Umeboshi (pickled plum)",quantity:"4",unit:"pieces"},{name:"Nori sheets",quantity:"4",unit:"pieces"},{name:"Salt",quantity:"1",unit:"tsp"},{name:"Sesame seeds",quantity:"2",unit:"tbsp"},{name:"Salmon flakes",quantity:"80",unit:"g"}], preparation_steps:["Cook rice with slightly less water than usual for firmer texture.","Cool rice to body temperature.","Mix tuna with mayo for one filling.","Wet hands and rub with salt.","Take portion of rice, press into palm.","Make indentation, place filling inside.","Press into triangle shape with both hands, compressing firmly.","Wrap base with nori strip.","Roll in sesame seeds if desired."], chef_notes:"Wet and salted hands are essential — they prevent rice from sticking and lightly season the outside. Form while rice is still warm as cold rice won't hold shape.", serving_suggestions:"Best eaten within a few hours. Wrap nori just before eating to keep it crispy.", nutrition_estimate:{calories:"245",protein_g:"10",carbohydrates_g:"40",fat_g:"5"}, tags:["Rice Ball","Portable","Lunch","Japanese"], img:"https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&q=80" },
+
+  // ── SALADS ──────────────────────────────────────────────────────────────────
+  { dish_name:"Wakame Seaweed Salad", state:"Japan", cuisine:"Japanese", category:"Salads", difficulty_level:"Easy", prep_time_minutes:15, cook_time_minutes:0, total_time_minutes:15, servings:4, short_description:"A refreshing Japanese salad of rehydrated wakame seaweed dressed in sesame oil, soy sauce and rice vinegar — light, umami-rich and deeply satisfying.", ingredients:[{name:"Dried wakame seaweed",quantity:"30",unit:"g"},{name:"Sesame oil",quantity:"2",unit:"tbsp"},{name:"Soy sauce",quantity:"2",unit:"tbsp"},{name:"Rice vinegar",quantity:"2",unit:"tbsp"},{name:"Sugar",quantity:"1",unit:"tsp"},{name:"Sesame seeds",quantity:"2",unit:"tbsp"},{name:"Green onion",quantity:"2",unit:"stalks"},{name:"Cucumber",quantity:"1",unit:"medium"},{name:"Ginger",quantity:"0.5",unit:"inch"}], preparation_steps:["Soak dried wakame in cold water 10 minutes until rehydrated.","Drain and squeeze out excess water.","Slice cucumber thinly.","Mix sesame oil, soy sauce, rice vinegar, sugar and grated ginger into dressing.","Combine wakame and cucumber.","Pour dressing and toss gently.","Top with sesame seeds and sliced green onion.","Chill 10 minutes before serving."], chef_notes:"Do not over-soak wakame — it expands dramatically and becomes slimy if left too long. 10 minutes in cold water is perfect.", serving_suggestions:"Serve chilled as a starter or alongside grilled fish and rice.", nutrition_estimate:{calories:"65",protein_g:"2",carbohydrates_g:"7",fat_g:"4"}, tags:["Seaweed","Healthy","Vegan","Japanese"], img:"https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80" },
+  { dish_name:"Sunomono (Japanese Cucumber Salad)", state:"Japan", cuisine:"Japanese", category:"Salads", difficulty_level:"Easy", prep_time_minutes:20, cook_time_minutes:0, total_time_minutes:20, servings:4, short_description:"Paper-thin cucumber slices in a sweet rice vinegar dressing with prawns — Japan's classic refreshing palate cleanser.", ingredients:[{name:"Japanese cucumber",quantity:"2",unit:"large"},{name:"Cooked prawns",quantity:"12",unit:"pieces"},{name:"Rice vinegar",quantity:"4",unit:"tbsp"},{name:"Sugar",quantity:"2",unit:"tbsp"},{name:"Salt",quantity:"1",unit:"tsp"},{name:"Soy sauce",quantity:"1",unit:"tbsp"},{name:"Sesame seeds",quantity:"1",unit:"tbsp"},{name:"Wakame seaweed",quantity:"15",unit:"g"}], preparation_steps:["Slice cucumber paper-thin using mandoline or sharp knife.","Sprinkle with salt and let sit 10 minutes.","Squeeze cucumber firmly to remove all moisture.","Rehydrate wakame in cold water, drain.","Mix rice vinegar, sugar and soy sauce until sugar dissolves.","Combine cucumber, wakame and prawns.","Pour dressing over and toss.","Refrigerate 15 minutes and serve in small portions."], chef_notes:"Salting and squeezing the cucumber is essential — it removes bitterness and excess water that would dilute the dressing.", serving_suggestions:"Serve in small individual bowls as a palate-cleansing starter.", nutrition_estimate:{calories:"75",protein_g:"8",carbohydrates_g:"10",fat_g:"1"}, tags:["Cucumber","Refreshing","Light","Japanese"], img:"https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80" },
+  { dish_name:"Kani Salad (Crab Salad)", state:"Japan", cuisine:"Japanese", category:"Salads", difficulty_level:"Easy", prep_time_minutes:20, cook_time_minutes:0, total_time_minutes:20, servings:4, short_description:"A creamy, colourful Japanese crab salad with crunchy cucumber, carrot and a spicy Japanese mayo dressing — popular in Japanese restaurants worldwide.", ingredients:[{name:"Imitation crab sticks",quantity:"200",unit:"g"},{name:"Cucumber",quantity:"2",unit:"medium"},{name:"Carrot",quantity:"1",unit:"large"},{name:"Japanese mayo",quantity:"5",unit:"tbsp"},{name:"Sriracha",quantity:"2",unit:"tsp"},{name:"Mango",quantity:"1",unit:"medium"},{name:"Sesame seeds",quantity:"2",unit:"tbsp"},{name:"Lemon juice",quantity:"1",unit:"tbsp"}], preparation_steps:["Shred crab sticks into thin strands.","Julienne cucumber and carrot into thin matchsticks.","Dice mango into small cubes.","Mix Japanese mayo with sriracha and lemon juice.","Combine crab, cucumber, carrot and mango.","Toss with spicy mayo dressing.","Garnish with sesame seeds.","Serve chilled."], chef_notes:"The combination of creamy mayo, sweet mango and spicy sriracha is what makes this salad irresistible. Use fresh mango for best results.", serving_suggestions:"Serve chilled in individual glasses or small bowls as a starter.", nutrition_estimate:{calories:"185",protein_g:"8",carbohydrates_g:"18",fat_g:"10"}, tags:["Crab","Creamy","Popular","Japanese Restaurant"], img:"https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&q=80" },
+  { dish_name:"Goma-ae (Sesame Spinach Salad)", state:"Japan", cuisine:"Japanese", category:"Salads", difficulty_level:"Easy", prep_time_minutes:15, cook_time_minutes:5, total_time_minutes:20, servings:4, short_description:"Blanched spinach tossed in a rich sesame paste dressing — one of Japan's most classic side dishes, eaten at every home table.", ingredients:[{name:"Spinach",quantity:"400",unit:"g"},{name:"White sesame seeds",quantity:"4",unit:"tbsp"},{name:"Soy sauce",quantity:"2",unit:"tbsp"},{name:"Mirin",quantity:"1",unit:"tbsp"},{name:"Sugar",quantity:"1",unit:"tsp"},{name:"Dashi stock",quantity:"2",unit:"tbsp"}], preparation_steps:["Toast sesame seeds in dry pan until fragrant and starting to pop.","Grind 3/4 of sesame seeds in mortar to a coarse paste.","Mix with soy sauce, mirin, sugar and dashi.","Blanch spinach in boiling water 30 seconds.","Transfer immediately to ice water to stop cooking.","Squeeze all water from spinach firmly.","Cut into 5cm lengths.","Toss with sesame dressing.","Top with remaining whole sesame seeds."], chef_notes:"The spinach must be very thoroughly squeezed — any residual water dilutes the dressing. The sesame paste should be chunky, not completely smooth.", serving_suggestions:"Serve at room temperature or slightly chilled in small mounds as a side.", nutrition_estimate:{calories:"110",protein_g:"5",carbohydrates_g:"8",fat_g:"7"}, tags:["Vegetarian","Sesame","Healthy","Traditional"], img:"https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80" },
+  { dish_name:"Hiyashi Chuka (Cold Ramen Salad)", state:"Japan", cuisine:"Japanese", category:"Salads", difficulty_level:"Medium", prep_time_minutes:30, cook_time_minutes:10, total_time_minutes:40, servings:4, short_description:"Japan's beloved summer noodle salad — cold ramen noodles topped with colourful toppings and doused in a tangy sesame-soy dressing. A seasonal Japanese favourite.", ingredients:[{name:"Ramen noodles",quantity:"320",unit:"g"},{name:"Cucumber",quantity:"2",unit:"medium"},{name:"Ham or chicken",quantity:"150",unit:"g"},{name:"Eggs",quantity:"3",unit:"large"},{name:"Cherry tomatoes",quantity:"12",unit:"pieces"},{name:"Soy sauce",quantity:"4",unit:"tbsp"},{name:"Rice vinegar",quantity:"4",unit:"tbsp"},{name:"Sesame oil",quantity:"2",unit:"tbsp"},{name:"Sugar",quantity:"2",unit:"tbsp"},{name:"Sesame seeds",quantity:"2",unit:"tbsp"}], preparation_steps:["Cook noodles, rinse under cold water until completely cold.","Make thin omelette with eggs, cool and slice into strips.","Julienne cucumber. Slice ham or chicken.","Make dressing: combine soy sauce, vinegar, sesame oil and sugar.","Arrange noodles in bowls.","Top with cucumber, egg strips, ham and tomatoes in sections.","Pour dressing over just before serving.","Sprinkle sesame seeds and serve cold."], chef_notes:"Rinsing noodles in cold water until completely chilled is essential. The toppings should be arranged neatly in sections for visual appeal.", serving_suggestions:"Serve chilled in summer as a refreshing main dish. Add karashi (hot mustard) on the side.", nutrition_estimate:{calories:"345",protein_g:"18",carbohydrates_g:"48",fat_g:"10"}, tags:["Summer","Cold Noodles","Seasonal","Japanese"], img:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80" },
+
+  // ── SOUPS & RAMEN ──────────────────────────────────────────────────────────
+  { dish_name:"Tonkotsu Ramen", state:"Japan", cuisine:"Japanese", category:"Soups", difficulty_level:"Hard", prep_time_minutes:60, cook_time_minutes:720, total_time_minutes:780, servings:4, short_description:"Fukuoka's legendary pork bone ramen — a rich, creamy, opaque white broth from 12+ hours of simmering pork bones, topped with chashu pork, soft egg and nori.", ingredients:[{name:"Pork trotters",quantity:"1",unit:"kg"},{name:"Pork back fat",quantity:"300",unit:"g"},{name:"Chicken carcasses",quantity:"500",unit:"g"},{name:"Garlic",quantity:"8",unit:"cloves"},{name:"Ginger",quantity:"3",unit:"inch"},{name:"Ramen noodles",quantity:"400",unit:"g"},{name:"Pork belly (chashu)",quantity:"500",unit:"g"},{name:"Soy sauce",quantity:"4",unit:"tbsp"},{name:"Mirin",quantity:"4",unit:"tbsp"},{name:"Soft boiled eggs (marinated)",quantity:"4",unit:"pieces"},{name:"Nori",quantity:"4",unit:"pieces"},{name:"Green onion",quantity:"4",unit:"stalks"},{name:"Bamboo shoots",quantity:"100",unit:"g"},{name:"Sesame seeds",quantity:"2",unit:"tbsp"}], preparation_steps:["Blanch pork bones in boiling water 5 minutes. Rinse thoroughly.","Cover bones with fresh water and boil vigorously uncovered for 4 hours — the vigorous boil creates the creamy white colour.","Continue simmering 8 more hours, adding water as needed.","Meanwhile, roll pork belly tightly, tie with string. Braise in soy, mirin, sake and water 2 hours.","Soft boil eggs 6.5 minutes, marinate in soy-mirin mixture 4 hours.","Strain broth. Season with salt and soy tare.","Cook ramen noodles al dente. Warm bowls.","Fill bowls with broth, add noodles.","Top with sliced chashu, halved marinated egg, nori, bamboo shoots, green onion and sesame seeds."], chef_notes:"The key to milky white tonkotsu broth is vigorous boiling — it emulsifies the collagen from the bones. Never let it drop to a gentle simmer during cooking.", serving_suggestions:"Serve piping hot immediately. Provide sesame seeds, ginger and pickled vegetables on the side.", nutrition_estimate:{calories:"680",protein_g:"38",carbohydrates_g:"62",fat_g:"28"}, tags:["Ramen","Fukuoka","Rich Broth","12-Hour Cook"], img:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80" },
+  { dish_name:"Shoyu Ramen (Soy Sauce Ramen)", state:"Japan", cuisine:"Japanese", category:"Soups", difficulty_level:"Medium", prep_time_minutes:30, cook_time_minutes:120, total_time_minutes:150, servings:4, short_description:"Tokyo's classic clear soy-sauce ramen — a clean, complex chicken-dashi broth seasoned with soy tare, topped with chashu, narutomaki fish cake and soft egg.", ingredients:[{name:"Chicken carcasses",quantity:"1",unit:"kg"},{name:"Dashi kombu",quantity:"20",unit:"g"},{name:"Soy sauce",quantity:"6",unit:"tbsp"},{name:"Mirin",quantity:"4",unit:"tbsp"},{name:"Sake",quantity:"4",unit:"tbsp"},{name:"Ramen noodles",quantity:"400",unit:"g"},{name:"Chashu pork",quantity:"300",unit:"g"},{name:"Narutomaki fish cake",quantity:"8",unit:"slices"},{name:"Marinated eggs",quantity:"4",unit:"pieces"},{name:"Nori",quantity:"4",unit:"pieces"},{name:"Menma bamboo",quantity:"80",unit:"g"}], preparation_steps:["Simmer chicken carcasses with kombu and aromatics 2 hours.","Strain broth — it should be clear and golden.","Make soy tare: reduce soy sauce, mirin and sake together.","Season broth with tare to taste.","Cook ramen noodles and divide into warm bowls.","Ladle hot broth over noodles.","Top with sliced chashu, narutomaki, egg, nori and bamboo shoots."], chef_notes:"Shoyu ramen is about clarity and refinement. Skim fat and foam constantly during cooking. The broth should be beautifully clear and amber-coloured.", serving_suggestions:"Serve in wide, deep bowls. The toppings should be arranged neatly.", nutrition_estimate:{calories:"520",protein_g:"30",carbohydrates_g:"60",fat_g:"16"}, tags:["Ramen","Tokyo","Soy Sauce","Classic"], img:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80" },
+  { dish_name:"Miso Ramen", state:"Japan", cuisine:"Japanese", category:"Soups", difficulty_level:"Medium", prep_time_minutes:30, cook_time_minutes:90, total_time_minutes:120, servings:4, short_description:"Sapporo's iconic miso ramen — a hearty, warming broth enriched with red miso paste, topped with ground pork, corn, butter and a perfectly cooked egg.", ingredients:[{name:"Chicken broth",quantity:"1.2",unit:"litres"},{name:"Red miso paste",quantity:"6",unit:"tbsp"},{name:"White miso paste",quantity:"3",unit:"tbsp"},{name:"Ground pork",quantity:"300",unit:"g"},{name:"Ramen noodles",quantity:"400",unit:"g"},{name:"Corn kernels",quantity:"200",unit:"g"},{name:"Butter",quantity:"4",unit:"tsp"},{name:"Bean sprouts",quantity:"150",unit:"g"},{name:"Bamboo shoots",quantity:"80",unit:"g"},{name:"Soft boiled eggs",quantity:"4",unit:"pieces"},{name:"Green onion",quantity:"4",unit:"stalks"},{name:"Garlic",quantity:"4",unit:"cloves"},{name:"Ginger",quantity:"1",unit:"inch"}], preparation_steps:["Fry ground pork with garlic and ginger until cooked.","Add miso pastes and fry in the pork fat for 1 minute.","Add chicken broth and bring to simmer.","Cook bean sprouts briefly in broth.","Cook noodles separately and divide into bowls.","Ladle miso broth and pork over noodles.","Top with corn, bean sprouts, bamboo shoots and egg.","Add a pat of butter on top and garnish with green onion."], chef_notes:"Frying the miso in fat before adding broth is the Sapporo technique that gives miso ramen its deep, complex flavour. Never boil miso aggressively.", serving_suggestions:"Serve immediately with the butter melting on top — the butter is not optional, it defines Sapporo miso ramen.", nutrition_estimate:{calories:"595",protein_g:"32",carbohydrates_g:"62",fat_g:"22"}, tags:["Ramen","Sapporo","Miso","Hearty"], img:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80" },
+  { dish_name:"Miso Soup", state:"Japan", cuisine:"Japanese", category:"Soups", difficulty_level:"Easy", prep_time_minutes:5, cook_time_minutes:10, total_time_minutes:15, servings:4, short_description:"Japan's everyday soul food — a simple dashi broth dissolved with miso paste and filled with tofu, wakame and green onion. Eaten at virtually every Japanese meal.", ingredients:[{name:"Dashi stock",quantity:"800",unit:"ml"},{name:"White miso paste",quantity:"4",unit:"tbsp"},{name:"Silken tofu",quantity:"200",unit:"g"},{name:"Dried wakame",quantity:"10",unit:"g"},{name:"Green onion",quantity:"2",unit:"stalks"},{name:"Dashi kombu",quantity:"10",unit:"g"},{name:"Katsuobushi",quantity:"20",unit:"g"}], preparation_steps:["Make dashi: bring water to 60°C, add kombu, heat to 80°C, remove kombu.","Bring to boil, add katsuobushi, simmer 3 minutes. Strain.","Rehydrate wakame in water, drain.","Cut tofu into small cubes.","Heat dashi to a simmer. Never boil after adding miso.","Dissolve miso paste in a ladle of dashi first, then stir into pot.","Add tofu and wakame gently.","Serve immediately garnished with green onion."], chef_notes:"Never boil miso soup after adding the miso — it destroys the beneficial enzymes and dulls the flavour. Dissolving miso in a separate ladle before adding prevents lumps.", serving_suggestions:"Serve in lidded lacquer bowls as part of any Japanese meal.", nutrition_estimate:{calories:"65",protein_g:"5",carbohydrates_g:"6",fat_g:"2"}, tags:["Traditional","Everyday","Vegetarian","Japanese"], img:"https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80" },
+  { dish_name:"Ochazuke (Green Tea Rice Soup)", state:"Japan", cuisine:"Japanese", category:"Soups", difficulty_level:"Easy", prep_time_minutes:5, cook_time_minutes:5, total_time_minutes:10, servings:2, short_description:"A comforting bowl of steamed rice with green tea poured over — Japan's late-night comfort food, topped with pickles, salmon flakes or salty plum.", ingredients:[{name:"Cooked Japanese rice",quantity:"300",unit:"g"},{name:"Matcha or green tea",quantity:"400",unit:"ml"},{name:"Salmon flakes",quantity:"80",unit:"g"},{name:"Umeboshi",quantity:"2",unit:"pieces"},{name:"Nori",quantity:"2",unit:"strips"},{name:"Sesame seeds",quantity:"1",unit:"tbsp"},{name:"Wasabi",quantity:"1",unit:"tsp"},{name:"Soy sauce",quantity:"1",unit:"tsp"}], preparation_steps:["Brew strong green tea.","Place warm rice in a bowl.","Arrange salmon flakes, torn nori and umeboshi on top.","Pour hot green tea over rice slowly.","Add tiny amount of wasabi to the side.","Sprinkle sesame seeds.","Drizzle with soy sauce.","Eat immediately."], chef_notes:"Ochazuke is Japan's ultimate comfort food — eaten when feeling unwell, after a night out or simply when you want something soothing. The tea should be strong and hot.", serving_suggestions:"Serve as a light supper or late-night snack. Perfect for using up leftover rice.", nutrition_estimate:{calories:"265",protein_g:"14",carbohydrates_g:"44",fat_g:"4"}, tags:["Comfort Food","Rice","Quick","Japanese"], img:"https://images.unsplash.com/photo-1576577445504-6af96477db52?w=400&q=80" },
+  { dish_name:"Tonjiru (Pork Miso Soup)", state:"Japan", cuisine:"Japanese", category:"Soups", difficulty_level:"Easy", prep_time_minutes:15, cook_time_minutes:25, total_time_minutes:40, servings:4, short_description:"A hearty, substantial miso soup loaded with pork and root vegetables — Japan's ultimate winter warming soup, far more substantial than everyday miso soup.", ingredients:[{name:"Pork belly slices",quantity:"200",unit:"g"},{name:"Daikon radish",quantity:"200",unit:"g"},{name:"Carrot",quantity:"1",unit:"large"},{name:"Burdock root (gobo)",quantity:"100",unit:"g"},{name:"Konnyaku",quantity:"100",unit:"g"},{name:"Dashi stock",quantity:"800",unit:"ml"},{name:"Miso paste",quantity:"5",unit:"tbsp"},{name:"Sesame oil",quantity:"1",unit:"tbsp"},{name:"Green onion",quantity:"3",unit:"stalks"}], preparation_steps:["Cut all vegetables into bite-sized irregular chunks.","Stir-fry pork in sesame oil until colour changes.","Add burdock root and carrot, fry 2 minutes.","Add daikon and konnyaku.","Pour in dashi and bring to boil.","Simmer 15 minutes until vegetables are tender.","Dissolve miso in ladle of broth and add to pot.","Serve garnished with sliced green onion."], chef_notes:"Burdock root (gobo) is the defining ingredient of tonjiru — its earthy flavour is irreplaceable. Soak in cold water after cutting to prevent browning.", serving_suggestions:"Serve as a warming main course in winter with steamed rice.", nutrition_estimate:{calories:"275",protein_g:"16",carbohydrates_g:"22",fat_g:"14"}, tags:["Winter Soup","Hearty","Pork","Japanese"], img:"https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80" },
+  { dish_name:"Zosui (Japanese Rice Porridge)", state:"Japan", cuisine:"Japanese", category:"Soups", difficulty_level:"Easy", prep_time_minutes:10, cook_time_minutes:20, total_time_minutes:30, servings:4, short_description:"A silky, healing Japanese rice porridge made with leftover rice simmered in dashi broth with egg — the first food eaten after illness and a symbol of Japanese home cooking.", ingredients:[{name:"Cooked rice",quantity:"400",unit:"g"},{name:"Dashi stock",quantity:"1",unit:"litre"},{name:"Soy sauce",quantity:"2",unit:"tbsp"},{name:"Sake",quantity:"2",unit:"tbsp"},{name:"Eggs",quantity:"3",unit:"large"},{name:"Chicken breast",quantity:"150",unit:"g"},{name:"Shiitake mushrooms",quantity:"4",unit:"pieces"},{name:"Green onion",quantity:"2",unit:"stalks"},{name:"Mitsuba",quantity:"4",unit:"sprigs"}], preparation_steps:["Bring dashi to boil with soy sauce and sake.","Add thinly sliced chicken and mushrooms.","Rinse cooked rice under cold water to remove excess starch.","Add rice to broth and simmer 10 minutes until soft.","Beat eggs lightly and pour in a thin stream while stirring.","Cook 1 minute until eggs are just set.","Season to taste.","Serve in bowls with green onion and mitsuba."], chef_notes:"Rinsing rice before adding removes excess starch which can make the porridge gluey. The egg should be added slowly while stirring to create silky threads.", serving_suggestions:"Serve as a healing meal when unwell or as a light supper.", nutrition_estimate:{calories:"245",protein_g:"16",carbohydrates_g:"36",fat_g:"4"}, tags:["Porridge","Healing","Comfort","Japanese"], img:"https://images.unsplash.com/photo-1576577445504-6af96477db52?w=400&q=80" },
+  { dish_name:"Yakimono Soup (Clear Soup with Grilled Items)", state:"Japan", cuisine:"Japanese", category:"Soups", difficulty_level:"Medium", prep_time_minutes:20, cook_time_minutes:20, total_time_minutes:40, servings:4, short_description:"An elegant clear Japanese soup with grilled ingredients floating in a crystal-clear dashi broth — served at formal kaiseki meals and special occasions.", ingredients:[{name:"Dashi stock",quantity:"800",unit:"ml"},{name:"Salt",quantity:"1",unit:"tsp"},{name:"Light soy sauce",quantity:"1",unit:"tbsp"},{name:"Sake",quantity:"2",unit:"tbsp"},{name:"Sea bream fillet",quantity:"200",unit:"g"},{name:"Prawn",quantity:"4",unit:"large"},{name:"Mitsuba",quantity:"4",unit:"sprigs"},{name:"Yuzu zest",quantity:"1",unit:"tsp"},{name:"Kombu",quantity:"15",unit:"g"}], preparation_steps:["Make superior dashi from kombu and katsuobushi.","Season with salt, light soy and sake.","Salt sea bream fillets and grill until golden.","Grill prawns until pink and fragrant.","Arrange grilled items in warmed bowls.","Pour crystal-clear hot broth gently over.","Add mitsuba sprig and tiny shaving of yuzu zest.","Serve covered to retain heat and aroma."], chef_notes:"This soup is about restraint and purity. The dashi must be flawless — crystal clear and deeply flavoured. The yuzu adds an aromatic lift without overpowering.", serving_suggestions:"Serve at special dinners in lidded ceramic bowls. The aroma released when the lid is lifted is part of the experience.", nutrition_estimate:{calories:"145",protein_g:"22",carbohydrates_g:"4",fat_g:"4"}, tags:["Elegant","Kaiseki","Clear Soup","Japanese"], img:"https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80" },
+  { dish_name:"Nabe (Japanese Hot Pot)", state:"Japan", cuisine:"Japanese", category:"Soups", difficulty_level:"Easy", prep_time_minutes:30, cook_time_minutes:30, total_time_minutes:60, servings:4, short_description:"Japan's communal hot pot — a bubbling pot of kombu broth at the table shared by all, with each person adding their own fish, vegetables and tofu.", ingredients:[{name:"Kombu dashi",quantity:"1.5",unit:"litres"},{name:"Cod or tofu",quantity:"400",unit:"g"},{name:"Shiitake mushrooms",quantity:"8",unit:"pieces"},{name:"Enoki mushrooms",quantity:"150",unit:"g"},{name:"Napa cabbage",quantity:"300",unit:"g"},{name:"Firm tofu",quantity:"300",unit:"g"},{name:"Glass noodles",quantity:"100",unit:"g"},{name:"Ponzu sauce",quantity:"8",unit:"tbsp"},{name:"Green onion",quantity:"4",unit:"stalks"},{name:"Grated daikon",quantity:"100",unit:"g"}], preparation_steps:["Make kombu dashi and pour into tabletop pot or heavy pot.","Arrange all raw ingredients beautifully around the pot.","Bring broth to gentle simmer at the table.","Add ingredients in batches, starting with those that take longest.","Each person takes from the pot as items cook.","Dip into ponzu sauce with grated daikon.","At the end, cook udon or rice in the remaining broth."], chef_notes:"Nabe is about the experience as much as the food — cooking and eating together at the table. The final dish (shime) of noodles or rice in the remaining umami-rich broth is often everyone's favourite part.", serving_suggestions:"Set up as a communal tabletop experience. Provide individual ponzu bowls and condiments.", nutrition_estimate:{calories:"285",protein_g:"22",carbohydrates_g:"28",fat_g:"8"}, tags:["Hot Pot","Communal","Winter","Japanese"], img:"https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80" },
+  { dish_name:"Kenchinjiru (Buddhist Vegetable Soup)", state:"Japan", cuisine:"Japanese", category:"Soups", difficulty_level:"Easy", prep_time_minutes:20, cook_time_minutes:25, total_time_minutes:45, servings:4, short_description:"A nourishing temple soup from Kamakura's Zen Buddhist temples — root vegetables and tofu simmered in kombu dashi with sesame oil. No meat, no fish.", ingredients:[{name:"Daikon radish",quantity:"200",unit:"g"},{name:"Carrot",quantity:"1",unit:"large"},{name:"Burdock root",quantity:"100",unit:"g"},{name:"Taro (satoimo)",quantity:"200",unit:"g"},{name:"Firm tofu",quantity:"200",unit:"g"},{name:"Konnyaku",quantity:"100",unit:"g"},{name:"Kombu dashi",quantity:"1",unit:"litre"},{name:"Sesame oil",quantity:"2",unit:"tbsp"},{name:"Soy sauce",quantity:"3",unit:"tbsp"},{name:"Sake",quantity:"2",unit:"tbsp"}], preparation_steps:["Press and crumble tofu. Fry in sesame oil until golden.","Add all cut vegetables and konnyaku.","Stir-fry briefly with tofu.","Pour in dashi and bring to boil.","Simmer 20 minutes until vegetables are tender.","Season with soy sauce and sake.","Serve in bowls with mitsuba garnish."], chef_notes:"This soup originates from Kencho-ji temple in Kamakura. Frying the tofu and vegetables in sesame oil before adding dashi is the defining technique.", serving_suggestions:"Serve as a warming, nourishing vegan meal with steamed rice.", nutrition_estimate:{calories:"165",protein_g:"8",carbohydrates_g:"22",fat_g:"7"}, tags:["Vegan","Buddhist","Temple Food","Healthy"], img:"https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80" },
+
+  // ── RICE PREPARATIONS ───────────────────────────────────────────────────────
+  { dish_name:"Oyakodon (Chicken & Egg Rice Bowl)", state:"Japan", cuisine:"Japanese", category:"Rice Preparations", difficulty_level:"Easy", prep_time_minutes:15, cook_time_minutes:15, total_time_minutes:30, servings:4, short_description:"Parent and child rice bowl — tender chicken and softly set egg simmered in sweet dashi sauce over steamed rice. Japan's most comforting donburi.", ingredients:[{name:"Chicken thigh",quantity:"400",unit:"g"},{name:"Eggs",quantity:"6",unit:"large"},{name:"Onion",quantity:"1",unit:"large"},{name:"Dashi stock",quantity:"200",unit:"ml"},{name:"Soy sauce",quantity:"4",unit:"tbsp"},{name:"Mirin",quantity:"4",unit:"tbsp"},{name:"Sake",quantity:"2",unit:"tbsp"},{name:"Sugar",quantity:"1",unit:"tbsp"},{name:"Steamed rice",quantity:"600",unit:"g"},{name:"Nori",quantity:"2",unit:"strips"},{name:"Mitsuba or parsley",quantity:"4",unit:"sprigs"}], preparation_steps:["Slice chicken thighs into bite-sized pieces.","Slice onion into thin half-moons.","Combine dashi, soy sauce, mirin, sake and sugar in pan.","Bring to simmer. Add onion and cook 3 minutes.","Add chicken pieces. Simmer 4 minutes.","Lightly beat eggs — do not beat fully, keep some white streaks.","Pour egg over chicken in a circular motion.","Cover and cook on low heat 1 minute until egg is 70% set.","Remove from heat and slide over rice.","Garnish with nori and mitsuba."], chef_notes:"The egg must be slightly undercooked when you remove from heat — it continues cooking from the residual heat when poured over rice. Overcooked egg makes a dry, rubbery oyakodon.", serving_suggestions:"Serve immediately in deep bowls over hot steamed rice.", nutrition_estimate:{calories:"485",protein_g:"32",carbohydrates_g:"58",fat_g:"14"}, tags:["Donburi","Comfort Food","Egg","Japanese"], img:"https://images.unsplash.com/photo-1516684732162-798a0062be99?w=400&q=80" },
+  { dish_name:"Katsudon (Pork Cutlet Rice Bowl)", state:"Japan", cuisine:"Japanese", category:"Rice Preparations", difficulty_level:"Medium", prep_time_minutes:20, cook_time_minutes:20, total_time_minutes:40, servings:4, short_description:"Japan's most iconic donburi — crispy tonkatsu simmered with egg in sweet dashi over rice. Eaten before exams and competitions as a symbol of success.", ingredients:[{name:"Pork cutlets (tonkatsu)",quantity:"4",unit:"pieces"},{name:"Eggs",quantity:"6",unit:"large"},{name:"Onion",quantity:"1",unit:"large"},{name:"Dashi stock",quantity:"200",unit:"ml"},{name:"Soy sauce",quantity:"4",unit:"tbsp"},{name:"Mirin",quantity:"4",unit:"tbsp"},{name:"Sugar",quantity:"1",unit:"tbsp"},{name:"Panko breadcrumbs",quantity:"150",unit:"g"},{name:"Flour",quantity:"80",unit:"g"},{name:"Steamed rice",quantity:"600",unit:"g"}], preparation_steps:["Pound pork cutlets to even thickness. Season with salt and pepper.","Dredge in flour, egg, then panko.","Deep fry at 170°C until golden — about 5 minutes per side.","Rest and slice into strips.","Make sauce with dashi, soy and mirin. Simmer onion until soft.","Place tonkatsu strips in sauce. Pour beaten egg over.","Cover and cook until egg is set but still soft.","Slide over rice and serve immediately."], chef_notes:"Katsu is eaten before important events in Japan because katsu sounds like 'to win'. The egg coating the crispy tonkatsu is the genius of this dish.", serving_suggestions:"Serve in deep lacquer bowls. Provide Japanese pickles on the side.", nutrition_estimate:{calories:"620",protein_g:"36",carbohydrates_g:"68",fat_g:"22"}, tags:["Donburi","Pork Cutlet","Victory","Japanese"], img:"https://images.unsplash.com/photo-1516684732162-798a0062be99?w=400&q=80" },
+  { dish_name:"Takikomi Gohan (Mixed Rice)", state:"Japan", cuisine:"Japanese", category:"Rice Preparations", difficulty_level:"Medium", prep_time_minutes:20, cook_time_minutes:40, total_time_minutes:60, servings:4, short_description:"Japanese seasoned rice cooked with chicken, mushrooms and vegetables in a dashi-soy broth — the entire dish cooked together in one pot, absorbing all the umami.", ingredients:[{name:"Japanese rice",quantity:"400",unit:"g"},{name:"Chicken thigh",quantity:"200",unit:"g"},{name:"Gobo (burdock root)",quantity:"80",unit:"g"},{name:"Carrot",quantity:"1",unit:"medium"},{name:"Shiitake mushrooms",quantity:"6",unit:"pieces"},{name:"Aburaage (fried tofu skin)",quantity:"2",unit:"pieces"},{name:"Dashi stock",quantity:"450",unit:"ml"},{name:"Soy sauce",quantity:"3",unit:"tbsp"},{name:"Mirin",quantity:"2",unit:"tbsp"},{name:"Sake",quantity:"2",unit:"tbsp"}], preparation_steps:["Wash rice and soak 30 minutes. Drain.","Cut chicken, vegetables and mushrooms into small pieces.","Combine dashi, soy, mirin and sake.","Place rice in heavy pot. Arrange all ingredients over rice.","Pour dashi mixture over.","Cook covered on high until boiling, then low heat 12 minutes.","Rest covered 10 minutes. Do not lift lid during cooking.","Fold ingredients gently into rice and serve."], chef_notes:"Never lift the lid during cooking — the steam is what cooks the rice perfectly. The burdock root adds an irreplaceable earthy depth.", serving_suggestions:"Serve in individual rice bowls. Excellent as a meal on its own.", nutrition_estimate:{calories:"385",protein_g:"18",carbohydrates_g:"62",fat_g:"7"}, tags:["Rice","One Pot","Traditional","Japanese"], img:"https://images.unsplash.com/photo-1516684732162-798a0062be99?w=400&q=80" },
+  { dish_name:"Chahan (Japanese Fried Rice)", state:"Japan", cuisine:"Japanese", category:"Rice Preparations", difficulty_level:"Easy", prep_time_minutes:10, cook_time_minutes:10, total_time_minutes:20, servings:4, short_description:"Japanese fried rice — simpler and more restrained than Chinese fried rice, with a delicate soy butter flavour and light, separated grains. A beloved home staple.", ingredients:[{name:"Cooked cold rice",quantity:"600",unit:"g"},{name:"Eggs",quantity:"3",unit:"large"},{name:"Ham or bacon",quantity:"100",unit:"g"},{name:"Green onion",quantity:"4",unit:"stalks"},{name:"Soy sauce",quantity:"2",unit:"tbsp"},{name:"Butter",quantity:"2",unit:"tbsp"},{name:"Sesame oil",quantity:"1",unit:"tsp"},{name:"Salt",quantity:"0.5",unit:"tsp"},{name:"White pepper",quantity:"0.5",unit:"tsp"}], preparation_steps:["Use cold, day-old rice — fresh rice makes sticky fried rice.","Heat wok until smoking hot.","Add butter and immediately add beaten eggs.","Before eggs set fully, add cold rice and stir-fry rapidly.","Stir-fry on highest heat, breaking rice clumps.","Add ham and green onion.","Season with soy sauce, sesame oil, salt and pepper.","Toss rapidly for 2 more minutes.","Serve immediately."], chef_notes:"Day-old refrigerated rice is essential — fresh rice has too much moisture. High heat is everything — a cold wok makes soggy fried rice.", serving_suggestions:"Serve immediately in small rice bowls or alongside other dishes.", nutrition_estimate:{calories:"365",protein_g:"14",carbohydrates_g:"58",fat_g:"9"}, tags:["Fried Rice","Quick","Everyday","Japanese"], img:"https://images.unsplash.com/photo-1516684732162-798a0062be99?w=400&q=80" },
+  { dish_name:"Onigiri Rice Sandwich (Onigirazu)", state:"Japan", cuisine:"Japanese", category:"Rice Preparations", difficulty_level:"Easy", prep_time_minutes:20, cook_time_minutes:20, total_time_minutes:40, servings:4, short_description:"The modern Japanese rice sandwich — rice and colourful fillings wrapped tightly in nori, sliced to reveal beautiful layers. The trendiest convenience food from Japanese konbini.", ingredients:[{name:"Sushi rice",quantity:"500",unit:"g"},{name:"Nori sheets",quantity:"4",unit:"pieces"},{name:"Salmon fillet",quantity:"200",unit:"g"},{name:"Avocado",quantity:"2",unit:"large"},{name:"Cucumber",quantity:"1",unit:"medium"},{name:"Japanese mayo",quantity:"4",unit:"tbsp"},{name:"Eggs",quantity:"2",unit:"large"},{name:"Soy sauce",quantity:"2",unit:"tbsp"}], preparation_steps:["Season and cool sushi rice.","Grill or pan-fry salmon. Flake into pieces.","Make thin egg omelette and cool.","Slice avocado and cucumber.","Lay nori sheet diagonally on plastic wrap.","Place rice in centre. Add fillings on top. Cover with more rice.","Fold nori over to wrap completely.","Wrap tightly in plastic film. Press firmly and rest 5 minutes.","Slice through the middle with a sharp knife."], chef_notes:"Pressing firmly and resting is essential for onigirazu to hold its shape when sliced. The dramatic cross-section should reveal clean, colourful layers.", serving_suggestions:"Wrap in parchment paper as portable lunch. Reveal the layers when opened.", nutrition_estimate:{calories:"395",protein_g:"20",carbohydrates_g:"52",fat_g:"12"}, tags:["Trendy","Portable","Konbini","Japanese"], img:"https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&q=80" },
+  { dish_name:"Maze Gohan (Mixed Rice Bowl)", state:"Japan", cuisine:"Japanese", category:"Rice Preparations", difficulty_level:"Easy", prep_time_minutes:15, cook_time_minutes:15, total_time_minutes:30, servings:4, short_description:"A richly flavoured rice bowl where toppings are mixed into the rice by the diner — raw egg yolk, pickled vegetables and seasoned minced meat create a luxurious umami bomb.", ingredients:[{name:"Steamed rice",quantity:"600",unit:"g"},{name:"Ground beef",quantity:"250",unit:"g"},{name:"Egg yolks",quantity:"4",unit:"pieces"},{name:"Soy sauce",quantity:"4",unit:"tbsp"},{name:"Sake",quantity:"2",unit:"tbsp"},{name:"Mirin",quantity:"2",unit:"tbsp"},{name:"Green onion",quantity:"4",unit:"stalks"},{name:"Sesame oil",quantity:"1",unit:"tbsp"},{name:"Sesame seeds",quantity:"2",unit:"tbsp"},{name:"Nori strips",quantity:"4",unit:"strips"}], preparation_steps:["Stir-fry ground beef until cooked. Season with soy sauce, sake and mirin.","Divide steamed rice into bowls.","Top rice with seasoned beef.","Create a well in the centre and place a raw egg yolk.","Arrange nori strips, green onion and sesame seeds around.","Drizzle with sesame oil.","At the table, mix everything thoroughly into rice.","Eat immediately."], chef_notes:"The raw egg yolk must be fresh and high quality — it acts as a sauce when mixed. The act of mixing is part of the experience.", serving_suggestions:"Serve in deep bowls. Mix vigorously at the table for the full effect.", nutrition_estimate:{calories:"445",protein_g:"22",carbohydrates_g:"56",fat_g:"14"}, tags:["Rice Bowl","Egg Yolk","Umami","Japanese"], img:"https://images.unsplash.com/photo-1516684732162-798a0062be99?w=400&q=80" },
+  { dish_name:"Kamaage Udon", state:"Japan", cuisine:"Japanese", category:"Rice Preparations", difficulty_level:"Easy", prep_time_minutes:10, cook_time_minutes:15, total_time_minutes:25, servings:4, short_description:"Thick udon noodles served directly from their cooking water into a hot dashi broth — Kagawa prefecture's most beloved noodle dish, valued for simplicity and quality.", ingredients:[{name:"Fresh udon noodles",quantity:"600",unit:"g"},{name:"Dashi stock",quantity:"800",unit:"ml"},{name:"Soy sauce",quantity:"4",unit:"tbsp"},{name:"Mirin",quantity:"4",unit:"tbsp"},{name:"Grated daikon",quantity:"100",unit:"g"},{name:"Green onion",quantity:"4",unit:"stalks"},{name:"Ginger",quantity:"1",unit:"tsp"},{name:"Tempura flakes",quantity:"4",unit:"tbsp"}], preparation_steps:["Combine dashi, soy and mirin. Heat gently — this is the dipping broth.","Bring large pot of water to vigorous boil.","Cook udon noodles until tender — fresh udon takes only 3 minutes.","Serve noodles directly in cooking water in a pot.","Dip noodles into hot broth with daikon, ginger and onion.","Alternatively, pour hot broth over noodles.","Top with tempura flakes."], chef_notes:"Kamaage udon is about simplicity — the quality of the udon noodles is everything. Fresh udon from a Japanese market is ideal.", serving_suggestions:"Serve noodles in their cooking water and broth separately for dipping style.", nutrition_estimate:{calories:"345",protein_g:"11",carbohydrates_g:"68",fat_g:"3"}, tags:["Udon","Noodles","Simple","Kagawa"], img:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80" },
+  { dish_name:"Tekkadon (Tuna Rice Bowl)", state:"Japan", cuisine:"Japanese", category:"Rice Preparations", difficulty_level:"Medium", prep_time_minutes:20, cook_time_minutes:20, total_time_minutes:40, servings:4, short_description:"A glorious donburi of fresh tuna sashimi marinated in soy and mirin, fanned over warm sushi rice — simple, luxurious and deeply satisfying.", ingredients:[{name:"Sashimi-grade tuna",quantity:"400",unit:"g"},{name:"Soy sauce",quantity:"4",unit:"tbsp"},{name:"Mirin",quantity:"2",unit:"tbsp"},{name:"Sake",quantity:"1",unit:"tbsp"},{name:"Sesame oil",quantity:"1",unit:"tsp"},{name:"Sushi rice",quantity:"600",unit:"g"},{name:"Wasabi",quantity:"2",unit:"tbsp"},{name:"Nori",quantity:"4",unit:"strips"},{name:"Sesame seeds",quantity:"2",unit:"tbsp"},{name:"Green onion",quantity:"2",unit:"stalks"}], preparation_steps:["Slice tuna into 5mm thick slices.","Marinate in soy sauce, mirin and sake for 15 minutes.","Prepare sushi rice.","Divide warm rice into bowls.","Arrange marinated tuna over rice.","Add wasabi to one side.","Garnish with nori strips, sesame seeds and green onion.","Drizzle remaining marinade over."], chef_notes:"Only use sashimi-grade tuna for this dish. The marinade time is important — too long and the tuna becomes too salty and loses its texture.", serving_suggestions:"Serve immediately once assembled. Provide extra soy sauce on the side.", nutrition_estimate:{calories:"420",protein_g:"30",carbohydrates_g:"56",fat_g:"8"}, tags:["Tuna","Donburi","Sashimi","Premium"], img:"https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=400&q=80" },
+  { dish_name:"Gomoku Gohan (Five Ingredient Rice)", state:"Japan", cuisine:"Japanese", category:"Rice Preparations", difficulty_level:"Medium", prep_time_minutes:20, cook_time_minutes:40, total_time_minutes:60, servings:6, short_description:"Traditional Japanese mixed rice with five classic ingredients — chicken, carrot, burdock, shiitake and aburaage, cooked together in seasoned dashi.", ingredients:[{name:"Japanese rice",quantity:"500",unit:"g"},{name:"Chicken thigh",quantity:"200",unit:"g"},{name:"Carrot",quantity:"1",unit:"large"},{name:"Burdock root",quantity:"80",unit:"g"},{name:"Dried shiitake mushrooms",quantity:"6",unit:"pieces"},{name:"Aburaage",quantity:"2",unit:"pieces"},{name:"Dashi from shiitake",quantity:"450",unit:"ml"},{name:"Soy sauce",quantity:"3",unit:"tbsp"},{name:"Mirin",quantity:"2",unit:"tbsp"},{name:"Salt",quantity:"0.5",unit:"tsp"}], preparation_steps:["Soak shiitake in 500ml water overnight — save soaking water as dashi.","Dice all ingredients finely and evenly.","Wash and drain rice.","Combine shiitake dashi with soy, mirin and salt.","Place rice in pot. Arrange all ingredients on top.","Pour dashi to just cover.","Cook covered on medium-high until boiling, then low 12 minutes.","Rest 10 minutes. Fold gently to mix."], chef_notes:"The shiitake soaking water is the secret ingredient — it has deep umami that regular dashi lacks. Never discard it.", serving_suggestions:"Serve in individual rice bowls. Makes excellent bento box filling.", nutrition_estimate:{calories:"355",protein_g:"16",carbohydrates_g:"60",fat_g:"5"}, tags:["Traditional","Five Ingredients","One Pot","Japanese"], img:"https://images.unsplash.com/photo-1516684732162-798a0062be99?w=400&q=80" },
+  { dish_name:"Unadon (Grilled Eel Rice Bowl)", state:"Japan", cuisine:"Japanese", category:"Rice Preparations", difficulty_level:"Medium", prep_time_minutes:15, cook_time_minutes:20, total_time_minutes:35, servings:4, short_description:"A luxurious Japanese rice bowl topped with kabayaki eel — lacquered with sweet soy tare and grilled to a caramelised glaze over steamed rice. Japan's summer stamina food.", ingredients:[{name:"Prepared kabayaki eel",quantity:"4",unit:"fillets"},{name:"Steamed rice",quantity:"600",unit:"g"},{name:"Eel sauce (tare)",quantity:"6",unit:"tbsp"},{name:"Soy sauce",quantity:"2",unit:"tbsp"},{name:"Mirin",quantity:"4",unit:"tbsp"},{name:"Sugar",quantity:"2",unit:"tbsp"},{name:"Sake",quantity:"2",unit:"tbsp"},{name:"Sansho pepper",quantity:"1",unit:"tsp"},{name:"Nori",quantity:"2",unit:"sheets"}], preparation_steps:["Make tare: combine soy, mirin, sugar and sake. Simmer until slightly thickened.","Heat prepared eel under grill or in pan.","Brush generously with tare during heating.","Continue brushing and heating until lacquered and caramelised.","Divide hot rice into lacquer bowls.","Lay eel over rice.","Brush with final coat of tare.","Sprinkle sansho pepper.","Serve with nori on the side."], chef_notes:"Sansho pepper is the essential final touch for unadon — its numbing, citrusy heat perfectly complements the rich eel. Never skip it.", serving_suggestions:"Serve in deep lacquer boxes (jubako) traditionally. Eaten especially on Doyo no Ushi no Hi (midsummer).", nutrition_estimate:{calories:"520",protein_g:"28",carbohydrates_g:"62",fat_g:"18"}, tags:["Eel","Premium","Summer","Japanese"], img:"https://images.unsplash.com/photo-1516684732162-798a0062be99?w=400&q=80" },
+
+  // ── MAIN COURSES ────────────────────────────────────────────────────────────
+  { dish_name:"Chicken Katsu Curry", state:"Japan", cuisine:"Japanese", category:"Main Courses", difficulty_level:"Medium", prep_time_minutes:30, cook_time_minutes:40, total_time_minutes:70, servings:4, short_description:"Japan's most beloved western-influenced dish — crispy panko chicken cutlet served alongside a rich, mildly spiced Japanese curry sauce over steamed rice.", ingredients:[{name:"Chicken breast",quantity:"4",unit:"pieces"},{name:"Panko breadcrumbs",quantity:"200",unit:"g"},{name:"Eggs",quantity:"2",unit:"large"},{name:"Flour",quantity:"80",unit:"g"},{name:"Japanese curry roux",quantity:"4",unit:"blocks"},{name:"Onion",quantity:"2",unit:"large"},{name:"Carrot",quantity:"2",unit:"medium"},{name:"Potato",quantity:"2",unit:"large"},{name:"Water",quantity:"700",unit:"ml"},{name:"Steamed rice",quantity:"600",unit:"g"},{name:"Tonkatsu sauce",quantity:"4",unit:"tbsp"}], preparation_steps:["Make curry: fry onion until golden, add carrot and potato.","Add water and simmer 15 minutes until vegetables are tender.","Add curry roux blocks and stir until dissolved. Simmer 10 minutes.","Pound chicken breasts to even thickness.","Bread chicken in flour, egg, then panko.","Deep fry at 170°C for 5-6 minutes until golden.","Slice katsu diagonally.","Serve rice in a plate, katsu alongside, curry poured next to katsu.","Drizzle tonkatsu sauce over katsu."], chef_notes:"Japanese curry is distinctly different from Indian curry — it is mild, slightly sweet and very thick. S&B or Vermont curry roux blocks are authentic and essential.", serving_suggestions:"Serve on a plate with rice, katsu and curry in three distinct sections.", nutrition_estimate:{calories:"685",protein_g:"42",carbohydrates_g:"78",fat_g:"22"}, tags:["Curry","Katsu","Popular","Yoshoku"], img:"https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?w=400&q=80" },
+  { dish_name:"Beef Sukiyaki", state:"Japan", cuisine:"Japanese", category:"Main Courses", difficulty_level:"Medium", prep_time_minutes:30, cook_time_minutes:25, total_time_minutes:55, servings:4, short_description:"Japan's most celebratory hot pot — thinly sliced premium beef cooked in a sweet soy broth at the table and dipped in raw egg. A dish reserved for special occasions.", ingredients:[{name:"Wagyu or premium beef sirloin",quantity:"600",unit:"g"},{name:"Firm tofu",quantity:"300",unit:"g"},{name:"Napa cabbage",quantity:"300",unit:"g"},{name:"Shiitake mushrooms",quantity:"8",unit:"pieces"},{name:"Enoki mushrooms",quantity:"150",unit:"g"},{name:"Konjac noodles",quantity:"200",unit:"g"},{name:"Soy sauce",quantity:"6",unit:"tbsp"},{name:"Mirin",quantity:"6",unit:"tbsp"},{name:"Sake",quantity:"4",unit:"tbsp"},{name:"Sugar",quantity:"3",unit:"tbsp"},{name:"Raw eggs",quantity:"4",unit:"pieces"}], preparation_steps:["Arrange all ingredients on platters around the table.","Heat cast iron or heavy pot. Rub with beef fat.","Lay first slices of beef and sear briefly.","Add soy sauce, mirin, sake and sugar directly.","Add vegetables and tofu around the beef.","Each person beats a raw egg in their bowl.","Take cooked items from the pot and dip in beaten egg before eating.","Replenish ingredients and adjust seasoning as you eat."], chef_notes:"The raw egg dip is not optional — it is the defining element of sukiyaki. It cools the hot meat and adds a silky richness. Use very fresh eggs.", serving_suggestions:"Cook and eat communally at the table. Serve with steamed rice.", nutrition_estimate:{calories:"480",protein_g:"34",carbohydrates_g:"22",fat_g:"28"}, tags:["Hot Pot","Beef","Special Occasion","Communal"], img:"https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=400&q=80" },
+  { dish_name:"Salmon Teriyaki", state:"Japan", cuisine:"Japanese", category:"Main Courses", difficulty_level:"Easy", prep_time_minutes:10, cook_time_minutes:15, total_time_minutes:25, servings:4, short_description:"A Japanese classic — salmon glazed with a glossy teriyaki sauce of soy, mirin and sake, pan-fried to a lacquered finish. One of Japan's most internationally loved dishes.", ingredients:[{name:"Salmon fillets",quantity:"4",unit:"pieces"},{name:"Soy sauce",quantity:"4",unit:"tbsp"},{name:"Mirin",quantity:"4",unit:"tbsp"},{name:"Sake",quantity:"2",unit:"tbsp"},{name:"Sugar",quantity:"1",unit:"tbsp"},{name:"Sesame seeds",quantity:"2",unit:"tbsp"},{name:"Vegetable oil",quantity:"2",unit:"tbsp"},{name:"Steamed rice",quantity:"600",unit:"g"},{name:"Green onion",quantity:"2",unit:"stalks"}], preparation_steps:["Mix soy sauce, mirin, sake and sugar for teriyaki sauce.","Pat salmon dry with paper towels.","Heat oil in pan over medium-high heat.","Place salmon skin-side up and cook 3 minutes.","Flip to skin side and cook 2 more minutes.","Pour teriyaki sauce over salmon.","Reduce heat and keep turning salmon, coating in sauce.","Cook until sauce is thick and caramelised — about 3 more minutes.","Serve over rice with sesame seeds and green onion."], chef_notes:"The caramelisation of the sauce is what creates that glossy lacquered finish. Keep turning the salmon in the thickening sauce over medium-low heat.", serving_suggestions:"Serve over steamed rice with blanched broccoli and miso soup.", nutrition_estimate:{calories:"395",protein_g:"34",carbohydrates_g:"30",fat_g:"16"}, tags:["Teriyaki","Salmon","Quick","Japanese"], img:"https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=400&q=80" },
+  { dish_name:"Tonkatsu (Pork Cutlet)", state:"Japan", cuisine:"Japanese", category:"Main Courses", difficulty_level:"Easy", prep_time_minutes:20, cook_time_minutes:15, total_time_minutes:35, servings:4, short_description:"Japan's quintessential Western-influenced dish — thick pork cutlet coated in panko and fried to a crispy golden perfection, served with shredded cabbage and tonkatsu sauce.", ingredients:[{name:"Pork loin cutlets",quantity:"4",unit:"thick pieces"},{name:"Panko breadcrumbs",quantity:"200",unit:"g"},{name:"Eggs",quantity:"2",unit:"large"},{name:"Flour",quantity:"80",unit:"g"},{name:"Salt",quantity:"1",unit:"tsp"},{name:"White pepper",quantity:"0.5",unit:"tsp"},{name:"Oil for frying",quantity:"2",unit:"cups"},{name:"Tonkatsu sauce",quantity:"6",unit:"tbsp"},{name:"Shredded cabbage",quantity:"200",unit:"g"},{name:"Japanese mustard",quantity:"1",unit:"tbsp"}], preparation_steps:["Pound pork cutlets to 1.5cm thickness.","Score the edges to prevent curling.","Season with salt and pepper.","Dredge in flour, beaten egg, then panko.","Press panko firmly to adhere.","Deep fry at 165°C for 6-7 minutes until golden.","Do not crowd the pan.","Rest on wire rack 3 minutes before slicing.","Slice and serve with tonkatsu sauce."], chef_notes:"The lower frying temperature ensures the pork cooks through without burning the panko. Resting after frying allows the juices to redistribute.", serving_suggestions:"Serve with shredded cabbage, rice, miso soup and tonkatsu sauce.", nutrition_estimate:{calories:"480",protein_g:"32",carbohydrates_g:"34",fat_g:"24"}, tags:["Pork Cutlet","Yoshoku","Crispy","Japanese"], img:"https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=400&q=80" },
+  { dish_name:"Shabu-Shabu", state:"Japan", cuisine:"Japanese", category:"Main Courses", difficulty_level:"Easy", prep_time_minutes:30, cook_time_minutes:20, total_time_minutes:50, servings:4, short_description:"Thinly sliced beef swished through a bubbling kombu broth at the table — the sound of the swishing gives this beloved Japanese hot pot its name.", ingredients:[{name:"Wagyu beef sirloin, paper thin",quantity:"600",unit:"g"},{name:"Napa cabbage",quantity:"300",unit:"g"},{name:"Tofu",quantity:"300",unit:"g"},{name:"Enoki mushrooms",quantity:"150",unit:"g"},{name:"Carrot",quantity:"1",unit:"large"},{name:"Kombu",quantity:"20",unit:"g"},{name:"Water",quantity:"1.5",unit:"litres"},{name:"Sesame ponzu sauce",quantity:"8",unit:"tbsp"},{name:"Goma dare (sesame sauce)",quantity:"8",unit:"tbsp"},{name:"Green onion",quantity:"4",unit:"stalks"}], preparation_steps:["Make kombu broth: soak kombu in water 30 minutes, heat to 80°C.","Arrange all ingredients decoratively on platters.","Set up broth at table over portable burner.","Dip each thin slice of beef into broth and swish 2-3 times.","Beef cooks in 5-10 seconds.","Also cook vegetables, tofu and mushrooms in broth.","Dip into ponzu or sesame sauce.","Finish meal by cooking udon in the remaining broth."], chef_notes:"Shabu-shabu beef must be paper thin — ask the butcher to slice it on a meat slicer. Wagyu is ideal but any good sirloin works when sliced thin enough.", serving_suggestions:"Set up as a communal tabletop experience. Provide both ponzu and sesame dipping sauces.", nutrition_estimate:{calories:"350",protein_g:"32",carbohydrates_g:"12",fat_g:"20"}, tags:["Hot Pot","Beef","Communal","Wagyu"], img:"https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=400&q=80" },
+  { dish_name:"Niku Jaga (Meat and Potato Stew)", state:"Japan", cuisine:"Japanese", category:"Main Courses", difficulty_level:"Easy", prep_time_minutes:15, cook_time_minutes:30, total_time_minutes:45, servings:4, short_description:"Japan's beloved home stew — beef, potato and onion simmered in soy-mirin broth. Called Japan's answer to pot roast, it is pure, nostalgic comfort food.", ingredients:[{name:"Beef sirloin slices",quantity:"300",unit:"g"},{name:"Potatoes",quantity:"4",unit:"large"},{name:"Onion",quantity:"2",unit:"large"},{name:"Carrot",quantity:"1",unit:"large"},{name:"Shirataki noodles",quantity:"150",unit:"g"},{name:"Soy sauce",quantity:"4",unit:"tbsp"},{name:"Mirin",quantity:"4",unit:"tbsp"},{name:"Sake",quantity:"3",unit:"tbsp"},{name:"Sugar",quantity:"2",unit:"tbsp"},{name:"Dashi stock",quantity:"300",unit:"ml"}], preparation_steps:["Cut potatoes into large chunks. Rinse under cold water.","Slice onion thickly. Cut carrot into chunks.","Blanch shirataki noodles and cut.","Stir-fry beef until colour changes.","Add onion and cook 2 minutes.","Add dashi, soy, mirin, sake and sugar.","Add potatoes, carrot and noodles.","Cover and simmer 20 minutes until potatoes are tender.","Leave covered 10 minutes before serving."], chef_notes:"Nikujaga is Japan's definition of 'okaasan no taste' (mother's flavour). The potatoes should be tender but not falling apart. The broth is the soul of the dish.", serving_suggestions:"Serve in deep bowls with steamed rice and pickled vegetables.", nutrition_estimate:{calories:"365",protein_g:"20",carbohydrates_g:"48",fat_g:"10"}, tags:["Comfort Food","Home Cooking","Stew","Japanese"], img:"https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=400&q=80" },
+  { dish_name:"Yakizakana (Grilled Salt Mackerel)", state:"Japan", cuisine:"Japanese", category:"Main Courses", difficulty_level:"Easy", prep_time_minutes:10, cook_time_minutes:15, total_time_minutes:25, servings:4, short_description:"The most essential Japanese dinner table dish — whole mackerel seasoned simply with salt and grilled until the skin is crispy and fragrant. Simplicity is perfection.", ingredients:[{name:"Mackerel fillets",quantity:"4",unit:"pieces"},{name:"Salt",quantity:"2",unit:"tbsp"},{name:"Sake",quantity:"2",unit:"tbsp"},{name:"Grated daikon",quantity:"100",unit:"g"},{name:"Sudachi or lemon",quantity:"2",unit:"pieces"},{name:"Soy sauce",quantity:"2",unit:"tbsp"}], preparation_steps:["Score mackerel skin in crosshatch pattern.","Rub generously with salt on both sides.","Sprinkle sake and let marinate 20 minutes.","Pat dry with paper towels.","Grill skin-side up under high heat until skin is crispy and charred — 7 minutes.","Flip and cook flesh side 5 more minutes.","Serve with grated daikon and citrus."], chef_notes:"Salt-grilled fish is one of the great pillars of Japanese cooking. The crosshatch cut in the skin prevents curling and helps the salt penetrate.", serving_suggestions:"Serve with grated daikon mixed with soy sauce, steamed rice and miso soup.", nutrition_estimate:{calories:"285",protein_g:"28",carbohydrates_g:"2",fat_g:"18"}, tags:["Grilled Fish","Traditional","Healthy","Everyday"], img:"https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=400&q=80" },
+  { dish_name:"Yudofu (Simmered Tofu)", state:"Japan", cuisine:"Japanese", category:"Main Courses", difficulty_level:"Easy", prep_time_minutes:10, cook_time_minutes:15, total_time_minutes:25, servings:4, short_description:"Kyoto's most celebrated winter dish — silken tofu gently simmered in kombu broth and eaten with simple condiments. A Zen Buddhist dish of profound simplicity.", ingredients:[{name:"Silken tofu",quantity:"800",unit:"g"},{name:"Kombu",quantity:"20",unit:"g"},{name:"Water",quantity:"1",unit:"litre"},{name:"Soy sauce",quantity:"6",unit:"tbsp"},{name:"Mirin",quantity:"3",unit:"tbsp"},{name:"Katsuobushi",quantity:"20",unit:"g"},{name:"Green onion",quantity:"4",unit:"stalks"},{name:"Grated ginger",quantity:"2",unit:"tsp"},{name:"Yuzu zest",quantity:"1",unit:"tsp"}], preparation_steps:["Place kombu in pot with water. Bring slowly to 80°C.","Cut tofu into large cubes.","Add tofu to kombu broth. Heat very gently — do not boil.","Make dipping sauce: heat soy and mirin together.","Place katsuobushi in sauce — the heat makes it dance.","Serve tofu in the pot at the table.","Scoop tofu into individual bowls.","Add condiments to dipping sauce: onion, ginger, yuzu.","Dip tofu gently and eat."], chef_notes:"Yudofu is a meditation on simplicity. Never boil the tofu — it should barely simmer. The quality of the tofu is everything in this dish.", serving_suggestions:"Serve at the table in the simmering pot. A Kyoto winter tradition.", nutrition_estimate:{calories:"145",protein_g:"12",carbohydrates_g:"8",fat_g:"6"}, tags:["Tofu","Vegan","Kyoto","Zen Buddhist"], img:"https://images.unsplash.com/photo-1562802378-063ec186a863?w=400&q=80" },
+  { dish_name:"Hambagu (Japanese Hamburg Steak)", state:"Japan", cuisine:"Japanese", category:"Main Courses", difficulty_level:"Medium", prep_time_minutes:20, cook_time_minutes:20, total_time_minutes:40, servings:4, short_description:"Japan's beloved adaptation of Hamburg steak — a juicy, flavourful patty made with beef and pork, served with a tangy Japanese demi-glace sauce. A family favourite.", ingredients:[{name:"Ground beef",quantity:"300",unit:"g"},{name:"Ground pork",quantity:"200",unit:"g"},{name:"Onion",quantity:"1",unit:"large"},{name:"Breadcrumbs",quantity:"4",unit:"tbsp"},{name:"Milk",quantity:"4",unit:"tbsp"},{name:"Egg",quantity:"1",unit:"large"},{name:"Nutmeg",quantity:"0.25",unit:"tsp"},{name:"Soy sauce",quantity:"2",unit:"tbsp"},{name:"Mirin",quantity:"2",unit:"tbsp"},{name:"Ketchup",quantity:"4",unit:"tbsp"},{name:"Worcestershire sauce",quantity:"2",unit:"tbsp"},{name:"Butter",quantity:"1",unit:"tbsp"}], preparation_steps:["Fry onion until golden and cool completely.","Mix beef, pork, onion, breadcrumbs soaked in milk, egg, nutmeg and seasoning.","Knead mixture well until sticky.","Shape into oval patties, pressing out air pockets.","Make indentation in centre with thumb (prevents puffing).","Cook in pan 4 minutes per side until cooked through.","Make sauce: deglaze pan with soy, mirin, ketchup and Worcestershire.","Finish with butter for gloss.","Pour sauce over hambagu."], chef_notes:"The indentation in the centre is the essential hambagu technique — it prevents the patty from puffing up and allows even cooking.", serving_suggestions:"Serve with steamed rice, shredded cabbage and Japanese potato salad.", nutrition_estimate:{calories:"420",protein_g:"28",carbohydrates_g:"18",fat_g:"26"}, tags:["Yoshoku","Hamburg","Family Food","Japanese"], img:"https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=400&q=80" },
+  { dish_name:"Saba Misoni (Mackerel in Miso)", state:"Japan", cuisine:"Japanese", category:"Main Courses", difficulty_level:"Easy", prep_time_minutes:10, cook_time_minutes:20, total_time_minutes:30, servings:4, short_description:"Mackerel simmered in a rich miso and ginger broth until tender and deeply flavoured — one of Japan's most prized and nutritious home-cooked dishes.", ingredients:[{name:"Mackerel fillets",quantity:"4",unit:"pieces"},{name:"White miso paste",quantity:"4",unit:"tbsp"},{name:"Mirin",quantity:"4",unit:"tbsp"},{name:"Sake",quantity:"4",unit:"tbsp"},{name:"Sugar",quantity:"2",unit:"tbsp"},{name:"Soy sauce",quantity:"1",unit:"tbsp"},{name:"Ginger",quantity:"2",unit:"inch"},{name:"Water",quantity:"200",unit:"ml"},{name:"Green onion",quantity:"3",unit:"stalks"}], preparation_steps:["Score mackerel skin and blanch in boiling water 30 seconds.","Rinse under cold water to remove any fishiness.","Combine water, sake, mirin, sugar and soy in pan. Bring to boil.","Add mackerel skin-side up.","Mix miso with a little of the broth and add to pan.","Add ginger slices.","Simmer 12-15 minutes, spooning sauce over mackerel regularly.","Reduce sauce until glossy and coating.","Garnish with sliced green onion."], chef_notes:"Blanching the mackerel before simmering removes any strong fishy odour and ensures a clean flavour. The sauce should be thick and glossy at the end.", serving_suggestions:"Serve over steamed rice with miso soup and pickled vegetables.", nutrition_estimate:{calories:"340",protein_g:"30",carbohydrates_g:"18",fat_g:"16"}, tags:["Mackerel","Miso","Traditional","Healthy"], img:"https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=400&q=80" },
+
+  // ── DESSERTS ────────────────────────────────────────────────────────────────
+  { dish_name:"Matcha Cheesecake", state:"Japan", cuisine:"Japanese", category:"Desserts", difficulty_level:"Hard", prep_time_minutes:30, cook_time_minutes:60, total_time_minutes:90, servings:8, short_description:"A Japanese jiggly cheesecake infused with premium matcha — impossibly light, soufflé-like in texture with a deep earthy green tea flavour. Japan's most beloved modern dessert.", ingredients:[{name:"Cream cheese",quantity:"250",unit:"g"},{name:"Eggs",quantity:"5",unit:"large"},{name:"Matcha powder",quantity:"3",unit:"tbsp"},{name:"Sugar",quantity:"120",unit:"g"},{name:"Milk",quantity:"100",unit:"ml"},{name:"Butter",quantity:"50",unit:"g"},{name:"Flour",quantity:"50",unit:"g"},{name:"Lemon juice",quantity:"1",unit:"tbsp"},{name:"Vanilla extract",quantity:"1",unit:"tsp"}], preparation_steps:["Separate eggs. Melt cream cheese with milk and butter.","Sift matcha and flour into cheese mixture.","Add egg yolks, lemon juice and vanilla. Mix smooth.","Beat egg whites with sugar to stiff peaks.","Fold meringue gently into cheese mixture in three additions.","Pour into lined springform pan.","Bake in water bath at 160°C for 60 minutes.","Turn off oven and leave inside 15 more minutes.","Cool completely before removing. Dust with matcha powder."], chef_notes:"The water bath and slow cooling are what create the jiggly, soufflé-like texture. Opening the oven too early causes collapse.", serving_suggestions:"Serve chilled with fresh whipped cream and a dusting of matcha powder.", nutrition_estimate:{calories:"285",protein_g:"7",carbohydrates_g:"26",fat_g:"17"}, tags:["Matcha","Cheesecake","Jiggly","Japanese Dessert"], img:"https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80" },
+  { dish_name:"Mochi Ice Cream", state:"Japan", cuisine:"Japanese", category:"Desserts", difficulty_level:"Medium", prep_time_minutes:30, cook_time_minutes:10, total_time_minutes:40, servings:8, short_description:"Ice cream wrapped in a soft, pillowy glutinous rice wrapper — Japan's most playful, internationally beloved sweet. Chewy, cold and irresistible.", ingredients:[{name:"Glutinous rice flour (mochiko)",quantity:"200",unit:"g"},{name:"Sugar",quantity:"80",unit:"g"},{name:"Water",quantity:"200",unit:"ml"},{name:"Matcha or food colouring",quantity:"1",unit:"tbsp"},{name:"Ice cream (various flavours)",quantity:"500",unit:"ml"},{name:"Potato starch for dusting",quantity:"4",unit:"tbsp"},{name:"Condensed milk",quantity:"2",unit:"tbsp"}], preparation_steps:["Scoop ice cream into balls, freeze solid on lined tray.","Mix mochiko with sugar, water and matcha.","Microwave for 2 minutes, stir, microwave 1 more minute.","Stir vigorously until smooth and elastic.","Dust work surface with potato starch.","Roll mochi thin, cut into circles.","Work quickly — place frozen ice cream ball in centre.","Gather edges and pinch to seal.","Freeze sealed-side down immediately.","Freeze at least 1 hour before serving."], chef_notes:"Speed is essential — mochi becomes sticky and ice cream melts quickly. Keep everything cold and work with one piece at a time.", serving_suggestions:"Serve frozen, 5 minutes out of the freezer. Arrange on a platter for visual impact.", nutrition_estimate:{calories:"195",protein_g:"3",carbohydrates_g:"34",fat_g:"6"}, tags:["Mochi","Ice Cream","Sweet","Japanese Dessert"], img:"https://images.unsplash.com/photo-1558024920-b41e1887dc32?w=400&q=80" },
+  { dish_name:"Dorayaki (Sweet Pancakes)", state:"Japan", cuisine:"Japanese", category:"Desserts", difficulty_level:"Easy", prep_time_minutes:15, cook_time_minutes:20, total_time_minutes:35, servings:8, short_description:"The beloved Japanese pancake sandwich filled with sweet red bean paste — made famous by Doraemon, beloved by everyone. Soft, honey-sweetened pancakes hugging a generous filling of anko.", ingredients:[{name:"Eggs",quantity:"3",unit:"large"},{name:"Sugar",quantity:"80",unit:"g"},{name:"Honey",quantity:"2",unit:"tbsp"},{name:"Mirin",quantity:"1",unit:"tbsp"},{name:"Flour",quantity:"150",unit:"g"},{name:"Baking soda",quantity:"0.5",unit:"tsp"},{name:"Water",quantity:"60",unit:"ml"},{name:"Sweet red bean paste (anko)",quantity:"300",unit:"g"},{name:"Butter",quantity:"1",unit:"tsp"}], preparation_steps:["Beat eggs with sugar and honey until pale.","Add mirin and water.","Sift flour and baking soda into egg mixture. Fold gently.","Rest batter 15 minutes.","Heat pan over medium-low with tiny amount of butter.","Pour small circles of batter.","When bubbles appear across surface, flip gently.","Cook 1 more minute.","Sandwich two pancakes with generous anko filling."], chef_notes:"The honey gives dorayaki its distinctive dark golden colour. Medium-low heat is essential — too hot and the outside burns before the inside cooks.", serving_suggestions:"Serve at room temperature. Best eaten the same day they're made.", nutrition_estimate:{calories:"195",protein_g:"5",carbohydrates_g:"36",fat_g:"4"}, tags:["Dorayaki","Anko","Sweet","Japanese"], img:"https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80" },
+  { dish_name:"Warabi Mochi", state:"Japan", cuisine:"Japanese", category:"Desserts", difficulty_level:"Easy", prep_time_minutes:10, cook_time_minutes:15, total_time_minutes:25, servings:4, short_description:"A delicate, wobbly Japanese dessert made from bracken starch — translucent, barely-there in texture, dusted with roasted soybean flour and drizzled with kuromitsu syrup.", ingredients:[{name:"Warabimochiko (bracken starch)",quantity:"100",unit:"g"},{name:"Sugar",quantity:"80",unit:"g"},{name:"Water",quantity:"500",unit:"ml"},{name:"Kinako (roasted soybean flour)",quantity:"6",unit:"tbsp"},{name:"Kuromitsu (black sugar syrup)",quantity:"4",unit:"tbsp"},{name:"Matcha powder",quantity:"1",unit:"tsp"}], preparation_steps:["Mix warabimochiko with sugar and water until smooth.","Cook over medium heat, stirring constantly.","When mixture becomes translucent and thick and leaves the sides, it's done.","Pour onto kinako-dusted tray.","Cool to room temperature, then refrigerate 30 minutes.","Cut into cubes with a wet knife.","Dust generously with kinako mixed with matcha.","Drizzle with kuromitsu to serve."], chef_notes:"The constant stirring is essential — lumps form instantly if you stop. The mixture is ready when it's completely translucent and pulls cleanly from the pan.", serving_suggestions:"Serve chilled, dusted with kinako and drizzled with kuromitsu syrup.", nutrition_estimate:{calories:"185",protein_g:"3",carbohydrates_g:"42",fat_g:"2"}, tags:["Traditional","Vegetarian","Summer","Japanese"], img:"https://images.unsplash.com/photo-1558024920-b41e1887dc32?w=400&q=80" },
+  { dish_name:"Annmitsu", state:"Japan", cuisine:"Japanese", category:"Desserts", difficulty_level:"Easy", prep_time_minutes:20, cook_time_minutes:15, total_time_minutes:35, servings:4, short_description:"A classic Japanese parfait of kanten jelly, sweet red beans, fruit and mochi, drizzled with black sugar syrup — the quintessential old-fashioned Japanese sweet shop dessert.", ingredients:[{name:"Agar-agar (kanten)",quantity:"4",unit:"g"},{name:"Water",quantity:"400",unit:"ml"},{name:"Sweet red bean paste",quantity:"100",unit:"g"},{name:"Shiratama mochi balls",quantity:"12",unit:"pieces"},{name:"Mixed seasonal fruit",quantity:"200",unit:"g"},{name:"Kuromitsu",quantity:"4",unit:"tbsp"},{name:"Matcha ice cream",quantity:"4",unit:"scoops"},{name:"Canned mandarin",quantity:"1",unit:"can"}], preparation_steps:["Dissolve agar in water, boil 2 minutes.","Pour into tray and cool until set.","Cut agar jelly into cubes.","Make shiratama: knead rice flour with water, roll into balls.","Boil shiratama until they float.","Transfer to cold water.","Arrange jelly cubes in individual bowls.","Add beans, mochi, fruit and ice cream.","Drizzle generously with kuromitsu."], chef_notes:"Annmitsu is all about the variety of textures — wobbly jelly, chewy mochi, soft beans and creamy ice cream all together. The kuromitsu is not optional.", serving_suggestions:"Serve in glass bowls to show off the beautiful layers and colours.", nutrition_estimate:{calories:"245",protein_g:"4",carbohydrates_g:"52",fat_g:"4"}, tags:["Traditional","Japanese Sweet Shop","Parfait","Summer"], img:"https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80" },
+  { dish_name:"Matcha Roll Cake", state:"Japan", cuisine:"Japanese", category:"Desserts", difficulty_level:"Hard", prep_time_minutes:30, cook_time_minutes:12, total_time_minutes:42, servings:8, short_description:"A feather-light matcha sponge rolled around lightly sweetened whipped cream — elegant, beautiful and quintessentially Japanese in its restrained sweetness.", ingredients:[{name:"Eggs",quantity:"4",unit:"large"},{name:"Sugar",quantity:"80",unit:"g"},{name:"Flour",quantity:"50",unit:"g"},{name:"Matcha powder",quantity:"2",unit:"tbsp"},{name:"Butter",quantity:"20",unit:"g"},{name:"Heavy cream",quantity:"300",unit:"ml"},{name:"Sugar for cream",quantity:"2",unit:"tbsp"},{name:"Matcha for cream",quantity:"1",unit:"tbsp"},{name:"Vanilla",quantity:"0.5",unit:"tsp"}], preparation_steps:["Beat eggs and sugar over warm water until thick and tripled in volume.","Fold in sifted matcha and flour very gently.","Add melted butter.","Pour onto lined baking sheet and spread evenly.","Bake 10-12 minutes at 180°C until just set.","Turn onto parchment while still warm.","Peel off paper and roll up with parchment inside. Cool.","Beat cream with sugar, matcha and vanilla to soft peaks.","Unroll sponge, spread cream, re-roll.","Refrigerate 1 hour before slicing."], chef_notes:"Rolling the sponge while warm is the key technique — it sets the memory for the shape and prevents cracking when re-rolled with cream.", serving_suggestions:"Serve in 2cm slices on white plates with a dusting of matcha.", nutrition_estimate:{calories:"245",protein_g:"5",carbohydrates_g:"24",fat_g:"15"}, tags:["Matcha","Roll Cake","Baking","Japanese Dessert"], img:"https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80" },
+  { dish_name:"Kakigori (Shaved Ice)", state:"Japan", cuisine:"Japanese", category:"Desserts", difficulty_level:"Easy", prep_time_minutes:10, cook_time_minutes:0, total_time_minutes:10, servings:4, short_description:"Japan's beloved summer dessert — finely shaved ice flavoured with matcha syrup, condensed milk and sweet red beans. Lighter than snow, an essential part of Japanese summer.", ingredients:[{name:"Ice blocks",quantity:"4",unit:"large"},{name:"Matcha syrup",quantity:"8",unit:"tbsp"},{name:"Condensed milk",quantity:"6",unit:"tbsp"},{name:"Sweet red beans",quantity:"100",unit:"g"},{name:"Mochi balls",quantity:"8",unit:"pieces"},{name:"Strawberry syrup",quantity:"4",unit:"tbsp"},{name:"Lemon syrup",quantity:"4",unit:"tbsp"}], preparation_steps:["Shave ice using a kakigori machine or blender until fine like powder.","Mound shaved ice high in a bowl or glass.","Slowly drizzle matcha syrup over ice — pour slowly for even penetration.","Add condensed milk.","Top with red beans and mochi balls.","Add alternative syrups on different sections.","Serve immediately."], chef_notes:"The key to authentic kakigori is the quality of ice and how fine it is shaved. True kakigori ice is so fine it's almost like powder, melting on the tongue instantly.", serving_suggestions:"Serve immediately in a tall glass or bowl. A summer staple at Japanese festivals.", nutrition_estimate:{calories:"165",protein_g:"3",carbohydrates_g:"38",fat_g:"2"}, tags:["Summer","Shaved Ice","Festival","Japanese"], img:"https://images.unsplash.com/photo-1558024920-b41e1887dc32?w=400&q=80" },
+  { dish_name:"Taiyaki (Fish-Shaped Waffles)", state:"Japan", cuisine:"Japanese", category:"Desserts", difficulty_level:"Medium", prep_time_minutes:20, cook_time_minutes:20, total_time_minutes:40, servings:8, short_description:"Fish-shaped street food waffles filled with sweet red bean paste — one of Japan's most iconic and beloved street sweets, eaten at festivals and outdoor markets.", ingredients:[{name:"Flour",quantity:"200",unit:"g"},{name:"Sugar",quantity:"40",unit:"g"},{name:"Baking powder",quantity:"1",unit:"tsp"},{name:"Eggs",quantity:"2",unit:"large"},{name:"Milk",quantity:"200",unit:"ml"},{name:"Vegetable oil",quantity:"2",unit:"tbsp"},{name:"Sweet red bean paste",quantity:"300",unit:"g"},{name:"Vanilla extract",quantity:"1",unit:"tsp"},{name:"Custard cream",quantity:"200",unit:"g"}], preparation_steps:["Mix flour, sugar and baking powder.","Whisk in eggs, milk, oil and vanilla into smooth batter.","Rest batter 15 minutes.","Heat taiyaki mould until very hot. Brush with oil.","Fill one side of mould halfway with batter.","Add a generous spoon of anko or custard in centre.","Cover with more batter.","Close mould and cook 2-3 minutes per side.","Unmould and serve immediately."], chef_notes:"The mould must be very hot to create that crispy waffle exterior. Taiyaki should be eaten immediately — the crispy exterior softens within minutes.", serving_suggestions:"Serve piping hot as a street snack. Fill with anko, custard or chocolate.", nutrition_estimate:{calories:"215",protein_g:"5",carbohydrates_g:"38",fat_g:"5"}, tags:["Street Food","Festival","Waffle","Japanese"], img:"https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80" },
+  { dish_name:"Parfait (Japanese Style)", state:"Japan", cuisine:"Japanese", category:"Desserts", difficulty_level:"Medium", prep_time_minutes:30, cook_time_minutes:0, total_time_minutes:30, servings:2, short_description:"Japan's extravagant dessert culture in one glass — layers of matcha ice cream, cornflakes, red beans, jelly, whipped cream and seasonal fruit towering above the glass.", ingredients:[{name:"Matcha ice cream",quantity:"4",unit:"scoops"},{name:"Whipped cream",quantity:"200",unit:"ml"},{name:"Cornflakes",quantity:"50",unit:"g"},{name:"Sweet red beans",quantity:"80",unit:"g"},{name:"Kanten jelly cubes",quantity:"100",unit:"g"},{name:"Fresh strawberries",quantity:"8",unit:"pieces"},{name:"Mochi balls",quantity:"4",unit:"pieces"},{name:"Matcha syrup",quantity:"3",unit:"tbsp"},{name:"Wafer roll",quantity:"2",unit:"pieces"}], preparation_steps:["Chill tall parfait glasses.","Layer cornflakes at base.","Add kanten jelly cubes.","Add a scoop of matcha ice cream.","Add red beans.","Pipe or spoon whipped cream.","Add another scoop of ice cream.","Arrange strawberries and mochi.","Drizzle matcha syrup.","Top with wafer roll.","Serve immediately."], chef_notes:"Japanese parfaits are an art form — the layering must be done with precision for the visual effect when served. Height and visual impact are as important as flavour.", serving_suggestions:"Serve tall in a parfait glass immediately. The cornflakes provide a crucial crunchy base before they soften.", nutrition_estimate:{calories:"345",protein_g:"6",carbohydrates_g:"52",fat_g:"14"}, tags:["Parfait","Indulgent","Cafe Culture","Japanese Dessert"], img:"https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80" },
+  { dish_name:"Mitarashi Dango", state:"Japan", cuisine:"Japanese", category:"Desserts", difficulty_level:"Medium", prep_time_minutes:20, cook_time_minutes:15, total_time_minutes:35, servings:6, short_description:"Chewy rice flour dumplings on bamboo skewers glazed with a sweet soy sauce — one of Japan's oldest street sweets, sold at temples and festivals for centuries.", ingredients:[{name:"Joshinko (rice flour)",quantity:"100",unit:"g"},{name:"Shiratamako (glutinous rice flour)",quantity:"100",unit:"g"},{name:"Water",quantity:"180",unit:"ml"},{name:"Soy sauce",quantity:"4",unit:"tbsp"},{name:"Mirin",quantity:"4",unit:"tbsp"},{name:"Sugar",quantity:"4",unit:"tbsp"},{name:"Potato starch",quantity:"1",unit:"tbsp"},{name:"Water for sauce",quantity:"100",unit:"ml"}], preparation_steps:["Mix both flours together.","Gradually add water and knead into smooth dough.","Roll into small balls slightly smaller than a marble.","Boil in water until they float, then 2 more minutes.","Transfer to ice water.","Thread 3-4 onto bamboo skewers.","Make glaze: combine soy, mirin, sugar and dissolved starch.","Heat until thickened and glossy.","Grill or pan-fry skewers until lightly browned.","Brush with warm glaze generously."], chef_notes:"The combination of two rice flours creates the perfect chewy yet tender texture. The dango should be slightly browned before glazing.", serving_suggestions:"Serve warm at room temperature. A classic Japanese festival sweet.", nutrition_estimate:{calories:"185",protein_g:"3",carbohydrates_g:"42",fat_g:"0"}, tags:["Dango","Street Food","Festival","Traditional"], img:"https://images.unsplash.com/photo-1558024920-b41e1887dc32?w=400&q=80" },
+];
+
+const thaiCuisineData = [
+  // ── APPETIZERS ──────────────────────────────────────────────────────────────
+  {
+    dish_name: "Chicken Satay with Peanut Sauce",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Appetizers",
+    difficulty_level: "easy",
+    prep_time_minutes: 30,
+    cook_time_minutes: 15,
+    servings: 4,
+    short_description: "Tender coconut-marinated chicken skewers grilled over charcoal and served with a rich, spiced peanut sauce and tangy cucumber relish — Thailand's most exported street food snack.",
+    ingredients: [
+      { name: "Chicken breast", quantity: "500", unit: "g" },
+      { name: "Coconut milk", quantity: "200", unit: "ml" },
+      { name: "Turmeric powder", quantity: "1", unit: "tsp" },
+      { name: "Lemongrass", quantity: "2", unit: "stalks" },
+      { name: "Peanut butter", quantity: "4", unit: "tbsp" },
+      { name: "Red curry paste", quantity: "2", unit: "tbsp" },
+      { name: "Fish sauce", quantity: "2", unit: "tbsp" },
+      { name: "Palm sugar", quantity: "2", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Slice chicken into thin strips. Marinate with coconut milk, turmeric, lemongrass and fish sauce for 2 hours.",
+      "Thread onto pre-soaked bamboo skewers.",
+      "Make peanut sauce: simmer coconut milk with red curry paste, peanut butter, fish sauce and palm sugar.",
+      "Grill skewers over high heat for 3-4 minutes each side until caramelized.",
+      "Serve with warm peanut sauce and fresh cucumber relish."
+    ],
+    chef_notes: "The turmeric in the marinade gives satay its characteristic golden-yellow color. Real charcoal grilling is what creates the smoky, slightly charred exterior that defines authentic Thai satay.",
+    serving_suggestions: "Serve with ajat (cucumber relish in sweetened vinegar) and peanut sauce.",
+    flavor_profile: ["savory", "nutty", "aromatic", "slightly smoky"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80",
+    tags: ["Street Food", "Grilled", "Classic", "Party Food"]
+  },
+  {
+    dish_name: "Tod Mun Pla (Thai Fish Cakes)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Appetizers",
+    difficulty_level: "medium",
+    prep_time_minutes: 20,
+    cook_time_minutes: 15,
+    servings: 4,
+    short_description: "Bouncy, spiced Thai fish cakes made with red curry paste and kaffir lime leaves — a popular street food with a unique springy texture achieved by beating the fish paste until elastic.",
+    ingredients: [
+      { name: "White fish fillets", quantity: "400", unit: "g" },
+      { name: "Red curry paste", quantity: "2", unit: "tbsp" },
+      { name: "Kaffir lime leaves, finely sliced", quantity: "4", unit: "pieces" },
+      { name: "Long beans, sliced", quantity: "50", unit: "g" },
+      { name: "Fish sauce", quantity: "1", unit: "tbsp" },
+      { name: "Egg", quantity: "1", unit: "piece" },
+      { name: "Sugar", quantity: "1", unit: "tsp" },
+      { name: "Oil for frying", quantity: "1", unit: "cup" }
+    ],
+    preparation_steps: [
+      "Process fish fillets in a food processor until a smooth paste.",
+      "Add curry paste, fish sauce, egg and sugar. Process until the mixture becomes sticky and elastic.",
+      "Stir in kaffir lime leaves and long beans by hand.",
+      "Shape into round flat cakes about 1cm thick.",
+      "Shallow fry at 175°C for 3 minutes each side until deeply golden. Serve with sweet chili sauce."
+    ],
+    chef_notes: "The 'beating' of the paste in the processor activates the fish protein and creates the characteristic springy, bouncy texture. Under-mixed paste produces dense, heavy cakes.",
+    serving_suggestions: "Serve with sweet chili sauce and a classic cucumber relish.",
+    flavor_profile: ["spicy", "aromatic", "springy", "savory"],
+    dietary_tags: ["dairy-free", "gluten-free"],
+    img: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80",
+    tags: ["Street Food", "Seafood", "Thai Classic", "Appetizer"]
+  },
+  {
+    dish_name: "Miang Kham (Betel Leaf Wraps)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Appetizers",
+    difficulty_level: "easy",
+    prep_time_minutes: 20,
+    cook_time_minutes: 10,
+    servings: 6,
+    short_description: "Thailand's most elegant one-bite appetizer — wild betel or spinach leaves used as edible cups for a collection of fresh ingredients: dried shrimp, roasted coconut, ginger, lime, peanuts and a sweet palm sugar sauce.",
+    ingredients: [
+      { name: "Fresh betel or spinach leaves", quantity: "24", unit: "pieces" },
+      { name: "Dried shrimp", quantity: "3", unit: "tbsp" },
+      { name: "Toasted coconut", quantity: "4", unit: "tbsp" },
+      { name: "Fresh ginger, diced", quantity: "3", unit: "tbsp" },
+      { name: "Lime, diced with skin", quantity: "1", unit: "piece" },
+      { name: "Roasted peanuts", quantity: "3", unit: "tbsp" },
+      { name: "Palm sugar", quantity: "3", unit: "tbsp" },
+      { name: "Fish sauce", quantity: "2", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Make the sweet sauce: cook palm sugar, fish sauce and dried shrimp in a pan until thick.",
+      "Prepare all fresh ingredients into small, uniform pieces.",
+      "Arrange betel leaves in a cup shape on a serving platter.",
+      "Fill each leaf with a selection of all ingredients.",
+      "Add a small spoonful of the sweet sauce and fold leaf around the filling to eat in one bite."
+    ],
+    chef_notes: "Miang Kham is designed to be eaten in one or two bites — the explosion of six different flavors (bitter, sour, salty, sweet, spicy, savory) simultaneously is the whole point of the dish.",
+    serving_suggestions: "Serve as an elaborate cocktail snack or elegant party appetizer.",
+    flavor_profile: ["complex", "fresh", "sweet-sour-spicy", "aromatic"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80",
+    tags: ["Elegant", "Traditional", "Party Food", "One-Bite"]
+  },
+
+  // ── SOUPS ────────────────────────────────────────────────────────────────────
+  {
+    dish_name: "Tom Yum Goong (Spicy Prawn Soup)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Soups",
+    difficulty_level: "easy",
+    prep_time_minutes: 15,
+    cook_time_minutes: 15,
+    servings: 4,
+    short_description: "Thailand's most iconic soup — a fiery, sour broth fragrant with lemongrass, galangal, kaffir lime leaves and fresh chilies, loaded with plump prawns. A UNESCO-recognized culinary treasure.",
+    ingredients: [
+      { name: "Tiger prawns", quantity: "400", unit: "g" },
+      { name: "Lemongrass", quantity: "3", unit: "stalks" },
+      { name: "Galangal", quantity: "5", unit: "slices" },
+      { name: "Kaffir lime leaves", quantity: "6", unit: "pieces" },
+      { name: "Bird's eye chilies", quantity: "5", unit: "pieces" },
+      { name: "Fish sauce", quantity: "3", unit: "tbsp" },
+      { name: "Lime juice", quantity: "4", unit: "tbsp" },
+      { name: "Straw mushrooms", quantity: "150", unit: "g" }
+    ],
+    preparation_steps: [
+      "Bruise lemongrass, galangal and kaffir lime leaves. Simmer in water 10 minutes to infuse.",
+      "Add mushrooms and whole chilies to the broth.",
+      "Add prawns and cook 3 minutes until just cooked through.",
+      "Remove from heat. Season with fish sauce and lime juice — add these OFF the heat.",
+      "Garnish with coriander and serve immediately."
+    ],
+    chef_notes: "The four aromatics (lemongrass, galangal, kaffir lime leaves, chilies) are bruised rather than chopped — they flavor the broth but are NOT eaten. Add fish sauce and lime juice after removing from heat to preserve their fresh brightness.",
+    serving_suggestions: "Serve in individual bowls with steamed jasmine rice alongside.",
+    flavor_profile: ["sour", "spicy", "aromatic", "citrusy"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=400&q=80",
+    tags: ["Iconic", "Spicy", "Street Food", "UNESCO Heritage"]
+  },
+  {
+    dish_name: "Tom Kha Gai (Coconut Chicken Soup)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Soups",
+    difficulty_level: "easy",
+    prep_time_minutes: 15,
+    cook_time_minutes: 20,
+    servings: 4,
+    short_description: "The gentler, creamier sibling of Tom Yum — a fragrant coconut milk broth with chicken, galangal and mushrooms, brightened with lime and fish sauce. Rich, mellow and deeply comforting.",
+    ingredients: [
+      { name: "Chicken thighs, sliced", quantity: "400", unit: "g" },
+      { name: "Coconut milk", quantity: "400", unit: "ml" },
+      { name: "Chicken broth", quantity: "400", unit: "ml" },
+      { name: "Galangal", quantity: "5", unit: "slices" },
+      { name: "Lemongrass", quantity: "2", unit: "stalks" },
+      { name: "Kaffir lime leaves", quantity: "5", unit: "pieces" },
+      { name: "Oyster mushrooms", quantity: "150", unit: "g" },
+      { name: "Fish sauce and lime juice", quantity: "3", unit: "tbsp each" }
+    ],
+    preparation_steps: [
+      "Bring coconut milk and broth to a gentle simmer. Add bruised aromatics.",
+      "Infuse 10 minutes on low heat.",
+      "Add chicken and mushrooms. Simmer gently 8-10 minutes.",
+      "Remove from heat. Season with fish sauce, lime juice and a pinch of sugar.",
+      "Serve garnished with coriander and fresh red chili slices."
+    ],
+    chef_notes: "Never boil coconut milk vigorously — gentle simmering keeps it smooth and creamy. Boiling causes it to break and become grainy.",
+    serving_suggestions: "Serve as a soup course or over steamed rice as a light main meal.",
+    flavor_profile: ["creamy", "aromatic", "mildly spicy", "tangy"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80",
+    tags: ["Comfort Food", "Coconut", "Mild", "Classic"]
+  },
+
+  // ── SALADS ───────────────────────────────────────────────────────────────────
+  {
+    dish_name: "Som Tum (Green Papaya Salad)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Salads",
+    difficulty_level: "easy",
+    prep_time_minutes: 20,
+    cook_time_minutes: 0,
+    servings: 4,
+    short_description: "The national salad of Thailand — shredded unripe green papaya pounded with garlic, chilies, fish sauce, lime and palm sugar in a traditional wooden mortar. Bold, crunchy, fiery and refreshing.",
+    ingredients: [
+      { name: "Green papaya", quantity: "400", unit: "g" },
+      { name: "Bird's eye chilies", quantity: "3", unit: "pieces" },
+      { name: "Garlic", quantity: "3", unit: "cloves" },
+      { name: "Cherry tomatoes", quantity: "6", unit: "pieces" },
+      { name: "Long beans", quantity: "60", unit: "g" },
+      { name: "Dried shrimp", quantity: "2", unit: "tbsp" },
+      { name: "Fish sauce", quantity: "2", unit: "tbsp" },
+      { name: "Lime juice", quantity: "3", unit: "tbsp" },
+      { name: "Palm sugar", quantity: "2", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Peel and julienne green papaya using a shredder or cleaver technique.",
+      "Pound garlic and chilies in a large mortar until broken.",
+      "Add long beans and tomatoes, bruise gently (don't pulverize).",
+      "Add papaya, dried shrimp, fish sauce, lime and palm sugar. Pound and toss repeatedly.",
+      "Taste for the balance of spicy, sour, sweet and salty. Serve with sticky rice."
+    ],
+    chef_notes: "Som Tum should be pounded, not stirred — the bruising action releases the aromatic compounds. The flavor balance of spicy-sour-sweet-salty-savory is key: adjust until all four are present simultaneously.",
+    serving_suggestions: "Serve with sticky rice and grilled chicken (khao niao and gai yang).",
+    flavor_profile: ["spicy", "sour", "sweet", "crunchy", "fresh"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=400&q=80",
+    tags: ["Isaan", "National Dish", "Street Food", "Healthy"]
+  },
+  {
+    dish_name: "Larb Gai (Spicy Chicken Salad)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Salads",
+    difficulty_level: "easy",
+    prep_time_minutes: 20,
+    cook_time_minutes: 10,
+    servings: 4,
+    short_description: "Thailand's sacred national 'salad' — minced chicken tossed with toasted rice powder, fish sauce, lime, dried chilies and fresh herbs. Served at room temperature, it is the definitive dish of Northeastern Thailand.",
+    ingredients: [
+      { name: "Ground chicken", quantity: "400", unit: "g" },
+      { name: "Uncooked rice", quantity: "3", unit: "tbsp" },
+      { name: "Dried red chilies", quantity: "3", unit: "pieces" },
+      { name: "Fish sauce", quantity: "3", unit: "tbsp" },
+      { name: "Lime juice", quantity: "4", unit: "tbsp" },
+      { name: "Shallots, sliced", quantity: "4", unit: "pieces" },
+      { name: "Fresh mint and coriander", quantity: "1", unit: "large bunch" },
+      { name: "Spring onions", quantity: "3", unit: "stalks" }
+    ],
+    preparation_steps: [
+      "Dry-toast uncooked rice in a pan until golden. Grind coarsely — this is khao khua (toasted rice powder).",
+      "Toast dried chilies briefly and grind.",
+      "Cook ground chicken with a little water — do not add oil. Cook until just done.",
+      "Remove from heat. Add fish sauce, lime juice, shallots, toasted rice powder and dried chili.",
+      "Fold in fresh herbs. Serve at room temperature with fresh vegetables."
+    ],
+    chef_notes: "Toasted rice powder (khao khua) is the defining ingredient of larb — it adds a nutty crunch that is impossible to replicate with anything else. Make it fresh for each batch.",
+    serving_suggestions: "Serve with sticky rice, raw cabbage, mint and long beans.",
+    flavor_profile: ["sour", "herby", "savory", "toasty", "fresh"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1555126634-323283e090fa?w=400&q=80",
+    tags: ["Isaan", "National Salad", "Healthy", "Low Fat"]
+  },
+
+  // ── MAIN COURSES ─────────────────────────────────────────────────────────────
+  {
+    dish_name: "Pad Thai",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Main Courses",
+    difficulty_level: "medium",
+    prep_time_minutes: 20,
+    cook_time_minutes: 10,
+    servings: 4,
+    short_description: "Thailand's national noodle dish — flat rice noodles stir-fried over high heat with eggs, tofu or shrimp, in a sweet-savory tamarind-based sauce, topped with bean sprouts, peanuts and a squeeze of lime.",
+    ingredients: [
+      { name: "Flat rice noodles (sen lek)", quantity: "400", unit: "g" },
+      { name: "Tiger shrimp", quantity: "200", unit: "g" },
+      { name: "Firm tofu", quantity: "150", unit: "g" },
+      { name: "Eggs", quantity: "3", unit: "pieces" },
+      { name: "Tamarind paste", quantity: "3", unit: "tbsp" },
+      { name: "Fish sauce", quantity: "3", unit: "tbsp" },
+      { name: "Palm sugar", quantity: "2", unit: "tbsp" },
+      { name: "Bean sprouts and roasted peanuts", quantity: "1", unit: "portion" }
+    ],
+    preparation_steps: [
+      "Soak rice noodles in room-temp water 30 minutes until pliable but not soft.",
+      "Mix tamarind, fish sauce and palm sugar for the Pad Thai sauce.",
+      "Wok-fry tofu until golden. Push to side, fry shrimp briefly. Push aside.",
+      "Add noodles and sauce. Toss on high heat until noodles absorb liquid.",
+      "Push to side, scramble eggs, mix with noodles. Serve topped with bean sprouts, peanuts, lime and dried chili."
+    ],
+    chef_notes: "Wok hei (breath of the wok) requires extremely high heat — this is why restaurant Pad Thai tastes different. Cook in small portions at the highest heat to achieve the characteristic char and smokiness.",
+    serving_suggestions: "Serve with a small dish of fish sauce, sugar, dried chili and vinegar for self-seasoning.",
+    flavor_profile: ["sweet", "sour", "savory", "nutty", "smoky"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=400&q=80",
+    tags: ["National Dish", "Street Food", "Noodles", "Iconic"]
+  },
+  {
+    dish_name: "Thai Green Curry (Gaeng Keow Wan)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Main Courses",
+    difficulty_level: "medium",
+    prep_time_minutes: 20,
+    cook_time_minutes: 25,
+    servings: 4,
+    short_description: "The jewel of Thai cuisine — chicken or vegetables in a vibrant, aromatic green curry sauce made from fresh green chilies, lemongrass, galangal and coconut milk. The greenest, most fragrant of all Thai curries.",
+    ingredients: [
+      { name: "Chicken thighs", quantity: "500", unit: "g" },
+      { name: "Coconut milk", quantity: "400", unit: "ml" },
+      { name: "Green curry paste", quantity: "3", unit: "tbsp" },
+      { name: "Thai eggplants", quantity: "200", unit: "g" },
+      { name: "Kaffir lime leaves", quantity: "6", unit: "pieces" },
+      { name: "Fish sauce", quantity: "3", unit: "tbsp" },
+      { name: "Palm sugar", quantity: "1", unit: "tbsp" },
+      { name: "Thai basil leaves", quantity: "1", unit: "large handful" }
+    ],
+    preparation_steps: [
+      "Fry green curry paste in thick coconut cream skimmed from the top of the can, until oil separates.",
+      "Add chicken and cook until no longer pink on outside.",
+      "Add remaining coconut milk and eggplants. Simmer 15 minutes.",
+      "Season with fish sauce and palm sugar. Tear in kaffir lime leaves.",
+      "Remove from heat and fold in fresh Thai basil. Serve with jasmine rice."
+    ],
+    chef_notes: "Frying the curry paste in thick coconut cream (not oil) is the authentic technique — it 'blooms' the paste and creates a richer, more deeply flavored curry. Thai basil goes in at the very end, off the heat.",
+    serving_suggestions: "Serve with steamed jasmine rice and a refreshing cucumber salad.",
+    flavor_profile: ["aromatic", "creamy", "spicy", "fresh", "herby"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=400&q=80",
+    tags: ["Iconic", "Curry", "Coconut", "Aromatic"]
+  },
+  {
+    dish_name: "Khao Pad (Thai Fried Rice)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Main Courses",
+    difficulty_level: "easy",
+    prep_time_minutes: 10,
+    cook_time_minutes: 10,
+    servings: 4,
+    short_description: "Thailand's everyday fried rice — a rapid wok-tossed dish of day-old jasmine rice with egg, vegetables and your choice of protein in an umami-rich oyster and fish sauce seasoning.",
+    ingredients: [
+      { name: "Day-old jasmine rice", quantity: "4", unit: "cups" },
+      { name: "Eggs", quantity: "3", unit: "pieces" },
+      { name: "Prawns or chicken", quantity: "300", unit: "g" },
+      { name: "Garlic", quantity: "4", unit: "cloves" },
+      { name: "Oyster sauce", quantity: "2", unit: "tbsp" },
+      { name: "Fish sauce", quantity: "2", unit: "tbsp" },
+      { name: "Spring onions and tomatoes", quantity: "1", unit: "portion" },
+      { name: "White sugar", quantity: "1", unit: "tsp" }
+    ],
+    preparation_steps: [
+      "Get wok screaming hot. Fry minced garlic in oil until golden.",
+      "Add protein and cook quickly on high heat.",
+      "Push to sides, crack eggs into center and scramble partially.",
+      "Add rice and break up clumps while stir-frying vigorously.",
+      "Season with oyster sauce, fish sauce and sugar. Serve with lime wedge and cucumber."
+    ],
+    chef_notes: "Day-old refrigerated rice is essential — fresh rice has too much moisture and creates a mushy result. Each grain should be separate after frying. Maximum heat is critical throughout.",
+    serving_suggestions: "Serve with fresh cucumber slices, spring onions, lime wedge and fish sauce chili.",
+    flavor_profile: ["savory", "umami", "smoky", "simple"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&q=80",
+    tags: ["Everyday", "Street Food", "Quick", "Wok"]
+  },
+
+  // ── DESSERTS ─────────────────────────────────────────────────────────────────
+  {
+    dish_name: "Mango Sticky Rice (Khao Niao Mamuang)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Desserts",
+    difficulty_level: "easy",
+    prep_time_minutes: 30,
+    cook_time_minutes: 30,
+    servings: 4,
+    short_description: "Thailand's most celebrated dessert — sweet, fragrant coconut sticky rice paired with perfectly ripe Nam Dok Mai mangoes and drizzled with sweet coconut cream. Simple perfection in every bite.",
+    ingredients: [
+      { name: "Glutinous rice", quantity: "400", unit: "g" },
+      { name: "Ripe mangoes", quantity: "4", unit: "pieces" },
+      { name: "Coconut milk", quantity: "400", unit: "ml" },
+      { name: "Sugar", quantity: "5", unit: "tbsp" },
+      { name: "Salt", quantity: "1", unit: "tsp" },
+      { name: "Toasted sesame seeds or mung beans", quantity: "2", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Soak glutinous rice 6-8 hours or overnight. Steam for 25-30 minutes until translucent.",
+      "Warm coconut milk with sugar and salt until dissolved. Do not boil.",
+      "Remove rice from steamer and immediately mix with 3/4 of the coconut sauce.",
+      "Let rice absorb sauce for 15 minutes — it will become creamy and sticky.",
+      "Serve alongside sliced ripe mango, drizzled with remaining coconut sauce and sprinkled with sesame seeds."
+    ],
+    chef_notes: "The rice absorbs the coconut sauce best when it's still hot from the steamer — this is when the starches are most receptive. Wait for the rice to cool to room temperature before serving.",
+    serving_suggestions: "Serve at room temperature alongside chilled, sliced ripe mango.",
+    flavor_profile: ["sweet", "creamy", "tropical", "fragrant"],
+    dietary_tags: ["vegetarian", "vegan", "gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=80",
+    tags: ["Iconic", "Summer Dessert", "Traditional", "Simple"]
+  },
+  {
+    dish_name: "Khanom Krok (Coconut Pancakes)",
+    cuisine: "Thai",
+    country_of_origin: "Thailand",
+    category: "Desserts",
+    difficulty_level: "medium",
+    prep_time_minutes: 15,
+    cook_time_minutes: 15,
+    servings: 6,
+    short_description: "Tiny, soft Thai street dessert pancakes made in a special cast iron pan — a crispy coconut rice flour base with a creamy, slightly savory coconut custard center. The contrast of textures is enchanting.",
+    ingredients: [
+      { name: "Rice flour", quantity: "150", unit: "g" },
+      { name: "Coconut milk", quantity: "300", unit: "ml" },
+      { name: "Coconut cream", quantity: "150", unit: "ml" },
+      { name: "Sugar", quantity: "3", unit: "tbsp" },
+      { name: "Salt", quantity: "0.5", unit: "tsp" },
+      { name: "Spring onion greens", quantity: "2", unit: "stalks" },
+      { name: "Corn kernels", quantity: "3", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Make base batter: rice flour with half the coconut milk and sugar.",
+      "Make top batter: coconut cream with a pinch of salt.",
+      "Heat khanom krok pan (hemispherical moulds) and grease well.",
+      "Fill 3/4 full with base batter. Cook until edges set.",
+      "Add a spoonful of coconut cream topping with corn or spring onion. Cover and cook until custard just sets."
+    ],
+    chef_notes: "The half-savory, half-sweet character of khanom krok is intentional — Thai desserts often play with this contrast. The salt in the coconut cream topping amplifies the sweetness.",
+    serving_suggestions: "Serve fresh from the pan, two per serving, as an afternoon snack.",
+    flavor_profile: ["sweet", "creamy", "coconutty", "slightly salty"],
+    dietary_tags: ["vegetarian", "vegan", "gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80",
+    tags: ["Street Dessert", "Traditional", "Coconut", "Sweet"]
+  }
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+const koreanCuisineData = [
+  // ── APPETIZERS ──────────────────────────────────────────────────────────────
+  {
+    dish_name: "Pajeon (Korean Scallion Pancakes)",
+    cuisine: "Korean",
+    country_of_origin: "Korea",
+    category: "Appetizers",
+    difficulty_level: "easy",
+    prep_time_minutes: 15,
+    cook_time_minutes: 15,
+    servings: 4,
+    short_description: "Crispy-edged, chewy-centered Korean savory pancakes stuffed with bundles of spring onions — traditionally eaten on rainy days with makgeolli rice wine. A beloved Korean comfort food snack.",
+    ingredients: [
+      { name: "Spring onions", quantity: "8", unit: "bunches" },
+      { name: "All-purpose flour", quantity: "150", unit: "g" },
+      { name: "Cornstarch", quantity: "50", unit: "g" },
+      { name: "Ice cold water", quantity: "200", unit: "ml" },
+      { name: "Egg", quantity: "1", unit: "piece" },
+      { name: "Soy sauce", quantity: "2", unit: "tbsp" },
+      { name: "Rice vinegar", quantity: "1", unit: "tbsp" },
+      { name: "Sesame oil", quantity: "2", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Cut spring onions into 15cm lengths.",
+      "Make a thin batter with flour, cornstarch, ice cold water and egg — lumps are fine.",
+      "Dip spring onion bundles in batter. Lay flat in a thin layer in an oiled pan.",
+      "Fry on medium-high heat until golden and crispy on one side. Flip carefully.",
+      "Serve with soy-vinegar dipping sauce mixed with sesame oil and sesame seeds."
+    ],
+    chef_notes: "Ice cold water and NOT over-mixing the batter creates the characteristic light, crispy texture. Over-mixing develops gluten and makes the pancake doughy rather than crunchy.",
+    serving_suggestions: "Serve with makgeolli (Korean rice wine) or cold beer on a rainy day.",
+    flavor_profile: ["savory", "oniony", "crispy", "chewy"],
+    dietary_tags: ["vegetarian", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&q=80",
+    tags: ["Comfort Food", "Rainy Day", "Vegetarian", "Street Food"]
+  },
+  {
+    dish_name: "Japchae (Glass Noodle Stir-Fry)",
+    cuisine: "Korean",
+    country_of_origin: "Korea",
+    category: "Appetizers",
+    difficulty_level: "medium",
+    prep_time_minutes: 30,
+    cook_time_minutes: 20,
+    servings: 4,
+    short_description: "Silky sweet potato glass noodles stir-fried with colorful vegetables, spinach and beef in a sweet sesame-soy sauce — Korea's most popular party dish and a staple at every celebration.",
+    ingredients: [
+      { name: "Sweet potato glass noodles (dangmyeon)", quantity: "200", unit: "g" },
+      { name: "Beef sirloin, julienned", quantity: "200", unit: "g" },
+      { name: "Spinach", quantity: "150", unit: "g" },
+      { name: "Carrots", quantity: "1", unit: "medium" },
+      { name: "Shiitake mushrooms", quantity: "4", unit: "pieces" },
+      { name: "Sesame oil", quantity: "3", unit: "tbsp" },
+      { name: "Soy sauce", quantity: "3", unit: "tbsp" },
+      { name: "Sugar", quantity: "2", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Cook noodles in boiling water 6 minutes. Rinse and cut into shorter lengths. Season with soy sauce, sesame oil and sugar.",
+      "Cook each vegetable separately in a wok with sesame oil — they all have different cooking times.",
+      "Marinate beef in soy sauce, sugar, garlic and sesame oil. Stir-fry quickly.",
+      "Combine noodles with all cooked vegetables and beef. Toss with additional sesame oil and soy sauce.",
+      "Serve at room temperature garnished with egg omelette strips and sesame seeds."
+    ],
+    chef_notes: "Cooking each ingredient separately before combining is the Korean technique that prevents everything from turning into one grey mass. The noodles should be well-seasoned on their own before mixing.",
+    serving_suggestions: "Serve at room temperature as a party banchan or main course.",
+    flavor_profile: ["sweet-savory", "silky", "sesame", "colorful"],
+    dietary_tags: ["dairy-free", "gluten-free"],
+    img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&q=80",
+    tags: ["Party Food", "Celebration", "Glass Noodles", "Classic"]
+  },
+  {
+    dish_name: "Tteokbokki (Spicy Rice Cakes)",
+    cuisine: "Korean",
+    country_of_origin: "Korea",
+    category: "Appetizers",
+    difficulty_level: "easy",
+    prep_time_minutes: 10,
+    cook_time_minutes: 15,
+    servings: 4,
+    short_description: "Korea's most beloved street food — chewy cylindrical rice cakes in a fiery, slightly sweet gochujang sauce. Served sizzling from street stalls across Seoul, they are addictive, satisfying and impossible to stop eating.",
+    ingredients: [
+      { name: "Garaetteok (cylinder rice cakes)", quantity: "400", unit: "g" },
+      { name: "Gochujang", quantity: "4", unit: "tbsp" },
+      { name: "Gochugaru (Korean chili flakes)", quantity: "1", unit: "tbsp" },
+      { name: "Soy sauce", quantity: "1", unit: "tbsp" },
+      { name: "Sugar", quantity: "2", unit: "tbsp" },
+      { name: "Fish cakes", quantity: "200", unit: "g" },
+      { name: "Dashi or anchovy broth", quantity: "400", unit: "ml" },
+      { name: "Spring onions", quantity: "3", unit: "stalks" }
+    ],
+    preparation_steps: [
+      "Separate rice cakes by soaking in cold water 10 minutes if fresh, or as per pack if frozen.",
+      "Bring anchovy broth to a boil. Add gochujang, gochugaru, soy sauce and sugar.",
+      "Add rice cakes and fish cakes. Cook on medium heat 10-12 minutes, stirring often.",
+      "Sauce will thicken as rice cakes cook and release starch.",
+      "Serve in bowls garnished with spring onions and a hard-boiled egg."
+    ],
+    chef_notes: "The sauce needs constant stirring — rice cakes stick together and to the pan easily. The starch released from the rice cakes naturally thickens the sauce to the right glossy consistency.",
+    serving_suggestions: "Serve piping hot as street food with fish cakes and boiled eggs.",
+    flavor_profile: ["spicy", "chewy", "sweet-savory", "addictive"],
+    dietary_tags: ["dairy-free"],
+    img: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&q=80",
+    tags: ["Street Food", "Iconic", "Spicy", "Comfort Food"]
+  },
+
+  // ── SOUPS ────────────────────────────────────────────────────────────────────
+  {
+    dish_name: "Kimchi Jjigae (Kimchi Stew)",
+    cuisine: "Korean",
+    country_of_origin: "Korea",
+    category: "Soups",
+    difficulty_level: "easy",
+    prep_time_minutes: 10,
+    cook_time_minutes: 30,
+    servings: 4,
+    short_description: "Korea's most comforting stew — well-fermented kimchi cooked with pork and tofu in a rich, spicy-sour broth. The cornerstone of Korean home cooking, made from leftovers and eaten with every meal.",
+    ingredients: [
+      { name: "Aged kimchi", quantity: "400", unit: "g" },
+      { name: "Pork belly, sliced", quantity: "200", unit: "g" },
+      { name: "Firm tofu", quantity: "300", unit: "g" },
+      { name: "Gochujang", quantity: "2", unit: "tbsp" },
+      { name: "Gochugaru", quantity: "1", unit: "tbsp" },
+      { name: "Soy sauce", quantity: "1", unit: "tbsp" },
+      { name: "Sesame oil", quantity: "1", unit: "tbsp" },
+      { name: "Water or dashi", quantity: "500", unit: "ml" }
+    ],
+    preparation_steps: [
+      "Fry pork belly in a heavy pot until fat renders. Add kimchi and cook 5 minutes.",
+      "Add gochujang, gochugaru and soy sauce. Fry 2 minutes more.",
+      "Add water to cover. Bring to a boil and simmer 20 minutes.",
+      "Add tofu cut into cubes. Simmer 5 minutes more.",
+      "Finish with sesame oil and spring onions. Serve directly from pot at the table."
+    ],
+    chef_notes: "The more fermented the kimchi, the better the jjigae. Use kimchi that's been in the fridge for at least 3-4 weeks — the fermented sourness is what makes the broth extraordinary.",
+    serving_suggestions: "Serve bubbling at the table with steamed rice and small banchan dishes.",
+    flavor_profile: ["spicy", "sour", "savory", "rich", "fermented"],
+    dietary_tags: ["dairy-free", "gluten-free"],
+    img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&q=80",
+    tags: ["Comfort Food", "Fermented", "Everyday", "Traditional"]
+  },
+  {
+    dish_name: "Doenjang Jjigae (Soybean Paste Stew)",
+    cuisine: "Korean",
+    country_of_origin: "Korea",
+    category: "Soups",
+    difficulty_level: "easy",
+    prep_time_minutes: 15,
+    cook_time_minutes: 20,
+    servings: 4,
+    short_description: "Korea's most beloved everyday stew — a deeply savory, pungent broth made from fermented soybean paste with zucchini, potato, mushrooms and silken tofu. More complex than miso soup and deeply nourishing.",
+    ingredients: [
+      { name: "Doenjang (fermented soybean paste)", quantity: "3", unit: "tbsp" },
+      { name: "Anchovy and kelp broth", quantity: "600", unit: "ml" },
+      { name: "Zucchini", quantity: "1", unit: "medium" },
+      { name: "Potato", quantity: "1", unit: "medium" },
+      { name: "Firm tofu", quantity: "200", unit: "g" },
+      { name: "Shiitake mushrooms", quantity: "4", unit: "pieces" },
+      { name: "Garlic", quantity: "3", unit: "cloves" },
+      { name: "Green chili", quantity: "1", unit: "piece" }
+    ],
+    preparation_steps: [
+      "Make anchovy-kelp broth by simmering dried anchovies and kelp 15 minutes. Strain.",
+      "Dissolve doenjang in the broth. Add crushed garlic.",
+      "Add potato cubes first (they take longest). After 5 minutes add zucchini and mushrooms.",
+      "Add tofu and green chili. Simmer 5 more minutes.",
+      "Taste and adjust with more doenjang if needed. Serve immediately with rice."
+    ],
+    chef_notes: "The anchovy-kelp broth base is fundamental — this is what separates Korean doenjang jjigae from Japanese miso soup. The funkiness of the fermented doenjang should be prominent, not subtle.",
+    serving_suggestions: "A non-negotiable part of every Korean meal alongside steamed rice.",
+    flavor_profile: ["pungent", "savory", "fermented", "earthy", "warming"],
+    dietary_tags: ["dairy-free", "gluten-free"],
+    img: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80",
+    tags: ["Everyday", "Traditional", "Fermented", "Healthy"]
+  },
+
+  // ── SALADS ───────────────────────────────────────────────────────────────────
+  {
+    dish_name: "Kongnamul Muchim (Seasoned Soybean Sprouts)",
+    cuisine: "Korean",
+    country_of_origin: "Korea",
+    category: "Salads",
+    difficulty_level: "easy",
+    prep_time_minutes: 5,
+    cook_time_minutes: 5,
+    servings: 4,
+    short_description: "A crisp, refreshing Korean banchan (side dish) of blanched soybean sprouts dressed with sesame oil, garlic and gochugaru — simple, nutritious and present at virtually every Korean meal.",
+    ingredients: [
+      { name: "Soybean sprouts", quantity: "400", unit: "g" },
+      { name: "Sesame oil", quantity: "2", unit: "tbsp" },
+      { name: "Garlic, minced", quantity: "3", unit: "cloves" },
+      { name: "Gochugaru (Korean chili flakes)", quantity: "1", unit: "tsp" },
+      { name: "Soy sauce", quantity: "1", unit: "tbsp" },
+      { name: "Salt", quantity: "0.5", unit: "tsp" },
+      { name: "Sesame seeds", quantity: "1", unit: "tbsp" },
+      { name: "Spring onions", quantity: "2", unit: "stalks" }
+    ],
+    preparation_steps: [
+      "Blanch soybean sprouts in boiling salted water 2-3 minutes. Drain and rinse in cold water.",
+      "Squeeze out excess water.",
+      "Mix with sesame oil, soy sauce, garlic, gochugaru and salt.",
+      "Toss well and let rest 5 minutes for flavors to meld.",
+      "Garnish with sesame seeds and spring onions."
+    ],
+    chef_notes: "Never lift the lid during blanching — steam is what cooks the sprouts evenly. Over-cooking makes them mushy; under-cooking leaves a raw, beany flavor.",
+    serving_suggestions: "Serve as banchan alongside rice, kimchi and other side dishes.",
+    flavor_profile: ["fresh", "nutty", "slightly spicy", "sesame"],
+    dietary_tags: ["vegetarian", "vegan", "dairy-free", "gluten-free"],
+    img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    tags: ["Banchan", "Side Dish", "Healthy", "Quick"]
+  },
+  {
+    dish_name: "Sigeumchi Namul (Korean Spinach Salad)",
+    cuisine: "Korean",
+    country_of_origin: "Korea",
+    category: "Salads",
+    difficulty_level: "easy",
+    prep_time_minutes: 10,
+    cook_time_minutes: 2,
+    servings: 4,
+    short_description: "Delicately seasoned blanched spinach with a sesame-garlic dressing — one of the most essential Korean banchan dishes. Simple in ingredients yet extraordinary in flavor, it's a cornerstone of bibimbap and every Korean table.",
+    ingredients: [
+      { name: "Fresh spinach", quantity: "400", unit: "g" },
+      { name: "Sesame oil", quantity: "2", unit: "tbsp" },
+      { name: "Garlic, minced", quantity: "2", unit: "cloves" },
+      { name: "Soy sauce", quantity: "1", unit: "tbsp" },
+      { name: "Sesame seeds", quantity: "1", unit: "tbsp" },
+      { name: "Spring onions", quantity: "1", unit: "stalk" }
+    ],
+    preparation_steps: [
+      "Blanch spinach in boiling water for 30-45 seconds only.",
+      "Plunge immediately into ice water to stop cooking and preserve color.",
+      "Squeeze all water firmly — the spinach should be as dry as possible.",
+      "Season with sesame oil, soy sauce, garlic and sesame seeds.",
+      "Toss and serve at room temperature as a banchan."
+    ],
+    chef_notes: "The brief blanching and ice bath is the key technique — it maintains the vivid green color and silky texture. Squeezing dry is essential so the dressing coats rather than sits in water.",
+    serving_suggestions: "Serve as part of a bibimbap or alongside rice as a classic banchan.",
+    flavor_profile: ["silky", "savory", "sesame", "garlic"],
+    dietary_tags: ["vegetarian", "vegan", "dairy-free", "gluten-free"],
+    img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80",
+    tags: ["Banchan", "Healthy", "Bibimbap", "Traditional"]
+  },
+
+  // ── MAIN COURSES ─────────────────────────────────────────────────────────────
+  {
+    dish_name: "Bibimbap",
+    cuisine: "Korean",
+    country_of_origin: "Korea",
+    category: "Main Courses",
+    difficulty_level: "medium",
+    prep_time_minutes: 40,
+    cook_time_minutes: 20,
+    servings: 4,
+    short_description: "Korea's most famous dish — 'mixed rice' of warm steamed rice topped with an artful arrangement of seasoned vegetables, gochujang-marinated beef, a fried egg and sesame oil, served in a scorching stone bowl.",
+    ingredients: [
+      { name: "Steamed white rice", quantity: "4", unit: "cups" },
+      { name: "Beef sirloin, minced", quantity: "200", unit: "g" },
+      { name: "Eggs", quantity: "4", unit: "pieces" },
+      { name: "Assorted vegetables (spinach, carrot, zucchini, mushrooms)", quantity: "400", unit: "g" },
+      { name: "Gochujang", quantity: "4", unit: "tbsp" },
+      { name: "Sesame oil", quantity: "3", unit: "tbsp" },
+      { name: "Soy sauce", quantity: "2", unit: "tbsp" },
+      { name: "Sesame seeds", quantity: "2", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Marinate beef in soy sauce, sesame oil, garlic and gochujang. Cook in a hot pan.",
+      "Season each vegetable separately with sesame oil and salt.",
+      "Heat stone bowls (dolsot) until very hot. Coat with sesame oil and add rice.",
+      "Arrange vegetables and beef in sections over rice like spokes of a wheel.",
+      "Top with a fried egg. Serve with gochujang sauce. Mix everything together before eating."
+    ],
+    chef_notes: "The dolsot (stone bowl) should be screaming hot before adding rice — this creates the crunchy scorched rice crust (nurungji) at the bottom that is the most coveted part of dolsot bibimbap.",
+    serving_suggestions: "Serve in heated stone bowls (dolsot) — the heat creates the legendary crusty rice bottom.",
+    flavor_profile: ["complex", "nutty", "spicy", "savory", "varied textures"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&q=80",
+    tags: ["National Dish", "Iconic", "Stone Bowl", "Balanced"]
+  },
+  {
+    dish_name: "Korean BBQ Beef Short Ribs (Galbi)",
+    cuisine: "Korean",
+    country_of_origin: "Korea",
+    category: "Main Courses",
+    difficulty_level: "medium",
+    prep_time_minutes: 480,
+    cook_time_minutes: 15,
+    servings: 4,
+    short_description: "Cross-cut beef short ribs marinated in a sweet pear-soy marinade and grilled at the table — the most indulgent and beloved expression of Korean BBQ. The pear enzymes tenderize the beef to extraordinary tenderness.",
+    ingredients: [
+      { name: "Beef short ribs, cross-cut (flanken style)", quantity: "1", unit: "kg" },
+      { name: "Asian pear", quantity: "1", unit: "medium" },
+      { name: "Soy sauce", quantity: "100", unit: "ml" },
+      { name: "Sugar", quantity: "3", unit: "tbsp" },
+      { name: "Sesame oil", quantity: "2", unit: "tbsp" },
+      { name: "Garlic", quantity: "6", unit: "cloves" },
+      { name: "Ginger", quantity: "1", unit: "inch" },
+      { name: "Spring onions", quantity: "3", unit: "stalks" }
+    ],
+    preparation_steps: [
+      "Soak ribs in cold water 1-2 hours to remove blood, changing water once.",
+      "Blend pear with garlic, ginger, soy sauce, sugar and sesame oil.",
+      "Marinate ribs in pear mixture for 6-8 hours minimum, overnight is ideal.",
+      "Grill over high charcoal heat 3-4 minutes each side until caramelized and charred.",
+      "Serve with lettuce cups, fermented kimchi, sliced garlic and ssamjang paste."
+    ],
+    chef_notes: "The grated pear (or kiwi) in the marinade is essential — it contains enzymes that break down tough meat fibers, making the short ribs extraordinarily tender. Never skip this ingredient.",
+    serving_suggestions: "Serve grilled at the table, wrapped in perilla or lettuce leaves with kimchi and ssamjang.",
+    flavor_profile: ["sweet", "savory", "caramelized", "smoky", "tender"],
+    dietary_tags: ["dairy-free", "gluten-free"],
+    img: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80",
+    tags: ["BBQ", "Special Occasion", "Marinated", "Iconic"]
+  },
+
+  // ── DESSERTS ─────────────────────────────────────────────────────────────────
+  {
+    dish_name: "Bingsu (Korean Shaved Ice)",
+    cuisine: "Korean",
+    country_of_origin: "Korea",
+    category: "Desserts",
+    difficulty_level: "easy",
+    prep_time_minutes: 15,
+    cook_time_minutes: 0,
+    servings: 4,
+    short_description: "Korea's most beloved summer dessert — finely shaved milk ice with sweet red bean paste, mochi, fresh fruit and condensed milk. The ice is shaved so finely it melts instantly on the tongue like snow.",
+    ingredients: [
+      { name: "Whole milk, frozen in block", quantity: "500", unit: "ml" },
+      { name: "Sweet red bean paste (pat)", quantity: "4", unit: "tbsp" },
+      { name: "Mochi pieces", quantity: "100", unit: "g" },
+      { name: "Fresh strawberries or mango", quantity: "200", unit: "g" },
+      { name: "Condensed milk", quantity: "4", unit: "tbsp" },
+      { name: "Fruit sauce or syrup", quantity: "3", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Freeze full-fat milk in shallow containers overnight until completely solid.",
+      "Shave frozen milk using a bingsu machine or food processor with shaving blade.",
+      "Pile shaved ice high in a bowl like a mountain.",
+      "Top with sweet red bean paste, chewy mochi pieces and fresh fruit.",
+      "Drizzle with condensed milk and fruit syrup."
+    ],
+    chef_notes: "True Korean bingsu uses milk ice, not water ice — this creates the characteristic silky, snow-like texture that melts on the tongue. Water ice creates a gritty, icy result.",
+    serving_suggestions: "Serve immediately in a large shared bowl — bingsu waits for no one.",
+    flavor_profile: ["sweet", "creamy", "cold", "fresh"],
+    dietary_tags: ["vegetarian", "gluten-free"],
+    img: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80",
+    tags: ["Summer Dessert", "Iconic", "Street Food", "Sharing"]
+  },
+  {
+    dish_name: "Hotteok (Sweet Pancakes)",
+    cuisine: "Korean",
+    country_of_origin: "Korea",
+    category: "Desserts",
+    difficulty_level: "medium",
+    prep_time_minutes: 90,
+    cook_time_minutes: 15,
+    servings: 6,
+    short_description: "Korea's iconic winter street food — fluffy yeast pancakes filled with a cinnamon brown sugar and walnut filling that becomes a molten caramel when fried. Seoul's beloved winter warmer, served piping hot.",
+    ingredients: [
+      { name: "All-purpose flour", quantity: "300", unit: "g" },
+      { name: "Instant yeast", quantity: "5", unit: "g" },
+      { name: "Brown sugar", quantity: "100", unit: "g" },
+      { name: "Cinnamon", quantity: "2", unit: "tsp" },
+      { name: "Walnuts, chopped", quantity: "60", unit: "g" },
+      { name: "Sugar", quantity: "2", unit: "tbsp" },
+      { name: "Warm water", quantity: "200", unit: "ml" },
+      { name: "Oil for frying", quantity: "4", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Make dough with flour, yeast, sugar and warm water. Knead and rest 1 hour.",
+      "Mix brown sugar, cinnamon and chopped walnuts for filling.",
+      "Flatten a ball of dough, place filling in center, gather edges and seal into a ball.",
+      "Place in hot oiled pan, press flat with a spatula.",
+      "Fry 2-3 minutes each side until golden. The filling will become liquid caramel inside."
+    ],
+    chef_notes: "The molten caramel filling is dangerously hot — warn guests before eating! The filling liquefies completely during frying. Eat carefully or wait 1-2 minutes after serving.",
+    serving_suggestions: "Serve hot from the pan as a winter street food treat.",
+    flavor_profile: ["sweet", "cinnamon", "caramel", "chewy"],
+    dietary_tags: ["vegetarian", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1558024920-b41e1887dc32?w=400&q=80",
+    tags: ["Winter Street Food", "Sweet", "Seoul", "Comfort"]
+  }
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+const vietnameseCuisineData = [
+  // ── APPETIZERS ──────────────────────────────────────────────────────────────
+  {
+    dish_name: "Goi Cuon (Fresh Spring Rolls)",
+    cuisine: "Vietnamese",
+    country_of_origin: "Vietnam",
+    category: "Appetizers",
+    difficulty_level: "easy",
+    prep_time_minutes: 30,
+    cook_time_minutes: 10,
+    servings: 4,
+    short_description: "Vietnamese fresh spring rolls of translucent rice paper filled with shrimp, pork, rice vermicelli and fresh herbs — eaten uncooked and dipped in hoisin-peanut sauce. Light, fresh and beautiful.",
+    ingredients: [
+      { name: "Rice paper rounds", quantity: "12", unit: "pieces" },
+      { name: "Cooked shrimp", quantity: "200", unit: "g" },
+      { name: "Pork belly, cooked and sliced", quantity: "150", unit: "g" },
+      { name: "Rice vermicelli", quantity: "100", unit: "g" },
+      { name: "Lettuce leaves", quantity: "4", unit: "pieces" },
+      { name: "Fresh mint, Thai basil, coriander", quantity: "1", unit: "large bunch" },
+      { name: "Hoisin sauce", quantity: "4", unit: "tbsp" },
+      { name: "Crushed peanuts", quantity: "3", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Cook vermicelli per packet, rinse in cold water and drain.",
+      "Prepare all fillings in separate bowls for assembly line.",
+      "Dip one rice paper in warm water for 10-15 seconds until pliable.",
+      "Place shrimp halves (pink side down), pork, noodles, lettuce and herbs in lower third. Roll and fold edges like a burrito.",
+      "Serve immediately with hoisin sauce thinned with water and topped with crushed peanuts."
+    ],
+    chef_notes: "Work quickly when rolling — the rice paper softens as it rests. Slightly under-soaking produces easier rolling; over-soaked paper tears easily. The shrimp should be visible through the wrapper for the classic appearance.",
+    serving_suggestions: "Serve fresh with hoisin-peanut dipping sauce and nuoc cham.",
+    flavor_profile: ["fresh", "clean", "herby", "light"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1582878826629-33b7f57b2a3c?w=400&q=80",
+    tags: ["Fresh", "Healthy", "Street Food", "Classic"]
+  },
+  {
+    dish_name: "Banh Xeo (Sizzling Crepes)",
+    cuisine: "Vietnamese",
+    country_of_origin: "Vietnam",
+    category: "Appetizers",
+    difficulty_level: "medium",
+    prep_time_minutes: 20,
+    cook_time_minutes: 20,
+    servings: 4,
+    short_description: "Vietnam's sizzling savory rice crepes — crispy, lacy, turmeric-yellow rice flour pancakes filled with shrimp, pork and bean sprouts, eaten wrapped in lettuce and mustard greens with nuoc cham.",
+    ingredients: [
+      { name: "Rice flour", quantity: "200", unit: "g" },
+      { name: "Coconut milk", quantity: "200", unit: "ml" },
+      { name: "Turmeric powder", quantity: "1", unit: "tsp" },
+      { name: "Shrimp, peeled", quantity: "200", unit: "g" },
+      { name: "Pork belly, sliced", quantity: "150", unit: "g" },
+      { name: "Bean sprouts", quantity: "200", unit: "g" },
+      { name: "Spring onions", quantity: "3", unit: "stalks" },
+      { name: "Fish sauce, lime, sugar", quantity: "1", unit: "portion" }
+    ],
+    preparation_steps: [
+      "Make batter: rice flour with coconut milk, turmeric, water and a pinch of salt.",
+      "Fry pork belly in a hot pan until golden. Add shrimp.",
+      "Push to one side, pour in a thin layer of batter. Swirl to cover pan.",
+      "Cover and cook on high heat until crepe is crispy and lifts from pan.",
+      "Add bean sprouts, fold in half. Serve with nuoc cham and fresh herbs for wrapping."
+    ],
+    chef_notes: "The name means 'sizzling cake' — the batter should hit a very hot, well-oiled pan and sizzle dramatically. This is what creates the characteristic lacy, crispy edges.",
+    serving_suggestions: "Wrap pieces in mustard greens or lettuce with herbs. Dip in nuoc cham.",
+    flavor_profile: ["crispy", "savory", "aromatic", "fresh"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80",
+    tags: ["Street Food", "Crispy", "Southern Vietnam", "Sharing"]
+  },
+  {
+    dish_name: "Chả Giò (Fried Spring Rolls)",
+    cuisine: "Vietnamese",
+    country_of_origin: "Vietnam",
+    category: "Appetizers",
+    difficulty_level: "medium",
+    prep_time_minutes: 40,
+    cook_time_minutes: 20,
+    servings: 4,
+    short_description: "Southern Vietnamese fried spring rolls — delicate, crunchy rice paper rolls filled with pork, crab meat, glass noodles and wood ear mushrooms. Wrapped in lettuce and herbs and dipped in nuoc cham.",
+    ingredients: [
+      { name: "Rice paper rounds", quantity: "12", unit: "pieces" },
+      { name: "Ground pork", quantity: "200", unit: "g" },
+      { name: "Crab meat", quantity: "100", unit: "g" },
+      { name: "Glass noodles, soaked", quantity: "50", unit: "g" },
+      { name: "Wood ear mushrooms", quantity: "30", unit: "g" },
+      { name: "Shallots, minced", quantity: "3", unit: "pieces" },
+      { name: "Fish sauce", quantity: "2", unit: "tbsp" },
+      { name: "Oil for frying", quantity: "2", unit: "cups" }
+    ],
+    preparation_steps: [
+      "Mix pork, crab, glass noodles, mushrooms, shallots and fish sauce.",
+      "Soften rice paper rounds briefly in water — just 3-4 seconds.",
+      "Add filling and roll tightly. The rice paper will firm up as it dries.",
+      "Deep fry in batches at 160°C — low temperature first to crisp slowly.",
+      "Drain and serve wrapped in lettuce with fresh herbs and nuoc cham."
+    ],
+    chef_notes: "The secret to shatteringly crispy chả giò is double-frying: once at low temp to cook through, then again at high temp just before serving for maximum crunch.",
+    serving_suggestions: "Wrap in perilla or lettuce leaves with cucumber and mint. Dip in nuoc cham.",
+    flavor_profile: ["crispy", "savory", "herbaceous", "light"],
+    dietary_tags: ["dairy-free", "gluten-free"],
+    img: "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=400&q=80",
+    tags: ["Fried", "Street Food", "Southern Vietnam", "Crispy"]
+  },
+
+  // ── SOUPS ────────────────────────────────────────────────────────────────────
+  {
+    dish_name: "Pho Bo (Beef Noodle Soup)",
+    cuisine: "Vietnamese",
+    country_of_origin: "Vietnam",
+    category: "Soups",
+    difficulty_level: "hard",
+    prep_time_minutes: 60,
+    cook_time_minutes: 360,
+    servings: 4,
+    short_description: "Vietnam's national dish and one of the world's greatest soups — a crystalline, deeply complex beef bone broth perfumed with charred ginger, charred onion and warming spices, served with rice noodles and paper-thin raw beef.",
+    ingredients: [
+      { name: "Beef bones (marrow and knuckle)", quantity: "2", unit: "kg" },
+      { name: "Beef brisket", quantity: "400", unit: "g" },
+      { name: "Fresh rice noodles (pho noodles)", quantity: "400", unit: "g" },
+      { name: "Onion", quantity: "1", unit: "large" },
+      { name: "Ginger", quantity: "3", unit: "inch" },
+      { name: "Star anise, cloves, cinnamon, cardamom", quantity: "1", unit: "portion" },
+      { name: "Fish sauce", quantity: "3", unit: "tbsp" },
+      { name: "Rock sugar", quantity: "1", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Blanch bones in boiling water 10 minutes. Drain and scrub clean.",
+      "Char onion and ginger directly over open flame until blackened. This creates the signature smoky sweetness.",
+      "Simmer bones 6+ hours, skimming regularly. The broth should be clear, not cloudy.",
+      "Toast spices and add to broth last hour. Season with fish sauce and rock sugar.",
+      "Serve over noodles with paper-thin raw beef slices that cook in the hot broth."
+    ],
+    chef_notes: "Charring the onion and ginger is the defining step that separates great pho from ordinary beef soup. The broth must be clear — regular gentle simmering, constant skimming.",
+    serving_suggestions: "Serve with a plate of bean sprouts, lime, fresh chilies, basil and hoisin and sriracha.",
+    flavor_profile: ["complex", "aromatic", "clean", "warming", "umami"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1582878826629-33b7f57b2a3c?w=400&q=80",
+    tags: ["National Dish", "Slow Cooked", "Iconic", "Clear Broth"]
+  },
+  {
+    dish_name: "Bun Bo Hue (Spicy Beef Noodle Soup)",
+    cuisine: "Vietnamese",
+    country_of_origin: "Vietnam",
+    category: "Soups",
+    difficulty_level: "hard",
+    prep_time_minutes: 45,
+    cook_time_minutes: 180,
+    servings: 4,
+    short_description: "The spicy, lemongrass-scented broth from Hue, Vietnam's former imperial capital — bolder and more complex than pho, with round rice noodles, pork hock, sliced beef and a fiery shrimp paste flavor.",
+    ingredients: [
+      { name: "Pork hock and beef shank", quantity: "800", unit: "g" },
+      { name: "Round rice noodles (bun)", quantity: "400", unit: "g" },
+      { name: "Lemongrass", quantity: "4", unit: "stalks" },
+      { name: "Shrimp paste (mam ruoc)", quantity: "2", unit: "tbsp" },
+      { name: "Annatto oil or chili oil", quantity: "3", unit: "tbsp" },
+      { name: "Fish sauce", quantity: "3", unit: "tbsp" },
+      { name: "Pork blood cubes (optional)", quantity: "150", unit: "g" },
+      { name: "Bean sprouts, lemon, fresh herbs", quantity: "1", unit: "portion" }
+    ],
+    preparation_steps: [
+      "Blanch pork hock and beef. Simmer in water with lemongrass 2-3 hours.",
+      "Fry shrimp paste in annatto oil until fragrant.",
+      "Add to broth with additional lemongrass, fish sauce and sugar.",
+      "The broth should be rich red-orange from annatto and deeply flavored.",
+      "Serve over thick round noodles with sliced meat, herbs and lime."
+    ],
+    chef_notes: "Mam ruoc (shrimp paste) is the ingredient that makes Bun Bo Hue distinctly different from Pho — it adds a pungent, oceanic depth that is characteristic of Central Vietnamese cooking.",
+    serving_suggestions: "Serve with banana blossom, bean sprouts, fresh lemon and herbs.",
+    flavor_profile: ["spicy", "lemongrass", "funky", "bold", "aromatic"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80",
+    tags: ["Hue", "Spicy", "Lemongrass", "Central Vietnam"]
+  },
+
+  // ── SALADS ───────────────────────────────────────────────────────────────────
+  {
+    dish_name: "Goi Ga (Vietnamese Chicken Salad)",
+    cuisine: "Vietnamese",
+    country_of_origin: "Vietnam",
+    category: "Salads",
+    difficulty_level: "easy",
+    prep_time_minutes: 25,
+    cook_time_minutes: 15,
+    servings: 4,
+    short_description: "A refreshing Vietnamese salad of shredded poached chicken with cabbage, herbs and a punchy, zingy nuoc cham dressing — bright, fresh and deeply aromatic with the anise notes of Vietnamese coriander.",
+    ingredients: [
+      { name: "Chicken breast", quantity: "400", unit: "g" },
+      { name: "White cabbage, shredded", quantity: "300", unit: "g" },
+      { name: "Carrots, julienned", quantity: "100", unit: "g" },
+      { name: "Vietnamese coriander (rau ram)", quantity: "1", unit: "bunch" },
+      { name: "Mint leaves", quantity: "1", unit: "bunch" },
+      { name: "Fish sauce", quantity: "3", unit: "tbsp" },
+      { name: "Lime juice", quantity: "4", unit: "tbsp" },
+      { name: "Crushed peanuts and crispy shallots", quantity: "4", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Poach chicken in salted water with ginger and lemongrass 15 minutes. Cool and shred finely.",
+      "Massage cabbage with a pinch of salt, let rest 5 minutes, then squeeze dry.",
+      "Make dressing: fish sauce, lime juice, sugar, garlic and chili.",
+      "Toss chicken, cabbage, carrots and herbs with dressing.",
+      "Top with crushed peanuts and crispy fried shallots."
+    ],
+    chef_notes: "Vietnamese coriander (rau ram) has a distinctive peppery, slightly citrusy flavor that sets this salad apart — if unavailable, use a combination of mint and regular coriander.",
+    serving_suggestions: "Serve as a light main course or starter with rice crackers.",
+    flavor_profile: ["fresh", "tangy", "herby", "crunchy"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&q=80",
+    tags: ["Healthy", "Light", "Poached", "Refreshing"]
+  },
+  {
+    dish_name: "Goi Du Du (Green Papaya Salad, Vietnamese Style)",
+    cuisine: "Vietnamese",
+    country_of_origin: "Vietnam",
+    category: "Salads",
+    difficulty_level: "easy",
+    prep_time_minutes: 20,
+    cook_time_minutes: 0,
+    servings: 4,
+    short_description: "Vietnam's version of green papaya salad — lighter and more herby than its Thai cousin, dressed with fish sauce, lime, chili and garlic, topped with Vietnamese coriander, dried shrimp and roasted peanuts.",
+    ingredients: [
+      { name: "Green papaya", quantity: "400", unit: "g" },
+      { name: "Dried shrimp", quantity: "2", unit: "tbsp" },
+      { name: "Garlic", quantity: "3", unit: "cloves" },
+      { name: "Bird's eye chili", quantity: "2", unit: "pieces" },
+      { name: "Fish sauce", quantity: "2", unit: "tbsp" },
+      { name: "Lime juice", quantity: "3", unit: "tbsp" },
+      { name: "Sugar", quantity: "1", unit: "tsp" },
+      { name: "Roasted peanuts and Vietnamese herbs", quantity: "4", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Peel and julienne green papaya.",
+      "Pound garlic and chili in a mortar.",
+      "Make dressing with pounded aromatics, fish sauce, lime and sugar.",
+      "Toss papaya with dressing and dried shrimp.",
+      "Garnish with roasted peanuts, Vietnamese coriander and crispy shallots."
+    ],
+    chef_notes: "The Vietnamese version is less pounded and more tossed than the Thai version — the papaya should retain its crunch rather than becoming bruised and soft.",
+    serving_suggestions: "Serve as a refreshing side salad or light starter.",
+    flavor_profile: ["fresh", "crunchy", "tangy", "herby"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=400&q=80",
+    tags: ["Fresh", "Healthy", "Street Food", "Summer"]
+  },
+
+  // ── MAIN COURSES ─────────────────────────────────────────────────────────────
+  {
+    dish_name: "Banh Mi Sandwich",
+    cuisine: "Vietnamese",
+    country_of_origin: "Vietnam",
+    category: "Main Courses",
+    difficulty_level: "easy",
+    prep_time_minutes: 30,
+    cook_time_minutes: 10,
+    servings: 4,
+    short_description: "A perfect fusion of French and Vietnamese culinary traditions — a crispy baguette filled with char-siu pork, Vietnamese cold cuts, pickled daikon and carrots, cucumber, coriander and a smear of liver pâté.",
+    ingredients: [
+      { name: "Vietnamese baguettes", quantity: "4", unit: "pieces" },
+      { name: "Char siu or cold cut pork", quantity: "300", unit: "g" },
+      { name: "Pork liver pâté", quantity: "4", unit: "tbsp" },
+      { name: "Daikon, julienned", quantity: "150", unit: "g" },
+      { name: "Carrots, julienned", quantity: "100", unit: "g" },
+      { name: "Rice vinegar and sugar for pickling", quantity: "1", unit: "portion" },
+      { name: "Fresh cucumber, coriander, jalapeño", quantity: "1", unit: "portion" },
+      { name: "Maggi sauce or soy sauce", quantity: "2", unit: "tbsp" }
+    ],
+    preparation_steps: [
+      "Quick-pickle daikon and carrots in rice vinegar, sugar and salt for 20 minutes minimum.",
+      "Toast baguette until crackling crispy on outside.",
+      "Spread pâté on one side, mayonnaise on the other.",
+      "Layer pork cold cuts, pickled vegetables, cucumber slices and fresh coriander.",
+      "Add jalapeño slices and a splash of Maggi sauce. Eat immediately."
+    ],
+    chef_notes: "The Vietnamese baguette (banh mi) is lighter and crispier than French baguettes due to the combination of rice flour and wheat flour. The contrast of hot, crispy bread with cold, crunchy pickled vegetables is essential.",
+    serving_suggestions: "Eat immediately while the bread is crispy. The best banh mi is consumed within 5 minutes of assembly.",
+    flavor_profile: ["complex", "fresh", "crunchy", "savory-acidic", "layered"],
+    dietary_tags: ["dairy-free"],
+    img: "https://images.unsplash.com/photo-1547592180-85f173990554?w=400&q=80",
+    tags: ["Street Food", "Fusion", "UNESCO Heritage", "Quick"]
+  },
+  {
+    dish_name: "Bo Luc Lac (Shaking Beef)",
+    cuisine: "Vietnamese",
+    country_of_origin: "Vietnam",
+    category: "Main Courses",
+    difficulty_level: "medium",
+    prep_time_minutes: 20,
+    cook_time_minutes: 10,
+    servings: 4,
+    short_description: "Tender, cubed beef filet seared at extremely high heat with garlic, oyster sauce and soy, served over watercress and red onion salad — the 'shaking' refers to the technique of tossing the wok vigorously during cooking.",
+    ingredients: [
+      { name: "Beef filet or sirloin", quantity: "500", unit: "g" },
+      { name: "Garlic", quantity: "6", unit: "cloves" },
+      { name: "Oyster sauce", quantity: "2", unit: "tbsp" },
+      { name: "Soy sauce", quantity: "2", unit: "tbsp" },
+      { name: "Sugar", quantity: "1", unit: "tsp" },
+      { name: "Watercress", quantity: "200", unit: "g" },
+      { name: "Red onion", quantity: "1", unit: "medium" },
+      { name: "Lime and black pepper", quantity: "1", unit: "portion" }
+    ],
+    preparation_steps: [
+      "Cut beef into 3cm cubes. Marinate in soy sauce, oyster sauce, sugar and garlic 30 minutes.",
+      "Get wok scorching hot. Add beef in a single layer without crowding.",
+      "Shake the wok vigorously while cooking for 2 minutes until edges sear and caramelize.",
+      "Add minced garlic at the last minute and toss.",
+      "Serve immediately over watercress and red onion salad with a lime and black pepper dressing."
+    ],
+    chef_notes: "The 'shaking' technique — vigorously tossing the wok — ensures even caramelization on all sides. The beef should be medium-rare in the center with deeply caramelized, crusty exterior.",
+    serving_suggestions: "Serve over watercress salad with a lime-salt-pepper dipping sauce.",
+    flavor_profile: ["caramelized", "garlicky", "savory", "tender"],
+    dietary_tags: ["dairy-free", "gluten-free"],
+    img: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80",
+    tags: ["Wok", "Premium", "Special Occasion", "High Heat"]
+  },
+  {
+    dish_name: "Ca Kho To (Caramelized Fish in Claypot)",
+    cuisine: "Vietnamese",
+    country_of_origin: "Vietnam",
+    category: "Main Courses",
+    difficulty_level: "medium",
+    prep_time_minutes: 15,
+    cook_time_minutes: 45,
+    servings: 4,
+    short_description: "Fatty fish fillets slowly braised in a clay pot in a deeply caramelized coconut water and fish sauce reduction — a southern Vietnamese comfort food with intense sweet, salty and smoky flavors that perfume the entire kitchen.",
+    ingredients: [
+      { name: "Catfish or salmon steaks", quantity: "600", unit: "g" },
+      { name: "Coconut water", quantity: "300", unit: "ml" },
+      { name: "Fish sauce", quantity: "3", unit: "tbsp" },
+      { name: "Sugar", quantity: "3", unit: "tbsp" },
+      { name: "Garlic", quantity: "4", unit: "cloves" },
+      { name: "Ginger", quantity: "1", unit: "inch" },
+      { name: "Chili", quantity: "2", unit: "pieces" },
+      { name: "Caramel sauce (from 2 tbsp sugar)", quantity: "1", unit: "portion" }
+    ],
+    preparation_steps: [
+      "Make dry caramel by cooking sugar until amber. Add fish sauce carefully — it will sizzle.",
+      "Add coconut water, garlic and ginger.",
+      "Add fish pieces. Braise over medium heat, turning occasionally.",
+      "Cook 40-45 minutes until sauce reduces to a thick, glossy glaze.",
+      "Serve directly in clay pot with steamed white rice."
+    ],
+    chef_notes: "The patience in this dish pays off — the slow reduction creates an intensely flavored, sticky glaze that coats the fish. Don't rush it. The combination of caramel bitterness and fish sauce creates an irreplaceable flavor.",
+    serving_suggestions: "Serve in the clay pot over steamed white rice with a simple vegetable soup.",
+    flavor_profile: ["caramelized", "sweet-salty", "rich", "warming"],
+    dietary_tags: ["gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=400&q=80",
+    tags: ["Southern Vietnam", "Comfort Food", "Clay Pot", "Traditional"]
+  },
+
+  // ── DESSERTS ─────────────────────────────────────────────────────────────────
+  {
+    dish_name: "Che Ba Mau (Three Color Dessert)",
+    cuisine: "Vietnamese",
+    country_of_origin: "Vietnam",
+    category: "Desserts",
+    difficulty_level: "easy",
+    prep_time_minutes: 20,
+    cook_time_minutes: 10,
+    servings: 6,
+    short_description: "Vietnam's most vibrant and fun dessert — three distinct layers of sweet beans and jelly in a glass, topped with coconut cream and crushed ice. Each color represents a different ingredient and flavor.",
+    ingredients: [
+      { name: "Cooked red beans", quantity: "100", unit: "g" },
+      { name: "Mung bean paste, cooked", quantity: "100", unit: "g" },
+      { name: "Pandan jelly, cubed", quantity: "100", unit: "g" },
+      { name: "Coconut cream", quantity: "200", unit: "ml" },
+      { name: "Sugar syrup", quantity: "4", unit: "tbsp" },
+      { name: "Crushed ice", quantity: "2", unit: "cups" },
+      { name: "Salt", quantity: "0.5", unit: "tsp" }
+    ],
+    preparation_steps: [
+      "Cook red beans and mung beans with sugar syrup separately until tender.",
+      "Make pandan jelly with pandan extract and agar.",
+      "Season coconut cream with a pinch of salt (this enhances sweetness).",
+      "Layer in glasses: red beans at bottom, green pandan jelly, then yellow mung bean.",
+      "Top with crushed ice and pour coconut cream over everything. Serve immediately."
+    ],
+    chef_notes: "The pinch of salt in the coconut cream is the Vietnamese trick that makes the sweetness more prominent — don't skip it. Serve immediately or the ice melts and layers mix.",
+    serving_suggestions: "Serve as a refreshing summer dessert or afternoon sweet snack.",
+    flavor_profile: ["sweet", "creamy", "refreshing", "tropical"],
+    dietary_tags: ["vegetarian", "vegan", "gluten-free", "dairy-free"],
+    img: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=80",
+    tags: ["Colorful", "Street Dessert", "Summer", "Traditional"]
+  },
+  {
+    dish_name: "Banh Flan (Vietnamese Crème Caramel)",
+    cuisine: "Vietnamese",
+    country_of_origin: "Vietnam",
+    category: "Desserts",
+    difficulty_level: "medium",
+    prep_time_minutes: 20,
+    cook_time_minutes: 40,
+    servings: 6,
+    short_description: "A Vietnamese-French fusion dessert — silky, dense crème caramel with a uniquely richer egg yolk ratio, often served with a splash of strong iced Vietnamese coffee poured over it. The French colonial influence at its most delicious.",
+    ingredients: [
+      { name: "Eggs", quantity: "4", unit: "pieces" },
+      { name: "Egg yolks", quantity: "4", unit: "pieces" },
+      { name: "Condensed milk", quantity: "200", unit: "ml" },
+      { name: "Fresh milk", quantity: "300", unit: "ml" },
+      { name: "Sugar", quantity: "100", unit: "g" },
+      { name: "Water", quantity: "30", unit: "ml" },
+      { name: "Strong Vietnamese coffee (optional)", quantity: "4", unit: "tbsp" },
+      { name: "Vanilla extract", quantity: "1", unit: "tsp" }
+    ],
+    preparation_steps: [
+      "Make dark caramel with sugar and water. Pour into individual ramekins.",
+      "Mix eggs, egg yolks, condensed milk, fresh milk and vanilla.",
+      "Strain through a fine sieve for extreme smoothness.",
+      "Pour over set caramel in ramekins.",
+      "Steam in a bain-marie at 160°C for 35-40 minutes. Chill and invert."
+    ],
+    chef_notes: "The combination of condensed milk and fresh milk (no heavy cream) gives Vietnamese banh flan its characteristic denser, more eggy texture compared to French crème caramel. Serving it with strong iced coffee poured over is the modern Saigon way.",
+    serving_suggestions: "Serve chilled with a drizzle of dark Vietnamese iced coffee.",
+    flavor_profile: ["sweet", "caramel", "silky", "eggy"],
+    dietary_tags: ["vegetarian", "gluten-free"],
+    img: "https://images.unsplash.com/photo-1558024920-b41e1887dc32?w=400&q=80",
+  },
+];
+
+// ─── HELPER ──────────────────────────────────────────────────────────────────
+
+
+
+export {
+  japaneseCuisineData,
+  thaiCuisineData,
+  koreanCuisineData,
+  vietnameseCuisineData,
+};
