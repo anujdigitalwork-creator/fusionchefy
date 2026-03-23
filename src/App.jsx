@@ -343,6 +343,7 @@ function FusionChefAI() {
   const [chineseGuidePage, setChineseGuidePage] = useState(false);
   const [thaiGuidePage, setThaiGuidePage] = useState(false);
   const [koreanGuidePage, setKoreanGuidePage] = useState(false);
+  const [vietnameseGuidePage, setVietnameseGuidePage] = useState(false);
   const [maharashtraCategory, setMaharashtraCategory] = useState("All");
   const [maharashtraSearch, setMaharashtraSearch] = useState("");
   const [maharashtraModal, setMaharashtraModal] = useState(null);
@@ -388,7 +389,7 @@ function FusionChefAI() {
   useEffect(() => {
     const pages = [
       [indianPage,"Indian Cuisine"],[maharashtraPage,"Maharashtra Cuisine"],[punjabPage,"Punjab Cuisine"],
-      [maharashtraGuidePage,"Maharashtra Guide"],[punjabGuidePage,"Punjab Guide"],[japaneseGuidePage,"Japanese Guide"],[chineseGuidePage,"Chinese Guide"],[thaiGuidePage,"Thai Guide"],[koreanGuidePage,"Korean Guide"],
+      [maharashtraGuidePage,"Maharashtra Guide"],[punjabGuidePage,"Punjab Guide"],[japaneseGuidePage,"Japanese Guide"],[chineseGuidePage,"Chinese Guide"],[thaiGuidePage,"Thai Guide"],[koreanGuidePage,"Korean Guide"],[vietnameseGuidePage,"Vietnamese Guide"],
       [aboutPage,"About Us"],[contactPage,"Contact Us"],[privacyPage,"Privacy Policy"],
       [termsPage,"Terms of Use"],[careersPage,"Careers"],[cuisineExplorer,"Cuisine Explorer"],[recipeDB,"Recipe Database"],
       [chinesePage,"Chinese Cuisine"],[japanesePage,"Japanese Cuisine"],[thaiPage,"Thai Cuisine"],
@@ -398,10 +399,10 @@ function FusionChefAI() {
     const title = active ? `Fusion Chef – ${active[1]}` : "Fusion Chef – 200+ Recipes from Every Corner of the World";
     document.title = title;
     gtagEvent("page_view", { page_title: title, page_location: window.location.href });
-  }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,koreanGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
+  }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,koreanGuidePage,vietnameseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
 
   useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, []);
-  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,koreanGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
+  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,koreanGuidePage,vietnameseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
 
   const scrollToSection = (id) => {
     if (id === "cuisine-explorer") { setCuisineExplorer(true); setRecipeDB(false); return; }
@@ -831,7 +832,7 @@ function FusionChefAI() {
       {japanesePage && renderCuisinePage({ data: japaneseCuisineData, name: "Japanese", flag: "🇯🇵", color: "#BC002D", setPage: setJapanesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Sushi","Appetizers","Soups","Salads","Main Courses","Rice Preparations","Desserts"], guideBtn: <button onClick={()=>{setJapanesePage(false);setJapaneseGuidePage(true);}} style={{background:"rgba(188,0,45,0.15)",border:"1px solid #BC002D",color:"#BC002D",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
       {thaiPage && renderCuisinePage({ data: thaiCuisineData, name: "Thai", flag: "🇹🇭", color: "#1a3a7a", setPage: setThaiPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"], guideBtn: <button onClick={()=>{setThaiPage(false);setThaiGuidePage(true);}} style={{background:"rgba(26,58,122,0.15)",border:"1px solid #1a3a7a",color:"#1a3a7a",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
       {koreanPage && renderCuisinePage({ data: koreanCuisineData, name: "Korean", flag: "🇰🇷", color: "#003478", setPage: setKoreanPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"], guideBtn: <button onClick={()=>{setKoreanPage(false);setKoreanGuidePage(true);}} style={{background:"rgba(0,52,120,0.15)",border:"1px solid #003478",color:"#003478",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
-      {vietnamesePage && renderCuisinePage({ data: vietnameseCuisineData, name: "Vietnamese", flag: "🇻🇳", color: "#9B1B30", setPage: setVietnamesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
+      {vietnamesePage && renderCuisinePage({ data: vietnameseCuisineData, name: "Vietnamese", flag: "🇻🇳", color: "#9B1B30", setPage: setVietnamesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"], guideBtn: <button onClick={()=>{setVietnamesePage(false);setVietnameseGuidePage(true);}} style={{background:"rgba(155,27,48,0.15)",border:"1px solid #9B1B30",color:"#9B1B30",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
 
       {/* ── INDIAN PAGE ── */}
       {indianPage && (
@@ -990,6 +991,150 @@ function FusionChefAI() {
 
 
 
+
+
+      {/* ── VIETNAMESE CUISINE GUIDE ── */}
+      {vietnameseGuidePage && (
+        <div className="full-page" style={{background:"#FDFAF6"}}>
+          <div className="full-page-header" style={{background:"#9B1B30"}}>
+            <button className="back-btn" onClick={()=>setVietnameseGuidePage(false)}>← Back</button>
+            <button className="back-btn" style={{marginLeft:"auto",background:"rgba(255,255,255,0.15)"}} onClick={()=>{setVietnameseGuidePage(false);setVietnamesePage(true);}}>🍜 Browse Recipes</button>
+            <h1 style={{color:"white"}}>🇻🇳 Vietnamese <em>Cuisine Guide</em></h1>
+          </div>
+          <div className="full-page-content" style={{maxWidth:"860px",margin:"0 auto",padding:"2rem 1.5rem"}}>
+
+            <div style={{background:"linear-gradient(135deg,#9B1B30,#C0392B)",borderRadius:"16px",padding:"2.5rem",color:"white",marginBottom:"2rem",position:"relative",overflow:"hidden"}}>
+              <div style={{position:"absolute",right:"-20px",top:"-20px",fontSize:"8rem",opacity:0.1}}>🌿</div>
+              <div style={{fontSize:"0.8rem",letterSpacing:"3px",opacity:0.8,marginBottom:"0.5rem"}}>COMPLETE GUIDE</div>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"2rem",marginBottom:"0.8rem",color:"white"}}>Vietnam — The Fresh Herb Kitchen of the World</h2>
+              <p style={{opacity:0.9,lineHeight:1.7,maxWidth:"580px"}}>Vietnamese cuisine is the world's most herb-forward, fresh and balanced food culture. Built on the philosophy that every dish should be light, aromatic and nutritionally complete, it is a cuisine of extraordinary freshness where raw herbs are as important as cooked ingredients.</p>
+              <div style={{display:"flex",gap:"1rem",marginTop:"1.5rem",flexWrap:"wrap"}}>
+                {["🍜 Pho","🥗 Goi Cuon","🥖 Banh Mi","🌿 Fresh Herbs","🐟 Fish Sauce"].map(t=>(
+                  <span key={t} style={{background:"rgba(255,255,255,0.2)",padding:"0.3rem 0.8rem",borderRadius:"20px",fontSize:"0.8rem"}}>{t}</span>
+                ))}
+              </div>
+            </div>
+
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#9B1B30",marginBottom:"1rem",fontSize:"1.3rem"}}>📜 History & Origins</h3>
+              <p style={{lineHeight:1.8,color:"#444",marginBottom:"1rem"}}>Vietnamese culinary history spans over 4,000 years, shaped profoundly by Chinese domination (111 BCE–939 CE), Cham and Khmer civilisations, and most dramatically, French colonisation (1858–1954). The result is one of the world's most diverse and distinctive cuisines — deeply Asian in spirit but uniquely Vietnamese in expression.</p>
+              <p style={{lineHeight:1.8,color:"#444",marginBottom:"1rem"}}>The French influence gave Vietnam its baguette (transformed into banh mi), crème caramel (transformed into banh flan), pate, coffee culture and many cooking techniques. Rather than simply adopting French food, Vietnamese cooks reimagined these imports through their own flavour philosophy — lighter, fresher and herb-abundant.</p>
+              <p style={{lineHeight:1.8,color:"#444"}}>The Vietnamese diaspora following the Vietnam War (1955–1975) spread pho, banh mi and Vietnamese cuisine globally. Today Vietnamese food is recognised by UNESCO and is one of the world's fastest growing cuisines, celebrated for its health-consciousness and extraordinary flavour balance.</p>
+            </div>
+
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#9B1B30",marginBottom:"1rem",fontSize:"1.3rem"}}>🗺️ Three Regional Cuisines</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(240px,1fr))",gap:"1rem"}}>
+                {[
+                  {region:"🏙️ Northern Vietnam",city:"Hanoi",flavor:"Subtle, less sweet, milder",famous:"Pho bo, bun cha, banh cuon, cha ca la vong, bun thang",note:"The most restrained cuisine — minimal sugar, preference for clear broths and delicate flavours rooted in the capital's refined traditions"},
+                  {region:"👑 Central Vietnam",city:"Hue",flavor:"Spicy, complex, elaborate",famous:"Bun bo hue, banh khoai, com hen, nem lui, mi quang",note:"Vietnam's spiciest and most complex — the former imperial capital's cuisine is elaborate, deeply spiced and rich with royal court influence"},
+                  {region:"🌴 Southern Vietnam",city:"Ho Chi Minh City",flavor:"Sweet, rich, coconut-forward",famous:"Pho, com tam, banh xeo, hu tieu, bun thit nuong",note:"The most globally familiar Vietnamese food — sweeter, uses more coconut milk and sugar, influenced by Cambodian and Chinese cuisine"},
+                ].map(r=>(
+                  <div key={r.region} style={{background:"#FDF5F5",borderRadius:"10px",padding:"1.2rem",border:"1px solid #f0dede"}}>
+                    <strong style={{color:"#9B1B30",display:"block",marginBottom:"0.2rem"}}>{r.region}</strong>
+                    <div style={{fontSize:"0.72rem",color:"#888",marginBottom:"0.3rem"}}>{r.city}</div>
+                    <div style={{fontSize:"0.78rem",color:"#C9922A",fontWeight:600,marginBottom:"0.3rem"}}>{r.flavor}</div>
+                    <div style={{fontSize:"0.76rem",color:"#555",marginBottom:"0.4rem"}}>🍽 {r.famous}</div>
+                    <p style={{fontSize:"0.74rem",color:"#777",lineHeight:1.5,fontStyle:"italic"}}>{r.note}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#9B1B30",marginBottom:"1rem",fontSize:"1.3rem"}}>🌿 The Sacred Role of Fresh Herbs</h3>
+              <p style={{lineHeight:1.8,color:"#444",marginBottom:"1rem",fontSize:"0.9rem"}}>In Vietnamese cuisine, fresh herbs are not a garnish — they are equal partners with the cooked food. Every Vietnamese table has a platter of fresh herbs that diners add to their own bowls throughout the meal. This philosophy sets Vietnamese food apart from all other cuisines.</p>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(160px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {herb:"Vietnamese Mint (Rau Ram)",flavor:"Lemony, peppery, slightly bitter — essential for goi ga"},
+                  {herb:"Perilla (Tia To)",flavor:"Purple or green — anise-like, used in pho and grilled meats"},
+                  {herb:"Sawtooth Coriander",flavor:"Stronger than regular coriander — essential for pho"},
+                  {herb:"Rice Paddy Herb",flavor:"Citrusy, cumin-like — used in canh chua and rice dishes"},
+                  {herb:"Thai Basil",flavor:"Anise-sweet — served with pho and rice dishes"},
+                  {herb:"Lemon Balm",flavor:"Mild citrus — used in Central Vietnamese dishes"},
+                  {herb:"Betel Leaf",flavor:"Peppery, slightly bitter — used for wrapping grilled meats"},
+                  {herb:"Laksa Leaf",flavor:"Intense, distinctive — essential in some southern dishes"},
+                ].map(h=>(
+                  <div key={h.herb} style={{background:"#FDF5F5",borderRadius:"8px",padding:"0.9rem",borderLeft:"3px solid #4A7C59"}}>
+                    <strong style={{color:"#4A7C59",fontSize:"0.82rem",display:"block"}}>{h.herb}</strong>
+                    <p style={{fontSize:"0.74rem",color:"#666",marginTop:"0.3rem",lineHeight:1.5}}>{h.flavor}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#9B1B30",marginBottom:"1rem",fontSize:"1.3rem"}}>🐟 Essential Ingredients</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(160px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {name:"Fish Sauce (Nuoc Mam)",desc:"Vietnam's salt — the most important ingredient. Phu Quoc fish sauce is the finest in the world"},
+                  {name:"Nuoc Cham",desc:"The dipping sauce — a perfect balance of fish sauce, lime, sugar, garlic and chilli"},
+                  {name:"Rice (Various)",desc:"Long-grain jasmine for most dishes, broken rice for com tam, glutinous rice for desserts"},
+                  {name:"Pho Spices",desc:"Star anise, cinnamon, cloves, cardamom and coriander seed — the aroma of pho"},
+                  {name:"Lemongrass",desc:"Essential in central and southern cooking — adds citrus fragrance to grilled meats and curries"},
+                  {name:"Galangal",desc:"Used in some soups and grilled dishes — piny, medicinal flavour"},
+                  {name:"Shrimp Paste (Mam Ruoc)",desc:"Fermented shrimp paste — the defining ingredient of bun bo hue"},
+                  {name:"Rice Paper",desc:"For fresh spring rolls and wrapping — must be moistened briefly before using"},
+                  {name:"Bean Sprouts",desc:"Added fresh to pho, bun bo hue and salads — must remain crunchy"},
+                  {name:"Hoisin Sauce",desc:"Dipped with pho — a sweet, thick bean sauce never added to the broth itself"},
+                  {name:"Tamarind",desc:"Sour agent in southern dishes especially canh chua sweet and sour soup"},
+                  {name:"Coconut Water",desc:"Used in braising dishes like thit kho trung — natural sweetness without heaviness"},
+                ].map(i=>(
+                  <div key={i.name} style={{background:"#FDF5F5",borderRadius:"8px",padding:"0.9rem",border:"1px solid #f0dede"}}>
+                    <strong style={{color:"#9B1B30",fontSize:"0.82rem",display:"block"}}>{i.name}</strong>
+                    <p style={{fontSize:"0.74rem",color:"#666",marginTop:"0.3rem",lineHeight:1.5}}>{i.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#9B1B30",marginBottom:"1rem",fontSize:"1.3rem"}}>🎊 Festivals & Food Traditions</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {festival:"🧧 Tet Nguyen Dan (New Year)",food:"Banh chung (square sticky rice cake), thit kho trung, dua hanh (pickled onion), mut (candied fruit)"},
+                  {festival:"🌸 Tet Trung Thu (Mid-Autumn)",food:"Banh trung thu mooncakes, colourful children lanterns, hot che soups"},
+                  {festival:"❄️ Han Thuc (Cold Food Festival)",food:"Banh troi and banh chay — floating rice cakes in ginger syrup"},
+                  {festival:"🐉 Tet Doan Ngo (Midsummer)",food:"Ruou nep (fermented sticky rice) eaten to eliminate parasites"},
+                  {festival:"🌾 Wedding Banquets",food:"Elaborate multi-course banquets with whole roast pig, lobster, bird's nest soup"},
+                  {festival:"💐 Death Anniversaries",food:"Vegetarian feast (com chay) with tofu, mock meats and fruits as offerings"},
+                ].map(f=>(
+                  <div key={f.festival} style={{background:"#FDF5F5",borderRadius:"8px",padding:"0.9rem",border:"1px solid #f0dede"}}>
+                    <strong style={{color:"#9B1B30",fontSize:"0.82rem",display:"block",marginBottom:"0.3rem"}}>{f.festival}</strong>
+                    <p style={{fontSize:"0.76rem",color:"#666",lineHeight:1.5}}>{f.food}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{background:"linear-gradient(135deg,#9B1B30,#C0392B)",borderRadius:"12px",padding:"1.8rem",marginBottom:"2rem",color:"white"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",marginBottom:"1rem",fontSize:"1.3rem"}}>⭐ 10 Must-Try Vietnamese Dishes</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:"0.6rem"}}>
+                {[
+                  "🍜 Pho Bo — Vietnam's soul in a bowl",
+                  "🥗 Goi Cuon — the freshest food on earth",
+                  "🥖 Banh Mi — the world's greatest sandwich",
+                  "🫕 Bun Bo Hue — Central Vietnam's fiery masterpiece",
+                  "🥩 Bo Luc Lac — shaking beef with butter",
+                  "🍚 Com Tam — Saigon's broken rice perfection",
+                  "🎂 Banh Flan — French custard gone Vietnamese",
+                  "🌮 Banh Xeo — sizzling turmeric crepes",
+                  "🐟 Ca Kho To — caramelised fish in claypot",
+                  "🍡 Che Ba Mau — Vietnam's colourful dessert dream",
+                ].map((d,i)=>(
+                  <div key={i} style={{background:"rgba(255,255,255,0.12)",borderRadius:"8px",padding:"0.7rem",fontSize:"0.82rem",lineHeight:1.5}}>{d}</div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{textAlign:"center",paddingBottom:"2rem"}}>
+              <button onClick={()=>{setVietnameseGuidePage(false);setVietnamesePage(true);}} style={{background:"#9B1B30",color:"white",border:"none",padding:"0.9rem 2.5rem",borderRadius:"25px",fontSize:"1rem",fontWeight:600,cursor:"pointer"}}>
+                🍜 Browse All Vietnamese Recipes →
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ── KOREAN CUISINE GUIDE ── */}
       {koreanGuidePage && (
@@ -1929,7 +2074,11 @@ function RecipePage({ allData }) {
   const { cuisine, category, dish } = useParams();
   const navigate = useNavigate();
 
-  const dataSet = allData[cuisine] || [];
+  const dataSet = allData[cuisine] || [
+  { dish_name:"Mi Quang (Turmeric Noodles)", state:"Vietnam", cuisine:"Vietnamese", category:"Main Courses", difficulty_level:"Medium", prep_time_minutes:30, cook_time_minutes:30, total_time_minutes:60, servings:4, short_description:"Central Vietnam's most beloved noodle dish — wide turmeric-yellow noodles with pork, prawns and a small amount of flavourful broth, topped with peanuts and sesame crackers.", ingredients:[{name:"Wide rice noodles",quantity:"400",unit:"g"},{name:"Pork ribs",quantity:"300",unit:"g"},{name:"Prawns",quantity:"200",unit:"g"},{name:"Turmeric",quantity:"2",unit:"tsp"},{name:"Shallots",quantity:"4",unit:"pieces"},{name:"Garlic",quantity:"4",unit:"cloves"},{name:"Fish sauce",quantity:"3",unit:"tbsp"},{name:"Roasted peanuts",quantity:"4",unit:"tbsp"},{name:"Sesame crackers",quantity:"4",unit:"pieces"},{name:"Fresh herbs",quantity:"1",unit:"bunch"}], preparation_steps:["Simmer pork ribs to make broth. Season with fish sauce.","Cook prawns. Fry shallots until golden.","Cook noodles with turmeric — they should turn yellow.","Add very small amount of broth to noodles — this is not a soup.","Arrange pork ribs and prawns on top.","Top with fried shallots, peanuts and herbs.","Place sesame cracker on side.","Add chilli and lime to taste."], chef_notes:"Mi quang uses minimal broth unlike pho — just enough to flavour the noodles. The sesame cracker added at serving is essential for authentic mi quang texture.", serving_suggestions:"Serve with sesame crackers, fresh herbs, lime and chilli.", nutrition_estimate:{calories:"425",protein_g:"26",carbohydrates_g:"58",fat_g:"12"}, tags:["Turmeric Noodles","Central Vietnam","Quang Nam","Unique"], img:"https://images.unsplash.com/photo-1582878826629-33b7f57b2a3c?w=400&q=80" },
+  { dish_name:"Goi Bap Chuoi (Banana Flower Salad)", state:"Vietnam", cuisine:"Vietnamese", category:"Salads", difficulty_level:"Medium", prep_time_minutes:30, cook_time_minutes:10, total_time_minutes:40, servings:4, short_description:"A crunchy Vietnamese banana blossom salad with pork, prawns and roasted peanuts — uniquely textured and flavoured, a staple of Vietnamese home cooking.", ingredients:[{name:"Banana blossom",quantity:"1",unit:"large"},{name:"Cooked pork",quantity:"150",unit:"g"},{name:"Cooked prawns",quantity:"150",unit:"g"},{name:"Roasted peanuts",quantity:"4",unit:"tbsp"},{name:"Fresh herbs",quantity:"1",unit:"bunch"},{name:"Fried shallots",quantity:"3",unit:"tbsp"},{name:"Lime juice",quantity:"4",unit:"tbsp"},{name:"Fish sauce",quantity:"3",unit:"tbsp"},{name:"Sugar",quantity:"2",unit:"tbsp"},{name:"Chilli",quantity:"2",unit:"pieces"}], preparation_steps:["Peel banana blossom to inner tender layers.","Slice thinly and soak in acidulated water immediately.","Squeeze very dry.","Slice pork thinly.","Make dressing: lime juice, fish sauce, sugar and chilli.","Combine banana blossom, pork and prawns.","Toss with dressing and herbs.","Top with peanuts and fried shallots."], chef_notes:"Banana blossom must go into acidulated water immediately after slicing to prevent browning. Squeeze thoroughly before dressing.", serving_suggestions:"Serve as a starter or alongside rice.", nutrition_estimate:{calories:"225",protein_g:"18",carbohydrates_g:"18",fat_g:"8"}, tags:["Banana Blossom","Unique","Vietnamese","Fresh"], img:"https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80" },
+  { dish_name:"Chè Chuối (Banana Tapioca Pudding)", state:"Vietnam", cuisine:"Vietnamese", category:"Desserts", difficulty_level:"Easy", prep_time_minutes:10, cook_time_minutes:20, total_time_minutes:30, servings:4, short_description:"A warm Vietnamese banana pudding with tapioca pearls in pandan coconut milk — humble, comforting and deeply satisfying. A beloved Vietnamese everyday dessert.", ingredients:[{name:"Ripe bananas",quantity:"6",unit:"medium"},{name:"Tapioca pearls",quantity:"80",unit:"g"},{name:"Coconut milk",quantity:"400",unit:"ml"},{name:"Sugar",quantity:"60",unit:"g"},{name:"Salt",quantity:"0.5",unit:"tsp"},{name:"Pandan leaves",quantity:"3",unit:"pieces"},{name:"Roasted sesame seeds",quantity:"2",unit:"tbsp"}], preparation_steps:["Cook tapioca pearls until transparent. Drain.","Slice bananas into rounds.","Heat coconut milk with pandan leaves, sugar and salt.","Add tapioca pearls.","Add banana slices — cook 3 minutes only.","Remove pandan leaves.","Serve warm topped with sesame seeds."], chef_notes:"Add bananas at the very end — overcooked bananas turn mushy. The pandan leaves infuse the coconut milk with a floral fragrance that is essential.", serving_suggestions:"Serve warm or at room temperature in bowls.", nutrition_estimate:{calories:"285",protein_g:"3",carbohydrates_g:"52",fat_g:"10"}, tags:["Banana","Tapioca","Comfort","Vietnamese Dessert"], img:"https://images.unsplash.com/photo-1558024920-b41e1887dc32?w=400&q=80" },
+];
   const recipe = dataSet.find(
     r => toSlug(r.dish_name) === dish && toSlug(r.category) === category
   );
