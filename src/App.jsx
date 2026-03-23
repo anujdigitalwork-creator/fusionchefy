@@ -316,7 +316,7 @@ import {
   thaiCuisineData,
   koreanCuisineData,
   vietnameseCuisineData,
-} from "./cuisineData.js";
+} from "./asianCuisineData.js";
 
 function toSlug(str) {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
