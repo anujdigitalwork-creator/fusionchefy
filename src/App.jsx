@@ -2201,6 +2201,45 @@ function RecipePage({ allData }) {
         </div>
         {recipe.chef_notes&&<div style={{marginTop:"2rem",background:"rgba(232,98,26,0.08)",border:"1px solid rgba(232,98,26,0.2)",borderRadius:"14px",padding:"1.4rem"}}><h3 style={{fontFamily:"'Playfair Display',serif",color:"#E8621A",marginBottom:"0.6rem"}}>💡 Chef Notes</h3><p style={{fontSize:"0.92rem",color:"#1C1C1C",lineHeight:1.7}}>{recipe.chef_notes}</p></div>}
         {recipe.serving_suggestions&&<div style={{marginTop:"1.5rem",background:"#F5EDDB",borderRadius:"14px",padding:"1.4rem"}}><h3 style={{fontFamily:"'Playfair Display',serif",color:"#1C1C1C",marginBottom:"0.6rem"}}>🍽 Serving Suggestions</h3><p style={{fontSize:"0.92rem",color:"#7A6A55",lineHeight:1.7}}>{recipe.serving_suggestions}</p></div>}
+
+        {/* ── YOU MAY ALSO LIKE ── */}
+        {(()=>{
+          const allRecipes = Object.entries(allData).flatMap(([cuis,arr])=>arr.map(r=>({...r,_cuisine:cuis})));
+          const scored = allRecipes
+            .filter(r => toSlug(r.dish_name) !== dish)
+            .map(r => {
+              let score = 0;
+              if (r._cuisine === cuisine) score += 3;
+              if (toSlug(r.category) === category) score += 2;
+              const recipeTags = (recipe.tags||[]).map(t=>t.toLowerCase());
+              const rTags = (r.tags||[]).map(t=>t.toLowerCase());
+              score += rTags.filter(t=>recipeTags.includes(t)).length;
+              score += Math.random() * 0.5;
+              return {...r, score};
+            })
+            .sort((a,b)=>b.score-a.score)
+            .slice(0,5);
+          if (!scored.length) return null;
+          return (
+            <div style={{marginTop:"2rem",background:"white",borderRadius:"16px",padding:"1.8rem",border:"1px solid #F5EDDB"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#1C1C1C",marginBottom:"1.2rem",fontSize:"1.2rem"}}>✨ You may also like</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(150px,1fr))",gap:"0.8rem"}}>
+                {scored.map((r,i)=>(
+                  <div key={i} onClick={()=>{window.location.href=`/cuisine/${r._cuisine}/${toSlug(r.category)}/${toSlug(r.dish_name)}`;}} style={{cursor:"pointer",background:"#FFF8EE",borderRadius:"10px",overflow:"hidden",border:"1px solid #F5EDDB",transition:"transform 0.2s"}}
+                    onMouseEnter={e=>e.currentTarget.style.transform="translateY(-3px)"}
+                    onMouseLeave={e=>e.currentTarget.style.transform="translateY(0)"}>
+                    {r.img && <img src={r.img} alt={r.dish_name} style={{width:"100%",height:"80px",objectFit:"cover"}}/>}
+                    <div style={{padding:"0.6rem"}}>
+                      <div style={{fontSize:"0.65rem",color:"#E8621A",fontWeight:700,textTransform:"capitalize",marginBottom:"0.2rem"}}>{r._cuisine} · {r.category}</div>
+                      <div style={{fontSize:"0.78rem",fontWeight:600,color:"#1C1C1C",lineHeight:1.3}}>{r.dish_name}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
+
         <div style={{marginTop:"2.5rem",background:"#1C1C1C",borderRadius:"16px",padding:"2rem",textAlign:"center"}}>
           <h3 style={{fontFamily:"'Playfair Display',serif",color:"white",marginBottom:"0.5rem"}}>Share this recipe 🔗</h3>
           <input readOnly value={window.location.href} onClick={e=>{e.target.select();navigator.clipboard.writeText(window.location.href);}} style={{width:"100%",padding:"0.8rem 1.2rem",borderRadius:"8px",border:"none",fontFamily:"'DM Sans',sans-serif",fontSize:"0.85rem",marginBottom:"0.5rem",cursor:"pointer"}}/>
