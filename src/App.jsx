@@ -1,17 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { BrowserRouter, Routes, Route, useParams, useNavigate } from "react-router-dom";
-import {
-  indianCuisineData,
-  maharashtraCuisineData,
-  punjabCuisineData,
-  chineseCuisineData,
-} from "./indianData.js";
-import {
-  japaneseCuisineData,
-  thaiCuisineData,
-  koreanCuisineData,
-  vietnameseCuisineData,
-} from "./asianData.js";
+import { indianCuisineData, maharashtraCuisineData, punjabCuisineData, chineseCuisineData } from "./indianData.js";
+import { japaneseCuisineData, thaiCuisineData } from "./asianData.js";
+import { koreanCuisineData, vietnameseCuisineData } from "./koreanData.js";
 
 
 const GA_ID = "G-6MVKQHR38Y";
@@ -351,6 +342,7 @@ function FusionChefAI() {
   const [japaneseGuidePage, setJapaneseGuidePage] = useState(false);
   const [chineseGuidePage, setChineseGuidePage] = useState(false);
   const [thaiGuidePage, setThaiGuidePage] = useState(false);
+  const [koreanGuidePage, setKoreanGuidePage] = useState(false);
   const [maharashtraCategory, setMaharashtraCategory] = useState("All");
   const [maharashtraSearch, setMaharashtraSearch] = useState("");
   const [maharashtraModal, setMaharashtraModal] = useState(null);
@@ -396,7 +388,7 @@ function FusionChefAI() {
   useEffect(() => {
     const pages = [
       [indianPage,"Indian Cuisine"],[maharashtraPage,"Maharashtra Cuisine"],[punjabPage,"Punjab Cuisine"],
-      [maharashtraGuidePage,"Maharashtra Guide"],[punjabGuidePage,"Punjab Guide"],[japaneseGuidePage,"Japanese Guide"],[chineseGuidePage,"Chinese Guide"],[thaiGuidePage,"Thai Guide"],
+      [maharashtraGuidePage,"Maharashtra Guide"],[punjabGuidePage,"Punjab Guide"],[japaneseGuidePage,"Japanese Guide"],[chineseGuidePage,"Chinese Guide"],[thaiGuidePage,"Thai Guide"],[koreanGuidePage,"Korean Guide"],
       [aboutPage,"About Us"],[contactPage,"Contact Us"],[privacyPage,"Privacy Policy"],
       [termsPage,"Terms of Use"],[careersPage,"Careers"],[cuisineExplorer,"Cuisine Explorer"],[recipeDB,"Recipe Database"],
       [chinesePage,"Chinese Cuisine"],[japanesePage,"Japanese Cuisine"],[thaiPage,"Thai Cuisine"],
@@ -406,10 +398,10 @@ function FusionChefAI() {
     const title = active ? `Fusion Chef – ${active[1]}` : "Fusion Chef – 200+ Recipes from Every Corner of the World";
     document.title = title;
     gtagEvent("page_view", { page_title: title, page_location: window.location.href });
-  }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
+  }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,koreanGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
 
   useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, []);
-  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
+  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,koreanGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
 
   const scrollToSection = (id) => {
     if (id === "cuisine-explorer") { setCuisineExplorer(true); setRecipeDB(false); return; }
@@ -838,7 +830,7 @@ function FusionChefAI() {
       {chinesePage && renderCuisinePage({ data: chineseCuisineData, name: "Chinese", flag: "🇨🇳", color: "#8B1A1A", setPage: setChinesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Rice Preparations","Desserts"], guideBtn: <button onClick={()=>{setChinesePage(false);setChineseGuidePage(true);}} style={{background:"rgba(139,26,26,0.15)",border:"1px solid #8B1A1A",color:"#8B1A1A",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
       {japanesePage && renderCuisinePage({ data: japaneseCuisineData, name: "Japanese", flag: "🇯🇵", color: "#BC002D", setPage: setJapanesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Sushi","Appetizers","Soups","Salads","Main Courses","Rice Preparations","Desserts"], guideBtn: <button onClick={()=>{setJapanesePage(false);setJapaneseGuidePage(true);}} style={{background:"rgba(188,0,45,0.15)",border:"1px solid #BC002D",color:"#BC002D",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
       {thaiPage && renderCuisinePage({ data: thaiCuisineData, name: "Thai", flag: "🇹🇭", color: "#1a3a7a", setPage: setThaiPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"], guideBtn: <button onClick={()=>{setThaiPage(false);setThaiGuidePage(true);}} style={{background:"rgba(26,58,122,0.15)",border:"1px solid #1a3a7a",color:"#1a3a7a",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
-      {koreanPage && renderCuisinePage({ data: koreanCuisineData, name: "Korean", flag: "🇰🇷", color: "#003478", setPage: setKoreanPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
+      {koreanPage && renderCuisinePage({ data: koreanCuisineData, name: "Korean", flag: "🇰🇷", color: "#003478", setPage: setKoreanPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"], guideBtn: <button onClick={()=>{setKoreanPage(false);setKoreanGuidePage(true);}} style={{background:"rgba(0,52,120,0.15)",border:"1px solid #003478",color:"#003478",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
       {vietnamesePage && renderCuisinePage({ data: vietnameseCuisineData, name: "Vietnamese", flag: "🇻🇳", color: "#9B1B30", setPage: setVietnamesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
 
       {/* ── INDIAN PAGE ── */}
@@ -997,6 +989,160 @@ function FusionChefAI() {
       )}
 
 
+
+
+      {/* ── KOREAN CUISINE GUIDE ── */}
+      {koreanGuidePage && (
+        <div className="full-page" style={{background:"#FDFAF6"}}>
+          <div className="full-page-header" style={{background:"#003478"}}>
+            <button className="back-btn" onClick={()=>setKoreanGuidePage(false)}>← Back</button>
+            <button className="back-btn" style={{marginLeft:"auto",background:"rgba(255,255,255,0.15)"}} onClick={()=>{setKoreanGuidePage(false);setKoreanPage(true);}}>🥢 Browse Recipes</button>
+            <h1 style={{color:"white"}}>🇰🇷 Korean <em>Cuisine Guide</em></h1>
+          </div>
+          <div className="full-page-content" style={{maxWidth:"860px",margin:"0 auto",padding:"2rem 1.5rem"}}>
+
+            <div style={{background:"linear-gradient(135deg,#003478,#C0392B)",borderRadius:"16px",padding:"2.5rem",color:"white",marginBottom:"2rem",position:"relative",overflow:"hidden"}}>
+              <div style={{position:"absolute",right:"-20px",top:"-20px",fontSize:"8rem",opacity:0.1}}>🌸</div>
+              <div style={{fontSize:"0.8rem",letterSpacing:"3px",opacity:0.8,marginBottom:"0.5rem"}}>COMPLETE GUIDE</div>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"2rem",marginBottom:"0.8rem",color:"white"}}>Han Cuisine — The Soul of Korea</h2>
+              <p style={{opacity:0.9,lineHeight:1.7,maxWidth:"580px"}}>Korean cuisine — hansik — is one of the world's most health-conscious, fermentation-forward and communal food cultures. Built on rice, vegetables, seafood and the extraordinary world of kimchi and fermented pastes, it is a cuisine of profound depth and daily ritual.</p>
+              <div style={{display:"flex",gap:"1rem",marginTop:"1.5rem",flexWrap:"wrap"}}>
+                {["🥬 Kimchi","🔥 Korean BBQ","🍚 Bibimbap","🫙 Doenjang","🌶️ Gochujang"].map(t=>(
+                  <span key={t} style={{background:"rgba(255,255,255,0.2)",padding:"0.3rem 0.8rem",borderRadius:"20px",fontSize:"0.8rem"}}>{t}</span>
+                ))}
+              </div>
+            </div>
+
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#003478",marginBottom:"1rem",fontSize:"1.3rem"}}>📜 History & Origins</h3>
+              <p style={{lineHeight:1.8,color:"#444",marginBottom:"1rem"}}>Korean culinary history spans over 5,000 years. The Three Kingdoms period (57 BCE–668 CE) established the foundations of Korean food culture, while the Goryeo Dynasty (918–1392) saw the development of Buddhist-influenced vegetarian cuisine and the refinement of fermentation techniques. The Joseon Dynasty (1392–1897) produced Korea's most elaborate royal court cuisine — Joseon gongjung eumsik — with highly codified rules of presentation and flavour.</p>
+              <p style={{lineHeight:1.8,color:"#444",marginBottom:"1rem"}}>The introduction of chilli peppers from Japan in the late 16th century (originally from the Americas) was the single most transformative moment in Korean culinary history. Within a century, gochugaru had become inseparable from kimchi, jjigae and the entire Korean flavour vocabulary.</p>
+              <p style={{lineHeight:1.8,color:"#444"}}>The Korean Wave (Hallyu) of the 21st century brought Korean cuisine to global attention. The worldwide popularity of Korean BBQ, Korean fried chicken and Korean street food has made hansik one of the fastest growing food cultures globally.</p>
+            </div>
+
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#003478",marginBottom:"1rem",fontSize:"1.3rem"}}>🥬 The World of Kimchi</h3>
+              <p style={{lineHeight:1.8,color:"#444",marginBottom:"1rem",fontSize:"0.9rem"}}>Kimchi is Korea's national food — a UNESCO Intangible Cultural Heritage. Over 200 varieties exist, from fiery baechu kimchi (cabbage) to refreshing oi sobagi (stuffed cucumber) and mild white kimchi. Kimchi is served at every Korean meal and is the foundation of countless dishes.</p>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {type:"Baechu Kimchi",desc:"The classic — napa cabbage fermented with gochugaru, garlic, ginger and fermented seafood. Korea's most essential food"},
+                  {type:"Kkakdugi",desc:"Cubed radish kimchi — crunchy, refreshing and faster to ferment than cabbage kimchi"},
+                  {type:"Oi Sobagi",desc:"Stuffed cucumber kimchi — fresh, spicy and eaten young rather than fermented"},
+                  {type:"Baek Kimchi",desc:"White kimchi without chilli — mild, slightly sweet and beloved by those who cannot handle heat"},
+                  {type:"Yeolmu Kimchi",desc:"Young radish and tops kimchi — a spring delicacy with a fresh, bright flavour"},
+                  {type:"Kimchi Aging",desc:"Freshly made kimchi is crunchy and bright. Aged kimchi (mukeunji) develops sour depth essential for jjigae"},
+                ].map(k=>(
+                  <div key={k.type} style={{background:"#F0F4FF",borderRadius:"8px",padding:"0.9rem",borderLeft:"3px solid #003478"}}>
+                    <strong style={{color:"#003478",fontSize:"0.85rem",display:"block"}}>{k.type}</strong>
+                    <p style={{fontSize:"0.75rem",color:"#666",marginTop:"0.3rem",lineHeight:1.5}}>{k.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#003478",marginBottom:"1rem",fontSize:"1.3rem"}}>🫙 The Holy Trinity of Korean Pastes</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",gap:"1rem"}}>
+                {[
+                  {paste:"Gochujang",color:"#C0392B",desc:"Fermented red chilli paste — Korea's most important condiment. Sweet, spicy and deeply umami. Used in cooking and as a dipping sauce."},
+                  {paste:"Doenjang",color:"#8B6914",desc:"Fermented soybean paste — more pungent than Japanese miso, aged longer. The base of Korea's most essential everyday soup."},
+                  {paste:"Ssamjang",color:"#8B4513",desc:"A blend of doenjang and gochujang with garlic and sesame oil. The essential Korean BBQ dipping paste for wraps."},
+                ].map(p=>(
+                  <div key={p.paste} style={{background:"#F0F4FF",borderRadius:"10px",padding:"1.2rem",borderTop:`4px solid ${p.color}`}}>
+                    <strong style={{color:p.color,fontSize:"1rem",display:"block",marginBottom:"0.5rem"}}>{p.paste}</strong>
+                    <p style={{fontSize:"0.8rem",color:"#555",lineHeight:1.6}}>{p.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#003478",marginBottom:"1rem",fontSize:"1.3rem"}}>🍽️ Banchan Culture</h3>
+              <p style={{lineHeight:1.8,color:"#444",marginBottom:"1rem",fontSize:"0.9rem"}}>Banchan are the small shared side dishes served alongside rice at every Korean meal. The number of banchan reflects the formality of the meal — everyday meals have 3-5, while royal court meals had up to 12 (surasang). All banchan are shared communally.</p>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(180px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {name:"Kimchi",desc:"Always present — in various forms"},
+                  {name:"Namul",desc:"Seasoned vegetables — spinach, sprouts, fern"},
+                  {name:"Jorim",desc:"Braised items — potatoes, tofu, fish"},
+                  {name:"Jeon",desc:"Pan-fried items — pancakes, omelettes"},
+                  {name:"Bokkeum",desc:"Stir-fried items — anchovies, squid"},
+                  {name:"Gui",desc:"Grilled items — fish, meat"},
+                ].map(b=>(
+                  <div key={b.name} style={{background:"#F0F4FF",borderRadius:"8px",padding:"0.8rem",border:"1px solid #d0daf0",textAlign:"center"}}>
+                    <strong style={{color:"#003478",display:"block",fontSize:"0.88rem"}}>{b.name}</strong>
+                    <p style={{fontSize:"0.74rem",color:"#666",marginTop:"0.3rem"}}>{b.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#003478",marginBottom:"1rem",fontSize:"1.3rem"}}>🔥 Korean BBQ Culture</h3>
+              <p style={{lineHeight:1.8,color:"#444",marginBottom:"1rem",fontSize:"0.9rem"}}>Korean BBQ (gogi-gui) is not just a meal — it is a social ritual. Grilling meat at the table with family and friends, wrapping in lettuce with garlic and ssamjang, and the constant refilling of banchan creates an experience unlike any other.</p>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {cut:"Samgyeopsal",desc:"Thick pork belly — no marinade, just salt and sesame oil dipping sauce"},
+                  {cut:"Bulgogi",desc:"Thinly sliced marinated beef sirloin — sweet, tender and the most popular worldwide"},
+                  {cut:"Galbi",desc:"Beef short ribs — the most prestigious cut, marinated overnight"},
+                  {cut:"Dak Galbi",desc:"Marinated chicken — spicy gochujang-glazed, cooked on a flat griddle"},
+                  {cut:"Chadolbaegi",desc:"Paper-thin beef brisket — cooks in seconds, dipped in sesame oil and salt"},
+                  {cut:"Ogyeopsal",desc:"Five-layer pork with skin — ultimate crispy pork belly experience"},
+                ].map(c=>(
+                  <div key={c.cut} style={{background:"#F0F4FF",borderRadius:"8px",padding:"0.9rem",borderLeft:"3px solid #C0392B"}}>
+                    <strong style={{color:"#C0392B",fontSize:"0.85rem"}}>{c.cut}</strong>
+                    <p style={{fontSize:"0.75rem",color:"#666",marginTop:"0.3rem",lineHeight:1.5}}>{c.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{background:"white",borderRadius:"12px",padding:"1.8rem",marginBottom:"1.5rem",boxShadow:"0 2px 12px rgba(0,0,0,0.06)"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",color:"#003478",marginBottom:"1rem",fontSize:"1.3rem"}}>🎊 Food & Celebrations</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",gap:"0.8rem"}}>
+                {[
+                  {occasion:"👶 Baek-il (100 Days)",food:"Baekseolgi (white rice cake) and tteok shared with 100 neighbours for the baby's health"},
+                  {occasion:"🎂 Doljanchi (1st Birthday)",food:"Elaborate tteok display — the food the baby picks predicts their future"},
+                  {occasion:"🧧 Seollal (New Year)",food:"Tteok guk — eating rice cake soup gives you one year of age"},
+                  {occasion:"🌸 Chuseok (Harvest)",food:"Songpyeon — half-moon rice cakes filled with sesame, chestnut or bean"},
+                  {occasion:"❄️ Dongji (Solstice)",food:"Hobak juk and gyeongdan — pumpkin porridge and glutinous rice balls"},
+                  {occasion:"🎂 Birthdays",food:"Miyeok guk — seaweed soup eaten to honour the mother who gave birth"},
+                ].map(f=>(
+                  <div key={f.occasion} style={{background:"#F0F4FF",borderRadius:"8px",padding:"0.9rem",border:"1px solid #d0daf0"}}>
+                    <strong style={{color:"#003478",fontSize:"0.82rem",display:"block",marginBottom:"0.3rem"}}>{f.occasion}</strong>
+                    <p style={{fontSize:"0.76rem",color:"#666",lineHeight:1.5}}>{f.food}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{background:"linear-gradient(135deg,#003478,#C0392B)",borderRadius:"12px",padding:"1.8rem",marginBottom:"2rem",color:"white"}}>
+              <h3 style={{fontFamily:"'Playfair Display',serif",marginBottom:"1rem",fontSize:"1.3rem"}}>⭐ 10 Must-Try Korean Dishes</h3>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:"0.6rem"}}>
+                {[
+                  "🥬 Kimchi Jjigae — Korea's ultimate comfort stew",
+                  "🔥 Samgyeopsal — pork belly BBQ with ssamjang",
+                  "🍚 Bibimbap — the perfect one-bowl meal",
+                  "🌶️ Tteokbokki — fiery rice cakes on every corner",
+                  "🥩 Bulgogi — sweet marinated beef perfection",
+                  "🫙 Sundubu Jjigae — silky tofu in a stone pot",
+                  "🍜 Japchae — glass noodles at every celebration",
+                  "🍲 Samgyetang — whole chicken ginseng soup",
+                  "🥟 Mandu — Korean dumplings in every form",
+                  "🧊 Bingsu — fluffy shaved ice in summer",
+                ].map((d,i)=>(
+                  <div key={i} style={{background:"rgba(255,255,255,0.12)",borderRadius:"8px",padding:"0.7rem",fontSize:"0.82rem",lineHeight:1.5}}>{d}</div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{textAlign:"center",paddingBottom:"2rem"}}>
+              <button onClick={()=>{setKoreanGuidePage(false);setKoreanPage(true);}} style={{background:"#003478",color:"white",border:"none",padding:"0.9rem 2.5rem",borderRadius:"25px",fontSize:"1rem",fontWeight:600,cursor:"pointer"}}>
+                🥢 Browse All Korean Recipes →
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ── THAI CUISINE GUIDE ── */}
       {thaiGuidePage && (
