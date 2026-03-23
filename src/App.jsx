@@ -1,5 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import { BrowserRouter, Routes, Route, useParams, useNavigate } from "react-router-dom";
+import {
+  indianCuisineData,
+  maharashtraCuisineData,
+  punjabCuisineData,
+  chineseCuisineData,
+} from "./indianData.js";
+import {
+  japaneseCuisineData,
+  thaiCuisineData,
+  koreanCuisineData,
+  vietnameseCuisineData,
+} from "./asianData.js";
 
 const GA_ID = "G-6MVKQHR38Y";
 function injectGA() {
@@ -306,19 +318,6 @@ const chefs = [
 const chips = ["Chicken + lemon + garlic", "Pasta in 20 mins", "Vegan dessert ideas", "Leftover rice recipes"];
 const welcome = { role: "ai", content: <><h4>👋 Hello, I'm Fusion Chef!</h4>Tell me what ingredients you have, a cuisine you're craving, or any dietary needs — I'll craft a recipe just for you.</> };
 
-
-import {
-  indianCuisineData,
-  maharashtraCuisineData,
-  punjabCuisineData,
-  chineseCuisineData,
-} from "./indianData.js";
-import {
-  japaneseCuisineData,
-  thaiCuisineData,
-  koreanCuisineData,
-  vietnameseCuisineData,
-} from "./asianData.js";
 
 function toSlug(str) {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
