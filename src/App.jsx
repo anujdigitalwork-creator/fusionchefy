@@ -2046,6 +2046,199 @@ function FusionChefAI() {
         )}
       </section>
 
+      {/* ── ABOUT US PAGE ── */}
+      {aboutPage && (
+        <div style={{position:"fixed",inset:0,background:"#FFF8EE",zIndex:200,overflowY:"auto",fontFamily:"'DM Sans',sans-serif"}}>
+          <style>{`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap');`}</style>
+
+          {/* Header */}
+          <div style={{background:"#1C1C1C",padding:"1rem 2rem",display:"flex",alignItems:"center",gap:"1rem",position:"sticky",top:0,zIndex:10}}>
+            <button onClick={()=>setAboutPage(false)} style={{background:"transparent",border:"2px solid rgba(255,255,255,0.3)",color:"white",padding:"0.4rem 1rem",borderRadius:"24px",cursor:"pointer",fontSize:"0.85rem"}}>← Back</button>
+            <span style={{color:"#E8621A",fontSize:"1.4rem"}}>🍴</span>
+            <span style={{fontFamily:"'Playfair Display',serif",color:"white",fontSize:"1.2rem"}}>Fusion <em style={{color:"#E8621A"}}>Chef</em></span>
+          </div>
+
+          {/* Hero Banner */}
+          <div style={{background:"linear-gradient(135deg,#1C1C1C 0%,#2d1a0e 50%,#1C1C1C 100%)",padding:"5rem 2rem",textAlign:"center",position:"relative",overflow:"hidden"}}>
+            <div style={{position:"absolute",inset:0,backgroundImage:"radial-gradient(circle at 30% 50%,rgba(232,98,26,0.15) 0%,transparent 60%),radial-gradient(circle at 70% 50%,rgba(201,146,42,0.1) 0%,transparent 60%)"}}/>
+            <div style={{position:"relative",zIndex:1}}>
+              <div style={{fontSize:"0.75rem",letterSpacing:"4px",color:"#C9922A",fontWeight:700,marginBottom:"1rem"}}>ABOUT US</div>
+              <h1 style={{fontFamily:"'Playfair Display',serif",fontSize:"clamp(2.5rem,5vw,4rem)",color:"white",marginBottom:"1rem",lineHeight:1.2}}>Where Culinary Tradition<br/><em style={{color:"#E8621A"}}>Meets Global Discovery</em></h1>
+              <p style={{color:"rgba(255,255,255,0.7)",fontSize:"1.1rem",maxWidth:"600px",margin:"0 auto",lineHeight:1.8}}>A professional recipe platform built by a culinary educator — dedicated to authentic, accessible and globally inspired cooking.</p>
+              <div style={{display:"flex",justifyContent:"center",gap:"2rem",marginTop:"2.5rem",flexWrap:"wrap"}}>
+                {[["330+","Authentic Recipes"],["8","Global Cuisines"],["7+","Years Experience"],["3","Continents Covered"]].map(([num,label])=>(
+                  <div key={label} style={{textAlign:"center"}}>
+                    <div style={{fontFamily:"'Playfair Display',serif",fontSize:"2rem",color:"#E8621A",fontWeight:700}}>{num}</div>
+                    <div style={{fontSize:"0.75rem",color:"rgba(255,255,255,0.6)",letterSpacing:"1px"}}>{label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div style={{maxWidth:"860px",margin:"0 auto",padding:"3rem 1.5rem"}}>
+
+            {/* Section 1 — Introduction */}
+            <div style={{marginBottom:"3rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1rem"}}>
+                <div style={{width:"40px",height:"3px",background:"#E8621A",borderRadius:"2px"}}/>
+                <span style={{fontSize:"0.75rem",letterSpacing:"3px",color:"#E8621A",fontWeight:700}}>INTRODUCTION</span>
+              </div>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"2rem",color:"#1C1C1C",marginBottom:"1.2rem"}}>Welcome to Fusion Chef</h2>
+              <p style={{lineHeight:1.9,color:"#444",fontSize:"1rem",marginBottom:"1rem"}}>Fusion Chef is a professional global recipe platform dedicated to bringing authentic, well-researched culinary knowledge to home cooks, culinary students and food enthusiasts around the world. With over 330 carefully crafted recipes spanning 8 major world cuisines, Fusion Chef bridges the gap between professional culinary education and everyday cooking.</p>
+              <p style={{lineHeight:1.9,color:"#444",fontSize:"1rem"}}>Every recipe on this platform has been developed with a focus on authenticity, technical accuracy and cultural respect — ensuring that when you cook from Fusion Chef, you are experiencing food the way it was meant to be made.</p>
+            </div>
+
+            {/* Section 2 — Founder */}
+            <div style={{background:"white",borderRadius:"20px",padding:"2.5rem",marginBottom:"3rem",boxShadow:"0 4px 24px rgba(0,0,0,0.06)",border:"1px solid #F5EDDB"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1.5rem"}}>
+                <div style={{width:"40px",height:"3px",background:"#C9922A",borderRadius:"2px"}}/>
+                <span style={{fontSize:"0.75rem",letterSpacing:"3px",color:"#C9922A",fontWeight:700}}>THE FOUNDER</span>
+              </div>
+              <div style={{display:"grid",gridTemplateColumns:"auto 1fr",gap:"2rem",alignItems:"start"}}>
+                <div style={{width:"100px",height:"100px",borderRadius:"50%",background:"linear-gradient(135deg,#E8621A,#C9922A)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"2.5rem",flexShrink:0}}>👨‍🍳</div>
+                <div>
+                  <h3 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.6rem",color:"#1C1C1C",marginBottom:"0.3rem"}}>Chef Anuj Vikas Lonkar</h3>
+                  <div style={{color:"#E8621A",fontWeight:600,fontSize:"0.9rem",marginBottom:"1rem"}}>Culinary Instructor & Founder</div>
+                  <p style={{lineHeight:1.9,color:"#555",fontSize:"0.95rem",marginBottom:"1rem"}}>Chef Anuj Vikas Lonkar is a seasoned culinary professional with over 7 years of experience in the hospitality and culinary education sector. His expertise spans a diverse range of global cuisines including Japanese, Asian, Italian and Indian — giving him a uniquely broad perspective on world food culture.</p>
+                  <p style={{lineHeight:1.9,color:"#555",fontSize:"0.95rem"}}>As a culinary instructor, Chef Anuj has dedicated his career to making professional culinary knowledge accessible to everyone — from first-time home cooks to experienced culinary students. Fusion Chef is the digital expression of that mission.</p>
+                  <div style={{display:"flex",flexWrap:"wrap",gap:"0.6rem",marginTop:"1.2rem"}}>
+                    {["Japanese Cuisine","Asian Cuisine","Italian Cuisine","Indian Cuisine","Culinary Education","Hospitality"].map(s=>(
+                      <span key={s} style={{background:"rgba(232,98,26,0.1)",color:"#E8621A",fontSize:"0.75rem",padding:"0.3rem 0.8rem",borderRadius:"20px",fontWeight:600}}>{s}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section 3 — Our Story */}
+            <div style={{marginBottom:"3rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1rem"}}>
+                <div style={{width:"40px",height:"3px",background:"#E8621A",borderRadius:"2px"}}/>
+                <span style={{fontSize:"0.75rem",letterSpacing:"3px",color:"#E8621A",fontWeight:700}}>OUR STORY</span>
+              </div>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"2rem",color:"#1C1C1C",marginBottom:"1.2rem"}}>How Fusion Chef Began</h2>
+              <p style={{lineHeight:1.9,color:"#444",fontSize:"1rem",marginBottom:"1rem"}}>Fusion Chef was born out of a simple observation — that the world's most extraordinary recipes are often locked away in professional kitchens, culinary institutions and regional traditions that most people never get to experience. Chef Anuj Vikas Lonkar set out to change that.</p>
+              <p style={{lineHeight:1.9,color:"#444",fontSize:"1rem",marginBottom:"1rem"}}>Drawing from years of hands-on experience in professional hospitality and culinary education, he built Fusion Chef as a platform where authenticity is non-negotiable. Every recipe is researched for its cultural origins, tested for technical accuracy and written in a way that makes professional techniques genuinely accessible.</p>
+              <p style={{lineHeight:1.9,color:"#444",fontSize:"1rem"}}>What started as a personal project has grown into a comprehensive global recipe library — covering everything from the delicate art of Japanese sushi to the bold spice traditions of Indian and Maharashtrian cooking.</p>
+            </div>
+
+            {/* Section 4 — What We Offer */}
+            <div style={{marginBottom:"3rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1rem"}}>
+                <div style={{width:"40px",height:"3px",background:"#E8621A",borderRadius:"2px"}}/>
+                <span style={{fontSize:"0.75rem",letterSpacing:"3px",color:"#E8621A",fontWeight:700}}>WHAT WE OFFER</span>
+              </div>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"2rem",color:"#1C1C1C",marginBottom:"1.5rem"}}>A Complete Culinary Resource</h2>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(240px,1fr))",gap:"1rem"}}>
+                {[
+                  {icon:"📖",title:"330+ Authentic Recipes",desc:"A growing library of professionally developed recipes from 8 major world cuisines — each written with precision and cultural accuracy."},
+                  {icon:"🌍",title:"Cuisine Guides",desc:"In-depth guides to each cuisine covering history, regional variations, essential ingredients, techniques and cultural context."},
+                  {icon:"👨‍🍳",title:"Professional Techniques",desc:"Step-by-step instructions written by a culinary professional — making complex techniques accessible to cooks of all levels."},
+                  {icon:"🎯",title:"Nutritional Information",desc:"Every recipe includes estimated nutritional values to support informed, health-conscious cooking decisions."},
+                  {icon:"🔍",title:"Recipe Search",desc:"Powerful search and filtering tools to help you find exactly the recipe you need by cuisine, category or ingredient."},
+                  {icon:"📱",title:"Mobile Friendly",desc:"Fully optimised for cooking alongside your device — whether at the kitchen counter on mobile or desktop."},
+                ].map(o=>(
+                  <div key={o.title} style={{background:"white",borderRadius:"14px",padding:"1.5rem",border:"1px solid #F5EDDB",boxShadow:"0 2px 12px rgba(0,0,0,0.04)"}}>
+                    <div style={{fontSize:"2rem",marginBottom:"0.8rem"}}>{o.icon}</div>
+                    <h4 style={{fontFamily:"'Playfair Display',serif",color:"#1C1C1C",marginBottom:"0.5rem",fontSize:"1rem"}}>{o.title}</h4>
+                    <p style={{fontSize:"0.85rem",color:"#666",lineHeight:1.7}}>{o.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Section 5 & 6 — Mission & Vision */}
+            <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(280px,1fr))",gap:"1.5rem",marginBottom:"3rem"}}>
+              <div style={{background:"linear-gradient(135deg,#1C1C1C,#2d1a0e)",borderRadius:"16px",padding:"2rem",color:"white"}}>
+                <div style={{fontSize:"2.5rem",marginBottom:"1rem"}}>🎯</div>
+                <div style={{fontSize:"0.7rem",letterSpacing:"3px",color:"#E8621A",fontWeight:700,marginBottom:"0.5rem"}}>OUR MISSION</div>
+                <h3 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.4rem",marginBottom:"1rem",color:"white"}}>Democratising Culinary Knowledge</h3>
+                <p style={{fontSize:"0.9rem",lineHeight:1.8,color:"rgba(255,255,255,0.8)"}}>To make professional culinary knowledge universally accessible — providing every cook, regardless of experience level, with the authentic recipes, techniques and cultural context they need to cook with confidence and creativity.</p>
+              </div>
+              <div style={{background:"linear-gradient(135deg,#E8621A,#C9922A)",borderRadius:"16px",padding:"2rem",color:"white"}}>
+                <div style={{fontSize:"2.5rem",marginBottom:"1rem"}}>🌟</div>
+                <div style={{fontSize:"0.7rem",letterSpacing:"3px",color:"rgba(255,255,255,0.8)",fontWeight:700,marginBottom:"0.5rem"}}>OUR VISION</div>
+                <h3 style={{fontFamily:"'Playfair Display',serif",fontSize:"1.4rem",marginBottom:"1rem",color:"white"}}>A World United by Food</h3>
+                <p style={{fontSize:"0.9rem",lineHeight:1.8,color:"rgba(255,255,255,0.9)"}}>To become the world's most trusted global recipe resource — a platform where culinary traditions from every corner of the world are preserved, celebrated and shared with a new generation of passionate cooks.</p>
+              </div>
+            </div>
+
+            {/* Section 7 — Our Values */}
+            <div style={{marginBottom:"3rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1rem"}}>
+                <div style={{width:"40px",height:"3px",background:"#E8621A",borderRadius:"2px"}}/>
+                <span style={{fontSize:"0.75rem",letterSpacing:"3px",color:"#E8621A",fontWeight:700}}>OUR VALUES</span>
+              </div>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"2rem",color:"#1C1C1C",marginBottom:"1.5rem"}}>What We Stand For</h2>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:"1rem"}}>
+                {[
+                  {icon:"🏆",value:"Authenticity",desc:"Every recipe respects its cultural origins. We never compromise on authenticity for convenience."},
+                  {icon:"📚",value:"Education",desc:"We believe cooking is a skill worth learning properly — with context, technique and understanding."},
+                  {icon:"🌐",value:"Inclusivity",desc:"Food belongs to everyone. Our platform welcomes cooks of all backgrounds, skill levels and cultures."},
+                  {icon:"✅",value:"Accuracy",desc:"Recipes are tested and verified for technical correctness — ingredients, ratios and techniques."},
+                  {icon:"🌱",value:"Respect",desc:"We honour the culinary traditions of every culture represented on this platform with care and integrity."},
+                  {icon:"💡",value:"Innovation",desc:"While rooted in tradition, we embrace modern tools and formats to make culinary learning better."},
+                ].map(v=>(
+                  <div key={v.value} style={{background:"#FFF8EE",borderRadius:"12px",padding:"1.2rem",borderLeft:"3px solid #E8621A"}}>
+                    <div style={{fontSize:"1.5rem",marginBottom:"0.5rem"}}>{v.icon}</div>
+                    <strong style={{color:"#1C1C1C",display:"block",marginBottom:"0.4rem"}}>{v.value}</strong>
+                    <p style={{fontSize:"0.8rem",color:"#666",lineHeight:1.6}}>{v.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Section 8 — Who This Is For */}
+            <div style={{background:"white",borderRadius:"20px",padding:"2.5rem",marginBottom:"3rem",boxShadow:"0 4px 24px rgba(0,0,0,0.06)",border:"1px solid #F5EDDB"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1.5rem"}}>
+                <div style={{width:"40px",height:"3px",background:"#E8621A",borderRadius:"2px"}}/>
+                <span style={{fontSize:"0.75rem",letterSpacing:"3px",color:"#E8621A",fontWeight:700}}>WHO THIS IS FOR</span>
+              </div>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"2rem",color:"#1C1C1C",marginBottom:"1.5rem"}}>Our Community</h2>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(180px,1fr))",gap:"1rem"}}>
+                {[
+                  {icon:"🏠",who:"Home Cooks",desc:"Discover new cuisines and elevate your everyday cooking with professional guidance."},
+                  {icon:"🎓",who:"Culinary Students",desc:"Supplement your culinary education with authentic recipes and cultural context."},
+                  {icon:"👨‍🍳",who:"Professional Chefs",desc:"A trusted reference for authentic traditional recipes and global culinary knowledge."},
+                  {icon:"🌍",who:"Food Enthusiasts",desc:"Explore the world through its food — one authentic recipe at a time."},
+                ].map(a=>(
+                  <div key={a.who} style={{textAlign:"center",padding:"1.5rem 1rem",background:"#FFF8EE",borderRadius:"14px"}}>
+                    <div style={{fontSize:"2.5rem",marginBottom:"0.8rem"}}>{a.icon}</div>
+                    <strong style={{color:"#1C1C1C",display:"block",marginBottom:"0.5rem",fontFamily:"'Playfair Display',serif"}}>{a.who}</strong>
+                    <p style={{fontSize:"0.8rem",color:"#666",lineHeight:1.6}}>{a.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Section 9 — Our Commitment */}
+            <div style={{marginBottom:"3rem"}}>
+              <div style={{display:"flex",alignItems:"center",gap:"0.8rem",marginBottom:"1rem"}}>
+                <div style={{width:"40px",height:"3px",background:"#E8621A",borderRadius:"2px"}}/>
+                <span style={{fontSize:"0.75rem",letterSpacing:"3px",color:"#E8621A",fontWeight:700}}>OUR COMMITMENT</span>
+              </div>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"2rem",color:"#1C1C1C",marginBottom:"1.2rem"}}>A Promise to Our Community</h2>
+              <p style={{lineHeight:1.9,color:"#444",fontSize:"1rem",marginBottom:"1rem"}}>At Fusion Chef, we are committed to continuously growing and improving our recipe library. Our goal is to expand beyond 500 authentic recipes across 15+ world cuisines — ensuring that every major culinary tradition is represented with the depth and accuracy it deserves.</p>
+              <p style={{lineHeight:1.9,color:"#444",fontSize:"1rem",marginBottom:"1rem"}}>Every recipe added to this platform undergoes careful review for cultural accuracy, ingredient precision and technical correctness. We do not publish recipes we would not be proud to serve at a professional table.</p>
+              <p style={{lineHeight:1.9,color:"#444",fontSize:"1rem"}}>We are also committed to remaining a free, accessible resource — because we believe that great culinary knowledge should not be locked behind paywalls. Our community of cooks, students and food lovers deserves the best — and that is what we are building.</p>
+            </div>
+
+            {/* Section 10 — Closing */}
+            <div style={{background:"linear-gradient(135deg,#1C1C1C,#2d1a0e)",borderRadius:"20px",padding:"3rem 2rem",textAlign:"center",color:"white",marginBottom:"2rem"}}>
+              <div style={{fontSize:"3rem",marginBottom:"1rem"}}>🍴</div>
+              <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:"2rem",marginBottom:"1rem",color:"white"}}>Start Your Culinary Journey</h2>
+              <p style={{color:"rgba(255,255,255,0.8)",lineHeight:1.9,maxWidth:"560px",margin:"0 auto 2rem",fontSize:"1rem"}}>Whether you are cooking your first bowl of pho, perfecting your biryani technique or exploring the world of Japanese sushi — Fusion Chef is your trusted guide. Explore 330+ authentic recipes, built with professional knowledge and a genuine love for world cuisine.</p>
+              <div style={{display:"flex",gap:"1rem",justifyContent:"center",flexWrap:"wrap"}}>
+                <button onClick={()=>{setAboutPage(false);setCuisineExplorer(true);}} style={{background:"#E8621A",color:"white",border:"none",padding:"0.9rem 2rem",borderRadius:"25px",fontSize:"0.95rem",fontWeight:700,cursor:"pointer"}}>🌍 Explore Cuisines</button>
+                <button onClick={()=>{setAboutPage(false);setRecipeDB(true);}} style={{background:"transparent",color:"white",border:"2px solid rgba(255,255,255,0.4)",padding:"0.9rem 2rem",borderRadius:"25px",fontSize:"0.95rem",fontWeight:600,cursor:"pointer"}}>📖 Browse All Recipes</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      )}
+
       {/* ── FOOTER ── */}
       <footer className="footer">
         <div className="footer-grid">
@@ -2058,7 +2251,7 @@ function FusionChefAI() {
           </div>
           <div className="footer-col"><h4>Recipes</h4><ul>{["Breakfast","Lunch","Dinner","Baking","Vegetarian","Healthy"].map(l=><li key={l}><a href="#" onClick={()=>scrollToSection("categories")}>{l}</a></li>)}</ul></div>
           <div className="footer-col"><h4>Discover</h4><ul>{[["Chefs","chefs"],["Trending","trending"],["Cuisines","cuisine-explorer"],["Recipes","recipe-db"]].map(([l,id])=><li key={l}><a href="#" onClick={()=>scrollToSection(id)}>{l}</a></li>)}</ul></div>
-          <div className="footer-col"><h4>Company</h4><ul>{["About Us","Careers","Press","Contact","Privacy","Terms"].map(l=><li key={l}><a href="#">{l}</a></li>)}</ul></div>
+          <div className="footer-col"><h4>Company</h4><ul>{[["About Us",()=>setAboutPage(true)],["Careers",()=>{}],["Press",()=>{}],["Contact",()=>{}],["Privacy",()=>{}],["Terms",()=>{}]].map(([l,fn])=><li key={l}><a href="#" onClick={e=>{e.preventDefault();fn();}}>{l}</a></li>)}</ul></div>
         </div>
         <div className="footer-bottom">
           © 2026 <strong style={{color:"var(--saffron)"}}>Fusion Chef</strong> by <strong style={{color:"var(--saffron)"}}>Anuj Vikas Lonkar</strong>. All rights reserved.
