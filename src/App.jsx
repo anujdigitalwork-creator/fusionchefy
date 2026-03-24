@@ -34,9 +34,7 @@ const styles = `
   h1,h2,h3,h4{font-family:'Playfair Display',serif;}
   .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--charcoal);color:white;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:64px;box-shadow:0 2px 20px rgba(0,0,0,0.3);transition:all 0.3s;}
   .nav.scrolled{background:rgba(28,28,28,0.97);backdrop-filter:blur(12px);}
-  .nav-logo{display:flex;align-items:center;gap:0.5rem;cursor:pointer;}
-  .nav-logo span.logo-text{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:white;}
-  .nav-logo span.logo-ai{color:var(--saffron);font-style:italic;}
+  .nav-logo{display:flex;align-items:center;cursor:pointer;}
   .nav-links{display:flex;gap:1.8rem;list-style:none;}
   .nav-links a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:0.88rem;font-weight:500;letter-spacing:0.04em;text-transform:uppercase;transition:color 0.2s;cursor:pointer;}
   .nav-links a:hover{color:var(--saffron);}
@@ -1910,8 +1908,7 @@ function FusionChefAI() {
       {/* ── NAV ── */}
       <nav className={`nav${scrolled?" scrolled":""}`}>
         <div className="nav-logo" onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}>
-          <span style={{fontSize:"1.5rem"}}>🍴</span>
-          <span className="logo-text">Fusion <span className="logo-ai">Chef</span></span>
+          <img src="/logo.png" alt="Fusion Chef" style={{height:"44px",width:"auto",objectFit:"contain"}} />
         </div>
         <ul className="nav-links">
           {navLinks.map(l=>(<li key={l.label}><a onClick={()=>scrollToSection(l.id)}>{l.label}</a></li>))}
