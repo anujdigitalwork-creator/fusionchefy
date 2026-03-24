@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, useParams, useNavigate } from "react-rout
 import { indianCuisineData, maharashtraCuisineData, punjabCuisineData, chineseCuisineData } from "./indianData.js";
 import { japaneseCuisineData, thaiCuisineData } from "./asianData.js";
 import { koreanCuisineData, vietnameseCuisineData } from "./koreanData.js";
-
+import ContactPage from "./contact.jsx";
 
 const GA_ID = "G-6MVKQHR38Y";
 function injectGA() {
@@ -2236,6 +2236,21 @@ function FusionChefAI() {
           </div>
         </div>
       )}
+      
+      {contactPage && (
+  <div
+    style={{
+      position: "fixed",
+      inset: 0,
+      background: "#FFF8EE",
+      zIndex: 200,
+      overflowY: "auto",
+      fontFamily: "'DM Sans', sans-serif"
+    }}
+  >
+    <ContactPage />
+  </div>
+)}
 
       {/* ── FOOTER ── */}
       <footer className="footer">
