@@ -1908,7 +1908,7 @@ function FusionChefAI() {
       {/* ── NAV ── */}
       <nav className={`nav${scrolled?" scrolled":""}`}>
         <div className="nav-logo" onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}>
-          <img src="/logo.png" alt="Fusion Chef" style={{height:"56px",width:"auto",objectFit:"contain"}} />
+          <img src="/logo-wide.png" alt="Fusion Chef" style={{height:"60px",width:"240px",objectFit:"contain"}} />
         </div>
         <ul className="nav-links">
           {navLinks.map(l=>(<li key={l.label}><a onClick={()=>scrollToSection(l.id)}>{l.label}</a></li>))}
