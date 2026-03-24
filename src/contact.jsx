@@ -536,7 +536,7 @@ export default function ContactPage() {
                       Instagram
                     </a>
                     <a
-                      href="https://www.pinterest.com/fusionchef"
+                      href="https://www.pinterest.com/fusionchef/"
                       target="_blank"
                       rel="noreferrer"
                       className="social-link"
