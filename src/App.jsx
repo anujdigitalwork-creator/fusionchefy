@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, useParams, useNavigate } from "react-rout
 import { indianCuisineData, maharashtraCuisineData, punjabCuisineData, chineseCuisineData } from "./indianData.js";
 import { japaneseCuisineData, thaiCuisineData } from "./asianData.js";
 import { koreanCuisineData, vietnameseCuisineData } from "./koreanData.js";
-import ContactPage from "./contact.jsx";
+
 
 const GA_ID = "G-6MVKQHR38Y";
 function injectGA() {
@@ -34,16 +34,14 @@ const styles = `
   h1,h2,h3,h4{font-family:'Playfair Display',serif;}
   .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--charcoal);color:white;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:64px;box-shadow:0 2px 20px rgba(0,0,0,0.3);transition:all 0.3s;}
   .nav.scrolled{background:rgba(28,28,28,0.97);backdrop-filter:blur(12px);}
-  .nav-logo{display:flex;align-items:center;cursor:pointer;}
+  .nav-logo{display:flex;align-items:center;gap:0.5rem;cursor:pointer;}
+  .nav-logo span.logo-text{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:white;}
+  .nav-logo span.logo-ai{color:var(--saffron);font-style:italic;}
   .nav-links{display:flex;gap:1.8rem;list-style:none;}
   .nav-links a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:0.88rem;font-weight:500;letter-spacing:0.04em;text-transform:uppercase;transition:color 0.2s;cursor:pointer;}
   .nav-links a:hover{color:var(--saffron);}
-.nav-right{
-display:flex;
-align-items:center;
-gap:1rem;
-margin-left:auto;
-}  .btn-ai{background:var(--saffron);color:white;border:none;padding:0.5rem 1.2rem;border-radius:24px;font-size:0.85rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.2s;white-space:nowrap;}
+  .nav-right{display:flex;align-items:center;gap:1rem;}
+  .btn-ai{background:var(--saffron);color:white;border:none;padding:0.5rem 1.2rem;border-radius:24px;font-size:0.85rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.2s;white-space:nowrap;}
   .btn-ai:hover{background:var(--saffron-light);transform:translateY(-1px);box-shadow:0 4px 14px rgba(232,98,26,0.4);}
   .hero{margin-top:64px;height:88vh;min-height:560px;position:relative;overflow:hidden;background:var(--charcoal);}
   .hero-slides{width:100%;height:100%;position:relative;}
@@ -284,75 +282,9 @@ margin-left:auto;
   .search-empty{padding:3rem;text-align:center;color:var(--text-muted);}
   .search-loading{padding:3rem;text-align:center;}
   .ai-badge{display:inline-block;background:var(--saffron);color:white;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;margin-left:0.4rem;vertical-align:middle;}
-.hamburger{display:flex;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:0.4rem;}
-.hamburger span{display:block;width:24px;height:2px;background:white;border-radius:2px;transition:all 0.3s;}
-.mobile-menu{display:none;}
-
-@media(max-width:768px){
-.nav-links{display:none;}
-.hamburger{
-  display:none;
-  flex-direction:column;
-  gap:5px;
-  cursor:pointer;
-  background:none;
-  border:none;
-  padding:0.4rem;
-}
-
-@media(max-width:768px){
-.nav-links{display:none;}
-
-.hamburger{
-  display:flex;
-  position:absolute;
-  left:15px;
-  top:18px;
-  z-index:10000;
-}
-
-.nav-logo img{
-  width:180px;
-  height:auto;
-}
-}
-
-.mobile-menu{
-display:none;
-flex-direction:column;
-position:fixed;
-top:64px;
-left:0;
-width:100%;
-background:var(--charcoal);
-padding:1rem 1.5rem 1.5rem;
-gap:0;
-z-index:9999;
-border-top:1px solid rgba(255,255,255,0.1);
-}
-
-.mobile-menu.active{
-display:flex;
-}
-
-.mobile-menu a{
-color:rgba(255,255,255,0.85);
-text-decoration:none;
-font-size:1rem;
-font-weight:500;
-padding:0.9rem 0;
-border-bottom:1px solid rgba(255,255,255,0.08);
-cursor:pointer;
-display:block;
-}
-.mobile-menu a:last-child{
-border-bottom:none;
-}
-.footer-grid{grid-template-columns:1fr 1fr;}
-.hero h1{font-size:2rem;}
-.section{padding:3.5rem 1.2rem;}
-.modal-ingredients{grid-template-columns:1fr;}
-}`;
+  .nav-hamburger { display: none; }
+  @media(max-width:768px){.nav-links{display:none;}.nav-hamburger{display:flex;flex-direction:column;gap:5px;cursor:pointer;background:transparent;border:none;padding:0.4rem;}.nav-hamburger span{display:block;width:24px;height:2px;background:white;border-radius:2px;transition:all 0.3s;}.footer-grid{grid-template-columns:1fr 1fr;}.hero h1{font-size:2rem;}.section{padding:3.5rem 1.2rem;}.modal-ingredients{grid-template-columns:1fr;}}
+`;
 
 const heroSlides = [
   { bg: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400&q=80", tag: "Chef's Special", title: "Saffron-Glazed Salmon with Herb Risotto", desc: "A restaurant-worthy dish you can recreate at home in under 40 minutes." },
@@ -379,7 +311,6 @@ const chefs = [
 const chips = ["Chicken + lemon + garlic", "Pasta in 20 mins", "Vegan dessert ideas", "Leftover rice recipes"];
 const welcome = { role: "ai", content: <><h4>👋 Hello, I'm Fusion Chef!</h4>Tell me what ingredients you have, a cuisine you're craving, or any dietary needs — I'll craft a recipe just for you.</> };
 
-
 function toSlug(str) {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
@@ -394,7 +325,6 @@ function FusionChefAI() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
   const [recipeModal, setRecipeModal] = useState(null);
   const [indianPage, setIndianPage] = useState(false);
   const [aboutPage, setAboutPage] = useState(false);
@@ -1978,94 +1908,22 @@ function FusionChefAI() {
       )}
 
       {/* ── NAV ── */}
-    <nav className={`nav${scrolled?" scrolled":""}`}>
-  <div
-    className="nav-logo"
-    onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}
-  >
-    <img
-      src="/logo-wide.png"
-      alt="Fusion Chef"
-      style={{height:"64px",width:"280px",objectFit:"contain"}}
-    />
-  </div>
-
-  <ul className="nav-links">
-    {navLinks.map(l=>(
-      <li key={l.label}>
-        <a onClick={()=>scrollToSection(l.id)}>
-          {l.label}
-        </a>
-      </li>
-    ))}
-    <li>
-      <a onClick={()=>setAboutPage(true)}>
-        About Us
-      </a>
-    </li>
-    <li>
-      <a onClick={()=>setContactPage(true)}>
-        Contact
-      </a>
-    </li>
-  </ul>
-
-  <div className="nav-right">
-    <button
-      className="btn-ai"
-      onClick={()=>setCuisineExplorer(true)}
-    >
-      🌍 Explore Cuisines
-    </button>
-
-    <button
-      className="hamburger"
-      onClick={()=>setMenuOpen(m=>!m)}
-    >
-      <span/>
-      <span/>
-      <span/>
-    </button>
-  </div>
-</nav>
-
-{menuOpen && (
-<div className={`mobile-menu ${menuOpen ? "active" : ""}`}>    <a onClick={()=>{
-      scrollToSection("trending");
-      setMenuOpen(false);
-    }}>
-      Trending
-    </a>
-
-    <a onClick={()=>{
-      scrollToSection("cuisine-explorer");
-      setMenuOpen(false);
-    }}>
-      Cuisines
-    </a>
-
-    <a onClick={()=>{
-      scrollToSection("recipe-db");
-      setMenuOpen(false);
-    }}>
-      Recipes
-    </a>
-
-    <a onClick={()=>{
-      setAboutPage(true);
-      setMenuOpen(false);
-    }}>
-      About Us
-    </a>
-
-    <a onClick={()=>{
-      setContactPage(true);
-      setMenuOpen(false);
-    }}>
-      Contact
-    </a>
-  </div>
-)}
+      <nav className={`nav${scrolled?" scrolled":""}`}>
+        <div className="nav-logo" onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}>
+          <span style={{fontSize:"1.5rem"}}>🍴</span>
+          <span className="logo-text">Fusion <span className="logo-ai">Chef</span></span>
+        </div>
+        <ul className="nav-links">
+          {navLinks.map(l=>(<li key={l.label}><a onClick={()=>scrollToSection(l.id)}>{l.label}</a></li>))}
+          <li><a onClick={()=>setAboutPage(true)}>About Us</a></li>
+        </ul>
+        <div className="nav-right">
+          <button className="btn-ai" onClick={()=>setCuisineExplorer(true)}>🌍 Explore Cuisines</button>
+          <button className="nav-hamburger" onClick={()=>setSearchOpen(true)} aria-label="Menu">
+            <span/><span/><span/>
+          </button>
+        </div>
+      </nav>
 
       {/* ── HERO ── */}
       <section className="hero">
@@ -2384,21 +2242,6 @@ function FusionChefAI() {
           </div>
         </div>
       )}
-      
-      {contactPage && (
-  <div
-    style={{
-      position: "fixed",
-      inset: 0,
-      background: "#FFF8EE",
-      zIndex: 200,
-      overflowY: "auto",
-      fontFamily: "'DM Sans', sans-serif"
-    }}
-  >
-    <ContactPage />
-  </div>
-)}
 
       {/* ── FOOTER ── */}
       <footer className="footer">
@@ -2412,7 +2255,7 @@ function FusionChefAI() {
           </div>
           <div className="footer-col"><h4>Recipes</h4><ul>{["Breakfast","Lunch","Dinner","Baking","Vegetarian","Healthy"].map(l=><li key={l}><a href="#" onClick={()=>scrollToSection("categories")}>{l}</a></li>)}</ul></div>
           <div className="footer-col"><h4>Discover</h4><ul>{[["Chefs","chefs"],["Trending","trending"],["Cuisines","cuisine-explorer"],["Recipes","recipe-db"]].map(([l,id])=><li key={l}><a href="#" onClick={()=>scrollToSection(id)}>{l}</a></li>)}</ul></div>
-          <div className="footer-col"><h4>Company</h4><ul>{[["About Us",()=>setAboutPage(true)],["Careers",()=>{}],["Press",()=>{}],["Contact",()=>setContactPage(true)],["Privacy",()=>{}],["Terms",()=>{}]].map(([l,fn])=><li key={l}><a href="#" onClick={e=>{e.preventDefault();fn();}}>{l}</a></li>)}</ul></div>
+          <div className="footer-col"><h4>Company</h4><ul>{[["About Us",()=>setAboutPage(true)],["Careers",()=>{}],["Press",()=>{}],["Contact",()=>{}],["Privacy",()=>{}],["Terms",()=>{}]].map(([l,fn])=><li key={l}><a href="#" onClick={e=>{e.preventDefault();fn();}}>{l}</a></li>)}</ul></div>
         </div>
         <div className="footer-bottom">
           © 2026 <strong style={{color:"var(--saffron)"}}>Fusion Chef</strong> by <strong style={{color:"var(--saffron)"}}>Anuj Vikas Lonkar</strong>. All rights reserved.
