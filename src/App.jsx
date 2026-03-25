@@ -290,7 +290,19 @@ margin-left:auto;
 
 @media(max-width:768px){
 .nav-links{display:none;}
-.hamburger{display:flex;}
+.hamburger{
+  display:flex;
+  position:absolute;
+  right:15px;
+  top:18px;
+  z-index:10000;
+}
+
+.nav-logo img{
+  width:180px;
+  height:auto;
+}
+
 .mobile-menu{
 display:none;
 flex-direction:column;
