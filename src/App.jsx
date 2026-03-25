@@ -282,8 +282,7 @@ const styles = `
   .search-empty{padding:3rem;text-align:center;color:var(--text-muted);}
   .search-loading{padding:3rem;text-align:center;}
   .ai-badge{display:inline-block;background:var(--saffron);color:white;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;margin-left:0.4rem;vertical-align:middle;}
-  .nav-hamburger { display: none; }
-  @media(max-width:768px){.nav-links{display:none;}.nav-hamburger{display:flex;flex-direction:column;gap:5px;cursor:pointer;background:transparent;border:none;padding:0.4rem;}.nav-hamburger span{display:block;width:24px;height:2px;background:white;border-radius:2px;transition:all 0.3s;}.footer-grid{grid-template-columns:1fr 1fr;}.hero h1{font-size:2rem;}.section{padding:3.5rem 1.2rem;}.modal-ingredients{grid-template-columns:1fr;}}
+  @media(max-width:768px){.nav-links{display:none;}.footer-grid{grid-template-columns:1fr 1fr;}.hero h1{font-size:2rem;}.section{padding:3.5rem 1.2rem;}.modal-ingredients{grid-template-columns:1fr;}}
 `;
 
 const heroSlides = [
@@ -310,6 +309,7 @@ const chefs = [
 
 const chips = ["Chicken + lemon + garlic", "Pasta in 20 mins", "Vegan dessert ideas", "Leftover rice recipes"];
 const welcome = { role: "ai", content: <><h4>👋 Hello, I'm Fusion Chef!</h4>Tell me what ingredients you have, a cuisine you're craving, or any dietary needs — I'll craft a recipe just for you.</> };
+
 
 function toSlug(str) {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
@@ -1919,9 +1919,7 @@ function FusionChefAI() {
         </ul>
         <div className="nav-right">
           <button className="btn-ai" onClick={()=>setCuisineExplorer(true)}>🌍 Explore Cuisines</button>
-          <button className="nav-hamburger" onClick={()=>setSearchOpen(true)} aria-label="Menu">
-            <span/><span/><span/>
-          </button>
+
         </div>
       </nav>
 
