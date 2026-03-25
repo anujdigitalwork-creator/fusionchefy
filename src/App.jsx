@@ -291,6 +291,19 @@ margin-left:auto;
 @media(max-width:768px){
 .nav-links{display:none;}
 .hamburger{
+  display:none;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+  background:none;
+  border:none;
+  padding:0.4rem;
+}
+
+@media(max-width:768px){
+.nav-links{display:none;}
+
+.hamburger{
   display:flex;
   position:absolute;
   left:15px;
@@ -301,6 +314,7 @@ margin-left:auto;
 .nav-logo img{
   width:180px;
   height:auto;
+}
 }
 
 .mobile-menu{
