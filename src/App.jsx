@@ -293,7 +293,7 @@ margin-left:auto;
 .hamburger{
   display:flex;
   position:absolute;
-  right:15px;
+  left:15px;
   top:18px;
   z-index:10000;
 }
