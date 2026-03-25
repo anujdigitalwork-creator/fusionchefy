@@ -292,7 +292,7 @@ margin-left:auto;
 .nav-links{display:none;}
 .hamburger{display:flex;}
 .mobile-menu{
-display:flex;
+display:none;
 flex-direction:column;
 position:fixed;
 top:64px;
@@ -303,6 +303,10 @@ padding:1rem 1.5rem 1.5rem;
 gap:0;
 z-index:99;
 border-top:1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-menu.active{
+display:flex;
 }
 .mobile-menu a{
 color:rgba(255,255,255,0.85);
