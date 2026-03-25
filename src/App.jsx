@@ -297,17 +297,18 @@ flex-direction:column;
 position:fixed;
 top:64px;
 left:0;
-right:0;
+width:100%;
 background:var(--charcoal);
 padding:1rem 1.5rem 1.5rem;
 gap:0;
-z-index:99;
+z-index:9999;
 border-top:1px solid rgba(255,255,255,0.1);
 }
 
 .mobile-menu.active{
 display:flex;
 }
+
 .mobile-menu a{
 color:rgba(255,255,255,0.85);
 text-decoration:none;
@@ -2003,8 +2004,7 @@ function FusionChefAI() {
 </nav>
 
 {menuOpen && (
-  <div className="mobile-menu">
-    <a onClick={()=>{
+<div className={`mobile-menu ${menuOpen ? "active" : ""}`}>    <a onClick={()=>{
       scrollToSection("trending");
       setMenuOpen(false);
     }}>
