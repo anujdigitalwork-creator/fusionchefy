@@ -280,8 +280,44 @@ const styles = `
   .search-empty{padding:3rem;text-align:center;color:var(--text-muted);}
   .search-loading{padding:3rem;text-align:center;}
   .ai-badge{display:inline-block;background:var(--saffron);color:white;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;margin-left:0.4rem;vertical-align:middle;}
-  @media(max-width:768px){.nav-links{display:none;}.footer-grid{grid-template-columns:1fr 1fr;}.hero h1{font-size:2rem;}.section{padding:3.5rem 1.2rem;}.modal-ingredients{grid-template-columns:1fr;}}
-`;
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:0.4rem;}
+.hamburger span{display:block;width:24px;height:2px;background:white;border-radius:2px;transition:all 0.3s;}
+.mobile-menu{display:none;}
+
+@media(max-width:768px){
+.nav-links{display:none;}
+.hamburger{display:flex;}
+.mobile-menu{
+display:flex;
+flex-direction:column;
+position:fixed;
+top:64px;
+left:0;
+right:0;
+background:var(--charcoal);
+padding:1rem 1.5rem 1.5rem;
+gap:0;
+z-index:99;
+border-top:1px solid rgba(255,255,255,0.1);
+}
+.mobile-menu a{
+color:rgba(255,255,255,0.85);
+text-decoration:none;
+font-size:1rem;
+font-weight:500;
+padding:0.9rem 0;
+border-bottom:1px solid rgba(255,255,255,0.08);
+cursor:pointer;
+display:block;
+}
+.mobile-menu a:last-child{
+border-bottom:none;
+}
+.footer-grid{grid-template-columns:1fr 1fr;}
+.hero h1{font-size:2rem;}
+.section{padding:3.5rem 1.2rem;}
+.modal-ingredients{grid-template-columns:1fr;}
+}`;
 
 const heroSlides = [
   { bg: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400&q=80", tag: "Chef's Special", title: "Saffron-Glazed Salmon with Herb Risotto", desc: "A restaurant-worthy dish you can recreate at home in under 40 minutes." },
@@ -323,6 +359,7 @@ function FusionChefAI() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [recipeModal, setRecipeModal] = useState(null);
   const [indianPage, setIndianPage] = useState(false);
   const [aboutPage, setAboutPage] = useState(false);
@@ -1906,19 +1943,95 @@ function FusionChefAI() {
       )}
 
       {/* ── NAV ── */}
-      <nav className={`nav${scrolled?" scrolled":""}`}>
-        <div className="nav-logo" onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}>
-          <img src="/logo-wide.png" alt="Fusion Chef" style={{height:"64px",width:"280px",objectFit:"contain"}} />
-        </div>
-        <ul className="nav-links">
-          {navLinks.map(l=>(<li key={l.label}><a onClick={()=>scrollToSection(l.id)}>{l.label}</a></li>))}
-          <li><a onClick={()=>setAboutPage(true)}>About Us</a></li>
-          <li><a onClick={()=>setContactPage(true)}>Contact</a></li>
-        </ul>
-        <div className="nav-right">
-          <button className="btn-ai" onClick={()=>setCuisineExplorer(true)}>🌍 Explore Cuisines</button>
-        </div>
-      </nav>
+    <nav className={`nav${scrolled?" scrolled":""}`}>
+  <div
+    className="nav-logo"
+    onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}
+  >
+    <img
+      src="/logo-wide.png"
+      alt="Fusion Chef"
+      style={{height:"64px",width:"280px",objectFit:"contain"}}
+    />
+  </div>
+
+  <ul className="nav-links">
+    {navLinks.map(l=>(
+      <li key={l.label}>
+        <a onClick={()=>scrollToSection(l.id)}>
+          {l.label}
+        </a>
+      </li>
+    ))}
+    <li>
+      <a onClick={()=>setAboutPage(true)}>
+        About Us
+      </a>
+    </li>
+    <li>
+      <a onClick={()=>setContactPage(true)}>
+        Contact
+      </a>
+    </li>
+  </ul>
+
+  <div className="nav-right">
+    <button
+      className="btn-ai"
+      onClick={()=>setCuisineExplorer(true)}
+    >
+      🌍 Explore Cuisines
+    </button>
+
+    <button
+      className="hamburger"
+      onClick={()=>setMenuOpen(m=>!m)}
+    >
+      <span/>
+      <span/>
+      <span/>
+    </button>
+  </div>
+</nav>
+
+{menuOpen && (
+  <div className="mobile-menu">
+    <a onClick={()=>{
+      scrollToSection("trending");
+      setMenuOpen(false);
+    }}>
+      Trending
+    </a>
+
+    <a onClick={()=>{
+      scrollToSection("cuisine-explorer");
+      setMenuOpen(false);
+    }}>
+      Cuisines
+    </a>
+
+    <a onClick={()=>{
+      scrollToSection("recipe-db");
+      setMenuOpen(false);
+    }}>
+      Recipes
+    </a>
+
+    <a onClick={()=>{
+      setAboutPage(true);
+      setMenuOpen(false);
+    }}>
+      About Us
+    </a>
+
+    <a onClick={()=>{
+      setContactPage(true);
+      setMenuOpen(false);
+    }}>
+      Contact
+    </a>
+  </div>
+)}
 
       {/* ── HERO ── */}
       <section className="hero">
