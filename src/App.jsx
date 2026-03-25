@@ -38,8 +38,12 @@ const styles = `
   .nav-links{display:flex;gap:1.8rem;list-style:none;}
   .nav-links a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:0.88rem;font-weight:500;letter-spacing:0.04em;text-transform:uppercase;transition:color 0.2s;cursor:pointer;}
   .nav-links a:hover{color:var(--saffron);}
-  .nav-right{display:flex;align-items:center;gap:1rem;}
-  .btn-ai{background:var(--saffron);color:white;border:none;padding:0.5rem 1.2rem;border-radius:24px;font-size:0.85rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.2s;white-space:nowrap;}
+.nav-right{
+display:flex;
+align-items:center;
+gap:1rem;
+margin-left:auto;
+}  .btn-ai{background:var(--saffron);color:white;border:none;padding:0.5rem 1.2rem;border-radius:24px;font-size:0.85rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.2s;white-space:nowrap;}
   .btn-ai:hover{background:var(--saffron-light);transform:translateY(-1px);box-shadow:0 4px 14px rgba(232,98,26,0.4);}
   .hero{margin-top:64px;height:88vh;min-height:560px;position:relative;overflow:hidden;background:var(--charcoal);}
   .hero-slides{width:100%;height:100%;position:relative;}
@@ -280,7 +284,7 @@ const styles = `
   .search-empty{padding:3rem;text-align:center;color:var(--text-muted);}
   .search-loading{padding:3rem;text-align:center;}
   .ai-badge{display:inline-block;background:var(--saffron);color:white;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;margin-left:0.4rem;vertical-align:middle;}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:0.4rem;}
+.hamburger{display:flex;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:0.4rem;}
 .hamburger span{display:block;width:24px;height:2px;background:white;border-radius:2px;transition:all 0.3s;}
 .mobile-menu{display:none;}
 
