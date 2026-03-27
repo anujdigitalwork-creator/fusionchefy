@@ -301,7 +301,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve as a starter before a Chinese meal or with steamed rice.",
     flavor_profile: ["sour", "spicy", "umami", "silky"],
     dietary_tags: ["dairy-free"],
-    img: "/images/chinese/soups/hot-and-sour-soup-chinese.jpg",
+    img: "/images/chinese/soups/hot-sour-soup-chinese-soup.jpg",
     tags: ["Sichuan", "Classic", "Quick", "Warming"]
   },
   {
@@ -335,7 +335,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve with chili oil drizzle and a side of wontons for dipping.",
     flavor_profile: ["delicate", "umami", "savory", "silky"],
     dietary_tags: ["dairy-free"],
-    img: "/images/chinese/soups/wonton-soup-chinese.jpg",
+    img: "/images/chinese/soups/wonton-soup-chinese-soup.jpg",
     tags: ["Cantonese", "Comfort Food", "Classic", "Dim Sum"]
   },
   {
@@ -369,7 +369,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve over steamed white rice to balance the heat.",
     flavor_profile: ["spicy", "numbing", "umami", "bold"],
     dietary_tags: ["gluten-free", "dairy-free"],
-    img: "/images/chinese/soups/mapo-tofu-soup-chinese.jpg",
+    img: "/images/chinese/soups/mapo-tofu-soup-chinese-soup.jpg",
     tags: ["Sichuan", "Spicy", "Quick", "Numbing"]
   },
 
@@ -405,7 +405,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve as a refreshing starter or side dish at room temperature.",
     flavor_profile: ["refreshing", "garlicky", "tangy", "crunchy"],
     dietary_tags: ["vegetarian", "vegan", "dairy-free", "gluten-free"],
-    img: "/images/chinese/salads/smashed-cucumber-salad-chinese.jpg",
+    img: "/images/chinese/salads/smashed-cucumber-salad-chinese-salad.jpg",
     tags: ["Vegetarian", "Cold Dish", "Quick", "Refreshing"]
   },
   {
@@ -439,7 +439,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve cold as a street food style snack or light summer meal.",
     flavor_profile: ["spicy", "nutty", "tangy", "numbing"],
     dietary_tags: ["vegetarian", "dairy-free"],
-    img: "/images/chinese/salads/sichuan-cold-noodle-salad-chinese.jpg",
+    img: "/images/chinese/salads/sichuan-cold-noodle-salad-chinese-salad.jpg",
     tags: ["Sichuan", "Cold Noodles", "Street Food", "Summer"]
   },
 
