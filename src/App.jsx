@@ -641,7 +641,7 @@ function FusionChefAI() {
                   window.location.href=`/cuisine/${name.toLowerCase()}/${toSlug(dish.category)}/${toSlug(dish.dish_name)}`;
                 }}>
                   <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
-                    {dish.img ? <img src={dish.img} alt={dish.dish_name} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}} /> : null}
+                    {dish.img ? <img src={dish.img} alt={dish.dish_name} loading="eager" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}} /> : null}
                     <div style={{display:dish.img?"none":"flex",width:"100%",height:"100%",alignItems:"center",justifyContent:"center",flexDirection:"column",background:`linear-gradient(135deg, ${grads[dish.category]||"#E8621A, #C9922A"})`}}>
                       <span style={{fontSize:"2.5rem"}}>{emojis[dish.category]||"🍽"}</span>
                     </div>
@@ -983,7 +983,7 @@ function FusionChefAI() {
                   {filtered.map((dish,i)=>(
                     <div key={i} className="indian-card" onClick={()=>{window.location.href=`/cuisine/maharashtra/${toSlug(dish.category)}/${toSlug(dish.dish_name)}`;}}>
                       <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
-                        {dish.img?<img src={dish.img} alt={dish.dish_name} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}}/>:null}
+                        {dish.img?<img src={dish.img} alt={dish.dish_name} loading="eager" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}}/>:null}
                         <div style={{display:dish.img?"none":"flex",width:"100%",height:"100%",alignItems:"center",justifyContent:"center",flexDirection:"column",background:`linear-gradient(135deg, ${cardGradients[dish.category]||"#E8621A, #C9922A"})`}}>
                           <span style={{fontSize:"2.5rem"}}>{cardEmojis[dish.category]||"🍽"}</span>
                         </div>
@@ -1034,7 +1034,7 @@ function FusionChefAI() {
                   {filtered.map((dish,i)=>(
                     <div key={i} className="indian-card" onClick={()=>{window.location.href=`/cuisine/punjab/${toSlug(dish.category)}/${toSlug(dish.dish_name)}`;}}>
                       <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
-                        {dish.img?<img src={dish.img} alt={dish.dish_name} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}}/>:null}
+                        {dish.img?<img src={dish.img} alt={dish.dish_name} loading="eager" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}}/>:null}
                         <div style={{display:dish.img?"none":"flex",width:"100%",height:"100%",alignItems:"center",justifyContent:"center",flexDirection:"column",background:`linear-gradient(135deg, ${cardGradients[dish.category]||"#4A7C59, #2E7D32"})`}}>
                           <span style={{fontSize:"2.5rem"}}>{cardEmojis[dish.category]||"🍽"}</span>
                         </div>
