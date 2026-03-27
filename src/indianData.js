@@ -475,7 +475,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve over steamed white rice or with steamed jasmine rice.",
     flavor_profile: ["spicy", "numbing", "sweet", "tangy", "savory"],
     dietary_tags: ["dairy-free", "gluten-free"],
-    img: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&q=80",
+    img: "/images/recipes/chinese/main-courses/kung-pao-chicken-gong-bao-ji-ding.jpg",
     tags: ["Sichuan", "Stir-Fry", "Iconic", "Spicy"]
   },
   {
@@ -509,7 +509,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve in two courses — first the skin, then the meat — as is traditional in Beijing restaurants.",
     flavor_profile: ["rich", "crispy", "caramelized", "sweet-savory"],
     dietary_tags: ["dairy-free"],
-    img: "https://images.unsplash.com/photo-1526318896980-cf78c088247c?w=400&q=80",
+    img: "/images/recipes/chinese/main-courses/peking-duck-beijing-kaoya.jpg",    
     tags: ["Beijing", "Imperial", "Special Occasion", "Iconic"]
   },
   {
@@ -543,7 +543,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve immediately over steamed white rice with jasmine tea.",
     flavor_profile: ["sweet", "tangy", "crispy", "colorful"],
     dietary_tags: ["dairy-free"],
-    img: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80",
+    img: "/images/recipes/chinese/main-courses/sweet-and-sour-pork-gu-lao-rou.jpg",
     tags: ["Cantonese", "Classic", "Family Favorite", "Stir-Fry"]
   },
   {
