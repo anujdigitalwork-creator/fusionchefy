@@ -133,7 +133,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve with Chinkiang black vinegar, soy sauce, julienned ginger and chili oil.",
     flavor_profile: ["savory", "umami", "gingery", "crispy"],
     dietary_tags: ["dairy-free"],
-    img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80",
+    img: "/images/chinese/appetizers/pork-ginger-dumplings-chinese-appetizer.jpg",
     tags: ["Street Food", "New Year", "Northern China", "Comfort Food"]
   },
   {
@@ -167,7 +167,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve with sweet chili dipping sauce and a squeeze of lemon.",
     flavor_profile: ["crispy", "savory", "umami"],
     dietary_tags: ["dairy-free"],
-    img: "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=400&q=80",
+    img: "/images/chinese/appetizers/crispy-spring-rolls-chinese-appetizer.jpg",
     tags: ["Dim Sum", "Fried", "Party Food", "Classic"]
   },
   {
@@ -201,7 +201,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve fresh from the steamer at dim sum with jasmine tea.",
     flavor_profile: ["sweet", "savory", "caramelized", "pillowy"],
     dietary_tags: ["dairy-free"],
-    img: "https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&q=80",
+    img: "/images/chinese/appetizers/char-siu-bao-chinese-appetizer.jpg",
     tags: ["Dim Sum", "Steamed", "Cantonese", "Classic"]
   },
   {
@@ -233,7 +233,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve with soy-vinegar dipping sauce or enjoy as a breakfast street food.",
     flavor_profile: ["crispy", "savory", "sesame", "oniony"],
     dietary_tags: ["vegetarian", "vegan", "dairy-free"],
-    img: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&q=80",
+    img: "/images/chinese/appetizers/scallion-pancakes-chinese-appetizer.jpg",
     tags: ["Street Food", "Vegetarian", "Shanghai", "Breakfast"]
   },
   {
@@ -265,7 +265,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve as a starter or alongside rice and stir-fried vegetables.",
     flavor_profile: ["silky", "savory", "umami", "delicate"],
     dietary_tags: ["gluten-free", "dairy-free"],
-    img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80",
+    img: "/images/chinese/appetizers/steamed-egg-soy-chinese-appetizer.jpg",
     tags: ["Steamed", "Comfort Food", "Quick", "Cantonese"]
   },
 
@@ -301,7 +301,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve as a starter before a Chinese meal or with steamed rice.",
     flavor_profile: ["sour", "spicy", "umami", "silky"],
     dietary_tags: ["dairy-free"],
-    img: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80",
+    img: "/images/chinese/soups/hot-and-sour-soup-chinese.jpg",
     tags: ["Sichuan", "Classic", "Quick", "Warming"]
   },
   {
@@ -335,7 +335,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve with chili oil drizzle and a side of wontons for dipping.",
     flavor_profile: ["delicate", "umami", "savory", "silky"],
     dietary_tags: ["dairy-free"],
-    img: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80",
+    img: "/images/chinese/soups/wonton-soup-chinese.jpg",
     tags: ["Cantonese", "Comfort Food", "Classic", "Dim Sum"]
   },
   {
@@ -369,7 +369,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve over steamed white rice to balance the heat.",
     flavor_profile: ["spicy", "numbing", "umami", "bold"],
     dietary_tags: ["gluten-free", "dairy-free"],
-    img: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=400&q=80",
+    img: "/images/chinese/soups/mapo-tofu-soup-chinese.jpg",
     tags: ["Sichuan", "Spicy", "Quick", "Numbing"]
   },
 
@@ -405,7 +405,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve as a refreshing starter or side dish at room temperature.",
     flavor_profile: ["refreshing", "garlicky", "tangy", "crunchy"],
     dietary_tags: ["vegetarian", "vegan", "dairy-free", "gluten-free"],
-    img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80",
+    img: "/images/chinese/salads/smashed-cucumber-salad-chinese.jpg",
     tags: ["Vegetarian", "Cold Dish", "Quick", "Refreshing"]
   },
   {
@@ -439,7 +439,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve cold as a street food style snack or light summer meal.",
     flavor_profile: ["spicy", "nutty", "tangy", "numbing"],
     dietary_tags: ["vegetarian", "dairy-free"],
-    img: "https://images.unsplash.com/photo-1555126634-323283e090fa?w=400&q=80",
+    img: "/images/chinese/salads/sichuan-cold-noodle-salad-chinese.jpg",
     tags: ["Sichuan", "Cold Noodles", "Street Food", "Summer"]
   },
 
@@ -509,7 +509,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve in two courses — first the skin, then the meat — as is traditional in Beijing restaurants.",
     flavor_profile: ["rich", "crispy", "caramelized", "sweet-savory"],
     dietary_tags: ["dairy-free"],
-    img: "/images/recipes/chinese/main-courses/peking-duck-beijing-kaoya.jpg",    
+    img: "/images/chinese/main-courses/peking-duck-beijing-kaoya.jpg",    
     tags: ["Beijing", "Imperial", "Special Occasion", "Iconic"]
   },
   {
@@ -543,7 +543,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve immediately over steamed white rice with jasmine tea.",
     flavor_profile: ["sweet", "tangy", "crispy", "colorful"],
     dietary_tags: ["dairy-free"],
-    img: "/images/recipes/chinese/main-courses/sweet-and-sour-pork-gu-lao-rou.jpg",
+    img: "/images/chinese/main-courses/sweet-and-sour-pork-gu-lao-rou.jpg",
     tags: ["Cantonese", "Classic", "Family Favorite", "Stir-Fry"]
   },
   {
@@ -577,7 +577,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve in individual bowls — each person mixes their own noodles before eating.",
     flavor_profile: ["spicy", "numbing", "savory", "nutty", "complex"],
     dietary_tags: ["dairy-free"],
-    img: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80",
+    img: "/images/chinese/main-courses/dan-dan-noodles.jpg",
     tags: ["Sichuan", "Street Food", "Noodles", "Iconic"]
   },
   {
@@ -611,7 +611,7 @@ const chineseCuisineData = [
     serving_suggestions: "Absolutely must be served with steamed white rice — the numbing heat needs a neutral base.",
     flavor_profile: ["numbing", "spicy", "umami", "silky"],
     dietary_tags: ["dairy-free", "gluten-free"],
-    img: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400&q=80",
+    img: "/images/chinese/main-courses/mapo-tofu-ma-po-dou-fu.jpg",
     tags: ["Sichuan", "Iconic", "Spicy", "Tofu"]
   },
 
@@ -947,7 +947,7 @@ const chineseCuisineData = [
     serving_suggestions: "Crack the clay shell at the table for maximum drama. Serve with steamed rice and vegetables.",
     nutrition_estimate: { calories: "485", protein_g: "42", carbohydrates_g: "12", fat_g: "28" },
     tags: ["Legendary", "Whole Chicken", "Traditional", "Chinese"],
-    img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80",
+    img: "/images/chinese/main-courses/beggars-chicken-jiaohua-ji.jpg",
   },
   {
     dish_name: "Red Braised Pork Belly (Hong Shao Rou)",
@@ -986,7 +986,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve over steamed white rice. The braising sauce is as precious as the pork itself.",
     nutrition_estimate: { calories: "520", protein_g: "28", carbohydrates_g: "18", fat_g: "38" },
     tags: ["Braised Pork", "Hunan", "Mao's Favourite", "Chinese"],
-    img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80",
+    img: "/images/chinese/main-courses/red-braised-pork-belly-hong-shao-rou.jpg",
   },
   {
     dish_name: "Buddha's Delight (Luo Han Zhai)",
@@ -1026,7 +1026,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve as a centrepiece dish for Chinese New Year celebrations with steamed rice.",
     nutrition_estimate: { calories: "245", protein_g: "12", carbohydrates_g: "32", fat_g: "9" },
     tags: ["Vegetarian", "Chinese New Year", "Buddhist", "Auspicious"],
-    img: "https://images.unsplash.com/photo-1562802378-063ec186a863?w=400&q=80",
+    img: "/images/chinese/main-courses/buddhas-delight-luo-han-zhai.jpg",
   },
   {
     dish_name: "Sichuan Boiled Fish (Shui Zhu Yu)",
@@ -1066,7 +1066,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve immediately with steamed rice. The numbing heat of Sichuan peppercorn is the defining experience.",
     nutrition_estimate: { calories: "320", protein_g: "34", carbohydrates_g: "12", fat_g: "16" },
     tags: ["Sichuan", "Spicy", "Ma La", "Fish"],
-    img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80",
+    img: "/images/chinese/main-courses/sichuan-boiled-fish-shui-zhu-yu.jpg",
   },
   {
     dish_name: "Steamed Whole Fish with Ginger & Scallion",
@@ -1105,7 +1105,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve at the centre of a Cantonese banquet. Serving a whole fish symbolises abundance and completeness.",
     nutrition_estimate: { calories: "265", protein_g: "36", carbohydrates_g: "6", fat_g: "11" },
     tags: ["Cantonese", "Steamed Fish", "Banquet", "Healthy"],
-    img: "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=400&q=80",
+    img: "/images/chinese/main-courses/steamed-whole-fish-ginger-scallion.jpg",
   },
 ];
 
