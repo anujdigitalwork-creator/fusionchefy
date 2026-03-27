@@ -645,7 +645,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve chilled garnished with fresh mango and evaporated milk.",
     flavor_profile: ["sweet", "tropical", "creamy", "silky"],
     dietary_tags: ["gluten-free", "vegetarian"],
-    img: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=80",
+    img: "/images/chinese/desserts/mango-pudding-chinese.jpg",
     tags: ["Dim Sum", "Hong Kong", "Cold Dessert", "Summer"]
   },
   {
@@ -678,7 +678,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve 3-4 balls per person in warm ginger broth. The number 3 is traditional.",
     flavor_profile: ["chewy", "nutty", "sweet", "warming"],
     dietary_tags: ["vegetarian", "dairy-free"],
-    img: "https://images.unsplash.com/photo-1558024920-b41e1887dc32?w=400&q=80",
+    img: "/images/chinese/desserts/sesame-balls-jian-dui-chinese.jpg",
     tags: ["Festival Food", "Lantern Festival", "Traditional", "Chewy"]
   },
   {
@@ -711,7 +711,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve warm from the oven at dim sum or as an afternoon snack with tea.",
     flavor_profile: ["buttery", "sweet", "eggy", "silky"],
     dietary_tags: ["vegetarian"],
-    img: "https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=400&q=80",
+    img: "/images/chinese/desserts/egg-tarts-dan-ta-chinese.jpg",
     tags: ["Hong Kong", "Dim Sum", "Baked", "Classic"]
   },
   // ── RICE PREPARATIONS ──────────────────────────────────────────────────────
@@ -753,7 +753,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve immediately in a hot bowl. Perfect alongside any Chinese main course.",
     nutrition_estimate: { calories: "385", protein_g: "18", carbohydrates_g: "52", fat_g: "12" },
     tags: ["Fried Rice", "Yangzhou", "Classic", "Chinese"],
-    img: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&q=80",
+    img: "/images/chinese/rice-preparations/yangzhou-fried-rice-chinese.jpg",
   },
   {
     dish_name: "Claypot Rice (Bo Zai Fan)",
@@ -792,7 +792,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve at the table in the clay pot. Scrape the golden crust from the bottom for a special treat.",
     nutrition_estimate: { calories: "465", protein_g: "24", carbohydrates_g: "58", fat_g: "14" },
     tags: ["Claypot", "Cantonese", "Street Food", "Chinese"],
-    img: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&q=80",
+    img: "/images/chinese/rice-preparations/claypot-rice-bo-zai-fan-chinese.jpg",
   },
   {
     dish_name: "Congee (Jook / Rice Porridge)",
@@ -831,7 +831,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve hot for breakfast or when feeling under the weather. The you tiao should be dipped into the congee.",
     nutrition_estimate: { calories: "285", protein_g: "16", carbohydrates_g: "38", fat_g: "8" },
     tags: ["Congee", "Healing", "Breakfast", "Cantonese"],
-    img: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80",
+    img: "/images/chinese/rice-preparations/congee-jook-rice-porridge-chinese.jpg",
   },
   {
     dish_name: "Sticky Rice in Lotus Leaf (Lo Mai Gai)",
@@ -870,7 +870,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve at dim sum brunch. Unwrap at the table for the dramatic reveal of aroma.",
     nutrition_estimate: { calories: "485", protein_g: "22", carbohydrates_g: "68", fat_g: "14" },
     tags: ["Dim Sum", "Lotus Leaf", "Glutinous Rice", "Cantonese"],
-    img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80",
+    img: "/images/chinese/rice-preparations/sticky-rice-lotus-leaf-lo-mai-gai-chinese.jpg",
   },
   {
     dish_name: "Steamed Egg White Rice (Bao Fan)",
@@ -906,7 +906,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve as part of a simple Chinese home meal with stir-fried greens and soup.",
     nutrition_estimate: { calories: "345", protein_g: "14", carbohydrates_g: "56", fat_g: "8" },
     tags: ["Home Cooking", "Simple", "Everyday", "Cantonese"],
-    img: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&q=80",
+    img: "/images/chinese/rice-preparations/steamed-egg-white-rice-bao-fan-chinese.jpg",
   },
 
   // ── ADDITIONAL AUTHENTIC DISHES ────────────────────────────────────────────
