@@ -475,7 +475,7 @@ const chineseCuisineData = [
     serving_suggestions: "Serve over steamed white rice or with steamed jasmine rice.",
     flavor_profile: ["spicy", "numbing", "sweet", "tangy", "savory"],
     dietary_tags: ["dairy-free", "gluten-free"],
-    img: "/images/recipes/chinese/main-courses/kung-pao-chicken-gong-bao-ji-ding.jpg",
+    img: "/images/chinese/main-courses/kung-pao-chicken-gong-bao-ji-ding.jpg",
     tags: ["Sichuan", "Stir-Fry", "Iconic", "Spicy"]
   },
   {
