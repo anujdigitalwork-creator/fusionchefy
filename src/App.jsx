@@ -284,25 +284,12 @@ margin-left:auto;
   .search-empty{padding:3rem;text-align:center;color:var(--text-muted);}
   .search-loading{padding:3rem;text-align:center;}
   .ai-badge{display:inline-block;background:var(--saffron);color:white;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;margin-left:0.4rem;vertical-align:middle;}
-.hamburger{display:flex;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:0.4rem;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:0.4rem;}
 .hamburger span{display:block;width:24px;height:2px;background:white;border-radius:2px;transition:all 0.3s;}
 .mobile-menu{display:none;}
 
 @media(max-width:768px){
 .nav-links{display:none;}
-.hamburger{
-  display:none;
-  flex-direction:column;
-  gap:5px;
-  cursor:pointer;
-  background:none;
-  border:none;
-  padding:0.4rem;
-}
-
-@media(max-width:768px){
-.nav-links{display:none;}
-
 .hamburger{
   display:flex;
   position:absolute;
@@ -310,43 +297,38 @@ margin-left:auto;
   top:18px;
   z-index:10000;
 }
-
 .nav-logo img{
   width:180px;
   height:auto;
 }
-}
-
 .mobile-menu{
-display:none;
-flex-direction:column;
-position:fixed;
-top:64px;
-left:0;
-width:100%;
-background:var(--charcoal);
-padding:1rem 1.5rem 1.5rem;
-gap:0;
-z-index:9999;
-border-top:1px solid rgba(255,255,255,0.1);
+  display:none;
+  flex-direction:column;
+  position:fixed;
+  top:64px;
+  left:0;
+  width:100%;
+  background:var(--charcoal);
+  padding:1rem 1.5rem 1.5rem;
+  gap:0;
+  z-index:9999;
+  border-top:1px solid rgba(255,255,255,0.1);
 }
-
 .mobile-menu.active{
-display:flex;
+  display:flex;
 }
-
 .mobile-menu a{
-color:rgba(255,255,255,0.85);
-text-decoration:none;
-font-size:1rem;
-font-weight:500;
-padding:0.9rem 0;
-border-bottom:1px solid rgba(255,255,255,0.08);
-cursor:pointer;
-display:block;
+  color:rgba(255,255,255,0.85);
+  text-decoration:none;
+  font-size:1rem;
+  font-weight:500;
+  padding:0.9rem 0;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  cursor:pointer;
+  display:block;
 }
 .mobile-menu a:last-child{
-border-bottom:none;
+  border-bottom:none;
 }
 .footer-grid{grid-template-columns:1fr 1fr;}
 .hero h1{font-size:2rem;}
