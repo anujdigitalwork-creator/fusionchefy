@@ -896,39 +896,57 @@ function FusionChefAI() {
             <input className="indian-search" placeholder="Search dishes..." value={indianSearch} onChange={e=>setIndianSearch(e.target.value)} />
           </div>
           <div className="indian-content">
-            <div style={{background:"rgba(232,98,26,0.08)",borderRadius:"12px",padding:"1rem 1.2rem",marginBottom:"1.5rem",display:"flex",alignItems:"center",gap:"1rem",flexWrap:"wrap"}}>
-              <span style={{fontSize:"0.85rem",color:"var(--charcoal)",fontWeight:600}}>🗺️ Explore by State:</span>
-              <button onClick={()=>{setIndianPage(false);setMaharashtraPage(true);}} style={{background:"var(--saffron)",color:"white",border:"none",borderRadius:"20px",padding:"0.4rem 1rem",fontSize:"0.8rem",fontWeight:600,cursor:"pointer"}}>🍊 Maharashtra</button>
-              <button onClick={()=>{setIndianPage(false);setPunjabPage(true);}} style={{background:"#4A7C59",color:"white",border:"none",borderRadius:"20px",padding:"0.4rem 1rem",fontSize:"0.8rem",fontWeight:600,cursor:"pointer"}}>🌾 Punjab</button>
-              <span style={{fontSize:"0.75rem",color:"var(--text-muted)"}}>More states coming soon...</span>
-            </div>
             <div className="indian-cats">
-              {["All","Appetizers","Soups","Main Courses","Breads","Rice Preparations","Desserts","Beverages"].map(cat=>(
+              {["All","Appetizers","Soups","Main Courses","Breads","Rice Preparations","Desserts","Beverages","Salads","Sides","Tea","Coffee"].map(cat=>(
                 <button key={cat} className={`cat-pill${indianCategory===cat?" active":""}`} onClick={()=>setIndianCategory(cat)}>{cat}</button>
               ))}
             </div>
             {(()=>{
-              const filtered=indianCuisineData.filter(d=>{
-                const matchCat=indianCategory==="All"||d.category===indianCategory;
-                const matchSearch=!indianSearch||d.dish_name.toLowerCase().includes(indianSearch.toLowerCase())||d.flavor_profile.some(f=>f.toLowerCase().includes(indianSearch.toLowerCase()));
-                return matchCat&&matchSearch;
+              const allIndian = [
+                ...indianCuisineData.map(d=>({...d,_state:"Indian"})),
+                ...maharashtraCuisineData.map(d=>({...d,_state:"Maharashtra"})),
+                ...punjabCuisineData.map(d=>({...d,_state:"Punjab"})),
+              ];
+              const filtered = allIndian.filter(d=>{
+                const matchCat = indianCategory==="All" || d.category===indianCategory;
+                const matchSearch = !indianSearch ||
+                  d.dish_name.toLowerCase().includes(indianSearch.toLowerCase()) ||
+                  (d.flavor_profile||[]).some(f=>f.toLowerCase().includes(indianSearch.toLowerCase())) ||
+                  (d.tags||[]).some(t=>t.toLowerCase().includes(indianSearch.toLowerCase())) ||
+                  d._state.toLowerCase().includes(indianSearch.toLowerCase());
+                return matchCat && matchSearch;
               });
-              return filtered.length===0?<div className="indian-empty">🔍 No dishes found.</div>:(
+              const getCuisineUrl = (dish) => {
+                if(dish._state==="Maharashtra") return "maharashtra";
+                if(dish._state==="Punjab") return "punjab";
+                return "indian";
+              };
+              const stateColor = {"Maharashtra":"rgba(232,98,26,0.15)","Punjab":"rgba(74,124,89,0.15)","Indian":"rgba(28,28,28,0.08)"};
+              const stateTextCol = {"Maharashtra":"#E8621A","Punjab":"#4A7C59","Indian":"#7A6A55"};
+              return filtered.length===0 ? <div className="indian-empty">🔍 No dishes found.</div> : (
                 <div className="indian-grid">
                   {filtered.map((dish,i)=>(
-                    <div key={i} className="indian-card" onClick={()=>{window.location.href=`/cuisine/indian/${toSlug(dish.category)}/${toSlug(dish.dish_name)}`;}}>
-                      <div className="indian-card-img" style={{padding:0,overflow:"hidden"}}>
-                        {dish.img?<img src={dish.img} alt={dish.dish_name} style={{width:"100%",height:"100%",objectFit:"cover"}}/>:<span>{cardEmojis[dish.category]||"🍽"}</span>}
+                    <div key={i} className="indian-card" onClick={()=>{window.location.href=`/cuisine/${getCuisineUrl(dish)}/${toSlug(dish.category)}/${toSlug(dish.dish_name)}`;}}>
+                      <div className="indian-card-img" style={{padding:0,overflow:"hidden",background:"#f5f0ea"}}>
+                        {dish.img ? <img src={dish.img} alt={dish.dish_name} loading="lazy" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.nextSibling.style.display="flex";}} /> : null}
+                        <div style={{display:dish.img?"none":"flex",width:"100%",height:"100%",alignItems:"center",justifyContent:"center",background:"linear-gradient(135deg,#E8621A,#C9922A)"}}>
+                          <span style={{fontSize:"2.5rem"}}>{cardEmojis[dish.category]||"🍽"}</span>
+                        </div>
                       </div>
                       <div className="indian-card-body">
-                        <div className="indian-cat-badge">{dish.category}</div>
-                        <h3>{dish.dish_name}</h3>
-                        <div className="indian-card-meta">
-                          <span>⏱ {dish.prep_time_minutes+dish.cook_time_minutes} min</span>
-                          <span>🍽 {dish.servings} servings</span>
-                          <span className={`diff-badge diff-${dish.difficulty_level}`}>{dish.difficulty_level}</span>
+                        <div style={{display:"flex",gap:"0.4rem",marginBottom:"0.3rem",flexWrap:"wrap"}}>
+                          <div className="indian-cat-badge">{dish.category}</div>
+                          <div style={{display:"inline-block",background:stateColor[dish._state],color:stateTextCol[dish._state],fontSize:"0.68rem",fontWeight:600,padding:"0.15rem 0.55rem",borderRadius:"10px"}}>📍 {dish._state}</div>
                         </div>
-                        <div style={{marginTop:"0.5rem"}}>{dish.dietary_tags.map((t,j)=><span key={j} className="diet-tag">{t}</span>)}</div>
+                        <h3>{dish.dish_name}</h3>
+                        <p style={{fontSize:"0.78rem",color:"var(--text-muted)",marginTop:"0.3rem",lineHeight:"1.4"}}>{dish.short_description ? dish.short_description.substring(0,80)+"..." : ""}</p>
+                        <div className="indian-card-meta">
+                          <span>⏱ {(dish.prep_time_minutes||0)+(dish.cook_time_minutes||0)} min</span>
+                          <span className={`diff-badge diff-${(dish.difficulty_level||"easy").toLowerCase()}`}>{dish.difficulty_level}</span>
+                        </div>
+                        <div style={{marginTop:"0.5rem"}}>
+                          {(dish.dietary_tags||dish.tags||[]).slice(0,2).map((t,j)=><span key={j} className="diet-tag">{t}</span>)}
+                        </div>
                       </div>
                     </div>
                   ))}
