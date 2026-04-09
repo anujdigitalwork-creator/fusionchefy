@@ -716,7 +716,7 @@ function FusionChefAI() {
                 { name: "🇯🇵 Japanese", desc: "sushi, ramen, tempura", img: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80", available: "japanese" },
                 { name: "🇹🇭 Thai", desc: "pad thai, green curry, tom yum", img: "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=400&q=80", available: "thai" },
                 { name: "🇰🇷 Korean", desc: "kimchi, bibimbap, BBQ", img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&q=80", available: "korean" },
-                { name: "🇻🇳 Vietnamese", desc: "pho, banh mi, fresh rolls", img: "https://images.unsplash.com/photo-1582878826629-33b7f57b2a3c?w=400&q=80", available: "vietnamese" },
+                { name: "🇻🇳 Vietnamese", desc: "pho, banh mi, fresh rolls", img: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&q=80", available: "vietnamese" },
                 { name: "🇮🇩 Indonesian", desc: "nasi goreng, satay", img: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&q=80" },
                 { name: "🇵🇭 Filipino", desc: "adobo, lechon", img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" },
               ]},
@@ -764,7 +764,7 @@ function FusionChefAI() {
                       else if(c.available==="vietnamese") setVietnamesePage(true);
                       else alert("🚧 "+c.name+" recipes coming soon!");
                     }}>
-                      <div className="ce-card-img"><img src={c.img} alt={c.name} /><div className="ce-card-overlay"/></div>
+                      <div className="ce-card-img"><img src={c.img} alt={c.name} onError={e=>{e.target.src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80";}} /><div className="ce-card-overlay"/></div>
                       <div className="ce-card-body">
                         <h3>{c.name}</h3><p>{c.desc}</p>
                         {c.available ? <span className="ce-available">✅ Available</span> : <span className="ce-coming">🚧 Coming Soon</span>}
