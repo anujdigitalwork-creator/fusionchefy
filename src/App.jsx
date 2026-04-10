@@ -4,6 +4,7 @@ import { indianCuisineData, maharashtraCuisineData, punjabCuisineData, chineseCu
 import { japaneseCuisineData, thaiCuisineData } from "./asianData.js";
 import { koreanCuisineData } from "./koreanData.js";
 import { vietnameseCuisineData } from "./vietnameseData.js";
+import { indonesianCuisineData } from "./indonesianData.js";
 import ContactPage from "./contact.jsx";
 
 const GA_ID = "G-6MVKQHR38Y";
@@ -392,6 +393,7 @@ function FusionChefAI() {
   const [thaiGuidePage, setThaiGuidePage] = useState(false);
   const [koreanGuidePage, setKoreanGuidePage] = useState(false);
   const [vietnameseGuidePage, setVietnameseGuidePage] = useState(false);
+  const [indonesianPage, setIndonesianPage] = useState(false);
   const [maharashtraCategory, setMaharashtraCategory] = useState("All");
   const [maharashtraSearch, setMaharashtraSearch] = useState("");
   const [maharashtraModal, setMaharashtraModal] = useState(null);
@@ -428,6 +430,7 @@ function FusionChefAI() {
     if (thaiPage) return { data: thaiCuisineData, name: "Thai", flag: "🇹🇭", color: "#1a3a7a", setPage: setThaiPage };
     if (koreanPage) return { data: koreanCuisineData, name: "Korean", flag: "🇰🇷", color: "#003478", setPage: setKoreanPage };
     if (vietnamesePage) return { data: vietnameseCuisineData, name: "Vietnamese", flag: "🇻🇳", color: "#9B1B30", setPage: setVietnamesePage };
+    if (indonesianPage) return { data: indonesianCuisineData, name: "Indonesian", flag: "🇮🇩", color: "#C0392B", setPage: setIndonesianPage };
     return null;
   };
   const asianActive = getAsianData();
@@ -441,16 +444,16 @@ function FusionChefAI() {
       [aboutPage,"About Us"],[contactPage,"Contact Us"],[privacyPage,"Privacy Policy"],
       [termsPage,"Terms of Use"],[careersPage,"Careers"],[cuisineExplorer,"Cuisine Explorer"],[recipeDB,"Recipe Database"],
       [chinesePage,"Chinese Cuisine"],[japanesePage,"Japanese Cuisine"],[thaiPage,"Thai Cuisine"],
-      [koreanPage,"Korean Cuisine"],[vietnamesePage,"Vietnamese Cuisine"],
+      [koreanPage,"Korean Cuisine"],[vietnamesePage,"Vietnamese Cuisine"],[indonesianPage,"Indonesian Cuisine"],
     ];
     const active = pages.find(([state]) => state);
     const title = active ? `Fusion Chef – ${active[1]}` : "Fusion Chef – 200+ Recipes from Every Corner of the World";
     document.title = title;
     gtagEvent("page_view", { page_title: title, page_location: window.location.href });
-  }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,koreanGuidePage,vietnameseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
+  }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,koreanGuidePage,vietnameseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage,indonesianPage]);
 
   useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, []);
-  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,koreanGuidePage,vietnameseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage]);
+  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,koreanGuidePage,vietnameseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage,indonesianPage]);
 
   const scrollToSection = (id) => {
     if (id === "cuisine-explorer") { setCuisineExplorer(true); setRecipeDB(false); return; }
@@ -712,7 +715,7 @@ function FusionChefAI() {
                 { name: "🇹🇭 Thai", desc: "pad thai, green curry, tom yum", img: "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=400&q=80", available: "thai" },
                 { name: "🇰🇷 Korean", desc: "kimchi, bibimbap, BBQ", img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&q=80", available: "korean" },
                 { name: "🇻🇳 Vietnamese", desc: "pho, banh mi, fresh rolls", img: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&q=80", available: "vietnamese" },
-                { name: "🇮🇩 Indonesian", desc: "nasi goreng, satay", img: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&q=80" },
+                { name: "🇮🇩 Indonesian", desc: "nasi goreng, satay", img: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&q=80", available: "indonesian" },
                 { name: "🇵🇭 Filipino", desc: "adobo, lechon", img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" },
               ]},
               { continent: "🌍 European Cuisines", cuisines: [
@@ -757,6 +760,7 @@ function FusionChefAI() {
                       else if(c.available==="thai") setThaiPage(true);
                       else if(c.available==="korean") setKoreanPage(true);
                       else if(c.available==="vietnamese") setVietnamesePage(true);
+                      else if(c.available==="indonesian") setIndonesianPage(true);
                       else alert("🚧 "+c.name+" recipes coming soon!");
                     }}>
                       <div className="ce-card-img"><img src={c.img} alt={c.name} onError={e=>{e.target.src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80";}} /><div className="ce-card-overlay"/></div>
@@ -822,12 +826,13 @@ function FusionChefAI() {
                     <option value="Thai">🇹🇭 Thai</option>
                     <option value="Korean">🇰🇷 Korean</option>
                     <option value="Vietnamese">🇻🇳 Vietnamese</option>
+                    <option value="Indonesian">🇮🇩 Indonesian</option>
                   </select>
                 </div>
               </div>
             </div>
             {(()=>{
-              const allRecipes = [...indianCuisineData,...maharashtraCuisineData,...punjabCuisineData,...chineseCuisineData,...japaneseCuisineData,...thaiCuisineData,...koreanCuisineData,...vietnameseCuisineData];
+              const allRecipes = [...indianCuisineData,...maharashtraCuisineData,...punjabCuisineData,...chineseCuisineData,...japaneseCuisineData,...thaiCuisineData,...koreanCuisineData,...vietnameseCuisineData,...indonesianCuisineData];
               const filtered = allRecipes.filter(d=>{
                 const matchCat = recipeDBCategory==="All"||d.category===recipeDBCategory;
                 const matchDiff = recipeDBDifficulty==="All"||d.difficulty_level===recipeDBDifficulty;
@@ -880,6 +885,7 @@ function FusionChefAI() {
       {japanesePage && renderCuisinePage({ data: japaneseCuisineData, name: "Japanese", flag: "🇯🇵", color: "#BC002D", setPage: setJapanesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Sushi","Appetizers","Soups","Salads","Main Courses","Rice Preparations","Desserts"], guideBtn: <button onClick={()=>{setJapanesePage(false);setJapaneseGuidePage(true);}} style={{background:"rgba(188,0,45,0.15)",border:"1px solid #BC002D",color:"#BC002D",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
       {thaiPage && renderCuisinePage({ data: thaiCuisineData, name: "Thai", flag: "🇹🇭", color: "#1a3a7a", setPage: setThaiPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"], guideBtn: <button onClick={()=>{setThaiPage(false);setThaiGuidePage(true);}} style={{background:"rgba(26,58,122,0.15)",border:"1px solid #1a3a7a",color:"#1a3a7a",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
       {koreanPage && renderCuisinePage({ data: koreanCuisineData, name: "Korean", flag: "🇰🇷", color: "#003478", setPage: setKoreanPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"], guideBtn: <button onClick={()=>{setKoreanPage(false);setKoreanGuidePage(true);}} style={{background:"rgba(0,52,120,0.15)",border:"1px solid #003478",color:"#003478",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
+      {indonesianPage && renderCuisinePage({ data: indonesianCuisineData, name: "Indonesian", flag: "🇮🇩", color: "#C0392B", setPage: setIndonesianPage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"] })}
       {vietnamesePage && renderCuisinePage({ data: vietnameseCuisineData, name: "Vietnamese", flag: "🇻🇳", color: "#9B1B30", setPage: setVietnamesePage, category: asianCategory, setCategory: setAsianCategory, search: asianSearch, setSearch: setAsianSearch, modal: asianModal, setModal: setAsianModal, categories: ["All","Appetizers","Soups","Salads","Main Courses","Desserts"], guideBtn: <button onClick={()=>{setVietnamesePage(false);setVietnameseGuidePage(true);}} style={{background:"rgba(155,27,48,0.15)",border:"1px solid #9B1B30",color:"#9B1B30",padding:"0.4rem 1rem",borderRadius:"20px",cursor:"pointer",fontSize:"0.8rem",fontWeight:600}}>📖 Cuisine Guide</button> })}
 
       {/* ── INDIAN PAGE ── */}
@@ -2114,6 +2120,7 @@ function FusionChefAI() {
               else if(c.id==="thai") setThaiPage(true);
               else if(c.id==="korean") setKoreanPage(true);
               else if(c.id==="vietnamese") setVietnamesePage(true);
+              else if(c.id==="indonesian") setIndonesianPage(true);
               else alert("🚧 "+c.name+" recipes coming soon!");
             }}>
               <img src={c.img} alt={c.name}/>
@@ -2614,6 +2621,7 @@ function AppWithRouter() {
     thai: thaiCuisineData,
     korean: koreanCuisineData,
     vietnamese: vietnameseCuisineData,
+    indonesian: indonesianCuisineData,
   };
   return (
     <BrowserRouter>
