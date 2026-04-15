@@ -30,6 +30,19 @@ if (typeof window !== "undefined") {
 const FONTS = `@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap');`;
 const styles = `
   ${FONTS}
+  .faq-section{background:var(--cream-dark);}
+  .faq-container{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:1.5rem;}
+  .faq-item{background:white;border-radius:12px;padding:1.5rem 1.8rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:all 0.3s;}
+  .faq-item:hover{box-shadow:0 4px 20px rgba(0,0,0,0.1);transform:translateY(-2px);}
+  .faq-question{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--charcoal);margin-bottom:0.6rem;font-weight:600;}
+  .faq-answer{color:var(--text-muted);font-size:0.92rem;line-height:1.7;margin:0;}
+  @media(max-width:768px){
+    .faq-container{gap:1rem;}
+    .faq-item{padding:1.2rem 1rem;}
+    .faq-question{font-size:1rem;}
+    .faq-answer{font-size:0.88rem;}
+  }
+
   *{margin:0;padding:0;box-sizing:border-box;}
   :root{--saffron:#E8621A;--saffron-light:#F47B35;--cream:#FFF8EE;--cream-dark:#F5EDDB;--charcoal:#1C1C1C;--charcoal-mid:#2E2E2E;--green:#4A7C59;--green-light:#6A9E78;--gold:#C9922A;--text-muted:#7A6A55;}
   body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--charcoal);overflow-x:hidden;}
@@ -495,7 +508,7 @@ function FusionChefAI() {
     setMessages(m => [...m, { role: "user", content: query }]);
     setLoading(true);
     try {
-      const GROQ_KEY = "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";
+      const GROQ_KEY = process.env.REACT_APP_GROQ_API_KEY || "";
       const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_KEY },
@@ -515,7 +528,7 @@ function FusionChefAI() {
     const local = trending.filter(r => r.title.toLowerCase().includes(query.toLowerCase()) || r.chef.toLowerCase().includes(query.toLowerCase())).map(r => ({ ...r, isAI: false }));
     setSearchResults(local);
     try {
-      const GROQ_KEY = "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";
+      const GROQ_KEY = process.env.REACT_APP_GROQ_API_KEY || "";
       const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_KEY },
@@ -531,7 +544,7 @@ function FusionChefAI() {
 
   const navLinks = [
     { label: "Trending", id: "trending" },
-    { label: "Cuisines", id: "cuisine-explorer" },
+    
     { label: "Recipes", id: "recipe-db" },
   ];
 
@@ -2019,13 +2032,6 @@ function FusionChefAI() {
 
   <div className="nav-right">
     <button
-      className="btn-ai"
-      onClick={()=>setCuisineExplorer(true)}
-    >
-      🌍 Explore Cuisines
-    </button>
-
-    <button
       className="hamburger"
       onClick={()=>setMenuOpen(m=>!m)}
     >
@@ -2042,13 +2048,6 @@ function FusionChefAI() {
       setMenuOpen(false);
     }}>
       Trending
-    </a>
-
-    <a onClick={()=>{
-      scrollToSection("cuisine-explorer");
-      setMenuOpen(false);
-    }}>
-      Cuisines
     </a>
 
     <a onClick={()=>{
@@ -2139,53 +2138,6 @@ function FusionChefAI() {
         </div>
       </section>
 
-      {/* ── TRENDING ── */}
-      <section className="section trending-section" id="trending">
-        <div className="section-header">
-          <div className="section-tag">🔥 Hot Right Now</div>
-          <h2 className="section-title">Trending <em>This Week</em></h2>
-          <p className="section-sub">Community favorites, curated fresh every week by our AI.</p>
-        </div>
-        <div className="trending-scroll" id="recipes">
-          {trending.map((r,i)=>(
-            <div key={i} className="recipe-card" onClick={()=>setRecipeModal(r)}>
-              <div className="recipe-card-img">
-                <img src={r.img} alt={r.title}/>
-                <span className={`recipe-badge ${r.difficulty}`}>{r.difficulty.charAt(0).toUpperCase()+r.difficulty.slice(1)}</span>
-                <button className={`heart-btn${liked[i]?" liked":""}`} onClick={e=>{e.stopPropagation();setLiked(l=>({...l,[i]:!l[i]}));}}>
-                  {liked[i]?"❤️":"🤍"}
-                </button>
-              </div>
-              <div className="recipe-card-body">
-                <div className="recipe-chef">{r.chef}</div>
-                <h3>{r.title}</h3>
-                <div className="recipe-meta"><span>⏱ {r.time}</span><span>⭐ 4.{7+(i%3)}</span></div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ── CHEFS ── */}
-      <section className="section chefs-section" id="chefs">
-        <div className="section-header">
-          <div className="section-tag">Meet the Team</div>
-          <h2 className="section-title">Featured <em>Chefs</em></h2>
-          <p className="section-sub">World-class culinary talent, curated and celebrated by Fusion Chef.</p>
-        </div>
-        <div className="chefs-grid">
-          {chefs.map(c=>(
-            <div key={c.name} className="chef-card" onClick={()=>setChefModal(c)}>
-              <img src={c.img} alt={c.name} className="chef-avatar"/>
-              <h3>{c.name}</h3>
-              <div className="chef-specialty">{c.specialty}</div>
-              <div className="chef-followers">{c.followers} followers</div>
-              <div className="chef-dish">{c.dish}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* ── NEWSLETTER ── */}
       <section className="newsletter-section">
         <h2>Get Weekly Recipes, Chef Tips & AI Picks</h2>
@@ -2198,6 +2150,33 @@ function FusionChefAI() {
             <button className="newsletter-btn" onClick={()=>{if(email)setSubscribed(true);}}>Subscribe →</button>
           </div>
         )}
+      </section>
+
+
+      {/* ── FAQ SECTION ── */}
+      <section className="section faq-section" id="faq">
+        <div className="section-header">
+          <div className="section-tag">Got Questions?</div>
+          <h2 className="section-title">Frequently Asked <em>Questions</em></h2>
+        </div>
+        <div className="faq-container">
+          <div className="faq-item">
+            <h3 className="faq-question">What is Fusion Chef?</h3>
+            <p className="faq-answer">Fusion Chef is a professional global recipe platform dedicated to bringing authentic, well-researched culinary knowledge to home cooks, culinary students and food enthusiasts around the world. With over 330 carefully crafted recipes spanning 8 major world cuisines, we bridge the gap between professional culinary education and everyday cooking.</p>
+          </div>
+          <div className="faq-item">
+            <h3 className="faq-question">Are the recipes beginner-friendly?</h3>
+            <p className="faq-answer">Yes! Our recipes are designed for all skill levels. Each recipe includes difficulty ratings (easy, medium, hard), detailed step-by-step instructions, and helpful chef tips to guide you through the cooking process. Whether you're a beginner or an experienced cook, you'll find recipes that match your skill level.</p>
+          </div>
+          <div className="faq-item">
+            <h3 className="faq-question">How often are new recipes added?</h3>
+            <p className="faq-answer">We regularly update our recipe collection with new dishes from around the world. Our team of chefs and AI assistants work together to curate and test new recipes, ensuring you always have fresh inspiration for your next meal.</p>
+          </div>
+          <div className="faq-item">
+            <h3 className="faq-question">Is Fusion Chef free to use?</h3>
+            <p className="faq-answer">Yes, Fusion Chef is completely free to use! You can browse all our recipes, access cooking instructions, and use our AI chef assistant without any cost. We believe everyone should have access to quality culinary education and delicious recipes.</p>
+          </div>
+        </div>
       </section>
 
       {/* ── ABOUT US PAGE ── */}
@@ -2419,7 +2398,7 @@ function FusionChefAI() {
             </div>
           </div>
           <div className="footer-col"><h4>Recipes</h4><ul>{["Breakfast","Lunch","Dinner","Baking","Vegetarian","Healthy"].map(l=><li key={l}><a href="#" onClick={()=>scrollToSection("categories")}>{l}</a></li>)}</ul></div>
-          <div className="footer-col"><h4>Discover</h4><ul>{[["Chefs","chefs"],["Trending","trending"],["Cuisines","cuisine-explorer"],["Recipes","recipe-db"]].map(([l,id])=><li key={l}><a href="#" onClick={()=>scrollToSection(id)}>{l}</a></li>)}</ul></div>
+          <div className="footer-col"><h4>Discover</h4><ul>{[["Trending","trending"],["Recipes","recipe-db"]].map(([l,id])=><li key={l}><a href="#" onClick={()=>scrollToSection(id)}>{l}</a></li>)}</ul></div>
           <div className="footer-col"><h4>Company</h4><ul>{[["About Us",()=>setAboutPage(true)],["Careers",()=>{}],["Press",()=>{}],["Contact",()=>setContactPage(true)],["Privacy",()=>{}],["Terms",()=>{}]].map(([l,fn])=><li key={l}><a href="#" onClick={e=>{e.preventDefault();fn();}}>{l}</a></li>)}</ul></div>
         </div>
         <div className="footer-bottom">
