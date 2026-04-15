@@ -1,27 +1,50 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { compression } from 'vite-plugin-compression2'
+import viteImagemin from 'vite-plugin-imagemin'
 
 export default defineConfig({
   plugins: [
     react(),
+
+    // Image optimization
+    viteImagemin({
+      mozjpeg: {
+        quality: 75,
+      },
+      pngquant: {
+        quality: [0.65, 0.8],
+        speed: 4,
+      },
+      webp: {
+        quality: 75,
+      },
+      avif: {
+        quality: 60,
+      },
+    }),
+
     compression({
       algorithm: 'gzip',
       threshold: 1024,
     }),
+
     compression({
       algorithm: 'brotliCompress',
       threshold: 1024,
     }),
   ],
+
   build: {
     minify: 'terser',
+
     terserOptions: {
       compress: {
         drop_console: true,
         drop_debugger: true,
       },
     },
+
     rollupOptions: {
       output: {
         manualChunks: {
@@ -34,6 +57,7 @@ export default defineConfig({
         },
       },
     },
+
     chunkSizeWarningLimit: 500,
     cssMinify: true,
     sourcemap: false,
