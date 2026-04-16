@@ -1,1 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
 
+<title>Fusion Chefy Recipes</title>
+<link>https://fusionchefy.vercel.app</link>
+<description>Explore global fusion recipes from Fusion Chefy</description>
+
+<!-- SAMPLE ITEM (Vada Pav) -->
+<item>
+<title>Vada Pav - Maharashtra Street Food</title>
+<link>https://fusionchefy.vercel.app/cuisine/maharashtra/appetizers/vada-pav</link>
+<description>Iconic Mumbai street food with spicy potato filling in a soft bun.</description>
+<media:content url="https://fusionchefy.vercel.app/images/maharashtra/appetizers/vada-pav.jpg" medium="image" />
+</item>
+
+<!-- SAMPLE ITEM -->
+<item>
+<title>Butter Chicken - Indian Classic</title>
+<link>https://fusionchefy.vercel.app/cuisine/indian/main-course/butter-chicken</link>
+<description>Creamy tomato-based chicken curry with rich spices.</description>
+<media:content url="https://fusionchefy.vercel.app/images/india/main-course/butter-chicken.jpg" medium="image" />
+</item>
+
+<!-- SAMPLE ITEM -->
+<item>
+<title>Chicken Ramen - Japanese Comfort Food</title>
+<link>https://fusionchefy.vercel.app/cuisine/japanese/soups/chicken-ramen</link>
+<description>Rich noodle soup with slow-cooked broth and toppings.</description>
+<media:content url="https://fusionchefy.vercel.app/images/japan/soups/chicken-ramen.jpg" medium="image" />
+</item>
+
+</channel>
+</rss>
