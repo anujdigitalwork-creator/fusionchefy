@@ -1,42 +1,59 @@
-import { japaneseCuisineData } from "../data/japaneseCuisineData";
-import { thaiCuisineData } from "../data/thaiCuisineData";
-import { koreanCuisineData } from "../data/koreanCuisineData";
-import { vietnameseCuisineData } from "../data/vietnameseCuisineData";
+import {
+  indianCuisineData,
+  maharashtraCuisineData,
+  punjabCuisineData,
+  chineseCuisineData,
+  japaneseCuisineData,
+  thaiCuisineData,
+  koreanCuisineData,
+  vietnameseCuisineData,
+  indonesianCuisineData
+} from "../data";
 
-const allData = [
-  ...japaneseCuisineData,
-  ...thaiCuisineData,
-  ...koreanCuisineData,
-  ...vietnameseCuisineData,
-];
+function flattenCuisine(data) {
+  let all = [];
 
-function slugify(text) {
-  return text.toLowerCase().replace(/\s+/g, "-");
+  Object.values(data).forEach((category) => {
+    if (Array.isArray(category)) {
+      all.push(...category);
+    }
+  });
+
+  return all;
 }
 
 export function generateRss() {
-  let items = "";
+  const allData = [
+    ...flattenCuisine(indianCuisineData),
+    ...flattenCuisine(maharashtraCuisineData),
+    ...flattenCuisine(punjabCuisineData),
+    ...flattenCuisine(chineseCuisineData),
+    ...flattenCuisine(japaneseCuisineData),
+    ...flattenCuisine(thaiCuisineData),
+    ...flattenCuisine(koreanCuisineData),
+    ...flattenCuisine(vietnameseCuisineData),
+    ...flattenCuisine(indonesianCuisineData),
+  ];
 
-  allData.forEach((dish) => {
-    const slug = slugify(dish.dish_name);
-    const imageUrl = `https://fusionchefy.vercel.app${dish.img}`;
+  const items = allData.map((dish) => {
+    const slug = dish.dish_name.toLowerCase().replace(/\s+/g, "-");
 
-    items += `
+    return `
 <item>
 <title>${dish.dish_name}</title>
 <link>https://fusionchefy.vercel.app/cuisine/${dish.cuisine.toLowerCase()}/${dish.category.toLowerCase()}/${slug}</link>
-<description>${dish.short_description}</description>
-<media:content url="${imageUrl}" medium="image" />
+<description>${dish.short_description || ""}</description>
+<media:content url="https://fusionchefy.vercel.app${dish.img}" medium="image" />
 </item>
-    `;
-  });
+`;
+  }).join("");
 
   return `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
 <title>Fusion Chefy Recipes</title>
 <link>https://fusionchefy.vercel.app</link>
-<description>Latest recipes from Fusion Chefy</description>
+<description>Auto-generated global fusion recipe feed</description>
 ${items}
 </channel>
 </rss>`;
