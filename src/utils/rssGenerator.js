@@ -10,33 +10,25 @@ import {
   indonesianCuisineData
 } from "../data";
 
-function flattenCuisine(data) {
-  let all = [];
+const allData = [
+  ...indianCuisineData,
+  ...maharashtraCuisineData,
+  ...punjabCuisineData,
+  ...chineseCuisineData,
+  ...japaneseCuisineData,
+  ...thaiCuisineData,
+  ...koreanCuisineData,
+  ...vietnameseCuisineData,
+  ...indonesianCuisineData,
+];
 
-  Object.values(data).forEach((category) => {
-    if (Array.isArray(category)) {
-      all.push(...category);
-    }
-  });
-
-  return all;
+function slugify(text) {
+  return text.toLowerCase().replace(/\s+/g, "-");
 }
 
 export function generateRss() {
-  const allData = [
-    ...flattenCuisine(indianCuisineData),
-    ...flattenCuisine(maharashtraCuisineData),
-    ...flattenCuisine(punjabCuisineData),
-    ...flattenCuisine(chineseCuisineData),
-    ...flattenCuisine(japaneseCuisineData),
-    ...flattenCuisine(thaiCuisineData),
-    ...flattenCuisine(koreanCuisineData),
-    ...flattenCuisine(vietnameseCuisineData),
-    ...flattenCuisine(indonesianCuisineData),
-  ];
-
   const items = allData.map((dish) => {
-    const slug = dish.dish_name.toLowerCase().replace(/\s+/g, "-");
+    const slug = slugify(dish.dish_name);
 
     return `
 <item>
@@ -44,8 +36,7 @@ export function generateRss() {
 <link>https://fusionchefy.vercel.app/cuisine/${dish.cuisine.toLowerCase()}/${dish.category.toLowerCase()}/${slug}</link>
 <description>${dish.short_description || ""}</description>
 <media:content url="https://fusionchefy.vercel.app${dish.img}" medium="image" />
-</item>
-`;
+</item>`;
   }).join("");
 
   return `<?xml version="1.0" encoding="UTF-8" ?>
@@ -53,7 +44,7 @@ export function generateRss() {
 <channel>
 <title>Fusion Chefy Recipes</title>
 <link>https://fusionchefy.vercel.app</link>
-<description>Auto-generated global fusion recipe feed</description>
+<description>Auto-generated Fusion Recipe Feed</description>
 ${items}
 </channel>
 </rss>`;
