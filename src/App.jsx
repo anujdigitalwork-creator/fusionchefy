@@ -2610,6 +2610,7 @@ function AppWithRouter() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<FusionChefAI />} />
         <Route path="/cuisine/:cuisine/:category/:dish" element={<RecipePage allData={allData} />} />
         <Route path="*" element={<FusionChefAI />} />
       </Routes>
