@@ -1,563 +1,661 @@
-import React, { useState, useEffect, useRef } from "react";
-import { BrowserRouter, Routes, Route, useParams, useNavigate } from "react-router-dom";
-import { indianCuisineData, maharashtraCuisineData, punjabCuisineData, chineseCuisineData } from "./indianData.js";
-import { japaneseCuisineData, thaiCuisineData } from "./asianData.js";
-import { koreanCuisineData } from "./koreanData.js";
-import { vietnameseCuisineData } from "./vietnameseData.js";
-import { indonesianCuisineData } from "./indonesianData.js";
-import ContactPage from "./contact.jsx";
+import React, { useState, useEffect, useRef } from “react”; import {
+BrowserRouter, Routes, Route, useParams, useNavigate } from
+“react-router-dom”; import { indianCuisineData, maharashtraCuisineData,
+punjabCuisineData, chineseCuisineData } from “./indianData.js”; import {
+japaneseCuisineData, thaiCuisineData } from “./asianData.js”; import {
+koreanCuisineData } from “./koreanData.js”; import {
+vietnameseCuisineData } from “./vietnameseData.js”; import {
+indonesianCuisineData } from “./indonesianData.js”; import ContactPage
+from “./contact.jsx”;
 
-const GA_ID = "G-6MVKQHR38Y";
-function injectGA() {
-  if (document.getElementById("ga-script")) return;
-  const s1 = document.createElement("script");
-  s1.id = "ga-script"; s1.async = true;
-  s1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-  document.head.appendChild(s1);
-  const s2 = document.createElement("script");
-  s2.id = "ga-init";
-  s2.innerHTML = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}',{send_page_view:true});`;
-  document.head.appendChild(s2);
-}
-function gtagEvent(eventName, params = {}) {
-if (typeof window !== "undefined") {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: eventName, ...params });
-    if (typeof window.gtag === "function") window.gtag("event", eventName, params);
-  }
-}
+const GA_ID = “G-6MVKQHR38Y”; function injectGA() { if
+(document.getElementById(“ga-script”)) return; const s1 =
+document.createElement(“script”); s1.id = “ga-script”; s1.async = true;
+s1.src = https://www.googletagmanager.com/gtag/js?id=${GA_ID};
+document.head.appendChild(s1); const s2 =
+document.createElement(“script”); s2.id = “ga-init”; s2.innerHTML =
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}',{send_page_view:true});;
+document.head.appendChild(s2); } function gtagEvent(eventName, params =
+{}) { if (typeof window !== “undefined”) { window.dataLayer =
+window.dataLayer || []; window.dataLayer.push({ event: eventName,
+…params }); if (typeof window.gtag === “function”) window.gtag(“event”,
+eventName, params); } }
 
-const FONTS = `@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap');`;
-const styles = `
-  ${FONTS}
-  .faq-section{background:var(--cream-dark);}
-  .faq-container{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:1.5rem;}
-  .faq-item{background:white;border-radius:12px;padding:1.5rem 1.8rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:all 0.3s;}
-  .faq-item:hover{box-shadow:0 4px 20px rgba(0,0,0,0.1);transform:translateY(-2px);}
-  .faq-question{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--charcoal);margin-bottom:0.6rem;font-weight:600;}
-  .faq-answer{color:var(--text-muted);font-size:0.92rem;line-height:1.7;margin:0;}
-  @media(max-width:768px){
-    .faq-container{gap:1rem;}
-    .faq-item{padding:1.2rem 1rem;}
-    .faq-question{font-size:1rem;}
-    .faq-answer{font-size:0.88rem;}
-  }
+const FONTS =
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap');;
+const styles = ` ${FONTS} .faq-section{background:var(–cream-dark);}
+.faq-container{max-width:800px;margin:0
+auto;display:flex;flex-direction:column;gap:1.5rem;}
+.faq-item{background:white;border-radius:12px;padding:1.5rem
+1.8rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:all 0.3s;}
+.faq-item:hover{box-shadow:0 4px 20px
+rgba(0,0,0,0.1);transform:translateY(-2px);}
+.faq-question{font-family:‘Playfair
+Display’,serif;font-size:1.1rem;color:var(–charcoal);margin-bottom:0.6rem;font-weight:600;}
+.faq-answer{color:var(–text-muted);font-size:0.92rem;line-height:1.7;margin:0;}
+@media(max-width:768px){ .faq-container{gap:1rem;}
+.faq-item{padding:1.2rem 1rem;} .faq-question{font-size:1rem;}
+.faq-answer{font-size:0.88rem;} }
 
-  *{margin:0;padding:0;box-sizing:border-box;}
-  :root{--saffron:#E8621A;--saffron-light:#F47B35;--cream:#FFF8EE;--cream-dark:#F5EDDB;--charcoal:#1C1C1C;--charcoal-mid:#2E2E2E;--green:#4A7C59;--green-light:#6A9E78;--gold:#C9922A;--text-muted:#7A6A55;}
-  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--charcoal);overflow-x:hidden;}
-  h1,h2,h3,h4{font-family:'Playfair Display',serif;}
-  .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--charcoal);color:white;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:64px;box-shadow:0 2px 20px rgba(0,0,0,0.3);transition:all 0.3s;}
-  .nav.scrolled{background:rgba(28,28,28,0.97);backdrop-filter:blur(12px);}
-  .nav-logo{display:flex;align-items:center;cursor:pointer;}
-  .nav-links{display:flex;gap:1.8rem;list-style:none;}
-  .nav-links a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:0.88rem;font-weight:500;letter-spacing:0.04em;text-transform:uppercase;transition:color 0.2s;cursor:pointer;}
-  .nav-links a:hover{color:var(--saffron);}
-.nav-right{
-display:flex;
-align-items:center;
-gap:1rem;
-margin-left:auto;
-}  .btn-ai{background:var(--saffron);color:white;border:none;padding:0.5rem 1.2rem;border-radius:24px;font-size:0.85rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.2s;white-space:nowrap;}
-  .btn-ai:hover{background:var(--saffron-light);transform:translateY(-1px);box-shadow:0 4px 14px rgba(232,98,26,0.4);}
-  .hero{margin-top:64px;height:88vh;min-height:560px;position:relative;overflow:hidden;background:var(--charcoal);}
-  .hero-slides{width:100%;height:100%;position:relative;}
-  .hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease;background-size:cover;background-position:center;}
-  .hero-slide.active{opacity:1;}
-  .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(28,28,28,0.75) 0%,rgba(28,28,28,0.2) 60%,transparent 100%);}
-  .hero-content{position:absolute;bottom:12%;left:6%;max-width:580px;animation:fadeUp 1s ease forwards;}
-  @keyframes fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
-  .hero-tag{display:inline-block;background:var(--saffron);color:white;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:0.3rem 0.9rem;border-radius:2px;margin-bottom:1rem;}
-  .hero h1{font-size:clamp(2.4rem,5vw,4rem);color:white;line-height:1.12;margin-bottom:1rem;text-shadow:0 2px 20px rgba(0,0,0,0.4);}
-  .hero p{color:rgba(255,255,255,0.85);font-size:1.05rem;line-height:1.65;margin-bottom:1.8rem;}
-  .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
-  .btn-primary{background:var(--saffron);color:white;border:none;padding:0.85rem 2rem;border-radius:4px;font-size:0.95rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.25s;}
-  .btn-primary:hover{background:var(--saffron-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,98,26,0.4);}
-  .btn-outline{background:transparent;color:white;border:2px solid rgba(255,255,255,0.6);padding:0.85rem 2rem;border-radius:4px;font-size:0.95rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.25s;}
-  .btn-outline:hover{border-color:white;background:rgba(255,255,255,0.1);}
-  .hero-dots{position:absolute;bottom:2rem;right:6%;display:flex;gap:0.5rem;}
-  .hero-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.4);cursor:pointer;transition:all 0.3s;border:none;}
-  .hero-dot.active{background:var(--saffron);transform:scale(1.3);}
-  .section{padding:5rem 2.5rem;}
-  .section-header{text-align:center;margin-bottom:3rem;}
-  .section-tag{display:inline-block;color:var(--saffron);font-size:0.78rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.6rem;}
-  .section-title{font-size:clamp(1.8rem,3vw,2.8rem);color:var(--charcoal);line-height:1.2;}
-  .section-title em{color:var(--saffron);font-style:italic;}
-  .section-sub{color:var(--text-muted);font-size:1rem;margin-top:0.6rem;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.7;}
-  .ai-section{background:var(--charcoal);padding:5rem 2.5rem;position:relative;overflow:hidden;}
-  .ai-section::before{content:'';position:absolute;top:-50%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(232,98,26,0.12) 0%,transparent 70%);pointer-events:none;}
-  .ai-section .section-tag{color:var(--saffron-light);}
-  .ai-section .section-title{color:white;}
-  .ai-section .section-sub{color:rgba(255,255,255,0.55);}
-  .ai-container{max-width:760px;margin:0 auto;}
-  .ai-chat-box{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;backdrop-filter:blur(10px);}
-  .ai-chat-header{background:rgba(232,98,26,0.15);border-bottom:1px solid rgba(255,255,255,0.08);padding:1rem 1.5rem;display:flex;align-items:center;gap:0.8rem;}
-  .ai-chef-avatar{width:36px;height:36px;background:var(--saffron);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;}
-  .ai-chat-header-text h4{color:white;font-size:0.95rem;font-family:'Playfair Display',serif;}
-  .ai-chat-header-text span{color:rgba(255,255,255,0.5);font-size:0.75rem;}
-  .ai-messages{padding:1.5rem;min-height:180px;max-height:340px;overflow-y:auto;display:flex;flex-direction:column;gap:1rem;}
-  .ai-messages::-webkit-scrollbar{width:4px;}
-  .ai-messages::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:2px;}
-  .msg{max-width:85%;padding:0.8rem 1.1rem;border-radius:12px;font-size:0.9rem;line-height:1.6;}
-  .msg.user{background:var(--saffron);color:white;align-self:flex-end;border-bottom-right-radius:4px;}
-  .msg.ai{background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.9);align-self:flex-start;border-bottom-left-radius:4px;}
-  .msg.ai h4{font-family:'Playfair Display',serif;color:var(--saffron-light);margin-bottom:0.4rem;font-size:1rem;}
-  .typing{display:flex;gap:4px;align-items:center;padding:0.8rem 1.1rem;}
-  .typing span{width:7px;height:7px;background:var(--saffron);border-radius:50%;animation:bounce 1.2s infinite;}
-  .typing span:nth-child(2){animation-delay:0.2s;}
-  .typing span:nth-child(3){animation-delay:0.4s;}
-  @keyframes bounce{0%,80%,100%{transform:translateY(0);}40%{transform:translateY(-8px);}}
-  .ai-input-row{display:flex;gap:0;border-top:1px solid rgba(255,255,255,0.08);}
-  .ai-input{flex:1;background:transparent;border:none;padding:1.1rem 1.5rem;color:white;font-size:0.92rem;font-family:'DM Sans',sans-serif;outline:none;}
-  .ai-input::placeholder{color:rgba(255,255,255,0.3);}
-  .ai-send{background:var(--saffron);border:none;color:white;padding:1rem 1.5rem;cursor:pointer;font-size:1.1rem;transition:background 0.2s;}
-  .ai-send:hover{background:var(--saffron-light);}
-  .ai-chips{display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:1.2rem;}
-  .ai-chip{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);padding:0.45rem 1rem;border-radius:20px;font-size:0.8rem;cursor:pointer;transition:all 0.2s;font-family:'DM Sans',sans-serif;}
-  .ai-chip:hover{background:rgba(232,98,26,0.2);border-color:var(--saffron);color:white;}
-  .categories-section{background:var(--cream);}
-  .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.2rem;max-width:1300px;margin:0 auto;}
-  .cat-card{position:relative;height:200px;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0 4px 20px rgba(0,0,0,0.12);transition:transform 0.3s,box-shadow 0.3s;}
-  .cat-card:hover{transform:translateY(-6px);box-shadow:0 12px 36px rgba(0,0,0,0.2);}
-  .cat-card img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s;}
-  .cat-card:hover img{transform:scale(1.08);}
-  .cat-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(28,28,28,0.75) 0%,transparent 60%);}
-  .cat-info{position:absolute;bottom:1rem;left:1rem;color:white;}
-  .cat-info h3{font-size:1.1rem;font-weight:700;}
-  .cat-info span{font-size:0.78rem;color:rgba(255,255,255,0.7);}
-  .trending-section{background:var(--cream-dark);}
-  .trending-scroll{display:flex;gap:1.4rem;overflow-x:auto;padding:0.5rem 0 1.5rem;scrollbar-width:thin;scrollbar-color:var(--saffron) transparent;max-width:1200px;margin:0 auto;}
-  .trending-scroll::-webkit-scrollbar{height:4px;}
-  .trending-scroll::-webkit-scrollbar-thumb{background:var(--saffron);border-radius:2px;}
-  .recipe-card{min-width:280px;background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 16px rgba(0,0,0,0.09);transition:all 0.3s;cursor:pointer;}
-  .recipe-card:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(0,0,0,0.15);}
-  .recipe-card-img{position:relative;height:180px;overflow:hidden;}
-  .recipe-card-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s;}
-  .recipe-card:hover .recipe-card-img img{transform:scale(1.06);}
-  .recipe-badge{position:absolute;top:0.8rem;left:0.8rem;color:white;font-size:0.7rem;font-weight:600;padding:0.25rem 0.65rem;border-radius:20px;letter-spacing:0.05em;}
-  .recipe-badge.easy{background:var(--green);}
-  .recipe-badge.medium{background:var(--gold);}
-  .recipe-badge.hard{background:#C0392B;}
-  .heart-btn{position:absolute;top:0.8rem;right:0.8rem;background:white;border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.15);transition:transform 0.2s;}
-  .heart-btn:hover{transform:scale(1.2);}
-  .recipe-card-body{padding:1rem 1.1rem;}
-  .recipe-card-body h3{font-size:1rem;color:var(--charcoal);margin-bottom:0.4rem;line-height:1.4;}
-  .recipe-meta{display:flex;align-items:center;gap:1rem;font-size:0.78rem;color:var(--text-muted);margin-top:0.6rem;}
-  .recipe-chef{font-size:0.78rem;color:var(--saffron);font-weight:600;}
-  .chefs-section{background:white;}
-  .chefs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem;max-width:1000px;margin:0 auto;}
-  .chef-card{text-align:center;padding:2rem 1.5rem;border-radius:16px;background:var(--cream);cursor:pointer;transition:all 0.3s;position:relative;overflow:hidden;}
-  .chef-card::before{content:'';position:absolute;inset:0;background:var(--saffron);transform:scaleY(0);transform-origin:bottom;transition:transform 0.35s ease;z-index:0;}
-  .chef-card:hover::before{transform:scaleY(1);}
-  .chef-card>*{position:relative;z-index:1;}
-  .chef-card:hover h3,.chef-card:hover .chef-specialty,.chef-card:hover .chef-followers{color:white;}
-  .chef-avatar{width:90px;height:90px;border-radius:50%;object-fit:cover;margin:0 auto 1rem;border:3px solid white;box-shadow:0 4px 14px rgba(0,0,0,0.15);}
-  .chef-card h3{font-size:1.05rem;color:var(--charcoal);transition:color 0.3s;}
-  .chef-specialty{font-size:0.8rem;color:var(--saffron);margin-top:0.3rem;font-weight:500;transition:color 0.3s;}
-  .chef-followers{font-size:0.75rem;color:var(--text-muted);margin-top:0.3rem;transition:color 0.3s;}
-  .chef-dish{font-size:0.75rem;margin-top:0.5rem;opacity:0;transform:translateY(6px);transition:all 0.3s 0.1s;color:rgba(255,255,255,0.9);}
-  .chef-card:hover .chef-dish{opacity:1;transform:translateY(0);}
-  .newsletter-section{background:var(--saffron);padding:4.5rem 2.5rem;text-align:center;position:relative;overflow:hidden;}
-  .newsletter-section::before{content:'🍳';font-size:14rem;position:absolute;left:-2rem;top:-2rem;opacity:0.07;transform:rotate(-20deg);pointer-events:none;}
-  .newsletter-section::after{content:'🌿';font-size:14rem;position:absolute;right:-2rem;bottom:-2rem;opacity:0.07;transform:rotate(20deg);pointer-events:none;}
-  .newsletter-section h2{color:white;font-size:clamp(1.8rem,3vw,2.6rem);margin-bottom:0.8rem;}
-  .newsletter-section p{color:rgba(255,255,255,0.85);font-size:1rem;margin-bottom:2rem;}
-  .newsletter-form{display:flex;gap:0;max-width:460px;margin:0 auto;border-radius:6px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,0.2);}
-  .newsletter-input{flex:1;padding:1rem 1.4rem;border:none;font-size:0.92rem;font-family:'DM Sans',sans-serif;outline:none;}
-  .newsletter-btn{background:var(--charcoal);color:white;border:none;padding:1rem 1.6rem;font-size:0.92rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background 0.2s;white-space:nowrap;}
-  .newsletter-btn:hover{background:var(--charcoal-mid);}
-  .footer{background:var(--charcoal-mid);color:rgba(255,255,255,0.7);padding:4rem 2.5rem 2rem;}
-  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;max-width:1100px;margin:0 auto 3rem;}
-  .footer-brand h2{font-family:'Playfair Display',serif;color:white;font-size:1.5rem;margin-bottom:0.8rem;}
-  .footer-brand h2 em{color:var(--saffron);}
-  .footer-brand p{font-size:0.85rem;line-height:1.7;max-width:260px;}
-  .footer-socials{display:flex;gap:0.8rem;margin-top:1.2rem;}
-  .social-btn{width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background 0.2s;font-size:0.95rem;text-decoration:none;color:rgba(255,255,255,0.7);}
-  .social-btn:hover{background:var(--saffron);}
-  .footer-col h4{color:white;font-family:'DM Sans',sans-serif;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.2rem;}
-  .footer-col ul{list-style:none;}
-  .footer-col ul li{margin-bottom:0.6rem;}
-  .footer-col ul li a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.85rem;transition:color 0.2s;}
-  .footer-col ul li a:hover{color:var(--saffron);}
-  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding-top:1.5rem;text-align:center;font-size:0.8rem;max-width:1100px;margin:0 auto;}
-  .full-page{position:fixed;inset:0;background:var(--cream);z-index:150;overflow-y:auto;animation:fadeIn 0.3s ease;}
-  .full-page-header{background:var(--charcoal);padding:1.2rem 2.5rem;display:flex;align-items:center;gap:1.2rem;position:sticky;top:0;z-index:10;}
-  .full-page-header h1{font-family:'Playfair Display',serif;color:white;font-size:1.5rem;flex:1;}
-  .full-page-header h1 em{color:var(--saffron);font-style:italic;}
-  .back-btn{background:transparent;border:2px solid rgba(255,255,255,0.3);color:white;padding:0.45rem 1.1rem;border-radius:24px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:0.85rem;transition:all 0.2s;}
-  .back-btn:hover{background:var(--saffron);border-color:var(--saffron);}
-  .full-page-content{max-width:1300px;margin:0 auto;padding:2.5rem 2rem;}
-  .ce-continent{margin-bottom:3rem;}
-  .ce-continent-title{font-size:1.4rem;font-family:'Playfair Display',serif;color:var(--charcoal);margin-bottom:1.2rem;padding-bottom:0.6rem;border-bottom:3px solid var(--saffron);display:inline-block;}
-  .ce-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;}
-  .ce-card{background:white;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0 3px 12px rgba(0,0,0,0.08);transition:all 0.3s;}
-  .ce-card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(0,0,0,0.15);}
-  .ce-card-img{height:130px;overflow:hidden;position:relative;}
-  .ce-card-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s;}
-  .ce-card:hover .ce-card-img img{transform:scale(1.08);}
-  .ce-card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.5) 0%,transparent 60%);}
-  .ce-card-body{padding:0.8rem 1rem;}
-  .ce-card-body h3{font-size:0.92rem;color:var(--charcoal);font-weight:600;}
-  .ce-card-body p{font-size:0.75rem;color:var(--text-muted);margin-top:0.2rem;font-style:italic;}
-  .ce-available{display:inline-block;background:var(--green);color:white;font-size:0.65rem;padding:0.15rem 0.55rem;border-radius:10px;margin-top:0.3rem;}
-  .ce-coming{display:inline-block;background:var(--cream-dark);color:var(--text-muted);font-size:0.65rem;padding:0.15rem 0.55rem;border-radius:10px;margin-top:0.3rem;}
-  .rdb-filters{background:white;border-radius:14px;padding:1.5rem;margin-bottom:2rem;box-shadow:0 3px 12px rgba(0,0,0,0.07);}
-  .rdb-filters-row{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:flex-end;}
-  .rdb-filter-group{flex:1;min-width:180px;}
-  .rdb-filter-group label{display:block;font-size:0.78rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;}
-  .rdb-search-input{width:100%;padding:0.65rem 1rem;border:2px solid var(--cream-dark);border-radius:8px;font-size:0.88rem;font-family:'DM Sans',sans-serif;outline:none;transition:border 0.2s;}
-  .rdb-search-input:focus{border-color:var(--saffron);}
-  .rdb-select{width:100%;padding:0.65rem 1rem;border:2px solid var(--cream-dark);border-radius:8px;font-size:0.88rem;font-family:'DM Sans',sans-serif;outline:none;background:white;cursor:pointer;transition:border 0.2s;}
-  .rdb-select:focus{border-color:var(--saffron);}
-  .rdb-count{font-size:0.85rem;color:var(--text-muted);margin-bottom:1.2rem;}
-  .rdb-count strong{color:var(--saffron);}
-  .rdb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.4rem;}
-  .rdb-card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,0.08);cursor:pointer;transition:all 0.3s;}
-  .rdb-card:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(0,0,0,0.14);}
-  .rdb-card-img{height:170px;display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative;}
-  .rdb-card-body{padding:1rem 1.2rem;}
-  .rdb-card-body h3{font-size:0.98rem;color:var(--charcoal);margin-bottom:0.4rem;line-height:1.4;}
-  .rdb-card-meta{display:flex;gap:0.8rem;font-size:0.75rem;color:var(--text-muted);margin-top:0.5rem;flex-wrap:wrap;align-items:center;}
-  .rdb-cuisine-tag{display:inline-block;background:rgba(232,98,26,0.1);color:var(--saffron);font-size:0.72rem;font-weight:600;padding:0.2rem 0.7rem;border-radius:10px;}
-  .rdb-empty{text-align:center;padding:4rem;color:var(--text-muted);}
-  .indian-page{position:fixed;inset:0;background:var(--cream);z-index:150;overflow-y:auto;animation:fadeIn 0.3s ease;}
-  .indian-header{background:var(--charcoal);padding:1.5rem 2.5rem;display:flex;align-items:center;gap:1.5rem;position:sticky;top:0;z-index:10;}
-  .indian-back{background:transparent;border:2px solid rgba(255,255,255,0.3);color:white;padding:0.5rem 1.2rem;border-radius:24px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:0.85rem;transition:all 0.2s;}
-  .indian-back:hover{background:var(--saffron);border-color:var(--saffron);}
-  .indian-header h1{font-family:'Playfair Display',serif;color:white;font-size:1.6rem;flex:1;}
-  .indian-header h1 em{color:var(--saffron);font-style:italic;}
-  .indian-search{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:24px;padding:0.5rem 1.2rem;color:white;font-size:0.88rem;width:240px;outline:none;font-family:'DM Sans',sans-serif;}
-  .indian-search::placeholder{color:rgba(255,255,255,0.4);}
-  .indian-content{max-width:1300px;margin:0 auto;padding:2.5rem 2rem;}
-  .indian-cats{display:flex;flex-wrap:wrap;gap:0.6rem;margin-bottom:2.5rem;}
-  .cat-pill{background:white;border:2px solid var(--cream-dark);color:var(--charcoal);padding:0.45rem 1.2rem;border-radius:24px;font-size:0.82rem;font-weight:500;cursor:pointer;transition:all 0.2s;font-family:'DM Sans',sans-serif;}
-  .cat-pill:hover,.cat-pill.active{background:var(--saffron);border-color:var(--saffron);color:white;}
-  .indian-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.4rem;}
-  .indian-card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 3px 16px rgba(0,0,0,0.09);cursor:pointer;transition:all 0.3s;}
-  .indian-card:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(0,0,0,0.15);}
-  .indian-card-img{height:180px;background:linear-gradient(135deg,var(--saffron),var(--gold));display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative;overflow:hidden;}
-  .indian-card-body{padding:1rem 1.2rem;}
-  .indian-card-body h3{font-size:1rem;color:var(--charcoal);margin-bottom:0.4rem;}
-  .indian-card-meta{display:flex;gap:0.8rem;font-size:0.75rem;color:var(--text-muted);margin-top:0.5rem;flex-wrap:wrap;}
-  .indian-cat-badge{display:inline-block;background:var(--cream-dark);color:var(--saffron);font-size:0.7rem;font-weight:600;padding:0.2rem 0.7rem;border-radius:12px;margin-bottom:0.4rem;}
-  .diff-badge{padding:0.2rem 0.6rem;border-radius:10px;font-size:0.7rem;font-weight:600;color:white;}
-  .diff-easy{background:var(--green);}
-  .diff-medium{background:var(--gold);}
-  .diff-hard{background:#C0392B;}
-  .indian-empty{text-align:center;padding:4rem;color:var(--text-muted);font-size:1.1rem;}
-  .indian-modal-steps{list-style:none;counter-reset:steps;}
-  .indian-modal-steps li{counter-increment:steps;font-size:0.88rem;color:var(--charcoal);padding:0.7rem 0 0.7rem 2.5rem;border-bottom:1px solid var(--cream-dark);position:relative;line-height:1.6;}
-  .indian-modal-steps li::before{content:counter(steps);position:absolute;left:0;top:0.7rem;width:22px;height:22px;background:var(--saffron);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:700;}
-  .flavor-tag{display:inline-block;background:var(--cream-dark);color:var(--charcoal);font-size:0.72rem;padding:0.2rem 0.7rem;border-radius:10px;margin:0.2rem;}
-  .diet-tag{display:inline-block;background:rgba(74,124,89,0.15);color:var(--green);font-size:0.72rem;padding:0.2rem 0.7rem;border-radius:10px;margin:0.2rem;font-weight:600;}
-  .nutrition-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0.8rem;margin-top:0.8rem;}
-  .nutrition-box{background:var(--cream);border-radius:10px;padding:0.7rem;text-align:center;}
-  .nutrition-box strong{display:block;font-size:1rem;color:var(--saffron);}
-  .nutrition-box span{font-size:0.7rem;color:var(--text-muted);}
-  .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:200;display:flex;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(4px);animation:fadeIn 0.2s ease;}
-  @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
-  .modal{background:white;border-radius:20px;max-width:600px;width:100%;max-height:90vh;overflow-y:auto;animation:slideUp 0.3s ease;}
-  @keyframes slideUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
-  .modal-img{width:100%;height:260px;object-fit:cover;border-radius:20px 20px 0 0;}
-  .modal-body{padding:1.8rem;}
-  .modal-body h2{font-size:1.6rem;color:var(--charcoal);margin-bottom:0.5rem;}
-  .modal-meta{display:flex;gap:1rem;font-size:0.82rem;color:var(--text-muted);margin-bottom:1.2rem;flex-wrap:wrap;}
-  .modal-meta span{background:var(--cream);padding:0.3rem 0.8rem;border-radius:20px;}
-  .modal-section-title{font-size:1rem;font-weight:600;color:var(--saffron);margin:1.2rem 0 0.6rem;font-family:'Playfair Display',serif;}
-  .modal-ingredients{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;}
-  .modal-ingredients li{font-size:0.88rem;color:var(--charcoal);padding:0.3rem 0;border-bottom:1px solid var(--cream-dark);}
-  .modal-ingredients li::before{content:'• ';color:var(--saffron);}
-  .modal-steps{list-style:none;counter-reset:steps;}
-  .modal-steps li{counter-increment:steps;font-size:0.88rem;color:var(--charcoal);padding:0.6rem 0 0.6rem 2.5rem;border-bottom:1px solid var(--cream-dark);position:relative;line-height:1.6;}
-  .modal-steps li::before{content:counter(steps);position:absolute;left:0;top:0.6rem;width:22px;height:22px;background:var(--saffron);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:700;}
-  .modal-close{position:absolute;top:1rem;right:1rem;background:white;border:none;width:36px;height:36px;border-radius:50%;font-size:1.1rem;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,0.2);display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
-  .modal-close:hover{background:var(--saffron);color:white;}
-  .modal-wrapper{position:relative;}
-  .modal-chef-avatar{width:80px;height:80px;border-radius:50%;object-fit:cover;border:4px solid var(--saffron);margin:0 auto 1rem;display:block;}
-  .modal-chef-body{padding:2rem;text-align:center;}
-  .modal-chef-body h2{font-size:1.6rem;color:var(--charcoal);}
-  .modal-chef-specialty{color:var(--saffron);font-weight:600;margin:0.3rem 0 1rem;}
-  .modal-chef-bio{font-size:0.9rem;color:var(--text-muted);line-height:1.7;text-align:left;}
-  .modal-chef-stats{display:flex;gap:1rem;justify-content:center;margin:1.2rem 0;}
-  .modal-chef-stat{text-align:center;background:var(--cream);padding:0.8rem 1.2rem;border-radius:12px;}
-  .modal-chef-stat strong{display:block;font-size:1.1rem;color:var(--charcoal);}
-  .modal-chef-stat span{font-size:0.75rem;color:var(--text-muted);}
-  .btn-ask-chef{background:var(--saffron);color:white;border:none;padding:0.8rem 1.8rem;border-radius:24px;font-size:0.92rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;margin-top:1rem;transition:all 0.2s;}
-  .btn-ask-chef:hover{background:var(--saffron-light);transform:translateY(-2px);}
-  .search-modal{background:white;border-radius:20px;max-width:700px;width:100%;max-height:85vh;overflow-y:auto;animation:slideUp 0.3s ease;}
-  .search-modal-header{padding:1.5rem 1.8rem;border-bottom:1px solid var(--cream-dark);display:flex;align-items:center;justify-content:space-between;}
-  .search-modal-header h3{font-size:1.2rem;color:var(--charcoal);}
-  .search-modal-header span{color:var(--text-muted);font-size:0.85rem;}
-  .search-results-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding:1.5rem;}
-  .search-result-card{background:var(--cream);border-radius:12px;overflow:hidden;cursor:pointer;transition:all 0.3s;}
-  .search-result-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.12);}
-  .search-result-img{height:130px;overflow:hidden;}
-  .search-result-img img{width:100%;height:100%;object-fit:cover;}
-  .search-result-body{padding:0.8rem;}
-  .search-result-body h4{font-size:0.9rem;color:var(--charcoal);margin-bottom:0.3rem;line-height:1.4;}
-  .search-result-meta{font-size:0.75rem;color:var(--text-muted);}
-  .search-empty{padding:3rem;text-align:center;color:var(--text-muted);}
-  .search-loading{padding:3rem;text-align:center;}
-  .ai-badge{display:inline-block;background:var(--saffron);color:white;font-size:0.65rem;padding:0.15rem 0.5rem;border-radius:10px;margin-left:0.4rem;vertical-align:middle;}
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{–saffron:#E8621A;–saffron-light:#F47B35;–cream:#FFF8EE;–cream-dark:#F5EDDB;–charcoal:#1C1C1C;–charcoal-mid:#2E2E2E;–green:#4A7C59;–green-light:#6A9E78;–gold:#C9922A;–text-muted:#7A6A55;}
+body{font-family:‘DM
+Sans’,sans-serif;background:var(–cream);color:var(–charcoal);overflow-x:hidden;}
+h1,h2,h3,h4{font-family:‘Playfair Display’,serif;}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(–charcoal);color:white;display:flex;align-items:center;justify-content:space-between;padding:0
+2.5rem;height:64px;box-shadow:0 2px 20px rgba(0,0,0,0.3);transition:all
+0.3s;}
+.nav.scrolled{background:rgba(28,28,28,0.97);backdrop-filter:blur(12px);}
+.nav-logo{display:flex;align-items:center;cursor:pointer;}
+.nav-links{display:flex;gap:1.8rem;list-style:none;} .nav-links
+a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:0.88rem;font-weight:500;letter-spacing:0.04em;text-transform:uppercase;transition:color
+0.2s;cursor:pointer;} .nav-links a:hover{color:var(–saffron);}
+.nav-right{ display:flex; align-items:center; gap:1rem;
+margin-left:auto; }
+.btn-ai{background:var(–saffron);color:white;border:none;padding:0.5rem
+1.2rem;border-radius:24px;font-size:0.85rem;font-weight:600;cursor:pointer;font-family:‘DM
+Sans’,sans-serif;transition:all 0.2s;white-space:nowrap;}
+.btn-ai:hover{background:var(–saffron-light);transform:translateY(-1px);box-shadow:0
+4px 14px rgba(232,98,26,0.4);}
+.hero{margin-top:64px;height:88vh;min-height:560px;position:relative;overflow:hidden;background:var(–charcoal);}
+.hero-slides{width:100%;height:100%;position:relative;}
+.hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s
+ease;background-size:cover;background-position:center;}
+.hero-slide.active{opacity:1;}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(28,28,28,0.75)
+0%,rgba(28,28,28,0.2) 60%,transparent 100%);}
+.hero-content{position:absolute;bottom:12%;left:6%;max-width:580px;animation:fadeUp
+1s ease forwards;} @keyframes
+fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+.hero-tag{display:inline-block;background:var(–saffron);color:white;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:0.3rem
+0.9rem;border-radius:2px;margin-bottom:1rem;} .hero
+h1{font-size:clamp(2.4rem,5vw,4rem);color:white;line-height:1.12;margin-bottom:1rem;text-shadow:0
+2px 20px rgba(0,0,0,0.4);} .hero
+p{color:rgba(255,255,255,0.85);font-size:1.05rem;line-height:1.65;margin-bottom:1.8rem;}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
+.btn-primary{background:var(–saffron);color:white;border:none;padding:0.85rem
+2rem;border-radius:4px;font-size:0.95rem;font-weight:600;cursor:pointer;font-family:‘DM
+Sans’,sans-serif;transition:all 0.25s;}
+.btn-primary:hover{background:var(–saffron-light);transform:translateY(-2px);box-shadow:0
+8px 24px rgba(232,98,26,0.4);}
+.btn-outline{background:transparent;color:white;border:2px solid
+rgba(255,255,255,0.6);padding:0.85rem
+2rem;border-radius:4px;font-size:0.95rem;font-weight:600;cursor:pointer;font-family:‘DM
+Sans’,sans-serif;transition:all 0.25s;}
+.btn-outline:hover{border-color:white;background:rgba(255,255,255,0.1);}
+.hero-dots{position:absolute;bottom:2rem;right:6%;display:flex;gap:0.5rem;}
+.hero-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.4);cursor:pointer;transition:all
+0.3s;border:none;}
+.hero-dot.active{background:var(–saffron);transform:scale(1.3);}
+.section{padding:5rem 2.5rem;}
+.section-header{text-align:center;margin-bottom:3rem;}
+.section-tag{display:inline-block;color:var(–saffron);font-size:0.78rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.6rem;}
+.section-title{font-size:clamp(1.8rem,3vw,2.8rem);color:var(–charcoal);line-height:1.2;}
+.section-title em{color:var(–saffron);font-style:italic;}
+.section-sub{color:var(–text-muted);font-size:1rem;margin-top:0.6rem;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.7;}
+.ai-section{background:var(–charcoal);padding:5rem
+2.5rem;position:relative;overflow:hidden;}
+.ai-section::before{content:’‘;position:absolute;top:-50%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(232,98,26,0.12)
+0%,transparent 70%);pointer-events:none;} .ai-section
+.section-tag{color:var(–saffron-light);} .ai-section
+.section-title{color:white;} .ai-section
+.section-sub{color:rgba(255,255,255,0.55);}
+.ai-container{max-width:760px;margin:0 auto;}
+.ai-chat-box{background:rgba(255,255,255,0.05);border:1px solid
+rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;backdrop-filter:blur(10px);}
+.ai-chat-header{background:rgba(232,98,26,0.15);border-bottom:1px solid
+rgba(255,255,255,0.08);padding:1rem
+1.5rem;display:flex;align-items:center;gap:0.8rem;}
+.ai-chef-avatar{width:36px;height:36px;background:var(–saffron);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;}
+.ai-chat-header-text
+h4{color:white;font-size:0.95rem;font-family:’Playfair Display’,serif;}
+.ai-chat-header-text
+span{color:rgba(255,255,255,0.5);font-size:0.75rem;}
+.ai-messages{padding:1.5rem;min-height:180px;max-height:340px;overflow-y:auto;display:flex;flex-direction:column;gap:1rem;}
+.ai-messages::-webkit-scrollbar{width:4px;}
+.ai-messages::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:2px;}
+.msg{max-width:85%;padding:0.8rem
+1.1rem;border-radius:12px;font-size:0.9rem;line-height:1.6;}
+.msg.user{background:var(–saffron);color:white;align-self:flex-end;border-bottom-right-radius:4px;}
+.msg.ai{background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.9);align-self:flex-start;border-bottom-left-radius:4px;}
+.msg.ai h4{font-family:‘Playfair
+Display’,serif;color:var(–saffron-light);margin-bottom:0.4rem;font-size:1rem;}
+.typing{display:flex;gap:4px;align-items:center;padding:0.8rem 1.1rem;}
+.typing
+span{width:7px;height:7px;background:var(–saffron);border-radius:50%;animation:bounce
+1.2s infinite;} .typing span:nth-child(2){animation-delay:0.2s;} .typing
+span:nth-child(3){animation-delay:0.4s;} @keyframes
+bounce{0%,80%,100%{transform:translateY(0);}40%{transform:translateY(-8px);}}
+.ai-input-row{display:flex;gap:0;border-top:1px solid
+rgba(255,255,255,0.08);}
+.ai-input{flex:1;background:transparent;border:none;padding:1.1rem
+1.5rem;color:white;font-size:0.92rem;font-family:‘DM
+Sans’,sans-serif;outline:none;}
+.ai-input::placeholder{color:rgba(255,255,255,0.3);}
+.ai-send{background:var(–saffron);border:none;color:white;padding:1rem
+1.5rem;cursor:pointer;font-size:1.1rem;transition:background 0.2s;}
+.ai-send:hover{background:var(–saffron-light);}
+.ai-chips{display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:1.2rem;}
+.ai-chip{background:rgba(255,255,255,0.07);border:1px solid
+rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);padding:0.45rem
+1rem;border-radius:20px;font-size:0.8rem;cursor:pointer;transition:all
+0.2s;font-family:‘DM Sans’,sans-serif;}
+.ai-chip:hover{background:rgba(232,98,26,0.2);border-color:var(–saffron);color:white;}
+.categories-section{background:var(–cream);}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.2rem;max-width:1300px;margin:0
+auto;}
+.cat-card{position:relative;height:200px;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0
+4px 20px rgba(0,0,0,0.12);transition:transform 0.3s,box-shadow 0.3s;}
+.cat-card:hover{transform:translateY(-6px);box-shadow:0 12px 36px
+rgba(0,0,0,0.2);} .cat-card
+img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s;}
+.cat-card:hover img{transform:scale(1.08);}
+.cat-overlay{position:absolute;inset:0;background:linear-gradient(to
+top,rgba(28,28,28,0.75) 0%,transparent 60%);}
+.cat-info{position:absolute;bottom:1rem;left:1rem;color:white;}
+.cat-info h3{font-size:1.1rem;font-weight:700;} .cat-info
+span{font-size:0.78rem;color:rgba(255,255,255,0.7);}
+
+.recipe-card{min-width:280px;background:white;border-radius:12px;overflow:hidden;box-shadow:0
+3px 16px rgba(0,0,0,0.09);transition:all 0.3s;cursor:pointer;}
+.recipe-card:hover{transform:translateY(-5px);box-shadow:0 12px 30px
+rgba(0,0,0,0.15);}
+.recipe-card-img{position:relative;height:180px;overflow:hidden;}
+.recipe-card-img
+img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s;}
+.recipe-card:hover .recipe-card-img img{transform:scale(1.06);}
+.recipe-badge{position:absolute;top:0.8rem;left:0.8rem;color:white;font-size:0.7rem;font-weight:600;padding:0.25rem
+0.65rem;border-radius:20px;letter-spacing:0.05em;}
+.recipe-badge.easy{background:var(–green);}
+.recipe-badge.medium{background:var(–gold);}
+.recipe-badge.hard{background:#C0392B;}
+.heart-btn{position:absolute;top:0.8rem;right:0.8rem;background:white;border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;box-shadow:0
+2px 8px rgba(0,0,0,0.15);transition:transform 0.2s;}
+.heart-btn:hover{transform:scale(1.2);} .recipe-card-body{padding:1rem
+1.1rem;} .recipe-card-body
+h3{font-size:1rem;color:var(–charcoal);margin-bottom:0.4rem;line-height:1.4;}
+.recipe-meta{display:flex;align-items:center;gap:1rem;font-size:0.78rem;color:var(–text-muted);margin-top:0.6rem;}
+.recipe-chef{font-size:0.78rem;color:var(–saffron);font-weight:600;}
+.chefs-section{background:white;}
+.chefs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem;max-width:1000px;margin:0
+auto;} .chef-card{text-align:center;padding:2rem
+1.5rem;border-radius:16px;background:var(–cream);cursor:pointer;transition:all
+0.3s;position:relative;overflow:hidden;}
+.chef-card::before{content:’’;position:absolute;inset:0;background:var(–saffron);transform:scaleY(0);transform-origin:bottom;transition:transform
+0.35s ease;z-index:0;} .chef-card:hover::before{transform:scaleY(1);}
+.chef-card>*{position:relative;z-index:1;} .chef-card:hover
+h3,.chef-card:hover .chef-specialty,.chef-card:hover
+.chef-followers{color:white;}
+.chef-avatar{width:90px;height:90px;border-radius:50%;object-fit:cover;margin:0
+auto 1rem;border:3px solid white;box-shadow:0 4px 14px
+rgba(0,0,0,0.15);} .chef-card
+h3{font-size:1.05rem;color:var(–charcoal);transition:color 0.3s;}
+.chef-specialty{font-size:0.8rem;color:var(–saffron);margin-top:0.3rem;font-weight:500;transition:color
+0.3s;}
+.chef-followers{font-size:0.75rem;color:var(–text-muted);margin-top:0.3rem;transition:color
+0.3s;}
+.chef-dish{font-size:0.75rem;margin-top:0.5rem;opacity:0;transform:translateY(6px);transition:all
+0.3s 0.1s;color:rgba(255,255,255,0.9);} .chef-card:hover
+.chef-dish{opacity:1;transform:translateY(0);}
+.newsletter-section{background:var(–saffron);padding:4.5rem
+2.5rem;text-align:center;position:relative;overflow:hidden;}
+.newsletter-section::before{content:‘🍳’;font-size:14rem;position:absolute;left:-2rem;top:-2rem;opacity:0.07;transform:rotate(-20deg);pointer-events:none;}
+.newsletter-section::after{content:‘🌿’;font-size:14rem;position:absolute;right:-2rem;bottom:-2rem;opacity:0.07;transform:rotate(20deg);pointer-events:none;}
+.newsletter-section
+h2{color:white;font-size:clamp(1.8rem,3vw,2.6rem);margin-bottom:0.8rem;}
+.newsletter-section
+p{color:rgba(255,255,255,0.85);font-size:1rem;margin-bottom:2rem;}
+.newsletter-form{display:flex;gap:0;max-width:460px;margin:0
+auto;border-radius:6px;overflow:hidden;box-shadow:0 8px 30px
+rgba(0,0,0,0.2);} .newsletter-input{flex:1;padding:1rem
+1.4rem;border:none;font-size:0.92rem;font-family:‘DM
+Sans’,sans-serif;outline:none;}
+.newsletter-btn{background:var(–charcoal);color:white;border:none;padding:1rem
+1.6rem;font-size:0.92rem;font-weight:600;cursor:pointer;font-family:‘DM
+Sans’,sans-serif;transition:background 0.2s;white-space:nowrap;}
+.newsletter-btn:hover{background:var(–charcoal-mid);}
+.footer{background:var(–charcoal-mid);color:rgba(255,255,255,0.7);padding:4rem
+2.5rem 2rem;} .footer-grid{display:grid;grid-template-columns:2fr 1fr
+1fr 1fr;gap:2.5rem;max-width:1100px;margin:0 auto 3rem;} .footer-brand
+h2{font-family:‘Playfair
+Display’,serif;color:white;font-size:1.5rem;margin-bottom:0.8rem;}
+.footer-brand h2 em{color:var(–saffron);} .footer-brand
+p{font-size:0.85rem;line-height:1.7;max-width:260px;}
+.footer-socials{display:flex;gap:0.8rem;margin-top:1.2rem;}
+.social-btn{width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background
+0.2s;font-size:0.95rem;text-decoration:none;color:rgba(255,255,255,0.7);}
+.social-btn:hover{background:var(–saffron);} .footer-col
+h4{color:white;font-family:‘DM
+Sans’,sans-serif;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.2rem;}
+.footer-col ul{list-style:none;} .footer-col ul
+li{margin-bottom:0.6rem;} .footer-col ul li
+a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.85rem;transition:color
+0.2s;} .footer-col ul li a:hover{color:var(–saffron);}
+.footer-bottom{border-top:1px solid
+rgba(255,255,255,0.08);padding-top:1.5rem;text-align:center;font-size:0.8rem;max-width:1100px;margin:0
+auto;}
+.full-page{position:fixed;inset:0;background:var(–cream);z-index:150;overflow-y:auto;animation:fadeIn
+0.3s ease;} .full-page-header{background:var(–charcoal);padding:1.2rem
+2.5rem;display:flex;align-items:center;gap:1.2rem;position:sticky;top:0;z-index:10;}
+.full-page-header h1{font-family:‘Playfair
+Display’,serif;color:white;font-size:1.5rem;flex:1;} .full-page-header
+h1 em{color:var(–saffron);font-style:italic;}
+.back-btn{background:transparent;border:2px solid
+rgba(255,255,255,0.3);color:white;padding:0.45rem
+1.1rem;border-radius:24px;cursor:pointer;font-family:‘DM
+Sans’,sans-serif;font-size:0.85rem;transition:all 0.2s;}
+.back-btn:hover{background:var(–saffron);border-color:var(–saffron);}
+.full-page-content{max-width:1300px;margin:0 auto;padding:2.5rem 2rem;}
+.ce-continent{margin-bottom:3rem;}
+.ce-continent-title{font-size:1.4rem;font-family:‘Playfair
+Display’,serif;color:var(–charcoal);margin-bottom:1.2rem;padding-bottom:0.6rem;border-bottom:3px
+solid var(–saffron);display:inline-block;}
+.ce-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;}
+.ce-card{background:white;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0
+3px 12px rgba(0,0,0,0.08);transition:all 0.3s;}
+.ce-card:hover{transform:translateY(-4px);box-shadow:0 10px 28px
+rgba(0,0,0,0.15);}
+.ce-card-img{height:130px;overflow:hidden;position:relative;}
+.ce-card-img
+img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s;}
+.ce-card:hover .ce-card-img img{transform:scale(1.08);}
+.ce-card-overlay{position:absolute;inset:0;background:linear-gradient(to
+top,rgba(0,0,0,0.5) 0%,transparent 60%);} .ce-card-body{padding:0.8rem
+1rem;} .ce-card-body
+h3{font-size:0.92rem;color:var(–charcoal);font-weight:600;}
+.ce-card-body
+p{font-size:0.75rem;color:var(–text-muted);margin-top:0.2rem;font-style:italic;}
+.ce-available{display:inline-block;background:var(–green);color:white;font-size:0.65rem;padding:0.15rem
+0.55rem;border-radius:10px;margin-top:0.3rem;}
+.ce-coming{display:inline-block;background:var(–cream-dark);color:var(–text-muted);font-size:0.65rem;padding:0.15rem
+0.55rem;border-radius:10px;margin-top:0.3rem;}
+.rdb-filters{background:white;border-radius:14px;padding:1.5rem;margin-bottom:2rem;box-shadow:0
+3px 12px rgba(0,0,0,0.07);}
+.rdb-filters-row{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:flex-end;}
+.rdb-filter-group{flex:1;min-width:180px;} .rdb-filter-group
+label{display:block;font-size:0.78rem;font-weight:600;color:var(–text-muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;}
+.rdb-search-input{width:100%;padding:0.65rem 1rem;border:2px solid
+var(–cream-dark);border-radius:8px;font-size:0.88rem;font-family:‘DM
+Sans’,sans-serif;outline:none;transition:border 0.2s;}
+.rdb-search-input:focus{border-color:var(–saffron);}
+.rdb-select{width:100%;padding:0.65rem 1rem;border:2px solid
+var(–cream-dark);border-radius:8px;font-size:0.88rem;font-family:‘DM
+Sans’,sans-serif;outline:none;background:white;cursor:pointer;transition:border
+0.2s;} .rdb-select:focus{border-color:var(–saffron);}
+.rdb-count{font-size:0.85rem;color:var(–text-muted);margin-bottom:1.2rem;}
+.rdb-count strong{color:var(–saffron);}
+.rdb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.4rem;}
+.rdb-card{background:white;border-radius:14px;overflow:hidden;box-shadow:0
+3px 14px rgba(0,0,0,0.08);cursor:pointer;transition:all 0.3s;}
+.rdb-card:hover{transform:translateY(-5px);box-shadow:0 12px 30px
+rgba(0,0,0,0.14);}
+.rdb-card-img{height:170px;display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative;}
+.rdb-card-body{padding:1rem 1.2rem;} .rdb-card-body
+h3{font-size:0.98rem;color:var(–charcoal);margin-bottom:0.4rem;line-height:1.4;}
+.rdb-card-meta{display:flex;gap:0.8rem;font-size:0.75rem;color:var(–text-muted);margin-top:0.5rem;flex-wrap:wrap;align-items:center;}
+.rdb-cuisine-tag{display:inline-block;background:rgba(232,98,26,0.1);color:var(–saffron);font-size:0.72rem;font-weight:600;padding:0.2rem
+0.7rem;border-radius:10px;}
+.rdb-empty{text-align:center;padding:4rem;color:var(–text-muted);}
+.indian-page{position:fixed;inset:0;background:var(–cream);z-index:150;overflow-y:auto;animation:fadeIn
+0.3s ease;} .indian-header{background:var(–charcoal);padding:1.5rem
+2.5rem;display:flex;align-items:center;gap:1.5rem;position:sticky;top:0;z-index:10;}
+.indian-back{background:transparent;border:2px solid
+rgba(255,255,255,0.3);color:white;padding:0.5rem
+1.2rem;border-radius:24px;cursor:pointer;font-family:‘DM
+Sans’,sans-serif;font-size:0.85rem;transition:all 0.2s;}
+.indian-back:hover{background:var(–saffron);border-color:var(–saffron);}
+.indian-header h1{font-family:‘Playfair
+Display’,serif;color:white;font-size:1.6rem;flex:1;} .indian-header h1
+em{color:var(–saffron);font-style:italic;}
+.indian-search{background:rgba(255,255,255,0.1);border:1px solid
+rgba(255,255,255,0.2);border-radius:24px;padding:0.5rem
+1.2rem;color:white;font-size:0.88rem;width:240px;outline:none;font-family:‘DM
+Sans’,sans-serif;}
+.indian-search::placeholder{color:rgba(255,255,255,0.4);}
+.indian-content{max-width:1300px;margin:0 auto;padding:2.5rem 2rem;}
+.indian-cats{display:flex;flex-wrap:wrap;gap:0.6rem;margin-bottom:2.5rem;}
+.cat-pill{background:white;border:2px solid
+var(–cream-dark);color:var(–charcoal);padding:0.45rem
+1.2rem;border-radius:24px;font-size:0.82rem;font-weight:500;cursor:pointer;transition:all
+0.2s;font-family:‘DM Sans’,sans-serif;}
+.cat-pill:hover,.cat-pill.active{background:var(–saffron);border-color:var(–saffron);color:white;}
+.indian-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.4rem;}
+.indian-card{background:white;border-radius:14px;overflow:hidden;box-shadow:0
+3px 16px rgba(0,0,0,0.09);cursor:pointer;transition:all 0.3s;}
+.indian-card:hover{transform:translateY(-5px);box-shadow:0 12px 30px
+rgba(0,0,0,0.15);}
+.indian-card-img{height:180px;background:linear-gradient(135deg,var(–saffron),var(–gold));display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative;overflow:hidden;}
+.indian-card-body{padding:1rem 1.2rem;} .indian-card-body
+h3{font-size:1rem;color:var(–charcoal);margin-bottom:0.4rem;}
+.indian-card-meta{display:flex;gap:0.8rem;font-size:0.75rem;color:var(–text-muted);margin-top:0.5rem;flex-wrap:wrap;}
+.indian-cat-badge{display:inline-block;background:var(–cream-dark);color:var(–saffron);font-size:0.7rem;font-weight:600;padding:0.2rem
+0.7rem;border-radius:12px;margin-bottom:0.4rem;}
+.diff-badge{padding:0.2rem
+0.6rem;border-radius:10px;font-size:0.7rem;font-weight:600;color:white;}
+.diff-easy{background:var(–green);} .diff-medium{background:var(–gold);}
+.diff-hard{background:#C0392B;}
+.indian-empty{text-align:center;padding:4rem;color:var(–text-muted);font-size:1.1rem;}
+.indian-modal-steps{list-style:none;counter-reset:steps;}
+.indian-modal-steps
+li{counter-increment:steps;font-size:0.88rem;color:var(–charcoal);padding:0.7rem
+0 0.7rem 2.5rem;border-bottom:1px solid
+var(–cream-dark);position:relative;line-height:1.6;} .indian-modal-steps
+li::before{content:counter(steps);position:absolute;left:0;top:0.7rem;width:22px;height:22px;background:var(–saffron);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:700;}
+.flavor-tag{display:inline-block;background:var(–cream-dark);color:var(–charcoal);font-size:0.72rem;padding:0.2rem
+0.7rem;border-radius:10px;margin:0.2rem;}
+.diet-tag{display:inline-block;background:rgba(74,124,89,0.15);color:var(–green);font-size:0.72rem;padding:0.2rem
+0.7rem;border-radius:10px;margin:0.2rem;font-weight:600;}
+.nutrition-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0.8rem;margin-top:0.8rem;}
+.nutrition-box{background:var(–cream);border-radius:10px;padding:0.7rem;text-align:center;}
+.nutrition-box strong{display:block;font-size:1rem;color:var(–saffron);}
+.nutrition-box span{font-size:0.7rem;color:var(–text-muted);}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:200;display:flex;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(4px);animation:fadeIn
+0.2s ease;} @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+.modal{background:white;border-radius:20px;max-width:600px;width:100%;max-height:90vh;overflow-y:auto;animation:slideUp
+0.3s ease;} @keyframes
+slideUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+.modal-img{width:100%;height:260px;object-fit:cover;border-radius:20px
+20px 0 0;} .modal-body{padding:1.8rem;} .modal-body
+h2{font-size:1.6rem;color:var(–charcoal);margin-bottom:0.5rem;}
+.modal-meta{display:flex;gap:1rem;font-size:0.82rem;color:var(–text-muted);margin-bottom:1.2rem;flex-wrap:wrap;}
+.modal-meta span{background:var(–cream);padding:0.3rem
+0.8rem;border-radius:20px;}
+.modal-section-title{font-size:1rem;font-weight:600;color:var(–saffron);margin:1.2rem
+0 0.6rem;font-family:‘Playfair Display’,serif;}
+.modal-ingredients{list-style:none;display:grid;grid-template-columns:1fr
+1fr;gap:0.4rem;} .modal-ingredients
+li{font-size:0.88rem;color:var(–charcoal);padding:0.3rem
+0;border-bottom:1px solid var(–cream-dark);} .modal-ingredients
+li::before{content:‘•’;color:var(–saffron);}
+.modal-steps{list-style:none;counter-reset:steps;} .modal-steps
+li{counter-increment:steps;font-size:0.88rem;color:var(–charcoal);padding:0.6rem
+0 0.6rem 2.5rem;border-bottom:1px solid
+var(–cream-dark);position:relative;line-height:1.6;} .modal-steps
+li::before{content:counter(steps);position:absolute;left:0;top:0.6rem;width:22px;height:22px;background:var(–saffron);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:700;}
+.modal-close{position:absolute;top:1rem;right:1rem;background:white;border:none;width:36px;height:36px;border-radius:50%;font-size:1.1rem;cursor:pointer;box-shadow:0
+2px 10px
+rgba(0,0,0,0.2);display:flex;align-items:center;justify-content:center;transition:all
+0.2s;} .modal-close:hover{background:var(–saffron);color:white;}
+.modal-wrapper{position:relative;}
+.modal-chef-avatar{width:80px;height:80px;border-radius:50%;object-fit:cover;border:4px
+solid var(–saffron);margin:0 auto 1rem;display:block;}
+.modal-chef-body{padding:2rem;text-align:center;} .modal-chef-body
+h2{font-size:1.6rem;color:var(–charcoal);}
+.modal-chef-specialty{color:var(–saffron);font-weight:600;margin:0.3rem
+0 1rem;}
+.modal-chef-bio{font-size:0.9rem;color:var(–text-muted);line-height:1.7;text-align:left;}
+.modal-chef-stats{display:flex;gap:1rem;justify-content:center;margin:1.2rem
+0;}
+.modal-chef-stat{text-align:center;background:var(–cream);padding:0.8rem
+1.2rem;border-radius:12px;} .modal-chef-stat
+strong{display:block;font-size:1.1rem;color:var(–charcoal);}
+.modal-chef-stat span{font-size:0.75rem;color:var(–text-muted);}
+.btn-ask-chef{background:var(–saffron);color:white;border:none;padding:0.8rem
+1.8rem;border-radius:24px;font-size:0.92rem;font-weight:600;cursor:pointer;font-family:‘DM
+Sans’,sans-serif;margin-top:1rem;transition:all 0.2s;}
+.btn-ask-chef:hover{background:var(–saffron-light);transform:translateY(-2px);}
+.search-modal{background:white;border-radius:20px;max-width:700px;width:100%;max-height:85vh;overflow-y:auto;animation:slideUp
+0.3s ease;} .search-modal-header{padding:1.5rem 1.8rem;border-bottom:1px
+solid
+var(–cream-dark);display:flex;align-items:center;justify-content:space-between;}
+.search-modal-header h3{font-size:1.2rem;color:var(–charcoal);}
+.search-modal-header span{color:var(–text-muted);font-size:0.85rem;}
+.search-results-grid{display:grid;grid-template-columns:1fr
+1fr;gap:1rem;padding:1.5rem;}
+.search-result-card{background:var(–cream);border-radius:12px;overflow:hidden;cursor:pointer;transition:all
+0.3s;} .search-result-card:hover{transform:translateY(-3px);box-shadow:0
+8px 24px rgba(0,0,0,0.12);}
+.search-result-img{height:130px;overflow:hidden;} .search-result-img
+img{width:100%;height:100%;object-fit:cover;}
+.search-result-body{padding:0.8rem;} .search-result-body
+h4{font-size:0.9rem;color:var(–charcoal);margin-bottom:0.3rem;line-height:1.4;}
+.search-result-meta{font-size:0.75rem;color:var(–text-muted);}
+.search-empty{padding:3rem;text-align:center;color:var(–text-muted);}
+.search-loading{padding:3rem;text-align:center;}
+.ai-badge{display:inline-block;background:var(–saffron);color:white;font-size:0.65rem;padding:0.15rem
+0.5rem;border-radius:10px;margin-left:0.4rem;vertical-align:middle;}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:0.4rem;}
-.hamburger span{display:block;width:24px;height:2px;background:white;border-radius:2px;transition:all 0.3s;}
-.mobile-menu{display:none;}
+.hamburger
+span{display:block;width:24px;height:2px;background:white;border-radius:2px;transition:all
+0.3s;} .mobile-menu{display:none;}
 
-@media(max-width:768px){
-.nav-links{display:none;}
-.hamburger{
-  display:flex;
-  position:absolute;
-  left:15px;
-  top:18px;
-  z-index:10000;
-}
-.nav-logo img{
-  width:180px;
-  height:auto;
-}
-.mobile-menu{
-  display:none;
-  flex-direction:column;
-  position:fixed;
-  top:64px;
-  left:0;
-  width:100%;
-  background:var(--charcoal);
-  padding:1rem 1.5rem 1.5rem;
-  gap:0;
-  z-index:9999;
-  border-top:1px solid rgba(255,255,255,0.1);
-}
-.mobile-menu.active{
-  display:flex;
-}
-.mobile-menu a{
-  color:rgba(255,255,255,0.85);
-  text-decoration:none;
-  font-size:1rem;
-  font-weight:500;
-  padding:0.9rem 0;
-  border-bottom:1px solid rgba(255,255,255,0.08);
-  cursor:pointer;
-  display:block;
-}
-.mobile-menu a:last-child{
-  border-bottom:none;
-}
-.footer-grid{grid-template-columns:1fr 1fr;}
-.hero h1{font-size:2rem;}
+@media(max-width:768px){ .nav-links{display:none;} .hamburger{
+display:flex; position:absolute; left:15px; top:18px; z-index:10000; }
+.nav-logo img{ width:180px; height:auto; } .mobile-menu{ display:none;
+flex-direction:column; position:fixed; top:64px; left:0; width:100%;
+background:var(–charcoal); padding:1rem 1.5rem 1.5rem; gap:0;
+z-index:9999; border-top:1px solid rgba(255,255,255,0.1); }
+.mobile-menu.active{ display:flex; } .mobile-menu a{
+color:rgba(255,255,255,0.85); text-decoration:none; font-size:1rem;
+font-weight:500; padding:0.9rem 0; border-bottom:1px solid
+rgba(255,255,255,0.08); cursor:pointer; display:block; } .mobile-menu
+a:last-child{ border-bottom:none; }
+.footer-grid{grid-template-columns:1fr 1fr;} .hero h1{font-size:2rem;}
 .section{padding:3.5rem 1.2rem;}
-.modal-ingredients{grid-template-columns:1fr;}
-}`;
+.modal-ingredients{grid-template-columns:1fr;} }`;
 
-const heroSlides = [
-  { bg: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400&q=80", tag: "Chef's Special", title: "Saffron-Glazed Salmon with Herb Risotto", desc: "A restaurant-worthy dish you can recreate at home in under 40 minutes." },
-  { bg: "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=1400&q=80", tag: "Trending Now", title: "Mushroom & Truffle Pasta Perfection", desc: "Earthy, luxurious, and deeply satisfying. A dish for every occasion." },
-  { bg: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1400&q=80", tag: "Weekend Bake", title: "Honey Cardamom Croissants", desc: "Buttery layers of joy. Master the art of laminated dough." },
-];
+const heroSlides = [ { bg:
+“https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400&q=80”,
+tag: “Chef’s Special”, title: “Saffron-Glazed Salmon with Herb Risotto”,
+desc: “A restaurant-worthy dish you can recreate at home in under 40
+minutes.” }, { bg:
+“https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=1400&q=80”,
+tag: “Trending Now”, title: “Mushroom & Truffle Pasta Perfection”, desc:
+“Earthy, luxurious, and deeply satisfying. A dish for every occasion.”
+}, { bg:
+“https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1400&q=80”,
+tag: “Weekend Bake”, title: “Honey Cardamom Croissants”, desc: “Buttery
+layers of joy. Master the art of laminated dough.” },];
 
-const trending = [
-  { title: "Spicy Mango Chicken Tacos", chef: "Chef Aria Voss", time: "25 min", difficulty: "easy", img: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80", ingredients: ["Chicken thighs","Fresh mango","Lime juice","Jalapeño","Corn tortillas","Cilantro","Sour cream"], steps: ["Marinate chicken in lime, chili, and mango juice for 15 mins.","Grill chicken on high heat for 5-6 mins per side until charred.","Dice fresh mango and mix with cilantro and lime for salsa.","Warm tortillas and assemble with chicken, mango salsa, and sour cream."] },
-  { title: "Roasted Tomato Bisque", chef: "Chef Marco Lin", time: "40 min", difficulty: "easy", img: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80", ingredients: ["Ripe tomatoes","Garlic cloves","Heavy cream","Basil leaves","Onion","Olive oil","Vegetable broth"], steps: ["Roast tomatoes and garlic at 200°C for 25 mins.","Sauté onions in olive oil until golden.","Blend roasted tomatoes with sautéed onions and broth.","Stir in cream and fresh basil, season to taste."] },
-  { title: "Lamb Tagine with Couscous", chef: "Chef Nadia Osei", time: "1h 20min", difficulty: "medium", img: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&q=80", ingredients: ["Lamb shoulder","Apricots","Chickpeas","Ras el hanout","Onion","Couscous","Cilantro"], steps: ["Brown lamb pieces in batches with spices.","Add onions, apricots, chickpeas and stock to pot.","Simmer on low heat for 1 hour until tender.","Serve over fluffy couscous with fresh cilantro."] },
-  { title: "Japanese Katsu Curry", chef: "Chef Kenji Mori", time: "50 min", difficulty: "medium", img: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?w=400&q=80", ingredients: ["Pork cutlets","Curry roux blocks","Potato","Carrot","Onion","Panko breadcrumbs","Steamed rice"], steps: ["Bread pork cutlets in flour, egg, and panko.","Deep fry at 170°C for 4-5 mins until golden.","Simmer curry with veggies and roux blocks.","Slice katsu and serve over rice with curry sauce."] },
-  { title: "Caramel Lava Cake", chef: "Chef Elise Blanc", time: "30 min", difficulty: "hard", img: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80", ingredients: ["Dark chocolate","Butter","Eggs","Sugar","Flour","Caramel sauce","Vanilla"], steps: ["Melt chocolate and butter together gently.","Whisk eggs and sugar until pale and fluffy.","Fold in chocolate mixture and flour carefully.","Bake at 200°C for exactly 12 mins — center stays molten."] },
-  { title: "Summer Panzanella Salad", chef: "Chef Giulia Rossi", time: "15 min", difficulty: "easy", img: "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&q=80", ingredients: ["Ciabatta bread","Heirloom tomatoes","Cucumber","Red onion","Basil","Olive oil","Red wine vinegar"], steps: ["Toast bread cubes in olive oil until golden.","Chop tomatoes, cucumber, and onion.","Toss everything with olive oil and red wine vinegar.","Let sit for 10 mins so bread absorbs the juices."] },
-];
+const chefs = [ { name: “Aria Voss”, specialty: “Modern Fusion”,
+followers: “2.4M”, dish: “🌶 Signature: Miso Glazed Duck”, img:
+“https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=200&q=80”,
+bio: “Chef Aria Voss trained in Tokyo and Paris before bringing her
+unique East-meets-West philosophy to the world stage. Known for bold
+flavors and unexpected ingredient pairings, her cooking challenges
+conventions and delights palates.”, recipes: 142, awards: 8 }, { name:
+“Marco Lin”, specialty: “Italian Heritage”, followers: “1.8M”, dish: “🍝
+Signature: Truffle Carbonara”, img:
+“https://images.unsplash.com/photo-1546961342-ea5f62d5a27b?w=200&q=80”,
+bio: “Born in Bologna to a family of restaurateurs, Chef Marco Lin
+carries four generations of Italian culinary wisdom. His philosophy is
+simple: great ingredients, perfect technique, and lots of love.”,
+recipes: 98, awards: 5 }, { name: “Nadia Osei”, specialty: “West
+African”, followers: “950K”, dish: “🍲 Signature: Suya Spiced Lamb”,
+img:
+“https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=200&q=80”,
+bio: “Chef Nadia Osei is on a mission to bring West African cuisine to
+the global fine dining scene. Growing up in Accra, she learned to cook
+from her grandmother and later trained at Le Cordon Bleu.”, recipes: 76,
+awards: 4 }, { name: “Kenji Mori”, specialty: “Japanese Cuisine”,
+followers: “3.1M”, dish: “🍱 Signature: Wagyu Ramen”, img:
+“https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=200&q=80”,
+bio: “Chef Kenji Mori is Japan’s most-followed culinary personality. A
+master of both traditional washoku and modern Japanese gastronomy, he
+has earned three Michelin stars across his restaurants.”, recipes: 215,
+awards: 12 },];
 
-const chefs = [
-  { name: "Aria Voss", specialty: "Modern Fusion", followers: "2.4M", dish: "🌶 Signature: Miso Glazed Duck", img: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=200&q=80", bio: "Chef Aria Voss trained in Tokyo and Paris before bringing her unique East-meets-West philosophy to the world stage. Known for bold flavors and unexpected ingredient pairings, her cooking challenges conventions and delights palates.", recipes: 142, awards: 8 },
-  { name: "Marco Lin", specialty: "Italian Heritage", followers: "1.8M", dish: "🍝 Signature: Truffle Carbonara", img: "https://images.unsplash.com/photo-1546961342-ea5f62d5a27b?w=200&q=80", bio: "Born in Bologna to a family of restaurateurs, Chef Marco Lin carries four generations of Italian culinary wisdom. His philosophy is simple: great ingredients, perfect technique, and lots of love.", recipes: 98, awards: 5 },
-  { name: "Nadia Osei", specialty: "West African", followers: "950K", dish: "🍲 Signature: Suya Spiced Lamb", img: "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=200&q=80", bio: "Chef Nadia Osei is on a mission to bring West African cuisine to the global fine dining scene. Growing up in Accra, she learned to cook from her grandmother and later trained at Le Cordon Bleu.", recipes: 76, awards: 4 },
-  { name: "Kenji Mori", specialty: "Japanese Cuisine", followers: "3.1M", dish: "🍱 Signature: Wagyu Ramen", img: "https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=200&q=80", bio: "Chef Kenji Mori is Japan's most-followed culinary personality. A master of both traditional washoku and modern Japanese gastronomy, he has earned three Michelin stars across his restaurants.", recipes: 215, awards: 12 },
-];
+const chips = [“Chicken + lemon + garlic”, “Pasta in 20 mins”, “Vegan
+dessert ideas”, “Leftover rice recipes”]; const welcome = { role: “ai”,
+content: <>
+👋 Hello, I’m Fusion Chef!
+Tell me what ingredients you have, a cuisine you’re craving, or any
+dietary needs — I’ll craft a recipe just for you.</> };
 
-const chips = ["Chicken + lemon + garlic", "Pasta in 20 mins", "Vegan dessert ideas", "Leftover rice recipes"];
-const welcome = { role: "ai", content: <><h4>👋 Hello, I'm Fusion Chef!</h4>Tell me what ingredients you have, a cuisine you're craving, or any dietary needs — I'll craft a recipe just for you.</> };
+function toSlug(str) { return str.toLowerCase().replace(/[^a-z0-9]+/g,
+“-”).replace(/(^-|-$)/g, ““); }
 
+// ─── MAIN COMPONENT
+────────────────────────────────────────────────────────── function
+FusionChefAI() { const [slide, setSlide] = useState(0); const [liked,
+setLiked] = useState({}); const [messages, setMessages] =
+useState([welcome]); const [input, setInput] = useState(““); const
+[loading, setLoading] = useState(false); const [email, setEmail] =
+useState(”“); const [subscribed, setSubscribed] = useState(false); const
+[scrolled, setScrolled] = useState(false); const [menuOpen, setMenuOpen]
+= useState(false); const [recipeModal, setRecipeModal] = useState(null);
+const [indianPage, setIndianPage] = useState(false); const [aboutPage,
+setAboutPage] = useState(false); const [contactPage, setContactPage] =
+useState(false); const [privacyPage, setPrivacyPage] = useState(false);
+const [termsPage, setTermsPage] = useState(false); const [careersPage,
+setCareersPage] = useState(false); const [maharashtraPage,
+setMaharashtraPage] = useState(false); const [punjabPage, setPunjabPage]
+= useState(false); const [punjabCategory, setPunjabCategory] =
+useState(”All”); const [punjabSearch, setPunjabSearch] = useState(““);
+const [punjabModal, setPunjabModal] = useState(null); const
+[punjabGuidePage, setPunjabGuidePage] = useState(false); const
+[maharashtraGuidePage, setMaharashtraGuidePage] = useState(false); const
+[japaneseGuidePage, setJapaneseGuidePage] = useState(false); const
+[chineseGuidePage, setChineseGuidePage] = useState(false); const
+[thaiGuidePage, setThaiGuidePage] = useState(false); const
+[koreanGuidePage, setKoreanGuidePage] = useState(false); const
+[vietnameseGuidePage, setVietnameseGuidePage] = useState(false); const
+[indonesianPage, setIndonesianPage] = useState(false); const
+[maharashtraCategory, setMaharashtraCategory] = useState(”All”); const
+[maharashtraSearch, setMaharashtraSearch] = useState(““); const
+[maharashtraModal, setMaharashtraModal] = useState(null); const
+[cuisineExplorer, setCuisineExplorer] = useState(false); const
+[recipeDB, setRecipeDB] = useState(false); const [recipeDBCategory,
+setRecipeDBCategory] = useState(”All”); const [recipeDBCuisine,
+setRecipeDBCuisine] = useState(“All”); const [recipeDBSearch,
+setRecipeDBSearch] = useState(““); const [recipeDBDifficulty,
+setRecipeDBDifficulty] = useState(”All”); const [indianCategory,
+setIndianCategory] = useState(“All”); const [indianSearch,
+setIndianSearch] = useState(““); const [indianModal, setIndianModal] =
+useState(null); const [searchQuery, setSearchQuery] = useState(”“);
+const [searchResults, setSearchResults] = useState([]); const
+[searchModal, setSearchModal] = useState(false); const [searchLoading,
+setSearchLoading] = useState(false); const [chefModal, setChefModal] =
+useState(null); const [catModal, setCatModal] = useState(null); // ──
+Asian cuisine state ── const [chinesePage, setChinesePage] =
+useState(false); const [japanesePage, setJapanesePage] =
+useState(false); const [thaiPage, setThaiPage] = useState(false); const
+[koreanPage, setKoreanPage] = useState(false); const [vietnamesePage,
+setVietnamesePage] = useState(false); const [asianModal, setAsianModal]
+= useState(null); const [asianCategory, setAsianCategory] =
+useState(”All”); const [asianSearch, setAsianSearch] = useState(““);
+const messagesEndRef = useRef(null);
 
-function toSlug(str) {
-  return str.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-}
+// ── Asian helper ── const getAsianData = () => { if (chinesePage)
+return { data: chineseCuisineData, name: “Chinese”, flag: “🇨🇳”, color:
+“#8B1A1A”, setPage: setChinesePage }; if (japanesePage) return { data:
+japaneseCuisineData, name: “Japanese”, flag: “🇯🇵”, color: “#BC002D”,
+setPage: setJapanesePage }; if (thaiPage) return { data:
+thaiCuisineData, name: “Thai”, flag: “🇹🇭”, color: “#1a3a7a”, setPage:
+setThaiPage }; if (koreanPage) return { data: koreanCuisineData, name:
+“Korean”, flag: “🇰🇷”, color: “#003478”, setPage: setKoreanPage }; if
+(vietnamesePage) return { data: vietnameseCuisineData, name:
+“Vietnamese”, flag: “🇻🇳”, color: “#9B1B30”, setPage: setVietnamesePage
+}; if (indonesianPage) return { data: indonesianCuisineData, name:
+“Indonesian”, flag: “🇮🇩”, color: “#C0392B”, setPage: setIndonesianPage
+}; return null; }; const asianActive = getAsianData();
 
-// ─── MAIN COMPONENT ──────────────────────────────────────────────────────────
-function FusionChefAI() {
-  const [slide, setSlide] = useState(0);
-  const [liked, setLiked] = useState({});
-  const [messages, setMessages] = useState([welcome]);
-  const [input, setInput] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [recipeModal, setRecipeModal] = useState(null);
-  const [indianPage, setIndianPage] = useState(false);
-  const [aboutPage, setAboutPage] = useState(false);
-  const [contactPage, setContactPage] = useState(false);
-  const [privacyPage, setPrivacyPage] = useState(false);
-  const [termsPage, setTermsPage] = useState(false);
-  const [careersPage, setCareersPage] = useState(false);
-  const [maharashtraPage, setMaharashtraPage] = useState(false);
-  const [punjabPage, setPunjabPage] = useState(false);
-  const [punjabCategory, setPunjabCategory] = useState("All");
-  const [punjabSearch, setPunjabSearch] = useState("");
-  const [punjabModal, setPunjabModal] = useState(null);
-  const [punjabGuidePage, setPunjabGuidePage] = useState(false);
-  const [maharashtraGuidePage, setMaharashtraGuidePage] = useState(false);
-  const [japaneseGuidePage, setJapaneseGuidePage] = useState(false);
-  const [chineseGuidePage, setChineseGuidePage] = useState(false);
-  const [thaiGuidePage, setThaiGuidePage] = useState(false);
-  const [koreanGuidePage, setKoreanGuidePage] = useState(false);
-  const [vietnameseGuidePage, setVietnameseGuidePage] = useState(false);
-  const [indonesianPage, setIndonesianPage] = useState(false);
-  const [maharashtraCategory, setMaharashtraCategory] = useState("All");
-  const [maharashtraSearch, setMaharashtraSearch] = useState("");
-  const [maharashtraModal, setMaharashtraModal] = useState(null);
-  const [cuisineExplorer, setCuisineExplorer] = useState(false);
-  const [recipeDB, setRecipeDB] = useState(false);
-  const [recipeDBCategory, setRecipeDBCategory] = useState("All");
-  const [recipeDBCuisine, setRecipeDBCuisine] = useState("All");
-  const [recipeDBSearch, setRecipeDBSearch] = useState("");
-  const [recipeDBDifficulty, setRecipeDBDifficulty] = useState("All");
-  const [indianCategory, setIndianCategory] = useState("All");
-  const [indianSearch, setIndianSearch] = useState("");
-  const [indianModal, setIndianModal] = useState(null);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
-  const [searchModal, setSearchModal] = useState(false);
-  const [searchLoading, setSearchLoading] = useState(false);
-  const [chefModal, setChefModal] = useState(null);
-  const [catModal, setCatModal] = useState(null);
-  // ── Asian cuisine state ──
-  const [chinesePage, setChinesePage] = useState(false);
-  const [japanesePage, setJapanesePage] = useState(false);
-  const [thaiPage, setThaiPage] = useState(false);
-  const [koreanPage, setKoreanPage] = useState(false);
-  const [vietnamesePage, setVietnamesePage] = useState(false);
-  const [asianModal, setAsianModal] = useState(null);
-  const [asianCategory, setAsianCategory] = useState("All");
-  const [asianSearch, setAsianSearch] = useState("");
-  const messagesEndRef = useRef(null);
+useEffect(() => { injectGA(); }, []);
 
-  // ── Asian helper ──
-  const getAsianData = () => {
-    if (chinesePage) return { data: chineseCuisineData, name: "Chinese", flag: "🇨🇳", color: "#8B1A1A", setPage: setChinesePage };
-    if (japanesePage) return { data: japaneseCuisineData, name: "Japanese", flag: "🇯🇵", color: "#BC002D", setPage: setJapanesePage };
-    if (thaiPage) return { data: thaiCuisineData, name: "Thai", flag: "🇹🇭", color: "#1a3a7a", setPage: setThaiPage };
-    if (koreanPage) return { data: koreanCuisineData, name: "Korean", flag: "🇰🇷", color: "#003478", setPage: setKoreanPage };
-    if (vietnamesePage) return { data: vietnameseCuisineData, name: "Vietnamese", flag: "🇻🇳", color: "#9B1B30", setPage: setVietnamesePage };
-    if (indonesianPage) return { data: indonesianCuisineData, name: "Indonesian", flag: "🇮🇩", color: "#C0392B", setPage: setIndonesianPage };
-    return null;
-  };
-  const asianActive = getAsianData();
+useEffect(() => { const pages = [ [indianPage,“Indian
+Cuisine”],[maharashtraPage,“Maharashtra Cuisine”],[punjabPage,“Punjab
+Cuisine”], [maharashtraGuidePage,“Maharashtra
+Guide”],[punjabGuidePage,“Punjab Guide”],[japaneseGuidePage,“Japanese
+Guide”],[chineseGuidePage,“Chinese Guide”],[thaiGuidePage,“Thai
+Guide”],[koreanGuidePage,“Korean
+Guide”],[vietnameseGuidePage,“Vietnamese Guide”], [aboutPage,“About
+Us”],[contactPage,“Contact Us”],[privacyPage,“Privacy Policy”],
+[termsPage,“Terms of
+Use”],[careersPage,“Careers”],[cuisineExplorer,“Cuisine
+Explorer”],[recipeDB,“Recipe Database”], [chinesePage,“Chinese
+Cuisine”],[japanesePage,“Japanese Cuisine”],[thaiPage,“Thai Cuisine”],
+[koreanPage,“Korean Cuisine”],[vietnamesePage,“Vietnamese
+Cuisine”],[indonesianPage,“Indonesian Cuisine”], ]; const active =
+pages.find(([state]) => state); const title = active ?
+Fusion Chef – ${active[1]} : “Fusion Chef – 200+ Recipes from Every
+Corner of the World”; document.title = title; gtagEvent(“page_view”, {
+page_title: title, page_location: window.location.href }); },
+[indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,koreanGuidePage,vietnameseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage,indonesianPage]);
 
-  useEffect(() => { injectGA(); }, []);
+useEffect(() => { window.scrollTo({ top: 0, behavior: “instant” }); },
+[]); useEffect(() => { window.scrollTo({ top: 0, behavior: “instant” });
+},
+[indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,koreanGuidePage,vietnameseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage,indonesianPage]);
 
-  useEffect(() => {
-    const pages = [
-      [indianPage,"Indian Cuisine"],[maharashtraPage,"Maharashtra Cuisine"],[punjabPage,"Punjab Cuisine"],
-      [maharashtraGuidePage,"Maharashtra Guide"],[punjabGuidePage,"Punjab Guide"],[japaneseGuidePage,"Japanese Guide"],[chineseGuidePage,"Chinese Guide"],[thaiGuidePage,"Thai Guide"],[koreanGuidePage,"Korean Guide"],[vietnameseGuidePage,"Vietnamese Guide"],
-      [aboutPage,"About Us"],[contactPage,"Contact Us"],[privacyPage,"Privacy Policy"],
-      [termsPage,"Terms of Use"],[careersPage,"Careers"],[cuisineExplorer,"Cuisine Explorer"],[recipeDB,"Recipe Database"],
-      [chinesePage,"Chinese Cuisine"],[japanesePage,"Japanese Cuisine"],[thaiPage,"Thai Cuisine"],
-      [koreanPage,"Korean Cuisine"],[vietnamesePage,"Vietnamese Cuisine"],[indonesianPage,"Indonesian Cuisine"],
-    ];
-    const active = pages.find(([state]) => state);
-    const title = active ? `Fusion Chef – ${active[1]}` : "Fusion Chef – 200+ Recipes from Every Corner of the World";
-    document.title = title;
-    gtagEvent("page_view", { page_title: title, page_location: window.location.href });
-  }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,koreanGuidePage,vietnameseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage,indonesianPage]);
+const scrollToSection = (id) => { if (id === “cuisine-explorer”) {
+setCuisineExplorer(true); setRecipeDB(false); return; } if (id ===
+“recipe-db”) { setRecipeDB(true); setCuisineExplorer(false); return; }
+const el = document.getElementById(id); if (el) el.scrollIntoView({
+behavior: “smooth” }); };
 
-  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, []);
-  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [indianPage,maharashtraPage,punjabPage,maharashtraGuidePage,punjabGuidePage,japaneseGuidePage,chineseGuidePage,thaiGuidePage,koreanGuidePage,vietnameseGuidePage,aboutPage,contactPage,privacyPage,termsPage,careersPage,cuisineExplorer,recipeDB,chinesePage,japanesePage,thaiPage,koreanPage,vietnamesePage,indonesianPage]);
+useEffect(() => { const timer = setInterval(() => setSlide(s => (s + 1)
+% heroSlides.length), 5000); return () => clearInterval(timer); }, []);
 
-  const scrollToSection = (id) => {
-    if (id === "cuisine-explorer") { setCuisineExplorer(true); setRecipeDB(false); return; }
-    if (id === "recipe-db") { setRecipeDB(true); setCuisineExplorer(false); return; }
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
+useEffect(() => { const onScroll = () => setScrolled(window.scrollY >
+40); window.addEventListener(“scroll”, onScroll); return () =>
+window.removeEventListener(“scroll”, onScroll); }, []);
 
-  useEffect(() => {
-    const timer = setInterval(() => setSlide(s => (s + 1) % heroSlides.length), 5000);
-    return () => clearInterval(timer);
-  }, []);
+useEffect(() => { messagesEndRef.current?.scrollIntoView({ behavior:
+“smooth” }); }, [messages, loading]);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+useEffect(() => { const onKey = (e) => { if (e.key === “Escape”) {
+setRecipeModal(null); setChefModal(null); setCatModal(null);
+setAsianModal(null); } }; window.addEventListener(“keydown”, onKey);
+return () => window.removeEventListener(“keydown”, onKey); }, []);
 
-  useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages, loading]);
+const sendMessage = async (text) => { const query = (text ||
+input).trim(); if (!query) return; setInput(““); setMessages(m => […m, {
+role: ”user”, content: query }]); setLoading(true); try { const GROQ_KEY
+= process.env.REACT_APP_GROQ_API_KEY ||”“; const res = await
+fetch(”https://api.groq.com/openai/v1/chat/completions”, { method:
+“POST”, headers: { “Content-Type”: “application/json”, “Authorization”:
+“Bearer” + GROQ_KEY }, body: JSON.stringify({ model:
+“llama-3.3-70b-versatile”, messages: [{ role: “system”, content: “You
+are Fusion Chef, a warm and creative culinary AI. When users ask for
+recipes, respond with a catchy dish name, 5-7 key ingredients, 3-4 brief
+cooking steps, and a helpful tip. Keep it enthusiastic and under 250
+words.” }, { role: “user”, content: query }], max_tokens: 500,
+temperature: 0.8 }) }); const data = await res.json(); const reply =
+data.choices?.[0]?.message?.content || “Hmm, let me think on that…”;
+setMessages(m => […m, { role: “ai”, content: reply }]); } catch {
+setMessages(m => […m, { role: “ai”, content: “Oops! My kitchen is a bit
+busy. Please try again in a moment. 🍳” }]); } setLoading(false); };
 
-  useEffect(() => {
-    const onKey = (e) => { if (e.key === "Escape") { setRecipeModal(null); setChefModal(null); setCatModal(null); setAsianModal(null); } };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, []);
+const handleSearch = async (q) => { const query = (q ||
+searchQuery).trim(); if (!query) return; setSearchModal(true);
+setSearchLoading(true); setSearchResults([]); setSearchResults(local);
+try { const GROQ_KEY = process.env.REACT_APP_GROQ_API_KEY || ““; const
+res = await fetch(”https://api.groq.com/openai/v1/chat/completions”, {
+method: “POST”, headers: { “Content-Type”: “application/json”,
+“Authorization”: “Bearer” + GROQ_KEY }, body: JSON.stringify({ model:
+“llama-3.3-70b-versatile”, messages: [{ role: “system”, content: ‘You
+are Fusion Chef. Generate exactly 3 recipe suggestions. Respond ONLY
+with a valid JSON array: [{“title”:“…”,“chef”:“Chef Name”,“time”:“30
+min”,“difficulty”:“easy”,“ingredients”:[“item1”,“item2”,“item3”],“steps”:[“Step
+1”,“Step 2”,“Step
+3”],“img”:“https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80”,“isAI”:true}]’
+}, { role: “user”, content: “Search:” + query }], max_tokens: 1000,
+temperature: 0.7 }) }); const data = await res.json(); const text =
+data.choices?.[0]?.message?.content || “[]”; const jsonMatch =
+text.match(/[[]*]/); if (jsonMatch) { const aiRecipes =
+JSON.parse(jsonMatch[0]); setSearchResults(prev => […prev, …aiRecipes]);
+} } catch(e) { console.log(“Search error:”, e); }
+setSearchLoading(false); };
 
-  const sendMessage = async (text) => {
-    const query = (text || input).trim();
-    if (!query) return;
-    setInput("");
-    setMessages(m => [...m, { role: "user", content: query }]);
-    setLoading(true);
-    try {
-      const GROQ_KEY = process.env.REACT_APP_GROQ_API_KEY || "";
-      const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_KEY },
-        body: JSON.stringify({ model: "llama-3.3-70b-versatile", messages: [{ role: "system", content: "You are Fusion Chef, a warm and creative culinary AI. When users ask for recipes, respond with a catchy dish name, 5-7 key ingredients, 3-4 brief cooking steps, and a helpful tip. Keep it enthusiastic and under 250 words." }, { role: "user", content: query }], max_tokens: 500, temperature: 0.8 })
-      });
-      const data = await res.json();
-      const reply = data.choices?.[0]?.message?.content || "Hmm, let me think on that...";
-      setMessages(m => [...m, { role: "ai", content: reply }]);
-    } catch { setMessages(m => [...m, { role: "ai", content: "Oops! My kitchen is a bit busy. Please try again in a moment. 🍳" }]); }
-    setLoading(false);
-  };
+const navLinks = [ { label: “Global Cuisine”, id: “cuisines” },
 
-  const handleSearch = async (q) => {
-    const query = (q || searchQuery).trim();
-    if (!query) return;
-    setSearchModal(true); setSearchLoading(true); setSearchResults([]);
-    const local = trending.filter(r => r.title.toLowerCase().includes(query.toLowerCase()) || r.chef.toLowerCase().includes(query.toLowerCase())).map(r => ({ ...r, isAI: false }));
-    setSearchResults(local);
-    try {
-      const GROQ_KEY = process.env.REACT_APP_GROQ_API_KEY || "";
-      const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_KEY },
-        body: JSON.stringify({ model: "llama-3.3-70b-versatile", messages: [{ role: "system", content: 'You are Fusion Chef. Generate exactly 3 recipe suggestions. Respond ONLY with a valid JSON array: [{"title":"...","chef":"Chef Name","time":"30 min","difficulty":"easy","ingredients":["item1","item2","item3"],"steps":["Step 1","Step 2","Step 3"],"img":"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80","isAI":true}]' }, { role: "user", content: "Search: " + query }], max_tokens: 1000, temperature: 0.7 })
-      });
-      const data = await res.json();
-      const text = data.choices?.[0]?.message?.content || "[]";
-      const jsonMatch = text.match(/\[[\s\S]*\]/);
-      if (jsonMatch) { const aiRecipes = JSON.parse(jsonMatch[0]); setSearchResults(prev => [...prev, ...aiRecipes]); }
-    } catch(e) { console.log("Search error:", e); }
-    setSearchLoading(false);
-  };
-
-  const navLinks = [
-    { label: "Global Cuisine", id: "cuisines" },
-    
     { label: "Recipes", id: "recipe-db" },
-  ];
 
-  // ── RECIPE CARD emoji/gradient helpers ──
-  const cardEmojis = {"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Beverages":"☕","Tea":"🍵","Coffee":"☕","Salads":"🥗","Sides":"🫙"};
-  const cardGradients = {"Appetizers":"#E8621A, #C9922A","Soups":"#4A7C59, #2E7D32","Main Courses":"#C0392B, #E8621A","Breads":"#C9922A, #8B4513","Rice Preparations":"#4A7C59, #C9922A","Desserts":"#9B59B6, #E8621A","Tea":"#1a6b3c, #2E7D32","Coffee":"#4a2c0a, #8B4513","Salads":"#2E7D32, #4A7C59","Sides":"#C9922A, #E8621A"};
+];
 
-  // ── SHARED DISH MODAL (used by Indian/Maharashtra/Punjab/Asian) ──
-  const renderDishModal = (dish, onClose, cuisineName) => {
-    if (!dish) return null;
-    const emojis = cardEmojis;
-    return (
-      <div className="modal-overlay" onClick={onClose}>
+// ── RECIPE CARD emoji/gradient helpers ── const cardEmojis =
+{“Appetizers”:“🥟”,“Soups”:“🍜”,“Main Courses”:“🍛”,“Breads”:“🫓”,“Rice
+Preparations”:“🍚”,“Desserts”:“🍮”,“Beverages”:“☕”,“Tea”:“🍵”,“Coffee”:“☕”,“Salads”:“🥗”,“Sides”:“🫙”};
+const cardGradients = {“Appetizers”:“#E8621A, #C9922A”,“Soups”:“#4A7C59,
+#2E7D32”,“Main Courses”:“#C0392B, #E8621A”,“Breads”:“#C9922A,
+#8B4513”,“Rice Preparations”:“#4A7C59, #C9922A”,“Desserts”:“#9B59B6,
+#E8621A”,“Tea”:“#1a6b3c, #2E7D32”,“Coffee”:“#4a2c0a,
+#8B4513”,“Salads”:“#2E7D32, #4A7C59”,“Sides”:“#C9922A, #E8621A”};
+
+// ── SHARED DISH MODAL (used by Indian/Maharashtra/Punjab/Asian) ──
+const renderDishModal = (dish, onClose, cuisineName) => { if (!dish)
+return null; const emojis = cardEmojis; return (
+
         <div className="modal-wrapper" onClick={e => e.stopPropagation()}>
           <button className="modal-close" onClick={onClose}>✕</button>
           <div className="modal">
@@ -603,22 +701,20 @@ function FusionChefAI() {
         </div>
       </div>
     );
-  };
 
-  // ── SHARED CUISINE PAGE RENDERER ──
-  const renderCuisinePage = ({ data, name, flag, color, setPage, category, setCategory, search, setSearch, modal, setModal, categories, backLabel, guideBtn }) => {
-    const emojis = cardEmojis;
-    const grads = cardGradients;
-    const filtered = data.filter(d => {
-      const matchCat = category === "All" || d.category === category;
-      const matchSearch = !search ||
-        d.dish_name.toLowerCase().includes(search.toLowerCase()) ||
-        (d.tags||[]).some(t=>t.toLowerCase().includes(search.toLowerCase())) ||
-        (d.flavor_profile||[]).some(f=>f.toLowerCase().includes(search.toLowerCase()));
-      return matchCat && matchSearch;
-    });
-    return (
-      <div className="indian-page">
+};
+
+// ── SHARED CUISINE PAGE RENDERER ── const renderCuisinePage = ({ data,
+name, flag, color, setPage, category, setCategory, search, setSearch,
+modal, setModal, categories, backLabel, guideBtn }) => { const emojis =
+cardEmojis; const grads = cardGradients; const filtered = data.filter(d
+=> { const matchCat = category === “All” || d.category === category;
+const matchSearch = !search ||
+d.dish_name.toLowerCase().includes(search.toLowerCase()) ||
+(d.tags||[]).some(t=>t.toLowerCase().includes(search.toLowerCase())) ||
+(d.flavor_profile||[]).some(f=>f.toLowerCase().includes(search.toLowerCase()));
+return matchCat && matchSearch; }); return (
+
         <div className="indian-header" style={{background: color || "var(--charcoal)"}}>
           <button className="indian-back" onClick={()=>{setPage(false);setCategory("All");setSearch("");setModal(null);}}>{backLabel||"← Back"}</button>
           {guideBtn && guideBtn}
@@ -665,12 +761,10 @@ function FusionChefAI() {
         {modal && renderDishModal(modal, ()=>setModal(null), name)}
       </div>
     );
-  };
 
-  return (
-    <>
-      <style>{styles}</style>
+};
 
+return ( <>
       {/* ── MODALS ── */}
       {recipeModal && (
         <div className="modal-overlay" onClick={()=>setRecipeModal(null)}>
@@ -1999,38 +2093,14 @@ function FusionChefAI() {
 
       {/* ── NAV ── */}
     <nav className={`nav${scrolled?" scrolled":""}`}>
-  <div
-    className="nav-logo"
-    onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}
-  >
-    <img
-      src="/logo-wide.png"
-      alt="Fusion Chef"
-      style={{height:"64px",width:"280px",objectFit:"contain"}}
-    />
-  </div>
 
-  <ul className="nav-links">
-    {navLinks.map(l=>(
-      <li key={l.label}>
-        <a onClick={()=>scrollToSection(l.id)}>
-          {l.label}
-        </a>
-      </li>
-    ))}
-    <li>
-      <a onClick={()=>setAboutPage(true)}>
-        About Us
-      </a>
-    </li>
-    <li>
-      <a onClick={()=>setContactPage(true)}>
-        Contact
-      </a>
-    </li>
-  </ul>
+window.scrollTo({top:0,behavior:“smooth”})} >
 
-  <div className="nav-right">
+{navLinks.map(l=>(
+scrollToSection(l.id)}> {l.label}
+))}
+setAboutPage(true)}> About Us
+setContactPage(true)}> Contact
     <button
       className="hamburger"
       onClick={()=>setMenuOpen(m=>!m)}
@@ -2039,16 +2109,9 @@ function FusionChefAI() {
       <span/>
       <span/>
     </button>
-  </div>
-</nav>
 
-{menuOpen && (
-<div className={`mobile-menu ${menuOpen ? "active" : ""}`}>    <a onClick={()=>{
-      scrollToSection("trending");
-      setMenuOpen(false);
-    }}>
-      Trending
-    </a>
+{menuOpen && ( <div className={mobile-menu ${menuOpen ? "active" : ""}}>
+{ setMenuOpen(false); }}> Trending
 
     <a onClick={()=>{
       scrollToSection("recipe-db");
@@ -2070,7 +2133,7 @@ function FusionChefAI() {
     }}>
       Contact
     </a>
-  </div>
+
 )}
 
       {/* ── HERO ── */}
@@ -2373,18 +2436,10 @@ function FusionChefAI() {
       )}
       
       {contactPage && (
-  <div
-    style={{
-      position: "fixed",
-      inset: 0,
-      background: "#FFF8EE",
-      zIndex: 200,
-      overflowY: "auto",
-      fontFamily: "'DM Sans', sans-serif"
-    }}
-  >
-    <ContactPage />
-  </div>
+
+<div style={{ position: “fixed”, inset: 0, background: “#FFF8EE”,
+zIndex: 200, overflowY: “auto”, fontFamily: “‘DM Sans’, sans-serif” }} >
+
 )}
 
       {/* ── FOOTER ── */}
@@ -2398,7 +2453,7 @@ function FusionChefAI() {
             </div>
           </div>
           <div className="footer-col"><h4>Recipes</h4><ul>{["Breakfast","Lunch","Dinner","Baking","Vegetarian","Healthy"].map(l=><li key={l}><a href="#" onClick={()=>scrollToSection("categories")}>{l}</a></li>)}</ul></div>
-          <div className="footer-col"><h4>Discover</h4><ul>{[["Trending","trending"],["Recipes","recipe-db"]].map(([l,id])=><li key={l}><a href="#" onClick={()=>scrollToSection(id)}>{l}</a></li>)}</ul></div>
+          <div className="footer-col"><h4>Discover</h4><ul>{[["Recipes","recipe-db"]].map(([l,id])=><li key={l}><a href="#" onClick={()=>scrollToSection(id)}>{l}</a></li>)}</ul></div>
           <div className="footer-col"><h4>Company</h4><ul>{[["About Us",()=>setAboutPage(true)],["Careers",()=>{}],["Press",()=>{}],["Contact",()=>setContactPage(true)],["Privacy",()=>{}],["Terms",()=>{}]].map(([l,fn])=><li key={l}><a href="#" onClick={e=>{e.preventDefault();fn();}}>{l}</a></li>)}</ul></div>
         </div>
         <div className="footer-bottom">
@@ -2406,80 +2461,154 @@ function FusionChefAI() {
         </div>
       </footer>
     </>
-  );
-}
 
+); }
 
-// ─── INDIVIDUAL RECIPE PAGE ───────────────────────────────────────────────────
-function RecipePage({ allData }) {
-  const { cuisine, category, dish } = useParams();
-  const navigate = useNavigate();
+// ─── INDIVIDUAL RECIPE PAGE
+─────────────────────────────────────────────────── function
+RecipePage({ allData }) { const { cuisine, category, dish } =
+useParams(); const navigate = useNavigate();
 
-  const dataSet = allData[cuisine] || [
-  { dish_name:"Mi Quang (Turmeric Noodles)", state:"Vietnam", cuisine:"Vietnamese", category:"Main Courses", difficulty_level:"Medium", prep_time_minutes:30, cook_time_minutes:30, total_time_minutes:60, servings:4, short_description:"Central Vietnam's most beloved noodle dish — wide turmeric-yellow noodles with pork, prawns and a small amount of flavourful broth, topped with peanuts and sesame crackers.", ingredients:[{name:"Wide rice noodles",quantity:"400",unit:"g"},{name:"Pork ribs",quantity:"300",unit:"g"},{name:"Prawns",quantity:"200",unit:"g"},{name:"Turmeric",quantity:"2",unit:"tsp"},{name:"Shallots",quantity:"4",unit:"pieces"},{name:"Garlic",quantity:"4",unit:"cloves"},{name:"Fish sauce",quantity:"3",unit:"tbsp"},{name:"Roasted peanuts",quantity:"4",unit:"tbsp"},{name:"Sesame crackers",quantity:"4",unit:"pieces"},{name:"Fresh herbs",quantity:"1",unit:"bunch"}], preparation_steps:["Simmer pork ribs to make broth. Season with fish sauce.","Cook prawns. Fry shallots until golden.","Cook noodles with turmeric — they should turn yellow.","Add very small amount of broth to noodles — this is not a soup.","Arrange pork ribs and prawns on top.","Top with fried shallots, peanuts and herbs.","Place sesame cracker on side.","Add chilli and lime to taste."], chef_notes:"Mi quang uses minimal broth unlike pho — just enough to flavour the noodles. The sesame cracker added at serving is essential for authentic mi quang texture.", serving_suggestions:"Serve with sesame crackers, fresh herbs, lime and chilli.", nutrition_estimate:{calories:"425",protein_g:"26",carbohydrates_g:"58",fat_g:"12"}, tags:["Turmeric Noodles","Central Vietnam","Quang Nam","Unique"], img:"https://images.unsplash.com/photo-1582878826629-33b7f57b2a3c?w=400&q=80" },
-  { dish_name:"Goi Bap Chuoi (Banana Flower Salad)", state:"Vietnam", cuisine:"Vietnamese", category:"Salads", difficulty_level:"Medium", prep_time_minutes:30, cook_time_minutes:10, total_time_minutes:40, servings:4, short_description:"A crunchy Vietnamese banana blossom salad with pork, prawns and roasted peanuts — uniquely textured and flavoured, a staple of Vietnamese home cooking.", ingredients:[{name:"Banana blossom",quantity:"1",unit:"large"},{name:"Cooked pork",quantity:"150",unit:"g"},{name:"Cooked prawns",quantity:"150",unit:"g"},{name:"Roasted peanuts",quantity:"4",unit:"tbsp"},{name:"Fresh herbs",quantity:"1",unit:"bunch"},{name:"Fried shallots",quantity:"3",unit:"tbsp"},{name:"Lime juice",quantity:"4",unit:"tbsp"},{name:"Fish sauce",quantity:"3",unit:"tbsp"},{name:"Sugar",quantity:"2",unit:"tbsp"},{name:"Chilli",quantity:"2",unit:"pieces"}], preparation_steps:["Peel banana blossom to inner tender layers.","Slice thinly and soak in acidulated water immediately.","Squeeze very dry.","Slice pork thinly.","Make dressing: lime juice, fish sauce, sugar and chilli.","Combine banana blossom, pork and prawns.","Toss with dressing and herbs.","Top with peanuts and fried shallots."], chef_notes:"Banana blossom must go into acidulated water immediately after slicing to prevent browning. Squeeze thoroughly before dressing.", serving_suggestions:"Serve as a starter or alongside rice.", nutrition_estimate:{calories:"225",protein_g:"18",carbohydrates_g:"18",fat_g:"8"}, tags:["Banana Blossom","Unique","Vietnamese","Fresh"], img:"https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80" },
-  { dish_name:"Chè Chuối (Banana Tapioca Pudding)", state:"Vietnam", cuisine:"Vietnamese", category:"Desserts", difficulty_level:"Easy", prep_time_minutes:10, cook_time_minutes:20, total_time_minutes:30, servings:4, short_description:"A warm Vietnamese banana pudding with tapioca pearls in pandan coconut milk — humble, comforting and deeply satisfying. A beloved Vietnamese everyday dessert.", ingredients:[{name:"Ripe bananas",quantity:"6",unit:"medium"},{name:"Tapioca pearls",quantity:"80",unit:"g"},{name:"Coconut milk",quantity:"400",unit:"ml"},{name:"Sugar",quantity:"60",unit:"g"},{name:"Salt",quantity:"0.5",unit:"tsp"},{name:"Pandan leaves",quantity:"3",unit:"pieces"},{name:"Roasted sesame seeds",quantity:"2",unit:"tbsp"}], preparation_steps:["Cook tapioca pearls until transparent. Drain.","Slice bananas into rounds.","Heat coconut milk with pandan leaves, sugar and salt.","Add tapioca pearls.","Add banana slices — cook 3 minutes only.","Remove pandan leaves.","Serve warm topped with sesame seeds."], chef_notes:"Add bananas at the very end — overcooked bananas turn mushy. The pandan leaves infuse the coconut milk with a floral fragrance that is essential.", serving_suggestions:"Serve warm or at room temperature in bowls.", nutrition_estimate:{calories:"285",protein_g:"3",carbohydrates_g:"52",fat_g:"10"}, tags:["Banana","Tapioca","Comfort","Vietnamese Dessert"], img:"https://images.unsplash.com/photo-1558024920-b41e1887dc32?w=400&q=80" },
-];
-  const recipe = dataSet.find(
-    r => toSlug(r.dish_name) === dish && toSlug(r.category) === category
-  );
+const dataSet = allData[cuisine] || [ { dish_name:“Mi Quang (Turmeric
+Noodles)”, state:“Vietnam”, cuisine:“Vietnamese”, category:“Main
+Courses”, difficulty_level:“Medium”, prep_time_minutes:30,
+cook_time_minutes:30, total_time_minutes:60, servings:4,
+short_description:“Central Vietnam’s most beloved noodle dish — wide
+turmeric-yellow noodles with pork, prawns and a small amount of
+flavourful broth, topped with peanuts and sesame crackers.”,
+ingredients:[{name:“Wide rice
+noodles”,quantity:“400”,unit:“g”},{name:“Pork
+ribs”,quantity:“300”,unit:“g”},{name:“Prawns”,quantity:“200”,unit:“g”},{name:“Turmeric”,quantity:“2”,unit:“tsp”},{name:“Shallots”,quantity:“4”,unit:“pieces”},{name:“Garlic”,quantity:“4”,unit:“cloves”},{name:“Fish
+sauce”,quantity:“3”,unit:“tbsp”},{name:“Roasted
+peanuts”,quantity:“4”,unit:“tbsp”},{name:“Sesame
+crackers”,quantity:“4”,unit:“pieces”},{name:“Fresh
+herbs”,quantity:“1”,unit:“bunch”}], preparation_steps:[“Simmer pork ribs
+to make broth. Season with fish sauce.”,“Cook prawns. Fry shallots until
+golden.”,“Cook noodles with turmeric — they should turn yellow.”,“Add
+very small amount of broth to noodles — this is not a soup.”,“Arrange
+pork ribs and prawns on top.”,“Top with fried shallots, peanuts and
+herbs.”,“Place sesame cracker on side.”,“Add chilli and lime to
+taste.”], chef_notes:“Mi quang uses minimal broth unlike pho — just
+enough to flavour the noodles. The sesame cracker added at serving is
+essential for authentic mi quang texture.”, serving_suggestions:“Serve
+with sesame crackers, fresh herbs, lime and chilli.”,
+nutrition_estimate:{calories:“425”,protein_g:“26”,carbohydrates_g:“58”,fat_g:“12”},
+tags:[“Turmeric Noodles”,“Central Vietnam”,“Quang Nam”,“Unique”],
+img:“https://images.unsplash.com/photo-1582878826629-33b7f57b2a3c?w=400&q=80”
+}, { dish_name:“Goi Bap Chuoi (Banana Flower Salad)”, state:“Vietnam”,
+cuisine:“Vietnamese”, category:“Salads”, difficulty_level:“Medium”,
+prep_time_minutes:30, cook_time_minutes:10, total_time_minutes:40,
+servings:4, short_description:“A crunchy Vietnamese banana blossom salad
+with pork, prawns and roasted peanuts — uniquely textured and flavoured,
+a staple of Vietnamese home cooking.”, ingredients:[{name:“Banana
+blossom”,quantity:“1”,unit:“large”},{name:“Cooked
+pork”,quantity:“150”,unit:“g”},{name:“Cooked
+prawns”,quantity:“150”,unit:“g”},{name:“Roasted
+peanuts”,quantity:“4”,unit:“tbsp”},{name:“Fresh
+herbs”,quantity:“1”,unit:“bunch”},{name:“Fried
+shallots”,quantity:“3”,unit:“tbsp”},{name:“Lime
+juice”,quantity:“4”,unit:“tbsp”},{name:“Fish
+sauce”,quantity:“3”,unit:“tbsp”},{name:“Sugar”,quantity:“2”,unit:“tbsp”},{name:“Chilli”,quantity:“2”,unit:“pieces”}],
+preparation_steps:[“Peel banana blossom to inner tender layers.”,“Slice
+thinly and soak in acidulated water immediately.”,“Squeeze very
+dry.”,“Slice pork thinly.”,“Make dressing: lime juice, fish sauce, sugar
+and chilli.”,“Combine banana blossom, pork and prawns.”,“Toss with
+dressing and herbs.”,“Top with peanuts and fried shallots.”],
+chef_notes:“Banana blossom must go into acidulated water immediately
+after slicing to prevent browning. Squeeze thoroughly before dressing.”,
+serving_suggestions:“Serve as a starter or alongside rice.”,
+nutrition_estimate:{calories:“225”,protein_g:“18”,carbohydrates_g:“18”,fat_g:“8”},
+tags:[“Banana Blossom”,“Unique”,“Vietnamese”,“Fresh”],
+img:“https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80”
+}, { dish_name:“Chè Chuối (Banana Tapioca Pudding)”, state:“Vietnam”,
+cuisine:“Vietnamese”, category:“Desserts”, difficulty_level:“Easy”,
+prep_time_minutes:10, cook_time_minutes:20, total_time_minutes:30,
+servings:4, short_description:“A warm Vietnamese banana pudding with
+tapioca pearls in pandan coconut milk — humble, comforting and deeply
+satisfying. A beloved Vietnamese everyday dessert.”,
+ingredients:[{name:“Ripe
+bananas”,quantity:“6”,unit:“medium”},{name:“Tapioca
+pearls”,quantity:“80”,unit:“g”},{name:“Coconut
+milk”,quantity:“400”,unit:“ml”},{name:“Sugar”,quantity:“60”,unit:“g”},{name:“Salt”,quantity:“0.5”,unit:“tsp”},{name:“Pandan
+leaves”,quantity:“3”,unit:“pieces”},{name:“Roasted sesame
+seeds”,quantity:“2”,unit:“tbsp”}], preparation_steps:[“Cook tapioca
+pearls until transparent. Drain.”,“Slice bananas into rounds.”,“Heat
+coconut milk with pandan leaves, sugar and salt.”,“Add tapioca
+pearls.”,“Add banana slices — cook 3 minutes only.”,“Remove pandan
+leaves.”,“Serve warm topped with sesame seeds.”], chef_notes:“Add
+bananas at the very end — overcooked bananas turn mushy. The pandan
+leaves infuse the coconut milk with a floral fragrance that is
+essential.”, serving_suggestions:“Serve warm or at room temperature in
+bowls.”,
+nutrition_estimate:{calories:“285”,protein_g:“3”,carbohydrates_g:“52”,fat_g:“10”},
+tags:[“Banana”,“Tapioca”,“Comfort”,“Vietnamese Dessert”],
+img:“https://images.unsplash.com/photo-1558024920-b41e1887dc32?w=400&q=80”
+},]; const recipe = dataSet.find( r => toSlug(r.dish_name) === dish &&
+toSlug(r.category) === category );
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
-    if (!recipe) return;
-    const BASE_URL = "https://fusionchefy.vercel.app";
-    const pageUrl = `${BASE_URL}/cuisine/${cuisine}/${category}/${dish}`;
-    const title = `${recipe.dish_name} Recipe – Authentic ${cuisine.charAt(0).toUpperCase()+cuisine.slice(1)} Cuisine | Fusion Chef`;
-    const description = recipe.short_description || `Learn how to make authentic ${recipe.dish_name} from ${cuisine} cuisine.`;
-    document.title = title;
-    const setMeta = (attr, key, value) => {
-      let el = document.querySelector(`meta[${attr}="${key}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute(attr, key); document.head.appendChild(el); }
-      el.setAttribute("content", value);
-    };
-    setMeta("name","description",description);
-    setMeta("property","og:title",title);
-    setMeta("property","og:description",description);
-    setMeta("property","og:image",recipe.img||`${BASE_URL}/og-image.jpg`);
-    setMeta("property","og:url",pageUrl);
-    setMeta("property","og:type","article");
-    let canonical = document.querySelector("link[rel='canonical']");
-    if (!canonical) { canonical = document.createElement("link"); canonical.setAttribute("rel","canonical"); document.head.appendChild(canonical); }
-    canonical.setAttribute("href", pageUrl);
-    const schema = {
-      "@context":"https://schema.org","@type":"Recipe",
-      "name":recipe.dish_name,"description":description,
-      "image":[recipe.img||""],"author":{"@type":"Organization","name":"Fusion Chef","url":BASE_URL},
-      "prepTime":`PT${recipe.prep_time_minutes}M`,"cookTime":`PT${recipe.cook_time_minutes}M`,
-      "totalTime":`PT${recipe.prep_time_minutes+recipe.cook_time_minutes}M`,
-      "recipeYield":`${recipe.servings} servings`,"recipeCategory":recipe.category,
-      "recipeCuisine":cuisine.charAt(0).toUpperCase()+cuisine.slice(1),
-      "recipeIngredient":(recipe.ingredients||[]).map(i=>`${i.quantity} ${i.unit} ${i.name}`.trim()),
-      "recipeInstructions":(recipe.preparation_steps||[]).map((step,idx)=>({ "@type":"HowToStep","position":idx+1,"text":step })),
-    };
-    let schemaEl = document.getElementById("recipe-schema");
-    if (!schemaEl) { schemaEl = document.createElement("script"); schemaEl.id="recipe-schema"; schemaEl.type="application/ld+json"; document.head.appendChild(schemaEl); }
-    schemaEl.textContent = JSON.stringify(schema);
-    gtagEvent("page_view", { page_title: title, page_location: pageUrl });
-    return () => { const s = document.getElementById("recipe-schema"); if(s) s.remove(); };
-  }, [recipe]);
+useEffect(() => { window.scrollTo({ top: 0, behavior: “instant” }); if
+(!recipe) return; const BASE_URL = “https://fusionchefy.vercel.app”;
+const pageUrl = ${BASE_URL}/cuisine/${cuisine}/${category}/${dish};
+const title =
+${recipe.dish_name} Recipe – Authentic ${cuisine.charAt(0).toUpperCase()+cuisine.slice(1)} Cuisine | Fusion Chef;
+const description = recipe.short_description ||
+Learn how to make authentic ${recipe.dish_name} from ${cuisine} cuisine.;
+document.title = title; const setMeta = (attr, key, value) => { let el =
+document.querySelector(meta[${attr}="${key}"]); if (!el) { el =
+document.createElement(“meta”); el.setAttribute(attr, key);
+document.head.appendChild(el); } el.setAttribute(“content”, value); };
+setMeta(“name”,“description”,description);
+setMeta(“property”,“og:title”,title);
+setMeta(“property”,“og:description”,description);
+setMeta(“property”,“og:image”,recipe.img||${BASE_URL}/og-image.jpg);
+setMeta(“property”,“og:url”,pageUrl);
+setMeta(“property”,“og:type”,“article”); let canonical =
+document.querySelector(“link[rel=‘canonical’]”); if (!canonical) {
+canonical = document.createElement(“link”);
+canonical.setAttribute(“rel”,“canonical”);
+document.head.appendChild(canonical); } canonical.setAttribute(“href”,
+pageUrl); const schema = {
+“@context”:“https://schema.org”,“@type”:“Recipe”,
+“name”:recipe.dish_name,“description”:description,
+“image”:[recipe.img||“”],“author”:{“@type”:“Organization”,“name”:“Fusion
+Chef”,“url”:BASE_URL},
+“prepTime”:PT${recipe.prep_time_minutes}M,“cookTime”:PT${recipe.cook_time_minutes}M,
+“totalTime”:PT${recipe.prep_time_minutes+recipe.cook_time_minutes}M,
+“recipeYield”:${recipe.servings} servings,“recipeCategory”:recipe.category,
+“recipeCuisine”:cuisine.charAt(0).toUpperCase()+cuisine.slice(1),
+“recipeIngredient”:(recipe.ingredients||[]).map(i=>${i.quantity} ${i.unit} ${i.name}.trim()),
+“recipeInstructions”:(recipe.preparation_steps||[]).map((step,idx)=>({
+“@type”:“HowToStep”,“position”:idx+1,“text”:step })), }; let schemaEl =
+document.getElementById(“recipe-schema”); if (!schemaEl) { schemaEl =
+document.createElement(“script”); schemaEl.id=“recipe-schema”;
+schemaEl.type=“application/ld+json”;
+document.head.appendChild(schemaEl); } schemaEl.textContent =
+JSON.stringify(schema); gtagEvent(“page_view”, { page_title: title,
+page_location: pageUrl }); return () => { const s =
+document.getElementById(“recipe-schema”); if(s) s.remove(); }; },
+[recipe]);
 
-  if (!recipe) {
-    return (
-      <div style={{minHeight:"100vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",background:"#FFF8EE",fontFamily:"'DM Sans',sans-serif"}}>
-        <div style={{fontSize:"4rem",marginBottom:"1rem"}}>🍽</div>
+if (!recipe) { return ( <div
+style={{minHeight:“100vh”,display:“flex”,flexDirection:“column”,alignItems:“center”,justifyContent:“center”,background:“#FFF8EE”,fontFamily:“‘DM
+Sans’,sans-serif”}}>
+
+🍽
+
         <h2 style={{fontFamily:"'Playfair Display',serif",marginBottom:"0.5rem"}}>Recipe not found</h2>
         <p style={{color:"#7A6A55",marginBottom:"1.5rem"}}>This dish might have moved or doesn't exist yet.</p>
         <button onClick={()=>{window.history.length>1?navigate(-1):navigate("/")}} style={{background:"#E8621A",color:"white",border:"none",padding:"0.8rem 2rem",borderRadius:"24px",cursor:"pointer",fontFamily:"'DM Sans',sans-serif",fontWeight:600}}>← Back to Fusion Chef</button>
       </div>
     );
-  }
 
-  const emojis = {"Appetizers":"🥟","Soups":"🍜","Main Courses":"🍛","Breads":"🫓","Rice Preparations":"🍚","Desserts":"🍮","Beverages":"☕","Tea":"🍵","Coffee":"☕","Salads":"🥗","Sides":"🫙"};
+}
 
-  return (
-    <div style={{minHeight:"100vh",background:"#FFF8EE",fontFamily:"'DM Sans',sans-serif"}}>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap');:root{--saffron:#E8621A;--saffron-light:#F47B35;--cream:#FFF8EE;--cream-dark:#F5EDDB;--charcoal:#1C1C1C;--text-muted:#7A6A55;--green:#4A7C59;--gold:#C9922A;}`}</style>
+const emojis = {“Appetizers”:“🥟”,“Soups”:“🍜”,“Main
+Courses”:“🍛”,“Breads”:“🫓”,“Rice
+Preparations”:“🍚”,“Desserts”:“🍮”,“Beverages”:“☕”,“Tea”:“🍵”,“Coffee”:“☕”,“Salads”:“🥗”,“Sides”:“🫙”};
+
+return ( <div
+style={{minHeight:“100vh”,background:“#FFF8EE”,fontFamily:“‘DM
+Sans’,sans-serif”}}>
       <div style={{background:"#1C1C1C",padding:"1rem 2rem",display:"flex",alignItems:"center",gap:"1rem",position:"sticky",top:0,zIndex:10}}>
         <button onClick={()=>{window.history.length>1?navigate(-1):navigate("/")}} style={{background:"transparent",border:"2px solid rgba(255,255,255,0.3)",color:"white",padding:"0.4rem 1rem",borderRadius:"24px",cursor:"pointer",fontFamily:"'DM Sans',sans-serif",fontSize:"0.85rem"}}>← Back</button>
         <span style={{color:"#E8621A",fontSize:"1.4rem"}}>🍴</span>
@@ -2591,32 +2720,16 @@ function RecipePage({ allData }) {
         </div>
       </div>
     </div>
-  );
-}
 
-// ─── ROOT APP WITH ROUTER ─────────────────────────────────────────────────────
-function AppWithRouter() {
-  const allData = {
-    indian: indianCuisineData,
-    maharashtra: maharashtraCuisineData,
-    punjab: punjabCuisineData,
-    chinese: chineseCuisineData,
-    japanese: japaneseCuisineData,
-    thai: thaiCuisineData,
-    korean: koreanCuisineData,
-    vietnamese: vietnameseCuisineData,
-    indonesian: indonesianCuisineData,
-  };
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<FusionChefAI />} />
-        <Route path="/cuisine/:cuisine/:category/:dish" element={<RecipePage allData={allData} />} />
-        <Route path="*" element={<FusionChefAI />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
+); }
 
-export { toSlug };
-export default AppWithRouter;
+// ─── ROOT APP WITH ROUTER
+───────────────────────────────────────────────────── function
+AppWithRouter() { const allData = { indian: indianCuisineData,
+maharashtra: maharashtraCuisineData, punjab: punjabCuisineData, chinese:
+chineseCuisineData, japanese: japaneseCuisineData, thai:
+thaiCuisineData, korean: koreanCuisineData, vietnamese:
+vietnameseCuisineData, indonesian: indonesianCuisineData, }; return ( }
+/> } /> } /> ); }
+
+export { toSlug }; export default AppWithRouter;
