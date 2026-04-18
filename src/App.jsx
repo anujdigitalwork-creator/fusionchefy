@@ -1,12 +1,11 @@
-import React, { useState, useEffect, useRef } from “react”; import {
-BrowserRouter, Routes, Route, useParams, useNavigate } from
-“react-router-dom”; import { indianCuisineData, maharashtraCuisineData,
-punjabCuisineData, chineseCuisineData } from “./indianData.js”; import {
-japaneseCuisineData, thaiCuisineData } from “./asianData.js”; import {
-koreanCuisineData } from “./koreanData.js”; import {
-vietnameseCuisineData } from “./vietnameseData.js”; import {
-indonesianCuisineData } from "./indonesianData.js”; import ContactPage
-from “./contact.jsx”;
+import React, { useState, useEffect, useRef } from "react";
+import { BrowserRouter, Routes, Route, useParams, useNavigate } from "react-router-dom";
+import { indianCuisineData, maharashtraCuisineData, punjabCuisineData, chineseCuisineData } from "./indianData.js";
+import { japaneseCuisineData, thaiCuisineData } from "./asianData.js";
+import { koreanCuisineData } from "./koreanData.js";
+import { vietnameseCuisineData } from "./vietnameseData.js";
+import { indonesianCuisineData } from "./indonesianData.js";
+import ContactPage from "./contact.jsx";
 
 const GA_ID = “G-6MVKQHR38Y”; function injectGA() { if
 (document.getElementById(“ga-script”)) return; const s1 =
