@@ -5,7 +5,7 @@ punjabCuisineData, chineseCuisineData } from “./indianData.js”; import {
 japaneseCuisineData, thaiCuisineData } from “./asianData.js”; import {
 koreanCuisineData } from “./koreanData.js”; import {
 vietnameseCuisineData } from “./vietnameseData.js”; import {
-indonesianCuisineData } from “./indonesianData.js”; import ContactPage
+indonesianCuisineData } from "./indonesianData.js”; import ContactPage
 from “./contact.jsx”;
 
 const GA_ID = “G-6MVKQHR38Y”; function injectGA() { if
