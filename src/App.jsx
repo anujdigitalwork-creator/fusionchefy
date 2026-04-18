@@ -543,7 +543,7 @@ function FusionChefAI() {
   };
 
   const navLinks = [
-    { label: "Trending", id: "trending" },
+    { label: "Global Cuisine", id: "cuisines" },
     
     { label: "Recipes", id: "recipe-db" },
   ];
