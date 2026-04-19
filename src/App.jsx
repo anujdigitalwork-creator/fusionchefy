@@ -2044,10 +2044,10 @@ function FusionChefAI() {
 
 {menuOpen && (
 <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>    <a onClick={()=>{
-      scrollToSection("trending");
+      scrollToSection("cuisine-explorer");
       setMenuOpen(false);
     }}>
-      Trending
+      Global Cuisine
     </a>
 
     <a onClick={()=>{
@@ -2170,7 +2170,7 @@ function FusionChefAI() {
           </div>
           <div className="faq-item">
             <h3 className="faq-question">How often are new recipes added?</h3>
-            <p className="faq-answer">We regularly update our recipe collection with new dishes from around the world. Our team of chefs and AI assistants work together to curate and test new recipes, ensuring you always have fresh inspiration for your next meal.</p>
+            <p className="faq-answer">We regularly update our recipe collection with new dishes from around the world. Our team of chefs assistants work together to curate and test new recipes, ensuring you always have fresh inspiration for your next meal.</p>
           </div>
           <div className="faq-item">
             <h3 className="faq-question">Is Fusion Chef free to use?</h3>
