@@ -23,7 +23,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-6">
-          <a href="#cuisines">Global Cuises</a>
+          <a href="#cuisine-explorer">Global Cuisine</a>
           <a href="#recipes">Recipes</a>
           <a href="#about">About Us</a>
           <a href="#contact">Contact</a>
@@ -40,7 +40,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="flex flex-col mt-4 gap-3 md:hidden">
-          <a href="#cuisines">Global Cuisines</a>
+          <a href="#cuisine-explorer">Global Cuisine</a>
           <a href="#recipes">Recipes</a>
           <a href="#about">About Us</a>
           <a href="#contact">Contact</a>
