@@ -2398,7 +2398,7 @@ function FusionChefAI() {
             </div>
           </div>
           <div className="footer-col"><h4>Recipes</h4><ul>{["Breakfast","Lunch","Dinner","Baking","Vegetarian","Healthy"].map(l=><li key={l}><a href="#" onClick={()=>scrollToSection("categories")}>{l}</a></li>)}</ul></div>
-          <div className="footer-col"><h4>Discover</h4><ul>{[["Trending","trending"],["Recipes","recipe-db"]].map(([l,id])=><li key={l}><a href="#" onClick={()=>scrollToSection(id)}>{l}</a></li>)}</ul></div>
+          <div className="footer-col"><h4>Discover</h4><ul>{[["Global Cuisine","cuisine-explorer"],["Recipes","recipe-db"]].map(([l,id])=><li key={l}><a href="#" onClick={()=>scrollToSection(id)}>{l}</a></li>)}</ul></div>
           <div className="footer-col"><h4>Company</h4><ul>{[["About Us",()=>setAboutPage(true)],["Careers",()=>{}],["Press",()=>{}],["Contact",()=>setContactPage(true)],["Privacy",()=>{}],["Terms",()=>{}]].map(([l,fn])=><li key={l}><a href="#" onClick={e=>{e.preventDefault();fn();}}>{l}</a></li>)}</ul></div>
         </div>
         <div className="footer-bottom">
