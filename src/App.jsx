@@ -2392,7 +2392,7 @@ function FusionChefAI() {
         <div className="footer-grid">
           <div className="footer-brand">
             <h2>Fusion <em>Chef</em></h2>
-            <p>Where every meal tells a story. AI-powered recipes, world-class chefs, and culinary inspiration — all in one place.</p>
+            <p>Explore the World Through Flavors — One Dish at a Time.</p>
             <div className="footer-socials">
               {["📘","📸","🐦","▶️","📌"].map((s,i)=><a key={i} className="social-btn" href="#">{s}</a>)}
             </div>
