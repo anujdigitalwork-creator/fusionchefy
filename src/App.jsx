@@ -2174,7 +2174,7 @@ function FusionChefAI() {
           </div>
           <div className="faq-item">
             <h3 className="faq-question">Is Fusion Chef free to use?</h3>
-            <p className="faq-answer">Yes, Fusion Chef is completely free to use! You can browse all our recipes, access cooking instructions, and use our AI chef assistant without any cost. We believe everyone should have access to quality culinary education and delicious recipes.</p>
+            <p className="faq-answer">Yes, Fusion Chef is completely free to use! You can browse all our recipes, access cooking instructions & we believe everyone should have access to quality culinary education and delicious recipes.</p>
           </div>
         </div>
       </section>
