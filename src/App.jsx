@@ -2447,13 +2447,23 @@ function RecipePage({ allData }) {
     if (!canonical) { canonical = document.createElement("link"); canonical.setAttribute("rel","canonical"); document.head.appendChild(canonical); }
     canonical.setAttribute("href", pageUrl);
     const schema = {
-      "@context":"https://schema.org","@type":"Recipe",
+      "@context":"https://schema.org ","@type":"Recipe",
       "name":recipe.dish_name,"description":description,
       "image":[recipe.img||""],"author":{"@type":"Organization","name":"Fusion Chef","url":BASE_URL},
       "prepTime":`PT${recipe.prep_time_minutes}M`,"cookTime":`PT${recipe.cook_time_minutes}M`,
       "totalTime":`PT${recipe.prep_time_minutes+recipe.cook_time_minutes}M`,
       "recipeYield":`${recipe.servings} servings`,"recipeCategory":recipe.category,
       "recipeCuisine":cuisine.charAt(0).toUpperCase()+cuisine.slice(1),
+      "keywords": recipe.tags ? recipe.tags.join(', ') : '',
+      "nutrition": recipe.nutrition_estimate ? {
+        "@type": "NutritionInformation",
+        "calories": recipe.nutrition_estimate.calories || '',
+        "proteinContent": recipe.nutrition_estimate.protein ? `${recipe.nutrition_estimate.protein}g` : '',
+        "carbohydrateContent": recipe.nutrition_estimate.carbohydrates ? `${recipe.nutrition_estimate.carbohydrates}g` : '',
+        "fatContent": recipe.nutrition_estimate.fat ? `${recipe.nutrition_estimate.fat}g` : '',
+        "fiberContent": recipe.nutrition_estimate.fiber ? `${recipe.nutrition_estimate.fiber}g` : '',
+        "sodiumContent": recipe.nutrition_estimate.sodium ? `${recipe.nutrition_estimate.sodium}mg` : '',
+      } : undefined,
       "recipeIngredient":(recipe.ingredients||[]).map(i=>`${i.quantity} ${i.unit} ${i.name}`.trim()),
       "recipeInstructions":(recipe.preparation_steps||[]).map((step,idx)=>({ "@type":"HowToStep","position":idx+1,"text":step })),
     };
